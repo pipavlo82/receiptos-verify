@@ -4,8 +4,8 @@
   "authenticity": "NOT_ESTABLISHED",
   "independent_operator": "NOT_CLAIMED",
   "isolation": "Separate product copy; installed dependencies shared from locked parent installation.",
-  "code_commit": null,
-  "source_lock_sha256": "8abe184762afe6f95772cae30756517930cd654fbd011ccc584c1ca1d2e374e1",
+  "code_commit": "89f254ea43fd948feac61698c20a5d86a39521b7",
+  "source_lock_sha256": "366dba85cdee7e62aef7f9f159c47ce2923c53599e6781f77b19baccb0cdd69c",
   "package_lock_sha256": "34c5ead1add79a374494eba5d51966d5557f2109373d1a0ab9bc01ebbb5e307c",
   "vector": "V02",
   "vector_sha256": "07d1b213f47bea09e1c0f4b4838c8650ed291823501c8ee479a2431e851cb2e2",
@@ -25,13 +25,13 @@
     {
       "process_status": "COMPLETED",
       "errors": [],
-      "semantic_digest": "e80c88db628db2f8e119d7619372a8c13e527c2c04fe668219bc0e0928028e8d",
+      "semantic_digest": "5263a1f45014274400d2d2f94064af36028111cd6005a4a2f70b10b189b9e951",
       "overall": "CONTRADICTED"
     },
     {
       "process_status": "COMPLETED",
       "errors": [],
-      "semantic_digest": "e80c88db628db2f8e119d7619372a8c13e527c2c04fe668219bc0e0928028e8d",
+      "semantic_digest": "5263a1f45014274400d2d2f94064af36028111cd6005a4a2f70b10b189b9e951",
       "overall": "CONTRADICTED"
     }
   ],
