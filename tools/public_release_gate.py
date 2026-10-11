@@ -103,6 +103,13 @@ try:
         "console.log(import.meta.resolve('ajv')); console.log(import.meta.resolve('@noble/curves/secp256k1.js'));"])
     run('initial-source-lock', ['node', 'tools/check-sources.mjs'])
     run('initial-diff-check', ['git', 'diff', '--check'])
+    scratch = root / 'reports' / 'tmp'
+    require(not scratch.exists(), 'Requires an initially absent test scratch directory')
+    scratch.mkdir(parents=True)
+    require(not list(scratch.iterdir()), 'Scratch setup must not inject evidence or fixtures')
+    summary['test_scratch_setup'] = {'path': 'reports/tmp', 'initially_absent': True, 'created_empty': True,
+                                   'reason': 'git.test.mjs requires an existing mkdtemp parent'}
+    save('test-scratch-setup.json', summary['test_scratch_setup'])
     tap = run('tests', [npm, 'test']).decode('utf-8')
     counts = {key: int(value) for key, value in re.findall(r'^# (tests|pass|fail|cancelled|skipped|todo) (\d+)$', tap, re.M)}
     summary['tests'] = counts

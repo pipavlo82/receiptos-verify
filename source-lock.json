@@ -54,8 +54,8 @@
     },
     {
       "path": "docs/publication-v0.1.0.md",
-      "bytes": 2512,
-      "sha256": "016774dc27c06a1452a144fc2c52ea3e82fd71c7e2895f15c8a6ca0e59094a8e"
+      "bytes": 3331,
+      "sha256": "d04613995e6c2b276c2ccc2c2c0bc918457b980415a8f6015135a888003d1b99"
     },
     {
       "path": "docs/trust-boundaries.md",
@@ -494,8 +494,8 @@
     },
     {
       "path": "tools/public_release_gate.py",
-      "bytes": 9351,
-      "sha256": "50257e857646659a70d62fa4f6ca86f4e897c6038e9194cdfc667b45b907b49a"
+      "bytes": 9879,
+      "sha256": "259e80398cb4a89935bf936302e1bee0811a913c6de4d0e8c2181f81ec47e14a"
     },
     {
       "path": "tools/reproduce.mjs",
