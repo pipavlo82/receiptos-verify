@@ -263,7 +263,7 @@
       "properties": {
         "version": { "const": 1 },
         "namespace": { "$ref": "#/$defs/namespace" },
-        "kind": { "enum": ["reaction", "view"] },
+        "kind": { "$ref": "#/$defs/text" },
         "actor": { "$ref": "#/$defs/digest" },
         "targetType": { "enum": ["post", "comment", "poll"] },
         "targetId": { "type": "string", "pattern": "^[a-z0-9_.:-]{1,128}$" },
@@ -288,7 +288,7 @@
       "type": "object",
       "properties": {
         "actor": { "$ref": "#/$defs/digest" },
-        "namespace": { "$ref": "#/$defs/namespace" }
+        "namespace": { "$ref": "#/$defs/text" }
       },
       "required": ["actor", "namespace"],
       "additionalProperties": false

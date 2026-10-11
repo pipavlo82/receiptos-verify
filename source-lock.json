@@ -249,8 +249,8 @@
     },
     {
       "path": "schemas/request-v2.schema.json",
-      "bytes": 9867,
-      "sha256": "4c8e742c4418dc39006c2c6ea8787d0e12afadabaf690a9e68520d6ea3b815c6"
+      "bytes": 9856,
+      "sha256": "116ab4ba890d570ba5d92fbf2b476aedc71a4101ca2a5a575853bb31ec843cb5"
     },
     {
       "path": "schemas/request.schema.json",
@@ -581,6 +581,11 @@
       "path": "tests/helpers/trustless-v02-fixture.mjs",
       "bytes": 4655,
       "sha256": "dcccf57d07fd32f3aacfdf4458d23b6d42e503695fda6b30f24b34fdfec0a560"
+    },
+    {
+      "path": "tests/interpoll-request-classification-release.test.mjs",
+      "bytes": 2430,
+      "sha256": "2d1891cbb5c436374b21559668e33d0d2db50dedbe3d30fd6e86654b8c6515cb"
     },
     {
       "path": "tests/interpoll-v2.test.mjs",
