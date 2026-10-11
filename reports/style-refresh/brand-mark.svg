@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 362" fill="none" role="img" aria-labelledby="receiptos-mark-title">
+  <title id="receiptos-mark-title">ReceiptOS R mark</title>
+  <defs>
+    <linearGradient id="receiptos-cyan-side" x1="0" y1="25" x2="35" y2="91" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#68c0e3"/>
+      <stop offset="1" stop-color="#55bfe6"/>
+    </linearGradient>
+    <linearGradient id="receiptos-cyan-fold" x1="0" y1="70" x2="67" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#91d4eb"/>
+      <stop offset="1" stop-color="#76cbea"/>
+    </linearGradient>
+    <linearGradient id="receiptos-cyan-mid" x1="35" y1="112" x2="96" y2="152" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#93d9ef"/>
+      <stop offset="1" stop-color="#87d1eb"/>
+    </linearGradient>
+    <linearGradient id="receiptos-cube-top" x1="62" y1="152" x2="132" y2="195" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6dcbe8"/>
+      <stop offset="1" stop-color="#5cbde1"/>
+    </linearGradient>
+    <linearGradient id="receiptos-cube-left" x1="62" y1="173" x2="97" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a374eb"/>
+      <stop offset="1" stop-color="#8256d6"/>
+    </linearGradient>
+    <linearGradient id="receiptos-cube-right" x1="97" y1="195" x2="132" y2="217" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#637ce7"/>
+      <stop offset="1" stop-color="#4871d8"/>
+    </linearGradient>
+    <linearGradient id="receiptos-violet-top" x1="35" y1="218" x2="97" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b281e9"/>
+      <stop offset="1" stop-color="#ab7ee5"/>
+    </linearGradient>
+    <linearGradient id="receiptos-violet-fold" x1="0" y1="259" x2="67" y2="302" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ad7de5"/>
+      <stop offset="1" stop-color="#b78bea"/>
+    </linearGradient>
+    <linearGradient id="receiptos-violet-side" x1="0" y1="281" x2="35" y2="345" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8f60da"/>
+      <stop offset="1" stop-color="#8055d5"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(1 1)">
+    <path fill="#f5f4f2" d="M35 0H160L237 60V139L170 196H134V170L196 118V82L160 50H35L0 25Z"/>
+    <path fill="#f5f4f2" d="M134 208H169L304 360H231L117 235Z"/>
+    <path fill="#f5f4f2" d="M0 345L35 323L81 350L67 360H18Z"/>
+    <path fill="url(#receiptos-cyan-side)" d="M0 25L35 50V70L0 91Z"/>
+    <path fill="url(#receiptos-cyan-fold)" d="M0 91L35 70L67 90L35 112Z"/>
+    <path fill="#52b5de" d="M35 112L67 90V112L35 132Z"/>
+    <path fill="url(#receiptos-cyan-mid)" d="M35 132L67 112L96 131L65 152Z"/>
+    <path fill="#6ac8e6" d="M65 152L96 131V152L66 173Z"/>
+    <path fill="url(#receiptos-violet-top)" d="M62 218L97 240L67 260L35 239Z"/>
+    <path fill="#8d60d4" d="M35 239L67 260V281L35 259Z"/>
+    <path fill="url(#receiptos-violet-fold)" d="M35 259L67 281L35 302L0 281Z"/>
+    <path fill="url(#receiptos-violet-side)" d="M0 281L35 302V323L0 345Z"/>
+    <path fill="url(#receiptos-cube-top)" d="M62 173L97 152L132 172L97 195Z"/>
+    <path fill="url(#receiptos-cube-left)" d="M62 173L97 195V240L62 218Z"/>
+    <path fill="url(#receiptos-cube-right)" d="M97 195L132 172V217L97 240Z"/>
+    <path stroke="#c1e4ed" stroke-width="1.5" stroke-linejoin="round" d="M62 173L97 195L132 172M97 195V240"/>
+  </g>
+</svg>

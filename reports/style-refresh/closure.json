@@ -1,0 +1,52 @@
+{
+  "schema": "receiptos.verify.style-refresh.v1",
+  "base_commit": "750a9b63c2cec696334f9d43e389b4987d128189",
+  "branch": "codex/brand-style",
+  "product_files_changed": [
+    "web/index.html",
+    "web/style.css",
+    "source-lock.json"
+  ],
+  "source_lock": {
+    "files": 222,
+    "sha256": "3bd963bb3250d420cdc096f443da298e9194b8f673c805a04a358be54d4e741c",
+    "result": "PASS"
+  },
+  "focused_tests": {
+    "command": "node --test tests/ui-contract.test.mjs",
+    "tests": 22,
+    "pass": 22,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "browser_controls": [
+    {
+      "input": "V01",
+      "overall": "VERIFIED",
+      "class": "verdict good",
+      "color": "rgb(140, 224, 194)"
+    },
+    {
+      "input": "V01 + Ask for commit B",
+      "overall": "CONTRADICTED",
+      "class": "verdict bad",
+      "color": "rgb(255, 155, 169)"
+    },
+    {
+      "input": "V17",
+      "overall": "INSUFFICIENT_EVIDENCE",
+      "class": "verdict neutral",
+      "color": "rgb(225, 197, 139)"
+    }
+  ],
+  "responsive_actual_browser": [
+    "default desktop",
+    "390 px: document width 390",
+    "320 px: document width 320"
+  ],
+  "runtime_and_frozen_material": "UNCHANGED_FROM_BASE: src, web/app.mjs, tests, vectors, profiles, schemas, vendor, dependency/legal files and existing reports",
+  "diff_check": "PASS",
+  "scope": "Cosmetic local correction only; no upstream edits, feature addition, push or publication. Full release audit not repeated."
+}
