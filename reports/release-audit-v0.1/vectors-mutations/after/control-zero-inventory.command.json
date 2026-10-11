@@ -1,0 +1,15 @@
+{
+  "label": "control-zero-inventory",
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc7",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:59:44.329Z",
+  "ended": "2026-10-11T18:59:44.660Z",
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "",
+  "stderr": "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/fc7/tools/run-mutations.mjs:5\r\nif(!mutations.length) throw new Error('ZERO_MUTANTS');\r\n                            ^\r\n\r\nError: ZERO_MUTANTS\r\n    at file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/fc7/tools/run-mutations.mjs:5:29\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)\r\n\r\nNode.js v22.15.0\r\n"
+}

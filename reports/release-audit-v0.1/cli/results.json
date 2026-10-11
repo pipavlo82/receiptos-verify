@@ -1,0 +1,50 @@
+[
+  {
+    "label": "A",
+    "argv": [
+      "node",
+      "src/cli.mjs",
+      "verify",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json",
+      "--text"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "actual_exit": 0,
+    "expected_exit": 0,
+    "passed": true,
+    "stdout_sha256": "85f18a9ffc4cb6b3c102f7919d6e7c39467a7367651ddd542540f18407ad6775"
+  },
+  {
+    "label": "B",
+    "argv": [
+      "node",
+      "src/cli.mjs",
+      "verify",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\cli\\request-B.json",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json",
+      "--text"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "actual_exit": 2,
+    "expected_exit": 2,
+    "passed": true,
+    "stdout_sha256": "346722a8bc3ab0bd86f8160a7b224a9ef30ff94522ae06881a8252813dea23ca"
+  },
+  {
+    "label": "invalid-UTF8",
+    "argv": [
+      "node",
+      "src/cli.mjs",
+      "verify",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\utf8-request-invalid.json",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\utf8-bundle.json",
+      "--text"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "actual_exit": 3,
+    "expected_exit": 3,
+    "passed": true,
+    "stdout_sha256": "417715f8cb97d971d09f8594f50aea1fd4db5f6070b5191c4dd18f44468493da"
+  }
+]

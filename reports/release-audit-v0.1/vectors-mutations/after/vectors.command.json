@@ -1,0 +1,13 @@
+{
+  "label": "vectors",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-vectors.mjs"
+  ],
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+  "started": "2026-10-11T19:00:27.233Z",
+  "ended": "2026-10-11T19:00:38.556Z",
+  "exit": 0,
+  "stdout": "{\"count\":30,\"passed\":30,\"failed\":0,\"failures\":[]}\n",
+  "stderr": ""
+}

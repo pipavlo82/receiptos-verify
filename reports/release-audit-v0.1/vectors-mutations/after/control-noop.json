@@ -1,0 +1,31 @@
+{
+  "name": "noop",
+  "expected_safety_behavior": "NOT_APPLIED",
+  "exit": 1,
+  "report": {
+    "schema": "receiptos.verify.mutation-report.v1",
+    "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.",
+    "count": 1,
+    "counts": {
+      "KILLED": 0,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 1,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    },
+    "rows": [
+      {
+        "id": "audit-noop",
+        "source_file": "src/core/subject.mjs",
+        "original_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+        "mutant_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+        "applied": false,
+        "positive": "V01",
+        "witness": "V04",
+        "status": "NOT_APPLIED"
+      }
+    ]
+  }
+}

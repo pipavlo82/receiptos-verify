@@ -1,0 +1,5 @@
+
+> receiptos-verify@0.1.0 vectors
+> node tools/run-vectors.mjs
+
+{"count":30,"passed":30,"failed":0,"failures":[]}

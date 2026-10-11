@@ -1,0 +1,97 @@
+diff --git a/mutations/catalog.mjs b/mutations/catalog.mjs
+index abd7feb..de415be 100644
+--- a/mutations/catalog.mjs
++++ b/mutations/catalog.mjs
+@@ -2,7 +2,7 @@ export const mutations=[
+  {id:'ignore-requested-subject',file:'src/core/subject.mjs',witness:'V04',positive:'V01',changes:[["!equal(request.subject[field],statement.subject[field])","false"]]},
+  {id:'compare-receipt-to-itself',file:'src/core/subject.mjs',witness:'V04',positive:'V01',changes:[["!equal(request.subject[field],statement.subject[field])","!equal(statement.subject[field],statement.subject[field])"]]},
+  {id:'accept-any-valid-signature',file:'src/adapters/interpoll.mjs',witness:'V25',positive:'V13',changes:[["Object.entries(expected).some(([k,v])=>a[k]!==v)","false"]]},
+- {id:'promote-reproduced-to-verified',file:'src/projection/project.mjs',witness:'V07',positive:'V01',changes:[["layers.RECOMPUTATION?.semanticOutcome==='REFUTED'","false"]]},
++ {id:'promote-reproduced-to-verified',file:'src/projection/project.mjs',witness:'V07',positive:'V01',changes:[["layers.RECOMPUTATION?.semanticOutcome==='REFUTED'","false"],["||layers.RECOMPUTATION?.semanticOutcome!=='VERIFIED'",""]]},
+  {id:'accept-empty-evidence',file:'src/core/evidence.mjs',witness:'V06',positive:'V01',changes:[["const roles=['artifact','git-commit','git-tree','native-result'];","if(inspected.manifest.length===0) return result('SUFFICIENT');\n  const roles=['artifact','git-commit','git-tree','native-result'];"]]},
+  {id:'count-crash-as-semantic-refutation',file:'src/projection/project.mjs',witness:'V08',positive:'V01',fault:'crash-rvr',changes:[["return result('CANNOT_RECOMPUTE',reasons); // MUTATE: crash-kill","return result('CONTRADICTED',reasons); // MUTATE: crash-kill"]]},
+  {id:'package-presence-as-pass',file:'src/adapters/recompute_kit.mjs',witness:'V09',positive:'V01',changes:[["||report.executed!==true",""]]},
+diff --git a/tools/corpus.mjs b/tools/corpus.mjs
+index 69fa532..5eb8297 100644
+--- a/tools/corpus.mjs
++++ b/tools/corpus.mjs
+@@ -1,18 +1,45 @@
+ import { readFile, mkdir, cp, writeFile } from 'node:fs/promises';
+ import { spawnSync } from 'node:child_process';
+ import { fileURLToPath } from 'node:url';
+-import { verify } from '../src/core/verify.mjs';
++import { verify, LAYER_NAMES } from '../src/core/verify.mjs';
++import { validateSchema } from '../src/core/schemas.mjs';
++import { sha256 } from '../src/core/common.mjs';
+ export const root=fileURLToPath(new URL('../',import.meta.url));
+ export async function readVector(id) {return JSON.parse(await readFile(new URL('../vectors/'+id+'.json',import.meta.url),'utf8'));}
++const verdicts=['VERIFIED','CONTRADICTED','INSUFFICIENT_EVIDENCE','CANNOT_RECOMPUTE','REJECTED_MALFORMED','UNSUPPORTED_PROFILE'];
++const layerStatuses={
++  INPUT:['ADMITTED','REJECTED_MALFORMED'],CANONICALIZATION:['VERIFIED'],
++  INTEGRITY:['VERIFIED','REJECTED_MALFORMED','CANNOT_RECOMPUTE','INSUFFICIENT_EVIDENCE'],
++  AUTHENTICITY:['VERIFIED','CONTRADICTED','NOT_ESTABLISHED'],SUBJECT_BINDING:['VERIFIED','CONTRADICTED'],
++  RECOMPUTATION:['REPRODUCED','DIVERGED','CANNOT_RECOMPUTE','CONTRADICTED','REJECTED_MALFORMED'],
++  EVIDENCE_SUFFICIENCY:['SUFFICIENT','INSUFFICIENT'],SEMANTIC_COMPATIBILITY:['COMPATIBLE','INCOMPATIBLE','UNVERIFIABLE'],
++  GUARANTEE_PRESERVATION:['PRESERVED','VIOLATED','UNVERIFIABLE','NOT_REQUESTED'],
++  CONTINUITY:['PRESERVED','VERIFIED','VIOLATED','UNVERIFIABLE','NOT_REQUESTED'],
++  DOMAIN_ADAPTERS:['VERIFIED','PRESERVED','VIOLATED','CONTRADICTED','REJECTED_MALFORMED','CANNOT_RECOMPUTE','UNVERIFIABLE','NOT_ESTABLISHED','UNSUPPORTED','NOT_REQUESTED','INSUFFICIENT_EVIDENCE'],
++  PRODUCT_PROJECTION:verdicts,EXPLAINABLE_REPORT:['GENERATED'],PROVENANCE:['RECORDED'],
++};
++export function validateReport(report) {
++  validateSchema('report',report);
++  const names=Object.keys(report.layers);
++  if(names.length!==LAYER_NAMES.length||LAYER_NAMES.some(k=>!Object.hasOwn(report.layers,k))
++    ||names.some(k=>!layerStatuses[k]||!['NOT_RUN',...layerStatuses[k]].includes(report.layers[k].status))) throw new Error('Invalid report layer identity or status');
++  if(!report.required_layers.length||new Set(report.required_layers).size!==report.required_layers.length
++    ||report.required_layers.some(k=>!LAYER_NAMES.includes(k))) throw new Error('Invalid report required layers');
++  if(report.layers.PRODUCT_PROJECTION.status!==report.overall
++    ||JSON.stringify(report.layers.PRODUCT_PROJECTION.reasonCodes)!==JSON.stringify(report.reason_codes)) throw new Error('Incoherent report projection');
++  return report;
++}
+ export function discrepancies(vector,report) {
+   const errors=[];
++  try {validateReport(report);} catch(error) {return ['invalid report: '+error.message];}
+   if(report.overall!==vector.expected.overall) errors.push(`overall ${report.overall} != ${vector.expected.overall}`);
+   for(const [layer,status] of Object.entries(vector.expected.layers)) if(report.layers?.[layer]?.status!==status) errors.push(`${layer} ${report.layers?.[layer]?.status} != ${status}`);
+   for(const code of vector.expected.reason_codes) if(!report.reason_codes?.includes(code)) errors.push('missing reason '+code);
+   return errors;
+ }
+ export async function isolatedCopy(label) {
+-  const folder=new URL('../reports/tmp/'+label+'/',import.meta.url);
++  // Keep native dependency paths below Windows limits even in audit checkouts.
++  const folder=new URL('../reports/tmp/i-'+sha256(label).slice(0,12)+'/',import.meta.url);
+   await mkdir(folder,{recursive:true});
+   for(const name of ['src','vendor','provenance','vectors','schemas']) await cp(new URL('../'+name,import.meta.url),new URL(name,folder),{recursive:true});
+   await mkdir(new URL('tools/',folder),{recursive:true});
+@@ -23,8 +50,8 @@ export async function isolatedCopy(label) {
+ export function isolatedRun(folder,id) {
+   const run=spawnSync(process.execPath,[fileURLToPath(new URL('tools/verify-vector.mjs',folder)),fileURLToPath(new URL('vectors/'+id+'.json',folder))],{cwd:fileURLToPath(folder),encoding:'utf8',timeout:30000,maxBuffer:8*1024*1024,windowsHide:true});
+   if(run.status!==0||run.signal||run.error) return {process_status:'CRASH',exit_code:run.status,stderr:run.stderr??String(run.error)};
+-  try {const report=JSON.parse(run.stdout);if(!report.schema||!report.layers||typeof report.overall!=='string') throw new Error();return {process_status:'COMPLETED',exit_code:run.status,report};}
+-  catch {return {process_status:'INVALID_OUTPUT',stdout:run.stdout,stderr:run.stderr};}
++  try {const report=validateReport(JSON.parse(run.stdout));return {process_status:'COMPLETED',exit_code:run.status,report};}
++  catch(error) {return {process_status:'INVALID_OUTPUT',stdout:run.stdout,stderr:run.stderr,error:error.message};}
+ }
+ export async function runVector(vector) {
+   if(vector.execution_setup?.fault==='crash-rvr') {
+diff --git a/tools/run-mutations.mjs b/tools/run-mutations.mjs
+index 8377534..da47384 100644
+--- a/tools/run-mutations.mjs
++++ b/tools/run-mutations.mjs
+@@ -23,10 +23,14 @@ for(const m of mutations) {
+   record.baseline_projection=baselineWitness.overall;
+   record.mutant_projection=witness.report?.overall??null;
+   record.witness_reasons=witness.report?.reason_codes??[];
+-  record.status=!record.baseline_controls_valid?'INVALID_BASELINE':!record.positive_preserved?'CONTROL_BROKEN':witness.process_status!=='COMPLETED'?'CRASHED':witness.report.overall!==baselineWitness.overall?'KILLED':'SURVIVED';
++  record.status=!record.baseline_controls_valid?'INVALID_BASELINE'
++    :[positive,witness].some(run=>run.process_status==='INVALID_OUTPUT')?'INVALID_OUTPUT'
++    :[positive,witness].some(run=>run.process_status!=='COMPLETED')?'CRASHED'
++    :!record.positive_preserved?'CONTROL_BROKEN'
++    :witness.report.overall!==baselineWitness.overall?'KILLED':'SURVIVED';
+   rows.push(record);console.log(m.id+': '+record.status);
+ }
+-const counts=Object.fromEntries(['KILLED','SURVIVED','CRASHED','NOT_APPLIED','CONTROL_BROKEN','INVALID_BASELINE'].map(k=>[k,rows.filter(r=>r.status===k).length]));
++const counts=Object.fromEntries(['KILLED','SURVIVED','CRASHED','INVALID_OUTPUT','NOT_APPLIED','CONTROL_BROKEN','INVALID_BASELINE'].map(k=>[k,rows.filter(r=>r.status===k).length]));
+ const report={schema:'receiptos.verify.mutation-report.v1',method:'Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.',count:rows.length,counts,rows};
+ await writeFile(new URL('../reports/mutations.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(counts));
+ process.exitCode=counts.KILLED===mutations.length?0:1;

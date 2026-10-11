@@ -1,0 +1,45 @@
+{
+  "schema": "receiptos.release.provenance-documentation-remediation.v1",
+  "observedAt": "2026-10-11T19:00:21.213093+00:00",
+  "files": [
+    {
+      "path": "README.md",
+      "beforeSHA256": "2fc086d8b82748eef6553b1f499b7bab7ddde982deab8429daa50d2fefedacde",
+      "afterSHA256": "585266c0270845ef2e238e3f6625c06ffd67722cc773108da36d799849b8cc76",
+      "changed": true
+    },
+    {
+      "path": "BUILD_REPORT.md",
+      "beforeSHA256": "01c86148c78553b43ff77a2385821b316090e1ba36c73037c73fdb5d63a890a9",
+      "afterSHA256": "dec28e4e40c17946289d8f1784b8de05fea0a0a33fa753df286f9b3c89bc3981",
+      "changed": true
+    },
+    {
+      "path": "PROVENANCE.md",
+      "beforeSHA256": "7d3806c1182ac0323ee4b5a8791b806f77f0863fd2f0a93c9ae1979897b3d77a",
+      "afterSHA256": "b38e89dc1b3709083d95cd63c5edd9f071ade49da1eed6115caac555d25e5fb1",
+      "changed": true
+    },
+    {
+      "path": "FULL_WORK_REUSE_MAP.md",
+      "beforeSHA256": "c2303e6550cb1ea079f1826d64d874dec3ddd5d8890506cb9553c1c4f8804d98",
+      "afterSHA256": "3dd0dc3edb31f9d39578452f0bcdd85135928cdc961598c376c07b811db2c005",
+      "changed": true
+    },
+    {
+      "path": "provenance/sources.json",
+      "beforeSHA256": "80ba39eb90a93a1dfdded25125a6e97e79d4686405809b0c6aee743c144a409c",
+      "afterSHA256": "88914f90d5c0d526a8e827d1eb468e764a3aad8748cb70f3d53be430fcaef083",
+      "changed": true
+    }
+  ],
+  "frozenReportsChanged": false,
+  "sourceLockChangedByThisAgent": false,
+  "commitCreated": false,
+  "summary": [
+    "Remove absent CHRONICLE-ROOTS implementation and duplicate count; preserve exact source pins and historical evidence.",
+    "Report21 named slices and12 surfaces /11 bounded executable /1 ledger interface with honest capability maturity.",
+    "Time-scope original251/30/14 observations; link root-owned current release audit.",
+    "Narrow V09 historical package-presence witness to signed execution-declaration completeness; checker-unavailable controls cover actual execution absence."
+  ]
+}

@@ -1,0 +1,454 @@
+TAP version 13
+# Subtest: corpus is nonempty with all twenty required classes
+ok 1 - corpus is nonempty with all twenty required classes
+  ---
+  duration_ms: 4.3407
+  type: 'test'
+  ...
+# Subtest: V01 Exact valid receipt for requested commit
+ok 2 - V01 Exact valid receipt for requested commit
+  ---
+  duration_ms: 525.4139
+  type: 'test'
+  ...
+# Subtest: V02 Authentic positive covers wrong requested commit
+ok 3 - V02 Authentic positive covers wrong requested commit
+  ---
+  duration_ms: 488.388
+  type: 'test'
+  ...
+# Subtest: V03 Tampered native Crystal root
+ok 4 - V03 Tampered native Crystal root
+  ---
+  duration_ms: 405.6611
+  type: 'test'
+  ...
+# Subtest: V04 Valid signature over wrong subject identity
+ok 5 - V04 Valid signature over wrong subject identity
+  ---
+  duration_ms: 464.7686
+  type: 'test'
+  ...
+# Subtest: V05 Required native result evidence missing
+ok 6 - V05 Required native result evidence missing
+  ---
+  duration_ms: 397.6795
+  type: 'test'
+  ...
+# Subtest: V06 Empty evidence inventory
+ok 7 - V06 Empty evidence inventory
+  ---
+  duration_ms: 339.0479
+  type: 'test'
+  ...
+# Subtest: V07 Reproduced negative predicate stays negative
+ok 8 - V07 Reproduced negative predicate stays negative
+  ---
+  duration_ms: 336.4238
+  type: 'test'
+  ...
+# Subtest: V08 Native checker process exits with no semantic output
+ok 9 - V08 Native checker process exits with no semantic output
+  ---
+  duration_ms: 1097.3226
+  type: 'test'
+  ...
+# Subtest: V09 Package and runner present without semantic execution claim
+ok 10 - V09 Package and runner present without semantic execution claim
+  ---
+  duration_ms: 344.491
+  type: 'test'
+  ...
+# Subtest: V10 Semantic ABI consumer scope mismatch
+ok 11 - V10 Semantic ABI consumer scope mismatch
+  ---
+  duration_ms: 359.0041
+  type: 'test'
+  ...
+# Subtest: V11 Downstream drops upstream guarantee dependency
+ok 12 - V11 Downstream drops upstream guarantee dependency
+  ---
+  duration_ms: 338.4616
+  type: 'test'
+  ...
+# Subtest: V12 Exact downstream guarantee and dependency preserved
+ok 13 - V12 Exact downstream guarantee and dependency preserved
+  ---
+  duration_ms: 358.9143
+  type: 'test'
+  ...
+# Subtest: V13 Exact authorized action survives accepted and duplicate retries
+ok 14 - V13 Exact authorized action survives accepted and duplicate retries
+  ---
+  duration_ms: 417.555
+  type: 'test'
+  ...
+# Subtest: V14 Retry changes material action despite a valid signature
+ok 15 - V14 Retry changes material action despite a valid signature
+  ---
+  duration_ms: 374.5383
+  type: 'test'
+  ...
+# Subtest: V15 Later state differs after historical commitment
+ok 16 - V15 Later state differs after historical commitment
+  ---
+  duration_ms: 314.2518
+  type: 'test'
+  ...
+# Subtest: V16 Unsupported product profile
+ok 17 - V16 Unsupported product profile
+  ---
+  duration_ms: 291.8338
+  type: 'test'
+  ...
+# Subtest: V17 Valid QEV packaging without provider authentication
+ok 18 - V17 Valid QEV packaging without provider authentication
+  ---
+  duration_ms: 553.6891
+  type: 'test'
+  ...
+# Subtest: V18 Producer positive contradicts reproduced native negative
+ok 19 - V18 Producer positive contradicts reproduced native negative
+  ---
+  duration_ms: 292.6227
+  type: 'test'
+  ...
+# Subtest: V19 Intact historical receipt cannot satisfy current authority profile
+ok 20 - V19 Intact historical receipt cannot satisfy current authority profile
+  ---
+  duration_ms: 314.7318
+  type: 'test'
+  ...
+# Subtest: V20 Stochastic replay establishes no provenance
+ok 21 - V20 Stochastic replay establishes no provenance
+  ---
+  duration_ms: 318.3474
+  type: 'test'
+  ...
+# Subtest: V21 Later divergence leaves the exact historical observation intact
+ok 22 - V21 Later divergence leaves the exact historical observation intact
+  ---
+  duration_ms: 307.2296
+  type: 'test'
+  ...
+# Subtest: V22 Caller-selected policy version differs
+ok 23 - V22 Caller-selected policy version differs
+  ---
+  duration_ms: 308.3128
+  type: 'test'
+  ...
+# Subtest: V23 Unknown canonicalization rules
+ok 24 - V23 Unknown canonicalization rules
+  ---
+  duration_ms: 1.7497
+  type: 'test'
+  ...
+# Subtest: V24 Weak grade cannot establish independent recomputation evidence
+ok 25 - V24 Weak grade cannot establish independent recomputation evidence
+  ---
+  duration_ms: 319.8145
+  type: 'test'
+  ...
+# Subtest: V25 Valid signature under a different expected actor
+ok 26 - V25 Valid signature under a different expected actor
+  ---
+  duration_ms: 324.8028
+  type: 'test'
+  ...
+# Subtest: V26 Committed artifact bytes unavailable is a replay barrier
+ok 27 - V26 Committed artifact bytes unavailable is a replay barrier
+  ---
+  duration_ms: 102.03
+  type: 'test'
+  ...
+# Subtest: V27 Missing signer trust is independent of a checker crash
+ok 28 - V27 Missing signer trust is independent of a checker crash
+  ---
+  duration_ms: 859.9277
+  type: 'test'
+  ...
+# Subtest: V28 Native Moth counts RVR and ReceiptOS preserve 32 requested / 0 delivered
+ok 29 - V28 Native Moth counts RVR and ReceiptOS preserve 32 requested / 0 delivered
+  ---
+  duration_ms: 1706.8234
+  type: 'test'
+  ...
+# Subtest: V29 Independent Moth job claim cannot be replaced by saved claim
+ok 30 - V29 Independent Moth job claim cannot be replaced by saved claim
+  ---
+  duration_ms: 658.0396
+  type: 'test'
+  ...
+# Subtest: V30 Native Moth reproduced negative stays negative
+ok 31 - V30 Native Moth reproduced negative stays negative
+  ---
+  duration_ms: 1576.4479
+  type: 'test'
+  ...
+# Subtest: empty projection cannot produce VERIFIED
+ok 32 - empty projection cannot produce VERIFIED
+  ---
+  duration_ms: 0.2272
+  type: 'test'
+  ...
+# Subtest: duplicate JSON keys are rejected before execution
+ok 33 - duplicate JSON keys are rejected before execution
+  ---
+  duration_ms: 0.7061
+  type: 'test'
+  ...
+# Subtest: caller cannot remove subject binding from required obligations
+ok 34 - caller cannot remove subject binding from required obligations
+  ---
+  duration_ms: 272.8429
+  type: 'test'
+  ...
+# Subtest: unsupported profile does not hide independently detectable attachment tamper
+ok 35 - unsupported profile does not hide independently detectable attachment tamper
+  ---
+  duration_ms: 1.4111
+  type: 'test'
+  ...
+# Subtest: native claim cannot be silently repaired before replay
+ok 36 - native claim cannot be silently repaired before replay
+  ---
+  duration_ms: 83.8444
+  type: 'test'
+  ...
+# Subtest: ambiguous native result attachments are rejected
+ok 37 - ambiguous native result attachments are rejected
+  ---
+  duration_ms: 1.9751
+  type: 'test'
+  ...
+# Subtest: caller action requirement cannot override observed retry bytes
+ok 38 - caller action requirement cannot override observed retry bytes
+  ---
+  duration_ms: 1.4979
+  type: 'test'
+  ...
+# Subtest: empty detached authorization cannot establish producer selected action
+ok 39 - empty detached authorization cannot establish producer selected action
+  ---
+  duration_ms: 1.6652
+  type: 'test'
+  ...
+# Subtest: authenticated definite FAIL contradicts a positive native replay without erasing either result
+ok 40 - authenticated definite FAIL contradicts a positive native replay without erasing either result
+  ---
+  duration_ms: 1000.7761
+  type: 'test'
+  ...
+# Subtest: independent recomputation may resolve producer CANNOT_CHECK uncertainty
+ok 41 - independent recomputation may resolve producer CANNOT_CHECK uncertainty
+  ---
+  duration_ms: 404.4116
+  type: 'test'
+  ...
+# Subtest: independent native REFUTED replay remains negative
+ok 42 - independent native REFUTED replay remains negative
+  ---
+  duration_ms: 470.7576
+  type: 'test'
+  ...
+# Subtest: projection admits a complete exact positive
+ok 43 - projection admits a complete exact positive
+  ---
+  duration_ms: 0.5602
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result "UNVERIFIABLE"
+ok 44 - replay identity cannot substitute for native semantic result "UNVERIFIABLE"
+  ---
+  duration_ms: 0.2871
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result null
+ok 45 - replay identity cannot substitute for native semantic result null
+  ---
+  duration_ms: 0.3089
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result "PASS"
+ok 46 - replay identity cannot substitute for native semantic result "PASS"
+  ---
+  duration_ms: 0.2019
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result true
+ok 47 - replay identity cannot substitute for native semantic result true
+  ---
+  duration_ms: 0.1681
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result 1
+ok 48 - replay identity cannot substitute for native semantic result 1
+  ---
+  duration_ms: 0.4058
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: null layers
+ok 49 - projection rejects malformed internal input: null layers
+  ---
+  duration_ms: 0.605
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: null required
+ok 50 - projection rejects malformed internal input: null required
+  ---
+  duration_ms: 0.3502
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: string false support
+ok 51 - projection rejects malformed internal input: string false support
+  ---
+  duration_ms: 0.2334
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: object reason codes
+ok 52 - projection rejects malformed internal input: object reason codes
+  ---
+  duration_ms: 0.2302
+  type: 'test'
+  ...
+# Subtest: projection cannot remove implicit mandatory subject and evidence obligations
+ok 53 - projection cannot remove implicit mandatory subject and evidence obligations
+  ---
+  duration_ms: 0.2475
+  type: 'test'
+  ...
+# Subtest: projection requires successful INPUT admission
+ok 54 - projection requires successful INPUT admission
+  ---
+  duration_ms: 0.2917
+  type: 'test'
+  ...
+# Subtest: projection requires successful CANONICALIZATION admission
+ok 55 - projection requires successful CANONICALIZATION admission
+  ---
+  duration_ms: 0.1704
+  type: 'test'
+  ...
+# Subtest: projection preserves the exact explicit contradiction reason
+ok 56 - projection preserves the exact explicit contradiction reason
+  ---
+  duration_ms: 0.2307
+  type: 'test'
+  ...
+# Subtest: malformed non-array required_layers {} returns structured rejection
+ok 57 - malformed non-array required_layers {} returns structured rejection
+  ---
+  duration_ms: 22.0721
+  type: 'test'
+  ...
+# Subtest: malformed non-array required_layers 42 returns structured rejection
+ok 58 - malformed non-array required_layers 42 returns structured rejection
+  ---
+  duration_ms: 9.108
+  type: 'test'
+  ...
+# Subtest: malformed non-array required_layers false returns structured rejection
+ok 59 - malformed non-array required_layers false returns structured rejection
+  ---
+  duration_ms: 2.422
+  type: 'test'
+  ...
+# Subtest: unknown caller-required obligation is rejected rather than silently omitted
+ok 60 - unknown caller-required obligation is rejected rather than silently omitted
+  ---
+  duration_ms: 8.4862
+  type: 'test'
+  ...
+# Subtest: committed unavailable artifact prevents native execution
+ok 61 - committed unavailable artifact prevents native execution
+  ---
+  duration_ms: 154.7632
+  type: 'test'
+  ...
+# Subtest: committed unavailable native-result prevents native execution
+ok 62 - committed unavailable native-result prevents native execution
+  ---
+  duration_ms: 167.6991
+  type: 'test'
+  ...
+# Subtest: absent caller trust precedes a separate committed-byte replay barrier
+ok 63 - absent caller trust precedes a separate committed-byte replay barrier
+  ---
+  duration_ms: 154.555
+  type: 'test'
+  ...
+# Subtest: unaccepted detached guarantee basis precedes a separate committed-byte replay barrier
+ok 64 - unaccepted detached guarantee basis precedes a separate committed-byte replay barrier
+  ---
+  duration_ms: 176.7158
+  type: 'test'
+  ...
+# Subtest: independent EVIDENCE_GRADE_NOT_ESTABLISHED premise precedes a runtime barrier
+ok 65 - independent EVIDENCE_GRADE_NOT_ESTABLISHED premise precedes a runtime barrier
+  ---
+  duration_ms: 0.9979
+  type: 'test'
+  ...
+# Subtest: independent DEPENDENCY_BASIS_NOT_SEPARATELY_ACCEPTED premise precedes a runtime barrier
+ok 66 - independent DEPENDENCY_BASIS_NOT_SEPARATELY_ACCEPTED premise precedes a runtime barrier
+  ---
+  duration_ms: 0.8801
+  type: 'test'
+  ...
+# Subtest: native-output injection has a complete paired positive control
+ok 67 - native-output injection has a complete paired positive control
+  ---
+  duration_ms: 1250.4933
+  type: 'test'
+  ...
+# Subtest: structured native positive with missing fresh canonical result cannot establish verification
+ok 68 - structured native positive with missing fresh canonical result cannot establish verification
+  ---
+  duration_ms: 645.996
+  type: 'test'
+  ...
+# Subtest: structured native positive with unbound canonical result digest cannot establish verification
+ok 69 - structured native positive with unbound canonical result digest cannot establish verification
+  ---
+  duration_ms: 621.0852
+  type: 'test'
+  ...
+# Subtest: structured native positive with false evaluation-performed flag cannot establish verification
+ok 70 - structured native positive with false evaluation-performed flag cannot establish verification
+  ---
+  duration_ms: 634.3055
+  type: 'test'
+  ...
+# Subtest: structured native positive with wrong native profile identity cannot establish verification
+ok 71 - structured native positive with wrong native profile identity cannot establish verification
+  ---
+  duration_ms: 591.268
+  type: 'test'
+  ...
+# Subtest: structured native positive with inconsistent native semantic result cannot establish verification
+ok 72 - structured native positive with inconsistent native semantic result cannot establish verification
+  ---
+  duration_ms: 603.3528
+  type: 'test'
+  ...
+# Subtest: valid-looking stdout with nonzero checker exit is a replay barrier
+ok 73 - valid-looking stdout with nonzero checker exit is a replay barrier
+  ---
+  duration_ms: 642.8467
+  type: 'test'
+  ...
+# Subtest: malformed checker stdout is a replay barrier and never a predicate refutation
+ok 74 - malformed checker stdout is a replay barrier and never a predicate refutation
+  ---
+  duration_ms: 603.8369
+  type: 'test'
+  ...
+1..74
+# tests 74
+# suites 0
+# pass 74
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 15422.9993

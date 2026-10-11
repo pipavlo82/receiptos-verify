@@ -1,0 +1,13 @@
+{
+  "validUnicode": {
+    "className": "verdict good",
+    "verdict": "VERIFIED"
+  },
+  "invalidUtf8": "INVALID_UTF8, empty request textarea, neutral/no download",
+  "crashControl": "CLI CONTROL REQUIRED, verifier disabled, both inputs empty",
+  "qev": {
+    "className": "verdict neutral",
+    "explanation": "INSUFFICIENT_EVIDENCE. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED, PROVIDER_AUTHENTICATION_NOT_ESTABLISHED",
+    "verdict": "INSUFFICIENT_EVIDENCE"
+  }
+}

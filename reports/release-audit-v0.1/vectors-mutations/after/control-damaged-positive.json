@@ -1,0 +1,44 @@
+{
+  "name": "damaged-positive",
+  "expected_safety_behavior": "CONTROL_BROKEN",
+  "exit": 1,
+  "report": {
+    "schema": "receiptos.verify.mutation-report.v1",
+    "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.",
+    "count": 1,
+    "counts": {
+      "KILLED": 0,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 1,
+      "INVALID_BASELINE": 0
+    },
+    "rows": [
+      {
+        "id": "audit-damaged-positive",
+        "source_file": "src/projection/project.mjs",
+        "original_sha256": "982672ef07a4d8fdd06d3287764444f4a5c45fdcdc42b39b1547845ad73528f2",
+        "mutant_sha256": "5a306544e7dffd92723ad61e3f7da553d461b9238ae27a77bf3b3257d709381b",
+        "applied": true,
+        "positive": "V01",
+        "witness": "V07",
+        "baseline_controls_valid": true,
+        "positive_process_status": "COMPLETED",
+        "positive_preserved": false,
+        "witness_process_status": "COMPLETED",
+        "baseline_projection": "CONTRADICTED",
+        "mutant_projection": "CONTRADICTED",
+        "witness_reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_mismatch",
+          "rvr.recompute.identical",
+          "SEMANTIC_REQUIREMENT_ESTABLISHED",
+          "NATIVE_NEGATIVE_RESULT"
+        ],
+        "status": "CONTROL_BROKEN"
+      }
+    ]
+  }
+}

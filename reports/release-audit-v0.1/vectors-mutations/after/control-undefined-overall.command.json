@@ -1,0 +1,15 @@
+{
+  "label": "control-undefined-overall",
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc5",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:59:38.795Z",
+  "ended": "2026-10-11T18:59:41.124Z",
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "audit-undefined-overall: INVALID_OUTPUT\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

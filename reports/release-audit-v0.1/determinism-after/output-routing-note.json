@@ -1,0 +1,4 @@
+{
+  "issue": "Initial after determinism harness retained before output directory; manifest QA detected only results.json overwrite.",
+  "correction": "Restored exact frozen results.json from findings commit7976d3b; moved new repaired-prefixed outputs to after directory; reran correct harness; no product or frozen candidate source affected."
+}

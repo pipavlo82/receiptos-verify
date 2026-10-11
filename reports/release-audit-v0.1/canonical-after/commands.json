@@ -1,0 +1,173 @@
+[
+  {
+    "label": "install",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "C:\\Program Files\\nodejs\\npm.cmd",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--cache",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a\\reports\\tmp\\empty-install-cache"
+    ],
+    "started_utc": "2026-10-11T19:03:38.605007+00:00",
+    "exit": 0,
+    "stdout_sha256": "f64d12141740b4abbdbf1a342d72e546bfdcd4030f0d7ed7aefc370b2a5f15ac",
+    "stderr_sha256": "1f4f72b910e27e2bd29eea9a14a36c68da2229f4dfd05538d607a0754fcbab12"
+  },
+  {
+    "label": "initial-source-lock",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "node",
+      "tools/check-sources.mjs"
+    ],
+    "started_utc": "2026-10-11T19:03:40.239242+00:00",
+    "exit": 0,
+    "stdout_sha256": "263394d48a024a7fc088faff084753ca2cfe4875406fdce210d46df5540eedb9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "initial-diff-check",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "started_utc": "2026-10-11T19:03:40.429880+00:00",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "dependency-resolution",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "node",
+      "--input-type=module",
+      "-e",
+      "console.log(import.meta.resolve('ajv')); console.log(import.meta.resolve('@noble/curves/secp256k1.js')); "
+    ],
+    "started_utc": "2026-10-11T19:03:40.572271+00:00",
+    "exit": 0,
+    "stdout_sha256": "4d0c0196a575c3a0f3b05eac0722959df4b9c86e9f6e714f9604bad0569201bd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "dependency-tree",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "C:\\Program Files\\nodejs\\npm.cmd",
+      "ls",
+      "--all",
+      "--json"
+    ],
+    "started_utc": "2026-10-11T19:03:40.635649+00:00",
+    "exit": 0,
+    "stdout_sha256": "5eb1aafb026b733001bc54f809f6d1d2be2506081bd327b206fc788f8b0f5aa2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "tests",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "C:\\Program Files\\nodejs\\npm.cmd",
+      "test"
+    ],
+    "started_utc": "2026-10-11T19:03:41.508377+00:00",
+    "exit": 0,
+    "stdout_sha256": "db13ecdf90c71b52c76227ca46c095967620bad75f4f8aee51454d538b27ead2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "vectors",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "C:\\Program Files\\nodejs\\npm.cmd",
+      "run",
+      "vectors"
+    ],
+    "started_utc": "2026-10-11T19:04:02.155396+00:00",
+    "exit": 0,
+    "stdout_sha256": "9827e90966d85455d725d9596b3ff1fd37205ad82b257193cd7a5c34e220cf97",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "mutations",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "C:\\Program Files\\nodejs\\npm.cmd",
+      "run",
+      "mutations"
+    ],
+    "started_utc": "2026-10-11T19:04:14.434856+00:00",
+    "exit": 0,
+    "stdout_sha256": "1540256d8d175dd41a42c811ccbac4595d164422221517b1d14ce2b29011f3e8",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "cli-demo",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "node",
+      "src/cli.mjs",
+      "demo"
+    ],
+    "started_utc": "2026-10-11T19:04:44.352668+00:00",
+    "exit": 0,
+    "stdout_sha256": "bea2c94bf23f899c287ba4d9e4feeb7a0627ccae2fdfb1f9947b284e2079ce99",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "capsule-demo",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "node",
+      "tools/write-demo.mjs"
+    ],
+    "started_utc": "2026-10-11T19:04:45.442171+00:00",
+    "exit": 0,
+    "stdout_sha256": "164ceb752232fe0e9c5dc3fdf0d553ffdf123891c0e83daadd224808d1a5fc38",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "local-reproduction",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "node",
+      "tools/reproduce.mjs",
+      "V02"
+    ],
+    "started_utc": "2026-10-11T19:04:47.787145+00:00",
+    "exit": 0,
+    "stdout_sha256": "f65b39e42b11afac36d38c4ba9a2dde8c36e19e5f00d5d7bf1ab555c5f12efae",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "final-source-lock",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "node",
+      "tools/check-sources.mjs"
+    ],
+    "started_utc": "2026-10-11T19:04:49.700509+00:00",
+    "exit": 0,
+    "stdout_sha256": "263394d48a024a7fc088faff084753ca2cfe4875406fdce210d46df5540eedb9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "final-diff-check",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "started_utc": "2026-10-11T19:04:49.918412+00:00",
+    "exit": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

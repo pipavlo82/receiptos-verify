@@ -1,0 +1,74 @@
+{
+  "schema": "receiptos.release.documentation-provenance-postfix-check.v1",
+  "observedAt": "2026-10-11T19:00:21.213093+00:00",
+  "sourceCount": 74,
+  "repositoryCount": 43,
+  "ownedRepositoryCount": 20,
+  "implementedSliceCount": 21,
+  "declaredImplementedSliceCount": 21,
+  "sourceIdentityRightsOrHistoricalEvidenceChanges": [],
+  "missingAuthorshipRefs": [],
+  "missingProductFiles": [],
+  "copiedNativeFiles": 77,
+  "copiedNativeMismatches": [],
+  "originalSavedObservationsUnchanged": true,
+  "originalReportAndSourceLockChecks": [
+    {
+      "path": "reports/tests.tap",
+      "matchesFrozenBytes": true,
+      "sha256": "25428848ada548c9f88d82f4310d5abf2d341d24ec17f8bbf960350521f8ebf7"
+    },
+    {
+      "path": "reports/vectors.json",
+      "matchesFrozenBytes": true,
+      "sha256": "280ca36b94d0d87693468d8ca7c5fc42e2d544072fe47108cbf612cd7a2898d4"
+    },
+    {
+      "path": "reports/mutations.json",
+      "matchesFrozenBytes": true,
+      "sha256": "40db4483e73b152e0a60d6d0f097c85e6fb71aa7a47dce509baa26b81d20ba58"
+    },
+    {
+      "path": "reports/mutations-initial.json",
+      "matchesFrozenBytes": true,
+      "sha256": "eb841c984934cc5dc83ffdad3dab0ade2c0b84097d2c95e2ff8f3c813f4bb518"
+    },
+    {
+      "path": "reports/tests-concurrent-observation.tap",
+      "matchesFrozenBytes": true,
+      "sha256": "b7a254486b797fc4c7a94f7551a57b6e8f71f22f7406b0f10c363e732c1849f3"
+    },
+    {
+      "path": "source-lock.json",
+      "matchesFrozenBytes": true,
+      "sha256": "366dba85cdee7e62aef7f9f159c47ce2923c53599e6781f77b19baccb0cdd69c"
+    }
+  ],
+  "chronicleRoots": {
+    "implemented": false,
+    "used": false,
+    "productFiles": [],
+    "relatedImplementedSlice": "CHRONICLE-ADMISSION",
+    "repositoryImplementedSlices": [
+      "CHRONICLE-ADMISSION"
+    ],
+    "sourceEvidenceClass": "INDEPENDENTLY_VERIFIED_EXACT_SOURCE_BYTES_AND_LIVE_PR_STATE; PINNED_REFERENCE_NOT_IMPLEMENTED"
+  },
+  "releaseCapabilityClassification": {
+    "report": "RELEASE_AUDIT_v0.1.md",
+    "frozenCandidateCommit": "33d8ee47ad733f1198f2b2fb8d171b31c7b10678",
+    "registeredSurfaces": 12,
+    "boundedExecutableSurfaces": 11,
+    "ledgerInterfaceSurfaces": 1,
+    "capabilityMaturity": {
+      "STABLE": 2,
+      "EXPERIMENTAL": 9,
+      "HISTORICAL": 0,
+      "INTERFACE_ONLY": 1
+    },
+    "descriptorMaturityBoundary": "Raw descriptors remain 2 STABLE and 10 EXPERIMENTAL; Ledger is classified INTERFACE_ONLY for actual capability maturity.",
+    "correctedImplementedSlices": 21,
+    "historicalReportsFrozen": true
+  },
+  "releaseAuditLinkPendingRootReport": true
+}

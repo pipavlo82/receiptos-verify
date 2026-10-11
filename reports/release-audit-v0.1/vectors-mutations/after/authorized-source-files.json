@@ -1,0 +1,26 @@
+[
+  {
+    "path": "tools/corpus.mjs",
+    "bytes": 4920,
+    "sha256": "2065b1ff7a8f8322d391c4ec605a28e454758e561b634e0d28f4beb01fe3c8c8",
+    "LF_only": true
+  },
+  {
+    "path": "tools/run-mutations.mjs",
+    "bytes": 2977,
+    "sha256": "7445ff8602f239c69b0c9338a1f4ad877cc8e81add4547a74ea7304525a1b2a3",
+    "LF_only": true
+  },
+  {
+    "path": "mutations/catalog.mjs",
+    "bytes": 3113,
+    "sha256": "0a690689482ae34d31e43cb475b74a3aa40e3da3ceb4fcf3e15bdff0c2b56e7d",
+    "LF_only": true
+  },
+  {
+    "path": "tests/mutation-runner.test.mjs",
+    "bytes": 3316,
+    "sha256": "aeb4ab6f8f1ca6bb99469b684af759172b2eb8dee7d93daf982ab587f4ed3f33",
+    "LF_only": true
+  }
+]

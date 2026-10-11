@@ -1,0 +1,351 @@
+[
+  {
+    "id": "ignore-requested-subject",
+    "file": "src/core/subject.mjs",
+    "witness": "V04",
+    "positive": "V01",
+    "changes": [
+      [
+        "!equal(request.subject[field],statement.subject[field])",
+        "false"
+      ]
+    ],
+    "original_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+    "mutant_sha256": "1398526966a987d16ef87f2873d957201b5d44b034c0f7d632b445dade02632b",
+    "locations": [
+      {
+        "from": "!equal(request.subject[field],statement.subject[field])",
+        "to": "false",
+        "occurrences": 1,
+        "line": 6
+      }
+    ]
+  },
+  {
+    "id": "compare-receipt-to-itself",
+    "file": "src/core/subject.mjs",
+    "witness": "V04",
+    "positive": "V01",
+    "changes": [
+      [
+        "!equal(request.subject[field],statement.subject[field])",
+        "!equal(statement.subject[field],statement.subject[field])"
+      ]
+    ],
+    "original_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+    "mutant_sha256": "891570c2cf39dc4e7ac7ebe2de9fb2eec127506d80dc2887141e8d7ea89bfb1b",
+    "locations": [
+      {
+        "from": "!equal(request.subject[field],statement.subject[field])",
+        "to": "!equal(statement.subject[field],statement.subject[field])",
+        "occurrences": 1,
+        "line": 6
+      }
+    ]
+  },
+  {
+    "id": "accept-any-valid-signature",
+    "file": "src/adapters/interpoll.mjs",
+    "witness": "V25",
+    "positive": "V13",
+    "changes": [
+      [
+        "Object.entries(expected).some(([k,v])=>a[k]!==v)",
+        "false"
+      ]
+    ],
+    "original_sha256": "9082fd5af370ff23ca4cb49384596e83f0cc6276d7c1acb10ea0d1f8a0ae2e78",
+    "mutant_sha256": "11b5888be186c7b827322c76f97e202ed3a3ed8239fd65f7eea2abd36b2f3cb6",
+    "locations": [
+      {
+        "from": "Object.entries(expected).some(([k,v])=>a[k]!==v)",
+        "to": "false",
+        "occurrences": 1,
+        "line": 14
+      }
+    ]
+  },
+  {
+    "id": "promote-reproduced-to-verified",
+    "file": "src/projection/project.mjs",
+    "witness": "V07",
+    "positive": "V01",
+    "changes": [
+      [
+        "layers.RECOMPUTATION?.semanticOutcome==='REFUTED'",
+        "false"
+      ],
+      [
+        "||layers.RECOMPUTATION?.semanticOutcome!=='VERIFIED'",
+        ""
+      ]
+    ],
+    "original_sha256": "982672ef07a4d8fdd06d3287764444f4a5c45fdcdc42b39b1547845ad73528f2",
+    "mutant_sha256": "0fb14ad73ac56c9a3ff0fb88a9b2492364d52e91014cd004271e61228df7512b",
+    "locations": [
+      {
+        "from": "layers.RECOMPUTATION?.semanticOutcome==='REFUTED'",
+        "to": "false",
+        "occurrences": 1,
+        "line": 23
+      },
+      {
+        "from": "||layers.RECOMPUTATION?.semanticOutcome!=='VERIFIED'",
+        "to": "",
+        "occurrences": 1,
+        "line": 30
+      }
+    ]
+  },
+  {
+    "id": "accept-empty-evidence",
+    "file": "src/core/evidence.mjs",
+    "witness": "V06",
+    "positive": "V01",
+    "changes": [
+      [
+        "const roles=['artifact','git-commit','git-tree','native-result'];",
+        "if(inspected.manifest.length===0) return result('SUFFICIENT');\n  const roles=['artifact','git-commit','git-tree','native-result'];"
+      ]
+    ],
+    "original_sha256": "39bf984a51d95127b58e65d23297d7b0ac24f82944c9770a7bee3a046e15a5ae",
+    "mutant_sha256": "98bd0ab41aa83ac499d7045f22291ccbe27068c74252d7113d3c8b30f95f10b6",
+    "locations": [
+      {
+        "from": "const roles=['artifact','git-commit','git-tree','native-result'];",
+        "to": "if(inspected.manifest.length===0) return result('SUFFICIENT');\n  const roles=['artifact','git-commit','git-tree','native-result'];",
+        "occurrences": 1,
+        "line": 36
+      }
+    ]
+  },
+  {
+    "id": "count-crash-as-semantic-refutation",
+    "file": "src/projection/project.mjs",
+    "witness": "V08",
+    "positive": "V01",
+    "fault": "crash-rvr",
+    "changes": [
+      [
+        "return result('CANNOT_RECOMPUTE',reasons); // MUTATE: crash-kill",
+        "return result('CONTRADICTED',reasons); // MUTATE: crash-kill"
+      ]
+    ],
+    "original_sha256": "982672ef07a4d8fdd06d3287764444f4a5c45fdcdc42b39b1547845ad73528f2",
+    "mutant_sha256": "93b01b6b28d828dcf51ecd921bdaa547021944b3287d50ed707bfd74f1bece6c",
+    "locations": [
+      {
+        "from": "return result('CANNOT_RECOMPUTE',reasons); // MUTATE: crash-kill",
+        "to": "return result('CONTRADICTED',reasons); // MUTATE: crash-kill",
+        "occurrences": 1,
+        "line": 27
+      }
+    ]
+  },
+  {
+    "id": "package-presence-as-pass",
+    "file": "src/adapters/recompute_kit.mjs",
+    "witness": "V09",
+    "positive": "V01",
+    "changes": [
+      [
+        "||report.executed!==true",
+        ""
+      ]
+    ],
+    "original_sha256": "c18fca1f33d5f9711b9b3453498c1486bf9f42866fe59614465364533ca2dfb6",
+    "mutant_sha256": "2a5fe6b0f3d62064898c4e542ce3b8441116999ef214bdfcea92bbf7e9736e11",
+    "locations": [
+      {
+        "from": "||report.executed!==true",
+        "to": "",
+        "occurrences": 1,
+        "line": 6
+      }
+    ]
+  },
+  {
+    "id": "ignore-policy-version",
+    "file": "src/core/subject.mjs",
+    "witness": "V22",
+    "positive": "V01",
+    "changes": [
+      [
+        "request.policy.id !== statement.policy.id || request.policy.version !== statement.policy.version || digest(request.policy) !== statement.policy.digest",
+        "false"
+      ]
+    ],
+    "original_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+    "mutant_sha256": "0ae0bbf8e97ecff0cc8bfe6406b9f9b025f9a1cae625bade6229fcc32822e0b2",
+    "locations": [
+      {
+        "from": "request.policy.id !== statement.policy.id || request.policy.version !== statement.policy.version || digest(request.policy) !== statement.policy.digest",
+        "to": "false",
+        "occurrences": 1,
+        "line": 9
+      }
+    ]
+  },
+  {
+    "id": "ignore-guarantee-dependency",
+    "file": "src/adapters/prf.mjs",
+    "witness": "V11",
+    "positive": "V12",
+    "changes": [
+      [
+        "if (list(source.dependencies)) for",
+        "if (false) for"
+      ],
+      [
+        "for (const dependency of new Set([...source.dependencies, ...request.dependencies]))",
+        "for (const dependency of [])"
+      ],
+      [
+        "!eq([...source.dependencies].sort(), [...request.dependencies].sort()) || !eq([...target.dependencies].sort(), [...request.dependencies].sort())",
+        "false"
+      ]
+    ],
+    "original_sha256": "e6d1b5cfd558a4f23cb4e2d7b6dac11961d4b1c502feaad68d8c65f009f77d2e",
+    "mutant_sha256": "9910806cd6f42868ad1c70e07946aec33179cf389c07448d001091d81d7dff76",
+    "locations": [
+      {
+        "from": "if (list(source.dependencies)) for",
+        "to": "if (false) for",
+        "occurrences": 1,
+        "line": 53
+      },
+      {
+        "from": "for (const dependency of new Set([...source.dependencies, ...request.dependencies]))",
+        "to": "for (const dependency of [])",
+        "occurrences": 1,
+        "line": 86
+      },
+      {
+        "from": "!eq([...source.dependencies].sort(), [...request.dependencies].sort()) || !eq([...target.dependencies].sort(), [...request.dependencies].sort())",
+        "to": "false",
+        "occurrences": 1,
+        "line": 65
+      }
+    ]
+  },
+  {
+    "id": "ignore-retry-action-change",
+    "file": "src/adapters/interpoll.mjs",
+    "witness": "V14",
+    "positive": "V13",
+    "changes": [
+      [
+        "if(!exact)",
+        "if(false)"
+      ]
+    ],
+    "original_sha256": "9082fd5af370ff23ca4cb49384596e83f0cc6276d7c1acb10ea0d1f8a0ae2e78",
+    "mutant_sha256": "ab14c8d77b496b547735d535bebb4ff4fba323f0439d3050add3102617fbee39",
+    "locations": [
+      {
+        "from": "if(!exact)",
+        "to": "if(false)",
+        "occurrences": 1,
+        "line": 23
+      }
+    ]
+  },
+  {
+    "id": "ignore-evidence-grade",
+    "file": "src/adapters/recompute_kit.mjs",
+    "witness": "V24",
+    "positive": "V01",
+    "changes": [
+      [
+        "report.evidence_grade!=='LOCAL_RECOMPUTATION'",
+        "false"
+      ]
+    ],
+    "original_sha256": "c18fca1f33d5f9711b9b3453498c1486bf9f42866fe59614465364533ca2dfb6",
+    "mutant_sha256": "ca04f3f497b10139b053ff04e095ee21c0f9fbbc512e0fdd80add296531e0784",
+    "locations": [
+      {
+        "from": "report.evidence_grade!=='LOCAL_RECOMPUTATION'",
+        "to": "false",
+        "occurrences": 1,
+        "line": 8
+      }
+    ]
+  },
+  {
+    "id": "ignore-authority",
+    "file": "src/adapters/semantic_abi.mjs",
+    "witness": "V19",
+    "positive": "V01",
+    "changes": [
+      [
+        "established.authority_class !== required.authority_class && !exactRecomputation",
+        "false"
+      ],
+      [
+        "context.authority_class !== established.authority_class",
+        "false"
+      ]
+    ],
+    "original_sha256": "24788d7a6e330e2f5cfcd5f59831430ccb0100472c9a068d2eb2b44566d470af",
+    "mutant_sha256": "8086e2a08f58da91a41c2ac2fe547757ee4188190949013eea09d4a189c1b7b8",
+    "locations": [
+      {
+        "from": "established.authority_class !== required.authority_class && !exactRecomputation",
+        "to": "false",
+        "occurrences": 1,
+        "line": 64
+      },
+      {
+        "from": "context.authority_class !== established.authority_class",
+        "to": "false",
+        "occurrences": 1,
+        "line": 66
+      }
+    ]
+  },
+  {
+    "id": "ignore-commit",
+    "file": "src/core/subject.mjs",
+    "witness": "V02",
+    "positive": "V01",
+    "changes": [
+      [
+        "'artifact_digest','commit','tree'",
+        "'artifact_digest','tree'"
+      ]
+    ],
+    "original_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+    "mutant_sha256": "2cd6e9e2c56c28da86d2425359dfa2f8e5a8faf36fa45c1b5b2e083a44e45945",
+    "locations": [
+      {
+        "from": "'artifact_digest','commit','tree'",
+        "to": "'artifact_digest','tree'",
+        "occurrences": 1,
+        "line": 4
+      }
+    ]
+  },
+  {
+    "id": "ignore-canonicalization-profile",
+    "file": "src/core/verify.mjs",
+    "witness": "V23",
+    "positive": "V01",
+    "changes": [
+      [
+        "bundle.canonicalization_profile!==CANON",
+        "false"
+      ]
+    ],
+    "original_sha256": "98e67a46d0c01ea854304add24e6b828b490b6b0efd789a529738ccce658689b",
+    "mutant_sha256": "c16615542e711a4c8d465070de7cfc905c6dca51b39f01d166b4c193af3a9097",
+    "locations": [
+      {
+        "from": "bundle.canonicalization_profile!==CANON",
+        "to": "false",
+        "occurrences": 1,
+        "line": 71
+      }
+    ]
+  }
+]

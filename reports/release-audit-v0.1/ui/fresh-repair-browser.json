@@ -1,0 +1,10 @@
+{
+  "commit": "b893eeb1b22eada6431d7b2e819439e9f4f67414",
+  "origin": "http://127.0.0.1:8821/",
+  "cwd": "reports/tmp/release-rc-audit/repaired-a",
+  "signedFAIL": {
+    "className": "verdict bad",
+    "explanation": "CONTRADICTED. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, ASSERTED_NATIVE_RESULT_CONTRADICTION, SEMANTIC_REQUIREMENT_ESTABLISHED",
+    "overall": "CONTRADICTED"
+  }
+}

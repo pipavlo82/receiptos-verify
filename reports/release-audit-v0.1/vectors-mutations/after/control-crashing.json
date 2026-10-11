@@ -1,0 +1,38 @@
+{
+  "name": "crashing",
+  "expected_safety_behavior": "CRASHED",
+  "exit": 1,
+  "report": {
+    "schema": "receiptos.verify.mutation-report.v1",
+    "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.",
+    "count": 1,
+    "counts": {
+      "KILLED": 0,
+      "SURVIVED": 0,
+      "CRASHED": 1,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    },
+    "rows": [
+      {
+        "id": "audit-crashing",
+        "source_file": "src/core/subject.mjs",
+        "original_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+        "mutant_sha256": "79451e730911a20dbfee854df4520eb22ff029e5356a42bf491b785cab6540ba",
+        "applied": true,
+        "positive": "V01",
+        "witness": "V04",
+        "baseline_controls_valid": true,
+        "positive_process_status": "COMPLETED",
+        "positive_preserved": true,
+        "witness_process_status": "CRASH",
+        "baseline_projection": "CONTRADICTED",
+        "mutant_projection": null,
+        "witness_reasons": [],
+        "status": "CRASHED"
+      }
+    ]
+  }
+}

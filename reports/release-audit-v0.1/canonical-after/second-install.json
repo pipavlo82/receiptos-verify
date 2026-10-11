@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "C:\\Program Files\\nodejs\\npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-b\\reports\\tmp\\second-empty-cache"
+  ],
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-b",
+  "exit": 0,
+  "initial_status_empty": true
+}

@@ -1,0 +1,794 @@
+{
+  "request": {
+    "schema": "receiptos.verify.request.v1",
+    "verification_profile": "receiptos.verify.git-artifact.v1",
+    "claim": {
+      "kind": "SHA256_EQUALS",
+      "expected_digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+    },
+    "subject": {
+      "kind": "git-artifact",
+      "id": "audit-A",
+      "artifact_digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+      "commit": "0ba671fd30b51139593a081205f3ecd762022890",
+      "tree": "419432cf3165922eda3d6954176e4c101aee39e4",
+      "artifact_path": "artifact.txt",
+      "version": "audit.v1"
+    },
+    "policy": {
+      "id": "audit-policy",
+      "version": "audit.v1",
+      "trusted_keys": [
+        {
+          "id": "audit-ed25519",
+          "spki_base64": "MCowBQYDK2VwAyEAJMITsbLpNfg2YNwYuQ8LaWRrlkweUCZHr5HcoXC59GU="
+        }
+      ],
+      "required_layers": [],
+      "minimum_grade": "LOCAL_RECOMPUTATION",
+      "verification_time": 1791676800
+    },
+    "evidence": [],
+    "semantic_requirement": {
+      "claim_type": "SHA256_EQUALS",
+      "authority_class": "INDEPENDENT_RECOMPUTATION",
+      "subject": "audit-A",
+      "scope": "artifact.txt",
+      "valid_after": 0,
+      "valid_until": 2000000000,
+      "assumptions": [],
+      "evidence_requirements": [
+        "artifact",
+        "execution"
+      ]
+    },
+    "requested_guarantees": []
+  },
+  "bundle": {
+    "schema": "receiptos.verify.bundle.v1",
+    "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+    "statement": {
+      "schema": "receiptos.verify.statement.v1",
+      "verification_profile": "receiptos.verify.git-artifact.v1",
+      "subject": {
+        "kind": "git-artifact",
+        "id": "audit-A",
+        "artifact_digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+        "commit": "0ba671fd30b51139593a081205f3ecd762022890",
+        "tree": "419432cf3165922eda3d6954176e4c101aee39e4",
+        "artifact_path": "artifact.txt",
+        "version": "audit.v1"
+      },
+      "claim": {
+        "kind": "SHA256_EQUALS",
+        "expected_digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+      },
+      "policy": {
+        "id": "audit-policy",
+        "version": "audit.v1",
+        "digest": "52c17f4310a99cbd0abb8f9ed7c6e224f472190703f48a7052d647ba227cef2c"
+      },
+      "semantic_contract": {
+        "claim_type": "SHA256_EQUALS",
+        "authority_class": "INDEPENDENT_RECOMPUTATION",
+        "subject": "audit-A",
+        "scope": "artifact.txt",
+        "valid_after": 0,
+        "valid_until": 2000000000,
+        "assumptions": [],
+        "evidence_requirements": [
+          "artifact",
+          "execution"
+        ]
+      },
+      "asserted_result": "PASS",
+      "evidence_manifest": [
+        {
+          "id": "artifact",
+          "role": "artifact",
+          "digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+          "size": 19
+        },
+        {
+          "id": "commit",
+          "role": "git-commit",
+          "digest": "707ef0bfc09ef197de91fd5d918c09dcb5a09be4df129a5e939221a4966f92fa",
+          "size": 200
+        },
+        {
+          "id": "tree",
+          "role": "git-tree",
+          "digest": "cdac6581b84bed0ab47586b3281b1eb56f34ebfe6c930f785d6429acf123501e",
+          "size": 40
+        },
+        {
+          "id": "result",
+          "role": "native-result",
+          "digest": "a3e91a8771312253fe02762ae7bdaba4fba3b1e477e31164a992b0caeaee9c32",
+          "size": 331
+        }
+      ],
+      "payload_digest": "38719519f62160433f9a1044488aca3cbc8022fe8a48123ca8b359356a5c60ef",
+      "crypto": {
+        "provider": "ed25519",
+        "key_id": "audit-ed25519"
+      }
+    },
+    "signature_base64": "6tN8eXjXE9v9GR2yzVG5AanW+pIQMBj0Cq/xjoa74ZqxxaPTNKzRHU7xZeg7FS82MT9RSQp/yBY0WyoLy0XuCQ==",
+    "evidence": [
+      {
+        "id": "artifact",
+        "bytes_base64": "QXVkaXQgb3duIGFydGlmYWN0Cg=="
+      },
+      {
+        "id": "commit",
+        "bytes_base64": "dHJlZSA0MTk0MzJjZjMxNjU5MjJlZGEzZDY5NTQxNzZlNGMxMDFhZWUzOWU0CmF1dGhvciBSZWxlYXNlIEF1ZGl0b3IgPHN5bnRoZXRpY0BleGFtcGxlLmludmFsaWQ+IDE3OTE2NzY4MDAgKzAwMDAKY29tbWl0dGVyIFJlbGVhc2UgQXVkaXRvciA8c3ludGhldGljQGV4YW1wbGUuaW52YWxpZD4gMTc5MTY3NjgwMCArMDAwMAoKSW5kZXBlbmRlbnQgQQo="
+      },
+      {
+        "id": "tree",
+        "bytes_base64": "MTAwNjQ0IGFydGlmYWN0LnR4dACLzqBarTY0Fs/NCoMeSUK3ovQ1uw=="
+      },
+      {
+        "id": "result",
+        "bytes_base64": "eyJldmFsdWF0aW9uIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6IjgwMGFmOGVkYzA3MTFmYmNmMDA1MmIzYjk1YmY3NGMxM2E0ZDEwNTZkMWMwYmU0NGYzMDEyZDVlZDM2ZjliMDIiLCJvYnNlcnZlZERpZ2VzdCI6IjgwMGFmOGVkYzA3MTFmYmNmMDA1MmIzYjk1YmY3NGMxM2E0ZDEwNTZkMWMwYmU0NGYzMDEyZDVlZDM2ZjliMDIiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIn0sIm91dGNvbWUiOiJWRVJJRklFRCIsInJlYXNvbkNvZGUiOiJydnIudjAuZGlnZXN0X21hdGNoIiwic2NoZW1hIjoicnZyLmNhbm9uaWNhbC1yZXN1bHQudjAifQ=="
+      }
+    ],
+    "payload": {
+      "crystal": {
+        "schema": "stealth.session.evidence.v1",
+        "session_id": "independent-release-audit",
+        "directory": "audit/synthetic",
+        "task": {
+          "title": "Independent artifact audit"
+        },
+        "agent": {
+          "id": "audit",
+          "runtime": "local"
+        },
+        "scope": {
+          "permission": null
+        },
+        "execution": [],
+        "commands": [],
+        "changes": {
+          "files_changed": [],
+          "diff_sha256": null
+        },
+        "metadata": {
+          "generated_by": "independent-auditor"
+        },
+        "anchor": {
+          "receipt_root": "0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65",
+          "network": "local/off-chain",
+          "onchain_anchor_status": "not anchored"
+        }
+      },
+      "rvr": {
+        "originalBundle": {
+          "receipt": {
+            "claimDigest": "b4d8a441d5561988e38c3ce8427bf6485e9172b41d016d5d5f1f8459313b778b",
+            "evidenceSetDigest": "8692aa512bbef79f4821880523d9f2a6875ae87db24f61c277097096d2df3c23",
+            "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+            "outcome": "VERIFIED",
+            "reasonCode": "rvr.v0.digest_match",
+            "resultDigest": "a3e91a8771312253fe02762ae7bdaba4fba3b1e477e31164a992b0caeaee9c32"
+          },
+          "claim": {
+            "schema": "rvr.claim.sha256-equals.v0",
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+          },
+          "evidenceSet": {
+            "schema": "rvr.evidence-set.v0",
+            "members": [
+              {
+                "id": "artifact",
+                "status": "PRESENT",
+                "mediaType": "application/octet-stream",
+                "byteLength": "19",
+                "digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+              }
+            ]
+          },
+          "payloadsBase64": {
+            "artifact": "QXVkaXQgb3duIGFydGlmYWN0Cg=="
+          },
+          "verificationProfile": {
+            "schema": "rvr.verification-profile.v0",
+            "profileId": "rvr-generic-sha256-equals-v0",
+            "profileSchemaContract": {
+              "manifest": {
+                "id": "verification-profile-manifest-schema",
+                "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+                "sha256": "148afeb484d3866c1caae82e574182c1b748dd461dfaeb1d8095ecf4905690c1",
+                "requiredForRecomputation": true
+              },
+              "constraints": {
+                "id": "rvr-generic-sha256-equals-profile-schema",
+                "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+                "sha256": "ecded96c5f58f7057e2c5c0b6d9789942a9a7bf600f4a453387e99f8406e7baf",
+                "requiredForRecomputation": true
+              }
+            },
+            "dependencyResolution": {
+              "base": "SUPPLIED_PROFILE_PACKAGE_ROOT",
+              "pathFormat": "relative-posix-no-empty-dot-dotdot-or-colon-segments",
+              "locatorRole": "NORMATIVE_PACKAGE_RELATIVE_PATH",
+              "verificationOrder": "resolve-read-sha256-match-use"
+            },
+            "verificationSpecification": {
+              "id": "verification-specification",
+              "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+              "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+              "requiredForRecomputation": true
+            },
+            "conformanceVectorSet": {
+              "id": "rvr-v0-first-falsification-set",
+              "members": [
+                {
+                  "id": "expected-results",
+                  "path": "conformance/rvr-v0/expected.json",
+                  "sha256": "0ed23ee3530df93dde2f879981d28ddb3f60fc250c8652d109dd65fdb22193ce",
+                  "requiredForRecomputation": false
+                },
+                {
+                  "id": "adversarial-mutants",
+                  "path": "conformance/rvr-v0/mutants.json",
+                  "sha256": "d5d16cc53ec0d9be53968d7ffc01fe019cb8b2630390c04431f6ee9f54edf847",
+                  "requiredForRecomputation": false
+                },
+                {
+                  "id": "verification-vectors",
+                  "path": "conformance/rvr-v0/vectors.json",
+                  "sha256": "170fc62576fa8edb22073f73b28d9ac0deff26451ef651378839cd458da7312f",
+                  "requiredForRecomputation": false
+                }
+              ],
+              "digest": "2eb5e0c056d13c4beda4b3da6fafdcd34a6bd96479030e3914a79d08679c0687",
+              "digestRule": "sha256-utf8-sorted-path-tab-file-sha256-lf-rows"
+            },
+            "canonicalByteContract": {
+              "id": "rvr-canonical-json-v0",
+              "encoding": "UTF-8",
+              "domain": "null-boolean-unicode-scalar-string-array-object",
+              "objectKeyOrder": "unicode-scalar-value-ascending",
+              "arrayOrder": "preserved-with-duplicates",
+              "unicode": "scalar-values-only-no-normalization",
+              "numbers": "forbidden",
+              "stringEscaping": "rvr-json-string-escaping-v0",
+              "solidus": "literal",
+              "lineSeparators": "U+2028-and-U+2029-literal",
+              "whitespace": "none"
+            },
+            "schemaContracts": [
+              {
+                "id": "rvr-schema",
+                "path": "conformance/rvr-v0/rvr.schema.json",
+                "sha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+                "requiredForRecomputation": true
+              }
+            ],
+            "evidenceSetContract": {
+              "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+              "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+              "schemaPointer": "#/$defs/evidenceSet",
+              "digestRule": "sha256-utf8-rvr-canonical-json-v0-normalized-member-order"
+            },
+            "canonicalResultContract": {
+              "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+              "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+              "schemaPointer": "#/$defs/canonicalResult",
+              "outcomeProjection": "/outcome",
+              "reasonCodeProjection": "/reasonCode"
+            },
+            "resultHashRules": {
+              "algorithm": "SHA-256",
+              "input": "rvr-canonical-json-v0(canonicalResult)",
+              "encoding": "UTF-8-exactly-once",
+              "output": "lowercase-hex-no-prefix"
+            },
+            "reasonCodeNamespace": {
+              "verification": [
+                "rvr.v0.digest_match",
+                "rvr.v0.digest_mismatch",
+                "rvr.v0.required_evidence_unavailable"
+              ],
+              "recomputation": [
+                "rvr.recompute.identical",
+                "rvr.recompute.canonical_result_diverged",
+                "rvr.recompute.normative_dependency_unavailable",
+                "rvr.recompute.normative_dependency_identity_mismatch",
+                "rvr.recompute.committed_evidence_unavailable"
+              ],
+              "gateRejections": [
+                "rvr.gate.schema_invalid",
+                "rvr.gate.identity_mismatch",
+                "rvr.gate.result_projection_mismatch",
+                "rvr.gate.evidence_closure_incomplete"
+              ]
+            },
+            "externalContextPolicy": {
+              "mode": "FORBIDDEN_UNLESS_COMMITTED",
+              "ambientInputs": "FORBIDDEN",
+              "immutableCommitments": []
+            }
+          },
+          "canonicalResult": {
+            "schema": "rvr.canonical-result.v0",
+            "outcome": "VERIFIED",
+            "reasonCode": "rvr.v0.digest_match",
+            "evaluation": {
+              "operation": "SHA256_EQUALS",
+              "evidenceMember": "artifact",
+              "expectedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+              "observedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+            }
+          }
+        },
+        "candidateCase": {
+          "claim": {
+            "schema": "rvr.claim.sha256-equals.v0",
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+          },
+          "evidenceSet": {
+            "schema": "rvr.evidence-set.v0",
+            "members": [
+              {
+                "id": "artifact",
+                "status": "PRESENT",
+                "mediaType": "application/octet-stream",
+                "byteLength": "19",
+                "digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+              }
+            ]
+          },
+          "payloadsBase64": {
+            "artifact": "QXVkaXQgb3duIGFydGlmYWN0Cg=="
+          }
+        }
+      },
+      "relations": {
+        "guarantee": null,
+        "continuity": null,
+        "domain": null,
+        "execution": {
+          "package_present": true,
+          "runner_declared": true,
+          "executed": true,
+          "subject_digest": "4346603703407f69991d4a556c38f10cabbf409efefb1af0371e9662505d2b1b",
+          "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+          "evidence_grade": "LOCAL_RECOMPUTATION"
+        }
+      }
+    }
+  },
+  "report": {
+    "schema": "receiptos.verify.report.v1",
+    "projection_version": "receiptos.verify.projection.v1",
+    "overall": "VERIFIED",
+    "reason_codes": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "SEMANTIC_REQUIREMENT_ESTABLISHED"
+    ],
+    "explanation": "VERIFIED. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED",
+    "required_layers": [
+      "INTEGRITY",
+      "AUTHENTICITY",
+      "SUBJECT_BINDING",
+      "RECOMPUTATION",
+      "EVIDENCE_SUFFICIENCY",
+      "SEMANTIC_COMPATIBILITY"
+    ],
+    "layers": {
+      "INPUT": {
+        "status": "ADMITTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CANONICALIZATION": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "profile": "receiptos.verify.canonical-json.v1",
+          "statement_digest": "69f3b9b6966b3dc1590db68e27b7115f0ba4b1352431e445caa1b04e99dafd2a"
+        }
+      },
+      "INTEGRITY": {
+        "status": "VERIFIED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH"
+        ],
+        "nativeResult": {
+          "ok": true,
+          "receipt_root": "0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65",
+          "recomputed_root": "0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65"
+        },
+        "limitations": [
+          "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+          "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+          "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+        ],
+        "provenance": {
+          "profileId": "crystal.handoff-receipt-root.v1",
+          "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+          "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "license": "Apache-2.0",
+          "maturity": "STABLE",
+          "capabilities": [
+            "NATIVE_RECEIPT_ROOT_INTEGRITY"
+          ],
+          "requiredEvidence": [
+            "native-crystal-evidence"
+          ],
+          "nativeVocabulary": {
+            "integrity": [
+              "ok:true",
+              "ok:false"
+            ],
+            "fields": [
+              "ok",
+              "receipt_root",
+              "recomputed_root"
+            ]
+          },
+          "runtime": "Bun 1.3.14",
+          "functions": [
+            "verifyHandoffReceiptRoot"
+          ]
+        },
+        "execution": {
+          "status": "COMPLETED",
+          "argv": [
+            "C:/Users/msi/.bun/bin/bun.exe",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a\\src\\adapters\\native\\crystal-bridge.ts"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "{\"ok\":true,\"value\":{\"ok\":true,\"receipt_root\":\"0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65\",\"recomputed_root\":\"0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65\"},\"runtime\":\"Bun 1.3.14\"}\n",
+          "stderr": "",
+          "stdoutSha256": "bb5d2e38e68563fb66577e3f94f464b579a18d4bcf835d671d92244bb8a39286",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "truncated": false
+        }
+      },
+      "AUTHENTICITY": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "provider": "ed25519",
+          "key_id": "audit-ed25519",
+          "key_scope": "caller-selected trust policy"
+        }
+      },
+      "SUBJECT_BINDING": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "requested": {
+            "kind": "git-artifact",
+            "id": "audit-A",
+            "artifact_digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+            "commit": "0ba671fd30b51139593a081205f3ecd762022890",
+            "tree": "419432cf3165922eda3d6954176e4c101aee39e4",
+            "artifact_path": "artifact.txt",
+            "version": "audit.v1"
+          },
+          "covered": {
+            "kind": "git-artifact",
+            "id": "audit-A",
+            "artifact_digest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+            "commit": "0ba671fd30b51139593a081205f3ecd762022890",
+            "tree": "419432cf3165922eda3d6954176e4c101aee39e4",
+            "artifact_path": "artifact.txt",
+            "version": "audit.v1"
+          }
+        },
+        "explanation": "The caller-selected subject and policy match the covered subject and policy."
+      },
+      "RECOMPUTATION": {
+        "status": "REPRODUCED",
+        "reasonCodes": [
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "nativeResult": {
+          "verificationOutcome": "VERIFIED",
+          "verificationReasonCode": "rvr.v0.digest_match",
+          "recomputationStatus": "REPRODUCED",
+          "reasonCode": "rvr.recompute.identical",
+          "evaluationPerformed": true,
+          "canonicalResultDigest": "a3e91a8771312253fe02762ae7bdaba4fba3b1e477e31164a992b0caeaee9c32"
+        },
+        "semanticOutcome": "VERIFIED",
+        "recomputationStatus": "REPRODUCED",
+        "observedArtifactDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+        "expectedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+        "nativeCanonicalResult": {
+          "schema": "rvr.canonical-result.v0",
+          "outcome": "VERIFIED",
+          "reasonCode": "rvr.v0.digest_match",
+          "evaluation": {
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+            "observedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+          }
+        },
+        "savedCanonicalResult": {
+          "schema": "rvr.canonical-result.v0",
+          "outcome": "VERIFIED",
+          "reasonCode": "rvr.v0.digest_match",
+          "evaluation": {
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02",
+            "observedDigest": "800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02"
+          }
+        },
+        "limitations": [
+          "Generic RVR SHA256_EQUALS has no Git commit binding or signature/authenticity guarantee.",
+          "REPRODUCED can reproduce REFUTED or UNVERIFIABLE and does not imply semantic success.",
+          "Only the exact installed generic profile is admitted; external/domain profiles are unsupported."
+        ],
+        "provenance": {
+          "profileId": "rvr-generic-sha256-equals-v0",
+          "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+          "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+          "license": "Apache-2.0",
+          "maturity": "STABLE",
+          "capabilities": [
+            "NATIVE_DIGEST_PREDICATE",
+            "NATIVE_RECEIPT_REPLAY"
+          ],
+          "requiredEvidence": [
+            "native-rvr-bundle",
+            "native-rvr-candidate"
+          ],
+          "nativeVocabulary": {
+            "semantic": [
+              "VERIFIED",
+              "REFUTED",
+              "UNVERIFIABLE"
+            ],
+            "recomputation": [
+              "REPRODUCED",
+              "DIVERGED",
+              "CANNOT_RECOMPUTE"
+            ]
+          },
+          "runtime": "Python 3.12.10",
+          "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+          "functions": [
+            "audit_profile",
+            "validate_receipt_envelope",
+            "recompute",
+            "evaluate"
+          ]
+        },
+        "execution": {
+          "status": "COMPLETED",
+          "argv": [
+            "python",
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a\\src\\adapters\\native\\rvr-bridge.py"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "{\"ok\":true,\"value\":{\"verificationOutcome\":\"VERIFIED\",\"verificationReasonCode\":\"rvr.v0.digest_match\",\"recomputationStatus\":\"REPRODUCED\",\"reasonCode\":\"rvr.recompute.identical\",\"evaluationPerformed\":true,\"canonicalResultDigest\":\"a3e91a8771312253fe02762ae7bdaba4fba3b1e477e31164a992b0caeaee9c32\"},\"canonicalResult\":{\"schema\":\"rvr.canonical-result.v0\",\"outcome\":\"VERIFIED\",\"reasonCode\":\"rvr.v0.digest_match\",\"evaluation\":{\"operation\":\"SHA256_EQUALS\",\"evidenceMember\":\"artifact\",\"expectedDigest\":\"800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02\",\"observedDigest\":\"800af8edc0711fbcf0052b3b95bf74c13a4d1056d1c0be44f3012d5ed36f9b02\"}},\"profileDigest\":\"51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948\",\"runtime\":\"Python 3.12.10\"}\r\n",
+          "stderr": "",
+          "stdoutSha256": "6a8b8e6092aaf72324df1b63cc56ee376d924ef363b5a49db2a22aa0fa7a0ed1",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "truncated": false
+        },
+        "adapterProjection": "VERIFIED"
+      },
+      "EVIDENCE_SUFFICIENCY": {
+        "status": "SUFFICIENT",
+        "reasonCodes": [],
+        "nativeResult": {
+          "grade": "LOCAL_RECOMPUTATION",
+          "git": {
+            "ok": true,
+            "commit": "0ba671fd30b51139593a081205f3ecd762022890",
+            "tree": "419432cf3165922eda3d6954176e4c101aee39e4",
+            "blob": "8bcea05aad363416cfcd0a831e4942b7a2f435bb",
+            "path": "artifact.txt"
+          }
+        }
+      },
+      "SEMANTIC_COMPATIBILITY": {
+        "status": "COMPATIBLE",
+        "reasonCodes": [
+          "SEMANTIC_REQUIREMENT_ESTABLISHED"
+        ],
+        "nativeResult": {
+          "valid": true,
+          "error": null,
+          "edge": {
+            "producer_claim": {
+              "claim_type": "SHA256_EQUALS",
+              "authority_class": "INDEPENDENT_RECOMPUTATION",
+              "subject": "audit-A",
+              "scope": "artifact.txt",
+              "valid_after": 0,
+              "valid_until": 2000000000,
+              "assumptions": [],
+              "evidence_requirements": [
+                "artifact",
+                "execution"
+              ]
+            },
+            "consumer_requirement": {
+              "claim_type": "SHA256_EQUALS",
+              "authority_class": "INDEPENDENT_RECOMPUTATION",
+              "subject": "audit-A",
+              "scope": "artifact.txt",
+              "valid_after": 0,
+              "valid_until": 2000000000,
+              "assumptions": [],
+              "evidence_requirements": [
+                "artifact",
+                "execution"
+              ]
+            }
+          },
+          "counterexample": null
+        },
+        "limitations": [
+          "Public neutral linker semantics are reimplemented; the upstream runner is not executed.",
+          "Subject, interval, assumption and actual-evidence checks are explicit ReceiptOS extensions, not upstream manifest wire conformance.",
+          "Context is a caller-owned premise. Labels in a signed producer manifest do not establish authority or real-world truth."
+        ],
+        "provenance": {
+          "profileId": "receiptos.verify.semantic-compatibility.v1",
+          "sourceRepository": "trustless-ai/semantic-abi",
+          "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+          "license": "Apache-2.0 code; CC0-1.0 schema concepts",
+          "maturity": "EXPERIMENTAL",
+          "mode": "PUBLIC_NEUTRAL_SPEC_REIMPLEMENTATION_WITH_PRODUCT_EXTENSIONS",
+          "capabilities": [
+            "exact-claim",
+            "observed-authority",
+            "exact-subject-scope",
+            "time",
+            "assumptions",
+            "actual-evidence-classes"
+          ],
+          "requiredEvidence": [
+            "caller-established authority",
+            "caller-observed evidence classes"
+          ],
+          "nativeVocabulary": [
+            "valid",
+            "TYPE_ERROR"
+          ]
+        }
+      },
+      "GUARANTEE_PRESERVATION": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CONTINUITY": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "DOMAIN_ADAPTERS": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "PRODUCT_PROJECTION": {
+        "status": "VERIFIED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "SEMANTIC_REQUIREMENT_ESTABLISHED"
+        ],
+        "nativeResult": null
+      },
+      "EXPLAINABLE_REPORT": {
+        "status": "GENERATED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "SEMANTIC_REQUIREMENT_ESTABLISHED"
+        ],
+        "nativeResult": {
+          "explanation": "VERIFIED. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED"
+        }
+      },
+      "PROVENANCE": {
+        "status": "RECORDED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "sources": "provenance/sources.json",
+          "crystal": {
+            "profileId": "crystal.handoff-receipt-root.v1",
+            "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+            "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "license": "Apache-2.0",
+            "maturity": "STABLE",
+            "capabilities": [
+              "NATIVE_RECEIPT_ROOT_INTEGRITY"
+            ],
+            "requiredEvidence": [
+              "native-crystal-evidence"
+            ],
+            "nativeVocabulary": {
+              "integrity": [
+                "ok:true",
+                "ok:false"
+              ],
+              "fields": [
+                "ok",
+                "receipt_root",
+                "recomputed_root"
+              ]
+            }
+          },
+          "rvr": {
+            "profileId": "rvr-generic-sha256-equals-v0",
+            "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+            "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+            "license": "Apache-2.0",
+            "maturity": "STABLE",
+            "capabilities": [
+              "NATIVE_DIGEST_PREDICATE",
+              "NATIVE_RECEIPT_REPLAY"
+            ],
+            "requiredEvidence": [
+              "native-rvr-bundle",
+              "native-rvr-candidate"
+            ],
+            "nativeVocabulary": {
+              "semantic": [
+                "VERIFIED",
+                "REFUTED",
+                "UNVERIFIABLE"
+              ],
+              "recomputation": [
+                "REPRODUCED",
+                "DIVERGED",
+                "CANNOT_RECOMPUTE"
+              ]
+            }
+          },
+          "evidence_cost": {
+            "schema": "receiptos.verify.evidence-cost.v1",
+            "committed_bytes": 590,
+            "available_bytes": 590,
+            "byte_count_encoding": {
+              "committed_bytes": "SAFE_INTEGER",
+              "available_bytes": "SAFE_INTEGER"
+            },
+            "committed_members": 4,
+            "native_processes_completed": 2,
+            "assumptions": [
+              "Counts describe this supplied evidence inventory and local process observations only."
+            ],
+            "establishes_security_guarantee": false
+          },
+          "independence": "Pinned upstream computations; product host and its tests are a single new implementation."
+        }
+      }
+    },
+    "boundaries": [
+      "Integrity is not authenticity.",
+      "Signature is not semantic correctness.",
+      "Replay preserves negative outcomes.",
+      "Historical observations are not repeated execution."
+    ]
+  }
+}

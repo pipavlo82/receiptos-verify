@@ -1,0 +1,166 @@
+[
+  {
+    "label": "baseline-mutations",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:58:59.129Z",
+    "ended": "2026-10-11T18:59:28.528Z",
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "stdout": "ignore-requested-subject: KILLED\ncompare-receipt-to-itself: KILLED\naccept-any-valid-signature: KILLED\npromote-reproduced-to-verified: KILLED\naccept-empty-evidence: KILLED\ncount-crash-as-semantic-refutation: KILLED\npackage-presence-as-pass: KILLED\nignore-policy-version: KILLED\nignore-guarantee-dependency: KILLED\nignore-retry-action-change: KILLED\nignore-evidence-grade: KILLED\nignore-authority: KILLED\nignore-commit: KILLED\nignore-canonicalization-profile: KILLED\n{\"KILLED\":14,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-unapplied",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:28.876Z",
+    "ended": "2026-10-11T18:59:29.495Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":0,\"NOT_APPLIED\":1,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-noop",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:29.798Z",
+    "ended": "2026-10-11T18:59:30.421Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":0,\"NOT_APPLIED\":1,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-crashing",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc2",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:30.746Z",
+    "ended": "2026-10-11T18:59:33.074Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-crashing: CRASHED\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":1,\"INVALID_OUTPUT\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-damaged-positive",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc3",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:33.342Z",
+    "ended": "2026-10-11T18:59:35.746Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-damaged-positive: CONTROL_BROKEN\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":1,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-unknown-overall",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc4",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:36.031Z",
+    "ended": "2026-10-11T18:59:38.522Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-unknown-overall: INVALID_OUTPUT\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-undefined-overall",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc5",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:38.795Z",
+    "ended": "2026-10-11T18:59:41.124Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-undefined-overall: INVALID_OUTPUT\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-schema-spoof",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc6",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:41.415Z",
+    "ended": "2026-10-11T18:59:44.034Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-schema-spoof: INVALID_OUTPUT\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-zero-inventory",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc7",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:44.329Z",
+    "ended": "2026-10-11T18:59:44.660Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "",
+    "stderr": "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/fc7/tools/run-mutations.mjs:5\r\nif(!mutations.length) throw new Error('ZERO_MUTANTS');\r\n                            ^\r\n\r\nError: ZERO_MUTANTS\r\n    at file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/fc7/tools/run-mutations.mjs:5:29\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)\r\n\r\nNode.js v22.15.0\r\n"
+  },
+  {
+    "label": "control-damaged-baseline",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc8",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:59:44.933Z",
+    "ended": "2026-10-11T18:59:47.309Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "ignore-requested-subject: INVALID_BASELINE\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":1}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-invalid-schema-valid-overall",
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\fc9",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T19:00:22.984Z",
+    "ended": "2026-10-11T19:00:25.335Z",
+    "exit": 1,
+    "signal": null,
+    "stdout": "audit-invalid-schema-valid-overall: INVALID_OUTPUT\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  }
+]

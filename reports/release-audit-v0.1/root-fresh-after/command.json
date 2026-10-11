@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "node",
+    "reports/release-audit-v0.1/root-probes-fresh-after.mjs",
+    "reports/tmp/release-rc-audit/repaired-a",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a\\reports\\tmp\\i-81b390ec1e2c\\"
+  ],
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+  "exit": 0
+}

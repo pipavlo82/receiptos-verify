@@ -1,0 +1,12 @@
+{
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\gate-after",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T19:01:03.976Z",
+  "ended": "2026-10-11T19:01:31.793Z",
+  "exit": 0,
+  "stdout": "ignore-requested-subject: KILLED\ncompare-receipt-to-itself: KILLED\naccept-any-valid-signature: KILLED\npromote-reproduced-to-verified: KILLED\naccept-empty-evidence: KILLED\ncount-crash-as-semantic-refutation: KILLED\npackage-presence-as-pass: KILLED\nignore-policy-version: KILLED\nignore-guarantee-dependency: KILLED\nignore-retry-action-change: KILLED\nignore-evidence-grade: KILLED\nignore-authority: KILLED\nignore-commit: KILLED\nignore-canonicalization-profile: KILLED\n{\"KILLED\":14,\"SURVIVED\":0,\"CRASHED\":0,\"INVALID_OUTPUT\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

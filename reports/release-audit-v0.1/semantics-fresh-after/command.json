@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "node",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\semantics-fresh-after\\independent.mjs",
+    "reports/tmp/release-rc-audit/repaired-a"
+  ],
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+  "exit": 0,
+  "harness_sha256": "3850cd00bdcebb4c1c5788bcd27efc0455db20ae8e563a3df5148e82c75068df"
+}

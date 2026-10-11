@@ -1,0 +1,6 @@
+import {cp,mkdir,readFile,writeFile} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import path from 'node:path';
+const root=process.cwd(),folder=path.join(root,'reports/tmp/release-rc-audit/gate-after'),out=path.join(root,'reports/release-audit-v0.1/vectors-mutations/after');
+await mkdir(folder,{recursive:true});for(const name of ['src','vendor','provenance','vectors','schemas','tools','mutations','package.json'])await cp(path.join(root,name),path.join(folder,name),{recursive:true});await mkdir(path.join(folder,'reports'),{recursive:true});
+const started=new Date().toISOString(),argv=['tools/run-mutations.mjs'],r=spawnSync(process.execPath,argv,{cwd:folder,encoding:'utf8',windowsHide:true,timeout:180000,maxBuffer:16*1024*1024});await writeFile(path.join(out,'deep-checkout-mutations.command.json'),JSON.stringify({cwd:folder,argv:[process.execPath,...argv],started,ended:new Date().toISOString(),exit:r.status,stdout:r.stdout,stderr:r.stderr},null,2)+'\n');await writeFile(path.join(out,'deep-checkout-mutations.json'),await readFile(path.join(folder,'reports/mutations.json')));console.log(JSON.stringify({exit:r.status,counts:JSON.parse(await readFile(path.join(folder,'reports/mutations.json'),'utf8')).counts}));

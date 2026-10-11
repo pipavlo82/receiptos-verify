@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "git",
+    "diff",
+    "--check",
+    "--",
+    "README.md",
+    "BUILD_REPORT.md",
+    "PROVENANCE.md",
+    "FULL_WORK_REUSE_MAP.md",
+    "provenance/sources.json"
+  ],
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": ""
+}

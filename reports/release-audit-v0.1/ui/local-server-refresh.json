@@ -1,0 +1,13 @@
+{
+  "testedCodeCommit": "b893eeb1b22eada6431d7b2e819439e9f4f67414",
+  "currentPid": 9864,
+  "purpose": "Refresh existing target-only local server to repaired code; dispose audit-only servers",
+  "executable": "C:\\Program Files\\nodejs\\node.exe",
+  "bind": "127.0.0.1",
+  "port": 8808,
+  "arguments": [
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\src\\server.mjs"
+  ],
+  "previousPid": 21572,
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify"
+}

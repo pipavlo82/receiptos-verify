@@ -1,0 +1,426 @@
+{
+  "schema": "receiptos.verify.report.v1",
+  "projection_version": "receiptos.verify.projection.v1",
+  "overall": "VERIFIED",
+  "reason_codes": [
+    "NATIVE_CRYSTAL_ROOT_MATCH",
+    "rvr.v0.digest_match",
+    "rvr.recompute.identical",
+    "SEMANTIC_REQUIREMENT_ESTABLISHED"
+  ],
+  "explanation": "VERIFIED. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED",
+  "required_layers": [
+    "INTEGRITY",
+    "AUTHENTICITY",
+    "SUBJECT_BINDING",
+    "RECOMPUTATION",
+    "EVIDENCE_SUFFICIENCY",
+    "SEMANTIC_COMPATIBILITY"
+  ],
+  "layers": {
+    "INPUT": {
+      "status": "ADMITTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "CANONICALIZATION": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": {
+        "profile": "receiptos.verify.canonical-json.v1",
+        "statement_digest": "ac343629d62d6bc783e8c68fbb24d345eb18983a2afc4f169611b703fa3045cc"
+      }
+    },
+    "INTEGRITY": {
+      "status": "VERIFIED",
+      "reasonCodes": [
+        "NATIVE_CRYSTAL_ROOT_MATCH"
+      ],
+      "nativeResult": {
+        "ok": true,
+        "receipt_root": "0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65",
+        "recomputed_root": "0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65"
+      },
+      "limitations": [
+        "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+        "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+        "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+      ],
+      "provenance": {
+        "profileId": "crystal.handoff-receipt-root.v1",
+        "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_RECEIPT_ROOT_INTEGRITY"
+        ],
+        "requiredEvidence": [
+          "native-crystal-evidence"
+        ],
+        "nativeVocabulary": {
+          "integrity": [
+            "ok:true",
+            "ok:false"
+          ],
+          "fields": [
+            "ok",
+            "receipt_root",
+            "recomputed_root"
+          ]
+        },
+        "runtime": "Bun 1.3.14",
+        "functions": [
+          "verifyHandoffReceiptRoot"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "C:/Users/msi/.bun/bin/bun.exe",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a\\src\\adapters\\native\\crystal-bridge.ts"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"ok\":true,\"receipt_root\":\"0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65\",\"recomputed_root\":\"0xa6cf9fa0378b37c594d427de8f78f6d4e6a4b12a6711f4c8c42a26b74a87ba65\"},\"runtime\":\"Bun 1.3.14\"}\n",
+        "stderr": "",
+        "stdoutSha256": "bb5d2e38e68563fb66577e3f94f464b579a18d4bcf835d671d92244bb8a39286",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      }
+    },
+    "AUTHENTICITY": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": {
+        "provider": "ed25519",
+        "key_id": "audit-ed25519",
+        "key_scope": "caller-selected trust policy"
+      }
+    },
+    "SUBJECT_BINDING": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": {
+        "requested": {
+          "kind": "git-artifact",
+          "id": "root-audit-A",
+          "artifact_digest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d",
+          "commit": "193f4f7434a007184c123933d9211d051faa03f9",
+          "tree": "9b9debc1bf1145346ab9917ade4d6bc5b4b1a3eb",
+          "artifact_path": "artifact.txt",
+          "version": "audit.v1"
+        },
+        "covered": {
+          "kind": "git-artifact",
+          "id": "root-audit-A",
+          "artifact_digest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d",
+          "commit": "193f4f7434a007184c123933d9211d051faa03f9",
+          "tree": "9b9debc1bf1145346ab9917ade4d6bc5b4b1a3eb",
+          "artifact_path": "artifact.txt",
+          "version": "audit.v1"
+        }
+      },
+      "explanation": "The caller-selected subject and policy match the covered subject and policy."
+    },
+    "RECOMPUTATION": {
+      "status": "REPRODUCED",
+      "reasonCodes": [
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "nativeResult": {
+        "verificationOutcome": "VERIFIED",
+        "verificationReasonCode": "rvr.v0.digest_match",
+        "recomputationStatus": "REPRODUCED",
+        "reasonCode": "rvr.recompute.identical",
+        "evaluationPerformed": true,
+        "canonicalResultDigest": "756e1adc03bafcb621f00988863d8bd1e0ce74d31896c21a84581484b157c97a"
+      },
+      "semanticOutcome": "VERIFIED",
+      "recomputationStatus": "REPRODUCED",
+      "observedArtifactDigest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d",
+      "expectedDigest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d",
+      "nativeCanonicalResult": {
+        "schema": "rvr.canonical-result.v0",
+        "outcome": "VERIFIED",
+        "reasonCode": "rvr.v0.digest_match",
+        "evaluation": {
+          "operation": "SHA256_EQUALS",
+          "evidenceMember": "artifact",
+          "expectedDigest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d",
+          "observedDigest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d"
+        }
+      },
+      "savedCanonicalResult": {
+        "schema": "rvr.canonical-result.v0",
+        "outcome": "VERIFIED",
+        "reasonCode": "rvr.v0.digest_match",
+        "evaluation": {
+          "operation": "SHA256_EQUALS",
+          "evidenceMember": "artifact",
+          "expectedDigest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d",
+          "observedDigest": "809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d"
+        }
+      },
+      "limitations": [
+        "Generic RVR SHA256_EQUALS has no Git commit binding or signature/authenticity guarantee.",
+        "REPRODUCED can reproduce REFUTED or UNVERIFIABLE and does not imply semantic success.",
+        "Only the exact installed generic profile is admitted; external/domain profiles are unsupported."
+      ],
+      "provenance": {
+        "profileId": "rvr-generic-sha256-equals-v0",
+        "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+        "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_DIGEST_PREDICATE",
+          "NATIVE_RECEIPT_REPLAY"
+        ],
+        "requiredEvidence": [
+          "native-rvr-bundle",
+          "native-rvr-candidate"
+        ],
+        "nativeVocabulary": {
+          "semantic": [
+            "VERIFIED",
+            "REFUTED",
+            "UNVERIFIABLE"
+          ],
+          "recomputation": [
+            "REPRODUCED",
+            "DIVERGED",
+            "CANNOT_RECOMPUTE"
+          ]
+        },
+        "runtime": "Python 3.12.10",
+        "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+        "functions": [
+          "audit_profile",
+          "validate_receipt_envelope",
+          "recompute",
+          "evaluate"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "python",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\repaired-a\\src\\adapters\\native\\rvr-bridge.py"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"verificationOutcome\":\"VERIFIED\",\"verificationReasonCode\":\"rvr.v0.digest_match\",\"recomputationStatus\":\"REPRODUCED\",\"reasonCode\":\"rvr.recompute.identical\",\"evaluationPerformed\":true,\"canonicalResultDigest\":\"756e1adc03bafcb621f00988863d8bd1e0ce74d31896c21a84581484b157c97a\"},\"canonicalResult\":{\"schema\":\"rvr.canonical-result.v0\",\"outcome\":\"VERIFIED\",\"reasonCode\":\"rvr.v0.digest_match\",\"evaluation\":{\"operation\":\"SHA256_EQUALS\",\"evidenceMember\":\"artifact\",\"expectedDigest\":\"809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d\",\"observedDigest\":\"809b4dae623397f52742fe92f5c5d5bd22fbedaf8fc3a587523188bb5b8fe14d\"}},\"profileDigest\":\"51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948\",\"runtime\":\"Python 3.12.10\"}\r\n",
+        "stderr": "",
+        "stdoutSha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "adapterProjection": "VERIFIED"
+    },
+    "EVIDENCE_SUFFICIENCY": {
+      "status": "SUFFICIENT",
+      "reasonCodes": [],
+      "nativeResult": {
+        "grade": "LOCAL_RECOMPUTATION",
+        "git": {
+          "ok": true,
+          "commit": "193f4f7434a007184c123933d9211d051faa03f9",
+          "tree": "9b9debc1bf1145346ab9917ade4d6bc5b4b1a3eb",
+          "blob": "0755a586e7d9bf344c2ea6f6d8ea11a481f2843f",
+          "path": "artifact.txt"
+        }
+      }
+    },
+    "SEMANTIC_COMPATIBILITY": {
+      "status": "COMPATIBLE",
+      "reasonCodes": [
+        "SEMANTIC_REQUIREMENT_ESTABLISHED"
+      ],
+      "nativeResult": {
+        "valid": true,
+        "error": null,
+        "edge": {
+          "producer_claim": {
+            "claim_type": "SHA256_EQUALS",
+            "authority_class": "INDEPENDENT_RECOMPUTATION",
+            "subject": "root-audit-A",
+            "scope": "artifact.txt",
+            "valid_after": 0,
+            "valid_until": 2000000000,
+            "assumptions": [],
+            "evidence_requirements": [
+              "artifact",
+              "execution"
+            ]
+          },
+          "consumer_requirement": {
+            "claim_type": "SHA256_EQUALS",
+            "authority_class": "INDEPENDENT_RECOMPUTATION",
+            "subject": "root-audit-A",
+            "scope": "artifact.txt",
+            "valid_after": 0,
+            "valid_until": 2000000000,
+            "assumptions": [],
+            "evidence_requirements": [
+              "artifact",
+              "execution"
+            ]
+          }
+        },
+        "counterexample": null
+      },
+      "limitations": [
+        "Public neutral linker semantics are reimplemented; the upstream runner is not executed.",
+        "Subject, interval, assumption and actual-evidence checks are explicit ReceiptOS extensions, not upstream manifest wire conformance.",
+        "Context is a caller-owned premise. Labels in a signed producer manifest do not establish authority or real-world truth."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.semantic-compatibility.v1",
+        "sourceRepository": "trustless-ai/semantic-abi",
+        "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+        "license": "Apache-2.0 code; CC0-1.0 schema concepts",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_NEUTRAL_SPEC_REIMPLEMENTATION_WITH_PRODUCT_EXTENSIONS",
+        "capabilities": [
+          "exact-claim",
+          "observed-authority",
+          "exact-subject-scope",
+          "time",
+          "assumptions",
+          "actual-evidence-classes"
+        ],
+        "requiredEvidence": [
+          "caller-established authority",
+          "caller-observed evidence classes"
+        ],
+        "nativeVocabulary": [
+          "valid",
+          "TYPE_ERROR"
+        ]
+      }
+    },
+    "GUARANTEE_PRESERVATION": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "CONTINUITY": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "DOMAIN_ADAPTERS": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "PRODUCT_PROJECTION": {
+      "status": "VERIFIED",
+      "reasonCodes": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "SEMANTIC_REQUIREMENT_ESTABLISHED"
+      ],
+      "nativeResult": null
+    },
+    "EXPLAINABLE_REPORT": {
+      "status": "GENERATED",
+      "reasonCodes": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "SEMANTIC_REQUIREMENT_ESTABLISHED"
+      ],
+      "nativeResult": {
+        "explanation": "VERIFIED. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED"
+      }
+    },
+    "PROVENANCE": {
+      "status": "RECORDED",
+      "reasonCodes": [],
+      "nativeResult": {
+        "sources": "provenance/sources.json",
+        "crystal": {
+          "profileId": "crystal.handoff-receipt-root.v1",
+          "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+          "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "license": "Apache-2.0",
+          "maturity": "STABLE",
+          "capabilities": [
+            "NATIVE_RECEIPT_ROOT_INTEGRITY"
+          ],
+          "requiredEvidence": [
+            "native-crystal-evidence"
+          ],
+          "nativeVocabulary": {
+            "integrity": [
+              "ok:true",
+              "ok:false"
+            ],
+            "fields": [
+              "ok",
+              "receipt_root",
+              "recomputed_root"
+            ]
+          }
+        },
+        "rvr": {
+          "profileId": "rvr-generic-sha256-equals-v0",
+          "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+          "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+          "license": "Apache-2.0",
+          "maturity": "STABLE",
+          "capabilities": [
+            "NATIVE_DIGEST_PREDICATE",
+            "NATIVE_RECEIPT_REPLAY"
+          ],
+          "requiredEvidence": [
+            "native-rvr-bundle",
+            "native-rvr-candidate"
+          ],
+          "nativeVocabulary": {
+            "semantic": [
+              "VERIFIED",
+              "REFUTED",
+              "UNVERIFIABLE"
+            ],
+            "recomputation": [
+              "REPRODUCED",
+              "DIVERGED",
+              "CANNOT_RECOMPUTE"
+            ]
+          }
+        },
+        "evidence_cost": {
+          "schema": "receiptos.verify.evidence-cost.v1",
+          "committed_bytes": 623,
+          "available_bytes": 623,
+          "byte_count_encoding": {
+            "committed_bytes": "SAFE_INTEGER",
+            "available_bytes": "SAFE_INTEGER"
+          },
+          "committed_members": 4,
+          "native_processes_completed": 2,
+          "assumptions": [
+            "Counts describe this supplied evidence inventory and local process observations only."
+          ],
+          "establishes_security_guarantee": false
+        },
+        "independence": "Pinned upstream computations; product host and its tests are a single new implementation."
+      }
+    }
+  },
+  "boundaries": [
+    "Integrity is not authenticity.",
+    "Signature is not semantic correctness.",
+    "Replay preserves negative outcomes.",
+    "Historical observations are not repeated execution."
+  ]
+}

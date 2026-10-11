@@ -1,0 +1,38 @@
+{
+  "name": "undefined-overall",
+  "expected_safety_behavior": "REJECT_INVALID_OUTPUT",
+  "exit": 1,
+  "report": {
+    "schema": "receiptos.verify.mutation-report.v1",
+    "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.",
+    "count": 1,
+    "counts": {
+      "KILLED": 0,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "INVALID_OUTPUT": 1,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    },
+    "rows": [
+      {
+        "id": "audit-undefined-overall",
+        "source_file": "src/projection/project.mjs",
+        "original_sha256": "982672ef07a4d8fdd06d3287764444f4a5c45fdcdc42b39b1547845ad73528f2",
+        "mutant_sha256": "def254c4d25284d0624fae0016fd461f7548b4d554a1770a1d9d564c37322fdd",
+        "applied": true,
+        "positive": "V01",
+        "witness": "V07",
+        "baseline_controls_valid": true,
+        "positive_process_status": "COMPLETED",
+        "positive_preserved": true,
+        "witness_process_status": "INVALID_OUTPUT",
+        "baseline_projection": "CONTRADICTED",
+        "mutant_projection": null,
+        "witness_reasons": [],
+        "status": "INVALID_OUTPUT"
+      }
+    ]
+  }
+}
