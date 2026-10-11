@@ -1,0 +1,98 @@
+{
+  "schema": "receiptos.verify.release-audit-closure.v2",
+  "tested_commit": "eb942148eeb489db809b39e053ec905105cc3056",
+  "tested_tree": "3fa1cea8387f733cab6a0868acf6060ec958b06d",
+  "closure_boundary": "Only audit reports/evidence, README, corrected file-exclusion documentation and source-lock differ from tested tree; runtime/schema/tests/vendor/vector/dependency bytes match tested commit. Final child commit SHA is reported separately to avoid self-reference.",
+  "checks": {
+    "frozen_inventory_blobs": 1028,
+    "repaired_inventory_blobs": 1795,
+    "frozen_command_stream_hashes": 50,
+    "final_command_stream_hashes": 48,
+    "intermediate_failed_command_stream_hashes": 32,
+    "tested_nonreport_files_unchanged": 342,
+    "protected": {
+      "vectors": {
+        "files": 70,
+        "changed": []
+      },
+      "vendor": {
+        "files": 100,
+        "changed": []
+      },
+      "legal": {
+        "files": 4,
+        "changed": []
+      },
+      "dependency": {
+        "files": 3,
+        "changed": []
+      }
+    }
+  },
+  "final_source_lock": {
+    "status": "PASS",
+    "files": 345,
+    "sourceLockDigest": "938820d6a5608fcb34eda832289c539802f51577f6f6e8eb72cd4b11559a9511"
+  },
+  "package_lock_sha256": "699f2fc389c8d95ad0e5c7f2ef1b3566152b1f9e5123e2ab49cb5c9d59285023",
+  "commands": [
+    {
+      "label": "closure-lock-write",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs",
+        "--write"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "169212b18d7018bac62c92da65f460875fdb5369bf894995e4220778425caf53",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "closure-lock-check",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "bf633f5129e67aae2f46acfe530440037625a7990ecfafdb2089d6832e12c820",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "closure-provenance-license",
+      "argv": [
+        "node",
+        "tools/check-provenance-v2.mjs"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "751ea2d07b3ccc3e9de1daf9d4fb17b4daa8f13e6b84eb1f0d8331f0099c7d60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "closure-diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "closure-public-refs",
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/tags/v0.1.0",
+        "refs/tags/v0.1.0^{}"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "1f84b6ee7f8bc788d535c0b9aecfae000cbf281af0a859130e825d3db8ba6dd1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "verdict": "READY_TO_PUBLISH_V0_2",
+  "timestamp_utc": "2026-10-11T23:54:48.854982+00:00"
+}

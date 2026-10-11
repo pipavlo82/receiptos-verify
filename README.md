@@ -6,6 +6,8 @@ A local verification product that answers **what supplied evidence is allowed to
 
 ReceiptOS Verify does not answer only whether a receipt is intact. It evaluates what supplied evidence actually establishes for a caller-selected claim, within explicit bounded profiles. The v2 contract keeps claim, subject, artifact, authority, scope, policy/version, time, assumptions and dependencies separate. See [generic boundary](docs/generic-claim-boundary.md), [v0.2 architecture](docs/v0.2-architecture.md) and [v0.2 review report](V0_2_REVIEW_REPORT.md).
 
+The [independent v0.2 release audit](RELEASE_AUDIT_v0.2.md) records the frozen candidate, independent findings, separate repairs and exact fresh-checkout results.
+
 The [release-candidate audit](RELEASE_AUDIT_v0.1.md) separates the original saved build reports from fresh candidate findings, fixes and release checks. Original saved counts are historical observations, not the current release verdict.
 
 ## Run

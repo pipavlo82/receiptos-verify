@@ -1,0 +1,2043 @@
+{
+  "schema": "receiptos.verify.mutation-report.v2",
+  "method": "Exactly-applied source mutation, valid detached literal baseline, preserved positive control, and structured semantic projection disagreement. Crash, malformed output, no-op and unapplied mutation are never kills.",
+  "count": 14,
+  "passed": true,
+  "counts": {
+    "KILLED": 14,
+    "SURVIVED": 0,
+    "CRASHED": 0,
+    "INVALID_OUTPUT": 0,
+    "NOT_APPLIED": 0,
+    "CONTROL_BROKEN": 0,
+    "INVALID_BASELINE": 0
+  },
+  "rows": [
+    {
+      "id": "M01",
+      "positive": "G01",
+      "witness": "G04",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "original_sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e",
+          "mutant_sha256": "e4e4a3b7b6f536e4295b8486a13559e2433fd31a1097ee4d2a509c835c130567",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "9954b2d29e250d65780433d67da13bff2d44ffea330dd11607bc632477592a03",
+              "to_sha256": "9b1e3cbdc78a239856c0393e7b2f72ea665700c96206957038c8f3b8421d6cb8"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "AUTHORITY_MISMATCH"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M02",
+      "positive": "G01",
+      "witness": "G05",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "original_sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e",
+          "mutant_sha256": "1698ac8134cfd581af1fd95d8805cda52d911e5238de14be40e0a1575becdb16",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "b4726ea6128954c979a8c8254cf722aa6e8dedf13bec765a176316fa16b27244",
+              "to_sha256": "ce9c93c76f721b9fb8c7af544e09f96af84820179d22759d76b13ede5023079a"
+            }
+          ]
+        },
+        {
+          "file": "src/adapters/semantic-abi-v2.mjs",
+          "original_sha256": "a4cfb20e1cdeb4a958174006dca9fb93dbbb3a699b737929f0ab641d54849c85",
+          "mutant_sha256": "d2fc36ac3af7f0d0a6331dc962f6fa6d09622f9f76102017d6491d8b39b03ee2",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "08eb461c174e8a379203eefa673a4d2d8fe4a39da3d0753a336ba389a68e7916",
+              "to_sha256": "b8f345fbee93d07a84e748c0a487f63f51c39966762d9963d0be1a7162743c34"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "SCOPE_MISMATCH",
+          "SEMANTIC_ABI_TYPE_ERROR"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M03",
+      "positive": "G01",
+      "witness": "G06",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "original_sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e",
+          "mutant_sha256": "7f4c5a3028e30f3784423ae69978d3cea3fdbadc7b08d84d3b0a0cc26149fd68",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "78ba9e61edbbf2c59862192c82639b6482a964931fe2ade3eea68dd551b08669",
+              "to_sha256": "469f257c3e1aa8cfc5869262e710894e6a7516346378e9d1d90a505ce758f9c5"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "POLICY_MISMATCH"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M04",
+      "positive": "G23",
+      "witness": "G07",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "original_sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e",
+          "mutant_sha256": "ab606e0e1284e734d253a9a337120dcb7fc1c16adb51a1a4c87aebc0b6688284",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "357ac39ed044ee7e5bc4f43d12e4012ece64dc677a4e74069f9b7bbc4251f5f7",
+              "to_sha256": "b4952847dc96bf07ada31b3e96fe9a27931d7f3da76c863f5ccc52fed2a987ee"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "INSUFFICIENT_EVIDENCE",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "DEPENDENCY_MISSING"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "INSUFFICIENT_EVIDENCE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "INSUFFICIENT_EVIDENCE",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M05",
+      "positive": "G23",
+      "witness": "G08",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "original_sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e",
+          "mutant_sha256": "9bc9c7c13a60bef03f28149e9c86c8c77b25616fb8f2ce7e7c7bd8d9302e8fa4",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "2feebe8782813b81ea071934f8a48dccfe01223d71adc894d9c1b9612720ea12",
+              "to_sha256": "8ca92bbc3125ebb9ee057dc6a5561b81ea4cf8494206c8a15a46f8f503e87f70"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "DEPENDENCY_CONTRADICTED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M06",
+      "positive": "G01",
+      "witness": "G03",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "original_sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e",
+          "mutant_sha256": "3188331b037720b0927fde6f460ef7796063af19073bd2801915e24b845a105b",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "eef359b85fca2bdb0e6c6d85815deb15107821f6dcf4696d3f220df5c2416494",
+              "to_sha256": "b80aae1a22132af397b04253ca060c3b238581253e0c407e1eac7f8c886a4e69"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "SUBJECT_MISMATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "CONTRADICTED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M07",
+      "positive": "G24",
+      "witness": "G11",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "original_sha256": "cbc0592d3f3ea7569afb19ce71f3b0d835d9d45494fe0a11062a44337ccead5e",
+          "mutant_sha256": "568e5379b6e9de6a71ea83c7905e6d0aa2175c0482228b6a711762636bf63c43",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "292c963c1f14b3f62621a7a515fbdc9f251c4a2d861fe2e1e7b5e92cce25061d",
+              "to_sha256": "fdab10b207d0061a1f9cfa5e59043a7327b4de33d75f249444b991ede82a37f8"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "CLAIM_MISMATCH",
+          "SEMANTIC_ABI_TYPE_ERROR"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "CLAIM_MISMATCH",
+          "SEMANTIC_ABI_TYPE_ERROR"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+        "CLAIM_MISMATCH",
+        "SEMANTIC_ABI_TYPE_ERROR"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M08",
+      "positive": "G24",
+      "witness": "G12",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "original_sha256": "cbc0592d3f3ea7569afb19ce71f3b0d835d9d45494fe0a11062a44337ccead5e",
+          "mutant_sha256": "6e7a049edb415a865a5cf78fe4b8ba2c0acc3cf6207a9ad57c19c72031ed83be",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "bcfd32f7f198e0d0c3920ef7af50ca63e869b3806d219ff6a65e68b944dd4c65",
+              "to_sha256": "478b51f43d17687ee2ae5c2035ee20da2c47e5ae7312578f9ea1be47fe918421"
+            },
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "0da323a52d69f071f12c46e781476e739f089a2dd6b75b0b0a6f77886e45160b",
+              "to_sha256": "cd12ef80f086a91addaa3cc6a77e3946b1c82317c83885d7cec60b84bcd0ac82"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "TRUSTLESS_NATIVE_CONTRADICTION",
+          "NATIVE_NEGATIVE_RESULT"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "REFUTED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "TRUSTLESS_NATIVE_CONTRADICTION"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "REFUTED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+        "TRUSTLESS_NATIVE_CONTRADICTION"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M09",
+      "positive": "G13",
+      "witness": "G14",
+      "patches": [
+        {
+          "file": "src/adapters/interpoll-v2.mjs",
+          "original_sha256": "498f6602e9509611deec9c42ac4473d0fd1635d764ffa63c306a17c3246fe57c",
+          "mutant_sha256": "277046fa04df5aca0ffe7353b7d20fd62038c7690d301f5a391cfd196a474148",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "263bae0261767eaf22323deaf2bf6fb73b2ab034bd6aa8a9e0be14b270a7f045",
+              "to_sha256": "00fda4c65ea53c52523e9bebd14a2acf662f9c7ad22f92e2a27b1f52ba6c8703"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "EXACT_SIGNED_ACTION_SUPPLIED_EXECUTION_RELATION"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "VERIFIED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "RETRY_AUTHORIZED_ACTION_CHANGED",
+          "ASSERTED_NATIVE_RESULT_CONTRADICTION"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "CONTRADICTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "REFUTED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "EXACT_SIGNED_ACTION_SUPPLIED_EXECUTION_RELATION"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "VERIFIED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "EXACT_SIGNED_ACTION_SUPPLIED_EXECUTION_RELATION"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "VERIFIED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "EXACT_SIGNED_ACTION_SUPPLIED_EXECUTION_RELATION"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M10",
+      "positive": "G15",
+      "witness": "G21",
+      "patches": [
+        {
+          "file": "src/adapters/prf-v2.mjs",
+          "original_sha256": "4d8344adb9ed96b127974af38f12cd5eab78a0f3379393744d1334df059ec82b",
+          "mutant_sha256": "1dc6b0765bbc9c31e2d36f956c8d91c1cafd1c71682f5b7342df781f055b1807",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "7c60c9203296d7868916164a9b639b2d165354846b7ab54dd0fbc52fe650c544",
+              "to_sha256": "3c4f7e2c6717707a73ee0d310972984989cd927c83d883eb1f12195941a10453"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "PRESERVED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "INSUFFICIENT_EVIDENCE",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_NATIVE_RELATION_UNESTABLISHED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "UNVERIFIABLE",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "PRESERVED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "PRESERVED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "INSUFFICIENT_EVIDENCE",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M11",
+      "positive": "G01",
+      "witness": "G22",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "original_sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e",
+          "mutant_sha256": "57085f5e20f5da06d9c9c98a6bcc01675b041df77b1b21fe24f3f9c1087df932",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "7e198993bfb7b60f31f1951345b2341c5f3f393e18279fd3dc30487516df00b1",
+              "to_sha256": "263758da1c474712837df981dd12b998b405c04ea941a5e21c606585653aec11"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "VERSION_MISMATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "CONTRADICTED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M12",
+      "positive": "G01",
+      "witness": "G18",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "original_sha256": "cbc0592d3f3ea7569afb19ce71f3b0d835d9d45494fe0a11062a44337ccead5e",
+          "mutant_sha256": "8555d338f5b6e9f2525d61e8ce1b82f5e575a44138280c7daf77aad5595dbd5a",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "292c963c1f14b3f62621a7a515fbdc9f251c4a2d861fe2e1e7b5e92cce25061d",
+              "to_sha256": "6fc604c132d33ba496215ec740e6b7c6231843e55b34f5a89377c19b07589ab3"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "CLAIM_MISMATCH",
+          "SEMANTIC_ABI_TYPE_ERROR"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "CLAIM_MISMATCH",
+          "SEMANTIC_ABI_TYPE_ERROR"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "CLAIM_MISMATCH",
+        "SEMANTIC_ABI_TYPE_ERROR"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M13",
+      "positive": "G24",
+      "witness": "G29",
+      "patches": [
+        {
+          "file": "src/core/evidence-v2.mjs",
+          "original_sha256": "1742e99182dea05ccd22aa077ae2b39743b149c00b2b54f132917c35491a94fe",
+          "mutant_sha256": "40e444b161985e3f0499c9deb5e2a766fac61a229519ed77912b698e9a93d6ab",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "a19b80ef1fb12f45d1d134509ed98c5d1f153c6f0001965943284ccc4c1cb219",
+              "to_sha256": "bd799c085338bccb9285e8e8c88afad7d97870317ba3fea040434a89251fd26a"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "INSUFFICIENT_EVIDENCE",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED",
+          "EVIDENCE_GRADE_NOT_ESTABLISHED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "INSUFFICIENT_EVIDENCE",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+        "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M14",
+      "positive": "G15",
+      "witness": "G30",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "original_sha256": "cbc0592d3f3ea7569afb19ce71f3b0d835d9d45494fe0a11062a44337ccead5e",
+          "mutant_sha256": "4408dbc34a2f6cb475ef4c16b34d88a594acb8d4daa1e9cf6729e3e8d8995fea",
+          "replacements": [
+            {
+              "occurrences": 1,
+              "changed": true,
+              "from_sha256": "10b88d7c84f58eea93b420e039c47b27c5943825ff0ae0d64efa1d76cdbc19c6",
+              "to_sha256": "b750f89beba93b5384f38671058a4088341cfa667da85ec3655d1059b31037af"
+            }
+          ]
+        }
+      ],
+      "applied": true,
+      "baseline_controls_valid": true,
+      "positive_preserved": true,
+      "positive_process_status": "COMPLETED",
+      "witness_process_status": "COMPLETED",
+      "baseline_errors": {
+        "positive": [],
+        "witness": []
+      },
+      "baseline_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "PRESERVED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_witness": {
+        "overall": "CONTRADICTED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "PRESERVED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "CONTRADICTED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "positive_exit_code": 0,
+      "witness_exit_code": 0,
+      "positive_errors": [],
+      "mutant_positive": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "PRESERVED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "mutant_witness": {
+        "overall": "VERIFIED",
+        "reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+        ],
+        "layers": {
+          "INPUT": "ADMITTED",
+          "CANONICALIZATION": "VERIFIED",
+          "INTEGRITY": "VERIFIED",
+          "AUTHENTICITY": "VERIFIED",
+          "SUBJECT_BINDING": "VERIFIED",
+          "RECOMPUTATION": "REPRODUCED",
+          "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+          "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+          "GUARANTEE_PRESERVATION": "PRESERVED",
+          "CONTINUITY": "NOT_REQUESTED",
+          "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+          "PRODUCT_PROJECTION": "VERIFIED",
+          "EXPLAINABLE_REPORT": "GENERATED",
+          "PROVENANCE": "RECORDED"
+        },
+        "semanticOutcome": "VERIFIED"
+      },
+      "baseline_projection": "CONTRADICTED",
+      "mutant_projection": "VERIFIED",
+      "witness_reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+      ],
+      "checker_execution_failed": false,
+      "checker_output_invalid": false,
+      "status": "KILLED"
+    }
+  ]
+}

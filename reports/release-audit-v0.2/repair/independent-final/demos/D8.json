@@ -1,0 +1,987 @@
+{
+  "id": "D8",
+  "input": {
+    "request": {
+      "schema": "receiptos.verify.request.v2",
+      "verification_profile": "receiptos.verify.generic.v2",
+      "adapter": "interpoll",
+      "claim": {
+        "id": "audit02:signed-execution",
+        "kind": "SIGNED_ACTION_TRACE",
+        "parameters": {
+          "action": {
+            "version": 1,
+            "namespace": "v3",
+            "kind": "reaction",
+            "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+            "targetType": "post",
+            "targetId": "audit02-fresh-target",
+            "value": "up",
+            "createdAt": 123,
+            "nonce": "33333333333333333333333333333333"
+          },
+          "outcome": "EXECUTION_OBSERVED"
+        }
+      },
+      "subject": {
+        "kind": "agent-action",
+        "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+        "version": "1",
+        "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+      },
+      "scope": {
+        "namespace": "v3",
+        "observation": "supplied-trace-only"
+      },
+      "authority": {
+        "id": "audit02-public-test-key",
+        "class": "INDEPENDENT_RECOMPUTATION"
+      },
+      "policy": {
+        "id": "audit02-policy",
+        "version": "1",
+        "trusted_keys": [
+          {
+            "id": "audit02-public-test-key",
+            "spki_base64": "MCowBQYDK2VwAyEAslwb7dnn4YIVGpJI8foGC8ubu91WXcMLa9MmKXbvTHs="
+          }
+        ],
+        "required_layers": [
+          "INTEGRITY",
+          "AUTHENTICITY",
+          "SUBJECT_BINDING",
+          "RECOMPUTATION",
+          "EVIDENCE_SUFFICIENCY",
+          "SEMANTIC_COMPATIBILITY"
+        ],
+        "minimum_grade": "LOCAL_RECOMPUTATION",
+        "verification_time": 10,
+        "established_assumptions": [],
+        "dependency_results": [],
+        "accepted_authorities": [
+          {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          }
+        ]
+      },
+      "time": {
+        "not_before": 0,
+        "not_after": 20
+      },
+      "version": "2",
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "adapter-input",
+        "execution"
+      ],
+      "evidence": [],
+      "requested_guarantees": [],
+      "adapter_requirement": {
+        "requested_action": {
+          "version": 1,
+          "namespace": "v3",
+          "kind": "reaction",
+          "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+          "targetType": "post",
+          "targetId": "audit02-fresh-target",
+          "value": "up",
+          "createdAt": 123,
+          "nonce": "33333333333333333333333333333333"
+        },
+        "authority": {
+          "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+          "namespace": "v3"
+        },
+        "required_outcome": "EXECUTION_OBSERVED"
+      }
+    },
+    "bundle": {
+      "schema": "receiptos.verify.bundle.v2",
+      "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+      "statement": {
+        "schema": "receiptos.verify.statement.v2",
+        "verification_profile": "receiptos.verify.generic.v2",
+        "adapter": "interpoll",
+        "surface": {
+          "claim": {
+            "id": "audit02:signed-execution",
+            "kind": "SIGNED_ACTION_TRACE",
+            "parameters": {
+              "action": {
+                "version": 1,
+                "namespace": "v3",
+                "kind": "reaction",
+                "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                "targetType": "post",
+                "targetId": "audit02-fresh-target",
+                "value": "up",
+                "createdAt": 123,
+                "nonce": "33333333333333333333333333333333"
+              },
+              "outcome": "EXECUTION_OBSERVED"
+            }
+          },
+          "subject": {
+            "kind": "agent-action",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "version": "1",
+            "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+          },
+          "scope": {
+            "namespace": "v3",
+            "observation": "supplied-trace-only"
+          },
+          "authority": {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          },
+          "time": {
+            "not_before": 0,
+            "not_after": 20
+          },
+          "version": "2",
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "adapter-input",
+            "execution"
+          ],
+          "policy": {
+            "id": "audit02-policy",
+            "version": "1"
+          }
+        },
+        "asserted_result": "PASS",
+        "evidence_manifest": [
+          {
+            "id": "adapter-input",
+            "role": "adapter-input",
+            "digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953",
+            "size": 2603
+          }
+        ],
+        "payload_digest": "d02f8e422fd6c93dab528bc669453b93e2637ce5d7a771d6e840dbdbdf49756c",
+        "crypto": {
+          "provider": "ed25519",
+          "key_id": "audit02-public-test-key"
+        }
+      },
+      "signature_base64": "SOecZU7LJBuYHnmadHW4nxeaQIBxVF8DaQDgykpB57ETxdQgv3KTR061dDlf86WF2Z31fsTFLSvyrxCcCcD0Dg==",
+      "evidence": [
+        {
+          "id": "adapter-input",
+          "bytes_base64": "eyJhY2NlcHRlZF9hY3Rpb24iOnsiYWN0aW9uIjp7ImFjdG9yIjoiMmZhMjEwNGQ2YjM4ZDExYjAyMzAwMTA1NTk4NzkxMjRlNDJhYjhkZmVmZjVmZjI5ZGM5Y2RhZGQ0ZWNhY2MzZiIsImNyZWF0ZWRBdCI6MTIzLCJpZCI6ImNlYTcwMjQ0YTMwOGE3NWJhNjFkNTM5MWRhMzE2NTE5YzI5ZjI0ZmQzYjllZDA5MDc4ZDlkY2QzM2UzMGIzYmQiLCJraW5kIjoicmVhY3Rpb24iLCJuYW1lc3BhY2UiOiJ2MyIsIm5vbmNlIjoiMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMiLCJzaWduYXR1cmUiOiI3ZmI4MDI1ZGEwNTQ4NWM5NjdiNzM3NzIwNjBkNTI1MDc1MzkxNmZhODc4MGIwZmYxOWY5MDg1OGQ2NzU5ZGVjY2M2YWUzYzk2ZjE1YzBiYWM1ZTdiNWFhMzY0YzNiNTYzMjVlZjEzNDgwMTVjNDIxYTk1MzI2OTFmOWE5NWUyYyIsInRhcmdldElkIjoiYXVkaXQwMi1mcmVzaC10YXJnZXQiLCJ0YXJnZXRUeXBlIjoicG9zdCIsInZhbHVlIjoidXAiLCJ2ZXJzaW9uIjoxfSwic3RhdHVzIjoiYWNjZXB0ZWQifSwiYXR0ZW1wdHMiOlt7ImFjdGlvbiI6eyJhY3RvciI6IjJmYTIxMDRkNmIzOGQxMWIwMjMwMDEwNTU5ODc5MTI0ZTQyYWI4ZGZlZmY1ZmYyOWRjOWNkYWRkNGVjYWNjM2YiLCJjcmVhdGVkQXQiOjEyMywiaWQiOiJjZWE3MDI0NGEzMDhhNzViYTYxZDUzOTFkYTMxNjUxOWMyOWYyNGZkM2I5ZWQwOTA3OGQ5ZGNkMzNlMzBiM2JkIiwia2luZCI6InJlYWN0aW9uIiwibmFtZXNwYWNlIjoidjMiLCJub25jZSI6IjMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzIiwic2lnbmF0dXJlIjoiN2ZiODAyNWRhMDU0ODVjOTY3YjczNzcyMDYwZDUyNTA3NTM5MTZmYTg3ODBiMGZmMTlmOTA4NThkNjc1OWRlY2NjNmFlM2M5NmYxNWMwYmFjNWU3YjVhYTM2NGMzYjU2MzI1ZWYxMzQ4MDE1YzQyMWE5NTMyNjkxZjlhOTVlMmMiLCJ0YXJnZXRJZCI6ImF1ZGl0MDItZnJlc2gtdGFyZ2V0IiwidGFyZ2V0VHlwZSI6InBvc3QiLCJ2YWx1ZSI6InVwIiwidmVyc2lvbiI6MX0sImRlbGl2ZXJ5X3N0YXR1cyI6ImFjY2VwdGVkIiwiZXhlY3V0aW9uX2F0dGVtcHRlZCI6dHJ1ZSwiaWQiOiJhdWRpdC1hdHRlbXB0LW9uZSJ9LHsiYWN0aW9uIjp7ImFjdG9yIjoiMmZhMjEwNGQ2YjM4ZDExYjAyMzAwMTA1NTk4NzkxMjRlNDJhYjhkZmVmZjVmZjI5ZGM5Y2RhZGQ0ZWNhY2MzZiIsImNyZWF0ZWRBdCI6MTIzLCJpZCI6ImNlYTcwMjQ0YTMwOGE3NWJhNjFkNTM5MWRhMzE2NTE5YzI5ZjI0ZmQzYjllZDA5MDc4ZDlkY2QzM2UzMGIzYmQiLCJraW5kIjoicmVhY3Rpb24iLCJuYW1lc3BhY2UiOiJ2MyIsIm5vbmNlIjoiMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMiLCJzaWduYXR1cmUiOiI3ZmI4MDI1ZGEwNTQ4NWM5NjdiNzM3NzIwNjBkNTI1MDc1MzkxNmZhODc4MGIwZmYxOWY5MDg1OGQ2NzU5ZGVjY2M2YWUzYzk2ZjE1YzBiYWM1ZTdiNWFhMzY0YzNiNTYzMjVlZjEzNDgwMTVjNDIxYTk1MzI2OTFmOWE5NWUyYyIsInRhcmdldElkIjoiYXVkaXQwMi1mcmVzaC10YXJnZXQiLCJ0YXJnZXRUeXBlIjoicG9zdCIsInZhbHVlIjoiZG93biIsInZlcnNpb24iOjF9LCJkZWxpdmVyeV9zdGF0dXMiOiJwZW5kaW5nIiwiZXhlY3V0aW9uX2F0dGVtcHRlZCI6ZmFsc2UsImlkIjoiYXVkaXQtcmV0cnktdHdvIn1dLCJmaW5hbF9jb21taXR0ZWRfcmVzdWx0Ijp7ImFjdGlvbl9pZCI6ImNlYTcwMjQ0YTMwOGE3NWJhNjFkNTM5MWRhMzE2NTE5YzI5ZjI0ZmQzYjllZDA5MDc4ZDlkY2QzM2UzMGIzYmQiLCJhdHRlbXB0X2lkcyI6WyJhdWRpdC1hdHRlbXB0LW9uZSIsImF1ZGl0LXJldHJ5LXR3byJdLCJldmlkZW5jZV9kaWdlc3QiOiI2MTg0ODM2ODgxNWVjZmU1MmQzNjlkN2U3NGRhNjY2YjAxNzc1M2QzYmMxZWEyNWViNGJjNDc2Y2U5NWEyMTM4Iiwib2JzZXJ2YXRpb25fZGlnZXN0IjoiMWNkMTg3ZDhmZDk5OTI3Y2Q3MzU2YWQzMWJmODk3ZTQ5MGVhZGQzNWQ5Zjk1MDk0NGQ4Mzc1YzUxYWU5ZmQ3OSJ9LCJvYnNlcnZhdGlvbiI6eyJhY3Rpb25faWQiOiJjZWE3MDI0NGEzMDhhNzViYTYxZDUzOTFkYTMxNjUxOWMyOWYyNGZkM2I5ZWQwOTA3OGQ5ZGNkMzNlMzBiM2JkIiwiYXR0ZW1wdF9pZCI6ImF1ZGl0LWF0dGVtcHQtb25lIiwicmVzdWx0IjoiQVBQTElFRCJ9LCJzaWduZWRfaW50ZW50Ijp7ImFjdG9yIjoiMmZhMjEwNGQ2YjM4ZDExYjAyMzAwMTA1NTk4NzkxMjRlNDJhYjhkZmVmZjVmZjI5ZGM5Y2RhZGQ0ZWNhY2MzZiIsImNyZWF0ZWRBdCI6MTIzLCJpZCI6ImNlYTcwMjQ0YTMwOGE3NWJhNjFkNTM5MWRhMzE2NTE5YzI5ZjI0ZmQzYjllZDA5MDc4ZDlkY2QzM2UzMGIzYmQiLCJraW5kIjoicmVhY3Rpb24iLCJuYW1lc3BhY2UiOiJ2MyIsIm5vbmNlIjoiMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMiLCJzaWduYXR1cmUiOiI3ZmI4MDI1ZGEwNTQ4NWM5NjdiNzM3NzIwNjBkNTI1MDc1MzkxNmZhODc4MGIwZmYxOWY5MDg1OGQ2NzU5ZGVjY2M2YWUzYzk2ZjE1YzBiYWM1ZTdiNWFhMzY0YzNiNTYzMjVlZjEzNDgwMTVjNDIxYTk1MzI2OTFmOWE5NWUyYyIsInRhcmdldElkIjoiYXVkaXQwMi1mcmVzaC10YXJnZXQiLCJ0YXJnZXRUeXBlIjoicG9zdCIsInZhbHVlIjoidXAiLCJ2ZXJzaW9uIjoxfX0="
+        }
+      ],
+      "payload": {
+        "crystal": {
+          "schema": "stealth.session.evidence.v1",
+          "session_id": "independent-v02-domain-audit",
+          "directory": "local/synthetic",
+          "task": {
+            "title": "Fresh audit artifact"
+          },
+          "agent": {
+            "id": "synthetic",
+            "runtime": "local"
+          },
+          "scope": {
+            "permission": null
+          },
+          "authorization": {
+            "delegation_ref": null,
+            "delegator": null,
+            "agent_operator": null,
+            "target": "local/synthetic",
+            "allowed_actions": [],
+            "authorization_valid_from": null,
+            "authorization_expiry": null,
+            "authorization_checked_at": 0,
+            "authorization_state_hash": "synthetic",
+            "authorized_at_execution": null
+          },
+          "execution": [],
+          "commands": [],
+          "changes": {
+            "files_changed": [],
+            "diff_sha256": null
+          },
+          "metadata": {
+            "message_count": 0,
+            "diff_count": 0,
+            "generated_by": "receiptos-verify-synthetic-fixture"
+          },
+          "anchor": {
+            "merkle_proof_status": "not attached",
+            "merkle_root": null,
+            "merkle_leaf_index": null,
+            "merkle_proof": [],
+            "onchain_anchor_status": "not anchored",
+            "network": "local/off-chain",
+            "contract": null,
+            "tx_hash": null,
+            "verifier_status": "not verified",
+            "receipt_root": "0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba"
+          }
+        },
+        "adapter": {
+          "signed_intent": {
+            "version": 1,
+            "namespace": "v3",
+            "kind": "reaction",
+            "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+            "targetType": "post",
+            "targetId": "audit02-fresh-target",
+            "value": "up",
+            "createdAt": 123,
+            "nonce": "33333333333333333333333333333333",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+          },
+          "accepted_action": {
+            "status": "accepted",
+            "action": {
+              "version": 1,
+              "namespace": "v3",
+              "kind": "reaction",
+              "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+              "targetType": "post",
+              "targetId": "audit02-fresh-target",
+              "value": "up",
+              "createdAt": 123,
+              "nonce": "33333333333333333333333333333333",
+              "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+              "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+            }
+          },
+          "attempts": [
+            {
+              "id": "audit-attempt-one",
+              "action": {
+                "version": 1,
+                "namespace": "v3",
+                "kind": "reaction",
+                "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                "targetType": "post",
+                "targetId": "audit02-fresh-target",
+                "value": "up",
+                "createdAt": 123,
+                "nonce": "33333333333333333333333333333333",
+                "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+                "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+              },
+              "delivery_status": "accepted",
+              "execution_attempted": true
+            },
+            {
+              "id": "audit-retry-two",
+              "action": {
+                "version": 1,
+                "namespace": "v3",
+                "kind": "reaction",
+                "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                "targetType": "post",
+                "targetId": "audit02-fresh-target",
+                "value": "down",
+                "createdAt": 123,
+                "nonce": "33333333333333333333333333333333",
+                "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+                "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+              },
+              "delivery_status": "pending",
+              "execution_attempted": false
+            }
+          ],
+          "observation": {
+            "action_id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "attempt_id": "audit-attempt-one",
+            "result": "APPLIED"
+          },
+          "final_committed_result": {
+            "action_id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "attempt_ids": [
+              "audit-attempt-one",
+              "audit-retry-two"
+            ],
+            "observation_digest": "1cd187d8fd99927cd7356ad31bf897e490eadd35d9f950944d8375c51ae9fd79",
+            "evidence_digest": "61848368815ecfe52d369d7e74da666b017753d3bc1ea25eb4bc476ce95a2138"
+          }
+        },
+        "guarantees": null,
+        "continuity": null
+      }
+    }
+  },
+  "output": {
+    "schema": "receiptos.verify.report.v2",
+    "projection_version": "receiptos.verify.projection.v2",
+    "overall": "CONTRADICTED",
+    "reason_codes": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "RETRY_AUTHORIZED_ACTION_CHANGED",
+      "ASSERTED_NATIVE_RESULT_CONTRADICTION"
+    ],
+    "explanation": "CONTRADICTED: supplied evidence is evaluated only for the caller-selected claim surface. NATIVE_CRYSTAL_ROOT_MATCH, RETRY_AUTHORIZED_ACTION_CHANGED, ASSERTED_NATIVE_RESULT_CONTRADICTION",
+    "required_layers": [
+      "INTEGRITY",
+      "AUTHENTICITY",
+      "SUBJECT_BINDING",
+      "RECOMPUTATION",
+      "EVIDENCE_SUFFICIENCY",
+      "SEMANTIC_COMPATIBILITY",
+      "DOMAIN_ADAPTERS"
+    ],
+    "layers": {
+      "INPUT": {
+        "status": "ADMITTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CANONICALIZATION": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "profile": "receiptos.verify.canonical-json.v1",
+          "statement_digest": "30279095192da300cbb34ed6f5edc1deea0e9dd4128d013cbe84b0a9b2341fdf"
+        }
+      },
+      "INTEGRITY": {
+        "status": "VERIFIED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH"
+        ],
+        "nativeResult": {
+          "ok": true,
+          "receipt_root": "0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba",
+          "recomputed_root": "0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba"
+        },
+        "limitations": [
+          "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+          "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+          "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+        ],
+        "provenance": {
+          "profileId": "crystal.handoff-receipt-root.v1",
+          "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+          "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "license": "Apache-2.0",
+          "maturity": "STABLE",
+          "capabilities": [
+            "NATIVE_RECEIPT_ROOT_INTEGRITY"
+          ],
+          "requiredEvidence": [
+            "native-crystal-evidence"
+          ],
+          "nativeVocabulary": {
+            "integrity": [
+              "ok:true",
+              "ok:false"
+            ],
+            "fields": [
+              "ok",
+              "receipt_root",
+              "recomputed_root"
+            ]
+          },
+          "runtime": "Bun 1.3.14",
+          "functions": [
+            "verifyHandoffReceiptRoot"
+          ]
+        },
+        "execution": {
+          "status": "COMPLETED",
+          "argv": [
+            "C:/Users/msi/.bun/bin/bun.exe",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\src\\adapters\\native\\crystal-bridge.ts"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "{\"ok\":true,\"value\":{\"ok\":true,\"receipt_root\":\"0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba\",\"recomputed_root\":\"0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba\"},\"runtime\":\"Bun 1.3.14\"}\n",
+          "stderr": "",
+          "stdoutSha256": "a2efb06e8c274fe2e0d333d62c8604904523307c5ded36167019baba1d58b61a",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "truncated": false
+        }
+      },
+      "AUTHENTICITY": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "provider": "ed25519",
+          "key_id": "audit02-public-test-key",
+          "boundary": "Authenticates the supplied statement, not arbitrary semantic authority."
+        }
+      },
+      "SUBJECT_BINDING": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "requested": {
+            "kind": "agent-action",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "version": "1",
+            "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+          },
+          "covered": {
+            "kind": "agent-action",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "version": "1",
+            "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+          }
+        }
+      },
+      "RECOMPUTATION": {
+        "status": "REPRODUCED",
+        "reasonCodes": [
+          "RETRY_AUTHORIZED_ACTION_CHANGED"
+        ],
+        "nativeResult": {
+          "signature": "VALID",
+          "admission": "NOT_EVALUATED",
+          "retry_relation": "VIOLATED",
+          "execution": "NOT_ESTABLISHED",
+          "final_commitment": "NOT_ESTABLISHED",
+          "acceptance_status": "accepted"
+        },
+        "productProjection": {
+          "status": "CONTRADICTED",
+          "reasonCodes": [
+            "RETRY_AUTHORIZED_ACTION_CHANGED"
+          ]
+        },
+        "provenance": {
+          "profileId": "receiptos.verify.interpoll-action.v2",
+          "sourceRepository": "Interpoll1/decentralised",
+          "sourceCommit": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+          "license": "Unlicense upstream; Apache-2.0 product glue",
+          "maturity": "EXPERIMENTAL",
+          "integrationMode": "PINNED_SOURCE",
+          "capabilities": [
+            "native-schnorr-authorization",
+            "caller-selected-action",
+            "exact-retry",
+            "supplied-observation-binding",
+            "trace-commitment"
+          ],
+          "requiredEvidence": [
+            "signed_intent",
+            "accepted_action",
+            "attempts",
+            "observation",
+            "final_committed_result"
+          ],
+          "nativeVocabulary": [
+            "VALID",
+            "INVALID",
+            "accepted",
+            "duplicate",
+            "PRESERVED",
+            "VIOLATED",
+            "NOT_ESTABLISHED"
+          ]
+        },
+        "limitations": [
+          "Native Schnorr verification establishes key control over the signed intent; fresh server admission is not evaluated.",
+          "Execution observations and relay acceptance are supplied artifacts, not independently authenticated Interpoll server or SQL execution.",
+          "A trace digest binds supplied bytes only. It does not establish that an action was executed, viewed by a human, or accepted by a deployed relay."
+        ],
+        "adapterProjection": "CONTRADICTED",
+        "semanticOutcome": "REFUTED",
+        "execution": {
+          "status": "COMPLETED",
+          "runtime": "node",
+          "relation": "pinned Schnorr verification and exact supplied trace"
+        }
+      },
+      "EVIDENCE_SUFFICIENCY": {
+        "status": "SUFFICIENT",
+        "reasonCodes": [],
+        "nativeResult": {
+          "grade": "LOCAL_RECOMPUTATION",
+          "available": [
+            "adapter-input"
+          ],
+          "git": null
+        }
+      },
+      "SEMANTIC_COMPATIBILITY": {
+        "status": "COMPATIBLE",
+        "reasonCodes": [],
+        "nativeResult": {
+          "manifest_validation": {
+            "producer": {
+              "valid": true,
+              "errors": []
+            },
+            "consumer": {
+              "valid": true,
+              "errors": []
+            }
+          },
+          "link": {
+            "valid": true,
+            "edge": {
+              "producer_claim": {
+                "claim_type": "{\"id\":\"audit02:signed-execution\",\"kind\":\"SIGNED_ACTION_TRACE\",\"parameters\":{\"action\":{\"actor\":\"2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f\",\"createdAt\":123,\"kind\":\"reaction\",\"namespace\":\"v3\",\"nonce\":\"33333333333333333333333333333333\",\"targetId\":\"audit02-fresh-target\",\"targetType\":\"post\",\"value\":\"up\",\"version\":1},\"outcome\":\"EXECUTION_OBSERVED\"}}",
+                "authority_class": "INDEPENDENT_RECOMPUTATION",
+                "scope": "{\"namespace\":\"v3\",\"observation\":\"supplied-trace-only\"}",
+                "verification_time": "{\"not_after\":20,\"not_before\":0,\"profile\":\"receiptos.interval.v2\"}"
+              },
+              "consumer_requirement": {
+                "claim_type": "{\"id\":\"audit02:signed-execution\",\"kind\":\"SIGNED_ACTION_TRACE\",\"parameters\":{\"action\":{\"actor\":\"2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f\",\"createdAt\":123,\"kind\":\"reaction\",\"namespace\":\"v3\",\"nonce\":\"33333333333333333333333333333333\",\"targetId\":\"audit02-fresh-target\",\"targetType\":\"post\",\"value\":\"up\",\"version\":1},\"outcome\":\"EXECUTION_OBSERVED\"}}",
+                "authority_class": "INDEPENDENT_RECOMPUTATION",
+                "scope": "{\"namespace\":\"v3\",\"observation\":\"supplied-trace-only\"}",
+                "verification_time": "{\"not_after\":20,\"not_before\":0,\"profile\":\"receiptos.interval.v2\"}"
+              }
+            }
+          },
+          "pair_evaluation": null
+        },
+        "compatibility": {
+          "status": "COMPATIBLE",
+          "reasonCodes": [],
+          "nativeResult": null,
+          "dimensions": {
+            "claim": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "subject": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "artifact": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "commit": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "authority": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "scope": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "policy": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "version": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "time": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "assumptions": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "dependencies": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "evidence_basis": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            }
+          },
+          "requested": {
+            "claim": {
+              "id": "audit02:signed-execution",
+              "kind": "SIGNED_ACTION_TRACE",
+              "parameters": {
+                "action": {
+                  "version": 1,
+                  "namespace": "v3",
+                  "kind": "reaction",
+                  "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                  "targetType": "post",
+                  "targetId": "audit02-fresh-target",
+                  "value": "up",
+                  "createdAt": 123,
+                  "nonce": "33333333333333333333333333333333"
+                },
+                "outcome": "EXECUTION_OBSERVED"
+              }
+            },
+            "subject": {
+              "kind": "agent-action",
+              "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+              "version": "1",
+              "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+            },
+            "scope": {
+              "namespace": "v3",
+              "observation": "supplied-trace-only"
+            },
+            "authority": {
+              "id": "audit02-public-test-key",
+              "class": "INDEPENDENT_RECOMPUTATION"
+            },
+            "policy": {
+              "id": "audit02-policy",
+              "version": "1"
+            },
+            "version": "2",
+            "time": {
+              "not_before": 0,
+              "not_after": 20
+            },
+            "assumptions": [],
+            "dependencies": [],
+            "evidence_requirements": [
+              "adapter-input",
+              "execution"
+            ]
+          },
+          "evidence": {
+            "claim": {
+              "id": "audit02:signed-execution",
+              "kind": "SIGNED_ACTION_TRACE",
+              "parameters": {
+                "action": {
+                  "version": 1,
+                  "namespace": "v3",
+                  "kind": "reaction",
+                  "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                  "targetType": "post",
+                  "targetId": "audit02-fresh-target",
+                  "value": "up",
+                  "createdAt": 123,
+                  "nonce": "33333333333333333333333333333333"
+                },
+                "outcome": "EXECUTION_OBSERVED"
+              }
+            },
+            "subject": {
+              "kind": "agent-action",
+              "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+              "version": "1",
+              "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+            },
+            "scope": {
+              "namespace": "v3",
+              "observation": "supplied-trace-only"
+            },
+            "authority": {
+              "id": "audit02-public-test-key",
+              "class": "INDEPENDENT_RECOMPUTATION"
+            },
+            "time": {
+              "not_before": 0,
+              "not_after": 20
+            },
+            "version": "2",
+            "assumptions": [],
+            "dependencies": [],
+            "evidence_requirements": [
+              "adapter-input",
+              "execution"
+            ],
+            "policy": {
+              "id": "audit02-policy",
+              "version": "1"
+            }
+          }
+        },
+        "expectedSemanticPair": null,
+        "observedSemanticPair": "PRESERVED",
+        "requestedSurface": {
+          "claim": {
+            "id": "audit02:signed-execution",
+            "kind": "SIGNED_ACTION_TRACE",
+            "parameters": {
+              "action": {
+                "version": 1,
+                "namespace": "v3",
+                "kind": "reaction",
+                "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                "targetType": "post",
+                "targetId": "audit02-fresh-target",
+                "value": "up",
+                "createdAt": 123,
+                "nonce": "33333333333333333333333333333333"
+              },
+              "outcome": "EXECUTION_OBSERVED"
+            }
+          },
+          "subject": {
+            "kind": "agent-action",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "version": "1",
+            "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+          },
+          "scope": {
+            "namespace": "v3",
+            "observation": "supplied-trace-only"
+          },
+          "authority": {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          },
+          "policy": {
+            "id": "audit02-policy",
+            "version": "1"
+          },
+          "version": "2",
+          "time": {
+            "not_before": 0,
+            "not_after": 20
+          },
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "adapter-input",
+            "execution"
+          ]
+        },
+        "evidenceSurface": {
+          "claim": {
+            "id": "audit02:signed-execution",
+            "kind": "SIGNED_ACTION_TRACE",
+            "parameters": {
+              "action": {
+                "version": 1,
+                "namespace": "v3",
+                "kind": "reaction",
+                "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                "targetType": "post",
+                "targetId": "audit02-fresh-target",
+                "value": "up",
+                "createdAt": 123,
+                "nonce": "33333333333333333333333333333333"
+              },
+              "outcome": "EXECUTION_OBSERVED"
+            }
+          },
+          "subject": {
+            "kind": "agent-action",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "version": "1",
+            "artifact_digest": "e494e3277df18cfcc33908cc4a3fdecd4e0535771c17c604a523341c56ce8953"
+          },
+          "scope": {
+            "namespace": "v3",
+            "observation": "supplied-trace-only"
+          },
+          "authority": {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          },
+          "time": {
+            "not_before": 0,
+            "not_after": 20
+          },
+          "version": "2",
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "adapter-input",
+            "execution"
+          ],
+          "policy": {
+            "id": "audit02-policy",
+            "version": "1"
+          }
+        },
+        "provenance": {
+          "profileId": "receiptos.verify.semantic-abi.v2",
+          "sourceRepository": "trustless-ai/semantic-abi",
+          "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+          "sourcePaths": [
+            "runner/src/classes.mjs",
+            "runner/src/linker.mjs",
+            "runner/src/manifest.mjs",
+            "runner/src/evaluate.mjs"
+          ],
+          "license": "Apache-2.0",
+          "maturity": "EXPERIMENTAL",
+          "integrationMode": "PINNED_SOURCE",
+          "capabilities": [
+            "native-manifest-validation",
+            "native-semantic-link",
+            "native-pair-evaluation",
+            "generic-claim-surface-compatibility"
+          ],
+          "requiredEvidence": [
+            "evidence-declared semantic surface",
+            "independently established evidence basis and dependencies"
+          ],
+          "nativeVocabulary": [
+            "valid",
+            "TYPE_ERROR",
+            "PRESERVED",
+            "VIOLATED",
+            "UNVERIFIABLE",
+            "PASS",
+            "FAIL",
+            "CANNOT_CHECK"
+          ]
+        },
+        "limitations": [
+          "The unchanged public neutral linker and pair evaluator execute locally; no private or commercial adapter is imported.",
+          "The native v0 claim/scope/temporal strings embed product canonical JSON. This encoding is not native upstream manifest interchange conformance.",
+          "Subject, artifact, authority identity, policy, version, applicability, assumptions, dependencies and accepted evidence are checked by the separate product relation.",
+          "A native valid edge or backend-conformance PASS does not establish product VERIFIED, authority authenticity or real-world truth.",
+          "No detached pair oracle is invented. Pair conformance is evaluated only when an independently selected context.expected_pair is supplied."
+        ]
+      },
+      "GUARANTEE_PRESERVATION": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CONTINUITY": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "DOMAIN_ADAPTERS": {
+        "status": "CONTRADICTED",
+        "reasonCodes": [
+          "ASSERTED_NATIVE_RESULT_CONTRADICTION"
+        ],
+        "nativeResult": null
+      },
+      "PRODUCT_PROJECTION": {
+        "status": "CONTRADICTED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "RETRY_AUTHORIZED_ACTION_CHANGED",
+          "ASSERTED_NATIVE_RESULT_CONTRADICTION"
+        ],
+        "nativeResult": null
+      },
+      "EXPLAINABLE_REPORT": {
+        "status": "GENERATED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "RETRY_AUTHORIZED_ACTION_CHANGED",
+          "ASSERTED_NATIVE_RESULT_CONTRADICTION"
+        ],
+        "nativeResult": {
+          "explanation": "CONTRADICTED: supplied evidence is evaluated only for the caller-selected claim surface. NATIVE_CRYSTAL_ROOT_MATCH, RETRY_AUTHORIZED_ACTION_CHANGED, ASSERTED_NATIVE_RESULT_CONTRADICTION"
+        }
+      },
+      "PROVENANCE": {
+        "status": "RECORDED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "sources": "provenance/sources.json",
+          "adapters": [
+            {
+              "profileId": "crystal.handoff-receipt-root.v1",
+              "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+              "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+              "license": "Apache-2.0",
+              "maturity": "STABLE",
+              "capabilities": [
+                "NATIVE_RECEIPT_ROOT_INTEGRITY"
+              ],
+              "requiredEvidence": [
+                "native-crystal-evidence"
+              ],
+              "nativeVocabulary": {
+                "integrity": [
+                  "ok:true",
+                  "ok:false"
+                ],
+                "fields": [
+                  "ok",
+                  "receipt_root",
+                  "recomputed_root"
+                ]
+              }
+            },
+            {
+              "profileId": "receiptos.verify.interpoll-action.v2",
+              "sourceRepository": "Interpoll1/decentralised",
+              "sourceCommit": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+              "license": "Unlicense upstream; Apache-2.0 product glue",
+              "maturity": "EXPERIMENTAL",
+              "integrationMode": "PINNED_SOURCE",
+              "capabilities": [
+                "native-schnorr-authorization",
+                "caller-selected-action",
+                "exact-retry",
+                "supplied-observation-binding",
+                "trace-commitment"
+              ],
+              "requiredEvidence": [
+                "signed_intent",
+                "accepted_action",
+                "attempts",
+                "observation",
+                "final_committed_result"
+              ],
+              "nativeVocabulary": [
+                "VALID",
+                "INVALID",
+                "accepted",
+                "duplicate",
+                "PRESERVED",
+                "VIOLATED",
+                "NOT_ESTABLISHED"
+              ]
+            },
+            {
+              "profileId": "receiptos.verify.semantic-abi.v2",
+              "sourceRepository": "trustless-ai/semantic-abi",
+              "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+              "sourcePaths": [
+                "runner/src/classes.mjs",
+                "runner/src/linker.mjs",
+                "runner/src/manifest.mjs",
+                "runner/src/evaluate.mjs"
+              ],
+              "license": "Apache-2.0",
+              "maturity": "EXPERIMENTAL",
+              "integrationMode": "PINNED_SOURCE",
+              "capabilities": [
+                "native-manifest-validation",
+                "native-semantic-link",
+                "native-pair-evaluation",
+                "generic-claim-surface-compatibility"
+              ],
+              "requiredEvidence": [
+                "evidence-declared semantic surface",
+                "independently established evidence basis and dependencies"
+              ],
+              "nativeVocabulary": [
+                "valid",
+                "TYPE_ERROR",
+                "PRESERVED",
+                "VIOLATED",
+                "UNVERIFIABLE",
+                "PASS",
+                "FAIL",
+                "CANNOT_CHECK"
+              ]
+            }
+          ],
+          "boundary": "Pinned public computations and product relations; supplied execution observations do not establish external execution provenance."
+        }
+      }
+    },
+    "boundaries": [
+      "Integrity is not authenticity.",
+      "Signature is not semantic correctness or accepted authority.",
+      "Replay preserves negative outcomes.",
+      "Supplied observations are not external execution provenance.",
+      "Exact compatibility is not general scope entailment."
+    ]
+  },
+  "expected": "CONTRADICTED",
+  "source_head": "eb942148eeb489db809b39e053ec905105cc3056",
+  "source_receipt": "repair/independent-final/domains/cases/D8_interpoll_mutated_retry.json",
+  "source_receipt_sha256": "324d77788fe6fe14a55b356a7aa6759c8fbad93f3ed5feb1cd62de0cec409ff4",
+  "fault": null
+}

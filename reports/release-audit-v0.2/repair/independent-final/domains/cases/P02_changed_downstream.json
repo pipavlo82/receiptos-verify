@@ -1,0 +1,154 @@
+{
+  "id": "P02_changed_downstream",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "CONTRADICTED",
+    "notes": ""
+  },
+  "input": {
+    "input": {
+      "profile": "award-actual-settlement-v0",
+      "upstream": {
+        "award": {
+          "target_ref": "audit-task",
+          "tender_id": "audit-tender",
+          "winner": "audit-worker",
+          "price": 37,
+          "finalized": true
+        },
+        "settlements": [
+          {
+            "target_ref": "audit-task",
+            "tender_id": "audit-tender",
+            "fulfiller": "audit-worker",
+            "amount": 37,
+            "accepted": true
+          }
+        ],
+        "native_result": {
+          "outcome": "PRESERVED",
+          "reason": "award_bound_to_actual_settlement"
+        }
+      },
+      "downstream": {
+        "native_result": {
+          "outcome": "PRESERVED",
+          "reason": "award_bound_to_actual_settlement"
+        },
+        "dependencies": [
+          {
+            "id": "observed-transfer",
+            "version": "altered"
+          }
+        ]
+      }
+    },
+    "context": {
+      "accepted_basis": {
+        "id": "audit02-detached-basis",
+        "dependencies": [
+          {
+            "id": "observed-transfer",
+            "version": "audit02"
+          }
+        ]
+      },
+      "required_native_result": {
+        "outcome": "PRESERVED",
+        "reason": "award_bound_to_actual_settlement"
+      },
+      "required_guarantee": "native-result-and-dependencies-preserved",
+      "required_relation_input_digest": "6bf46730c2940db9f424ca5d927cbaa3877e56566beafd26287c6d2cfe6bfabb"
+    }
+  },
+  "output": {
+    "status": "CONTRADICTED",
+    "reasonCodes": [
+      "PRF_GUARANTEE_DEPENDENCY_CHANGED"
+    ],
+    "nativeResult": {
+      "upstream": {
+        "outcome": "PRESERVED",
+        "reason": "award_bound_to_actual_settlement"
+      },
+      "recomputed": {
+        "outcome": "PRESERVED",
+        "reason": "award_bound_to_actual_settlement"
+      },
+      "recomputation": "REPRODUCED",
+      "downstream": {
+        "outcome": "PRESERVED",
+        "reason": "award_bound_to_actual_settlement"
+      }
+    },
+    "recomputation": {
+      "status": "REPRODUCED"
+    },
+    "guaranteeProjection": {
+      "status": "VIOLATED",
+      "reasonCodes": [
+        "PRF_GUARANTEE_DEPENDENCY_CHANGED"
+      ]
+    },
+    "productProjection": {
+      "status": "CONTRADICTED",
+      "reasonCodes": [
+        "PRF_GUARANTEE_DEPENDENCY_CHANGED"
+      ]
+    },
+    "execution": {
+      "status": "COMPLETED",
+      "executable": "python",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "{\"outcome\":\"PRESERVED\",\"reason\":\"award_bound_to_actual_settlement\"}\r\n",
+      "stderr": "",
+      "stdoutSha256": "7c8be13d64a760da43e04e9aa3b278b96df80fe1fce7e1b50c7644c14161a5f4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "provenance": {
+      "profileId": "receiptos.verify.guarantee-preservation.v2",
+      "sourceRepository": "pipavlo82/protected-relation-fixtures",
+      "sourceCommit": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "license": "MIT native source; Apache-2.0 product glue",
+      "maturity": "EXPERIMENTAL",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "native-main-award-settlement-recomputation",
+        "caller-selected-award-settlement-input",
+        "native-result-preservation",
+        "caller-selected-dependency-transfer"
+      ],
+      "claimBoundary": "One caller-selected supplied award/settlement tuple; not the surrounding RVR or Trustless claim result.",
+      "requiredEvidence": [
+        "upstream.award",
+        "upstream.settlements",
+        "upstream.native_result",
+        "downstream.native_result",
+        "downstream.dependencies"
+      ],
+      "nativeVocabulary": [
+        "PRESERVED",
+        "VIOLATED",
+        "UNVERIFIABLE"
+      ],
+      "nativeRelationMaturity": "STABLE",
+      "guaranteeProjectionSource": {
+        "repository": "pipavlo82/protected-relation-fixtures",
+        "commit": "f525737069dc4cef7741f805d08a988912f4454f",
+        "pullRequest": 14,
+        "state": "OPEN",
+        "maturity": "EXPERIMENTAL",
+        "integrationMode": "REIMPLEMENTED_FROM_SPEC"
+      }
+    },
+    "limitations": [
+      "The executed main relation compares one supplied synthetic award with supplied settlement tuples; it establishes neither chain provenance nor universal economic truthfulness.",
+      "The transfer projection is a bounded product reimplementation informed by open PR14, not execution of that PR Python consumer or its wire schema.",
+      "The caller separately accepts a dependency basis. Neither its completeness, soundness nor acceptance authority is established by this adapter."
+    ]
+  },
+  "assessment": "PASS",
+  "actual": "CONTRADICTED",
+  "inputSha256": "68126920198ca1723d5d6c9066e9de008ec1df4c9a146926c7791edf3982d43d"
+}

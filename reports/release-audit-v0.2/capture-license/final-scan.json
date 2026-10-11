@@ -1,0 +1,1711 @@
+{
+  "schema": "receiptos.audit.capture-sanitization.v1",
+  "mode": "DRY_RUN",
+  "files": [],
+  "omittedFieldCounts": {},
+  "omittedFields": [],
+  "retainedSemanticBodyContent": [
+    {
+      "file": "reports/release-audit-v0.2/capture-license/audit02-final-provenance-review.json",
+      "jsonPath": "capturePublicationFinding/omittedFieldCounts/body",
+      "valueType": "int",
+      "utf8Bytes": 1,
+      "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/capture-license/audit02-final-provenance-review.json",
+      "jsonPath": "capturePublicationFinding/omittedFieldCounts/content",
+      "valueType": "int",
+      "utf8Bytes": 2,
+      "sha256": "434c9b5ae514646bbd91b50032ca579efec8f22bf0b4aac12e65997c418e0dd6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/capture-license/before-inventory.json",
+      "jsonPath": "omittedFieldCounts/body",
+      "valueType": "int",
+      "utf8Bytes": 1,
+      "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/capture-license/before-inventory.json",
+      "jsonPath": "omittedFieldCounts/content",
+      "valueType": "int",
+      "utf8Bytes": 2,
+      "sha256": "434c9b5ae514646bbd91b50032ca579efec8f22bf0b4aac12e65997c418e0dd6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D11.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D11.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D11.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D5.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D5.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D5.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D6.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D6.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/demos/D6.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 293,
+      "sha256": "c0830811c477c5d4f2aa1801a866c284405e6bf2cdbb9230734f79f0f9c56507",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T04_empty_corpus.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T04_empty_corpus.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 293,
+      "sha256": "c0830811c477c5d4f2aa1801a866c284405e6bf2cdbb9230734f79f0f9c56507",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/construction-error/independent_positive-eur-native-input.json",
+      "jsonPath": "cases/independent_positive/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "76655e8e0dd9bcadc523806a87e300ddeecb5fae02a0f5c011dab6aa14543b67",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/construction-error/independent_positive-eur-native-input.json",
+      "jsonPath": "cases/independent_positive/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "76655e8e0dd9bcadc523806a87e300ddeecb5fae02a0f5c011dab6aa14543b67",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/construction-error/independent_positive-eur-native-input.json",
+      "jsonPath": "cases/independent_positive/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "28eae17a3e8960c09aae8b03ad873fca8c437d600987e2adc36c4cb23f1c3129",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "input/input/corpus/1/content",
+      "valueType": "str",
+      "utf8Bytes": 45,
+      "sha256": "88bc4b0b4a5740232dba228162602517e1ddc45d8300305f2d5abd717c81a512",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "input/input/corpus/2/content",
+      "valueType": "str",
+      "utf8Bytes": 58,
+      "sha256": "ad2e84229660b38d96a16e2b7139f55d67ac93db626f1620b6b9ad725bee4da6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "input/input/corpus/3/content",
+      "valueType": "str",
+      "utf8Bytes": 49,
+      "sha256": "53861ea7dcf3a8f27a3958c7ff02100e43f5a32e9e60a27ebb7dd0a8568f483f",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "input/input/corpus/4/content",
+      "valueType": "str",
+      "utf8Bytes": 93,
+      "sha256": "526944d13a3150002b3292e754d45d7d106fd0ababaf728252d54e55a8ce42d5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 275,
+      "sha256": "03459f28cdce4f22528adad8f9fc6556afcd05a0e1bb4694292521ae0e02c948",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 93,
+      "sha256": "526944d13a3150002b3292e754d45d7d106fd0ababaf728252d54e55a8ce42d5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/1/content",
+      "valueType": "str",
+      "utf8Bytes": 45,
+      "sha256": "88bc4b0b4a5740232dba228162602517e1ddc45d8300305f2d5abd717c81a512",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/2/content",
+      "valueType": "str",
+      "utf8Bytes": 58,
+      "sha256": "ad2e84229660b38d96a16e2b7139f55d67ac93db626f1620b6b9ad725bee4da6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/3/content",
+      "valueType": "str",
+      "utf8Bytes": 49,
+      "sha256": "53861ea7dcf3a8f27a3958c7ff02100e43f5a32e9e60a27ebb7dd0a8568f483f",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/4/content",
+      "valueType": "str",
+      "utf8Bytes": 93,
+      "sha256": "526944d13a3150002b3292e754d45d7d106fd0ababaf728252d54e55a8ce42d5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "pinnedAdmissionInput/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 275,
+      "sha256": "03459f28cdce4f22528adad8f9fc6556afcd05a0e1bb4694292521ae0e02c948",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-initial-controller-error.json",
+      "jsonPath": "pinnedAdmissionInput/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 93,
+      "sha256": "526944d13a3150002b3292e754d45d7d106fd0ababaf728252d54e55a8ce42d5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "input/input/corpus/1/content",
+      "valueType": "str",
+      "utf8Bytes": 45,
+      "sha256": "88bc4b0b4a5740232dba228162602517e1ddc45d8300305f2d5abd717c81a512",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "input/input/corpus/2/content",
+      "valueType": "str",
+      "utf8Bytes": 58,
+      "sha256": "ad2e84229660b38d96a16e2b7139f55d67ac93db626f1620b6b9ad725bee4da6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "input/input/corpus/3/content",
+      "valueType": "str",
+      "utf8Bytes": 49,
+      "sha256": "53861ea7dcf3a8f27a3958c7ff02100e43f5a32e9e60a27ebb7dd0a8568f483f",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 365,
+      "sha256": "020b3baa467f53bccd6d2b9063ecde695778098325153cdb0dc2415cffb736a1",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/1/content",
+      "valueType": "str",
+      "utf8Bytes": 45,
+      "sha256": "88bc4b0b4a5740232dba228162602517e1ddc45d8300305f2d5abd717c81a512",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/2/content",
+      "valueType": "str",
+      "utf8Bytes": 58,
+      "sha256": "ad2e84229660b38d96a16e2b7139f55d67ac93db626f1620b6b9ad725bee4da6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "pinnedAdmissionInput/input/corpus/3/content",
+      "valueType": "str",
+      "utf8Bytes": 49,
+      "sha256": "53861ea7dcf3a8f27a3958c7ff02100e43f5a32e9e60a27ebb7dd0a8568f483f",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "pinnedAdmissionInput/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 365,
+      "sha256": "020b3baa467f53bccd6d2b9063ecde695778098325153cdb0dc2415cffb736a1",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "pinnedAdmissionInput/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "normalizedPinnedInput/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "normalizedPinnedInput/input/corpus/1/content",
+      "valueType": "str",
+      "utf8Bytes": 45,
+      "sha256": "88bc4b0b4a5740232dba228162602517e1ddc45d8300305f2d5abd717c81a512",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "normalizedPinnedInput/input/corpus/2/content",
+      "valueType": "str",
+      "utf8Bytes": 58,
+      "sha256": "ad2e84229660b38d96a16e2b7139f55d67ac93db626f1620b6b9ad725bee4da6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "normalizedPinnedInput/input/corpus/3/content",
+      "valueType": "str",
+      "utf8Bytes": 49,
+      "sha256": "53861ea7dcf3a8f27a3958c7ff02100e43f5a32e9e60a27ebb7dd0a8568f483f",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "normalizedPinnedInput/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 365,
+      "sha256": "020b3baa467f53bccd6d2b9063ecde695778098325153cdb0dc2415cffb736a1",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/domains/current-main-replay.json",
+      "jsonPath": "normalizedPinnedInput/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 63,
+      "sha256": "ee9f297ac6d2b72d0c7cd4a2428244a38b1f24f954df0a6dd6da72c218a73301",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/gate/determinism/trustless-native-cli-input.json",
+      "jsonPath": "cases/receiptos_negative/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 43,
+      "sha256": "cc5162ef4251fc82d8f496b5b7407a5ea2455a08c36209aae797f8bf6086e902",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/gate/determinism/trustless-native-cli-input.json",
+      "jsonPath": "cases/receiptos_negative/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 300,
+      "sha256": "0718e6d3f06e76b4bc2746952307ed3a8406f36567476dd47c73eb805e9c53ba",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/gate/determinism/trustless-native-cli-input.json",
+      "jsonPath": "cases/receiptos_negative/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 43,
+      "sha256": "cc5162ef4251fc82d8f496b5b7407a5ea2455a08c36209aae797f8bf6086e902",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G24/vector/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 36,
+      "sha256": "a97dfdbf4656cfb46be7ba4ad5e3c906e3a0698fb39ed4de0cc782dc526a4ede",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G24/vector/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 300,
+      "sha256": "077514368d853daa0a6ab5212decea8fa5b1478e367ddfd1fd67cc88d0ebca8a",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G24/vector/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 36,
+      "sha256": "a97dfdbf4656cfb46be7ba4ad5e3c906e3a0698fb39ed4de0cc782dc526a4ede",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G11/vector/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 36,
+      "sha256": "a97dfdbf4656cfb46be7ba4ad5e3c906e3a0698fb39ed4de0cc782dc526a4ede",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G11/vector/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 300,
+      "sha256": "077514368d853daa0a6ab5212decea8fa5b1478e367ddfd1fd67cc88d0ebca8a",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G11/vector/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 36,
+      "sha256": "a97dfdbf4656cfb46be7ba4ad5e3c906e3a0698fb39ed4de0cc782dc526a4ede",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G12/vector/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 43,
+      "sha256": "cc5162ef4251fc82d8f496b5b7407a5ea2455a08c36209aae797f8bf6086e902",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G12/vector/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 300,
+      "sha256": "0718e6d3f06e76b4bc2746952307ed3a8406f36567476dd47c73eb805e9c53ba",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G12/vector/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 43,
+      "sha256": "cc5162ef4251fc82d8f496b5b7407a5ea2455a08c36209aae797f8bf6086e902",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G29/vector/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 36,
+      "sha256": "a97dfdbf4656cfb46be7ba4ad5e3c906e3a0698fb39ed4de0cc782dc526a4ede",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G29/vector/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 293,
+      "sha256": "2d3f9876fda26f265ca91a200d8ea5550456ec1d03ef28d5c2b41666cbb08746",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/mutations-independent/baseline-inputs-and-reports.json",
+      "jsonPath": "v2-G29/vector/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 36,
+      "sha256": "a97dfdbf4656cfb46be7ba4ad5e3c906e3a0698fb39ed4de0cc782dc526a4ede",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 293,
+      "sha256": "c0830811c477c5d4f2aa1801a866c284405e6bf2cdbb9230734f79f0f9c56507",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T04_empty_corpus.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T04_empty_corpus.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 293,
+      "sha256": "c0830811c477c5d4f2aa1801a866c284405e6bf2cdbb9230734f79f0f9c56507",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/domains-final/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/final/determinism/trustless-native-cli-input.json",
+      "jsonPath": "cases/receiptos_negative/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 43,
+      "sha256": "cc5162ef4251fc82d8f496b5b7407a5ea2455a08c36209aae797f8bf6086e902",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/final/determinism/trustless-native-cli-input.json",
+      "jsonPath": "cases/receiptos_negative/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 300,
+      "sha256": "0718e6d3f06e76b4bc2746952307ed3a8406f36567476dd47c73eb805e9c53ba",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/final/determinism/trustless-native-cli-input.json",
+      "jsonPath": "cases/receiptos_negative/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 43,
+      "sha256": "cc5162ef4251fc82d8f496b5b7407a5ea2455a08c36209aae797f8bf6086e902",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D11.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D11.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D11.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D5.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D5.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D5.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D6.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D6.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/demos/D6.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D11_reproduced_negative.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D5_trustless_compatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/D6_trustless_incompatible.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_negative-native-input.json",
+      "jsonPath": "cases/independent_negative/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_opaque-native-input.json",
+      "jsonPath": "cases/independent_opaque/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 293,
+      "sha256": "c0830811c477c5d4f2aa1801a866c284405e6bf2cdbb9230734f79f0f9c56507",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/independent_positive-native-input.json",
+      "jsonPath": "cases/independent_positive/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T01_native_positive.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "0856eb7774a0cf3a75dde6f5d043fd3178847b30fb2281d4c6a8f829689d017d",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T02_native_negative.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 44,
+      "sha256": "0608bf832d237f26a8d7aa2330dbbbb9be574dbcbb84e10c88da9c011a668491",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T03_saved_result_tampered.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T04_empty_corpus.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T04_empty_corpus.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T05_unimplemented_PR57.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 299,
+      "sha256": "43d15f8aa17a554adbd2028011e081d2f2cb8f40aa394656af9fe6ac1ac496d6",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T06_wrong_pin.json",
+      "jsonPath": "input/input/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/corpus/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/manifest/body",
+      "valueType": "dict",
+      "utf8Bytes": 293,
+      "sha256": "c0830811c477c5d4f2aa1801a866c284405e6bf2cdbb9230734f79f0f9c56507",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    },
+    {
+      "file": "reports/release-audit-v0.2/repair/independent-final/domains/cases/T08_opaque_grade.json",
+      "jsonPath": "input/bundle/payload/adapter/input/decision/retrieved/0/content",
+      "valueType": "str",
+      "utf8Bytes": 25,
+      "sha256": "404af679dd6bbe2e881bba762d2efa732e0b0b205e8bc8b20aa8c69bb94898e5",
+      "reason": "Unnecessary source/body capture omitted; metadata and original raw local evidence retained separately.",
+      "disposition": "PRESERVE_SEMANTIC_ORACLE_INPUT; not an API-context capture"
+    }
+  ],
+  "boundary": "Source/vendor/old vectors/legal/dependency files are untouched. This cleans current tree only; old local audit history must be quarantined or sanitized separately before any publication."
+}

@@ -39,8 +39,8 @@
     },
     {
       "path": "docs/files-not-reused.md",
-      "bytes": 42399,
-      "sha256": "24ce37291478aa2934e622c0a6655d3ff3a7cb455bb79877446c171487d214a0"
+      "bytes": 42632,
+      "sha256": "f42b31ff268c1cd7a544d91ba5df99ab8f73b5f117a3dd15966cdd0f09ccf69f"
     },
     {
       "path": "docs/generic-claim-boundary.md",
@@ -214,13 +214,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 7118,
-      "sha256": "e65e8b1a25fe8d76c7f42d75f2c3b6a0fcd939845e5c3e33e2679b40f737bce9"
+      "bytes": 7282,
+      "sha256": "07464ca1909083315fecb6eecebd712b20e5151fc814f16d9233764ed60ce04b"
     },
     {
       "path": "RELEASE_AUDIT_v0.1.md",
       "bytes": 32500,
       "sha256": "e7ea2d6ece749b29ecf0e4fe2933a09881735f2c0550ddd03e58dbcf6671ada1"
+    },
+    {
+      "path": "RELEASE_AUDIT_v0.2.md",
+      "bytes": 31218,
+      "sha256": "a4f29eb7fcdd63e79cd298aff16c461b5a4102707814c834bad7eb2ba58cea22"
     },
     {
       "path": "schemas/bundle-v2.schema.json",

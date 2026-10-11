@@ -1,0 +1,78 @@
+{
+  "tested_commit": "eb942148eeb489db809b39e053ec905105cc3056",
+  "count": 14,
+  "passed": 14,
+  "rows": [
+    {
+      "id": "D1",
+      "overall": "VERIFIED",
+      "path": "repair/independent-final/demos/D1.json"
+    },
+    {
+      "id": "D2",
+      "overall": "CONTRADICTED",
+      "path": "repair/independent-final/demos/D2.json"
+    },
+    {
+      "id": "D3",
+      "overall": "CONTRADICTED",
+      "path": "repair/independent-final/demos/D3.json"
+    },
+    {
+      "id": "D4",
+      "overall": "CONTRADICTED",
+      "path": "repair/independent-final/demos/D4.json"
+    },
+    {
+      "id": "D5",
+      "overall": "VERIFIED",
+      "path": "repair/independent-final/demos/D5.json"
+    },
+    {
+      "id": "D6",
+      "overall": "CONTRADICTED",
+      "path": "repair/independent-final/demos/D6.json"
+    },
+    {
+      "id": "D7",
+      "overall": "VERIFIED",
+      "path": "repair/independent-final/demos/D7.json"
+    },
+    {
+      "id": "D8",
+      "overall": "CONTRADICTED",
+      "path": "repair/independent-final/demos/D8.json"
+    },
+    {
+      "id": "D9",
+      "overall": "VERIFIED",
+      "path": "repair/independent-final/demos/D9.json"
+    },
+    {
+      "id": "D10",
+      "overall": "CONTRADICTED",
+      "path": "repair/independent-final/demos/D10.json"
+    },
+    {
+      "id": "D11",
+      "overall": "CONTRADICTED",
+      "path": "repair/independent-final/demos/D11.json"
+    },
+    {
+      "id": "D12",
+      "overall": "INSUFFICIENT_EVIDENCE",
+      "path": "repair/independent-final/demos/D12.json"
+    },
+    {
+      "id": "D13",
+      "overall": "CANNOT_RECOMPUTE",
+      "path": "repair/independent-final/demos/D13.json"
+    },
+    {
+      "id": "D14",
+      "overall": "UNSUPPORTED_PROFILE",
+      "path": "repair/independent-final/demos/D14.json"
+    }
+  ],
+  "boundary": "Fresh detached independent inputs, native real execution and caller-selected expectations. D13 explicitly faults only a disposable copy from exact tested source."
+}

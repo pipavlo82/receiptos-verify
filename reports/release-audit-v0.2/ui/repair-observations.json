@@ -1,0 +1,28 @@
+{
+  "testedCodeOriginalCommit": "3df769c",
+  "testedCodeSanitizedCommit": "b97201fe9c1122f59a3e12ccba0a0921b5fd87ea",
+  "sourceFilesUnchangedByCuration": true,
+  "preview": "http://127.0.0.1:8810/",
+  "continuityBeforeReceipt": "core/results/continuity-binding-_true_.json",
+  "continuityAfter": "REJECTED_MALFORMED",
+  "semantic": {
+    "className": "verdict bad",
+    "layers": [
+      "INPUTADMITTED",
+      "CANONICALIZATIONVERIFIED",
+      "INTEGRITYVERIFIED",
+      "AUTHENTICITYVERIFIED",
+      "SUBJECT_BINDINGVERIFIED",
+      "RECOMPUTATIONREPRODUCED",
+      "EVIDENCE_SUFFICIENCYSUFFICIENT",
+      "SEMANTIC_COMPATIBILITYCONTRADICTED",
+      "GUARANTEE_PRESERVATIONNOT_REQUESTED",
+      "CONTINUITYNOT_REQUESTED",
+      "DOMAIN_ADAPTERSNOT_REQUESTED",
+      "PRODUCT_PROJECTIONCONTRADICTED",
+      "EXPLAINABLE_REPORTGENERATED",
+      "PROVENANCERECORDED"
+    ],
+    "verdict": "CONTRADICTED"
+  }
+}

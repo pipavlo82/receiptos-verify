@@ -32,7 +32,8 @@ def walk(value,path=(),api=False,endpoint=None,records=None):
     for key,val in value.items():
         child_api=api or key.startswith('repos/')
         child_endpoint=key if key.startswith('repos/') else endpoint
-        omit=key=='patch' or key in ['content','body'] and api
+        # Numeric counters named "patch" are metadata, not source captures.
+        omit=key=='patch' and isinstance(val,str) or key in ['content','body'] and api
         if omit:
             metadata=desc(val,value.get('encoding') if key=='content' else None)
             record={'jsonPath':'/'.join((*path,key)),'key':key,'repository':endpoint_repo(path,endpoint),'endpoint':endpoint,**metadata}

@@ -294,7 +294,7 @@ Retained role: **adapter**. Signed public engagement, immutable retry and bounde
 
 Representative source references: `shared-validation/engagement.js`, `shared-validation/engagement-store.js`, `src/services/publicEngagementService.ts`, `src/services/reactionOutboxService.ts`, `docs/security/PUBLIC_ENGAGEMENT_V1.md`.
 
-Not copied as runtime/data: `shared-validation/engagement.js`, `shared-validation/engagement-store.js`, `src/services/publicEngagementService.ts`, `src/services/reactionOutboxService.ts`, `tools/coordination-impact-v2/`. No upstream service/store/UI/SQL deployment or coordination receipt corpus is copied. Public signed-action/retry semantics are independently reimplemented. Exact signed retries do not establish live admission atomicity, target existence, viewing, human uniqueness or independent coordination judgments.
+V0.1 did not copy the native action implementation. V0.2 copies and executes only `shared-validation/engagement.js` from `559e47f2cd2ffcbd8ad38293da89448d8ec3152d` under its retained Unlicense grant, through the bounded native signed-action adapter. Not copied as runtime/data: `shared-validation/engagement-store.js`, `src/services/publicEngagementService.ts`, `src/services/reactionOutboxService.ts`, `tools/coordination-impact-v2/`. No upstream service/store/UI/SQL deployment or coordination receipt corpus is copied. Supplied retry relation checks are product code around that native signature primitive. Exact signed retries do not establish live admission atomicity, target existence, viewing, human uniqueness or independent coordination judgments.
 
 ### jdleo/provably-fair-dice
 

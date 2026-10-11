@@ -1,0 +1,1131 @@
+{
+  "schema": "receiptos.verify.determinism-report.v2",
+  "passed": true,
+  "versions": {
+    "node": "v22.15.0",
+    "python": "3.12.10"
+  },
+  "generic_groups": 7,
+  "generic_runs": 42,
+  "native_groups": 4,
+  "native_runs": 12,
+  "identity_exclusions": [
+    "Only exact execution.argv fields in product reports; no native result, evidence, policy, grade, reason, status or pin fields excluded."
+  ],
+  "limitations": [
+    "Operational command receipts include exact host paths; their bytes are not the product semantic identity.",
+    "Python -I ignores PYTHONHASHSEED; the environment variant records that variable without claiming it changes isolated Python hash randomization.",
+    "Trustless optimized bridge imports raw native functions under -O; its child checker stays under the fixed normal command. Separate trustless-native-cli groups directly test that unchanged CLI with -O.",
+    "PRF optimized run executes the unchanged native relation, not the JavaScript product transfer projection; generic G15 covers that projection in normal, repeated, jitless, environment and two-path modes."
+  ],
+  "generic": [
+    {
+      "id": "G01",
+      "passed": true,
+      "raw_report_difference_only_execution_argv": true,
+      "excluded_fields": [
+        "execution.argv, at any report depth"
+      ],
+      "rows": [
+        {
+          "mode": "normal",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "dd730e4d8a1dfa30bc94549dbfb73412750c99028c7cdd7ea60896dc0f1c2118",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G01.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "2e7690433fd4748ca35f423788235836732ec28002344efb706a23bd6b2e8aa6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G01-normal.json",
+          "stderr_file": "reports/v0.2/determinism/G01-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "dd730e4d8a1dfa30bc94549dbfb73412750c99028c7cdd7ea60896dc0f1c2118",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G01.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "2e7690433fd4748ca35f423788235836732ec28002344efb706a23bd6b2e8aa6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G01-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/G01-repeat.stderr.txt"
+        },
+        {
+          "mode": "jitless",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "dd730e4d8a1dfa30bc94549dbfb73412750c99028c7cdd7ea60896dc0f1c2118",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "--jitless",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G01.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "2e7690433fd4748ca35f423788235836732ec28002344efb706a23bd6b2e8aa6",
+          "stderr_sha256": "028303eeb381bc111e88c0dc754dcdc1ecf60efe26af42feff3818e036e2fcae",
+          "stdout_file": "reports/v0.2/determinism/G01-jitless.json",
+          "stderr_file": "reports/v0.2/determinism/G01-jitless.stderr.txt"
+        },
+        {
+          "mode": "env-variant",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "dd730e4d8a1dfa30bc94549dbfb73412750c99028c7cdd7ea60896dc0f1c2118",
+          "full_report_byte_identical": true,
+          "environment": {
+            "TZ": "Pacific/Honolulu",
+            "LC_ALL": "C.UTF-8",
+            "PYTHONHASHSEED": "733"
+          },
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G01.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "2e7690433fd4748ca35f423788235836732ec28002344efb706a23bd6b2e8aa6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G01-env-variant.json",
+          "stderr_file": "reports/v0.2/determinism/G01-env-variant.stderr.txt"
+        },
+        {
+          "mode": "path-a",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "dd730e4d8a1dfa30bc94549dbfb73412750c99028c7cdd7ea60896dc0f1c2118",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\vectors\\v0.2\\G01.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\",
+          "exit_code": 0,
+          "stdout_sha256": "10a310a1131465eb300c7448107c6238c30076b31221a205e550b23dc1342218",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G01-path-a.json",
+          "stderr_file": "reports/v0.2/determinism/G01-path-a.stderr.txt"
+        },
+        {
+          "mode": "path-b",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "dd730e4d8a1dfa30bc94549dbfb73412750c99028c7cdd7ea60896dc0f1c2118",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\vectors\\v0.2\\G01.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\",
+          "exit_code": 0,
+          "stdout_sha256": "0bad218ee83037e5266c7e44785a6acc9eb290920b5f1e2b2131375be56bffc9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G01-path-b.json",
+          "stderr_file": "reports/v0.2/determinism/G01-path-b.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "G02",
+      "passed": true,
+      "raw_report_difference_only_execution_argv": true,
+      "excluded_fields": [
+        "execution.argv, at any report depth"
+      ],
+      "rows": [
+        {
+          "mode": "normal",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "2b3076911589445c263f31be945546ec95329c20f75eb2e529e4f6d2115d11fa",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G02.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "27b9db271e7aebce7fb781245729d48beba7c1508dc7bc09334f31aac437209e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G02-normal.json",
+          "stderr_file": "reports/v0.2/determinism/G02-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "2b3076911589445c263f31be945546ec95329c20f75eb2e529e4f6d2115d11fa",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G02.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "27b9db271e7aebce7fb781245729d48beba7c1508dc7bc09334f31aac437209e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G02-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/G02-repeat.stderr.txt"
+        },
+        {
+          "mode": "jitless",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "2b3076911589445c263f31be945546ec95329c20f75eb2e529e4f6d2115d11fa",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "--jitless",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G02.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "27b9db271e7aebce7fb781245729d48beba7c1508dc7bc09334f31aac437209e",
+          "stderr_sha256": "028303eeb381bc111e88c0dc754dcdc1ecf60efe26af42feff3818e036e2fcae",
+          "stdout_file": "reports/v0.2/determinism/G02-jitless.json",
+          "stderr_file": "reports/v0.2/determinism/G02-jitless.stderr.txt"
+        },
+        {
+          "mode": "env-variant",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "2b3076911589445c263f31be945546ec95329c20f75eb2e529e4f6d2115d11fa",
+          "full_report_byte_identical": true,
+          "environment": {
+            "TZ": "Pacific/Honolulu",
+            "LC_ALL": "C.UTF-8",
+            "PYTHONHASHSEED": "733"
+          },
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G02.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "27b9db271e7aebce7fb781245729d48beba7c1508dc7bc09334f31aac437209e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G02-env-variant.json",
+          "stderr_file": "reports/v0.2/determinism/G02-env-variant.stderr.txt"
+        },
+        {
+          "mode": "path-a",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "2b3076911589445c263f31be945546ec95329c20f75eb2e529e4f6d2115d11fa",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\vectors\\v0.2\\G02.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\",
+          "exit_code": 0,
+          "stdout_sha256": "a7d59437e11f551043b575a2e9a531d235ccb22c06ee2a9bd1a4d84350f88890",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G02-path-a.json",
+          "stderr_file": "reports/v0.2/determinism/G02-path-a.stderr.txt"
+        },
+        {
+          "mode": "path-b",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "2b3076911589445c263f31be945546ec95329c20f75eb2e529e4f6d2115d11fa",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\vectors\\v0.2\\G02.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\",
+          "exit_code": 0,
+          "stdout_sha256": "4173672c794b7b1eec4d5cef284ed93ff708f301b8583cffd26021543ccf9460",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G02-path-b.json",
+          "stderr_file": "reports/v0.2/determinism/G02-path-b.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "G10",
+      "passed": true,
+      "raw_report_difference_only_execution_argv": true,
+      "excluded_fields": [
+        "execution.argv, at any report depth"
+      ],
+      "rows": [
+        {
+          "mode": "normal",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "89e2864bb896b36e25d5157ce6a2a1f37ff5afe9f5c4a3ec0d74729e53fa5267",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G10.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c28b3e9a75a799872c3cd29de6c2e5d78ca93e103ea330e19bc90e683ac46b1",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G10-normal.json",
+          "stderr_file": "reports/v0.2/determinism/G10-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "89e2864bb896b36e25d5157ce6a2a1f37ff5afe9f5c4a3ec0d74729e53fa5267",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G10.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c28b3e9a75a799872c3cd29de6c2e5d78ca93e103ea330e19bc90e683ac46b1",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G10-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/G10-repeat.stderr.txt"
+        },
+        {
+          "mode": "jitless",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "89e2864bb896b36e25d5157ce6a2a1f37ff5afe9f5c4a3ec0d74729e53fa5267",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "--jitless",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G10.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c28b3e9a75a799872c3cd29de6c2e5d78ca93e103ea330e19bc90e683ac46b1",
+          "stderr_sha256": "028303eeb381bc111e88c0dc754dcdc1ecf60efe26af42feff3818e036e2fcae",
+          "stdout_file": "reports/v0.2/determinism/G10-jitless.json",
+          "stderr_file": "reports/v0.2/determinism/G10-jitless.stderr.txt"
+        },
+        {
+          "mode": "env-variant",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "89e2864bb896b36e25d5157ce6a2a1f37ff5afe9f5c4a3ec0d74729e53fa5267",
+          "full_report_byte_identical": true,
+          "environment": {
+            "TZ": "Pacific/Honolulu",
+            "LC_ALL": "C.UTF-8",
+            "PYTHONHASHSEED": "733"
+          },
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G10.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c28b3e9a75a799872c3cd29de6c2e5d78ca93e103ea330e19bc90e683ac46b1",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G10-env-variant.json",
+          "stderr_file": "reports/v0.2/determinism/G10-env-variant.stderr.txt"
+        },
+        {
+          "mode": "path-a",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "89e2864bb896b36e25d5157ce6a2a1f37ff5afe9f5c4a3ec0d74729e53fa5267",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\vectors\\v0.2\\G10.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\",
+          "exit_code": 0,
+          "stdout_sha256": "b4f8d9b857d67b85d154041726dfc29b46d3a9faa7bad4bb2af176c0911c8857",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G10-path-a.json",
+          "stderr_file": "reports/v0.2/determinism/G10-path-a.stderr.txt"
+        },
+        {
+          "mode": "path-b",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "89e2864bb896b36e25d5157ce6a2a1f37ff5afe9f5c4a3ec0d74729e53fa5267",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\vectors\\v0.2\\G10.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\",
+          "exit_code": 0,
+          "stdout_sha256": "2af4ce5ab6d49de2e559a60ef1fd90bf123a550faf8af47f1742de2931da1cc6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G10-path-b.json",
+          "stderr_file": "reports/v0.2/determinism/G10-path-b.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "G12",
+      "passed": true,
+      "raw_report_difference_only_execution_argv": true,
+      "excluded_fields": [
+        "execution.argv, at any report depth"
+      ],
+      "rows": [
+        {
+          "mode": "normal",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "ba264f7fb0a351a1a0b5c20ba819ac7187e485d52e09bf7dd8ed5adb93dba324",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G12.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c6ae32fa353fcfadec6cbe0e826cf5646ee661e05f6e5a8d72760b7671cd8cc",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G12-normal.json",
+          "stderr_file": "reports/v0.2/determinism/G12-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "ba264f7fb0a351a1a0b5c20ba819ac7187e485d52e09bf7dd8ed5adb93dba324",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G12.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c6ae32fa353fcfadec6cbe0e826cf5646ee661e05f6e5a8d72760b7671cd8cc",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G12-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/G12-repeat.stderr.txt"
+        },
+        {
+          "mode": "jitless",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "ba264f7fb0a351a1a0b5c20ba819ac7187e485d52e09bf7dd8ed5adb93dba324",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "--jitless",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G12.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c6ae32fa353fcfadec6cbe0e826cf5646ee661e05f6e5a8d72760b7671cd8cc",
+          "stderr_sha256": "028303eeb381bc111e88c0dc754dcdc1ecf60efe26af42feff3818e036e2fcae",
+          "stdout_file": "reports/v0.2/determinism/G12-jitless.json",
+          "stderr_file": "reports/v0.2/determinism/G12-jitless.stderr.txt"
+        },
+        {
+          "mode": "env-variant",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "ba264f7fb0a351a1a0b5c20ba819ac7187e485d52e09bf7dd8ed5adb93dba324",
+          "full_report_byte_identical": true,
+          "environment": {
+            "TZ": "Pacific/Honolulu",
+            "LC_ALL": "C.UTF-8",
+            "PYTHONHASHSEED": "733"
+          },
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G12.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9c6ae32fa353fcfadec6cbe0e826cf5646ee661e05f6e5a8d72760b7671cd8cc",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G12-env-variant.json",
+          "stderr_file": "reports/v0.2/determinism/G12-env-variant.stderr.txt"
+        },
+        {
+          "mode": "path-a",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "ba264f7fb0a351a1a0b5c20ba819ac7187e485d52e09bf7dd8ed5adb93dba324",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\vectors\\v0.2\\G12.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\",
+          "exit_code": 0,
+          "stdout_sha256": "b30974c7f7eceb5376d676008ee75f7dc6f4704a32fc22b2b4e5ccfc177da3da",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G12-path-a.json",
+          "stderr_file": "reports/v0.2/determinism/G12-path-a.stderr.txt"
+        },
+        {
+          "mode": "path-b",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "ba264f7fb0a351a1a0b5c20ba819ac7187e485d52e09bf7dd8ed5adb93dba324",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\vectors\\v0.2\\G12.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\",
+          "exit_code": 0,
+          "stdout_sha256": "fe83fd17f5c7d6ed176b438e4bd8db933f6a6b1998a4568cc739acbec8df41ef",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G12-path-b.json",
+          "stderr_file": "reports/v0.2/determinism/G12-path-b.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "G14",
+      "passed": true,
+      "raw_report_difference_only_execution_argv": true,
+      "excluded_fields": [
+        "execution.argv, at any report depth"
+      ],
+      "rows": [
+        {
+          "mode": "normal",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "97f6cd7bebbaa988d850430ae69180ebd4c8d4b833a183b29ea7afb7336fd506",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G14.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9732ed54b2be9bf8f57fe306489eb08693d962a03b3204ac43f438664c7c6293",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G14-normal.json",
+          "stderr_file": "reports/v0.2/determinism/G14-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "97f6cd7bebbaa988d850430ae69180ebd4c8d4b833a183b29ea7afb7336fd506",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G14.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9732ed54b2be9bf8f57fe306489eb08693d962a03b3204ac43f438664c7c6293",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G14-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/G14-repeat.stderr.txt"
+        },
+        {
+          "mode": "jitless",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "97f6cd7bebbaa988d850430ae69180ebd4c8d4b833a183b29ea7afb7336fd506",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "--jitless",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G14.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9732ed54b2be9bf8f57fe306489eb08693d962a03b3204ac43f438664c7c6293",
+          "stderr_sha256": "028303eeb381bc111e88c0dc754dcdc1ecf60efe26af42feff3818e036e2fcae",
+          "stdout_file": "reports/v0.2/determinism/G14-jitless.json",
+          "stderr_file": "reports/v0.2/determinism/G14-jitless.stderr.txt"
+        },
+        {
+          "mode": "env-variant",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "97f6cd7bebbaa988d850430ae69180ebd4c8d4b833a183b29ea7afb7336fd506",
+          "full_report_byte_identical": true,
+          "environment": {
+            "TZ": "Pacific/Honolulu",
+            "LC_ALL": "C.UTF-8",
+            "PYTHONHASHSEED": "733"
+          },
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G14.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "9732ed54b2be9bf8f57fe306489eb08693d962a03b3204ac43f438664c7c6293",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G14-env-variant.json",
+          "stderr_file": "reports/v0.2/determinism/G14-env-variant.stderr.txt"
+        },
+        {
+          "mode": "path-a",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "97f6cd7bebbaa988d850430ae69180ebd4c8d4b833a183b29ea7afb7336fd506",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\vectors\\v0.2\\G14.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\",
+          "exit_code": 0,
+          "stdout_sha256": "e03b8019a93575557dc257d4b5ffcc1aae33b3682821d15997be8300d3739281",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G14-path-a.json",
+          "stderr_file": "reports/v0.2/determinism/G14-path-a.stderr.txt"
+        },
+        {
+          "mode": "path-b",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "97f6cd7bebbaa988d850430ae69180ebd4c8d4b833a183b29ea7afb7336fd506",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\vectors\\v0.2\\G14.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\",
+          "exit_code": 0,
+          "stdout_sha256": "8eafad38cd309fd8ac150e24c3b0005caa50f8515f8e2ee029c79e4e13ff0f77",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G14-path-b.json",
+          "stderr_file": "reports/v0.2/determinism/G14-path-b.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "G15",
+      "passed": true,
+      "raw_report_difference_only_execution_argv": true,
+      "excluded_fields": [
+        "execution.argv, at any report depth"
+      ],
+      "rows": [
+        {
+          "mode": "normal",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "e7d9f671021fed746d418c3ee5c91c618c59f33cb2082d59b98cd9eb7fdcd7de",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G15.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c074cab91e0b462997b0a098ad6ba018680ed08e2ba2151b8d5c20c7e608d332",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G15-normal.json",
+          "stderr_file": "reports/v0.2/determinism/G15-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "e7d9f671021fed746d418c3ee5c91c618c59f33cb2082d59b98cd9eb7fdcd7de",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G15.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c074cab91e0b462997b0a098ad6ba018680ed08e2ba2151b8d5c20c7e608d332",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G15-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/G15-repeat.stderr.txt"
+        },
+        {
+          "mode": "jitless",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "e7d9f671021fed746d418c3ee5c91c618c59f33cb2082d59b98cd9eb7fdcd7de",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "--jitless",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G15.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c074cab91e0b462997b0a098ad6ba018680ed08e2ba2151b8d5c20c7e608d332",
+          "stderr_sha256": "028303eeb381bc111e88c0dc754dcdc1ecf60efe26af42feff3818e036e2fcae",
+          "stdout_file": "reports/v0.2/determinism/G15-jitless.json",
+          "stderr_file": "reports/v0.2/determinism/G15-jitless.stderr.txt"
+        },
+        {
+          "mode": "env-variant",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "e7d9f671021fed746d418c3ee5c91c618c59f33cb2082d59b98cd9eb7fdcd7de",
+          "full_report_byte_identical": true,
+          "environment": {
+            "TZ": "Pacific/Honolulu",
+            "LC_ALL": "C.UTF-8",
+            "PYTHONHASHSEED": "733"
+          },
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G15.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c074cab91e0b462997b0a098ad6ba018680ed08e2ba2151b8d5c20c7e608d332",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G15-env-variant.json",
+          "stderr_file": "reports/v0.2/determinism/G15-env-variant.stderr.txt"
+        },
+        {
+          "mode": "path-a",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "e7d9f671021fed746d418c3ee5c91c618c59f33cb2082d59b98cd9eb7fdcd7de",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\vectors\\v0.2\\G15.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\",
+          "exit_code": 0,
+          "stdout_sha256": "4d124780372a162efcf837fe2a322624c7de04031e174d9a777a0b4971549b01",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G15-path-a.json",
+          "stderr_file": "reports/v0.2/determinism/G15-path-a.stderr.txt"
+        },
+        {
+          "mode": "path-b",
+          "overall": "VERIFIED",
+          "semantic_identity_sha256": "e7d9f671021fed746d418c3ee5c91c618c59f33cb2082d59b98cd9eb7fdcd7de",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\vectors\\v0.2\\G15.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\",
+          "exit_code": 0,
+          "stdout_sha256": "a2fa637787f523f757cc9545fec2b3eddcbe0899671583440c86f506717afca5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G15-path-b.json",
+          "stderr_file": "reports/v0.2/determinism/G15-path-b.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "G30",
+      "passed": true,
+      "raw_report_difference_only_execution_argv": true,
+      "excluded_fields": [
+        "execution.argv, at any report depth"
+      ],
+      "rows": [
+        {
+          "mode": "normal",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "509872729d99654e06d566732d666186f02b99ddd668970e4211a04a4d229971",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G30.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c732bdc4731c685eee895acd2b3583d1f27f66270f93cd24832834993278600f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G30-normal.json",
+          "stderr_file": "reports/v0.2/determinism/G30-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "509872729d99654e06d566732d666186f02b99ddd668970e4211a04a4d229971",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G30.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c732bdc4731c685eee895acd2b3583d1f27f66270f93cd24832834993278600f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G30-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/G30-repeat.stderr.txt"
+        },
+        {
+          "mode": "jitless",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "509872729d99654e06d566732d666186f02b99ddd668970e4211a04a4d229971",
+          "full_report_byte_identical": true,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "--jitless",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G30.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c732bdc4731c685eee895acd2b3583d1f27f66270f93cd24832834993278600f",
+          "stderr_sha256": "028303eeb381bc111e88c0dc754dcdc1ecf60efe26af42feff3818e036e2fcae",
+          "stdout_file": "reports/v0.2/determinism/G30-jitless.json",
+          "stderr_file": "reports/v0.2/determinism/G30-jitless.stderr.txt"
+        },
+        {
+          "mode": "env-variant",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "509872729d99654e06d566732d666186f02b99ddd668970e4211a04a4d229971",
+          "full_report_byte_identical": true,
+          "environment": {
+            "TZ": "Pacific/Honolulu",
+            "LC_ALL": "C.UTF-8",
+            "PYTHONHASHSEED": "733"
+          },
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vectors\\v0.2\\G30.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "c732bdc4731c685eee895acd2b3583d1f27f66270f93cd24832834993278600f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G30-env-variant.json",
+          "stderr_file": "reports/v0.2/determinism/G30-env-variant.stderr.txt"
+        },
+        {
+          "mode": "path-a",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "509872729d99654e06d566732d666186f02b99ddd668970e4211a04a4d229971",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\vectors\\v0.2\\G30.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-b8db1d71-eljQzG\\",
+          "exit_code": 0,
+          "stdout_sha256": "35efd9a6688d404ec9a037c8c1f74e2019d973912da3a19d13802484521d2cea",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G30-path-a.json",
+          "stderr_file": "reports/v0.2/determinism/G30-path-a.stderr.txt"
+        },
+        {
+          "mode": "path-b",
+          "overall": "CONTRADICTED",
+          "semantic_identity_sha256": "509872729d99654e06d566732d666186f02b99ddd668970e4211a04a4d229971",
+          "full_report_byte_identical": false,
+          "environment": null,
+          "executable": "C:\\Program Files\\nodejs\\node.EXE",
+          "argv": [
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\tools\\verify-vector-v2.mjs",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\vectors\\v0.2\\G30.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\tmp\\j-721cfd3e-2EO0FT\\",
+          "exit_code": 0,
+          "stdout_sha256": "952eaa484dc3a63a3dbeb4439e818802ebf5fa221fe221c0fcf021e55a6fd61e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/G30-path-b.json",
+          "stderr_file": "reports/v0.2/determinism/G30-path-b.stderr.txt"
+        }
+      ]
+    }
+  ],
+  "native": [
+    {
+      "id": "rvr-bridge",
+      "passed": true,
+      "stdout_byte_identical": true,
+      "rows": [
+        {
+          "mode": "normal",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\src\\adapters\\native\\rvr-bridge.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "0344009108627ab9d47aa4112e8ba933f0e2f2348632dcc58aaa64352d04e344",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/rvr-bridge-normal.json",
+          "stderr_file": "reports/v0.2/determinism/rvr-bridge-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\src\\adapters\\native\\rvr-bridge.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "0344009108627ab9d47aa4112e8ba933f0e2f2348632dcc58aaa64352d04e344",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/rvr-bridge-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/rvr-bridge-repeat.stderr.txt"
+        },
+        {
+          "mode": "optimized",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-O",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\src\\adapters\\native\\rvr-bridge.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "0344009108627ab9d47aa4112e8ba933f0e2f2348632dcc58aaa64352d04e344",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/rvr-bridge-optimized.json",
+          "stderr_file": "reports/v0.2/determinism/rvr-bridge-optimized.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "trustless-bridge",
+      "passed": true,
+      "stdout_byte_identical": true,
+      "rows": [
+        {
+          "mode": "normal",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\src\\adapters\\native\\trustless-bridge.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "cc4872d199bcf69ed6c1160ce05182a243b3fbf4e93fd48224f65fc6d809cb84",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/trustless-bridge-normal.json",
+          "stderr_file": "reports/v0.2/determinism/trustless-bridge-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\src\\adapters\\native\\trustless-bridge.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "cc4872d199bcf69ed6c1160ce05182a243b3fbf4e93fd48224f65fc6d809cb84",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/trustless-bridge-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/trustless-bridge-repeat.stderr.txt"
+        },
+        {
+          "mode": "optimized",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-O",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\src\\adapters\\native\\trustless-bridge.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "cc4872d199bcf69ed6c1160ce05182a243b3fbf4e93fd48224f65fc6d809cb84",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/trustless-bridge-optimized.json",
+          "stderr_file": "reports/v0.2/determinism/trustless-bridge-optimized.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "trustless-native-cli",
+      "passed": true,
+      "stdout_byte_identical": true,
+      "rows": [
+        {
+          "mode": "normal",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\v0.2\\determinism\\trustless-native-cli-input.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "6d34e1234cce7adf9c89a32f67adfc9c7754e464a8181d4608632c1d4a10a12b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/trustless-native-cli-normal.json",
+          "stderr_file": "reports/v0.2/determinism/trustless-native-cli-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\v0.2\\determinism\\trustless-native-cli-input.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "6d34e1234cce7adf9c89a32f67adfc9c7754e464a8181d4608632c1d4a10a12b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/trustless-native-cli-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/trustless-native-cli-repeat.stderr.txt"
+        },
+        {
+          "mode": "optimized",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-O",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\reports\\v0.2\\determinism\\trustless-native-cli-input.json"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "6d34e1234cce7adf9c89a32f67adfc9c7754e464a8181d4608632c1d4a10a12b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/trustless-native-cli-optimized.json",
+          "stderr_file": "reports/v0.2/determinism/trustless-native-cli-optimized.stderr.txt"
+        }
+      ]
+    },
+    {
+      "id": "prf-native-relation",
+      "passed": true,
+      "stdout_byte_identical": true,
+      "rows": [
+        {
+          "mode": "normal",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "-c",
+            "import importlib.util,json,sys\nspec=importlib.util.spec_from_file_location('pinned_prf_award',sys.argv[1])\nmodule=importlib.util.module_from_spec(spec)\nspec.loader.exec_module(module)\npayload=json.load(sys.stdin)\nprint(json.dumps(module.relation(payload['award'],payload['settlements']),sort_keys=True,separators=(',',':'),allow_nan=False))\n",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vendor\\prf-v02\\award_actual_settlement.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "7c8be13d64a760da43e04e9aa3b278b96df80fe1fce7e1b50c7644c14161a5f4",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/prf-native-relation-normal.json",
+          "stderr_file": "reports/v0.2/determinism/prf-native-relation-normal.stderr.txt"
+        },
+        {
+          "mode": "repeat",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "-c",
+            "import importlib.util,json,sys\nspec=importlib.util.spec_from_file_location('pinned_prf_award',sys.argv[1])\nmodule=importlib.util.module_from_spec(spec)\nspec.loader.exec_module(module)\npayload=json.load(sys.stdin)\nprint(json.dumps(module.relation(payload['award'],payload['settlements']),sort_keys=True,separators=(',',':'),allow_nan=False))\n",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vendor\\prf-v02\\award_actual_settlement.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "7c8be13d64a760da43e04e9aa3b278b96df80fe1fce7e1b50c7644c14161a5f4",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/prf-native-relation-repeat.json",
+          "stderr_file": "reports/v0.2/determinism/prf-native-relation-repeat.stderr.txt"
+        },
+        {
+          "mode": "optimized",
+          "executable": "python",
+          "argv": [
+            "-I",
+            "-B",
+            "-O",
+            "-X",
+            "utf8",
+            "-c",
+            "import importlib.util,json,sys\nspec=importlib.util.spec_from_file_location('pinned_prf_award',sys.argv[1])\nmodule=importlib.util.module_from_spec(spec)\nspec.loader.exec_module(module)\npayload=json.load(sys.stdin)\nprint(json.dumps(module.relation(payload['award'],payload['settlements']),sort_keys=True,separators=(',',':'),allow_nan=False))\n",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\vendor\\prf-v02\\award_actual_settlement.py"
+          ],
+          "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-final\\",
+          "exit_code": 0,
+          "stdout_sha256": "7c8be13d64a760da43e04e9aa3b278b96df80fe1fce7e1b50c7644c14161a5f4",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_file": "reports/v0.2/determinism/prf-native-relation-optimized.json",
+          "stderr_file": "reports/v0.2/determinism/prf-native-relation-optimized.stderr.txt"
+        }
+      ]
+    }
+  ]
+}
