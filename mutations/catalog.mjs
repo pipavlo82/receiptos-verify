@@ -2,7 +2,7 @@ export const mutations=[
  {id:'ignore-requested-subject',file:'src/core/subject.mjs',witness:'V04',positive:'V01',changes:[["!equal(request.subject[field],statement.subject[field])","false"]]},
  {id:'compare-receipt-to-itself',file:'src/core/subject.mjs',witness:'V04',positive:'V01',changes:[["!equal(request.subject[field],statement.subject[field])","!equal(statement.subject[field],statement.subject[field])"]]},
  {id:'accept-any-valid-signature',file:'src/adapters/interpoll.mjs',witness:'V25',positive:'V13',changes:[["Object.entries(expected).some(([k,v])=>a[k]!==v)","false"]]},
- {id:'promote-reproduced-to-verified',file:'src/projection/project.mjs',witness:'V07',positive:'V01',changes:[["layers.RECOMPUTATION?.semanticOutcome==='REFUTED'","false"]]},
+ {id:'promote-reproduced-to-verified',file:'src/projection/project.mjs',witness:'V07',positive:'V01',changes:[["layers.RECOMPUTATION?.semanticOutcome==='REFUTED'","false"],["||layers.RECOMPUTATION?.semanticOutcome!=='VERIFIED'",""]]},
  {id:'accept-empty-evidence',file:'src/core/evidence.mjs',witness:'V06',positive:'V01',changes:[["const roles=['artifact','git-commit','git-tree','native-result'];","if(inspected.manifest.length===0) return result('SUFFICIENT');\n  const roles=['artifact','git-commit','git-tree','native-result'];"]]},
  {id:'count-crash-as-semantic-refutation',file:'src/projection/project.mjs',witness:'V08',positive:'V01',fault:'crash-rvr',changes:[["return result('CANNOT_RECOMPUTE',reasons); // MUTATE: crash-kill","return result('CONTRADICTED',reasons); // MUTATE: crash-kill"]]},
  {id:'package-presence-as-pass',file:'src/adapters/recompute_kit.mjs',witness:'V09',positive:'V01',changes:[["||report.executed!==true",""]]},

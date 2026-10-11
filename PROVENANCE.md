@@ -2,6 +2,8 @@
 
 ReceiptOS Verify is a new local repository. The earlier audit documents remain frozen historical evidence. Existing repositories are public read inputs and were not modified for this implementation. All new code and provenance records are confined here.
 
+The [release-candidate audit](RELEASE_AUDIT_v0.1.md) separates original saved build observations from fresh candidate findings, fixes and release checks. Frozen saved reports and original attribution evidence remain unchanged.
+
 The inventory covers all 20 owned and 23 external/shared public repositories from the audit. See [the full reuse map](FULL_WORK_REUSE_MAP.md), [source records](provenance/sources.json), [fresh upstream observations](provenance/upstream-state.json) and [mechanical authorship evidence](provenance/authorship-evidence.json).
 
 ## Pins and current state
@@ -20,11 +22,13 @@ Crystal roots, RVR semantic/recompute axes, Semantic ABI declarations, PRF guara
 
 ## Selected implementations and status
 
+There are 21 named implemented slices, including original methods and interfaces, across 12 registered surfaces: 11 bounded executable relations or admission operations and one ledger interface. Audited capability maturity is 2 STABLE, 9 EXPERIMENTAL and 1 INTERFACE_ONLY. CHRONICLE-ADMISSION checks supplied continuity and exact reference strings; CHRONICLE-ROOTS is a future capability. No Artifact/Collection/Portfolio aggregate roots are constructed or verified by the continuity adapter.
+
 The selected native Crystal root and generic RVR adapters execute unmodified upstream runtime files; exact Git blob/SHA256 comparisons and grants are in [native sources](provenance/native-sources.json). Their thirteen bounded integration tests pass. This does not claim the full upstream suites or complete source capability coverage.
 
 Semantic ABI, PRF and Chronicle adapters are original public-spec reimplementations with documented product extensions. [Relation sources](provenance/relation-sources.json) records exact independently checked specification/license bytes and 38 passing synthetic relation tests. These adapters do not execute upstream relation runtimes or copy their fixtures. PRF PR14 is OPEN, unmerged and EXPERIMENTAL. [QEV sources](provenance/qev-sources.json) records a separately selected, unmodified native runtime subset and seven passing fresh synthetic tests. This QEV slice is EXPERIMENTAL and does not establish provider authenticity, real QPU execution, entropy or device certification.
 
-The saved host corpus passes 30/30 and all fourteen applied source mutants are killed with preserved positive controls and structured witnesses. Sources.json marks each tested narrow slice separately from optional/historical candidates. These bounded local checks do not claim complete upstream compatibility or external evaluator independence. Unsupported operations return an explicit unsupported or not-requested result. Fresh synthetic fixtures replace captured provider/user data and real trust identities.
+The original saved host corpus records 30/30 and the original saved mutation report records fourteen kills with preserved positive controls and structured witnesses. These are historical build observations; current release outcomes and any failed fresh baseline checks are in the [release-candidate audit](RELEASE_AUDIT_v0.1.md). V09 covers a signed execution-declaration omission while native RVR still runs; checker-unavailable controls separately cover absent execution. Sources.json marks each tested narrow slice separately from optional/historical candidates. These bounded local checks do not claim complete upstream compatibility or external evaluator independence. Unsupported operations return an explicit unsupported or not-requested result. Fresh synthetic fixtures replace captured provider/user data and real trust identities.
 
 ## Residual provenance boundaries
 
@@ -50,4 +54,4 @@ The CLI product `pack`/`verify-capsule` carrier remains an original schema/tree 
 
 The original PQ authority interface has 41 dedicated admission controls in `tests/pq.test.mjs`. Exact key identity, explicit authority fields, nonnegative safe-integer ordered half-open validity windows and explicit non-revocation are required before a trusted provider is called. Caller-provided authority and a provider callback remain premises; no real ML-DSA backend, complete event-time history or earliest-anchor-history conformance is established.
 
-The final saved full product suite passes 251/251 with zero failures, cancellations or skips; the final corpus passes 30/30 and all fourteen applied source mutants are killed. `provenance/sources.json` records the exact three report digests and labels saved-report inspection separately from a fresh independent execution. An earlier concurrent cleanup-control failure is preserved as a separate observation; the isolated final suite is the release gate.
+The original saved full product suite records 251/251 with zero failures, cancellations or skips; the original saved corpus records 30/30 and original saved mutation report records fourteen kills. `provenance/sources.json` retains those exact report digests with historical scope. An earlier concurrent cleanup-control failure also remains preserved. The current release gate and corrected-candidate counts are recorded separately in the [release-candidate audit](RELEASE_AUDIT_v0.1.md).

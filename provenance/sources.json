@@ -1,7 +1,7 @@
 {
   "schema": "receiptos.verify.sources.v1",
   "generatedAt": "2026-10-11T18:29:50.815644+00:00",
-  "productIntegrationStatus": "BOUNDED_FINAL_HOST_SUITE_251_PASS_CORPUS_30_PASS_AND_14_APPLIED_MUTANTS_KILLED; 29 selected native tests including nine synthetic Moth cases; no full native upstream compatibility claim",
+  "productIntegrationStatus": "21_NAMED_BOUNDED_IMPLEMENTED_SLICES_INCLUDING_METHODS_AND_INTERFACES; 12_REGISTERED_SURFACES_WITH_11_BOUNDED_EXECUTABLE_AND_1_LEDGER_INTERFACE; ORIGINAL_BUILD_TEST_COUNTS_ARE_HISTORICAL; CURRENT_RELEASE_GATE_IN_RELEASE_AUDIT_v0.1.md",
   "sourcePinsAreNotSoundnessProof": true,
   "auditBasis": {
     "inventory": "../receiptos_verify_repo_inventory.json",
@@ -2347,20 +2347,17 @@
         "preservedScope": "Selected rights are component-specific. Third-party code, captured evidence, brands, vendor operands and original identities retain separate rights; no license scope is inferred from fork ownership.",
         "productCodeGrant": "Apache-2.0"
       },
-      "mode": "adapter",
-      "productFiles": [
-        "src/adapters/chronicle.mjs",
-        "tests/relations.test.mjs"
-      ],
+      "mode": "optional_interface",
+      "productFiles": [],
       "maturity": "EXPERIMENTAL",
-      "integrationStatus": "ADAPTER_TESTED_BOUNDED_HOST_GATES_PASSED",
-      "implemented": true,
+      "integrationStatus": "ACCOUNTED_AGGREGATE_ROOT_CAPABILITY_NOT_IMPLEMENTED",
+      "implemented": false,
       "upstreamState": "DEFAULT_BRANCH",
       "nativeVocabulary": "Local root consistency; no scoring/certification verdict",
       "nativeGrades": "No generic evidence grades",
       "upstreamLimitations": "A root over reference sets does not prove referenced content validity or completeness or create ownership. Broader views mix the legacy plural Entry model and the canonical ReceiptOS Entry model.",
-      "selectedScopeNote": "Original aggregate root reimplementation for product-shaped synthetic objects; not the complete Chronicle query/issuance wire format.",
-      "sourceEvidenceClass": "INDEPENDENTLY_VERIFIED_EXACT_SOURCE_BYTES_AND_LIVE_PR_STATE; ORIGINAL_PRODUCT_SPEC_REIMPLEMENTATION",
+      "selectedScopeNote": "Pinned future Artifact/Collection/Portfolio aggregate-root capability. The product continuity adapter compares supplied receipt-root and proof-reference strings and may hash the complete supplied history; it does not construct or verify aggregate roots. Implemented supplied-history continuity is accounted for only by CHRONICLE-ADMISSION.",
+      "sourceEvidenceClass": "INDEPENDENTLY_VERIFIED_EXACT_SOURCE_BYTES_AND_LIVE_PR_STATE; PINNED_REFERENCE_NOT_IMPLEMENTED",
       "auditUpstreamState": "DEFAULT_BRANCH",
       "sourceIsCurrentDefault": true,
       "freshSelectedPRState": [],
@@ -2421,22 +2418,29 @@
           "snapshot_bytes_equal": true
         }
       ],
-      "implementationMode": "ORIGINAL_PUBLIC_SPEC_REIMPLEMENTATION_WITH_PRODUCT_CONTINUITY_EXTENSION",
+      "implementationMode": "PINNED_REFERENCE_NOT_IMPLEMENTED",
       "nativeExecution": false,
-      "implementedSlice": "Native new/idempotent/conflict identity vocabulary plus explicit product ordered sequence/predecessor/reference and historical/current state queries",
-      "adapterTests": {
+      "implementedSlice": null,
+      "wholeEnvelopeBoundary": "Derived-entry equality is not whole original envelope equality. Optional caller digest separately binds the entire canonical supplied history object, including entries, observations and envelope fields, not original raw bytes or global history completeness. Required missing binding is UNVERIFIABLE.",
+      "boundedHostEvidence": "No aggregate-root implementation or execution is established. Continuity controls are evidence for CHRONICLE-ADMISSION only.",
+      "integrationMode": "PINNED_SOURCE",
+      "used": false,
+      "role": "optional_interface",
+      "contextOnlyProductFiles": [
+        "src/adapters/chronicle.mjs",
+        "tests/relations.test.mjs"
+      ],
+      "implementationBoundary": "Exact reference-string continuity does not validate referenced objects, receipt roots, Artifact roots, Collection roots or Portfolio roots.",
+      "relatedImplementedSlice": "CHRONICLE-ADMISSION",
+      "continuityContextTests": {
         "path": "tests/relations.test.mjs",
         "synthetic": true,
         "copied_upstream_fixtures": false,
         "test_command": "node --test tests/relations.test.mjs",
         "last_result": "38 PASS, 0 FAIL",
-        "independence": "Adapter implementation and product tests authored in this task; not external oracle independence."
-      },
-      "wholeEnvelopeBoundary": "Derived-entry equality is not whole original envelope equality. Optional caller digest separately binds the entire canonical supplied history object, including entries, observations and envelope fields, not original raw bytes or global history completeness. Required missing binding is UNVERIFIABLE.",
-      "boundedHostEvidence": "reports/vectors.json + reports/mutations.json; named adapter slice coverage only, not complete native upstream capability compatibility",
-      "integrationMode": "REIMPLEMENTED_FROM_SPEC",
-      "used": true,
-      "role": "adapter"
+        "independence": "Adapter implementation and product tests authored in this task; not external oracle independence.",
+        "scope": "Historical continuity tests only; not an aggregate-root implementation or conformance result."
+      }
     },
     {
       "capabilityId": "MVP-HMAC",
@@ -8320,7 +8324,7 @@
       "repository": "pipavlo82/Chronicle",
       "scope": "OWNED_PUBLIC",
       "mode": "adapter",
-      "reason": "Native admission, collection/portfolio roots and historical/current query boundaries inform the continuity adapter. User histories and the Chronicle brand are not imported.",
+      "reason": "Supplied entry identity, exact reference strings and historical/current query boundaries inform the continuity adapter. Collection/portfolio aggregate-root construction and verification remain unimplemented. User histories and the Chronicle brand are not imported.",
       "auditSnapshotSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
       "currentDefaultSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
       "selectedLicenseAtCurrentDefault": "Apache-2.0",
@@ -8337,15 +8341,14 @@
       "integrationStatus": "DECLARED_BOUNDED_SLICES_AND_METHODS_APPLIED",
       "maturity": "EXPERIMENTAL",
       "implementedCapabilityIds": [
-        "CHRONICLE-ADMISSION",
-        "CHRONICLE-ROOTS"
+        "CHRONICLE-ADMISSION"
       ],
       "contextOnlyProductFiles": [],
       "usedCapabilityIds": [
-        "CHRONICLE-ADMISSION",
-        "CHRONICLE-ROOTS"
+        "CHRONICLE-ADMISSION"
       ],
       "integrationModes": [
+        "PINNED_SOURCE",
         "REIMPLEMENTED_FROM_SPEC"
       ]
     },
@@ -9316,7 +9319,7 @@
     "capabilityEntries": 61,
     "sourceEntries": 74,
     "repositoryRows": 43,
-    "implementedAdapterSlices": 22
+    "implementedAdapterSlices": 21
   },
   "excludedMaterial": [
     "Private/commercial Vértice implementation, private files, credentials and endpoints.",
@@ -9407,7 +9410,8 @@
         "CONTROL_BROKEN": 0,
         "INVALID_BASELINE": 0
       },
-      "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill."
+      "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.",
+      "witnessBoundary": "V09 and legacy package-presence-as-pass name cover signed producer execution-declaration completeness while native RVR recomputation runs. Actual absence of native execution is tested by separate checker-unavailable controls."
     },
     "savedTestSuite": {
       "path": "reports/tests.tap",
@@ -9429,7 +9433,9 @@
       "passed": 250,
       "failed": 1,
       "boundary": "Earlier full suite overlapped corpus work and exposed a shared cleanup-control race. Root reports that the test was isolated in its own product copy; the final saved suite above passes after that test-only change. This earlier observation is retained, not substituted for the final gate."
-    }
+    },
+    "timeScope": "ORIGINAL_LOCAL_BUILD_BEFORE_FROZEN_RELEASE_CANDIDATE_AUDIT",
+    "currentReleaseAudit": "RELEASE_AUDIT_v0.1.md"
   },
   "runtimeDependencyManifest": "provenance/dependencies.json",
   "runtimeDependencyLockSHA256": "34c5ead1add79a374494eba5d51966d5557f2109373d1a0ab9bc01ebbb5e307c",
@@ -9454,5 +9460,21 @@
     "METHODOLOGY_ONLY": "Original product methods apply selected assurance/measurement/reproduction ideas; no complete native upstream tool is implied.",
     "used": "True means the explicit bounded product slice/method is applied; it does not mean the whole upstream capability is implemented.",
     "implemented": "True records the named bounded implementation slice, including original methodology tooling; nativeExecution and integrationMode distinguish actual upstream runtime calls."
+  },
+  "releaseAudit": {
+    "report": "RELEASE_AUDIT_v0.1.md",
+    "frozenCandidateCommit": "33d8ee47ad733f1198f2b2fb8d171b31c7b10678",
+    "registeredSurfaces": 12,
+    "boundedExecutableSurfaces": 11,
+    "ledgerInterfaceSurfaces": 1,
+    "capabilityMaturity": {
+      "STABLE": 2,
+      "EXPERIMENTAL": 9,
+      "HISTORICAL": 0,
+      "INTERFACE_ONLY": 1
+    },
+    "descriptorMaturityBoundary": "Raw descriptors remain 2 STABLE and 10 EXPERIMENTAL; Ledger is classified INTERFACE_ONLY for actual capability maturity.",
+    "correctedImplementedSlices": 21,
+    "historicalReportsFrozen": true
   }
 }

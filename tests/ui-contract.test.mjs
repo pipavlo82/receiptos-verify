@@ -31,10 +31,11 @@ async function app() {
     if (options?.method === 'POST') { const body = JSON.parse(options.body); state.posts.push(body); return state.response(body); }
     if (url === '/api/vectors') return {json:async()=>({vectors:[{id:'V01',title:positive.title},{id:'V02',title:wrong.title}]})};
     if (url === '/api/vectors/V01' || url === '/api/vectors/V02') return {json:async()=>copy(url.endsWith('V01') ? positive : wrong)};
+    if (url === '/api/vectors/V08') return {json:async()=>readVector('V08')};
     throw new Error('Unexpected UI request: ' + url);
   };
   const document = {getElementById:id=>elements[id],createElement:()=>new Element()};
-  await runInNewContext('(async()=>{' + appSource + '\n})()', {document,fetch,JSON,URL,Blob,console}, {timeout:5000});
+  await runInNewContext('(async()=>{' + appSource + '\n})()', {document,fetch,JSON,URL,Blob,TextDecoder,console}, {timeout:5000});
   state.edit = (id, text) => { elements[id].value = text; elements[id].oninput?.({target:elements[id]}); };
   state.assertInactive = () => { assert.notEqual(elements.verdict.textContent, 'VERIFIED'); assert.ok(!elements.verdict.className.split(' ').includes('good')); assert.equal(elements.download.disabled,true); assert.equal(elements.layers.children.length,0); };
   return state;
@@ -72,8 +73,35 @@ test('manual malformed text disables demo transformation without normalizing it'
 
 test('file upload preserves raw bytes as text and invalidates stale success', async () => {
   const h = await app(); await h.elements.verify.click(); const raw=' {"schema":1,"schema":2}\n';
-  await h.elements['request-file'].onchange({target:{files:[{size:raw.length,text:async()=>raw}]}});
+  await h.elements['request-file'].onchange({target:{files:[new Blob([raw])]}});
   assert.equal(h.elements.request.value,raw); h.assertInactive();
+});
+
+for(const kind of ['request','bundle']) test(`${kind} file rejects invalid UTF-8 rather than repairing signed identifiers`,async()=>{
+  const h=await app();await h.elements.verify.click();assert.equal(h.elements.verdict.textContent,'VERIFIED');
+  const bytes=Buffer.from('{"subject":"audit-\ufffd"}');const i=bytes.indexOf(Buffer.from('\ufffd'));
+  const invalid=Buffer.concat([bytes.subarray(0,i),Buffer.from([255]),bytes.subarray(i+3)]);
+  assert.equal(new TextDecoder().decode(invalid),bytes.toString('utf8'),'replacement decoder would repair the input');
+  await h.elements[kind+'-file'].onchange({target:{files:[new Blob([invalid])]}});
+  assert.equal(h.elements[kind].value,'');assert.match(h.elements.error.textContent,/INVALID_UTF8/);h.assertInactive();
+  h.response=async body=>({ok:true,json:async()=>verify(body.request,body.bundle)});await h.elements.verify.click();
+  assert.equal(h.elements.verdict.textContent,'REJECTED_MALFORMED');
+});
+
+test('file intake preserves valid Unicode and BOM bytes for strict parser admission',async()=>{
+  const h=await app();const raw='\ufeff{"id":"\ufffdé😀"}';
+  await h.elements['request-file'].onchange({target:{files:[new Blob([raw])]}});
+  assert.equal(h.elements.request.value,raw);h.assertInactive();
+});
+
+test('UI cannot silently run a checker-fault control without its isolated execution setup',async()=>{
+  const h=await app();await h.elements.verify.click();h.elements.vector.value='V08';await h.elements.load.click();
+  h.assertInactive();assert.equal(h.elements.verify.disabled,true);assert.equal(h.elements.request.value,'');
+  assert.equal(h.elements.bundle.value,'');assert.match(h.elements.context.textContent,/isolated CLI runner/);
+  assert.equal(h.elements.verdict.textContent,'CLI CONTROL REQUIRED');
+  const posts=h.posts.length;await h.elements.verify.click();assert.equal(h.posts.length,posts);
+  h.elements.vector.value='V01';await h.elements.load.click();assert.equal(h.elements.verify.disabled,false);
+  await h.elements.verify.click();assert.equal(h.elements.verdict.textContent,'VERIFIED');
 });
 
 test('network failure after prior success leaves no current green report', async () => {

@@ -14,8 +14,8 @@
     },
     {
       "path": "BUILD_REPORT.md",
-      "bytes": 25065,
-      "sha256": "01c86148c78553b43ff77a2385821b316090e1ba36c73037c73fdb5d63a890a9"
+      "bytes": 26802,
+      "sha256": "dec28e4e40c17946289d8f1784b8de05fea0a0a33fa753df286f9b3c89bc3981"
     },
     {
       "path": "docs/adapters.md",
@@ -54,8 +54,8 @@
     },
     {
       "path": "FULL_WORK_REUSE_MAP.md",
-      "bytes": 30605,
-      "sha256": "c2303e6550cb1ea079f1826d64d874dec3ddd5d8890506cb9553c1c4f8804d98"
+      "bytes": 31610,
+      "sha256": "3dd0dc3edb31f9d39578452f0bcdd85135928cdc961598c376c07b811db2c005"
     },
     {
       "path": "LICENSE",
@@ -69,8 +69,8 @@
     },
     {
       "path": "mutations/catalog.mjs",
-      "bytes": 3053,
-      "sha256": "0bb5624f6b35c9c5e2c5cc03d64b616dec715e033d68d61b354e9489007c4563"
+      "bytes": 3113,
+      "sha256": "0a690689482ae34d31e43cb475b74a3aa40e3da3ceb4fcf3e15bdff0c2b56e7d"
     },
     {
       "path": "NOTICE",
@@ -94,8 +94,8 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 8181,
-      "sha256": "7d3806c1182ac0323ee4b5a8791b806f77f0863fd2f0a93c9ae1979897b3d77a"
+      "bytes": 9265,
+      "sha256": "b38e89dc1b3709083d95cd63c5edd9f071ade49da1eed6115caac555d25e5fb1"
     },
     {
       "path": "provenance/authorship-evidence.json",
@@ -134,8 +134,8 @@
     },
     {
       "path": "provenance/sources.json",
-      "bytes": 450131,
-      "sha256": "80ba39eb90a93a1dfdded25125a6e97e79d4686405809b0c6aee743c144a409c"
+      "bytes": 451645,
+      "sha256": "88914f90d5c0d526a8e827d1eb468e764a3aad8748cb70f3d53be430fcaef083"
     },
     {
       "path": "provenance/upstream-state.json",
@@ -144,8 +144,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4525,
-      "sha256": "2fc086d8b82748eef6553b1f499b7bab7ddde982deab8429daa50d2fefedacde"
+      "bytes": 5411,
+      "sha256": "585266c0270845ef2e238e3f6625c06ffd67722cc773108da36d799849b8cc76"
     },
     {
       "path": "schemas/bundle.schema.json",
@@ -344,8 +344,8 @@
     },
     {
       "path": "src/projection/project.mjs",
-      "bytes": 2053,
-      "sha256": "de9127b56ff52b2d1cdba3fda2ad3ebe4e39aa9fc0e48729252d56c1e1749886"
+      "bytes": 3299,
+      "sha256": "982672ef07a4d8fdd06d3287764444f4a5c45fdcdc42b39b1547845ad73528f2"
     },
     {
       "path": "src/server.mjs",
@@ -378,6 +378,16 @@
       "sha256": "4af2b3719e3ef332ebcf91b428eb763d238b98c03b491cdafd8481b7456e24ce"
     },
     {
+      "path": "tests/helpers/independent-fixture.mjs",
+      "bytes": 7430,
+      "sha256": "f4e2fda34293025df15dd8dd31d3f07e044aa651c107ae35213d534a0e3d6c2f"
+    },
+    {
+      "path": "tests/mutation-runner.test.mjs",
+      "bytes": 3316,
+      "sha256": "aeb4ab6f8f1ca6bb99469b684af759172b2eb8dee7d93daf982ab587f4ed3f33"
+    },
+    {
       "path": "tests/native.test.mjs",
       "bytes": 8271,
       "sha256": "12c8a1c3bf66836bb8cd6dcfdd21cf888165e982c57287fc14651ce73d6f9a38"
@@ -391,6 +401,11 @@
       "path": "tests/product.test.mjs",
       "bytes": 2804,
       "sha256": "68c3729f89293182ccb2dfc256be40b4a58edb489be31bd35437c8ca0c840a74"
+    },
+    {
+      "path": "tests/projection-release.test.mjs",
+      "bytes": 4722,
+      "sha256": "3967bfb5a7b517d8caebb8ecedf2d5791bc6b59afcfd96b0ada788845cce29ea"
     },
     {
       "path": "tests/qev_moth.test.mjs",
@@ -419,8 +434,8 @@
     },
     {
       "path": "tests/ui-contract.test.mjs",
-      "bytes": 10038,
-      "sha256": "d50b9b266413cfe092b3b9af3774e16383e3eb8b44a09e725f20312336a3c354"
+      "bytes": 12183,
+      "sha256": "ad769e10e094673e55bcbdf5c7a22f2c059f906df528b062ac60db5fa5936551"
     },
     {
       "path": "tools/build-schemas.mjs",
@@ -444,8 +459,8 @@
     },
     {
       "path": "tools/corpus.mjs",
-      "bytes": 2724,
-      "sha256": "99b9a900276a1ae0a5d331e25333ba1b97dc26d5320e17804acce0ed5e0f6b56"
+      "bytes": 4920,
+      "sha256": "2065b1ff7a8f8322d391c4ec605a28e454758e561b634e0d28f4beb01fe3c8c8"
     },
     {
       "path": "tools/fixtures.mjs",
@@ -464,8 +479,8 @@
     },
     {
       "path": "tools/run-mutations.mjs",
-      "bytes": 2829,
-      "sha256": "2e9c7c773cd6e8410b1d57c47f8ba5a4359111a7667c30a083bc0c1a1e6b1bd4"
+      "bytes": 2977,
+      "sha256": "7445ff8602f239c69b0c9338a1f4ad877cc8e81add4547a74ea7304525a1b2a3"
     },
     {
       "path": "tools/run-vectors.mjs",
@@ -1069,8 +1084,8 @@
     },
     {
       "path": "web/app.mjs",
-      "bytes": 3839,
-      "sha256": "36c81fa830f29cf8c798ee70f0fdb436dedb8a56720d0845606674bc5e6ef24b"
+      "bytes": 4415,
+      "sha256": "d6dd38d265ced0f4d34add9a0db8a54ede4603a05c129d9a7eb6546855a5d5a2"
     },
     {
       "path": "web/index.html",

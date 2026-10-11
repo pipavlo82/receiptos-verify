@@ -23,10 +23,14 @@ for(const m of mutations) {
   record.baseline_projection=baselineWitness.overall;
   record.mutant_projection=witness.report?.overall??null;
   record.witness_reasons=witness.report?.reason_codes??[];
-  record.status=!record.baseline_controls_valid?'INVALID_BASELINE':!record.positive_preserved?'CONTROL_BROKEN':witness.process_status!=='COMPLETED'?'CRASHED':witness.report.overall!==baselineWitness.overall?'KILLED':'SURVIVED';
+  record.status=!record.baseline_controls_valid?'INVALID_BASELINE'
+    :[positive,witness].some(run=>run.process_status==='INVALID_OUTPUT')?'INVALID_OUTPUT'
+    :[positive,witness].some(run=>run.process_status!=='COMPLETED')?'CRASHED'
+    :!record.positive_preserved?'CONTROL_BROKEN'
+    :witness.report.overall!==baselineWitness.overall?'KILLED':'SURVIVED';
   rows.push(record);console.log(m.id+': '+record.status);
 }
-const counts=Object.fromEntries(['KILLED','SURVIVED','CRASHED','NOT_APPLIED','CONTROL_BROKEN','INVALID_BASELINE'].map(k=>[k,rows.filter(r=>r.status===k).length]));
+const counts=Object.fromEntries(['KILLED','SURVIVED','CRASHED','INVALID_OUTPUT','NOT_APPLIED','CONTROL_BROKEN','INVALID_BASELINE'].map(k=>[k,rows.filter(r=>r.status===k).length]));
 const report={schema:'receiptos.verify.mutation-report.v1',method:'Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.',count:rows.length,counts,rows};
 await writeFile(new URL('../reports/mutations.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(counts));
 process.exitCode=counts.KILLED===mutations.length?0:1;

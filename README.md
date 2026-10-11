@@ -4,6 +4,8 @@ A local verification product that answers **what supplied evidence is allowed to
 
 **Local experimental v0.1.** This repository has no remote. Existing upstream repositories remain read-only. No private Vértice implementation is included.
 
+The [release-candidate audit](RELEASE_AUDIT_v0.1.md) separates the original saved build reports from fresh candidate findings, fixes and release checks. Original saved counts are historical observations, not the current release verdict.
+
 ## Run
 
 Requires Node ≥22.15, Python ≥3.12 and Bun. The current Windows native runner finds Bun at `C:/Users/msi/.bun/bin/bun.exe`; other systems use `bun` on PATH. Native scripts and dependencies are fixed; evidence cannot choose executable paths or commands.
@@ -50,12 +52,14 @@ Authenticated evidence for A does not establish the caller-selected claim for B.
 - Original portable product capsules/Merkle proofs, human-readable reports, local inspection UI, full provenance.
 - Experimental crypto-provider/temporal-authority, stochastic replay and Ethereum/XRPL/off-chain anchor boundaries. No ML-DSA verifier or live ledger adapter is claimed.
 
-The main Git artifact profile has six mandatory layers; policy cannot omit subject binding. Domain, guarantee and continuity obligations become required when requested. Native roots, signatures, replay and presentation never bypass missing semantic premises.
+The registry contains 12 surfaces: 11 bounded executable relations or admission operations and one ledger interface. Capability maturity is 2 STABLE, 9 EXPERIMENTAL and 1 INTERFACE_ONLY; the raw ledger descriptor still uses EXPERIMENTAL. Chronicle checks supplied continuity and exact reference strings; it does not calculate or verify Artifact/Collection/Portfolio aggregate roots.
+
+The main Git artifact profile has six mandatory layers; policy cannot omit subject binding. Domain, guarantee and continuity obligations become required when requested. Product projection evaluates these requirements separately from native roots, signatures and replay.
 
 ## Inspect the evidence
 
 See [architecture](docs/architecture.md), [claim model](docs/claim-model.md), [trust boundaries](docs/trust-boundaries.md), [adapters](docs/adapters.md), [full reuse map](FULL_WORK_REUSE_MAP.md), [provenance](PROVENANCE.md), [files not reused](docs/files-not-reused.md), and [build report](BUILD_REPORT.md).
 
-The corpus contains literal inputs, expected results for all fourteen layers, reason witnesses, paired positives and killed mutation classes. Source mutations run in isolated copies under this repository. A crash, unapplied patch, broken positive control or empty corpus cannot count as a kill. A prior narrower dependency mutant survived a redundant guard; `reports/mutations-initial.json` preserves that development observation separately from the final whole-class mutation gate.
+The corpus contains literal inputs, expected results for all fourteen layers, reason witnesses and paired positives. V09 checks completeness of the signed producer execution declaration while real native RVR recomputation still runs; its historical package-presence mutant name does not prove a no-execution condition. Checker-unavailable controls separately test absent native execution. Source mutations run in isolated local copies. A crash, unapplied patch, broken positive control or empty corpus cannot count as a kill. `reports/mutations.json` and `reports/mutations-initial.json` preserve original build observations; current mutation outcomes and environment limits are in the [release-candidate audit](RELEASE_AUDIT_v0.1.md).
 
 Apache-2.0 applies to new authored material, Copyright 2026 Pavlo Tvardovskyi. Vendored and npm dependencies retain their own notices and rights; see [LICENSING.md](LICENSING.md).

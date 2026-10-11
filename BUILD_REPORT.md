@@ -1,6 +1,8 @@
 # ReceiptOS Verify — local build report
 
-ReceiptOS Verify v0.1 is implemented as one local verification product. It combines fixed native execution of selected public Crystal/RVR/QEV capabilities with original neutral relation implementations, independently selected request subjects, a versioned projection, synthetic controls and a complete public-source provenance catalog.
+ReceiptOS Verify v0.1 is implemented as one local verification product. It combines fixed native execution of selected public Crystal/RVR/QEV capabilities with original neutral relation implementations, independently selected request subjects, a versioned projection, synthetic controls and a public-source provenance catalog.
+
+This report preserves the original build validation as historical observations. The [release-candidate audit](RELEASE_AUDIT_v0.1.md) is the authority for fresh frozen-candidate findings, corrective changes and current release checks. The original saved reports remain unchanged.
 
 ## A–B. Repository and commit identity
 
@@ -20,7 +22,7 @@ receiptos-verify/
     cli.mjs server.mjs
     core/                 # strict admission, typed requests, signatures, Git closure, capsules, report
     projection/           # formal v1 product projection
-    adapters/             # protocol + twelve independently inspectable adapters
+    adapters/             # protocol + 12 registered surfaces; ledger is interface only
       native/             # fixed Python/Bun bridges, executable and file guards
     analytics/            # evidence-cost metadata; no security proof
   schemas/ profiles/      # request, bundle, result and neutral semantic contracts
@@ -35,7 +37,7 @@ receiptos-verify/
 
 ## D. Implemented adapters and their boundaries
 
-The stable adapter protocol exposes inspect, integrity, authenticity, subject binding, recomputation, evidence, semantic contract, guarantee projection and provenance operations. Unsupported operations remain explicit. Each descriptor declares version/profile, repository/commit, license, maturity, requirements and native vocabulary. The product has fourteen named layers; every report preserves their separate results and raw native outputs beneath `receiptos.verify.projection.v1`.
+The adapter protocol exposes inspect, integrity, authenticity, subject binding, recomputation, evidence, semantic contract, guarantee projection and provenance operations. Unsupported operations remain explicit. Each descriptor declares version/profile, repository/commit, license, maturity, requirements and native vocabulary. The 12 registered surfaces comprise 11 bounded executable relations or admission operations and one ledger interface. Capability maturity is 2 STABLE, 9 EXPERIMENTAL and 1 INTERFACE_ONLY; stored descriptors say 2 STABLE and 10 EXPERIMENTAL because Ledger retains its raw EXPERIMENTAL label. The product has fourteen named layers with separate results and native outputs beneath `receiptos.verify.projection.v1`.
 
 | Adapter | Working slice | Preserved boundary |
 |---|---|---|
@@ -44,7 +46,7 @@ The stable adapter protocol exposes inspect, integrity, authenticity, subject bi
 | Semantic ABI | Neutral claim, authority, subject, scope, interval, assumptions, required evidence and consumer compatibility | Original public-spec implementation with explicit product extensions; no private or public system-specific Vértice adapter. |
 | recompute-kit | Execution/report/grade/source-pin admission and nonvacuous controls | Original methodology implementation; no claim that the upstream scanner or every native profile runs. |
 | PRF | Exact dependency/obligation preservation, detached caller-accepted basis and observations | PRESERVED/VIOLATED/UNVERIFIABLE; merged PR13 methodology and open PR14 exact head remain distinct. |
-| Chronicle | New/idempotent/conflict identity, predecessor/reference and historical/current continuity | Derived-entry equality alone does not bind every byte of a larger envelope. Full supplied-history digest is a separate optional product commitment. |
+| Chronicle | Supplied new/idempotent/conflict identity, predecessor/reference and historical/current continuity | Receipt roots and proof references are compared as exact strings. Artifact/Collection/Portfolio aggregate roots are not calculated or verified. Derived-entry equality alone does not bind every byte of a larger envelope; full supplied-history digest is a separate optional product commitment. |
 | Interpoll | Real Schnorr verification of public exact action tuple and immutable retry comparison | Signature establishes selected key control; producer cannot change caller-selected action or expected authority. No live database/deployment verification. |
 | QEV generic | Native finite saved-bitline checker and public neutral semantic linker | Synthetic postprocessing may reproduce while provider authentication remains NOT_ESTABLISHED. |
 | QEV Moth | Native counts/RVR and native ReceiptOS portable packaging over fresh synthetic Moth-shaped bytes | Requested 32 bytes and delivered 0 remain separate; native positive replay does not authenticate provider/hardware or repeat execution. |
@@ -56,7 +58,7 @@ Portable product capsules additionally bind canonical request+bundle entries, a 
 
 ## E–F–K. Work reuse and provenance
 
-[provenance/sources.json](provenance/sources.json) records 74 capability/inventory entries across all 43 audited repositories, including all 20 discovered public `pipavlo82` repositories. Each entry has exact source identity/paths, mechanical contribution evidence, actual source rights, required integration-mode enum, product files and bounded implementation status. Twenty-two named implemented slices include methodology and interfaces; this is not a claim of 22 complete native upstream profiles. The frozen audit contribution ledger contains 108 records; it is attribution evidence, not sole authorship, independent truth or revenue allocation.
+[provenance/sources.json](provenance/sources.json) records 74 capability/inventory entries across all 43 audited repositories, including all 20 discovered public `pipavlo82` repositories. Each entry has exact source identity/paths, mechanical contribution evidence, actual source rights, required integration-mode enum, product files and bounded implementation status. Twenty-one named implemented slices include methodology and interfaces; this is not a claim of 21 complete native upstream profiles. CHRONICLE-ROOTS remains a pinned future capability, separate from the implemented continuity slice. The frozen audit contribution ledger contains 108 records; it is attribution evidence, not sole authorship, independent truth or revenue allocation.
 
 Native selected manifests cover 15 generic Crystal/RVR files, 12 generic QEV files and 50 advanced QEV files, with compile-time nonempty file guards. Advanced QEV preserves its nested RVR pin `549a7e150ddc75df88dc90ee93f331fea7464567`, distinct from the generic RVR pin. [PROVENANCE.md](PROVENANCE.md) and [FULL_WORK_REUSE_MAP.md](FULL_WORK_REUSE_MAP.md) retain complete identities, source-path digests, contributor evidence, license differences and maturity. Selected integration modes are DEPENDENCY, PINNED_SOURCE, REIMPLEMENTED_FROM_SPEC, TEST_FIXTURE and METHODOLOGY_ONLY; richer roles also distinguish historical and future interfaces.
 
@@ -65,7 +67,7 @@ The following table accounts for every owned repository. Pins are freshly observ
 | Owned repository | Default pin | Role | Contribution/boundary |
 |---|---|---|---|
 | pipavlo82/-crystal-artifact | `fc0cd2cbe96ec448ac244ae21daabdab68c17022` | optional interface | Paper/QR transport and viewer ideas remain useful. The current product keeps native evidence behind adapters and does not copy the vendored QR implementation or historical rendered artifacts. |
-| pipavlo82/Chronicle | `c467b48fd18fc8ec86f10582befa35946ce41914` | adapter | Native admission, collection/portfolio roots and historical/current query boundaries inform the continuity adapter. User histories and the Chronicle brand are not imported. |
+| pipavlo82/Chronicle | `c467b48fd18fc8ec86f10582befa35946ce41914` | adapter | Supplied entry identity, exact reference strings and historical/current query boundaries inform the continuity adapter. Collection/portfolio aggregate-root construction and verification remain unimplemented. User histories and the Chronicle brand are not imported. |
 | pipavlo82/conduct-witness | `2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151` | methodology | Pinned reproduction, operator separation and workflow attestation remain assurance methodology. Upstream template/verifier code is not treated as independently authored Pavlo code. |
 | pipavlo82/cross-reference-console | `72b8804c4e85e6ec1530a3470a9af7a5fe47f238` | optional interface | Claim identity and signed Cell/lineage boundaries remain a declared optional observation interface. Registry signatures do not supply semantic independence. |
 | pipavlo82/crystal-receipt | `45b46bf7df3a60b32583291f577a36bf19d22f00` | runtime | Selected ReceiptOS core canonicalization, integrity, portable evidence and continuity are native adapter candidates. The desktop subtree and captured external evidence are outside the selected source scope. |
@@ -109,7 +111,7 @@ RSI and SEG supply detached relation/subject-binding methods, positive/negative 
 
 ## G. Validation
 
-All product verification and mutation execution runs offline after dependency installation. Exact results and outputs are saved under `reports/`.
+Product verification and mutation execution run offline after dependency installation. The following table records the **original build run**, before the frozen release-candidate audit. Exact original results remain under `reports/`; fresh baseline failures, corrected-candidate counts and release decisions are in the [release-candidate audit](RELEASE_AUDIT_v0.1.md).
 
 | Check | Result | Evidence |
 |---|---|---|
@@ -131,7 +133,7 @@ Focused subsets are not added to the full-suite count. Saved audit upstream test
 
 ## H. Mutation outcomes
 
-Every applied source mutant preserves its paired positive control and is distinguished by a structured semantic witness. Source-before/source-after hashes, baseline and mutant projections, process status and reasons are saved. An unapplied patch, checker crash, broken control or zero mutants cannot satisfy the gate.
+The following outcomes are the **original saved build observations**, not current candidate results. That saved gate records paired positive controls and structured semantic witnesses with source-before/source-after hashes, baseline and mutant projections, process status and reasons. An unapplied patch, checker crash, broken control or zero mutants cannot satisfy the gate. Fresh release audit and corrected-run outcomes are linked above.
 
 | Required mutant class | Result |
 |---|---|
@@ -141,7 +143,7 @@ Every applied source mutant preserves its paired positive control and is disting
 | Promote REPRODUCED to VERIFIED | KILLED |
 | Accept empty evidence | KILLED |
 | Count crash as semantic refutation | KILLED |
-| Accept package presence as PASS | KILLED |
+| Omit the signed producer execution declaration (V09; historical mutant ID package-presence-as-pass) | KILLED in original saved build |
 | Ignore policy version | KILLED |
 | Ignore guarantee dependency | KILLED |
 | Ignore retry action change | KILLED |
@@ -150,9 +152,11 @@ Every applied source mutant preserves its paired positive control and is disting
 | Ignore commit | KILLED |
 | Ignore canonicalization profile | KILLED |
 
+V09 still executes native RVR recomputation. Its signed producer report has `executed:false`, so the witness tests execution-declaration completeness, not actual absence of semantic execution. Separate checker-unavailable controls test absent native execution; the historical mutant name is retained without broadening its demonstrated meaning.
+
 A concurrent development run passed 250/251 tests: a cleanup assertion incorrectly required a shared temporary parent to be globally empty while another runner was active. The original observation is retained in [tests-concurrent-observation.tap](reports/tests-concurrent-observation.tap); the cleanup test now verifies its own isolated invocation, and the final full suite is run separately.
 
-The initial narrower dependency mutant survived a redundant relation guard. [mutations-initial.json](reports/mutations-initial.json) preserves that development observation. The final whole-class mutation disables all dependency checks and is killed while preserving its positive; expectations were not weakened.
+The initial narrower dependency mutant survived a redundant relation guard. [mutations-initial.json](reports/mutations-initial.json) preserves that development observation. The original saved whole-class mutation disables all dependency checks and records a kill with its positive preserved. The release audit separately records fresh candidate mutation outcomes and runner corrections.
 
 ## I. Required end-to-end demo
 
