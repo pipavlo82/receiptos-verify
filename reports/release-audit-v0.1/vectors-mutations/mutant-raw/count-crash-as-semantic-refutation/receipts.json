@@ -1,0 +1,39 @@
+{
+  "id": "count-crash-as-semantic-refutation",
+  "observations": [
+    {
+      "kind": "positive",
+      "id": "V01",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\vectors\\V01.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation",
+      "started": "2026-10-11T18:54:04.344Z",
+      "ended": "2026-10-11T18:54:04.933Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "VERIFIED"
+    },
+    {
+      "kind": "witness",
+      "id": "V08",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\vectors\\V08.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation",
+      "started": "2026-10-11T18:54:04.934Z",
+      "ended": "2026-10-11T18:54:05.393Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "CONTRADICTED"
+    }
+  ]
+}

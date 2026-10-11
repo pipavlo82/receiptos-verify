@@ -1,0 +1,6 @@
+{
+  "name": "zero-inventory",
+  "expected_safety_behavior": "NONZERO_EXIT",
+  "exit": 1,
+  "report": null
+}

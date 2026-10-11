@@ -1,0 +1,52 @@
+{
+  "candidate": "33d8ee47ad733f1198f2b2fb8d171b31c7b10678",
+  "tree": "719c0a5255f66b74f9bc58fd969905ee7d7c49d5",
+  "canonical": {
+    "KILLED": 14,
+    "SURVIVED": 0,
+    "CRASHED": 0,
+    "NOT_APPLIED": 0,
+    "CONTROL_BROKEN": 0,
+    "INVALID_BASELINE": 0
+  },
+  "independent_projections": 30,
+  "vectors": 30,
+  "control_inventories": 10,
+  "defects": [
+    {
+      "id": "VM-01",
+      "severity": "HIGH",
+      "title": "Malformed/incoherent mutation witness report falsely counts KILLED",
+      "evidence": [
+        "control-unknown-overall.json",
+        "control-schema-spoof.json",
+        "control-invalid-schema-valid-overall.json",
+        "control-invalid-schema-valid-overall.raw.json"
+      ]
+    },
+    {
+      "id": "VM-02",
+      "severity": "MEDIUM",
+      "title": "Windows nested path length breaks release-gate reproducibility",
+      "evidence": [
+        "windows-path-reproducer.json",
+        "long-path-initial/baseline-mutations.json",
+        "medium-path-second/baseline-mutations.json"
+      ]
+    },
+    {
+      "id": "VM-03",
+      "severity": "MEDIUM",
+      "title": "Package-only semantic-execution vector claim actually tests declaration completeness",
+      "evidence": [
+        "V09.report.json",
+        "catalog-patch-audit.json"
+      ]
+    }
+  ],
+  "assessment_counts": {
+    "LOAD_BEARING": 26,
+    "REDUNDANT": 2,
+    "UNCLEAR": 2
+  }
+}

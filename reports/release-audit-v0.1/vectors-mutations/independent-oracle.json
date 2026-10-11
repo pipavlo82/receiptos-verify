@@ -1,0 +1,1268 @@
+{
+  "method": "Independent bounded ASCII-fixture calculations with Node crypto and standalone BIP340 BigInt verification; no product or vendor evaluator/helper imports. Caller PRF premises remain assumptions.",
+  "rows": [
+    {
+      "id": "V01",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "VERIFIED",
+      "actual_product": "VERIFIED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V02",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [
+        "commit"
+      ],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V03",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": false,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "REJECTED_MALFORMED",
+      "actual_product": "REJECTED_MALFORMED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V04",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [
+        "id"
+      ],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V05",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [
+        "native-result"
+      ],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V06",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [
+        "artifact",
+        "git-commit",
+        "git-tree",
+        "native-result"
+      ],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V07",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "REFUTED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V08",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CANNOT_RECOMPUTE",
+      "actual_product": "CANNOT_RECOMPUTE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V09",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": false,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V10",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": false,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V11",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "guarantee": {
+        "declared_basis": {
+          "basis_accepted": true,
+          "accepted_basis_id": "synthetic-detached-basis",
+          "supported_guarantee_ids": [
+            "relation-preserved",
+            "source-binding"
+          ],
+          "obligation_results": {
+            "relation-preserved": {
+              "exact-relation": true
+            },
+            "source-binding": {
+              "exact-source": true
+            }
+          },
+          "established_assumptions": []
+        },
+        "requested_dependencies": [
+          "source-binding"
+        ],
+        "upstream_dependencies": [
+          "source-binding"
+        ],
+        "downstream_dependencies": [],
+        "downstream_guarantee_ids": [
+          "relation-preserved"
+        ]
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V12",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "guarantee": {
+        "declared_basis": {
+          "basis_accepted": true,
+          "accepted_basis_id": "synthetic-detached-basis",
+          "supported_guarantee_ids": [
+            "relation-preserved",
+            "source-binding"
+          ],
+          "obligation_results": {
+            "relation-preserved": {
+              "exact-relation": true
+            },
+            "source-binding": {
+              "exact-source": true
+            }
+          },
+          "established_assumptions": []
+        },
+        "requested_dependencies": [
+          "source-binding"
+        ],
+        "upstream_dependencies": [
+          "source-binding"
+        ],
+        "downstream_dependencies": [
+          "source-binding"
+        ],
+        "downstream_guarantee_ids": [
+          "relation-preserved",
+          "source-binding"
+        ]
+      },
+      "independently_derived_product": "VERIFIED",
+      "actual_product": "VERIFIED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V13",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "action": {
+        "all_exact": true,
+        "authority_mismatches": [],
+        "action_ids": [
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          },
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          },
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          }
+        ]
+      },
+      "independently_derived_product": "VERIFIED",
+      "actual_product": "VERIFIED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V14",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "action": {
+        "all_exact": false,
+        "authority_mismatches": [],
+        "action_ids": [
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          },
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          },
+          {
+            "id": "42af1fb44f8a5e41f34c582a9496e02e592572446413db405036927930843981",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "down"
+          }
+        ]
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V15",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "continuity": {
+        "mode": "current",
+        "selected": {
+          "entry_id": "entry-a",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "receipt_root": "root-a",
+          "proof_object_ref": "proof-a",
+          "subject": "demo:receiptos",
+          "state": "A"
+        },
+        "later": [
+          {
+            "entry_id": "entry-b",
+            "sequence": 1,
+            "predecessor_ref": "entry-a",
+            "receipt_root": "root-b",
+            "proof_object_ref": "proof-b",
+            "subject": "demo:receiptos",
+            "state": "B"
+          }
+        ]
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V16",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "UNSUPPORTED_PROFILE",
+      "actual_product": "UNSUPPORTED_PROFILE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V17",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "qev": {
+        "shots": 4,
+        "weighted_sum": 6,
+        "parity_ones": 2,
+        "raw_hash_match": true,
+        "provider_evidence": null
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V18",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "REFUTED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V19",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": false,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V20",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "stochastic": {
+        "stream_digest_match": true,
+        "selected": "B",
+        "provenance_evidence_present": false
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V21",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "continuity": {
+        "mode": "historical",
+        "selected": {
+          "entry_id": "entry-a",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "receipt_root": "root-a",
+          "proof_object_ref": "proof-a",
+          "subject": "demo:receiptos",
+          "state": "A"
+        },
+        "later": [
+          {
+            "entry_id": "entry-b",
+            "sequence": 1,
+            "predecessor_ref": "entry-a",
+            "receipt_root": "root-b",
+            "proof_object_ref": "proof-b",
+            "subject": "demo:receiptos",
+            "state": "B"
+          }
+        ]
+      },
+      "independently_derived_product": "VERIFIED",
+      "actual_product": "VERIFIED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V22",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": false,
+      "policy_digest_match": false,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V23",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "REJECTED_MALFORMED",
+      "actual_product": "REJECTED_MALFORMED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V24",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "PRODUCER_ASSERTION"
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V25",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "action": {
+        "all_exact": true,
+        "authority_mismatches": [
+          "actor"
+        ],
+        "action_ids": [
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          },
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          },
+          {
+            "id": "86e954f33e6ce76d6ea11c5460c81e8823c2cb6092bd56909b70d9fce1d4a41a",
+            "id_matches": true,
+            "bip340_valid": true,
+            "value": "up"
+          }
+        ]
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V26",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [
+        "artifact"
+      ],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "CANNOT_RECOMPUTE",
+      "actual_product": "CANNOT_RECOMPUTE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V27",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": null,
+      "signer_trusted": false,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V28",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "moth": {
+        "requested_job": "synthetic-moth-job",
+        "saved_job": "synthetic-moth-job",
+        "counts_total": 2048,
+        "declared_shots": 2048,
+        "widths": [
+          20
+        ],
+        "requested_bytes": 32,
+        "delivered_bytes": 0,
+        "provider_authentication_evidence": false,
+        "all_member_hashes_match": true
+      },
+      "independently_derived_product": "INSUFFICIENT_EVIDENCE",
+      "actual_product": "INSUFFICIENT_EVIDENCE",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V29",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "moth": {
+        "requested_job": "different-synthetic-request",
+        "saved_job": "synthetic-moth-job",
+        "counts_total": 2048,
+        "declared_shots": 2048,
+        "widths": [
+          20
+        ],
+        "requested_bytes": 32,
+        "delivered_bytes": 0,
+        "provider_authentication_evidence": false,
+        "all_member_hashes_match": true
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    },
+    {
+      "id": "V30",
+      "crystal_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+      "crystal_match": true,
+      "signature_valid": true,
+      "signer_trusted": true,
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "generic_predicate": "VERIFIED",
+      "git": {
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "blob": "304b52af50041460c25ad4607981fe3c3de61b0b"
+      },
+      "subject_mismatches": [],
+      "policy_version_match": true,
+      "policy_digest_match": true,
+      "absent_roles": [],
+      "missing_bytes": [],
+      "manifest_bytes_match": true,
+      "payload_digest_match": true,
+      "semantic_scope_equal": true,
+      "semantic_authority_equal": true,
+      "execution_report": {
+        "package_present": true,
+        "runner_declared": true,
+        "executed": true,
+        "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+        "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "evidence_grade": "LOCAL_RECOMPUTATION"
+      },
+      "moth": {
+        "requested_job": "synthetic-moth-job",
+        "saved_job": "synthetic-moth-job",
+        "counts_total": 2047,
+        "declared_shots": 2048,
+        "widths": [
+          20
+        ],
+        "requested_bytes": 32,
+        "delivered_bytes": 0,
+        "provider_authentication_evidence": false,
+        "all_member_hashes_match": true
+      },
+      "independently_derived_product": "CONTRADICTED",
+      "actual_product": "CONTRADICTED",
+      "independent_projection_matches": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "compare-receipt-to-itself",
+  "observations": [
+    {
+      "kind": "positive",
+      "id": "V01",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-compare-receipt-to-itself\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-compare-receipt-to-itself\\vectors\\V01.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-compare-receipt-to-itself",
+      "started": "2026-10-11T18:53:59.534Z",
+      "ended": "2026-10-11T18:54:00.150Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "VERIFIED"
+    },
+    {
+      "kind": "witness",
+      "id": "V04",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-compare-receipt-to-itself\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-compare-receipt-to-itself\\vectors\\V04.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-compare-receipt-to-itself",
+      "started": "2026-10-11T18:54:00.151Z",
+      "ended": "2026-10-11T18:54:00.722Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "VERIFIED"
+    }
+  ]
+}

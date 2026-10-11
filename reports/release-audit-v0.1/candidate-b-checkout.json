@@ -1,0 +1,40 @@
+{
+  "clone": {
+    "argv": [
+      "git",
+      "clone",
+      "--no-hardlinks",
+      "--no-checkout",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+    "exit": 0,
+    "output": "Cloning into 'C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b'...\ndone.\n"
+  },
+  "checkout": {
+    "argv": [
+      "git",
+      "checkout",
+      "--detach",
+      "33d8ee47ad733f1198f2b2fb8d171b31c7b10678"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+    "exit": 0,
+    "output": "HEAD is now at 33d8ee4 docs: record commit-bound local reproduction receipt\n"
+  },
+  "clean_status": {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+    "exit": 0,
+    "output": ""
+  },
+  "head": "33d8ee47ad733f1198f2b2fb8d171b31c7b10678",
+  "path": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+  "remotes_removed": true
+}

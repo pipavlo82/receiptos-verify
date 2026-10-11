@@ -1,0 +1,19 @@
+
+> receiptos-verify@0.1.0 mutations
+> node tools/run-mutations.mjs
+
+ignore-requested-subject: CONTROL_BROKEN
+compare-receipt-to-itself: CONTROL_BROKEN
+accept-any-valid-signature: CONTROL_BROKEN
+promote-reproduced-to-verified: CONTROL_BROKEN
+accept-empty-evidence: KILLED
+count-crash-as-semantic-refutation: CONTROL_BROKEN
+package-presence-as-pass: CONTROL_BROKEN
+ignore-policy-version: KILLED
+ignore-guarantee-dependency: CONTROL_BROKEN
+ignore-retry-action-change: CONTROL_BROKEN
+ignore-evidence-grade: KILLED
+ignore-authority: KILLED
+ignore-commit: KILLED
+ignore-canonicalization-profile: CONTROL_BROKEN
+{"KILLED":5,"SURVIVED":0,"CRASHED":0,"NOT_APPLIED":0,"CONTROL_BROKEN":9,"INVALID_BASELINE":0}

@@ -1,0 +1,99 @@
+{
+  "schema": "receiptos.release.licenses.v1",
+  "packages": [
+    {
+      "name": "@noble/curves",
+      "version": "2.0.1",
+      "installedVersion": "2.0.1",
+      "license": "MIT",
+      "installedLicense": "MIT",
+      "lockIntegrity": "sha512-vs1Az2OOTBiP4q0pwjW5aF0xp9n4MxVrmkFBxc6EKZc6ddYx5gaZiAsZoq0uRRXWbi3AT/sBqn05eRPtn1JCPw==",
+      "recordedIntegrity": "sha512-vs1Az2OOTBiP4q0pwjW5aF0xp9n4MxVrmkFBxc6EKZc6ddYx5gaZiAsZoq0uRRXWbi3AT/sBqn05eRPtn1JCPw==",
+      "copySHA256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+      "freshInstallSHA256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+      "matches": true,
+      "installedLocation": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\node_modules\\@noble\\curves\\LICENSE"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "2.0.1",
+      "installedVersion": "2.0.1",
+      "license": "MIT",
+      "installedLicense": "MIT",
+      "lockIntegrity": "sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==",
+      "recordedIntegrity": "sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==",
+      "copySHA256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+      "freshInstallSHA256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+      "matches": true,
+      "installedLocation": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\node_modules\\@noble\\hashes\\LICENSE"
+    },
+    {
+      "name": "ajv",
+      "version": "8.20.0",
+      "installedVersion": "8.20.0",
+      "license": "MIT",
+      "installedLicense": "MIT",
+      "lockIntegrity": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==",
+      "recordedIntegrity": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==",
+      "copySHA256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3",
+      "freshInstallSHA256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3",
+      "matches": true,
+      "installedLocation": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\node_modules\\ajv\\LICENSE"
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "installedVersion": "3.1.3",
+      "license": "MIT",
+      "installedLicense": "MIT",
+      "lockIntegrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+      "recordedIntegrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+      "copySHA256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+      "freshInstallSHA256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+      "matches": true,
+      "installedLocation": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\node_modules\\fast-deep-equal\\LICENSE"
+    },
+    {
+      "name": "fast-uri",
+      "version": "3.1.8",
+      "installedVersion": "3.1.8",
+      "license": "BSD-3-Clause",
+      "installedLicense": "BSD-3-Clause",
+      "lockIntegrity": "sha512-GZMtZUTNRpOVIECoXwLNZS5xUGE+mVNbTB8h/7Rwh2TFWcBQiPzTgyZi05BF9UMZKkLJv8XBRJTlU7zg8+ZfMg==",
+      "recordedIntegrity": "sha512-GZMtZUTNRpOVIECoXwLNZS5xUGE+mVNbTB8h/7Rwh2TFWcBQiPzTgyZi05BF9UMZKkLJv8XBRJTlU7zg8+ZfMg==",
+      "copySHA256": "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786",
+      "freshInstallSHA256": "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786",
+      "matches": true,
+      "installedLocation": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\node_modules\\fast-uri\\LICENSE"
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "1.0.0",
+      "installedVersion": "1.0.0",
+      "license": "MIT",
+      "installedLicense": "MIT",
+      "lockIntegrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+      "recordedIntegrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+      "copySHA256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+      "freshInstallSHA256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+      "matches": true,
+      "installedLocation": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\node_modules\\json-schema-traverse\\LICENSE"
+    },
+    {
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "installedVersion": "2.0.2",
+      "license": "MIT",
+      "installedLicense": "MIT",
+      "lockIntegrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+      "recordedIntegrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+      "copySHA256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f",
+      "freshInstallSHA256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f",
+      "matches": true,
+      "installedLocation": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\node_modules\\require-from-string\\license"
+    }
+  ],
+  "newProductLicenseSHA256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "newProductNotice": "ReceiptOS Verify\nCopyright 2026 Pavlo Tvardovskyi\n\nSelected upstream components retain their own notices and licenses in vendor/.\nSee PROVENANCE.md and provenance/sources.json for source identities and contribution boundaries.\n",
+  "copyOnlyScope": true
+}

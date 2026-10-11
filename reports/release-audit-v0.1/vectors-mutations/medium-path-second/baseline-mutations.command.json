@@ -1,0 +1,15 @@
+{
+  "label": "baseline-mutations",
+  "cwd": "reports/tmp/release-rc-audit/vm",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:44:03.782Z",
+  "ended": "2026-10-11T18:44:32.597Z",
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "ignore-requested-subject: KILLED\ncompare-receipt-to-itself: KILLED\naccept-any-valid-signature: KILLED\npromote-reproduced-to-verified: KILLED\naccept-empty-evidence: KILLED\ncount-crash-as-semantic-refutation: CONTROL_BROKEN\npackage-presence-as-pass: KILLED\nignore-policy-version: KILLED\nignore-guarantee-dependency: KILLED\nignore-retry-action-change: KILLED\nignore-evidence-grade: KILLED\nignore-authority: KILLED\nignore-commit: KILLED\nignore-canonicalization-profile: KILLED\n{\"KILLED\":13,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":1,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

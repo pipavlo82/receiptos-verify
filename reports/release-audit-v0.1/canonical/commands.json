@@ -1,0 +1,172 @@
+[
+  {
+    "label": "initial-source-lock",
+    "argv": [
+      "node",
+      "tools/check-sources.mjs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:41:35.984571+00:00",
+    "exit": 0,
+    "output_file": "initial-source-lock.log",
+    "stdout_sha256": "59ade18424d2d050fe761c33f478714e53d8e1d29ea5a5d61f70e47e7248e1da"
+  },
+  {
+    "label": "initial-diff-check",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:41:36.213805+00:00",
+    "exit": 0,
+    "output_file": "initial-diff-check.log",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "installed-dependencies",
+    "argv": [
+      "cmd",
+      "/c",
+      "npm",
+      "ls",
+      "--all",
+      "--json"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:41:36.324913+00:00",
+    "exit": 0,
+    "output_file": "installed-dependencies.log",
+    "stdout_sha256": "5eb1aafb026b733001bc54f809f6d1d2be2506081bd327b206fc788f8b0f5aa2"
+  },
+  {
+    "label": "dependency-resolution",
+    "argv": [
+      "node",
+      "--input-type=module",
+      "-e",
+      "for (const n of ['ajv','@noble/curves/abstract/weierstrass.js']) { const p=import.meta.resolve(n); if(!p.startsWith(new URL('./node_modules/',import.meta.url).href)) throw Error('PARENT_DEPENDENCY:'+p); console.log(p); }"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:41:37.455731+00:00",
+    "exit": 0,
+    "output_file": "dependency-resolution.log",
+    "stdout_sha256": "585e454dafa373fddc0c113f54adbbb713ff83902be6962e46ccab6c26d578a2"
+  },
+  {
+    "label": "tests",
+    "argv": [
+      "cmd",
+      "/c",
+      "npm",
+      "test"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:41:37.530953+00:00",
+    "exit": 0,
+    "output_file": "tests.log",
+    "stdout_sha256": "ef5a57fc677201351c9cdbcd3e3d8da5f34c2335c91a926e1f76584717f05b3f",
+    "counts": {
+      "tests": 251,
+      "pass": 251,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  },
+  {
+    "label": "vectors",
+    "argv": [
+      "cmd",
+      "/c",
+      "npm",
+      "run",
+      "vectors"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:42:00.630962+00:00",
+    "exit": 0,
+    "output_file": "vectors.log",
+    "stdout_sha256": "9827e90966d85455d725d9596b3ff1fd37205ad82b257193cd7a5c34e220cf97"
+  },
+  {
+    "label": "mutations",
+    "argv": [
+      "cmd",
+      "/c",
+      "npm",
+      "run",
+      "mutations"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:42:16.636198+00:00",
+    "exit": 1,
+    "output_file": "mutations.log",
+    "stdout_sha256": "0b36d0beab3d0476b7bf4369f86c7cc07c3d840cf7f5f89977ba8ada21981a31"
+  },
+  {
+    "label": "cli-demo",
+    "argv": [
+      "node",
+      "src/cli.mjs",
+      "demo"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:42:53.603405+00:00",
+    "exit": 0,
+    "output_file": "cli-demo.log",
+    "stdout_sha256": "b107924ccbb3c9bdd26f9a2b213dcda10f57ae5d99fdb9fb21c6de00790a537c"
+  },
+  {
+    "label": "cli-capsule-demo",
+    "argv": [
+      "node",
+      "tools/write-demo.mjs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:42:54.739945+00:00",
+    "exit": 0,
+    "output_file": "cli-capsule-demo.log",
+    "stdout_sha256": "164ceb752232fe0e9c5dc3fdf0d553ffdf123891c0e83daadd224808d1a5fc38"
+  },
+  {
+    "label": "local-reproduction",
+    "argv": [
+      "node",
+      "tools/reproduce.mjs",
+      "V02"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:42:57.107920+00:00",
+    "exit": 0,
+    "output_file": "local-reproduction.log",
+    "stdout_sha256": "f65b39e42b11afac36d38c4ba9a2dde8c36e19e5f00d5d7bf1ab555c5f12efae"
+  },
+  {
+    "label": "final-source-lock",
+    "argv": [
+      "node",
+      "tools/check-sources.mjs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:42:58.888163+00:00",
+    "exit": 0,
+    "output_file": "final-source-lock.log",
+    "stdout_sha256": "59ade18424d2d050fe761c33f478714e53d8e1d29ea5a5d61f70e47e7248e1da"
+  },
+  {
+    "label": "final-diff-check",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+    "started_at": "2026-10-11T18:42:59.078971+00:00",
+    "exit": 0,
+    "output_file": "final-diff-check.log",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

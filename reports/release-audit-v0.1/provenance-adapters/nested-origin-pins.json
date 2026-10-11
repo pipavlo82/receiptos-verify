@@ -1,0 +1,186 @@
+[
+  {
+    "repository": "pipavlo82/crystal-receipt",
+    "pin": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+    "commit": {
+      "endpoint": "repos/pipavlo82/crystal-receipt/git/commits/45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:44:17.958662+00:00"
+    },
+    "tree": {
+      "endpoint": "repos/pipavlo82/crystal-receipt/git/trees/e8ca80f5bcc623c702d94a86a64b645fe152d819?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:44:18.455384+00:00"
+    },
+    "truncated": false,
+    "files": [
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/LICENSE",
+        "sourcePath": "LICENSE",
+        "actualBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+        "upstreamBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+        "sourcePath": "schemas/evidence-capsule.v0.schema.json",
+        "actualBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169",
+        "upstreamBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+        "sourcePath": "src/receiptos/canon/canonicalize.ts",
+        "actualBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+        "upstreamBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+        "sourcePath": "src/receiptos/canon/receipt-root.ts",
+        "actualBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+        "upstreamBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+        "sourcePath": "src/receiptos/capsule/crystal-mapping.ts",
+        "actualBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1",
+        "upstreamBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+        "sourcePath": "src/receiptos/capsule/evidence-capsule-v0.ts",
+        "actualBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+        "upstreamBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+        "sourcePath": "src/receiptos/capsule/evidence-capsule.ts",
+        "actualBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028",
+        "upstreamBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+        "sourcePath": "src/receiptos/capsule/portable-proof-object-v0.ts",
+        "actualBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+        "upstreamBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+        "sourcePath": "src/receiptos/capsule/render-plan.ts",
+        "actualBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49",
+        "upstreamBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+        "sourcePath": "src/receiptos/merkle/local-merkle.ts",
+        "actualBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+        "upstreamBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/schema/types.ts",
+        "sourcePath": "src/receiptos/schema/types.ts",
+        "actualBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+        "upstreamBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+        "sourcePath": "src/receiptos/verify/verify-receipt.ts",
+        "actualBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+        "upstreamBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "repository": "pipavlo82/recomputable-verification-receipts",
+    "pin": "549a7e150ddc75df88dc90ee93f331fea7464567",
+    "commit": {
+      "endpoint": "repos/pipavlo82/recomputable-verification-receipts/git/commits/549a7e150ddc75df88dc90ee93f331fea7464567",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:44:18.833665+00:00"
+    },
+    "tree": {
+      "endpoint": "repos/pipavlo82/recomputable-verification-receipts/git/trees/7d116537bba404303c8ae264b1fda7596510ec1e?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:44:19.195841+00:00"
+    },
+    "truncated": false,
+    "files": [
+      {
+        "productPath": "vendor/qev_moth/vendor/rvr-v0/adapter.py",
+        "sourcePath": "conformance/rvr-v0/adapter.py",
+        "actualBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+        "upstreamBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/rvr-v0/LICENSE",
+        "sourcePath": "LICENSE",
+        "actualBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+        "upstreamBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev_moth/vendor/rvr-v0/verification-profile-manifest.schema.json",
+        "sourcePath": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+        "actualBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+        "upstreamBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "repository": "trustless-ai/semantic-abi",
+    "pin": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+    "commit": {
+      "endpoint": "repos/trustless-ai/semantic-abi/git/commits/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:44:19.581115+00:00"
+    },
+    "tree": {
+      "endpoint": "repos/trustless-ai/semantic-abi/git/trees/63b5075bffb3027ab63c2a7f25de06502b0ed861?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:44:19.924916+00:00"
+    },
+    "truncated": false,
+    "files": [
+      {
+        "productPath": "vendor/qev/vendor/semantic-abi/LICENSE",
+        "sourcePath": "LICENSE",
+        "actualBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+        "upstreamBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev/vendor/semantic-abi/runner/src/linker.mjs",
+        "sourcePath": "runner/src/linker.mjs",
+        "actualBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+        "upstreamBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev/vendor/semantic-abi/schema/LICENSE-CC0.txt",
+        "sourcePath": "schema/LICENSE-CC0.txt",
+        "actualBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+        "upstreamBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+        "matches": true
+      },
+      {
+        "productPath": "vendor/qev/vendor/semantic-abi/schema/manifest.schema.json",
+        "sourcePath": "schema/manifest.schema.json",
+        "actualBlob": "647fc36d7d34756119a757d10b94b4473db44aa0",
+        "upstreamBlob": "647fc36d7d34756119a757d10b94b4473db44aa0",
+        "matches": true
+      }
+    ]
+  }
+]

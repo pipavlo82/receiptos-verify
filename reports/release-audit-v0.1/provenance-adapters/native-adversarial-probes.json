@@ -1,0 +1,620 @@
+{
+  "schema": "receiptos.release.native-adversarial-probes.v1",
+  "candidate": "C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/candidate-a/",
+  "rows": [
+    {
+      "name": "RVR recomputation of fresh negative",
+      "status": "CONTRADICTED",
+      "reasonCodes": [
+        "rvr.v0.digest_mismatch",
+        "rvr.recompute.identical"
+      ],
+      "nativeResult": {
+        "verificationOutcome": "REFUTED",
+        "verificationReasonCode": "rvr.v0.digest_mismatch",
+        "recomputationStatus": "REPRODUCED",
+        "reasonCode": "rvr.recompute.identical",
+        "evaluationPerformed": true,
+        "canonicalResultDigest": "be11126c86a0af169e620c286bd5361b0b77ab608a33b0863c2be141b1401ff3"
+      },
+      "semanticOutcome": "REFUTED",
+      "recomputationStatus": "REPRODUCED",
+      "observedArtifactDigest": "70ce5e7fce49ff34d41b5379c6967c44862c10f624cd60e81957a60dbb745353",
+      "expectedDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nativeCanonicalResult": {
+        "schema": "rvr.canonical-result.v0",
+        "outcome": "REFUTED",
+        "reasonCode": "rvr.v0.digest_mismatch",
+        "evaluation": {
+          "operation": "SHA256_EQUALS",
+          "evidenceMember": "artifact",
+          "expectedDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+          "observedDigest": "70ce5e7fce49ff34d41b5379c6967c44862c10f624cd60e81957a60dbb745353"
+        }
+      },
+      "savedCanonicalResult": {
+        "schema": "rvr.canonical-result.v0",
+        "outcome": "REFUTED",
+        "reasonCode": "rvr.v0.digest_mismatch",
+        "evaluation": {
+          "operation": "SHA256_EQUALS",
+          "evidenceMember": "artifact",
+          "expectedDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+          "observedDigest": "70ce5e7fce49ff34d41b5379c6967c44862c10f624cd60e81957a60dbb745353"
+        }
+      },
+      "limitations": [
+        "Generic RVR SHA256_EQUALS has no Git commit binding or signature/authenticity guarantee.",
+        "REPRODUCED can reproduce REFUTED or UNVERIFIABLE and does not imply semantic success.",
+        "Only the exact installed generic profile is admitted; external/domain profiles are unsupported."
+      ],
+      "provenance": {
+        "profileId": "rvr-generic-sha256-equals-v0",
+        "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+        "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_DIGEST_PREDICATE",
+          "NATIVE_RECEIPT_REPLAY"
+        ],
+        "requiredEvidence": [
+          "native-rvr-bundle",
+          "native-rvr-candidate"
+        ],
+        "nativeVocabulary": {
+          "semantic": [
+            "VERIFIED",
+            "REFUTED",
+            "UNVERIFIABLE"
+          ],
+          "recomputation": [
+            "REPRODUCED",
+            "DIVERGED",
+            "CANNOT_RECOMPUTE"
+          ]
+        },
+        "runtime": "Python 3.12.10",
+        "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+        "functions": [
+          "audit_profile",
+          "validate_receipt_envelope",
+          "recompute",
+          "evaluate"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "python",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\rvr-bridge.py"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"verificationOutcome\":\"REFUTED\",\"verificationReasonCode\":\"rvr.v0.digest_mismatch\",\"recomputationStatus\":\"REPRODUCED\",\"reasonCode\":\"rvr.recompute.identical\",\"evaluationPerformed\":true,\"canonicalResultDigest\":\"be11126c86a0af169e620c286bd5361b0b77ab608a33b0863c2be141b1401ff3\"},\"canonicalResult\":{\"schema\":\"rvr.canonical-result.v0\",\"outcome\":\"REFUTED\",\"reasonCode\":\"rvr.v0.digest_mismatch\",\"evaluation\":{\"operation\":\"SHA256_EQUALS\",\"evidenceMember\":\"artifact\",\"expectedDigest\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"observedDigest\":\"70ce5e7fce49ff34d41b5379c6967c44862c10f624cd60e81957a60dbb745353\"}},\"profileDigest\":\"51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948\",\"runtime\":\"Python 3.12.10\"}\r\n",
+        "stderr": "",
+        "stdoutSha256": "24984a953460b1e295c5a5c1504b385fa63d921679c48d0360646291c664a26d",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      }
+    },
+    {
+      "name": "RVR forged self-consistent saved positive",
+      "status": "CONTRADICTED",
+      "reasonCodes": [
+        "rvr.v0.digest_mismatch",
+        "rvr.recompute.canonical_result_diverged"
+      ],
+      "nativeResult": {
+        "verificationOutcome": "REFUTED",
+        "verificationReasonCode": "rvr.v0.digest_mismatch",
+        "recomputationStatus": "DIVERGED",
+        "reasonCode": "rvr.recompute.canonical_result_diverged",
+        "evaluationPerformed": true,
+        "canonicalResultDigest": "be11126c86a0af169e620c286bd5361b0b77ab608a33b0863c2be141b1401ff3"
+      },
+      "semanticOutcome": "REFUTED",
+      "recomputationStatus": "DIVERGED",
+      "observedArtifactDigest": "70ce5e7fce49ff34d41b5379c6967c44862c10f624cd60e81957a60dbb745353",
+      "expectedDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nativeCanonicalResult": {
+        "schema": "rvr.canonical-result.v0",
+        "outcome": "REFUTED",
+        "reasonCode": "rvr.v0.digest_mismatch",
+        "evaluation": {
+          "operation": "SHA256_EQUALS",
+          "evidenceMember": "artifact",
+          "expectedDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+          "observedDigest": "70ce5e7fce49ff34d41b5379c6967c44862c10f624cd60e81957a60dbb745353"
+        }
+      },
+      "savedCanonicalResult": {
+        "schema": "rvr.canonical-result.v0",
+        "outcome": "VERIFIED",
+        "reasonCode": "rvr.v0.digest_match",
+        "evaluation": {
+          "operation": "SHA256_EQUALS",
+          "evidenceMember": "artifact",
+          "expectedDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+          "observedDigest": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "limitations": [
+        "Generic RVR SHA256_EQUALS has no Git commit binding or signature/authenticity guarantee.",
+        "REPRODUCED can reproduce REFUTED or UNVERIFIABLE and does not imply semantic success.",
+        "Only the exact installed generic profile is admitted; external/domain profiles are unsupported."
+      ],
+      "provenance": {
+        "profileId": "rvr-generic-sha256-equals-v0",
+        "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+        "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_DIGEST_PREDICATE",
+          "NATIVE_RECEIPT_REPLAY"
+        ],
+        "requiredEvidence": [
+          "native-rvr-bundle",
+          "native-rvr-candidate"
+        ],
+        "nativeVocabulary": {
+          "semantic": [
+            "VERIFIED",
+            "REFUTED",
+            "UNVERIFIABLE"
+          ],
+          "recomputation": [
+            "REPRODUCED",
+            "DIVERGED",
+            "CANNOT_RECOMPUTE"
+          ]
+        },
+        "runtime": "Python 3.12.10",
+        "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+        "functions": [
+          "audit_profile",
+          "validate_receipt_envelope",
+          "recompute",
+          "evaluate"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "python",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\rvr-bridge.py"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"verificationOutcome\":\"REFUTED\",\"verificationReasonCode\":\"rvr.v0.digest_mismatch\",\"recomputationStatus\":\"DIVERGED\",\"reasonCode\":\"rvr.recompute.canonical_result_diverged\",\"evaluationPerformed\":true,\"canonicalResultDigest\":\"be11126c86a0af169e620c286bd5361b0b77ab608a33b0863c2be141b1401ff3\"},\"canonicalResult\":{\"schema\":\"rvr.canonical-result.v0\",\"outcome\":\"REFUTED\",\"reasonCode\":\"rvr.v0.digest_mismatch\",\"evaluation\":{\"operation\":\"SHA256_EQUALS\",\"evidenceMember\":\"artifact\",\"expectedDigest\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"observedDigest\":\"70ce5e7fce49ff34d41b5379c6967c44862c10f624cd60e81957a60dbb745353\"}},\"profileDigest\":\"51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948\",\"runtime\":\"Python 3.12.10\"}\r\n",
+        "stderr": "",
+        "stdoutSha256": "11f94bd9eee34fd1df310978ba0eaaa3aba7885f6baa6be1078ec254d275ff4f",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      }
+    },
+    {
+      "name": "Crystal canned positive label has no root",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "NATIVE_CRYSTAL_ROOT_MISSING"
+      ],
+      "nativeResult": {
+        "ok": false,
+        "receipt_root": null,
+        "recomputed_root": null
+      },
+      "limitations": [
+        "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+        "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+        "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+      ],
+      "provenance": {
+        "profileId": "crystal.handoff-receipt-root.v1",
+        "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_RECEIPT_ROOT_INTEGRITY"
+        ],
+        "requiredEvidence": [
+          "native-crystal-evidence"
+        ],
+        "nativeVocabulary": {
+          "integrity": [
+            "ok:true",
+            "ok:false"
+          ],
+          "fields": [
+            "ok",
+            "receipt_root",
+            "recomputed_root"
+          ]
+        },
+        "runtime": "Bun 1.3.14",
+        "functions": [
+          "verifyHandoffReceiptRoot"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "C:/Users/msi/.bun/bin/bun.exe",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\crystal-bridge.ts"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"ok\":false,\"receipt_root\":null,\"recomputed_root\":null},\"runtime\":\"Bun 1.3.14\"}\n",
+        "stderr": "",
+        "stdoutSha256": "5f235e7a3398ab8f9f8398892df384fa7b0bf75258f54c1d8f105beeea3854b8",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      }
+    },
+    {
+      "name": "Crystal invented root rejected",
+      "status": "REJECTED_MALFORMED",
+      "reasonCodes": [
+        "RECEIPT_ROOT_MISMATCH"
+      ],
+      "nativeResult": {
+        "ok": false,
+        "receipt_root": "0000000000000000000000000000000000000000000000000000000000000000",
+        "recomputed_root": "0x7c5acd59572faf4cf41147021ea13421e18332069e74415ee19b8ffa7ee00056"
+      },
+      "limitations": [
+        "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+        "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+        "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+      ],
+      "provenance": {
+        "profileId": "crystal.handoff-receipt-root.v1",
+        "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_RECEIPT_ROOT_INTEGRITY"
+        ],
+        "requiredEvidence": [
+          "native-crystal-evidence"
+        ],
+        "nativeVocabulary": {
+          "integrity": [
+            "ok:true",
+            "ok:false"
+          ],
+          "fields": [
+            "ok",
+            "receipt_root",
+            "recomputed_root"
+          ]
+        },
+        "runtime": "Bun 1.3.14",
+        "functions": [
+          "verifyHandoffReceiptRoot"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "C:/Users/msi/.bun/bin/bun.exe",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\crystal-bridge.ts"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"ok\":false,\"receipt_root\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"recomputed_root\":\"0x7c5acd59572faf4cf41147021ea13421e18332069e74415ee19b8ffa7ee00056\"},\"runtime\":\"Bun 1.3.14\"}\n",
+        "stderr": "",
+        "stdoutSha256": "a4c606f6ba142ff0ef67a84cdc1ffd3c559a20c982bf50922263f0d4b2a4dbbd",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      }
+    },
+    {
+      "name": "Crystal actual hashed fields cannot be replaced by PASS label",
+      "status": "REJECTED_MALFORMED",
+      "reasonCodes": [
+        "RECEIPT_ROOT_MISMATCH"
+      ],
+      "nativeResult": {
+        "ok": false,
+        "receipt_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b",
+        "recomputed_root": "0xc26d7e4f0c1d975337a30f18d35cd499906ca9fb2cbde1493e634ff875c05bb7"
+      },
+      "limitations": [
+        "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+        "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+        "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+      ],
+      "provenance": {
+        "profileId": "crystal.handoff-receipt-root.v1",
+        "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_RECEIPT_ROOT_INTEGRITY"
+        ],
+        "requiredEvidence": [
+          "native-crystal-evidence"
+        ],
+        "nativeVocabulary": {
+          "integrity": [
+            "ok:true",
+            "ok:false"
+          ],
+          "fields": [
+            "ok",
+            "receipt_root",
+            "recomputed_root"
+          ]
+        },
+        "runtime": "Bun 1.3.14",
+        "functions": [
+          "verifyHandoffReceiptRoot"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "C:/Users/msi/.bun/bin/bun.exe",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\crystal-bridge.ts"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"ok\":false,\"receipt_root\":\"0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b\",\"recomputed_root\":\"0xc26d7e4f0c1d975337a30f18d35cd499906ca9fb2cbde1493e634ff875c05bb7\"},\"runtime\":\"Bun 1.3.14\"}\n",
+        "stderr": "",
+        "stdoutSha256": "2081505289529ed16c7fb83e1cb798b62a6e8c280c63a73873ffd1caada96f6f",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      }
+    },
+    {
+      "name": "QEV self-consistent package with canned arithmetic result",
+      "status": "CONTRADICTED",
+      "reasonCodes": [
+        "RESULT_MISMATCH",
+        "PROVIDER_AUTHENTICATION_NOT_ESTABLISHED"
+      ],
+      "nativeResult": {
+        "profile": "quantum-evidence.v0",
+        "marker": "SYNTHETIC",
+        "input_status": "VALID",
+        "reasons": [
+          "RESULT_MISMATCH"
+        ],
+        "source_provenance": {
+          "status": "BYTE_PINS_VALID",
+          "sources": [
+            {
+              "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+              "git_blob_sha1": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+              "path": "vendor/semantic-abi/LICENSE",
+              "repository": "https://github.com/trustless-ai/semantic-abi.git",
+              "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+              "size_bytes": 11358,
+              "source_path": "LICENSE"
+            },
+            {
+              "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+              "git_blob_sha1": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+              "path": "vendor/semantic-abi/schema/LICENSE-CC0.txt",
+              "repository": "https://github.com/trustless-ai/semantic-abi.git",
+              "sha256": "7179683e8000e6bdc9bbc60d85edf0a4ac8e76f951857f54fcb775d5886f1309",
+              "size_bytes": 7049,
+              "source_path": "schema/LICENSE-CC0.txt"
+            },
+            {
+              "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+              "git_blob_sha1": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+              "path": "vendor/semantic-abi/runner/src/linker.mjs",
+              "repository": "https://github.com/trustless-ai/semantic-abi.git",
+              "sha256": "bae8e519361989bfadbb5d226cb9940255cd954c60b40ba42136a2b11161d391",
+              "size_bytes": 4044,
+              "source_path": "runner/src/linker.mjs"
+            },
+            {
+              "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+              "git_blob_sha1": "647fc36d7d34756119a757d10b94b4473db44aa0",
+              "path": "vendor/semantic-abi/schema/manifest.schema.json",
+              "repository": "https://github.com/trustless-ai/semantic-abi.git",
+              "sha256": "3219f51c7929ff915b71e5931a5d10edc5e15e73809fc2c47107592490bbe397",
+              "size_bytes": 3842,
+              "source_path": "schema/manifest.schema.json"
+            }
+          ]
+        },
+        "supplied_claims": {
+          "execution": "SYNTHETIC",
+          "desired_claim": "FINITE_POSTPROCESSING",
+          "provider_evidence": "MISSING",
+          "provider": "synthetic-provider",
+          "backend": "synthetic-backend",
+          "job": "synthetic-job"
+        },
+        "integrity": "SATISFIED",
+        "request_binding": "SATISFIED",
+        "deterministic_verification": "REFUTED",
+        "claim_support": "NOT_ESTABLISHED",
+        "native_link": {
+          "status": "EXECUTED",
+          "producer": {
+            "endpoint": "offline/check",
+            "consumes": [],
+            "establishes": [
+              {
+                "claim_type": "FINITE_POSTPROCESSING",
+                "authority_class": "INDEPENDENT_RECOMPUTATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing",
+                "verification_time": "preserved-observation-check.v0"
+              }
+            ],
+            "does_not_establish": [
+              {
+                "claim_type": "AUTHENTIC_QPU_EXECUTION",
+                "authority_class": "SEMANTIC_VERIFICATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing"
+              },
+              {
+                "claim_type": "SAMPLER_INDEPENDENCE",
+                "authority_class": "SEMANTIC_VERIFICATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing"
+              },
+              {
+                "claim_type": "DISTRIBUTION_EQUALITY",
+                "authority_class": "SEMANTIC_VERIFICATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing"
+              },
+              {
+                "claim_type": "MIN_ENTROPY",
+                "authority_class": "SEMANTIC_VERIFICATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing"
+              },
+              {
+                "claim_type": "CRYPTOGRAPHIC_RNG",
+                "authority_class": "SEMANTIC_VERIFICATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing"
+              },
+              {
+                "claim_type": "DEVICE_CERTIFICATION",
+                "authority_class": "SEMANTIC_VERIFICATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing"
+              }
+            ]
+          },
+          "consumer": {
+            "claim_type": "FINITE_POSTPROCESSING",
+            "authority_class": "SEMANTIC_VERIFICATION",
+            "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing",
+            "verification_time": "preserved-observation-check.v0"
+          },
+          "meaning": "DECLARATION_COMPATIBILITY_ONLY",
+          "result": {
+            "valid": true,
+            "edge": {
+              "producer_claim": {
+                "claim_type": "FINITE_POSTPROCESSING",
+                "authority_class": "INDEPENDENT_RECOMPUTATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing",
+                "verification_time": "preserved-observation-check.v0"
+              },
+              "consumer_requirement": {
+                "claim_type": "FINITE_POSTPROCESSING",
+                "authority_class": "SEMANTIC_VERIFICATION",
+                "scope": "request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing",
+                "verification_time": "preserved-observation-check.v0"
+              }
+            }
+          }
+        },
+        "provider_authenticity": "NOT_ESTABLISHED",
+        "physical": {
+          "AUTHENTIC_QPU_EXECUTION": "NOT_ESTABLISHED",
+          "SAMPLER_INDEPENDENCE": "NOT_ESTABLISHED",
+          "DISTRIBUTION_EQUALITY": "NOT_EVALUATED",
+          "MIN_ENTROPY": "NOT_ESTABLISHED",
+          "CRYPTOGRAPHIC_RNG": "NOT_ESTABLISHED",
+          "DEVICE_CERTIFICATION": "NOT_ESTABLISHED"
+        },
+        "native_rvr": "SEPARATE_RVR_QEV_PROFILE_AVAILABLE_NOT_INLINE",
+        "author_independence": "NOT_ESTABLISHED",
+        "identities": {
+          "request_input_bytes_sha256": "d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887",
+          "package_input_bytes_sha256": "ce5b8ac341b6a2c539f9032ffae9a126ddd51b7741964c0209a373acf012fcb3",
+          "trusted_request_sha256": "d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887",
+          "embedded_request_sha256": "d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887",
+          "ordered_raw_sha256": "8fc0e7042f0149f416a403fdba450b243b5c7ab1ef0e04cec15142b6491573ad",
+          "canonical_ordered_sha256": "8fc0e7042f0149f416a403fdba450b243b5c7ab1ef0e04cec15142b6491573ad",
+          "histogram_sha256": "71de52fd80bf1369116288f1aeb1221ae8e478f51fe83202dd7d70e1acf6dd04"
+        },
+        "recomputed": {
+          "counts": {
+            "10": 1,
+            "11": 1,
+            "00": 1,
+            "01": 1
+          },
+          "result": {
+            "shots": 4,
+            "weighted_sum": 6,
+            "parity_ones": 2
+          }
+        }
+      },
+      "providerAuthentication": "NOT_ESTABLISHED",
+      "limitations": [
+        "Fresh SYNTHETIC finite postprocessing only; no provider captures or live hardware are used.",
+        "Native provider authenticity, authentic QPU execution, entropy and device certification remain unestablished.",
+        "Native Semantic ABI link compatibility does not establish physical truth or source authority.",
+        "This narrow runtime does not claim the full upstream corpus, mutation gate or complete standalone source-lock check."
+      ],
+      "provenance": {
+        "profileId": "quantum-evidence.v0",
+        "sourceRepository": "https://github.com/pipavlo82/quantum-execution-evidence",
+        "sourceCommit": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+        "license": "Apache-2.0; nested Semantic ABI Apache-2.0 / CC0-1.0",
+        "maturity": "EXPERIMENTAL",
+        "capabilities": [
+          "SYNTHETIC_FINITE_POSTPROCESSING",
+          "INDEPENDENT_REQUEST_BINDING"
+        ],
+        "requiredEvidence": [
+          "qev-request",
+          "qev-package",
+          "synthetic-ordered-bit-lines"
+        ],
+        "nativeVocabulary": {
+          "input": [
+            "VALID",
+            "INVALID",
+            "UNSUPPORTED"
+          ],
+          "relation": [
+            "SATISFIED",
+            "REFUTED",
+            "CANNOT_ESTABLISH"
+          ],
+          "claim": [
+            "ESTABLISHED_OVER_SUPPLIED_BYTES",
+            "NOT_ESTABLISHED"
+          ],
+          "provider": [
+            "NOT_ESTABLISHED"
+          ]
+        },
+        "runtime": "Python 3.12.10",
+        "functions": [
+          "qev.checker.verify"
+        ]
+      },
+      "execution": {
+        "status": "COMPLETED",
+        "argv": [
+          "python",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\qev-bridge.py"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "{\"ok\":true,\"value\":{\"profile\":\"quantum-evidence.v0\",\"marker\":\"SYNTHETIC\",\"input_status\":\"VALID\",\"reasons\":[\"RESULT_MISMATCH\"],\"source_provenance\":{\"status\":\"BYTE_PINS_VALID\",\"sources\":[{\"commit\":\"d15c666dfccff17f7350fe97d2fc7b71cb2cbaee\",\"git_blob_sha1\":\"57bc88a15a0ee8266c259b2667e64608d3f7e292\",\"path\":\"vendor/semantic-abi/LICENSE\",\"repository\":\"https://github.com/trustless-ai/semantic-abi.git\",\"sha256\":\"c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c\",\"size_bytes\":11358,\"source_path\":\"LICENSE\"},{\"commit\":\"d15c666dfccff17f7350fe97d2fc7b71cb2cbaee\",\"git_blob_sha1\":\"6ca207ef004cb69d03041e7e5c288a2be4968045\",\"path\":\"vendor/semantic-abi/schema/LICENSE-CC0.txt\",\"repository\":\"https://github.com/trustless-ai/semantic-abi.git\",\"sha256\":\"7179683e8000e6bdc9bbc60d85edf0a4ac8e76f951857f54fcb775d5886f1309\",\"size_bytes\":7049,\"source_path\":\"schema/LICENSE-CC0.txt\"},{\"commit\":\"d15c666dfccff17f7350fe97d2fc7b71cb2cbaee\",\"git_blob_sha1\":\"c292a23ef0f3c283e600522f7a13a42fdceee1d8\",\"path\":\"vendor/semantic-abi/runner/src/linker.mjs\",\"repository\":\"https://github.com/trustless-ai/semantic-abi.git\",\"sha256\":\"bae8e519361989bfadbb5d226cb9940255cd954c60b40ba42136a2b11161d391\",\"size_bytes\":4044,\"source_path\":\"runner/src/linker.mjs\"},{\"commit\":\"d15c666dfccff17f7350fe97d2fc7b71cb2cbaee\",\"git_blob_sha1\":\"647fc36d7d34756119a757d10b94b4473db44aa0\",\"path\":\"vendor/semantic-abi/schema/manifest.schema.json\",\"repository\":\"https://github.com/trustless-ai/semantic-abi.git\",\"sha256\":\"3219f51c7929ff915b71e5931a5d10edc5e15e73809fc2c47107592490bbe397\",\"size_bytes\":3842,\"source_path\":\"schema/manifest.schema.json\"}]},\"supplied_claims\":{\"execution\":\"SYNTHETIC\",\"desired_claim\":\"FINITE_POSTPROCESSING\",\"provider_evidence\":\"MISSING\",\"provider\":\"synthetic-provider\",\"backend\":\"synthetic-backend\",\"job\":\"synthetic-job\"},\"integrity\":\"SATISFIED\",\"request_binding\":\"SATISFIED\",\"deterministic_verification\":\"REFUTED\",\"claim_support\":\"NOT_ESTABLISHED\",\"native_link\":{\"status\":\"EXECUTED\",\"producer\":{\"endpoint\":\"offline/check\",\"consumes\":[],\"establishes\":[{\"claim_type\":\"FINITE_POSTPROCESSING\",\"authority_class\":\"INDEPENDENT_RECOMPUTATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\",\"verification_time\":\"preserved-observation-check.v0\"}],\"does_not_establish\":[{\"claim_type\":\"AUTHENTIC_QPU_EXECUTION\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\"},{\"claim_type\":\"SAMPLER_INDEPENDENCE\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\"},{\"claim_type\":\"DISTRIBUTION_EQUALITY\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\"},{\"claim_type\":\"MIN_ENTROPY\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\"},{\"claim_type\":\"CRYPTOGRAPHIC_RNG\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\"},{\"claim_type\":\"DEVICE_CERTIFICATION\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\"}]},\"consumer\":{\"claim_type\":\"FINITE_POSTPROCESSING\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\",\"verification_time\":\"preserved-observation-check.v0\"},\"meaning\":\"DECLARATION_COMPATIBILITY_ONLY\",\"result\":{\"valid\":true,\"edge\":{\"producer_claim\":{\"claim_type\":\"FINITE_POSTPROCESSING\",\"authority_class\":\"INDEPENDENT_RECOMPUTATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\",\"verification_time\":\"preserved-observation-check.v0\"},\"consumer_requirement\":{\"claim_type\":\"FINITE_POSTPROCESSING\",\"authority_class\":\"SEMANTIC_VERIFICATION\",\"scope\":\"request:d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887/postprocessing\",\"verification_time\":\"preserved-observation-check.v0\"}}}},\"provider_authenticity\":\"NOT_ESTABLISHED\",\"physical\":{\"AUTHENTIC_QPU_EXECUTION\":\"NOT_ESTABLISHED\",\"SAMPLER_INDEPENDENCE\":\"NOT_ESTABLISHED\",\"DISTRIBUTION_EQUALITY\":\"NOT_EVALUATED\",\"MIN_ENTROPY\":\"NOT_ESTABLISHED\",\"CRYPTOGRAPHIC_RNG\":\"NOT_ESTABLISHED\",\"DEVICE_CERTIFICATION\":\"NOT_ESTABLISHED\"},\"native_rvr\":\"SEPARATE_RVR_QEV_PROFILE_AVAILABLE_NOT_INLINE\",\"author_independence\":\"NOT_ESTABLISHED\",\"identities\":{\"request_input_bytes_sha256\":\"d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887\",\"package_input_bytes_sha256\":\"ce5b8ac341b6a2c539f9032ffae9a126ddd51b7741964c0209a373acf012fcb3\",\"trusted_request_sha256\":\"d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887\",\"embedded_request_sha256\":\"d6dd15cb2a1145fd326ae6c804cc261d871e0aa5cf0c964c87a8595966612887\",\"ordered_raw_sha256\":\"8fc0e7042f0149f416a403fdba450b243b5c7ab1ef0e04cec15142b6491573ad\",\"canonical_ordered_sha256\":\"8fc0e7042f0149f416a403fdba450b243b5c7ab1ef0e04cec15142b6491573ad\",\"histogram_sha256\":\"71de52fd80bf1369116288f1aeb1221ae8e478f51fe83202dd7d70e1acf6dd04\"},\"recomputed\":{\"counts\":{\"00\":1,\"01\":1,\"10\":1,\"11\":1},\"result\":{\"shots\":4,\"weighted_sum\":6,\"parity_ones\":2}}},\"runtime\":\"Python 3.12.10\"}\r\n",
+        "stderr": "",
+        "stdoutSha256": "c4c7667c399f38f7c55f2f0eca65bac378bee2cc7a62f80bdd6a5be75f97a770",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      }
+    }
+  ]
+}

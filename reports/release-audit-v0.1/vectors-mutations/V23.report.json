@@ -1,0 +1,105 @@
+{
+  "schema": "receiptos.verify.report.v1",
+  "projection_version": "receiptos.verify.projection.v1",
+  "overall": "REJECTED_MALFORMED",
+  "reason_codes": [
+    "CANONICALIZATION_PROFILE_UNSUPPORTED"
+  ],
+  "explanation": "REJECTED_MALFORMED. The requested verification layers did not establish the claim. CANONICALIZATION_PROFILE_UNSUPPORTED",
+  "required_layers": [
+    "INTEGRITY",
+    "AUTHENTICITY",
+    "SUBJECT_BINDING",
+    "RECOMPUTATION",
+    "EVIDENCE_SUFFICIENCY",
+    "SEMANTIC_COMPATIBILITY"
+  ],
+  "layers": {
+    "INPUT": {
+      "status": "REJECTED_MALFORMED",
+      "reasonCodes": [
+        "CANONICALIZATION_PROFILE_UNSUPPORTED"
+      ],
+      "nativeResult": {
+        "message": "Unknown canonicalization profile."
+      }
+    },
+    "CANONICALIZATION": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "INTEGRITY": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "AUTHENTICITY": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "SUBJECT_BINDING": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "RECOMPUTATION": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "EVIDENCE_SUFFICIENCY": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "SEMANTIC_COMPATIBILITY": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "GUARANTEE_PRESERVATION": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "CONTINUITY": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "DOMAIN_ADAPTERS": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "PRODUCT_PROJECTION": {
+      "status": "REJECTED_MALFORMED",
+      "reasonCodes": [
+        "CANONICALIZATION_PROFILE_UNSUPPORTED"
+      ],
+      "nativeResult": null
+    },
+    "EXPLAINABLE_REPORT": {
+      "status": "GENERATED",
+      "reasonCodes": [
+        "CANONICALIZATION_PROFILE_UNSUPPORTED"
+      ],
+      "nativeResult": {
+        "explanation": "REJECTED_MALFORMED. The requested verification layers did not establish the claim. CANONICALIZATION_PROFILE_UNSUPPORTED"
+      }
+    },
+    "PROVENANCE": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    }
+  },
+  "boundaries": [
+    "Integrity is not authenticity.",
+    "Signature is not semantic correctness.",
+    "Replay preserves negative outcomes.",
+    "Historical observations are not repeated execution."
+  ]
+}

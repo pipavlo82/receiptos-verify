@@ -1,0 +1,218 @@
+{
+  "commands": [
+    {
+      "label": "candidate-a-normal",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json"
+      ],
+      "env_overrides": {},
+      "exit": 0,
+      "stdout_sha256": "10e3ecff1115b908f9667bf1c4613b3da3576a62c53741acfa31d0865092f0a3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-a-repeat",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json"
+      ],
+      "env_overrides": {},
+      "exit": 0,
+      "stdout_sha256": "10e3ecff1115b908f9667bf1c4613b3da3576a62c53741acfa31d0865092f0a3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-a-alternate-env",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json"
+      ],
+      "env_overrides": {
+        "TZ": "Pacific/Honolulu",
+        "LANG": "tr_TR.UTF-8",
+        "LC_ALL": "C",
+        "PYTHONHASHSEED": "123",
+        "PYTHONOPTIMIZE": "1"
+      },
+      "exit": 0,
+      "stdout_sha256": "10e3ecff1115b908f9667bf1c4613b3da3576a62c53741acfa31d0865092f0a3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-a-native-normal",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+      "argv": [
+        "python",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\rvr-bridge.py"
+      ],
+      "env_overrides": null,
+      "exit": 0,
+      "stdout_sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-a-native-optimized",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+      "argv": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "-X",
+        "utf8",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a\\src\\adapters\\native\\rvr-bridge.py"
+      ],
+      "env_overrides": null,
+      "exit": 0,
+      "stdout_sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-a-pack",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-a",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "pack",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\determinism\\candidate-a.capsule.json"
+      ],
+      "env_overrides": null,
+      "exit": 0,
+      "stdout_sha256": "fe020475b0e5cd57f99df18245be6f17d1fd5330341585af3a6d0b7b94770bfd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-b-normal",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json"
+      ],
+      "env_overrides": {},
+      "exit": 0,
+      "stdout_sha256": "4aff8d52c728cc739f9c9fd6e49846deb83082efa26d1af4b88c1d45da6518d3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-b-repeat",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json"
+      ],
+      "env_overrides": {},
+      "exit": 0,
+      "stdout_sha256": "4aff8d52c728cc739f9c9fd6e49846deb83082efa26d1af4b88c1d45da6518d3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-b-alternate-env",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "verify",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json"
+      ],
+      "env_overrides": {
+        "TZ": "Pacific/Honolulu",
+        "LANG": "tr_TR.UTF-8",
+        "LC_ALL": "C",
+        "PYTHONHASHSEED": "123",
+        "PYTHONOPTIMIZE": "1"
+      },
+      "exit": 0,
+      "stdout_sha256": "4aff8d52c728cc739f9c9fd6e49846deb83082efa26d1af4b88c1d45da6518d3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-b-native-normal",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+      "argv": [
+        "python",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b\\src\\adapters\\native\\rvr-bridge.py"
+      ],
+      "env_overrides": null,
+      "exit": 0,
+      "stdout_sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-b-native-optimized",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+      "argv": [
+        "python",
+        "-I",
+        "-B",
+        "-O",
+        "-X",
+        "utf8",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b\\src\\adapters\\native\\rvr-bridge.py"
+      ],
+      "env_overrides": null,
+      "exit": 0,
+      "stdout_sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "candidate-b-pack",
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\candidate-b",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "pack",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-request.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\root\\independent-bundle.json",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\release-audit-v0.1\\determinism\\candidate-b.capsule.json"
+      ],
+      "env_overrides": null,
+      "exit": 0,
+      "stdout_sha256": "fe020475b0e5cd57f99df18245be6f17d1fd5330341585af3a6d0b7b94770bfd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "checks": {
+    "same_path_normal_repeat": true,
+    "same_path_alternate_environment": true,
+    "cross_path_exact_reports": false,
+    "cross_path_difference_pointers": [
+      "/layers/INTEGRITY/execution/argv/1",
+      "/layers/RECOMPUTATION/execution/argv/5"
+    ],
+    "cross_path_reports_without_execution_argv": true,
+    "native_bytes_two_paths_normal_optimized": true,
+    "capsule_bytes_two_paths": true,
+    "capsule_sha256": "b527d10a32bd9b232e9d5c61c81bbfd372c16a83deb5c57dbbb2aae15514382b",
+    "note": "Python -I ignores PYTHON* env; optimized bridge was separately invoked with explicit -O. Whole report execution.argv deliberately retains absolute diagnostic locations; it is not canonical evidence identity."
+  }
+}

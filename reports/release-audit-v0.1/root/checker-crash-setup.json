@@ -1,0 +1,7 @@
+{
+  "candidate": "33d8ee47ad733f1198f2b2fb8d171b31c7b10678",
+  "file": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\rc-crash\\src\\adapters\\native\\rvr-bridge.py",
+  "before_sha256": "4d471ea31ea41f54886debcc77895140622243385bed2961909ec6acde890048",
+  "after_sha256": "678009f1a556476517fec6c079a418c5bd66f420f505032856047dde16376dd9",
+  "edit": "replace isolated bridge with explicit process exit 7; no product edit; own dependencies copied from independently installed exact lock"
+}

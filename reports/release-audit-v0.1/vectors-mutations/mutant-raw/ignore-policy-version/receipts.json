@@ -1,0 +1,39 @@
+{
+  "id": "ignore-policy-version",
+  "observations": [
+    {
+      "kind": "positive",
+      "id": "V01",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-policy-version\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-policy-version\\vectors\\V01.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-policy-version",
+      "started": "2026-10-11T18:54:06.557Z",
+      "ended": "2026-10-11T18:54:07.137Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "VERIFIED"
+    },
+    {
+      "kind": "witness",
+      "id": "V22",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-policy-version\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-policy-version\\vectors\\V22.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-policy-version",
+      "started": "2026-10-11T18:54:07.139Z",
+      "ended": "2026-10-11T18:54:07.711Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "VERIFIED"
+    }
+  ]
+}

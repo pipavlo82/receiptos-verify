@@ -1,0 +1,15 @@
+{
+  "label": "control-schema-spoof",
+  "cwd": "reports\\tmp\\vmc6",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:46:40.025Z",
+  "ended": "2026-10-11T18:46:42.342Z",
+  "exit": 0,
+  "signal": null,
+  "error": null,
+  "stdout": "audit-schema-spoof: KILLED\n{\"KILLED\":1,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

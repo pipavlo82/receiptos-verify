@@ -1,0 +1,42 @@
+{
+  "candidate": "33d8ee47ad733f1198f2b2fb8d171b31c7b10678",
+  "recorded_utc": "2026-10-11T18:53:46.368604+00:00",
+  "findings": [
+    {
+      "id": "S1",
+      "severity": "HIGH",
+      "summary": "Reachable authentic signed FAIL/native VERIFIED projects VERIFIED; independent reproduction recorded."
+    },
+    {
+      "id": "M1",
+      "severity": "HIGH",
+      "summary": "Malformed/incoherent report counts as semantic mutation kill."
+    },
+    {
+      "id": "M2",
+      "severity": "MEDIUM",
+      "summary": "Windows deep checkout fails native Python path lookup and mutation positive controls."
+    },
+    {
+      "id": "M3",
+      "severity": "MEDIUM",
+      "summary": "V09 witnesses producer execution declaration completeness, not absence of actual native execution."
+    },
+    {
+      "id": "P1",
+      "severity": "MEDIUM",
+      "summary": "CHRONICLE-ROOTS aggregate root implementation and22slice claim unsupported; ledger is interface-only."
+    },
+    {
+      "id": "U1",
+      "severity": "MEDIUM",
+      "summary": "Actual fresh browser upload of invalid UTF8 file repaired to signed U+FFFD request and VERIFIED; exact byte CLI rejects INVALID_UTF8."
+    },
+    {
+      "id": "U2",
+      "severity": "MEDIUM",
+      "summary": "Fresh UI V08 named checker crash omits execution_setup and becomes VERIFIED/good; control requires isolated runner, unavailable in browser."
+    }
+  ],
+  "before_evidence": "semantics/, vectors-mutations/, provenance-adapters/, root/; exact frozen clones remain unchanged"
+}

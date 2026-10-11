@@ -1,0 +1,44 @@
+{
+  "name": "invalid-schema-valid-overall",
+  "expected_safety_behavior": "SHOULD_REJECT_INVALID_OUTPUT",
+  "exit": 0,
+  "report": {
+    "schema": "receiptos.verify.mutation-report.v1",
+    "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.",
+    "count": 1,
+    "counts": {
+      "KILLED": 1,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    },
+    "rows": [
+      {
+        "id": "audit-invalid-schema-valid-overall",
+        "source_file": "src/core/verify.mjs",
+        "original_sha256": "98e67a46d0c01ea854304add24e6b828b490b6b0efd789a529738ccce658689b",
+        "mutant_sha256": "bcc3af417313f1193a78d0fed505b67a71a9e41570328d21d1a2847d896fc70b",
+        "applied": true,
+        "positive": "V01",
+        "witness": "V04",
+        "baseline_controls_valid": true,
+        "positive_process_status": "COMPLETED",
+        "positive_preserved": true,
+        "witness_process_status": "COMPLETED",
+        "baseline_projection": "CONTRADICTED",
+        "mutant_projection": "VERIFIED",
+        "witness_reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "REQUESTED_SUBJECT_NOT_BOUND",
+          "ID_MISMATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "SEMANTIC_REQUIREMENT_ESTABLISHED"
+        ],
+        "status": "KILLED"
+      }
+    ]
+  }
+}

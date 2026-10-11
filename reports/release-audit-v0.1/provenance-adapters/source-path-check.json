@@ -1,0 +1,4102 @@
+{
+  "schema": "receiptos.release.exact-source-path-check.v1",
+  "treeQueries": [
+    {
+      "endpoint": "repos/CYPHES-ATP/Artifact-Two/git/trees/602381a3ce3faeddc8ade57c2a06310a58b6f0b0?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.208401+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/CYPHES-ATP/Stealth/git/trees/8ac74ea90d273a8a894c1fda84a367035aec9eed?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.388463+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/Interpoll1/decentralised/git/trees/fa1c967752534cd87f9368cd5992f9aaad6a856c?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.258927+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/OffchainLabs/community-helm-charts/git/trees/e42878642251f3215b43674b75dc71d5a22aad90?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.286760+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/PandaExplorer/Provably-Fair-iGaming-Demo/git/trees/a580bda208416c4b4ba40090b2fe3c35d6db343f?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.188937+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/Rohiteswar/Solana-SlotMachine/git/trees/093db7dae132e6e1c72d2daec02724ef620d4d3f?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.183647+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/akashmahlaz/betting-club/git/trees/823c2d3a265ea119b21c341856268aff16468653?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.247366+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/babyblueviper1/semantic-execution-guard/git/trees/63568b208b8f7707ab743b26f656ff0bee633804?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.207325+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/casinocutup/Solana-Mines-Game/git/trees/3b712c1936add2bd7f5721007ee6e3996f2b354d?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.657448+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/eddieoz/bitBingo/git/trees/2ef0363a455bd3bc973f78244b3e57db81ec42be?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.634133+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/ethereum/ERCs/git/trees/773d1f5e06e9dab95aaf2184dd7c2faae9877000?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.765886+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/jdleo/provably-fair-dice/git/trees/7a43f5cd377c6cfbd8817e906905609a7b848ab5?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.678618+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/justFiveDev/Solana-Casino-Jackpot/git/trees/a4266526b0d9952944c517c957f374c7d9b16473?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.657965+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/open-quantum-safe/liboqs-java/git/trees/6695c037ed889ae40b0317cbae840069117962de?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.716388+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/-crystal-artifact/git/trees/20050608e10d67903612405b9a4318efa05385ae?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.725926+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/Chronicle/git/trees/632fb367689f7694bf7782ba8ef98f61ad1b8d6a?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:00.776560+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/ERCs/git/trees/95e7a4b3c8a1273b7df64572af88cc20000cbf08?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.145704+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/conduct-witness/git/trees/b42b99e01934f5097494f2d92fae1d21b33718fc?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.090450+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/cross-reference-console/git/trees/b83bc89311acb9ef448da5f54ec0350a4fb81294?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.070701+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/crystal-receipt/git/trees/e8ca80f5bcc623c702d94a86a64b645fe152d819?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.265808+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/decentralised/git/trees/bb251e73514afdceb127dcd2f69f6f8913408389?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.167286+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/gas-per-secure-bit/git/trees/5ac6f6af54452ae532ed2d62c23bf81b18bf5dc7?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.190130+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/ml-dsa-65-ethereum-verification/git/trees/d5da3f959ac85915b3784b672e5acd10bc33161a?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.246491+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/ml-dsa-65-ethereum-verification/git/trees/f6530521cabbd67aa7fb8a4149a5aefaa30a006c?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.215549+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/pipavlo82.github.io/git/trees/ed430d8711a7c44fab235cab06357dd94446080f?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.438419+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/pq-receipt-profile/git/trees/35e2d48d1c4b7b0050c3881024536ba9e1e341cc?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.492749+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/pqevm-vector-packs/git/trees/17128ddd41d3148ad42e82fd6443f88f75520229?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.576324+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/protected-relation-fixtures/git/trees/40e1a752a4ceafc6670a5d0a2ba3d46d12fe9644?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.691083+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/protected-relation-fixtures/git/trees/af8f26ced6f38435d534b330007bef917584b840?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.726559+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/quantum-execution-evidence/git/trees/96db84eaa0d1a34a0a02020ac3a1329a8796ad70?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.671960+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/r4-saas-api/git/trees/99454cab61618913c4474b8fdfc8774256eee629?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.661101+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/receiptos-mvp/git/trees/92e18d7805135c02a4a71155761eae6720cb26c8?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.711851+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/receiptos-pq-lab/git/trees/3782cc66caab8d43e6bbfb9756360f67908e1fc5?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.804020+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/recomputable-verification-receipts/git/trees/5d51b50a39683db0844098741bd2fc31fb5a8bcc?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:01.924769+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/relational-security-invariants/git/trees/37e5460455071fcb1f3d0acd0fe3fcd5ee0225f7?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.021056+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/pipavlo82/semantic-execution-guard/git/trees/5b2a6bd0c55d563cc30ef71042d06d9669fb49ab?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.063055+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/shentonyan/sealed-bid-award-erc/git/trees/73e31b1b0d34a67b70b5679d402927ea89059c9a?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.102157+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/tapiwamakandigona/zimbet/git/trees/4546c6d30a1975da86da8ecd7d51935e3e1ba9aa?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.107703+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/agent-sdk/git/trees/774b97253c24dac59dda1723cda18b7e431f6707?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.152042+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/ccip-router/git/trees/79a9b1d1b5716736ef5d1f60f7cd78f445c94b9c?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.149882+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/cross-reference-console/git/trees/9245d6259600ed44d90f162e518f718ee0e73951?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.207175+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/pq-agent-binding/git/trees/7ab1b003ec334810e13ce38035f24513afcc7d41?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.350739+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/primitives/git/trees/d1821bf1547632d531233007195241002b5459ee?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.473864+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/recompute-kit/git/trees/941b2e586d824a9f05c8826e408a49b84df72fee?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.550102+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/recompute-kit/git/trees/7b64f2b3f51a3df93ab74d6ea717f74635799845?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.521298+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/recompute-kit/git/trees/f530b3e2e6c34e6700686fe85ba3f27568676ca4?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.525063+00:00",
+      "truncated": false
+    },
+    {
+      "endpoint": "repos/trustless-ai/semantic-abi/git/trees/63b5075bffb3027ab63c2a7f25de06502b0ed861?recursive=1",
+      "exitCode": 0,
+      "observedAt": "2026-10-11T18:46:02.510815+00:00",
+      "truncated": false
+    }
+  ],
+  "records": [
+    {
+      "capabilityId": "prf-relation",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "43144637bafd1cfbb21ba83ee05cca4c3d931a09"
+        },
+        {
+          "path": "spec/protected-relation-model.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "fd742a2f2e36c5216ddd8a789bb0cc521fc24b4f"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "upstreamGitBlob": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "matches": true
+        },
+        {
+          "path": "spec/protected-relation-model.md",
+          "expectedGitBlob": "fd742a2f2e36c5216ddd8a789bb0cc521fc24b4f",
+          "upstreamGitBlob": "fd742a2f2e36c5216ddd8a789bb0cc521fc24b4f",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "prf-award",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "paths": [
+        {
+          "path": "tools/award_actual_settlement.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3210be9b560e61663b6978bb3ae5843f6f3f2901"
+        },
+        {
+          "path": "tools/validate_award_actual_settlement.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "51ef0c688a57d5d25a0412b7b762b2073575b580"
+        },
+        {
+          "path": "conformance/award-actual-settlement-v0/suite.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "68d1c2e3fcd41ddb1c5b2d010a63c117cb085bc1"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "prf-guarantee",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "43144637bafd1cfbb21ba83ee05cca4c3d931a09"
+        },
+        {
+          "path": "conformance/guarantee-preservation-v0/README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7c468a47a4c1cb6c4259bf2de52e3ca4e75e4cae"
+        },
+        {
+          "path": "conformance/guarantee-preservation-v0/contract.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b2f3af30bfddee777d7beb5a5ecd19fa28af0e39"
+        },
+        {
+          "path": "tools/guarantee_preservation.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9efe4c60a5d6ac0072a2b6942f0240f73d56d500"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "upstreamGitBlob": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "matches": true
+        },
+        {
+          "path": "conformance/guarantee-preservation-v0/README.md",
+          "expectedGitBlob": "7c468a47a4c1cb6c4259bf2de52e3ca4e75e4cae",
+          "upstreamGitBlob": "7c468a47a4c1cb6c4259bf2de52e3ca4e75e4cae",
+          "matches": true
+        },
+        {
+          "path": "conformance/guarantee-preservation-v0/contract.schema.json",
+          "expectedGitBlob": "b2f3af30bfddee777d7beb5a5ecd19fa28af0e39",
+          "upstreamGitBlob": "b2f3af30bfddee777d7beb5a5ecd19fa28af0e39",
+          "matches": true
+        },
+        {
+          "path": "tools/guarantee_preservation.py",
+          "expectedGitBlob": "9efe4c60a5d6ac0072a2b6942f0240f73d56d500",
+          "upstreamGitBlob": "9efe4c60a5d6ac0072a2b6942f0240f73d56d500",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "seg-relations",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "paths": [
+        {
+          "path": "relations/robinhood-stock-token-v0/recompute.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2df094d277bb7d3997e8e29e92355f011b7be0cd"
+        },
+        {
+          "path": "relations/robinhood-adjusted-feed-consumption-v0/recompute.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "d50069eadbd49f7c816d979d45e2f7898399bffc"
+        },
+        {
+          "path": "relations/robinhood-stock-token-v0/relation.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "968be76cebbfe2f0507d4a32d53f06bc5abd7b6e"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "seg-consumer",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "paths": [
+        {
+          "path": "contracts/SemanticExecutionGuard.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9af2a4dcac1d54a72a03f126ccb87961e5c03edd"
+        },
+        {
+          "path": "contracts/ProtectedPriceConsumer.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e724f2f6c441f9c32e508d61ec27d35de866c33f"
+        },
+        {
+          "path": "contracts/ProtectedPriceActionTarget.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "0b631d0a24ee09befb8b2680d448808f94a81305"
+        },
+        {
+          "path": "docs/protected-action-consumer-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b9dea06eb1ea39b2a8c6d2c6cef0747230c69fd9"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "artifact-ui",
+      "repository": "pipavlo82/-crystal-artifact",
+      "sourceSHA": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "paths": [
+        {
+          "path": "src/crystal-artifact.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9f3312be7903d6b6889284ea5b3e4629db5d4d0b"
+        },
+        {
+          "path": "src/canon.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2e0e0252bdeb33da1980aebaa8d334c780f2124e"
+        },
+        {
+          "path": "src/types.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6fab35b0d74bdc6e240799f7d95da430c03960c0"
+        },
+        {
+          "path": "ui/ui.js",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b00b52d94b13e19e32bc19e81a1b8cd2c3e61ce6"
+        },
+        {
+          "path": "tests/golden-vectors.test.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2ad8f15c3d9ed3d9762208fbb347c287e064d447"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "r4-signature",
+      "repository": "pipavlo82/r4-saas-api",
+      "sourceSHA": "7815fd84dd7eb9347b8399719cfeff941ff8df2a",
+      "paths": [
+        {
+          "path": "app/verify_route.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8aad02e35d5e86c05f16c7f3c36d26f110aa7435"
+        },
+        {
+          "path": "app/main.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "0f38cd235cbb5e2cbc3be1ca1e550f9789f09c49"
+        },
+        {
+          "path": "requirements.txt",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "0a037fcbe5af2410f88104d8a3852e381872acf2"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "witness-key",
+      "repository": "pipavlo82/pipavlo82.github.io",
+      "sourceSHA": "9a0139ebfa1df4fa6bb9133c0eb6be6d64e67037",
+      "paths": [
+        {
+          "path": "keys/witness.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3e2aaa963663f03abaddad64e1c5b76ebf8c15f5"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CR-ROOT",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "src/receiptos/canon/canonicalize.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e"
+        },
+        {
+          "path": "src/receiptos/canon/receipt-root.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0"
+        },
+        {
+          "path": "src/receiptos/schema/types.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3"
+        },
+        {
+          "path": "src/receiptos/verify/verify-receipt.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "src/receiptos/canon/canonicalize.ts",
+          "expectedGitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "upstreamGitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "matches": true
+        },
+        {
+          "path": "src/receiptos/canon/receipt-root.ts",
+          "expectedGitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "upstreamGitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "matches": true
+        },
+        {
+          "path": "src/receiptos/schema/types.ts",
+          "expectedGitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "upstreamGitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "matches": true
+        },
+        {
+          "path": "src/receiptos/verify/verify-receipt.ts",
+          "expectedGitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "upstreamGitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CR-PORTABLE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "paths": [
+        {
+          "path": "src/receiptos/capsule/evidence-capsule-v0.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "20b789e2992ab4363bcc361467551d27d5e23183"
+        },
+        {
+          "path": "src/receiptos/capsule/portable-proof-object-v0.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "src/receiptos/capsule/evidence-capsule-v0.ts",
+          "expectedGitBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+          "upstreamGitBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+          "matches": true
+        },
+        {
+          "path": "src/receiptos/capsule/portable-proof-object-v0.ts",
+          "expectedGitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+          "upstreamGitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CR-MERKLE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "paths": [
+        {
+          "path": "src/receiptos/merkle/local-merkle.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "src/receiptos/merkle/local-merkle.ts",
+          "expectedGitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+          "upstreamGitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CR-CONFORMANCE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "paths": [
+        {
+          "path": "conformance/counterfactual-conformance-v0/SPEC.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ceb86703664266f891cbc72ce5f45e0fd745d429"
+        },
+        {
+          "path": "conformance/counterfactual-conformance-v0/verify_independent.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a9908093ef60951e326169ba99e9fc71f7ec0da3"
+        },
+        {
+          "path": "conformance/counterfactual-traversal-stability-v0/SPEC.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "85fdc0608dcb27e7fb1bfb724a9ea3b95f8abc7b"
+        },
+        {
+          "path": "src/receiptos/challenge/counterfactual-conformance-evaluator.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "d54ee02e5bbc915bbb2d4adaba7ebb409fc0562b"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CR-TSEI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "paths": [
+        {
+          "path": "docs/TRANSFORMATION_STABLE_EVIDENCE_INTEROPERABILITY_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "cb501a4a10080f2a9b89d155f1e5a8e2fd711431"
+        },
+        {
+          "path": "src/receiptos/challenge/transformation-stability.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2d25f3c8ff9cd8ddca777421f58fc9436695d86a"
+        },
+        {
+          "path": "src/receiptos/challenge/transformation-stability-cycle.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "be736f3e74f8a7711981cef195ee60415103c74e"
+        },
+        {
+          "path": "src/receiptos/challenge/transformation-stability-coverage.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "83ade20c54a0367f51f629ff7553fdefd28a68e1"
+        },
+        {
+          "path": "src/receiptos/challenge/canonical-identity-json.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "f28bc2dab72005c9c03a1fadceca5ff2c1d4c005"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CR-CONTINUITY",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "paths": [
+        {
+          "path": "src/receiptos/capsule/chronicle-checkpoint-continuity-v0.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "428923f10aac54bfaaebedfad494118cbb17d744"
+        },
+        {
+          "path": "docs/CHRONICLE_CHECKPOINT_CONTINUITY_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ada3f0f5d5e13eccf6588ee1a9828efa6a7b1703"
+        },
+        {
+          "path": "tests/fixtures/chronicle-checkpoint-continuity-v0.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "88a41845d6b5fa16d057b884f113c9df3f4a9e28"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "conformance/rvr-v0/adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e"
+        },
+        {
+          "path": "conformance/rvr-v0/verification-profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "85aa57b928d35fa969fa23676b85716a763ee66b"
+        },
+        {
+          "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169"
+        },
+        {
+          "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "86e2045fca20f52d0649323670dc5945c7d85460"
+        },
+        {
+          "path": "conformance/rvr-v0/rvr.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6ee92d50ef2ed50bb9508c5ddc15d7950fbdb852"
+        },
+        {
+          "path": "conformance/rvr-v0/expected.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "53adbb9d53ab050693ef5ef9681bf73858d1443c"
+        },
+        {
+          "path": "conformance/rvr-v0/mutants.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "eed6c3ee0c1a8f002a9f25675dbfeae463775888"
+        },
+        {
+          "path": "conformance/rvr-v0/vectors.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ba1dd37684d4f345a43664617b318271465f2da6"
+        },
+        {
+          "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8bd2ae2962d0151998cdf3244e8cc2317215c742"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/adapter.py",
+          "expectedGitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "upstreamGitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/verification-profile.json",
+          "expectedGitBlob": "85aa57b928d35fa969fa23676b85716a763ee66b",
+          "upstreamGitBlob": "85aa57b928d35fa969fa23676b85716a763ee66b",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+          "expectedGitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "upstreamGitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+          "expectedGitBlob": "86e2045fca20f52d0649323670dc5945c7d85460",
+          "upstreamGitBlob": "86e2045fca20f52d0649323670dc5945c7d85460",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/rvr.schema.json",
+          "expectedGitBlob": "6ee92d50ef2ed50bb9508c5ddc15d7950fbdb852",
+          "upstreamGitBlob": "6ee92d50ef2ed50bb9508c5ddc15d7950fbdb852",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/expected.json",
+          "expectedGitBlob": "53adbb9d53ab050693ef5ef9681bf73858d1443c",
+          "upstreamGitBlob": "53adbb9d53ab050693ef5ef9681bf73858d1443c",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/mutants.json",
+          "expectedGitBlob": "eed6c3ee0c1a8f002a9f25675dbfeae463775888",
+          "upstreamGitBlob": "eed6c3ee0c1a8f002a9f25675dbfeae463775888",
+          "matches": true
+        },
+        {
+          "path": "conformance/rvr-v0/vectors.json",
+          "expectedGitBlob": "ba1dd37684d4f345a43664617b318271465f2da6",
+          "upstreamGitBlob": "ba1dd37684d4f345a43664617b318271465f2da6",
+          "matches": true
+        },
+        {
+          "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+          "expectedGitBlob": "8bd2ae2962d0151998cdf3244e8cc2317215c742",
+          "upstreamGitBlob": "8bd2ae2962d0151998cdf3244e8cc2317215c742",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V0",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "paths": [
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v0/README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8f097d3494cce47dc5bfa8b4e4953c86312c5935"
+        },
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v0/SPEC.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8f2d7d7d8fb0c537dbf14d779bab10970091f284"
+        },
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v0/adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "d80ce679f56217f40cfbb130801ea2965719b631"
+        },
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v0/verification-profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a9ba6df25a74d1680f7c6878fe07573b1bd54ca6"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V1",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "paths": [
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v1/README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ceace427b07e1101c3ba2ca05e0902e78da5089e"
+        },
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v1/SPEC.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "626dc23bd26b20da46f0ff6ebe549a736218c34c"
+        },
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v1/adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "f464beff66f0a6d2342683d334b743855a2a0551"
+        },
+        {
+          "path": "profiles/invinoveritas-signed-verdict-v1/verification-profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "106851410fd7bece2313bff9a72329583a6fd9fe"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "RVR-ERC8281",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "paths": [
+        {
+          "path": "profiles/erc8281-committed-receipt-snapshot-v0/SPEC.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1789a08d8c3d8c6daf6272d9c5857c4e8b6c16ee"
+        },
+        {
+          "path": "profiles/erc8281-committed-receipt-snapshot-v0/adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ebdc095e8a9491e47846c7ee43d2dcc5fa882efd"
+        },
+        {
+          "path": "profiles/erc8281-committed-receipt-snapshot-v0/verification-profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "f004c8054d79c038dccf4a854d96276c94bd8218"
+        },
+        {
+          "path": "profiles/erc8281-committed-receipt-snapshot-v0/upstream/erc-8281.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "71446f3ab82fee3ea48f69bb846658572cb9d42e"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "RVR-JUDGE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "paths": [
+        {
+          "path": "profiles/judge-protocol-rvr-v0/README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7021272fa013f40f19b386689a13dff70b22c777"
+        },
+        {
+          "path": "profiles/judge-protocol-rvr-v0/SPEC.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1a0eb9c6ab4906643b70672dc456157002e9d518"
+        },
+        {
+          "path": "profiles/judge-protocol-rvr-v0/adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6c05c848223ad0fa0a5bf2f4038b197f39108192"
+        },
+        {
+          "path": "profiles/judge-protocol-rvr-v0/verification-profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "757efd98f640bb7b8e74f94822185d2376378ab3"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "RVR-RUST",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "paths": [
+        {
+          "path": "review/rc2-independent-rust/README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "64b468597d7cd7293deb0035f150578d1fb4e9b7"
+        },
+        {
+          "path": "review/rc2-independent-rust/REVIEW.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5a7e96e10dace109e847dd88b67da384a9f2bfba"
+        },
+        {
+          "path": "review/rc2-independent-rust/src/main.rs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c9955c13c989cd237fee2cbd16729038668e82c1"
+        },
+        {
+          "path": "review/rc2-independent-rust/Cargo.lock",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2ec3d40d47c88aff8605afbe903cd6e2cc87cb21"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "paths": [
+        {
+          "path": "spec/RSI-core-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4d02214a5f8da29471ee4330cc0b3699d076fba9"
+        },
+        {
+          "path": "spec/expectation-contract-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "f23098c9151c3f9c3bf4834525ba80574d870705"
+        },
+        {
+          "path": "spec/relation-profile-contract-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9e93beb9ebb7df94badf4612a91522aaab87c766"
+        },
+        {
+          "path": "spec/serialization.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "eb0c0db288af9f50ffd4a47cb359316d300dcc5b"
+        },
+        {
+          "path": "runner/expectation_contract.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3c3dd83a7ff1c8e51984991685a23cacff67ffc7"
+        },
+        {
+          "path": "runner/relation_runtime.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1d65a6ae677325fa0a50056cefcf77e315f013ca"
+        },
+        {
+          "path": "schema/relation-binding-fixture.v0.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e2e00dce9a1d8fb255098d842fa3436bdf005c0d"
+        },
+        {
+          "path": "tools/prove_can_fail.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "939dd293378b9e4e81b247097386376c6f2c3e14"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ADMISSION",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "664988c2f914f7aa93b6a59a664b297211151afe"
+        },
+        {
+          "path": "docs/LICENSE_POLICY_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "dfb7c0b872cfd895c8243d6c3a725651dc018db3"
+        },
+        {
+          "path": "specs/chronicle_entry_v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9ee49e8b3c88dadaf812e0c606b9e1bd9c6d87b5"
+        },
+        {
+          "path": "src/chronicle_entry_identity.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ebb7fb23c671387478871698771afa4e437c66a1"
+        },
+        {
+          "path": "src/chronicle_receiptos_admission.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e18c1c7af3e5286026b89c49e175dffea6c48c75"
+        },
+        {
+          "path": "src/chronicle_position_artifact.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "533cecf050f681b8c886f38a71145f7c33a5d1b6"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "664988c2f914f7aa93b6a59a664b297211151afe",
+          "upstreamGitBlob": "664988c2f914f7aa93b6a59a664b297211151afe",
+          "matches": true
+        },
+        {
+          "path": "docs/LICENSE_POLICY_V0.md",
+          "expectedGitBlob": "dfb7c0b872cfd895c8243d6c3a725651dc018db3",
+          "upstreamGitBlob": "dfb7c0b872cfd895c8243d6c3a725651dc018db3",
+          "matches": true
+        },
+        {
+          "path": "specs/chronicle_entry_v0.md",
+          "expectedGitBlob": "9ee49e8b3c88dadaf812e0c606b9e1bd9c6d87b5",
+          "upstreamGitBlob": "9ee49e8b3c88dadaf812e0c606b9e1bd9c6d87b5",
+          "matches": true
+        },
+        {
+          "path": "src/chronicle_entry_identity.mjs",
+          "expectedGitBlob": "ebb7fb23c671387478871698771afa4e437c66a1",
+          "upstreamGitBlob": "ebb7fb23c671387478871698771afa4e437c66a1",
+          "matches": true
+        },
+        {
+          "path": "src/chronicle_receiptos_admission.mjs",
+          "expectedGitBlob": "e18c1c7af3e5286026b89c49e175dffea6c48c75",
+          "upstreamGitBlob": "e18c1c7af3e5286026b89c49e175dffea6c48c75",
+          "matches": true
+        },
+        {
+          "path": "src/chronicle_position_artifact.mjs",
+          "expectedGitBlob": "533cecf050f681b8c886f38a71145f7c33a5d1b6",
+          "upstreamGitBlob": "533cecf050f681b8c886f38a71145f7c33a5d1b6",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ROOTS",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "664988c2f914f7aa93b6a59a664b297211151afe"
+        },
+        {
+          "path": "docs/LICENSE_POLICY_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "dfb7c0b872cfd895c8243d6c3a725651dc018db3"
+        },
+        {
+          "path": "specs/chronicle_entry_v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9ee49e8b3c88dadaf812e0c606b9e1bd9c6d87b5"
+        },
+        {
+          "path": "src/chronicle_entry_identity.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ebb7fb23c671387478871698771afa4e437c66a1"
+        },
+        {
+          "path": "src/chronicle_receiptos_admission.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e18c1c7af3e5286026b89c49e175dffea6c48c75"
+        },
+        {
+          "path": "src/chronicle_position_artifact.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "533cecf050f681b8c886f38a71145f7c33a5d1b6"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "664988c2f914f7aa93b6a59a664b297211151afe",
+          "upstreamGitBlob": "664988c2f914f7aa93b6a59a664b297211151afe",
+          "matches": true
+        },
+        {
+          "path": "docs/LICENSE_POLICY_V0.md",
+          "expectedGitBlob": "dfb7c0b872cfd895c8243d6c3a725651dc018db3",
+          "upstreamGitBlob": "dfb7c0b872cfd895c8243d6c3a725651dc018db3",
+          "matches": true
+        },
+        {
+          "path": "specs/chronicle_entry_v0.md",
+          "expectedGitBlob": "9ee49e8b3c88dadaf812e0c606b9e1bd9c6d87b5",
+          "upstreamGitBlob": "9ee49e8b3c88dadaf812e0c606b9e1bd9c6d87b5",
+          "matches": true
+        },
+        {
+          "path": "src/chronicle_entry_identity.mjs",
+          "expectedGitBlob": "ebb7fb23c671387478871698771afa4e437c66a1",
+          "upstreamGitBlob": "ebb7fb23c671387478871698771afa4e437c66a1",
+          "matches": true
+        },
+        {
+          "path": "src/chronicle_receiptos_admission.mjs",
+          "expectedGitBlob": "e18c1c7af3e5286026b89c49e175dffea6c48c75",
+          "upstreamGitBlob": "e18c1c7af3e5286026b89c49e175dffea6c48c75",
+          "matches": true
+        },
+        {
+          "path": "src/chronicle_position_artifact.mjs",
+          "expectedGitBlob": "533cecf050f681b8c886f38a71145f7c33a5d1b6",
+          "upstreamGitBlob": "533cecf050f681b8c886f38a71145f7c33a5d1b6",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "MVP-HMAC",
+      "repository": "pipavlo82/receiptos-mvp",
+      "sourceSHA": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "paths": [
+        {
+          "path": "src/receiptos.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ef6d0f184b4ad2a1c2cafc5ee43100857f80b404"
+        },
+        {
+          "path": "src/cli.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9ca92866d552f1ede8c271f58049accab5c5ea9f"
+        },
+        {
+          "path": "src/api.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e2d68a80fc13b620c2bbdb730a9591964f3a2665"
+        },
+        {
+          "path": "schemas/decision_receipt.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "16e2e1050362d05d31d196ac4fdbc4e784fad912"
+        },
+        {
+          "path": "SECURITY_TRUST_BOUNDARIES.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "046609efbbf9ea7ff4a6b95956ea2701478ea02e"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CRC-CLAIM-CELL",
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "paths": [
+        {
+          "path": "CLAIM.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7bc7b0c462e17569161bd5fbe5ecf8d8777c4788"
+        },
+        {
+          "path": "CELL-v1.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "75e86f261c24cf1e0cb0baf7966e8a9a544b81c9"
+        },
+        {
+          "path": "reference/claim_id.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "54e538c334ca28c4b7a7cb9f75acee42b9f57ef0"
+        },
+        {
+          "path": "reference/test_gate.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "bcd6dc439492c9e31b8ce2144e951788fd44dfca"
+        },
+        {
+          "path": "ui/index.html",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ecc30169a676537cb3f2de1d9b7ecc1d87125c4c"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4207b4e8e6a2c4bfc62a9a03dc9666b9464da160"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CONDUCT-WITNESS",
+      "repository": "pipavlo82/conduct-witness",
+      "sourceSHA": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "paths": [
+        {
+          "path": "reproduce.sh",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2efb3e2eed5f706f4527c8cd05ea20140180dfa1"
+        },
+        {
+          "path": ".github/workflows/reproduce.yml",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "debb751e196d225745cbe910c1b80f01fdc33862"
+        },
+        {
+          "path": "requirements.lock",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3c7410f9c1a2a53a4e328cf0b76900f534cb9c96"
+        },
+        {
+          "path": "requirements-approval.lock",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9d4828fc4df5933405362b3284066fcfb8ae740c"
+        },
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1b430236c01cc4705db340973ebadf5149729186"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "CR-UI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "paths": [
+        {
+          "path": "docs/artifact-viewer/index.html",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2951f032a4ba8ae2725aa0c0202c7448db9cd1d1"
+        },
+        {
+          "path": "docs/receipt-verifier/index.html",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "fd2c846ca1dee66d878ceed0cfca73d7cc7979bf"
+        },
+        {
+          "path": "docs/ADAPTERS.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e5e3f42e6f6feca43e3253c4b6e48a2b6f1c1b1b"
+        },
+        {
+          "path": "docs/PRODUCER_SUPPORT_MATRIX.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "51ba18709b0fdf23734fff94aea27d515ddf2a35"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.scan",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "paths": [
+        {
+          "path": "conformance/scan-subject-binding-v0/scan_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "17add57b592d30e293026184fc6b33dcd5367f5c"
+        },
+        {
+          "path": "conformance/scan-subject-binding-v0/mutation_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "27012d17e415656a82fb29297936296c58b73a69"
+        },
+        {
+          "path": "conformance/scan-subject-binding-v0/vectors.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "20921341fbac653eb488debe9b74503026dae460"
+        },
+        {
+          "path": "conformance/scan-subject-binding-v0/suite.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "26057afe9c5951daffd5bbeafdb76a831d4ef9cf"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.encode",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "paths": [
+        {
+          "path": "conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.spec.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b51e66b98dd2d67e8ffcf1cb46e738715ace7660"
+        },
+        {
+          "path": "conformance/encode-json-utf8-lf-v0/encoder.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9c0825b8a2da7606bc6336795acdb3d2c05f801b"
+        },
+        {
+          "path": "conformance/encode-json-utf8-lf-v0/encoder.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1ea72c204ba7942f45ecac1dad22c55ea837c03f"
+        },
+        {
+          "path": "conformance/encode-json-utf8-lf-v0/gate.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1460cf260dbca41cd320fdf97649931f7a96f01f"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.event",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "paths": [
+        {
+          "path": "conformance/event-time-concurrency-boundary-v0/README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1ed9fe832da84220a11a906787727c716466b51a"
+        },
+        {
+          "path": "conformance/event-time-concurrency-boundary-v0/boundary_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b62034db47b1a47ae228b009101ca5af646e1976"
+        },
+        {
+          "path": "conformance/event-time-concurrency-boundary-v0/mutation_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "71f5dc733e64667b8a054c13af21f8e66bdd870b"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.consume",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "paths": [
+        {
+          "path": "conformance/consumption-time-state-binding-v0/binding_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "55b63b89bc571872c14670c83ef80c7f34fe9d99"
+        },
+        {
+          "path": "conformance/consumption-time-state-binding-v0/mutation_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "236e42550ecf1424e841b49cf0076a78b2366547"
+        },
+        {
+          "path": "conformance/consumption-time-state-binding-v0/vectors.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "17b054aff819c92ce7e69a8c157e26c912b97683"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.permission",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "paths": [
+        {
+          "path": "conformance/permission-consumption-boundary-v0/permission_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "633d22bb22aeb0f5a66e764ce3b3f2d5fa709ddf"
+        },
+        {
+          "path": "conformance/permission-consumption-boundary-v0/mutation_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6dfc1e602c3c15871ad88dcbcf3edbe7575465f5"
+        },
+        {
+          "path": "bin/conformance",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5bf2c2ba2f27fafc8b9afd6b4d1799a9ac5d0e87"
+        },
+        {
+          "path": "conformance/captured-admission-v0/admission_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1f4c33f8e146ccb4dd64019d6704e974f9f49dc3"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.runner",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "paths": [
+        {
+          "path": "tools/run_conformance.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "18518a2ba933ccc1debfc4040d01afd9a5510cae"
+        },
+        {
+          "path": "tools/test_run_conformance_failure_classification.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "cf3da29f9530f01b077f1e986329c5ee0820f6d5"
+        },
+        {
+          "path": "conformance/uncovered.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b1b16312c2750537085279cc3fbdced20b80086c"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.empty.pr65",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "paths": [
+        {
+          "path": "tools/test_mutation_inventory_nonempty.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "985704ec1530193cd9e3d7354b531590c47e03ba"
+        },
+        {
+          "path": "conformance/scan-subject-binding-v0/mutation_check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "538fcdd62c9297dd443a6078d91f8a6f60a907a4"
+        },
+        {
+          "path": "conformance/encode-json-utf8-lf-v0/gate.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "65f6e3b1483c8f094609a6a62bf1e6aea74000fd"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.reporter.pr57",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "3540251738350d45597a44b7908c3f6de98e9cce",
+      "paths": [
+        {
+          "path": "tools/run_conformance.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "83a2d6a87a0add4e297e134c2e17b70241da6b78"
+        },
+        {
+          "path": "conformance/*/suite.json",
+          "kind": "PATTERN_REFERENCE",
+          "matches": 29,
+          "exists": true
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.semantic",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292"
+        },
+        {
+          "path": "schema/LICENSE-CC0.txt",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045"
+        },
+        {
+          "path": "schema/manifest.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "647fc36d7d34756119a757d10b94b4473db44aa0"
+        },
+        {
+          "path": "schema/manifest-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "fb08e8897e41e933cb6ba653f2e545313057db28"
+        },
+        {
+          "path": "runner/src/linker.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+          "upstreamGitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+          "matches": true
+        },
+        {
+          "path": "schema/LICENSE-CC0.txt",
+          "expectedGitBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+          "upstreamGitBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+          "matches": true
+        },
+        {
+          "path": "schema/manifest.schema.json",
+          "expectedGitBlob": "647fc36d7d34756119a757d10b94b4473db44aa0",
+          "upstreamGitBlob": "647fc36d7d34756119a757d10b94b4473db44aa0",
+          "matches": true
+        },
+        {
+          "path": "schema/manifest-v0.md",
+          "expectedGitBlob": "fb08e8897e41e933cb6ba653f2e545313057db28",
+          "upstreamGitBlob": "fb08e8897e41e933cb6ba653f2e545313057db28",
+          "matches": true
+        },
+        {
+          "path": "runner/src/linker.mjs",
+          "expectedGitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+          "upstreamGitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.registry",
+      "repository": "trustless-ai/primitives",
+      "sourceSHA": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "paths": [
+        {
+          "path": "primitives.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "30689765aedd64bbd6ecbaf4eb6afca923fe4431"
+        },
+        {
+          "path": "check.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c1a6e000d98ab72eab3018028eb4001e7f346158"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.ccip",
+      "repository": "trustless-ai/ccip-router",
+      "sourceSHA": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "paths": [
+        {
+          "path": "src/integrations/tseiProfileA.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1a54e5b9250ebf922a63283b1be558536bec354d"
+        },
+        {
+          "path": "src/integrations/tseiProfileARouter.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "33b4922acffd7755ad2472a3edca2d20069273d4"
+        },
+        {
+          "path": "conformance/tsei-profile-a-v0/README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3f26d228ccd26a602fcb545e22aae69c99fb5c2f"
+        },
+        {
+          "path": "src/__tests__/tseiProfileA.test.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a3736df294617a75ecd4ab177bc42065d768771c"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.bps",
+      "repository": "trustless-ai/agent-sdk",
+      "sourceSHA": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "paths": [
+        {
+          "path": "testkit/vectors/erc8275-reputation-bps-v0.vectors.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9505200be87beb61ba95ee9dbe60ec202dc0102c"
+        },
+        {
+          "path": "python/tests/reputation/erc8275/test_recompute.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b2eac871d6a01dbeb5f31abde01ffaa3a3296fa0"
+        },
+        {
+          "path": "typescript/test/reputation/ERC8275/recompute.test.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b9c2edf27c2b57adc3a7fd4d3dd1e7cde9e56c8b"
+        },
+        {
+          "path": "go/reputation/erc8275/recompute_test.go",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9048167ff24405d8dd89872964d5c221fd0e1a1f"
+        },
+        {
+          "path": "rust/core/src/erc8275/recompute.rs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "988cf65a2d70df75b1605b677e8c4af809544f20"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "paths": [
+        {
+          "path": "CLAIM.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a24b1e4602bb6c3f147020a176c198d6b5d52354"
+        },
+        {
+          "path": "CELL-v1.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "75e86f261c24cf1e0cb0baf7966e8a9a544b81c9"
+        },
+        {
+          "path": "CELL-v2.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ce058c8c7f0189295f88a068feb0f2a30eb37960"
+        },
+        {
+          "path": "CELL-v3.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7b1424f75dd34310f1d1eb1d2dd95a655733ca2e"
+        },
+        {
+          "path": "LINEAGE-REF.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "85f4d99145a32427c5b2caa158518b1869ad1988"
+        },
+        {
+          "path": "reference/claim_id.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "54e538c334ca28c4b7a7cb9f75acee42b9f57ef0"
+        },
+        {
+          "path": "reference/validate_cell.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "fa5415d24a7ced0567d614201a858b6ad6f7171c"
+        },
+        {
+          "path": "reference/registry_id.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "133e2e454ef97b7a79025b8bf319eaee54976d56"
+        },
+        {
+          "path": "reference/gen_in_force.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "51786a8e1fc5bde302e8e1e5b8a9c40a96b2774d"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.pqtime",
+      "repository": "trustless-ai/pq-agent-binding",
+      "sourceSHA": "4f934ad31e96979002d818cd8a5f12909c1b6713",
+      "paths": [
+        {
+          "path": "spec/v1-temporal-authority.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "50524c03efa44a265a19f08ae49c7b1d04926232"
+        },
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5208ad90876b57d763691fed3d61d1453203f9c1"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "paths": [
+        {
+          "path": "packages/opencode/src/session/handoff/evidence.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5809890e38473d90d1f83c98ebe0896d42558736"
+        },
+        {
+          "path": "schemas/handoff-evidence.v1.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "08ba1c21cb3c3c7cc7ba6cffcd4dac5e3ca93a3c"
+        },
+        {
+          "path": "scripts/receipt-anchor/verify-root.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "f02a7f66cd79af466196090d36d221eaf133a29e"
+        },
+        {
+          "path": "scripts/receipt-anchor/verify-handoff-evidence.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e59fb1fd2f006c4713b3a2298dffebd7ae9d7b7e"
+        },
+        {
+          "path": "scripts/receipt-anchor/build-merkle-batch.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "89ea733b56ccb02dd80d69751992bcd0f27c37ac"
+        },
+        {
+          "path": "packages/app/src/utils/receipt-verifier.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "16c7f91ddfb13ca7532409d1bb8ff6af6631cb6c"
+        },
+        {
+          "path": "specs/receipt_protocol_spec_v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a258eb6bb16b97f52956a3531abad56163f26e98"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.atp",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "paths": [
+        {
+          "path": "artifact_two/verifier.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7987614ca6a7f376e9f7ea146bddce54d1b216a7"
+        },
+        {
+          "path": "artifact_two/canonical.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c023b174192b7ceffd2f579b09ec5c216cc1f514"
+        },
+        {
+          "path": "artifact_two/reason_codes.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "60b9e0e5d5d52f8c567ec9ea865cde3a20711c99"
+        },
+        {
+          "path": "tools/verify_atp_bundle.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5076c129d6f328df09c8068acfff06827c0f1a73"
+        },
+        {
+          "path": "docs/receipt-bundle-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "12c46d8bbe65629b715a7fb35630b08bbea9a36c"
+        },
+        {
+          "path": "docs/verifier-output-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6addaa81f4c02ab2eae6155a9026a6912d599e8a"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.atpcontrols",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "paths": [
+        {
+          "path": "tools/redteam_demo.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4b2208d04ac9ba63c5046e0a5bed8191ebfdfe1b"
+        },
+        {
+          "path": "docs/redteam-demo.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "aff8bb9bc20f6cc4416adf49ef25204d01d10c97"
+        },
+        {
+          "path": "docs/verifier-output-v0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6addaa81f4c02ab2eae6155a9026a6912d599e8a"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.actions",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "paths": [
+        {
+          "path": "shared-validation/engagement.js",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "791b0b1aaa5af6743a966c1c441bd6e3f7424794"
+        },
+        {
+          "path": "shared-validation/engagement-store.js",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e78885fdea8ef2d169e3aa05de8039b6d41e74d7"
+        },
+        {
+          "path": "src/services/publicEngagementService.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ff2e25c93f28b09ee784c3b49baeb3ef1ffbee1a"
+        },
+        {
+          "path": "src/services/reactionOutboxService.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7d879e27f8b4606fc751b9ffe7dd5d07f763e8da"
+        },
+        {
+          "path": "docs/security/PUBLIC_ENGAGEMENT_V1.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a2dddcb4662659e46e06a939ed94ba9ffd430b69"
+        },
+        {
+          "path": "docs/security/PUBLIC_ENGAGEMENT_REVIEW_FOLLOWUP.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e926c79a2698fbdd190b65db8fa79860ac82a67a"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.coordination",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "paths": [
+        {
+          "path": "tools/coordination-impact/core.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "febd1edd532c242ebe5575c767f663eeb7974aff"
+        },
+        {
+          "path": "tools/coordination-impact-v2/core.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "aae49a5ae7dcc35fed1877855eb8b50badb26966"
+        },
+        {
+          "path": "tools/coordination-impact-v2/relation.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "54f4d6c47040a911a863263f4c6af354cfc37f5c"
+        },
+        {
+          "path": "docs/security/COORDINATION_IMPACT_V1.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "835cb669bafd0d05081eaa804bdf9dd19ba3d9fb"
+        },
+        {
+          "path": "docs/security/COORDINATION_IMPACT_V2.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "295f3912b0eaae08f8ca1af445268a837b7486b7"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "shared.erc8404",
+      "repository": "ethereum/ERCs",
+      "sourceSHA": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+      "paths": [
+        {
+          "path": "ERCS/erc-8404.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "eb4d8c1be1235d8493fb1cf715b79a9473cd8cbd"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "NOTICE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8"
+        },
+        {
+          "path": "qev/__init__.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824"
+        },
+        {
+          "path": "qev/checker.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e4dc30440cbb081c660b4256a374dbf6389527a6"
+        },
+        {
+          "path": "qev/adapters.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da"
+        },
+        {
+          "path": "qev/source_inventory.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c"
+        },
+        {
+          "path": "qev/semantic_link.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3ecf0060f2b8012fdb8554b9f3f32a8dc20fb320"
+        },
+        {
+          "path": "docs/CONTRACT.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "65ec92610bc4529bb994616ad25bbf8817a81386"
+        },
+        {
+          "path": "vendor/semantic-abi/LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292"
+        },
+        {
+          "path": "vendor/semantic-abi/schema/LICENSE-CC0.txt",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045"
+        },
+        {
+          "path": "vendor/semantic-abi/schema/manifest.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "647fc36d7d34756119a757d10b94b4473db44aa0"
+        },
+        {
+          "path": "vendor/semantic-abi/runner/src/linker.mjs",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "NOTICE",
+          "expectedGitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8",
+          "upstreamGitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8",
+          "matches": true
+        },
+        {
+          "path": "qev/__init__.py",
+          "expectedGitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824",
+          "upstreamGitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824",
+          "matches": true
+        },
+        {
+          "path": "qev/checker.py",
+          "expectedGitBlob": "e4dc30440cbb081c660b4256a374dbf6389527a6",
+          "upstreamGitBlob": "e4dc30440cbb081c660b4256a374dbf6389527a6",
+          "matches": true
+        },
+        {
+          "path": "qev/adapters.py",
+          "expectedGitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da",
+          "upstreamGitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da",
+          "matches": true
+        },
+        {
+          "path": "qev/source_inventory.py",
+          "expectedGitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c",
+          "upstreamGitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c",
+          "matches": true
+        },
+        {
+          "path": "qev/semantic_link.mjs",
+          "expectedGitBlob": "3ecf0060f2b8012fdb8554b9f3f32a8dc20fb320",
+          "upstreamGitBlob": "3ecf0060f2b8012fdb8554b9f3f32a8dc20fb320",
+          "matches": true
+        },
+        {
+          "path": "docs/CONTRACT.md",
+          "expectedGitBlob": "65ec92610bc4529bb994616ad25bbf8817a81386",
+          "upstreamGitBlob": "65ec92610bc4529bb994616ad25bbf8817a81386",
+          "matches": true
+        },
+        {
+          "path": "vendor/semantic-abi/LICENSE",
+          "expectedGitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+          "upstreamGitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+          "matches": true
+        },
+        {
+          "path": "vendor/semantic-abi/schema/LICENSE-CC0.txt",
+          "expectedGitBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+          "upstreamGitBlob": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+          "matches": true
+        },
+        {
+          "path": "vendor/semantic-abi/schema/manifest.schema.json",
+          "expectedGitBlob": "647fc36d7d34756119a757d10b94b4473db44aa0",
+          "upstreamGitBlob": "647fc36d7d34756119a757d10b94b4473db44aa0",
+          "matches": true
+        },
+        {
+          "path": "vendor/semantic-abi/runner/src/linker.mjs",
+          "expectedGitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+          "upstreamGitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "NOTICE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8"
+        },
+        {
+          "path": "docs/MOTH_COUNTS_RVR_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "43753088704ce0c304cafad0b51efd01999e3381"
+        },
+        {
+          "path": "docs/MOTH_RECEIPTOS_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "466eedb2422ab46c2f3e5879f3a27176e8261f10"
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/conformance.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4d6748f44583f0cac0cdfc319aa2869ac53ae54d"
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5749533f5e6e37c679003b706c85d6274422d2e3"
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/sources.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b9a18de477715c479171ebfc801f1c4ab75aeb9c"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/claim.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6414295bf7011b3ddc9f7b11f9f33aa5f2200a96"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/conformance.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4e56f6626aab87705825c735acc73445ac22fb3f"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "49adeaa3718a6b7061ad690d3b4c28063f76c6e5"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/roles.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "aeba19e1869406f0e7d0ebaa64e2679c738de111"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8aa89aa9842ef07a5e89ee7c5115847a831540cd"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/sources.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "475b47eee1826871b620a031908eba7bc041dec3"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9e5eacbad6778daf61d6a6f0d657425ba710c191"
+        },
+        {
+          "path": "qev/__init__.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824"
+        },
+        {
+          "path": "qev/adapters.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da"
+        },
+        {
+          "path": "qev/admission.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "05b5b559afe5ff46be23e00c938e2b42dd1190ab"
+        },
+        {
+          "path": "qev/inventory.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9d9ab49e423df1f293551bc219581886516e08fe"
+        },
+        {
+          "path": "qev/live_common.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8cb34b55823f2863ee5b92f48f012472b5cdaebb"
+        },
+        {
+          "path": "qev/moth_comet.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "757d379e0fafcfa992a495ff895f8858e19a8794"
+        },
+        {
+          "path": "qev/moth_receiptos.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7caafeb25ef2f245439eeb36c8975b885f207502"
+        },
+        {
+          "path": "qev/moth_receiptos_bridge.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e778be4e677f5988b5e5c46e8047784019337cfa"
+        },
+        {
+          "path": "qev/moth_receiptos_cli.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "767228b9e27a123009f721e84d27e92a6b3e5ff1"
+        },
+        {
+          "path": "qev/moth_receiptos_mutations.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "cfb76d1a41024078ad2d3c8b2cd30385db02d613"
+        },
+        {
+          "path": "qev/moth_replay.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ed446ef72a44d6c1257686ee35016f2977f25213"
+        },
+        {
+          "path": "qev/moth_rvr.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b18e9313e6e0d9d69961abe745aecfedd4be0c0c"
+        },
+        {
+          "path": "qev/moth_rvr_cli.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "86ba2491d08b777776291fa76b79190a4f4fa74a"
+        },
+        {
+          "path": "qev/moth_rvr_mutations.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ae21495af46ede0ccc22a22870df92613e797687"
+        },
+        {
+          "path": "qev/moth_rvr_relation.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5d64fb1f6d086ab91022640f98177d74b22461fd"
+        },
+        {
+          "path": "qev/source_inventory.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c"
+        },
+        {
+          "path": "qev/sources.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "baee43fabb4c76ab55e584f07d847dd7b08b1311"
+        },
+        {
+          "path": "tests/test_moth_receiptos.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2b45d669dca0e178cd97bc5b1137c41bb16163fe"
+        },
+        {
+          "path": "tests/test_moth_rvr.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6919f49861980d20f3b54a9d323f9b00dc3f0ff4"
+        },
+        {
+          "path": "tools/pin_moth_receiptos_profile.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2e37a19e8e7c5ec74f4f6480c2ba0e6aa0e26285"
+        },
+        {
+          "path": "tools/pin_moth_rvr_profile.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b63a621605aebdd403dcab9e674037ab8cebd622"
+        },
+        {
+          "path": "vendor/receiptos-v0/LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "20b789e2992ab4363bcc361467551d27d5e23183"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/schema/types.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa"
+        },
+        {
+          "path": "vendor/rvr-v0/LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "vendor/rvr-v0/adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e"
+        },
+        {
+          "path": "vendor/rvr-v0/verification-profile-manifest.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "NOTICE",
+          "expectedGitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8",
+          "upstreamGitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8",
+          "matches": true
+        },
+        {
+          "path": "docs/MOTH_COUNTS_RVR_V0.md",
+          "expectedGitBlob": "43753088704ce0c304cafad0b51efd01999e3381",
+          "upstreamGitBlob": "43753088704ce0c304cafad0b51efd01999e3381",
+          "matches": true
+        },
+        {
+          "path": "docs/MOTH_RECEIPTOS_V0.md",
+          "expectedGitBlob": "466eedb2422ab46c2f3e5879f3a27176e8261f10",
+          "upstreamGitBlob": "466eedb2422ab46c2f3e5879f3a27176e8261f10",
+          "matches": true
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/conformance.json",
+          "expectedGitBlob": "4d6748f44583f0cac0cdfc319aa2869ac53ae54d",
+          "upstreamGitBlob": "4d6748f44583f0cac0cdfc319aa2869ac53ae54d",
+          "matches": true
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/profile.json",
+          "expectedGitBlob": "5749533f5e6e37c679003b706c85d6274422d2e3",
+          "upstreamGitBlob": "5749533f5e6e37c679003b706c85d6274422d2e3",
+          "matches": true
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/sources.json",
+          "expectedGitBlob": "b9a18de477715c479171ebfc801f1c4ab75aeb9c",
+          "upstreamGitBlob": "b9a18de477715c479171ebfc801f1c4ab75aeb9c",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/claim.json",
+          "expectedGitBlob": "6414295bf7011b3ddc9f7b11f9f33aa5f2200a96",
+          "upstreamGitBlob": "6414295bf7011b3ddc9f7b11f9f33aa5f2200a96",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/conformance.json",
+          "expectedGitBlob": "4e56f6626aab87705825c735acc73445ac22fb3f",
+          "upstreamGitBlob": "4e56f6626aab87705825c735acc73445ac22fb3f",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+          "expectedGitBlob": "49adeaa3718a6b7061ad690d3b4c28063f76c6e5",
+          "upstreamGitBlob": "49adeaa3718a6b7061ad690d3b4c28063f76c6e5",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/roles.json",
+          "expectedGitBlob": "aeba19e1869406f0e7d0ebaa64e2679c738de111",
+          "upstreamGitBlob": "aeba19e1869406f0e7d0ebaa64e2679c738de111",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+          "expectedGitBlob": "8aa89aa9842ef07a5e89ee7c5115847a831540cd",
+          "upstreamGitBlob": "8aa89aa9842ef07a5e89ee7c5115847a831540cd",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/sources.json",
+          "expectedGitBlob": "475b47eee1826871b620a031908eba7bc041dec3",
+          "upstreamGitBlob": "475b47eee1826871b620a031908eba7bc041dec3",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+          "expectedGitBlob": "9e5eacbad6778daf61d6a6f0d657425ba710c191",
+          "upstreamGitBlob": "9e5eacbad6778daf61d6a6f0d657425ba710c191",
+          "matches": true
+        },
+        {
+          "path": "qev/__init__.py",
+          "expectedGitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824",
+          "upstreamGitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824",
+          "matches": true
+        },
+        {
+          "path": "qev/adapters.py",
+          "expectedGitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da",
+          "upstreamGitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da",
+          "matches": true
+        },
+        {
+          "path": "qev/admission.py",
+          "expectedGitBlob": "05b5b559afe5ff46be23e00c938e2b42dd1190ab",
+          "upstreamGitBlob": "05b5b559afe5ff46be23e00c938e2b42dd1190ab",
+          "matches": true
+        },
+        {
+          "path": "qev/inventory.py",
+          "expectedGitBlob": "9d9ab49e423df1f293551bc219581886516e08fe",
+          "upstreamGitBlob": "9d9ab49e423df1f293551bc219581886516e08fe",
+          "matches": true
+        },
+        {
+          "path": "qev/live_common.py",
+          "expectedGitBlob": "8cb34b55823f2863ee5b92f48f012472b5cdaebb",
+          "upstreamGitBlob": "8cb34b55823f2863ee5b92f48f012472b5cdaebb",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_comet.py",
+          "expectedGitBlob": "757d379e0fafcfa992a495ff895f8858e19a8794",
+          "upstreamGitBlob": "757d379e0fafcfa992a495ff895f8858e19a8794",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos.py",
+          "expectedGitBlob": "7caafeb25ef2f245439eeb36c8975b885f207502",
+          "upstreamGitBlob": "7caafeb25ef2f245439eeb36c8975b885f207502",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos_bridge.ts",
+          "expectedGitBlob": "e778be4e677f5988b5e5c46e8047784019337cfa",
+          "upstreamGitBlob": "e778be4e677f5988b5e5c46e8047784019337cfa",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos_cli.py",
+          "expectedGitBlob": "767228b9e27a123009f721e84d27e92a6b3e5ff1",
+          "upstreamGitBlob": "767228b9e27a123009f721e84d27e92a6b3e5ff1",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos_mutations.py",
+          "expectedGitBlob": "cfb76d1a41024078ad2d3c8b2cd30385db02d613",
+          "upstreamGitBlob": "cfb76d1a41024078ad2d3c8b2cd30385db02d613",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_replay.py",
+          "expectedGitBlob": "ed446ef72a44d6c1257686ee35016f2977f25213",
+          "upstreamGitBlob": "ed446ef72a44d6c1257686ee35016f2977f25213",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr.py",
+          "expectedGitBlob": "b18e9313e6e0d9d69961abe745aecfedd4be0c0c",
+          "upstreamGitBlob": "b18e9313e6e0d9d69961abe745aecfedd4be0c0c",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr_cli.py",
+          "expectedGitBlob": "86ba2491d08b777776291fa76b79190a4f4fa74a",
+          "upstreamGitBlob": "86ba2491d08b777776291fa76b79190a4f4fa74a",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr_mutations.py",
+          "expectedGitBlob": "ae21495af46ede0ccc22a22870df92613e797687",
+          "upstreamGitBlob": "ae21495af46ede0ccc22a22870df92613e797687",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr_relation.py",
+          "expectedGitBlob": "5d64fb1f6d086ab91022640f98177d74b22461fd",
+          "upstreamGitBlob": "5d64fb1f6d086ab91022640f98177d74b22461fd",
+          "matches": true
+        },
+        {
+          "path": "qev/source_inventory.py",
+          "expectedGitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c",
+          "upstreamGitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c",
+          "matches": true
+        },
+        {
+          "path": "qev/sources.py",
+          "expectedGitBlob": "baee43fabb4c76ab55e584f07d847dd7b08b1311",
+          "upstreamGitBlob": "baee43fabb4c76ab55e584f07d847dd7b08b1311",
+          "matches": true
+        },
+        {
+          "path": "tests/test_moth_receiptos.py",
+          "expectedGitBlob": "2b45d669dca0e178cd97bc5b1137c41bb16163fe",
+          "upstreamGitBlob": "2b45d669dca0e178cd97bc5b1137c41bb16163fe",
+          "matches": true
+        },
+        {
+          "path": "tests/test_moth_rvr.py",
+          "expectedGitBlob": "6919f49861980d20f3b54a9d323f9b00dc3f0ff4",
+          "upstreamGitBlob": "6919f49861980d20f3b54a9d323f9b00dc3f0ff4",
+          "matches": true
+        },
+        {
+          "path": "tools/pin_moth_receiptos_profile.py",
+          "expectedGitBlob": "2e37a19e8e7c5ec74f4f6480c2ba0e6aa0e26285",
+          "upstreamGitBlob": "2e37a19e8e7c5ec74f4f6480c2ba0e6aa0e26285",
+          "matches": true
+        },
+        {
+          "path": "tools/pin_moth_rvr_profile.py",
+          "expectedGitBlob": "b63a621605aebdd403dcab9e674037ab8cebd622",
+          "upstreamGitBlob": "b63a621605aebdd403dcab9e674037ab8cebd622",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+          "expectedGitBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169",
+          "upstreamGitBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+          "expectedGitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "upstreamGitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+          "expectedGitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "upstreamGitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+          "expectedGitBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1",
+          "upstreamGitBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+          "expectedGitBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+          "upstreamGitBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+          "expectedGitBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028",
+          "upstreamGitBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+          "expectedGitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+          "upstreamGitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+          "expectedGitBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49",
+          "upstreamGitBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+          "expectedGitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+          "upstreamGitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/schema/types.ts",
+          "expectedGitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "upstreamGitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+          "expectedGitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "upstreamGitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "matches": true
+        },
+        {
+          "path": "vendor/rvr-v0/LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "vendor/rvr-v0/adapter.py",
+          "expectedGitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "upstreamGitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "matches": true
+        },
+        {
+          "path": "vendor/rvr-v0/verification-profile-manifest.schema.json",
+          "expectedGitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "upstreamGitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "paths": [
+        {
+          "path": "LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "NOTICE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8"
+        },
+        {
+          "path": "docs/MOTH_COUNTS_RVR_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "43753088704ce0c304cafad0b51efd01999e3381"
+        },
+        {
+          "path": "docs/MOTH_RECEIPTOS_V0.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "466eedb2422ab46c2f3e5879f3a27176e8261f10"
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/conformance.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4d6748f44583f0cac0cdfc319aa2869ac53ae54d"
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5749533f5e6e37c679003b706c85d6274422d2e3"
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/sources.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b9a18de477715c479171ebfc801f1c4ab75aeb9c"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/claim.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6414295bf7011b3ddc9f7b11f9f33aa5f2200a96"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/conformance.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4e56f6626aab87705825c735acc73445ac22fb3f"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "49adeaa3718a6b7061ad690d3b4c28063f76c6e5"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/roles.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "aeba19e1869406f0e7d0ebaa64e2679c738de111"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8aa89aa9842ef07a5e89ee7c5115847a831540cd"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/sources.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "475b47eee1826871b620a031908eba7bc041dec3"
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9e5eacbad6778daf61d6a6f0d657425ba710c191"
+        },
+        {
+          "path": "qev/__init__.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824"
+        },
+        {
+          "path": "qev/adapters.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da"
+        },
+        {
+          "path": "qev/admission.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "05b5b559afe5ff46be23e00c938e2b42dd1190ab"
+        },
+        {
+          "path": "qev/inventory.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9d9ab49e423df1f293551bc219581886516e08fe"
+        },
+        {
+          "path": "qev/live_common.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8cb34b55823f2863ee5b92f48f012472b5cdaebb"
+        },
+        {
+          "path": "qev/moth_comet.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "757d379e0fafcfa992a495ff895f8858e19a8794"
+        },
+        {
+          "path": "qev/moth_receiptos.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7caafeb25ef2f245439eeb36c8975b885f207502"
+        },
+        {
+          "path": "qev/moth_receiptos_bridge.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e778be4e677f5988b5e5c46e8047784019337cfa"
+        },
+        {
+          "path": "qev/moth_receiptos_cli.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "767228b9e27a123009f721e84d27e92a6b3e5ff1"
+        },
+        {
+          "path": "qev/moth_receiptos_mutations.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "cfb76d1a41024078ad2d3c8b2cd30385db02d613"
+        },
+        {
+          "path": "qev/moth_replay.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ed446ef72a44d6c1257686ee35016f2977f25213"
+        },
+        {
+          "path": "qev/moth_rvr.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b18e9313e6e0d9d69961abe745aecfedd4be0c0c"
+        },
+        {
+          "path": "qev/moth_rvr_cli.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "86ba2491d08b777776291fa76b79190a4f4fa74a"
+        },
+        {
+          "path": "qev/moth_rvr_mutations.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ae21495af46ede0ccc22a22870df92613e797687"
+        },
+        {
+          "path": "qev/moth_rvr_relation.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5d64fb1f6d086ab91022640f98177d74b22461fd"
+        },
+        {
+          "path": "qev/source_inventory.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c"
+        },
+        {
+          "path": "qev/sources.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "baee43fabb4c76ab55e584f07d847dd7b08b1311"
+        },
+        {
+          "path": "tests/test_moth_receiptos.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2b45d669dca0e178cd97bc5b1137c41bb16163fe"
+        },
+        {
+          "path": "tests/test_moth_rvr.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6919f49861980d20f3b54a9d323f9b00dc3f0ff4"
+        },
+        {
+          "path": "tools/pin_moth_receiptos_profile.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2e37a19e8e7c5ec74f4f6480c2ba0e6aa0e26285"
+        },
+        {
+          "path": "tools/pin_moth_rvr_profile.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b63a621605aebdd403dcab9e674037ab8cebd622"
+        },
+        {
+          "path": "vendor/receiptos-v0/LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "20b789e2992ab4363bcc361467551d27d5e23183"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/schema/types.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3"
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa"
+        },
+        {
+          "path": "vendor/rvr-v0/LICENSE",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f"
+        },
+        {
+          "path": "vendor/rvr-v0/adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e"
+        },
+        {
+          "path": "vendor/rvr-v0/verification-profile-manifest.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169"
+        }
+      ],
+      "selectedPathPinChecks": [
+        {
+          "path": "LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "NOTICE",
+          "expectedGitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8",
+          "upstreamGitBlob": "c0e543cb4281ef24c257a1138afdda4132aa4db8",
+          "matches": true
+        },
+        {
+          "path": "docs/MOTH_COUNTS_RVR_V0.md",
+          "expectedGitBlob": "43753088704ce0c304cafad0b51efd01999e3381",
+          "upstreamGitBlob": "43753088704ce0c304cafad0b51efd01999e3381",
+          "matches": true
+        },
+        {
+          "path": "docs/MOTH_RECEIPTOS_V0.md",
+          "expectedGitBlob": "466eedb2422ab46c2f3e5879f3a27176e8261f10",
+          "upstreamGitBlob": "466eedb2422ab46c2f3e5879f3a27176e8261f10",
+          "matches": true
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/conformance.json",
+          "expectedGitBlob": "4d6748f44583f0cac0cdfc319aa2869ac53ae54d",
+          "upstreamGitBlob": "4d6748f44583f0cac0cdfc319aa2869ac53ae54d",
+          "matches": true
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/profile.json",
+          "expectedGitBlob": "5749533f5e6e37c679003b706c85d6274422d2e3",
+          "upstreamGitBlob": "5749533f5e6e37c679003b706c85d6274422d2e3",
+          "matches": true
+        },
+        {
+          "path": "profiles/moth-receiptos-v0/sources.json",
+          "expectedGitBlob": "b9a18de477715c479171ebfc801f1c4ab75aeb9c",
+          "upstreamGitBlob": "b9a18de477715c479171ebfc801f1c4ab75aeb9c",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/claim.json",
+          "expectedGitBlob": "6414295bf7011b3ddc9f7b11f9f33aa5f2200a96",
+          "upstreamGitBlob": "6414295bf7011b3ddc9f7b11f9f33aa5f2200a96",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/conformance.json",
+          "expectedGitBlob": "4e56f6626aab87705825c735acc73445ac22fb3f",
+          "upstreamGitBlob": "4e56f6626aab87705825c735acc73445ac22fb3f",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+          "expectedGitBlob": "49adeaa3718a6b7061ad690d3b4c28063f76c6e5",
+          "upstreamGitBlob": "49adeaa3718a6b7061ad690d3b4c28063f76c6e5",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/roles.json",
+          "expectedGitBlob": "aeba19e1869406f0e7d0ebaa64e2679c738de111",
+          "upstreamGitBlob": "aeba19e1869406f0e7d0ebaa64e2679c738de111",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+          "expectedGitBlob": "8aa89aa9842ef07a5e89ee7c5115847a831540cd",
+          "upstreamGitBlob": "8aa89aa9842ef07a5e89ee7c5115847a831540cd",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/sources.json",
+          "expectedGitBlob": "475b47eee1826871b620a031908eba7bc041dec3",
+          "upstreamGitBlob": "475b47eee1826871b620a031908eba7bc041dec3",
+          "matches": true
+        },
+        {
+          "path": "profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+          "expectedGitBlob": "9e5eacbad6778daf61d6a6f0d657425ba710c191",
+          "upstreamGitBlob": "9e5eacbad6778daf61d6a6f0d657425ba710c191",
+          "matches": true
+        },
+        {
+          "path": "qev/__init__.py",
+          "expectedGitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824",
+          "upstreamGitBlob": "b250517954c9171a2abdaa69ab0e40786e4c5824",
+          "matches": true
+        },
+        {
+          "path": "qev/adapters.py",
+          "expectedGitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da",
+          "upstreamGitBlob": "012d1065cad9e9adb6b36d7c25fcefdc89e103da",
+          "matches": true
+        },
+        {
+          "path": "qev/admission.py",
+          "expectedGitBlob": "05b5b559afe5ff46be23e00c938e2b42dd1190ab",
+          "upstreamGitBlob": "05b5b559afe5ff46be23e00c938e2b42dd1190ab",
+          "matches": true
+        },
+        {
+          "path": "qev/inventory.py",
+          "expectedGitBlob": "9d9ab49e423df1f293551bc219581886516e08fe",
+          "upstreamGitBlob": "9d9ab49e423df1f293551bc219581886516e08fe",
+          "matches": true
+        },
+        {
+          "path": "qev/live_common.py",
+          "expectedGitBlob": "8cb34b55823f2863ee5b92f48f012472b5cdaebb",
+          "upstreamGitBlob": "8cb34b55823f2863ee5b92f48f012472b5cdaebb",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_comet.py",
+          "expectedGitBlob": "757d379e0fafcfa992a495ff895f8858e19a8794",
+          "upstreamGitBlob": "757d379e0fafcfa992a495ff895f8858e19a8794",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos.py",
+          "expectedGitBlob": "7caafeb25ef2f245439eeb36c8975b885f207502",
+          "upstreamGitBlob": "7caafeb25ef2f245439eeb36c8975b885f207502",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos_bridge.ts",
+          "expectedGitBlob": "e778be4e677f5988b5e5c46e8047784019337cfa",
+          "upstreamGitBlob": "e778be4e677f5988b5e5c46e8047784019337cfa",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos_cli.py",
+          "expectedGitBlob": "767228b9e27a123009f721e84d27e92a6b3e5ff1",
+          "upstreamGitBlob": "767228b9e27a123009f721e84d27e92a6b3e5ff1",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_receiptos_mutations.py",
+          "expectedGitBlob": "cfb76d1a41024078ad2d3c8b2cd30385db02d613",
+          "upstreamGitBlob": "cfb76d1a41024078ad2d3c8b2cd30385db02d613",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_replay.py",
+          "expectedGitBlob": "ed446ef72a44d6c1257686ee35016f2977f25213",
+          "upstreamGitBlob": "ed446ef72a44d6c1257686ee35016f2977f25213",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr.py",
+          "expectedGitBlob": "b18e9313e6e0d9d69961abe745aecfedd4be0c0c",
+          "upstreamGitBlob": "b18e9313e6e0d9d69961abe745aecfedd4be0c0c",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr_cli.py",
+          "expectedGitBlob": "86ba2491d08b777776291fa76b79190a4f4fa74a",
+          "upstreamGitBlob": "86ba2491d08b777776291fa76b79190a4f4fa74a",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr_mutations.py",
+          "expectedGitBlob": "ae21495af46ede0ccc22a22870df92613e797687",
+          "upstreamGitBlob": "ae21495af46ede0ccc22a22870df92613e797687",
+          "matches": true
+        },
+        {
+          "path": "qev/moth_rvr_relation.py",
+          "expectedGitBlob": "5d64fb1f6d086ab91022640f98177d74b22461fd",
+          "upstreamGitBlob": "5d64fb1f6d086ab91022640f98177d74b22461fd",
+          "matches": true
+        },
+        {
+          "path": "qev/source_inventory.py",
+          "expectedGitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c",
+          "upstreamGitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c",
+          "matches": true
+        },
+        {
+          "path": "qev/sources.py",
+          "expectedGitBlob": "baee43fabb4c76ab55e584f07d847dd7b08b1311",
+          "upstreamGitBlob": "baee43fabb4c76ab55e584f07d847dd7b08b1311",
+          "matches": true
+        },
+        {
+          "path": "tests/test_moth_receiptos.py",
+          "expectedGitBlob": "2b45d669dca0e178cd97bc5b1137c41bb16163fe",
+          "upstreamGitBlob": "2b45d669dca0e178cd97bc5b1137c41bb16163fe",
+          "matches": true
+        },
+        {
+          "path": "tests/test_moth_rvr.py",
+          "expectedGitBlob": "6919f49861980d20f3b54a9d323f9b00dc3f0ff4",
+          "upstreamGitBlob": "6919f49861980d20f3b54a9d323f9b00dc3f0ff4",
+          "matches": true
+        },
+        {
+          "path": "tools/pin_moth_receiptos_profile.py",
+          "expectedGitBlob": "2e37a19e8e7c5ec74f4f6480c2ba0e6aa0e26285",
+          "upstreamGitBlob": "2e37a19e8e7c5ec74f4f6480c2ba0e6aa0e26285",
+          "matches": true
+        },
+        {
+          "path": "tools/pin_moth_rvr_profile.py",
+          "expectedGitBlob": "b63a621605aebdd403dcab9e674037ab8cebd622",
+          "upstreamGitBlob": "b63a621605aebdd403dcab9e674037ab8cebd622",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+          "expectedGitBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169",
+          "upstreamGitBlob": "b560e2bfd04a39fc0f70ca749e7336e933679169",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+          "expectedGitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "upstreamGitBlob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+          "expectedGitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "upstreamGitBlob": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+          "expectedGitBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1",
+          "upstreamGitBlob": "64223eac0425dd36edae7bf94a6373389eb0b5e1",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+          "expectedGitBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+          "upstreamGitBlob": "20b789e2992ab4363bcc361467551d27d5e23183",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+          "expectedGitBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028",
+          "upstreamGitBlob": "79f8214ad13b545fae42c3a82c4b3be9cadd0028",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+          "expectedGitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+          "upstreamGitBlob": "734df63bb397cf223eb5363a4f941e86fda021b8",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+          "expectedGitBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49",
+          "upstreamGitBlob": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+          "expectedGitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+          "upstreamGitBlob": "4167afb1f1ee92379f95d46616fabdce224d9937",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/schema/types.ts",
+          "expectedGitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "upstreamGitBlob": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "matches": true
+        },
+        {
+          "path": "vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+          "expectedGitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "upstreamGitBlob": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "matches": true
+        },
+        {
+          "path": "vendor/rvr-v0/LICENSE",
+          "expectedGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "upstreamGitBlob": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "matches": true
+        },
+        {
+          "path": "vendor/rvr-v0/adapter.py",
+          "expectedGitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "upstreamGitBlob": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "matches": true
+        },
+        {
+          "path": "vendor/rvr-v0/verification-profile-manifest.schema.json",
+          "expectedGitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "upstreamGitBlob": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "matches": true
+        }
+      ],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "qev-ibm-live",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "paths": [
+        {
+          "path": "qev/live_native.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "96cdad41d79a40cf5e167301e64f71b218dc8380"
+        },
+        {
+          "path": "qev/live_relation.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b71a2fe10acc1e445a454d2592841d0b482fa630"
+        },
+        {
+          "path": "qev/live_math.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8b494ec51844603007562497bce0ba3083fd8d3d"
+        },
+        {
+          "path": "qev/live_portable.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "86a07be8fc0a7317f96eab96ed6843edf3698084"
+        },
+        {
+          "path": "qev/live_cli.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "23dda5c3013ce7e53cf2535fcd0d8c45caf80234"
+        },
+        {
+          "path": "profiles/live-capture-replay-v1/",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e1a0713b1ab7c2479a0f197d77ac8d4478f11c04"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "qev-cross-provider",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "paths": [
+        {
+          "path": "qev/cross_provider.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "f01c8a994adfac7bf5804786dada4f818b20aef3"
+        },
+        {
+          "path": "qev/cross_adapters.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "0e6b3f0d9c3f2ee66f437d8f83a7bea75350ee77"
+        },
+        {
+          "path": "qev/cross_cli.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "60a292fb0c4db4296a9ecbe2b7ace9b83e3c7ec3"
+        },
+        {
+          "path": "profiles/cross-provider-evidence-v0/",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6c03cf90e7993473f1c65add3f094e4b4ede2404"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "qev-assurance",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "paths": [
+        {
+          "path": "qev/admission.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "05b5b559afe5ff46be23e00c938e2b42dd1190ab"
+        },
+        {
+          "path": "qev/inventory.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9d9ab49e423df1f293551bc219581886516e08fe"
+        },
+        {
+          "path": "qev/sources.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "baee43fabb4c76ab55e584f07d847dd7b08b1311"
+        },
+        {
+          "path": "qev/source_inventory.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4e07de9da89e465c4e8a4f49951e8eac287c748c"
+        },
+        {
+          "path": "qev/*mutations.py",
+          "kind": "PATTERN_REFERENCE",
+          "matches": 7,
+          "exists": true
+        },
+        {
+          "path": "tests/test_admission.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "170c176e872d214b9f04cf9081d8d19545ab7af8"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "pq-profile-spec",
+      "repository": "pipavlo82/pq-receipt-profile",
+      "sourceSHA": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4473fcabe61c73ee72d3a5bb6eda65af5c5429c8"
+        },
+        {
+          "path": "PRINCIPLES.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "19b5bb82b06d6cc1418d4f43c3de57fd56d6bce7"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "pq-lab-adapter",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "paths": [
+        {
+          "path": "src/interfaces.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a13190211dbffcd7f69f6ca61fd3311c7a24e119"
+        },
+        {
+          "path": "src/extension_verifier.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6944772b3bbe38d11ad35b51e3fea6d5ae950a0c"
+        },
+        {
+          "path": "src/mldsa_adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "579b02444cad3da4b49166fa89e1da667d96fa05"
+        },
+        {
+          "path": "src/reason_mapping.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "81fcc66b7a2b11b2372d9714c2706cf1825dcb54"
+        },
+        {
+          "path": "schemas/receipt_extension.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "cabccee83cab4d177b1d025b25ce0fcdc69cfb0a"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "pq-lab-history",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "paths": [
+        {
+          "path": "demo/_demo_lib.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "136b42f558228062a8a8e24751f7b206dbeae5bb"
+        },
+        {
+          "path": "demo/run_demo.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "58c3419e43c4f041030e0265d39e09ef4a7112cc"
+        },
+        {
+          "path": "src/stealth_handoff_adapter.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "56a4bf6cc60e8facb080536a85d094b99f8bacfe"
+        },
+        {
+          "path": "schemas/stealth_adapter_output.v0.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ba539ecc46c1912f085ef936a2b3a9e68ce5c779"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "mldsa-main-parser",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6cf885533b65eec232934700daaf9b977ef305f9",
+      "paths": [
+        {
+          "path": "solidity/MLDSA65Verifier.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "6cf000e51184e85bb98d5e236f0bad79a47ef39f"
+        },
+        {
+          "path": "solidity/IPQVerifier.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "1dfa1eddd12f5a7a654b9afbf9f43fb720c54ac1"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "mldsa-pr27-research",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "paths": [
+        {
+          "path": "contracts/verifier/MLDSA65_Verifier_v2.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "8802585cd4b2d5af7411570df29d8a47ec736ec9"
+        },
+        {
+          "path": "contracts/verifier/MLDSA65_ERC7913Verifier.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "5850c341cedfc061507878b62d3aa83a869a103c"
+        },
+        {
+          "path": "contracts/verifier/MLDSA65_ERC7913BoundCommitA.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "61d6411de43489bc5fa13dc46c91ca2f3317e703"
+        },
+        {
+          "path": "docs/preA_packedA_ntt.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "aa63442ef80fbb783ebf5d94b346bb02c47164ff"
+        },
+        {
+          "path": "test/MLDSA_ERC7913_PackedA.t.sol",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ea9056351adca5fa61d250550f156e1848f92b67"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "pq-vector-pack",
+      "repository": "pipavlo82/pqevm-vector-packs",
+      "sourceSHA": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "paths": [
+        {
+          "path": "tools/validate_pack.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4b6bd2cf0f9f32d0db851eb6dc4eabeaad20166a"
+        },
+        {
+          "path": "tools/pack_hash.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "82e549fc3ff4e5ab91b2a90c052ecac40ea15e39"
+        },
+        {
+          "path": "schema/manifest.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "a3586369fdbd75c1105d840e98b7c07a13977d00"
+        },
+        {
+          "path": "schema/vector.schema.json",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "d904e5c0d0a1e5a828a9b8e59c93ccec2d365ab8"
+        },
+        {
+          "path": "packs/mldsa65_fips204/",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ed0a830fb98dccff9bd66c9b17dd9eacc8c4c673"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "gas-methodology",
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "paths": [
+        {
+          "path": "spec/explicit_lanes.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "c4eca395f2cfb2588f365bcea7b3147642edb3ef"
+        },
+        {
+          "path": "spec/dataset_schema.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "0d7485516e18db5d82471e52e112f433ac971b96"
+        },
+        {
+          "path": "spec/security_metrics.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "239b1f1b92548984f3398dd0d2fe69adb92a22eb"
+        },
+        {
+          "path": "spec/pqsig_userop_schema_v0.1.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "4a64174dcc3ddd7914a64d0a0607426c9abbc1f8"
+        },
+        {
+          "path": "scripts/parse_bench.py",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "7da7054b507231f6cfd3283319ecf92c2f7367cb"
+        },
+        {
+          "path": "data/results.jsonl",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b0126f5b839c9699e9c902006f9c59dc927d0af5"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "ercs-source",
+      "repository": "pipavlo82/ERCs",
+      "sourceSHA": "98469bc93b6add1e3bc9501dafaa73311071145b",
+      "paths": [
+        {
+          "path": "ERCS/",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ab595b269447185e209c834c113e6104d907c72b"
+        },
+        {
+          "path": "LICENSE.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "0e259d42c996742e9e3cba14c677129b2c1b6311"
+        },
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "f27235fd98471578111bccf07c16e4727afb1848"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.akashmahlaz.betting-club",
+      "repository": "akashmahlaz/betting-club",
+      "sourceSHA": "f85d3ea4e1a6e9ada21d576380c104a0b32976a1",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "e215bc4ccf138bbc38ad58ad57e92135484b3c0f"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.babyblueviper1.semantic-execution-guard",
+      "repository": "babyblueviper1/semantic-execution-guard",
+      "sourceSHA": "093dc4f7832c1e18ede0bf9de6fb590aad6fbea8",
+      "paths": [
+        {
+          "path": "PROVENANCE.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "07560c72ee5955badb83454ce2042f691fdb280e"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.casinocutup.Solana-Mines-Game",
+      "repository": "casinocutup/Solana-Mines-Game",
+      "sourceSHA": "320556ec84e9f7951e9613fdf808cc413626f000",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "9f88154b1cde5a8cc4d2ae926b017b1d111cc674"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.eddieoz.bitBingo",
+      "repository": "eddieoz/bitBingo",
+      "sourceSHA": "28ac36f60414edfcf272433be15b2b0a4e37404f",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "119b974281ba17d9863379ca2bb1af59f42de78c"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.jdleo.provably-fair-dice",
+      "repository": "jdleo/provably-fair-dice",
+      "sourceSHA": "4297f223cd1289a40c43ab715ee14ec907666773",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3c2e42b3acc57f74c5d2482174f8b427d726fd2c"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.justFiveDev.Solana-Casino-Jackpot",
+      "repository": "justFiveDev/Solana-Casino-Jackpot",
+      "sourceSHA": "a1bb862aa9d4288b99f51df7bc33c17cf9d76d04",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b76a2fe9cc0213609e8adf7b90e248d9975db696"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.OffchainLabs.community-helm-charts",
+      "repository": "OffchainLabs/community-helm-charts",
+      "sourceSHA": "3d2c62a7a8c494271cf783dfda215303d2c318cb",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "ae9d6a77e62a37964494b49eb329cd74bc791a2b"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.open-quantum-safe.liboqs-java",
+      "repository": "open-quantum-safe/liboqs-java",
+      "sourceSHA": "97353bcc8e53152e999248b8dfc89a1ef05d045b",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "d648a2077627e35201dee29609002796f05d183e"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.PandaExplorer.Provably-Fair-iGaming-Demo",
+      "repository": "PandaExplorer/Provably-Fair-iGaming-Demo",
+      "sourceSHA": "49d6141b7f1f27321e3dfcde857a86a1219e13c5",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "245369fc2fd08d82acf974f395165b5b16bcf51d"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.pipavlo82.decentralised",
+      "repository": "pipavlo82/decentralised",
+      "sourceSHA": "8f614bac346e9d618bbf69ea33cb175aa05e798d",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "b05ede9934a752cfd877c6b91d6f6066131c6972"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.Rohiteswar.Solana-SlotMachine",
+      "repository": "Rohiteswar/Solana-SlotMachine",
+      "sourceSHA": "57a69e8f380826fbef79b5b3de8a94fece3b7181",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "3b413e401c7d9ce7220cef0b28e290b508ad81b3"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.shentonyan.sealed-bid-award-erc",
+      "repository": "shentonyan/sealed-bid-award-erc",
+      "sourceSHA": "543da2e21d0269ac43880af4a71cb73248ed9eea",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "0251826e341cfc73121cf33a0aade7a69504108d"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    },
+    {
+      "capabilityId": "inventory.tapiwamakandigona.zimbet",
+      "repository": "tapiwamakandigona/zimbet",
+      "sourceSHA": "dc93bca4fdcb62b8255becb121f6aaa9c9b60532",
+      "paths": [
+        {
+          "path": "README.md",
+          "kind": "EXACT_SOURCE_PATH",
+          "exists": true,
+          "gitBlob": "14f0e28106a8300eb8303bdef34c3bddb92144a3"
+        }
+      ],
+      "selectedPathPinChecks": [],
+      "treeTruncated": false
+    }
+  ],
+  "limits": [
+    "Source tree membership only; no new independent authorship/originality reconstruction. Pattern references remain patterns, not complete native capabilities."
+  ]
+}

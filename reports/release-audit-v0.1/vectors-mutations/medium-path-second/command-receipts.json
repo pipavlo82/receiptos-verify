@@ -1,0 +1,167 @@
+[
+  {
+    "label": "baseline-vectors",
+    "cwd": "reports/tmp/release-rc-audit/vm",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-vectors.mjs"
+    ],
+    "started": "2026-10-11T18:43:51.988Z",
+    "ended": "2026-10-11T18:44:03.780Z",
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "stdout": "{\"count\":30,\"passed\":30,\"failed\":0,\"failures\":[]}\n",
+    "stderr": ""
+  },
+  {
+    "label": "baseline-mutations",
+    "cwd": "reports/tmp/release-rc-audit/vm",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:03.782Z",
+    "ended": "2026-10-11T18:44:32.597Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "ignore-requested-subject: KILLED\ncompare-receipt-to-itself: KILLED\naccept-any-valid-signature: KILLED\npromote-reproduced-to-verified: KILLED\naccept-empty-evidence: KILLED\ncount-crash-as-semantic-refutation: CONTROL_BROKEN\npackage-presence-as-pass: KILLED\nignore-policy-version: KILLED\nignore-guarantee-dependency: KILLED\nignore-retry-action-change: KILLED\nignore-evidence-grade: KILLED\nignore-authority: KILLED\nignore-commit: KILLED\nignore-canonicalization-profile: KILLED\n{\"KILLED\":13,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":1,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-unapplied",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc0",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:32.880Z",
+    "ended": "2026-10-11T18:44:33.476Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":1,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-noop",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:33.846Z",
+    "ended": "2026-10-11T18:44:34.514Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":1,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-crashing",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc2",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:34.833Z",
+    "ended": "2026-10-11T18:44:37.127Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-crashing: CRASHED\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-damaged-positive",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc3",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:37.402Z",
+    "ended": "2026-10-11T18:44:39.727Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-damaged-positive: CONTROL_BROKEN\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":1,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-unknown-overall",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc4",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:40.011Z",
+    "ended": "2026-10-11T18:44:42.591Z",
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-unknown-overall: KILLED\n{\"KILLED\":1,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-undefined-overall",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc5",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:42.905Z",
+    "ended": "2026-10-11T18:44:45.421Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-undefined-overall: CRASHED\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-schema-spoof",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc6",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:45.718Z",
+    "ended": "2026-10-11T18:44:48.074Z",
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "stdout": "audit-schema-spoof: KILLED\n{\"KILLED\":1,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+    "stderr": ""
+  },
+  {
+    "label": "control-zero-inventory",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc7",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:48.374Z",
+    "ended": "2026-10-11T18:44:48.672Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "",
+    "stderr": "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/vmc7/tools/run-mutations.mjs:5\r\nif(!mutations.length) throw new Error('ZERO_MUTANTS');\r\n                            ^\r\n\r\nError: ZERO_MUTANTS\r\n    at file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/vmc7/tools/run-mutations.mjs:5:29\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)\r\n\r\nNode.js v22.15.0\r\n"
+  },
+  {
+    "label": "control-damaged-baseline",
+    "cwd": "reports\\tmp\\release-rc-audit\\vmc8",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "tools/run-mutations.mjs"
+    ],
+    "started": "2026-10-11T18:44:48.952Z",
+    "ended": "2026-10-11T18:44:51.292Z",
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "stdout": "ignore-requested-subject: INVALID_BASELINE\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":1}\n",
+    "stderr": ""
+  }
+]

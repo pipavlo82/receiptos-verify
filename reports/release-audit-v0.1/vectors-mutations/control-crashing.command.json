@@ -1,0 +1,15 @@
+{
+  "label": "control-crashing",
+  "cwd": "reports\\tmp\\vmc2",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:46:29.514Z",
+  "ended": "2026-10-11T18:46:31.615Z",
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "audit-crashing: CRASHED\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":1,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

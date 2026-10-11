@@ -1,0 +1,15 @@
+{
+  "label": "control-damaged-positive",
+  "cwd": "reports\\tmp\\vmc3",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:46:31.877Z",
+  "ended": "2026-10-11T18:46:34.158Z",
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "audit-damaged-positive: CONTROL_BROKEN\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":1,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

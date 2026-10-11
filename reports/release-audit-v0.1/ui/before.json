@@ -1,0 +1,11 @@
+{
+  "candidate": "33d8ee47ad733f1198f2b2fb8d171b31c7b10678",
+  "server": "fresh candidate-b 8819",
+  "utf8Upload": {
+    "className": "verdict good",
+    "hasReplacement": true,
+    "verdict": "VERIFIED"
+  },
+  "crashVector": "V08 loaded only request/bundle; native fault setup silently omitted; observed overall VERIFIED/good",
+  "wrongCommit": "Observed CONTRADICTED; subject_binding CONTRADICTED; integrity/authenticity VERIFIED"
+}

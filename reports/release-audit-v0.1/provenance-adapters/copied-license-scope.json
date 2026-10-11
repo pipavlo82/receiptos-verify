@@ -1,0 +1,26 @@
+[
+  {
+    "endpoint": "repos/pipavlo82/quantum-execution-evidence/contents/LICENSING.md?ref=5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+    "observedAt": "2026-10-11T18:43:51.312500+00:00",
+    "exitCode": 0,
+    "sha256": "59eb8d8d3a7f422a853c57e332cb95e90173aa960f74c799e48cce5f43311a68",
+    "gitBlob": "fb33258c29ba99f36629e8b5ea776b8b4e414104",
+    "text": "# Licensing\n\nRepository-authored Quantum Execution Evidence material is licensed under the\nApache License, Version 2.0, unless a file or directory is explicitly identified\nbelow as third-party or preserved upstream evidence.\n\n- Root license text: [LICENSE](LICENSE)\n- Attribution and scope notice: [NOTICE](NOTICE)\n- SPDX identifier for the repository-authored grant: `Apache-2.0`\n\nThis grant covers repository-authored runtime code, profiles, tests, tooling,\nsynthetic fixtures, project documentation, configuration, and locally authored\nclaim/manifest metadata. It does **not** relicense third-party material merely\nbecause that material is stored in this repository. A more specific license or\nrights notice attached to a file or directory controls for that material.\n\n## Preserved provider evidence\n\nThe 15 IBM live-capture files named as keys in\n`fixtures/live-capture-v1/seed-manifest.json` are preserved historical evidence.\nTheir inclusion is not a claim that QEV owns or relicenses provider-originated\ncontent. Repository-authored wrapper material such as the independent QEV claim\nand seed manifest remains under the root Apache-2.0 grant.\n\nFiles under `fixtures/moth-comet-v0/capture/` are preserved Moth/API execution\nevidence. `docs/moth-comet-v0/openapi.raw.json` is a preserved upstream OpenAPI\nsnapshot. Those preserved upstream materials are not relicensed by the root\nLICENSE. Repository-authored Moth adapters, profiles, tests, claims, analysis and\ndocumentation remain under Apache-2.0.\n\n## Vendored Semantic ABI\n\nFiles under `vendor/semantic-abi/` originate from the pinned\n`trustless-ai/semantic-abi` source snapshot.\n\n- `vendor/semantic-abi/LICENSE` is the upstream Apache-2.0 license text for the\n  applicable code.\n- `vendor/semantic-abi/schema/LICENSE-CC0.txt` is the upstream CC0 text for the\n  applicable schema material.\n\nThe exact byte identities and upstream commit are recorded in\n`qev/source_inventory.py` and `sources.lock.json`.\n\nThe 16 records in `docs/reference-pins.json` are inherited reference metadata,\nnot a license grant or execution inventory. Referencing an upstream project does\nnot grant QEV permission to relicense that project's material.\n\n## Vendored RVR v0\n\nFiles under `vendor/rvr-v0/` originate from pinned commit\n`549a7e150ddc75df88dc90ee93f331fea7464567` of\n`pipavlo82/recomputable-verification-receipts`.\n\n`vendor/rvr-v0/LICENSE` preserves the upstream license bytes. The vendored\nadapter and Verification Profile Manifest schema retain that upstream license;\nQEV-authored profiles and adapters use the root Apache-2.0 grant.\n\n## Vendored ReceiptOS v0\n\nFiles under `vendor/receiptos-v0/` originate from pinned commit\n`45b46bf7df3a60b32583291f577a36bf19d22f00` of\n`pipavlo82/crystal-receipt`.\n\n`vendor/receiptos-v0/LICENSE` preserves the upstream Apache-2.0 license bytes.\nThe vendored ReceiptOS implementation retains its upstream license. QEV-specific\nbridges, profiles and tests use the root Apache-2.0 grant.\n\n## Vendored TSEI v0\n\nFiles under `vendor/tsei-v0/` originate from pinned commit\n`45b46bf7df3a60b32583291f577a36bf19d22f00` of\n`pipavlo82/crystal-receipt`.\n\n`vendor/tsei-v0/LICENSE` preserves the upstream Apache-2.0 license bytes. The\nvendored generic transformation-stability implementation, conformance data and\nspecification retain their upstream license. QEV-specific profiles and bridge\nfiles use the root Apache-2.0 grant.\n\n## What this change does not do\n\nSelecting Apache-2.0 for repository-authored QEV material does not alter frozen\nevidence bytes, vendor licenses, upstream copyrights, provider terms, or the\ntechnical evidence claims made by any profile. It also does not imply that\ncaptured IBM/Moth data, an upstream OpenAPI document, or referenced repositories\nare owned by or relicensed by QEV.\n\nThe 28-file vendor inventory includes licenses and data as well as code; see\n[the source map](docs/INTEGRATION_MAP.md#source-identities).\n"
+  },
+  {
+    "endpoint": "repos/pipavlo82/crystal-receipt/contents/LICENSING.md?ref=45b46bf7df3a60b32583291f577a36bf19d22f00",
+    "observedAt": "2026-10-11T18:43:51.650218+00:00",
+    "exitCode": 1,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gitBlob": null,
+    "text": ""
+  },
+  {
+    "endpoint": "repos/pipavlo82/recomputable-verification-receipts/contents/LICENSING.md?ref=9dd36e882dd372f264b77b179130948aa5adcbde",
+    "observedAt": "2026-10-11T18:43:51.930213+00:00",
+    "exitCode": 1,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gitBlob": null,
+    "text": ""
+  }
+]

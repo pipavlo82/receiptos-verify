@@ -1,0 +1,15 @@
+{
+  "label": "control-unapplied",
+  "cwd": "reports\\tmp\\vmc0",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:46:27.817Z",
+  "ended": "2026-10-11T18:46:28.405Z",
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":1,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

@@ -1,0 +1,15 @@
+{
+  "label": "control-damaged-baseline",
+  "cwd": "reports\\tmp\\vmc8",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:46:43.258Z",
+  "ended": "2026-10-11T18:46:45.512Z",
+  "exit": 1,
+  "signal": null,
+  "error": null,
+  "stdout": "ignore-requested-subject: INVALID_BASELINE\n{\"KILLED\":0,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":1}\n",
+  "stderr": ""
+}

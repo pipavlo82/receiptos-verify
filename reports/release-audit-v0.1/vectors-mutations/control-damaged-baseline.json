@@ -1,0 +1,42 @@
+{
+  "name": "damaged-baseline",
+  "expected_safety_behavior": "INVALID_BASELINE",
+  "exit": 1,
+  "report": {
+    "schema": "receiptos.verify.mutation-report.v1",
+    "method": "Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.",
+    "count": 1,
+    "counts": {
+      "KILLED": 0,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 1
+    },
+    "rows": [
+      {
+        "id": "ignore-requested-subject",
+        "source_file": "src/core/subject.mjs",
+        "original_sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849",
+        "mutant_sha256": "1398526966a987d16ef87f2873d957201b5d44b034c0f7d632b445dade02632b",
+        "applied": true,
+        "positive": "V01",
+        "witness": "V04",
+        "baseline_controls_valid": false,
+        "positive_process_status": "COMPLETED",
+        "positive_preserved": false,
+        "witness_process_status": "COMPLETED",
+        "baseline_projection": "CONTRADICTED",
+        "mutant_projection": "VERIFIED",
+        "witness_reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "rvr.v0.digest_match",
+          "rvr.recompute.identical",
+          "SEMANTIC_REQUIREMENT_ESTABLISHED"
+        ],
+        "status": "INVALID_BASELINE"
+      }
+    ]
+  }
+}

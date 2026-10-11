@@ -1,0 +1,39 @@
+{
+  "id": "ignore-requested-subject",
+  "observations": [
+    {
+      "kind": "positive",
+      "id": "V01",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-requested-subject\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-requested-subject\\vectors\\V01.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-requested-subject",
+      "started": "2026-10-11T18:53:58.363Z",
+      "ended": "2026-10-11T18:53:58.937Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "VERIFIED"
+    },
+    {
+      "kind": "witness",
+      "id": "V04",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-requested-subject\\tools\\verify-vector.mjs",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-requested-subject\\vectors\\V04.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-ignore-requested-subject",
+      "started": "2026-10-11T18:53:58.938Z",
+      "ended": "2026-10-11T18:53:59.532Z",
+      "exit": 0,
+      "stderr": "",
+      "valid_report": true,
+      "positive_preserved": true,
+      "overall": "VERIFIED"
+    }
+  ]
+}

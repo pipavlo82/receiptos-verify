@@ -1,0 +1,37 @@
+[
+  {
+    "file": "independent.mjs",
+    "sha256": "7d92de1b822963b1f3269423e9177840d0a727bdaa5b79b686ffea2c560b3bed",
+    "bytes": 25312,
+    "containsCR": false,
+    "utf8bom": false
+  },
+  {
+    "file": "fresh-fixture.mjs",
+    "sha256": "f6220f4b19dcfe6dd774712c2b686c29b771fb36cd55db20f031c745cb4c5a36",
+    "bytes": 7513,
+    "containsCR": false,
+    "utf8bom": false
+  },
+  {
+    "file": "semantic-audit.md",
+    "sha256": "89f77858b8632b97c891d59b3246c0bc31b1bd104b4bd304c0794b0f248a6a35",
+    "bytes": 13826,
+    "containsCR": false,
+    "utf8bom": false
+  },
+  {
+    "file": "results.json",
+    "sha256": "41d870e90951890146b76bd04bee3ea7ffca2f8d0fd3e9ff1507978309e9392d",
+    "bytes": 427784,
+    "containsCR": false,
+    "utf8bom": false
+  },
+  {
+    "file": "signed-FAIL-native-VERIFIED.json",
+    "sha256": "9ef6aeb691d16f2116398b224f75be670a3a44fde6cd938e420692a493ead104",
+    "bytes": 31671,
+    "containsCR": false,
+    "utf8bom": false
+  }
+]

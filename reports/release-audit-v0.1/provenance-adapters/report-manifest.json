@@ -1,0 +1,88 @@
+{
+  "schema": "receiptos.release.audit-report-manifest.v1",
+  "files": [
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/adapter-audit.md",
+      "sha256": "8667066683f80d130c542fffdcaf6984b48872eb0053a82e50f92a3cd0626ac3",
+      "bytes": 6696
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/adapter-probes.json",
+      "sha256": "8c9b7bf7acd281f15490c4f52c4c4c4fda48587636ba7207bd45caaac361ce4b",
+      "bytes": 21892
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/adapter-probes.mjs",
+      "sha256": "50e7b649878456ea35932dc8c154aea6386b0b8ac02819ad06a5dd559e0b7185",
+      "bytes": 3894
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/audit-records.json",
+      "sha256": "461f50b9f352ecd8e8b151ac77a624283f9f1007836306c02ba034d3c35507ff",
+      "bytes": 701013
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/check-provenance.py",
+      "sha256": "ac64375b8e77baf44b8d235628b8fef0a7ec30b89bd0876a0e4786e1bdcd7f9b",
+      "bytes": 6281
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/check-sourcepaths.py",
+      "sha256": "8fc27fb68d16185869c605c549bd6c711c796a2c406c95454e5d2c131f83b32d",
+      "bytes": 2785
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/copied-license-scope.json",
+      "sha256": "e154f0359e5a60955f4f439fdffdb838e0a57867f11e41aea71e07eec1bfbc71",
+      "bytes": 5031
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/license-check.json",
+      "sha256": "f0ddd96c5e36bccbed52f23fec66acf604dad6a976f7cdce01cd60ce98b192c4",
+      "bytes": 6315
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/native-adversarial-probes.json",
+      "sha256": "4ed133e967939ca0d3564565654e8f8a172cebca4644be082c69b726c99e9ee1",
+      "bytes": 32799
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/native-adversarial-probes.mjs",
+      "sha256": "ec5507b494b52ddf7b454e47a0426a62de6d5946430575b83a44590a03bad82a",
+      "bytes": 2110
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/nested-origin-pins.json",
+      "sha256": "d7cb956a534da389013cdecf78e7af28afd8900696f9ba64b9b9afe98cc4bb68",
+      "bytes": 7923
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/provenance-check.json",
+      "sha256": "c342d4738414d2c49e2bb5369ca6e7441e5bd151278ff0c3a32a89b28fb0a465",
+      "bytes": 286090
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/provenance-license-audit.md",
+      "sha256": "55921f8a171b40c880cf7cc5afeb6b6c0d0dd36ae7d0d1085bcbf151cde910bc",
+      "bytes": 8492
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/release-claims.md",
+      "sha256": "92ba8bc40000f1533571bfc05905dc4af5e480d5f6194e34862a0220683842be",
+      "bytes": 10552
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/source-path-check.json",
+      "sha256": "232a4a00b7bdc1b5dccd26a8b54395c3acb34a0d6f00bd8932dd3fdd5840f987",
+      "bytes": 143934
+    },
+    {
+      "path": "reports/release-audit-v0.1/provenance-adapters/write-reports.py",
+      "sha256": "11c6e2028f73b7016649d5b774f8a5345ba7741f9c7bef389a98f5cb2767d750",
+      "bytes": 28664
+    }
+  ],
+  "LFNoBOM": true,
+  "violations": [],
+  "selfExcluded": true
+}

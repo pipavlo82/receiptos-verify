@@ -1,0 +1,725 @@
+{
+  "schema": "receiptos.release.adapter-probes.v1",
+  "candidate": "C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/candidate-a/",
+  "importedInstalledNoble": "c:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/outputs/receiptos-verify/reports/tmp/release-rc-audit/candidate-a/node_modules/@noble/curves/secp256k1.js",
+  "rows": [
+    {
+      "name": "CHRONICLE arbitrary root accepted as continuity (not aggregate proof)",
+      "value": {
+        "status": "PRESERVED",
+        "reasonCodes": [
+          "LOCAL_CONTINUITY_PRESERVED",
+          "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+        ],
+        "nativeResult": {
+          "identity_classification": "new",
+          "selected_entry": {
+            "entry_id": "entry",
+            "proof_object_ref": "not-a-proof",
+            "receipt_root": "invented-unhashed-root",
+            "sequence": 0,
+            "predecessor_ref": null,
+            "subject": "S",
+            "state": "ready"
+          },
+          "later_entries": [],
+          "whole_envelope_binding": "NOT_ESTABLISHED"
+        },
+        "limitations": [
+          "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+          "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+          "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+        ],
+        "provenance": {
+          "profileId": "receiptos.verify.continuity.v1",
+          "sourceRepository": "pipavlo82/Chronicle",
+          "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+          "license": "Apache-2.0",
+          "maturity": "EXPERIMENTAL",
+          "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+          "capabilities": [
+            "native-entry-identity",
+            "exact-proof-reference",
+            "product-sequence-predecessor",
+            "historical-current-separation",
+            "whole-envelope-binding"
+          ],
+          "requiredEvidence": [
+            "ordered supplied entries",
+            "requested anchor identity",
+            "original envelope for whole-envelope claims"
+          ],
+          "nativeVocabulary": [
+            "new",
+            "idempotent",
+            "conflict"
+          ]
+        }
+      }
+    },
+    {
+      "name": "package presence cannot establish execution",
+      "value": {
+        "status": "INSUFFICIENT",
+        "reasonCodes": [
+          "NO_SEMANTIC_EXECUTION"
+        ],
+        "nativeResult": {
+          "report": {
+            "package_present": true,
+            "runner_declared": true,
+            "executed": true,
+            "evidence_grade": "LOCAL_RECOMPUTATION"
+          },
+          "observed": {
+            "executed": false,
+            "semanticObserved": false,
+            "processStatus": "COMPLETED"
+          }
+        }
+      }
+    },
+    {
+      "name": "completed crash status cannot establish execution",
+      "value": {
+        "status": "CANNOT_RECOMPUTE",
+        "reasonCodes": [
+          "CHECKER_UNAVAILABLE"
+        ],
+        "nativeResult": {
+          "report": {
+            "package_present": true,
+            "runner_declared": true,
+            "executed": true,
+            "evidence_grade": "LOCAL_RECOMPUTATION"
+          },
+          "observed": {
+            "executed": true,
+            "semanticObserved": true,
+            "processStatus": "CRASH"
+          }
+        }
+      }
+    },
+    {
+      "name": "false subject label cannot establish execution",
+      "value": {
+        "status": "CONTRADICTED",
+        "reasonCodes": [
+          "EXECUTION_BINDING_MISMATCH"
+        ],
+        "nativeResult": {
+          "package_present": true,
+          "runner_declared": true,
+          "executed": true,
+          "subject_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+          "executable_pin": "p",
+          "evidence_grade": "LOCAL_RECOMPUTATION"
+        }
+      }
+    },
+    {
+      "name": "execution null context",
+      "exception": "TypeError",
+      "message": "Cannot read properties of null (reading 'executed')"
+    },
+    {
+      "name": "vector pack empty",
+      "value": {
+        "status": "UNVERIFIABLE",
+        "reasonCodes": [
+          "EMPTY_VECTOR_PACK"
+        ],
+        "nativeResult": null
+      }
+    },
+    {
+      "name": "vector expected-pass label is structural only",
+      "value": {
+        "status": "UNVERIFIABLE",
+        "reasonCodes": [
+          "STRUCTURE_ONLY_NOT_CONFORMANCE"
+        ],
+        "nativeResult": {
+          "vector_count": 1,
+          "conformance": "NOT_ESTABLISHED"
+        }
+      }
+    },
+    {
+      "name": "ledger hash label not finality",
+      "value": {
+        "status": "UNSUPPORTED",
+        "reasonCodes": [
+          "LIVE_LEDGER_ADAPTER_NOT_IMPLEMENTED"
+        ],
+        "nativeResult": {
+          "kind": "ethereum",
+          "transaction_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+          "finality": "FINAL"
+        },
+        "limitations": [
+          "A transaction identifier or producer label is not independently verified inclusion/finality."
+        ]
+      }
+    },
+    {
+      "name": "retry malformed attempts",
+      "value": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "ACTION_MALFORMED"
+        ],
+        "nativeResult": null
+      }
+    },
+    {
+      "name": "stochastic canned result missing evidence",
+      "value": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "STOCHASTIC_COMMITMENT_MALFORMED"
+        ],
+        "nativeResult": null
+      }
+    },
+    {
+      "name": "mock crypto cannot establish valid",
+      "value": {
+        "status": "UNVERIFIABLE",
+        "reasonCodes": [
+          "MOCK_OR_STRUCTURAL_NOT_CRYPTOGRAPHIC_VERIFICATION"
+        ],
+        "nativeResult": {
+          "valid": true
+        },
+        "limitations": [
+          "This is a bounded product interval/revocation gate over caller-supplied authority premises, not complete upstream event-time or earliest-anchor-history verification.",
+          "A registered REAL_CRYPTO provider supplies the cryptographic result. Provider kind declarations and test callbacks do not establish a real ML-DSA backend or PQ conformance."
+        ],
+        "provenance": {
+          "profileId": "receiptos.verify.crypto-provider.v1",
+          "sourceRepository": "pipavlo82/pq-receipt-profile",
+          "sourceCommit": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+          "license": "Independent public-profile implementation; no upstream code copied",
+          "maturity": "EXPERIMENTAL",
+          "capabilities": [
+            "crypto-provider-boundary",
+            "temporal-authority",
+            "vector-pack-admission"
+          ],
+          "requiredEvidence": [
+            "public_key",
+            "signature",
+            "message",
+            "authority"
+          ],
+          "nativeVocabulary": [
+            "VALID",
+            "INVALID",
+            "NOT_ESTABLISHED",
+            "UNSUPPORTED"
+          ]
+        }
+      }
+    },
+    {
+      "name": "unbound key blocks provider",
+      "value": {
+        "status": "UNVERIFIABLE",
+        "reasonCodes": [
+          "TEMPORAL_KEY_AUTHORITY_NOT_ESTABLISHED"
+        ],
+        "nativeResult": null,
+        "limitations": [
+          "This is a bounded product interval/revocation gate over caller-supplied authority premises, not complete upstream event-time or earliest-anchor-history verification.",
+          "A registered REAL_CRYPTO provider supplies the cryptographic result. Provider kind declarations and test callbacks do not establish a real ML-DSA backend or PQ conformance."
+        ],
+        "provenance": {
+          "profileId": "receiptos.verify.crypto-provider.v1",
+          "sourceRepository": "pipavlo82/pq-receipt-profile",
+          "sourceCommit": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+          "license": "Independent public-profile implementation; no upstream code copied",
+          "maturity": "EXPERIMENTAL",
+          "capabilities": [
+            "crypto-provider-boundary",
+            "temporal-authority",
+            "vector-pack-admission"
+          ],
+          "requiredEvidence": [
+            "public_key",
+            "signature",
+            "message",
+            "authority"
+          ],
+          "nativeVocabulary": [
+            "VALID",
+            "INVALID",
+            "NOT_ESTABLISHED",
+            "UNSUPPORTED"
+          ]
+        }
+      }
+    }
+  ],
+  "providerCalls": 1,
+  "registrations": [
+    {
+      "descriptor": {
+        "profileId": "crystal.handoff-receipt-root.v1",
+        "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_RECEIPT_ROOT_INTEGRITY"
+        ],
+        "requiredEvidence": [
+          "native-crystal-evidence"
+        ],
+        "nativeVocabulary": {
+          "integrity": [
+            "ok:true",
+            "ok:false"
+          ],
+          "fields": [
+            "ok",
+            "receipt_root",
+            "recomputed_root"
+          ]
+        }
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "rvr-generic-sha256-equals-v0",
+        "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+        "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_DIGEST_PREDICATE",
+          "NATIVE_RECEIPT_REPLAY"
+        ],
+        "requiredEvidence": [
+          "native-rvr-bundle",
+          "native-rvr-candidate"
+        ],
+        "nativeVocabulary": {
+          "semantic": [
+            "VERIFIED",
+            "REFUTED",
+            "UNVERIFIABLE"
+          ],
+          "recomputation": [
+            "REPRODUCED",
+            "DIVERGED",
+            "CANNOT_RECOMPUTE"
+          ]
+        }
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.semantic-compatibility.v1",
+        "sourceRepository": "trustless-ai/semantic-abi",
+        "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+        "license": "Apache-2.0 code; CC0-1.0 schema concepts",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_NEUTRAL_SPEC_REIMPLEMENTATION_WITH_PRODUCT_EXTENSIONS",
+        "capabilities": [
+          "exact-claim",
+          "observed-authority",
+          "exact-subject-scope",
+          "time",
+          "assumptions",
+          "actual-evidence-classes"
+        ],
+        "requiredEvidence": [
+          "caller-established authority",
+          "caller-observed evidence classes"
+        ],
+        "nativeVocabulary": [
+          "valid",
+          "TYPE_ERROR"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.guarantee-preservation.v1",
+        "sourceRepository": "pipavlo82/protected-relation-fixtures",
+        "sourceCommit": "f525737069dc4cef7741f805d08a988912f4454f",
+        "license": "MIT public upstream; new code Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_PRODUCT_INPUT_SHAPE",
+        "capabilities": [
+          "exact-obligations",
+          "dependency-coverage",
+          "exact-subject-scope-authority",
+          "three-valued-preservation"
+        ],
+        "requiredEvidence": [
+          "caller-accepted bounded dependency basis",
+          "independently observed obligation results"
+        ],
+        "nativeVocabulary": [
+          "PRESERVED",
+          "VIOLATED",
+          "UNVERIFIABLE"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.execution-report.v1",
+        "sourceRepository": "trustless-ai/recompute-kit",
+        "sourceCommit": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+        "license": "CC0-1.0 public source; new code Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "capabilities": [
+          "reporter-not-self-grading",
+          "execution-binding",
+          "evidence-grade"
+        ],
+        "requiredEvidence": [
+          "native-process-result",
+          "executable-pin"
+        ],
+        "nativeVocabulary": [
+          "PASS",
+          "FAIL",
+          "CANNOT_CHECK"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "quantum-evidence.v0",
+        "sourceRepository": "https://github.com/pipavlo82/quantum-execution-evidence",
+        "sourceCommit": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+        "license": "Apache-2.0; nested Semantic ABI Apache-2.0 / CC0-1.0",
+        "maturity": "EXPERIMENTAL",
+        "capabilities": [
+          "SYNTHETIC_FINITE_POSTPROCESSING",
+          "INDEPENDENT_REQUEST_BINDING"
+        ],
+        "requiredEvidence": [
+          "qev-request",
+          "qev-package",
+          "synthetic-ordered-bit-lines"
+        ],
+        "nativeVocabulary": {
+          "input": [
+            "VALID",
+            "INVALID",
+            "UNSUPPORTED"
+          ],
+          "relation": [
+            "SATISFIED",
+            "REFUTED",
+            "CANNOT_ESTABLISH"
+          ],
+          "claim": [
+            "ESTABLISHED_OVER_SUPPLIED_BYTES",
+            "NOT_ESTABLISHED"
+          ],
+          "provider": [
+            "NOT_ESTABLISHED"
+          ]
+        }
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "rvr-qev-moth-counts-v0",
+        "sourceRepository": "https://github.com/pipavlo82/quantum-execution-evidence",
+        "sourceCommit": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "capabilities": [
+          "NATIVE_SAVED_COUNTS_CONSISTENCY",
+          "NATIVE_DOMAIN_RVR_REPLAY",
+          "NATIVE_RECEIPTOS_PORTABLE_EXPORT"
+        ],
+        "requiredEvidence": [
+          "synthetic-moth-wrapper",
+          "native-domain-rvr-bundle",
+          "independent-expected-claim"
+        ],
+        "nativeVocabulary": {
+          "semantic": [
+            "VERIFIED",
+            "REFUTED",
+            "UNVERIFIABLE"
+          ],
+          "recomputation": [
+            "REPRODUCED",
+            "DIVERGED",
+            "CANNOT_RECOMPUTE"
+          ]
+        }
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.interpoll-action.v1",
+        "sourceRepository": "Interpoll1/decentralised",
+        "sourceCommit": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+        "license": "Unlicense",
+        "maturity": "EXPERIMENTAL",
+        "capabilities": [
+          "signed-action",
+          "exact-retry",
+          "committed-attempts"
+        ],
+        "requiredEvidence": [
+          "authorized_action",
+          "accepted_action",
+          "attempts"
+        ],
+        "nativeVocabulary": [
+          "accepted",
+          "duplicate"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.crypto-provider.v1",
+        "sourceRepository": "pipavlo82/pq-receipt-profile",
+        "sourceCommit": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+        "license": "Independent public-profile implementation; no upstream code copied",
+        "maturity": "EXPERIMENTAL",
+        "capabilities": [
+          "crypto-provider-boundary",
+          "temporal-authority",
+          "vector-pack-admission"
+        ],
+        "requiredEvidence": [
+          "public_key",
+          "signature",
+          "message",
+          "authority"
+        ],
+        "nativeVocabulary": [
+          "VALID",
+          "INVALID",
+          "NOT_ESTABLISHED",
+          "UNSUPPORTED"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.stochastic-artifact.v1",
+        "sourceRepository": "pipavlo82/r4-saas-api",
+        "sourceCommit": "7815fd84dd7eb9347b8399719cfeff941ff8df2a",
+        "license": "No default-branch code grant; original ReceiptOS extension",
+        "maturity": "EXPERIMENTAL",
+        "integrationMode": "ORIGINAL_PRODUCT_EXTENSION_WITH_HISTORICAL_INTERFACE_CONTEXT",
+        "limitations": [
+          "The cited R4 endpoint is context only; no upstream R4 sampling algorithm is copied or claimed."
+        ],
+        "capabilities": [
+          "committed-byte-stream",
+          "cursor",
+          "candidate-binding",
+          "domain-separation"
+        ],
+        "requiredEvidence": [
+          "committed_stream",
+          "candidate_set",
+          "cursor"
+        ],
+        "nativeVocabulary": [
+          "REPRODUCED",
+          "DIVERGED",
+          "CANNOT_RECOMPUTE"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    },
+    {
+      "descriptor": {
+        "profileId": "receiptos.verify.ledger-anchor.v1",
+        "sourceRepository": "pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "capabilities": [
+          "offchain",
+          "ethereum-interface",
+          "xrpl-interface"
+        ],
+        "requiredEvidence": [
+          "anchor",
+          "independent-ledger-observation"
+        ],
+        "nativeVocabulary": [
+          "UNANCHORED",
+          "NOT_ESTABLISHED",
+          "UNSUPPORTED"
+        ]
+      },
+      "unsupportedOperations": [
+        "inspect",
+        "verify_integrity",
+        "verify_authenticity",
+        "bind_subject",
+        "recompute",
+        "evaluate_evidence",
+        "semantic_contract",
+        "guarantee_projection",
+        "provenance"
+      ]
+    }
+  ]
+}

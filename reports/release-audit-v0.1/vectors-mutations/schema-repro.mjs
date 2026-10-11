@@ -1,0 +1,12 @@
+import {readFile,writeFile,cp,mkdir} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import path from 'node:path';
+const root=process.cwd(),out=path.join(root,'reports/release-audit-v0.1/vectors-mutations'),base=path.join(root,'reports/tmp/vm2'),folder=path.join(root,'reports/tmp/vmc9');
+await mkdir(folder,{recursive:true});for(const n of ['src','vendor','provenance','vectors','schemas','tools','mutations','package.json'])await cp(path.join(base,n),path.join(folder,n),{recursive:true});await mkdir(path.join(folder,'reports'),{recursive:true});
+const mutation={id:'audit-invalid-schema-valid-overall',file:'src/core/verify.mjs',positive:'V01',witness:'V04',changes:[["schema:'receiptos.verify.report.v1',projection_version:","schema:request.subject.id===bundle.statement.subject.id?'receiptos.verify.report.v1':'BANANA',projection_version:"],["overall:overall.status,reason_codes:","overall:request.subject.id===bundle.statement.subject.id?overall.status:'VERIFIED',reason_codes:"]]};
+await writeFile(path.join(folder,'mutations/catalog.mjs'),'export const mutations='+JSON.stringify([mutation],null,2)+';\n');
+const start=new Date().toISOString(),argv=['tools/run-mutations.mjs'],run=spawnSync(process.execPath,argv,{cwd:folder,encoding:'utf8',windowsHide:true,timeout:60000});const report=JSON.parse(await readFile(path.join(folder,'reports/mutations.json'),'utf8'));
+const c={name:'invalid-schema-valid-overall',expected_safety_behavior:'SHOULD_REJECT_INVALID_OUTPUT',exit:run.status,report};await writeFile(path.join(out,'control-invalid-schema-valid-overall.json'),JSON.stringify(c,null,2)+'\n');
+const receipt={label:'control-invalid-schema-valid-overall',cwd:folder,argv:[process.execPath,...argv],started:start,ended:new Date().toISOString(),exit:run.status,signal:run.signal,stdout:run.stdout,stderr:run.stderr};await writeFile(path.join(out,'control-invalid-schema-valid-overall.command.json'),JSON.stringify(receipt,null,2)+'\n');
+const rows=JSON.parse(await readFile(path.join(out,'negative-controls.json'),'utf8')).filter(x=>x.name!==c.name);rows.push(c);await writeFile(path.join(out,'negative-controls.json'),JSON.stringify(rows,null,2)+'\n');const receipts=JSON.parse(await readFile(path.join(out,'command-receipts.json'),'utf8')).filter(x=>x.label!==receipt.label);receipts.push(receipt);await writeFile(path.join(out,'command-receipts.json'),JSON.stringify(receipts,null,2)+'\n');
+console.log(JSON.stringify(c));

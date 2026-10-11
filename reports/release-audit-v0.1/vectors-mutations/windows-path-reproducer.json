@@ -1,0 +1,56 @@
+[
+  {
+    "path": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\vectors-mutations-base\\reports\\tmp\\mutant-ignore-requested-subject\\vendor\\rvr\\conformance\\rvr-v0\\rvr-generic-sha256-equals-v0.profile.schema.json",
+    "path_length": 272,
+    "node_read_bytes": 2849,
+    "argv": [
+      "python",
+      "-I",
+      "-B",
+      "-X",
+      "utf8",
+      "-c",
+      "from pathlib import Path; import sys; print(len(Path(sys.argv[1]).read_bytes()))",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\vectors-mutations-base\\reports\\tmp\\mutant-ignore-requested-subject\\vendor\\rvr\\conformance\\rvr-v0\\rvr-generic-sha256-equals-v0.profile.schema.json"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pathlib.py\", line 1019, in read_bytes\r\n    with self.open(mode='rb') as f:\r\n         ^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pathlib.py\", line 1013, in open\r\n    return io.open(self, mode, buffering, encoding, errors, newline)\r\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\msi\\\\Documents\\\\Codex\\\\2026-10-11\\\\files-pasted-by-the-user-mission\\\\outputs\\\\receiptos-verify\\\\reports\\\\tmp\\\\release-rc-audit\\\\vectors-mutations-base\\\\reports\\\\tmp\\\\mutant-ignore-requested-subject\\\\vendor\\\\rvr\\\\conformance\\\\rvr-v0\\\\rvr-generic-sha256-equals-v0.profile.schema.json'\r\n"
+  },
+  {
+    "path": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\vm\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\vendor\\rvr\\conformance\\rvr-v0\\rvr-generic-sha256-equals-v0.profile.schema.json",
+    "path_length": 262,
+    "node_read_bytes": 2849,
+    "argv": [
+      "python",
+      "-I",
+      "-B",
+      "-X",
+      "utf8",
+      "-c",
+      "from pathlib import Path; import sys; print(len(Path(sys.argv[1]).read_bytes()))",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\release-rc-audit\\vm\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\vendor\\rvr\\conformance\\rvr-v0\\rvr-generic-sha256-equals-v0.profile.schema.json"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pathlib.py\", line 1019, in read_bytes\r\n    with self.open(mode='rb') as f:\r\n         ^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\pathlib.py\", line 1013, in open\r\n    return io.open(self, mode, buffering, encoding, errors, newline)\r\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\msi\\\\Documents\\\\Codex\\\\2026-10-11\\\\files-pasted-by-the-user-mission\\\\outputs\\\\receiptos-verify\\\\reports\\\\tmp\\\\release-rc-audit\\\\vm\\\\reports\\\\tmp\\\\mutant-count-crash-as-semantic-refutation\\\\vendor\\\\rvr\\\\conformance\\\\rvr-v0\\\\rvr-generic-sha256-equals-v0.profile.schema.json'\r\n"
+  },
+  {
+    "path": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\vendor\\rvr\\conformance\\rvr-v0\\rvr-generic-sha256-equals-v0.profile.schema.json",
+    "path_length": 246,
+    "node_read_bytes": 2849,
+    "argv": [
+      "python",
+      "-I",
+      "-B",
+      "-X",
+      "utf8",
+      "-c",
+      "from pathlib import Path; import sys; print(len(Path(sys.argv[1]).read_bytes()))",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vm2\\reports\\tmp\\mutant-count-crash-as-semantic-refutation\\vendor\\rvr\\conformance\\rvr-v0\\rvr-generic-sha256-equals-v0.profile.schema.json"
+    ],
+    "exit": 0,
+    "stdout": "2849\r\n",
+    "stderr": ""
+  }
+]

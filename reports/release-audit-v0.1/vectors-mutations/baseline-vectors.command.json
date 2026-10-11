@@ -1,0 +1,15 @@
+{
+  "label": "baseline-vectors",
+  "cwd": "reports/tmp/release-rc-audit/vm",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-vectors.mjs"
+  ],
+  "started": "2026-10-11T18:43:51.988Z",
+  "ended": "2026-10-11T18:44:03.780Z",
+  "exit": 0,
+  "signal": null,
+  "error": null,
+  "stdout": "{\"count\":30,\"passed\":30,\"failed\":0,\"failures\":[]}\n",
+  "stderr": ""
+}

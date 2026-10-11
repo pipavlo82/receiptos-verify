@@ -1,0 +1,15 @@
+{
+  "label": "control-unknown-overall",
+  "cwd": "reports\\tmp\\vmc4",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:46:34.444Z",
+  "ended": "2026-10-11T18:46:36.901Z",
+  "exit": 0,
+  "signal": null,
+  "error": null,
+  "stdout": "audit-unknown-overall: KILLED\n{\"KILLED\":1,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}

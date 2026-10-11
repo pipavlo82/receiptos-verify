@@ -1,0 +1,14 @@
+{
+  "label": "control-invalid-schema-valid-overall",
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\tmp\\vmc9",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "tools/run-mutations.mjs"
+  ],
+  "started": "2026-10-11T18:49:39.227Z",
+  "ended": "2026-10-11T18:49:41.462Z",
+  "exit": 0,
+  "signal": null,
+  "stdout": "audit-invalid-schema-valid-overall: KILLED\n{\"KILLED\":1,\"SURVIVED\":0,\"CRASHED\":0,\"NOT_APPLIED\":0,\"CONTROL_BROKEN\":0,\"INVALID_BASELINE\":0}\n",
+  "stderr": ""
+}
