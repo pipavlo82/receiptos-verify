@@ -1,0 +1,7 @@
+{
+  "checkpointHead": "40fcaa7bbf43872c1ab6d63565ad3c2d9808b81c",
+  "sourceHashes": {
+    "schemas/request-v2.schema.json": "116ab4ba890d570ba5d92fbf2b476aedc71a4101ca2a5a575853bb31ec843cb5",
+    "tests/interpoll-request-classification-release.test.mjs": "2d1891cbb5c436374b21559668e33d0d2db50dedbe3d30fd6e86654b8c6515cb"
+  }
+}

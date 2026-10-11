@@ -1,0 +1,368 @@
+{
+  "frozenCandidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "repairedCommit": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f",
+  "count": 51,
+  "matchingOracleCount": 51,
+  "matchingInputCount": 51,
+  "matchingStatusCount": 51,
+  "matchingLayerCount": 51,
+  "rows": [
+    {
+      "id": "S01_exact",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S02_subject",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S03_authority",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S04_scope",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S05_policy",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S06_version",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S07_missing_dependency",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S08_same_hash_claim",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "S09_contradictory_dependency",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D3_semantic_scope",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D4_semantic_authority",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T01_native_positive",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T02_native_negative",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T03_saved_result_tampered",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T04_empty_corpus",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T05_unimplemented_PR57",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T06_wrong_pin",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T07_package_presence",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "T08_opaque_grade",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D5_trustless_compatible",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D6_trustless_incompatible",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D11_reproduced_negative",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I01_exact",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I02_changed_target",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I03_changed_type",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I04_changed_parameter",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I05_identical_retry",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I06_mutated_retry",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I07_duplicate_only",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I08_missing_observation",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I09_unsupported_authority",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I10_replayed_other_claim",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I11_wrong_observation_attempt",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I12_rejected_observation",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I13_duplicate_executes",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I14_pending_execution",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D7_interpoll_exact",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D8_interpoll_mutated_retry",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "I15_product_other_claim",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P01_positive",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P02_changed_downstream",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P03_negative_preserved",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P04_missing_dependency",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P05_conflicting_native",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P06_unsupported_guarantee",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P07_missing_settlement",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P08_conflicting_settlement",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P09_basis_extra_policy",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D9_prf_preserved",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "D10_prf_violated",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    },
+    {
+      "id": "P10_product_negative_preserved",
+      "literalOracleUnchanged": true,
+      "exactInputUnchanged": true,
+      "productOrAdapterStatusUnchanged": true,
+      "layerStatusesUnchanged": true
+    }
+  ]
+}

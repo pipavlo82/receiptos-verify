@@ -1,0 +1,268 @@
+TAP version 13
+# Subtest: release admission rejects frozen fail-open continuity-binding-_true_
+ok 1 - release admission rejects frozen fail-open continuity-binding-_true_
+  ---
+  duration_ms: 33.5593
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-1
+ok 2 - release admission rejects frozen fail-open continuity-binding-1
+  ---
+  duration_ms: 15.4573
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-__
+ok 3 - release admission rejects frozen fail-open continuity-binding-__
+  ---
+  duration_ms: 7.2561
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-null
+ok 4 - release admission rejects frozen fail-open continuity-binding-null
+  ---
+  duration_ms: 14.8569
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-option
+ok 5 - release admission rejects frozen fail-open continuity-unknown-option
+  ---
+  duration_ms: 18.1494
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-policy
+ok 6 - release admission rejects frozen fail-open continuity-unknown-policy
+  ---
+  duration_ms: 23.11
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+ok 7 - release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+  ---
+  duration_ms: 15.2144
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+ok 8 - release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+  ---
+  duration_ms: 12.0281
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_null_outcome
+ok 9 - release admission rejects captured unsupported requirement interpoll_null_outcome
+  ---
+  duration_ms: 13.9888
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+ok 10 - release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+  ---
+  duration_ms: 21.1257
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+ok 11 - release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+  ---
+  duration_ms: 7.5242
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_null_known_requirement
+ok 12 - release admission rejects captured unsupported requirement prf_null_known_requirement
+  ---
+  duration_ms: 3.8606
+  type: 'test'
+  ...
+# Subtest: release admission preserves limited continuity with Boolean false
+ok 13 - release admission preserves limited continuity with Boolean false
+  ---
+  duration_ms: 1042.7567
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true without envelope evidence stays insufficient
+ok 14 - release admission Boolean true without envelope evidence stays insufficient
+  ---
+  duration_ms: 721.7538
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true plus independently hashed envelope remains preserved
+ok 15 - release admission Boolean true plus independently hashed envelope remains preserved
+  ---
+  duration_ms: 795.7772
+  type: 'test'
+  ...
+# Subtest: release admission supported Interpoll request retains valid native signature and exact relation
+ok 16 - release admission supported Interpoll request retains valid native signature and exact relation
+  ---
+  duration_ms: 459.4924
+  type: 'test'
+  ...
+# Subtest: release admission only omitted Interpoll outcome receives the existing default
+ok 17 - release admission only omitted Interpoll outcome receives the existing default
+  ---
+  duration_ms: 440.0766
+  type: 'test'
+  ...
+# Subtest: release admission missing Interpoll context keeps insufficient evidence behavior
+ok 18 - release admission missing Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 227.1083
+  type: 'test'
+  ...
+# Subtest: release admission empty supported Interpoll context keeps insufficient evidence behavior
+ok 19 - release admission empty supported Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 282.8667
+  type: 'test'
+  ...
+# Subtest: release admission typed different requested action remains a semantic contradiction
+ok 20 - release admission typed different requested action remains a semantic contradiction
+  ---
+  duration_ms: 246.5891
+  type: 'test'
+  ...
+# Subtest: release admission supported PRF requirement preserves native tuple and transfer separately
+ok 21 - release admission supported PRF requirement preserves native tuple and transfer separately
+  ---
+  duration_ms: 1092.0896
+  type: 'test'
+  ...
+# Subtest: release admission absent PRF context keeps selector insufficiency behavior
+ok 22 - release admission absent PRF context keeps selector insufficiency behavior
+  ---
+  duration_ms: 907.7724
+  type: 'test'
+  ...
+# Subtest: release admission typed unsupported PRF guarantee stays explicitly unsupported
+ok 23 - release admission typed unsupported PRF guarantee stays explicitly unsupported
+  ---
+  duration_ms: 872.9115
+  type: 'test'
+  ...
+# Subtest: release admission valid inactive PRF context makes no unrequested guarantee claim
+ok 24 - release admission valid inactive PRF context makes no unrequested guarantee claim
+  ---
+  duration_ms: 681.3915
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity context before semantic execution
+ok 25 - release admission refuses null continuity context before semantic execution
+  ---
+  duration_ms: 1.3109
+  type: 'test'
+  ...
+# Subtest: release admission refuses unknown continuity mode before semantic execution
+ok 26 - release admission refuses unknown continuity mode before semantic execution
+  ---
+  duration_ms: 1.137
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity subject selector before semantic execution
+ok 27 - release admission refuses null continuity subject selector before semantic execution
+  ---
+  duration_ms: 1.0719
+  type: 'test'
+  ...
+# Subtest: release admission refuses nonstring continuity root reference before semantic execution
+ok 28 - release admission refuses nonstring continuity root reference before semantic execution
+  ---
+  duration_ms: 1.1253
+  type: 'test'
+  ...
+# Subtest: release admission refuses null Interpoll context before semantic execution
+ok 29 - release admission refuses null Interpoll context before semantic execution
+  ---
+  duration_ms: 1.1141
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll requested action field before semantic execution
+ok 30 - release admission refuses extra Interpoll requested action field before semantic execution
+  ---
+  duration_ms: 1.2542
+  type: 'test'
+  ...
+# Subtest: release admission refuses missing Interpoll action nonce before semantic execution
+ok 31 - release admission refuses missing Interpoll action nonce before semantic execution
+  ---
+  duration_ms: 1.2224
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll material parameter type before semantic execution
+ok 32 - release admission refuses wrong Interpoll material parameter type before semantic execution
+  ---
+  duration_ms: 1.1462
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll authority field before semantic execution
+ok 33 - release admission refuses extra Interpoll authority field before semantic execution
+  ---
+  duration_ms: 1.1141
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll authority type before semantic execution
+ok 34 - release admission refuses wrong Interpoll authority type before semantic execution
+  ---
+  duration_ms: 1.2459
+  type: 'test'
+  ...
+# Subtest: release admission refuses unsupported Interpoll outcome before semantic execution
+ok 35 - release admission refuses unsupported Interpoll outcome before semantic execution
+  ---
+  duration_ms: 1.0731
+  type: 'test'
+  ...
+# Subtest: release admission refuses null PRF context before semantic execution
+ok 36 - release admission refuses null PRF context before semantic execution
+  ---
+  duration_ms: 1.2099
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF accepted basis field before semantic execution
+ok 37 - release admission refuses extra PRF accepted basis field before semantic execution
+  ---
+  duration_ms: 1.2568
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF dependency version type before semantic execution
+ok 38 - release admission refuses wrong PRF dependency version type before semantic execution
+  ---
+  duration_ms: 1.2247
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF dependency field before semantic execution
+ok 39 - release admission refuses extra PRF dependency field before semantic execution
+  ---
+  duration_ms: 1.1729
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF native result field before semantic execution
+ok 40 - release admission refuses extra PRF native result field before semantic execution
+  ---
+  duration_ms: 1.1743
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF native vocabulary before semantic execution
+ok 41 - release admission refuses wrong PRF native vocabulary before semantic execution
+  ---
+  duration_ms: 1.2158
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF tuple selector type before semantic execution
+ok 42 - release admission refuses wrong PRF tuple selector type before semantic execution
+  ---
+  duration_ms: 1.197
+  type: 'test'
+  ...
+# Subtest: release admission rejects ambiguous accepted PRF dependency identities
+ok 43 - release admission rejects ambiguous accepted PRF dependency identities
+  ---
+  duration_ms: 2.9483
+  type: 'test'
+  ...
+1..43
+# tests 43
+# suites 0
+# pass 43
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8947.751

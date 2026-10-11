@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "python",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-repaired\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains-final\\cases\\independent_negative-native-input.json"
+  ],
+  "status": 0,
+  "stdout": "{\r\n  \"profile\": \"scan_subject_binding.v0\",\r\n  \"reproduced\": 1,\r\n  \"results\": [\r\n    {\r\n      \"case_id\": \"independent_negative\",\r\n      \"reproduced\": true,\r\n      \"result\": {\r\n        \"evidence_grade\": \"REPRODUCED\",\r\n        \"replay_bindings\": \"valid\",\r\n        \"result_only_check\": \"VALID\",\r\n        \"subject_bound_check\": \"CONTRADICTED\"\r\n      }\r\n    }\r\n  ],\r\n  \"total\": 1\r\n}\r\n",
+  "stderr": "",
+  "checkerSha256": "8c35eb3c2dcbd30ce190c569a797cde1c7d86cc0130985b8a533cad640fe0a06"
+}

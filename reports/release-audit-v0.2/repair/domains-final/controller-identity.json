@@ -1,0 +1,5 @@
+{
+  "frozenAuditControllerSha256": "37a5c090ccf87d37f272f695b28ef5c6e04ee4a5c49916751dfe42bc3969942b",
+  "onlyChange": "Repository URL ./repo/ -> ../v02-audit-repaired/; literal oracles unchanged.",
+  "repairedControllerSha256": "c949397518bee78792f0591e422e68aea039402f8a8679c22e00093b241ae113"
+}

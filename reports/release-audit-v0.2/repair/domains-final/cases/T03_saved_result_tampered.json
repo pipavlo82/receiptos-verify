@@ -1,0 +1,257 @@
+{
+  "id": "T03_saved_result_tampered",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "DIVERGED",
+    "notes": ""
+  },
+  "input": {
+    "input": {
+      "profile": "scan_subject_binding.v0",
+      "source_pin": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "case_id": "independent_positive",
+      "input": {
+        "public_key_ed25519": "b25c1bedd9e7e182151a9248f1fa060bcb9bbbdd565dc30b6bd3262976ef4c7b",
+        "toy_scan": {
+          "scanner_version": "audit02-detached-toy/1",
+          "pattern": "audit-poison-token"
+        },
+        "corpus": [
+          {
+            "id": "independent-audit-policy",
+            "content": "Allowed amount is 37 USD."
+          }
+        ],
+        "manifest": {
+          "body": {
+            "rag_corpus": {
+              "merkle_root": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+              "poisoning_scan": {
+                "result": "clean",
+                "scanner_version": "audit02-detached-toy/1",
+                "subject_digest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+                "semantics": "recordwise"
+              }
+            }
+          },
+          "sig": "82925ad0dbe15499e331e0e76d7aa0217a19ffb136ed42362a6fe3bf639f46a3160bb9548e1ea5f73dc16fbf380abaa050d7e281f90c567587988e78366f4a09"
+        },
+        "decision": {
+          "corpus_root": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+          "effective_dataset_digest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+          "query": "allowed amount",
+          "k": 1,
+          "retrieved": [
+            {
+              "id": "independent-audit-policy",
+              "content": "Allowed amount is 37 USD."
+            }
+          ],
+          "answer": "37 USD",
+          "inclusion_proofs": []
+        }
+      },
+      "artifact": {
+        "profile": "scan_subject_binding.v0",
+        "reproduced": 1,
+        "results": [
+          {
+            "case_id": "independent_positive",
+            "reproduced": true,
+            "result": {
+              "evidence_grade": "REPRODUCED",
+              "replay_bindings": "valid",
+              "result_only_check": "VALID",
+              "subject_bound_check": "CONTRADICTED"
+            }
+          }
+        ],
+        "total": 1
+      }
+    },
+    "context": {}
+  },
+  "output": {
+    "status": "DIVERGED",
+    "semanticOutcome": "VERIFIED",
+    "recomputationStatus": "DIVERGED",
+    "reasonCodes": [
+      "TRUSTLESS_NATIVE_RESULT_DIVERGED"
+    ],
+    "nativeResult": {
+      "suiteId": "scan_subject_binding.v0",
+      "checkId": "conformance",
+      "caseId": "independent_positive",
+      "verdict": "SUITE",
+      "semanticVerdict": "NO_FINDING",
+      "evidenceGrade": "REPRODUCED",
+      "sourcePin": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "vectorCorpusIdentity": "31d7c2e0eb76666ae0366737363894a85da61871abd01639851c3ea13ac457a4",
+      "contractMode": null,
+      "runnerContractInterpretation": "MAIN_SELF_GRADING",
+      "result": {
+        "evidence_grade": "REPRODUCED",
+        "replay_bindings": "valid",
+        "result_only_check": "VALID",
+        "subject_bound_check": "NO_FINDING"
+      },
+      "savedArtifact": {
+        "profile": "scan_subject_binding.v0",
+        "reproduced": 1,
+        "results": [
+          {
+            "case_id": "independent_positive",
+            "reproduced": true,
+            "result": {
+              "evidence_grade": "REPRODUCED",
+              "replay_bindings": "valid",
+              "result_only_check": "VALID",
+              "subject_bound_check": "CONTRADICTED"
+            }
+          }
+        ],
+        "total": 1
+      },
+      "recomputedArtifact": {
+        "profile": "scan_subject_binding.v0",
+        "reproduced": 0,
+        "results": [
+          {
+            "case_id": "independent_positive",
+            "reproduced": false,
+            "result": {
+              "evidence_grade": "REPRODUCED",
+              "replay_bindings": "valid",
+              "result_only_check": "VALID",
+              "subject_bound_check": "NO_FINDING"
+            }
+          }
+        ],
+        "total": 1
+      },
+      "runner": {
+        "detail": "exit 1: }",
+        "kind": "SUITE",
+        "name": "scan-subject-binding-v0/conformance",
+        "ok": false,
+        "verdict": "SUITE"
+      },
+      "replayFailures": []
+    },
+    "execution": {
+      "status": "COMPLETED",
+      "exitCode": 0,
+      "signal": null,
+      "argv": [
+        "python",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-repaired\\src\\adapters\\native\\trustless-bridge.py"
+      ],
+      "stdout": "{\"computed_corpus_digest\":\"sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4\",\"computed_effective_dataset_digest\":\"sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4\",\"native_artifact\":{\"profile\":\"scan_subject_binding.v0\",\"reproduced\":0,\"results\":[{\"case_id\":\"independent_positive\",\"reproduced\":false,\"result\":{\"evidence_grade\":\"REPRODUCED\",\"replay_bindings\":\"valid\",\"result_only_check\":\"VALID\",\"subject_bound_check\":\"NO_FINDING\"}}],\"total\":1},\"native_exit_code\":1,\"native_result\":{\"evidence_grade\":\"REPRODUCED\",\"replay_bindings\":\"valid\",\"result_only_check\":\"VALID\",\"subject_bound_check\":\"NO_FINDING\"},\"native_stderr\":\"\",\"native_vector_digest\":\"31d7c2e0eb76666ae0366737363894a85da61871abd01639851c3ea13ac457a4\",\"ok\":true,\"profile\":\"scan_subject_binding.v0\",\"python_version\":\"3.12.10\",\"replay_failures\":[],\"runner_result\":{\"detail\":\"exit 1: }\",\"kind\":\"SUITE\",\"name\":\"scan-subject-binding-v0/conformance\",\"ok\":false,\"verdict\":\"SUITE\"},\"signature_valid\":true}\n",
+      "stderr": "",
+      "stdoutSha256": "1484d58b05ab1c9d6061ee93813dc6bfb444f262af915e028d79c5b6085582b5",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "provenance": {
+      "profileId": "receiptos.verify.trustless-scan.v2",
+      "nativeProfileId": "scan_subject_binding.v0",
+      "sourceRepository": "https://github.com/trustless-ai/recompute-kit",
+      "sourceCommit": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "license": "CC0-1.0",
+      "maturity": "EXPERIMENTAL",
+      "sourceMaturity": "STABLE",
+      "sourceState": "PUBLIC_MAIN",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "NATIVE_SCAN_SUBJECT_BINDING",
+        "NATIVE_ED25519_MANIFEST_CHECK",
+        "NATIVE_RESULT_REPLAY",
+        "NATIVE_SELF_GRADING_RUNNER"
+      ],
+      "requiredEvidence": [
+        "signed-scan-manifest",
+        "corpus-and-decision",
+        "saved-native-scan-result"
+      ],
+      "nativeVocabulary": {
+        "semantic": [
+          "NO_FINDING",
+          "CONTRADICTED",
+          "CANNOT_ESTABLISH",
+          "NOT_VALID"
+        ],
+        "evidenceGrade": [
+          "REPRODUCED",
+          "AUTHENTICATED_REPORT",
+          null
+        ],
+        "runner": [
+          "PASS",
+          "SUITE",
+          "DRIFT",
+          "RUNNER",
+          "NOT COVERED",
+          "UNVERIFIABLE"
+        ],
+        "replay": [
+          "REPRODUCED",
+          "DIVERGED",
+          "CANNOT_RECOMPUTE"
+        ]
+      },
+      "contractMode": "MAIN_SELF_GRADING",
+      "reporterContract": "NOT_IMPLEMENTED",
+      "functions": [
+        "check_decision",
+        "sig_ok",
+        "subject_bound",
+        "result_only",
+        "main",
+        "run_suite"
+      ]
+    },
+    "limitations": [
+      "sourceMaturity STABLE identifies the merged public relation; maturity EXPERIMENTAL identifies this bounded product integration, not production security certification or full recompute-kit conformance.",
+      "Only scan_subject_binding.v0 is executable here. Other suites and PR57 reporter contracts are unsupported.",
+      "NO_FINDING means only this declared scanner found nothing in its bound subject; it never means POISONING_ABSENT.",
+      "AUTHENTICATED_REPORT establishes a signed assertion; it does not establish scanner-origin execution.",
+      "The supplied scanner pattern/version is a declared deterministic toy scan, not a general poisoning detector.",
+      "Canonical runner PASS records reproduction against the saved target; it is not an independent positive semantic verdict."
+    ],
+    "evidenceGrade": "REPRODUCED",
+    "semanticCompatibility": null,
+    "observedSubject": {
+      "kind": "rag-effective-dataset",
+      "id": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+      "version": "audit02-detached-toy/1",
+      "artifact_digest": "793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4"
+    },
+    "observedArtifactDigest": "8c977994f9321fa5dfd429bba590de52a07b95a51ff376ebea5cc10aa4af84b4",
+    "nativeBinding": {
+      "profileId": "scan_subject_binding.v0",
+      "caseId": "independent_positive",
+      "inputDigest": "8c977994f9321fa5dfd429bba590de52a07b95a51ff376ebea5cc10aa4af84b4",
+      "subject": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+      "corpusDigest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4"
+    },
+    "binding": {
+      "corpusDigest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+      "effectiveDatasetDigest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+      "signedScannerSubject": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+      "signatureValid": true,
+      "scannerVersion": "audit02-detached-toy/1",
+      "declaredToyScan": {
+        "scanner_version": "audit02-detached-toy/1",
+        "pattern": "audit-poison-token"
+      },
+      "query": "allowed amount",
+      "k": 1
+    }
+  },
+  "assessment": "PASS",
+  "actual": "DIVERGED",
+  "inputSha256": "ba868afdd19a8dcc3d5933a0851f89c74dd07f07481b5144b049ce336afafe43"
+}
