@@ -1104,13 +1104,13 @@
     },
     {
       "path": "web/index.html",
-      "bytes": 7334,
-      "sha256": "62801110a67c049071456e6c175623f09ca1f027b9cca8b56c9f5e6d91457046"
+      "bytes": 8170,
+      "sha256": "3a6e7d2f960b00fea0f2c82e77a0ad17e6f4d99b050b3349ed37e7be6f686423"
     },
     {
       "path": "web/style.css",
-      "bytes": 6898,
-      "sha256": "c76a469189003e817313ef8f5f88db6bfbf70327d2a3f1cbd1a40d1f08710bec"
+      "bytes": 7672,
+      "sha256": "10eb27f0d314ee424a4a5f8521304af58158b5639bedd6c0c0e8112e978015a5"
     }
   ]
 }

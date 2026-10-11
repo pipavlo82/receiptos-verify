@@ -1,0 +1,21 @@
+{
+  "schema": "receiptos.verify.design-references.v1",
+  "usage": "VISUAL_REFERENCE_ONLY; poster claims not adopted as product evidence",
+  "references": [
+    {
+      "role": "PRF poster visual reference",
+      "path": "C:/Users/msi/AppData/Local/Temp/codex-clipboard-c5b66a96-c5f0-457b-a93a-1dc95eedebee.png",
+      "sha256": "38ac1156984237d7251860fd08898f436034a645aab11d1f440ed0f19b3292cd"
+    },
+    {
+      "role": "ReceiptOS design-context banner visual reference",
+      "path": "C:/Users/msi/AppData/Local/Temp/codex-clipboard-c4e2b36f-a9b9-447d-89be-babfa93902ea.png",
+      "sha256": "b69c87a2a48d54c714d90df1d8a7cd644edc79880823442b73a8a63e84a4e9d4"
+    },
+    {
+      "role": "TSEI ship to wireframe visual reference",
+      "path": "C:/Users/msi/AppData/Local/Temp/codex-clipboard-1b029e44-6041-4b4f-bbe5-8c35222c5d11.png",
+      "sha256": "ad17c9a2238bd5c233794e077efe6a4def0866ef4afc3b95dec284b9e3af4d63"
+    }
+  ]
+}
