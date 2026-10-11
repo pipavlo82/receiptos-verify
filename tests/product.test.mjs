@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { readVector, runVector, discrepancies } from '../tools/corpus.mjs';
+import { project } from '../src/projection/project.mjs';
+import { verify } from '../src/core/verify.mjs';
+import { resign } from '../tools/fixtures.mjs';
+const index=JSON.parse(await readFile(new URL('../vectors/index.json',import.meta.url),'utf8'));
+test('corpus is nonempty with all twenty required classes',()=>{assert.ok(index.vectors.length>=20);for(let i=1;i<=20;i++)assert.ok(index.vectors.some(v=>v.id==='V'+String(i).padStart(2,'0')));});
+for(const {id,title} of index.vectors) test(id+' '+title,async()=>{const vector=await readVector(id);const report=await runVector(vector);assert.deepEqual(discrepancies(vector,report),[]);});
+test('empty projection cannot produce VERIFIED',()=>assert.equal(project({},[]).status,'INSUFFICIENT_EVIDENCE'));
+test('duplicate JSON keys are rejected before execution',async()=>assert.equal((await verify('{"schema":1,"schema":2}','{}')).overall,'REJECTED_MALFORMED'));
+test('caller cannot remove subject binding from required obligations',async()=>{const v=await readVector('V02');v.request.policy.required_layers=[];const r=await verify(v.request,v.bundle);assert.equal(r.overall,'CONTRADICTED');assert.ok(r.required_layers.includes('SUBJECT_BINDING'));});
+test('unsupported profile does not hide independently detectable attachment tamper',async()=>{const v=await readVector('V16');v.bundle.evidence[0].bytes_base64='eA==';assert.equal((await verify(v.request,v.bundle)).overall,'REJECTED_MALFORMED');});
+test('native claim cannot be silently repaired before replay',async()=>{const v=await readVector('V01');v.bundle.payload.rvr.candidateCase.claim.expectedDigest='0'.repeat(64);resign(v);const r=await verify(v.request,v.bundle);assert.equal(r.overall,'REJECTED_MALFORMED');assert.ok(r.reason_codes.includes('NATIVE_CLAIM_MISMATCH'));});
+test('ambiguous native result attachments are rejected',async()=>{const v=await readVector('V01');v.bundle.statement.evidence_manifest.push({...v.bundle.statement.evidence_manifest.at(-1),id:'other'});v.bundle.evidence.push({...v.bundle.evidence.at(-1),id:'other'});resign(v);assert.equal((await verify(v.request,v.bundle)).overall,'REJECTED_MALFORMED');});
+test('caller action requirement cannot override observed retry bytes',async()=>{const v=await readVector('V14');v.request.domain_requirement.attempts=[];assert.equal((await verify(v.request,v.bundle)).overall,'REJECTED_MALFORMED');});
+test('empty detached authorization cannot establish producer selected action',async()=>{const v=await readVector('V13');v.request.domain_requirement={};assert.equal((await verify(v.request,v.bundle)).overall,'REJECTED_MALFORMED');});

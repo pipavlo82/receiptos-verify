@@ -1,0 +1,254 @@
+{
+  "schema": "receiptos.verify.dependencies.v1",
+  "observedAt": "2026-10-11T18:12:20.828474+00:00",
+  "evidenceClass": "INDEPENDENTLY_INSPECTED_LOCAL_LOCKFILE_INSTALLED_PACKAGE_METADATA_AND_LICENSE_BYTES; TARBALL_INTEGRITY_IS_LOCKFILE_DECLARATION",
+  "lockfile": {
+    "path": "package-lock.json",
+    "sha256": "34c5ead1add79a374494eba5d51966d5557f2109373d1a0ab9bc01ebbb5e307c",
+    "lockfileVersion": 3
+  },
+  "packageJSON": {
+    "path": "package.json",
+    "sha256": "d3d42e3ad60a272016e098024670df6df35bc79696232d8b89f4881614250881"
+  },
+  "packages": [
+    {
+      "name": "@noble/curves",
+      "version": "2.0.1",
+      "direct": true,
+      "runtimeDependency": true,
+      "resolvedURL": "https://registry.npmjs.org/@noble/curves/-/curves-2.0.1.tgz",
+      "lockfileDeclaredIntegrity": "sha512-vs1Az2OOTBiP4q0pwjW5aF0xp9n4MxVrmkFBxc6EKZc6ddYx5gaZiAsZoq0uRRXWbi3AT/sBqn05eRPtn1JCPw==",
+      "license": "MIT",
+      "dependencies": {
+        "@noble/hashes": "2.0.1"
+      },
+      "installedPackageJSON": "node_modules/@noble/curves/package.json",
+      "installedVersionMatchesLock": true,
+      "legalFiles": [
+        {
+          "path": "node_modules/@noble/curves/LICENSE",
+          "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+          "bytes": 1109
+        }
+      ],
+      "productConsumers": [
+        "src/adapters/interpoll.mjs",
+        "tools/fixtures.mjs"
+      ],
+      "redistributedLegalEvidence": {
+        "status": "COPIED_UNMODIFIED_AND_HASH_VERIFIED_AGAINST_INSTALLED_LICENSE",
+        "manifest": "provenance/npm-licenses.json",
+        "files": [
+          {
+            "path": "vendor/licenses/@noble__curves/LICENSE",
+            "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+          }
+        ]
+      }
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "2.0.1",
+      "direct": false,
+      "runtimeDependency": true,
+      "resolvedURL": "https://registry.npmjs.org/@noble/hashes/-/hashes-2.0.1.tgz",
+      "lockfileDeclaredIntegrity": "sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==",
+      "license": "MIT",
+      "dependencies": {},
+      "installedPackageJSON": "node_modules/@noble/hashes/package.json",
+      "installedVersionMatchesLock": true,
+      "legalFiles": [
+        {
+          "path": "node_modules/@noble/hashes/LICENSE",
+          "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec",
+          "bytes": 1109
+        }
+      ],
+      "productConsumers": [
+        "transitive via the direct package edge"
+      ],
+      "redistributedLegalEvidence": {
+        "status": "COPIED_UNMODIFIED_AND_HASH_VERIFIED_AGAINST_INSTALLED_LICENSE",
+        "manifest": "provenance/npm-licenses.json",
+        "files": [
+          {
+            "path": "vendor/licenses/@noble__hashes/LICENSE",
+            "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ajv",
+      "version": "8.20.0",
+      "direct": true,
+      "runtimeDependency": true,
+      "resolvedURL": "https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz",
+      "lockfileDeclaredIntegrity": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==",
+      "license": "MIT",
+      "dependencies": {
+        "fast-deep-equal": "^3.1.3",
+        "fast-uri": "^3.0.1",
+        "json-schema-traverse": "^1.0.0",
+        "require-from-string": "^2.0.2"
+      },
+      "installedPackageJSON": "node_modules/ajv/package.json",
+      "installedVersionMatchesLock": true,
+      "legalFiles": [
+        {
+          "path": "node_modules/ajv/LICENSE",
+          "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3",
+          "bytes": 1090
+        }
+      ],
+      "productConsumers": [
+        "src/core/schemas.mjs"
+      ],
+      "redistributedLegalEvidence": {
+        "status": "COPIED_UNMODIFIED_AND_HASH_VERIFIED_AGAINST_INSTALLED_LICENSE",
+        "manifest": "provenance/npm-licenses.json",
+        "files": [
+          {
+            "path": "vendor/licenses/ajv/LICENSE",
+            "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "direct": false,
+      "runtimeDependency": true,
+      "resolvedURL": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+      "lockfileDeclaredIntegrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+      "license": "MIT",
+      "dependencies": {},
+      "installedPackageJSON": "node_modules/fast-deep-equal/package.json",
+      "installedVersionMatchesLock": true,
+      "legalFiles": [
+        {
+          "path": "node_modules/fast-deep-equal/LICENSE",
+          "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+          "bytes": 1074
+        }
+      ],
+      "productConsumers": [
+        "transitive via the direct package edge"
+      ],
+      "redistributedLegalEvidence": {
+        "status": "COPIED_UNMODIFIED_AND_HASH_VERIFIED_AGAINST_INSTALLED_LICENSE",
+        "manifest": "provenance/npm-licenses.json",
+        "files": [
+          {
+            "path": "vendor/licenses/fast-deep-equal/LICENSE",
+            "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+          }
+        ]
+      }
+    },
+    {
+      "name": "fast-uri",
+      "version": "3.1.8",
+      "direct": false,
+      "runtimeDependency": true,
+      "resolvedURL": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.8.tgz",
+      "lockfileDeclaredIntegrity": "sha512-GZMtZUTNRpOVIECoXwLNZS5xUGE+mVNbTB8h/7Rwh2TFWcBQiPzTgyZi05BF9UMZKkLJv8XBRJTlU7zg8+ZfMg==",
+      "license": "BSD-3-Clause",
+      "dependencies": {},
+      "installedPackageJSON": "node_modules/fast-uri/package.json",
+      "installedVersionMatchesLock": true,
+      "legalFiles": [
+        {
+          "path": "node_modules/fast-uri/LICENSE",
+          "sha256": "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786",
+          "bytes": 1813
+        }
+      ],
+      "productConsumers": [
+        "transitive via the direct package edge"
+      ],
+      "redistributedLegalEvidence": {
+        "status": "COPIED_UNMODIFIED_AND_HASH_VERIFIED_AGAINST_INSTALLED_LICENSE",
+        "manifest": "provenance/npm-licenses.json",
+        "files": [
+          {
+            "path": "vendor/licenses/fast-uri/LICENSE",
+            "sha256": "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786"
+          }
+        ]
+      }
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "1.0.0",
+      "direct": false,
+      "runtimeDependency": true,
+      "resolvedURL": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
+      "lockfileDeclaredIntegrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+      "license": "MIT",
+      "dependencies": {},
+      "installedPackageJSON": "node_modules/json-schema-traverse/package.json",
+      "installedVersionMatchesLock": true,
+      "legalFiles": [
+        {
+          "path": "node_modules/json-schema-traverse/LICENSE",
+          "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a",
+          "bytes": 1074
+        }
+      ],
+      "productConsumers": [
+        "transitive via the direct package edge"
+      ],
+      "redistributedLegalEvidence": {
+        "status": "COPIED_UNMODIFIED_AND_HASH_VERIFIED_AGAINST_INSTALLED_LICENSE",
+        "manifest": "provenance/npm-licenses.json",
+        "files": [
+          {
+            "path": "vendor/licenses/json-schema-traverse/LICENSE",
+            "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+          }
+        ]
+      }
+    },
+    {
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "direct": false,
+      "runtimeDependency": true,
+      "resolvedURL": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+      "lockfileDeclaredIntegrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+      "license": "MIT",
+      "dependencies": {},
+      "installedPackageJSON": "node_modules/require-from-string/package.json",
+      "installedVersionMatchesLock": true,
+      "legalFiles": [
+        {
+          "path": "node_modules/require-from-string/license",
+          "sha256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f",
+          "bytes": 1128
+        }
+      ],
+      "productConsumers": [
+        "transitive via the direct package edge"
+      ],
+      "redistributedLegalEvidence": {
+        "status": "COPIED_UNMODIFIED_AND_HASH_VERIFIED_AGAINST_INSTALLED_LICENSE",
+        "manifest": "provenance/npm-licenses.json",
+        "files": [
+          {
+            "path": "vendor/licenses/require-from-string/license",
+            "sha256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+          }
+        ]
+      }
+    }
+  ],
+  "boundaries": [
+    "Package version/integrity pins and license texts do not establish software soundness.",
+    "Native Bun/Node/Python runtimes are separate environment requirements, not npm-vendored packages.",
+    "Third-party grants are preserved separately from the product Apache grant. fast-uri is BSD-3-Clause; the remaining six locked runtime packages are MIT."
+  ],
+  "npmLicenseManifest": "provenance/npm-licenses.json"
+}

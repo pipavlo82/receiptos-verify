@@ -1,0 +1,14 @@
+{
+  "schema": "receiptos.verify.profile.v1",
+  "profile_id": "receiptos.verify.git-artifact.v1",
+  "maturity": "EXPERIMENTAL",
+  "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+  "projection_version": "receiptos.verify.projection.v1",
+  "claim": "SHA256_EQUALS over exact regular file bytes in a SHA1 Git commit/tree closure",
+  "required_layers": ["INTEGRITY", "AUTHENTICITY", "SUBJECT_BINDING", "RECOMPUTATION", "EVIDENCE_SUFFICIENCY", "SEMANTIC_COMPATIBILITY"],
+  "required_roles": ["artifact", "git-commit", "git-tree", "native-result"],
+  "authenticity": "Ed25519 product statement, caller-selected SPKI trust key; not repository author or provider attestation",
+  "rvr_profile": "rvr-generic-sha256-equals-v0",
+  "guarantee_context": "Caller-owned separately accepted bounded premises; never producer self-grading",
+  "does_not_establish": ["real-world truth", "remote GitHub acceptance", "hardware execution", "freshness beyond selected policy", "network consensus", "production security clearance"]
+}

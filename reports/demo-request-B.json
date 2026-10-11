@@ -1,0 +1,54 @@
+{
+  "schema": "receiptos.verify.request.v1",
+  "verification_profile": "receiptos.verify.git-artifact.v1",
+  "claim": {
+    "kind": "SHA256_EQUALS",
+    "expected_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+  },
+  "subject": {
+    "kind": "git-artifact",
+    "id": "demo:receiptos",
+    "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+    "commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+    "artifact_path": "result.txt",
+    "version": "1"
+  },
+  "policy": {
+    "id": "local-v1",
+    "version": "1",
+    "trusted_keys": [
+      {
+        "id": "synthetic-demo",
+        "spki_base64": "MCowBQYDK2VwAyEAiojj3XQJ8ZX9UtstPLpdcspnCb8dlBIb83SIAbQPb1w="
+      }
+    ],
+    "required_layers": [
+      "INTEGRITY",
+      "AUTHENTICITY",
+      "SUBJECT_BINDING",
+      "RECOMPUTATION",
+      "EVIDENCE_SUFFICIENCY",
+      "SEMANTIC_COMPATIBILITY"
+    ],
+    "minimum_grade": "LOCAL_RECOMPUTATION",
+    "verification_time": 1
+  },
+  "evidence": [],
+  "semantic_requirement": {
+    "claim_type": "artifact-digest",
+    "authority_class": "INDEPENDENT_RECOMPUTATION",
+    "subject": "demo:receiptos",
+    "scope": {
+      "artifact_path": "result.txt"
+    },
+    "valid_after": 0,
+    "valid_until": 100,
+    "assumptions": [],
+    "evidence_requirements": [
+      "artifact",
+      "execution"
+    ]
+  },
+  "requested_guarantees": []
+}

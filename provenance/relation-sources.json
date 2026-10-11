@@ -1,0 +1,288 @@
+{
+  "schema": "receiptos.verify.relation-sources.v1",
+  "observed_at_utc": "2026-10-11T17:46:16.581351+00:00",
+  "evidence_discipline": {
+    "independently_verified": "Exact GitHub commit and selected source bytes, independently recomputed Git object OIDs/SHA256, byte equality with frozen snapshots where present; live PR metadata",
+    "upstream_reported": "Source specifications and declared native semantics; upstream runtimes are not executed by these relation adapters",
+    "inferred": "ReceiptOS subject, interval, actual-evidence, bounded guarantee and sequence/currentness extensions are original product semantics, not native wire conformance"
+  },
+  "sources": [
+    {
+      "repository": "trustless-ai/semantic-abi",
+      "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "commit_verification": "GitHub git commit API exact SHA",
+      "tree": "63b5075bffb3027ab63c2a7f25de06502b0ed861",
+      "selected_paths": [
+        {
+          "path": "LICENSE",
+          "bytes": 11358,
+          "git_blob_sha1": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/LICENSE",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "schema/LICENSE-CC0.txt",
+          "bytes": 7049,
+          "git_blob_sha1": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+          "sha256": "7179683e8000e6bdc9bbc60d85edf0a4ac8e76f951857f54fcb775d5886f1309",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/schema/LICENSE-CC0.txt",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "schema/manifest.schema.json",
+          "bytes": 3842,
+          "git_blob_sha1": "647fc36d7d34756119a757d10b94b4473db44aa0",
+          "sha256": "3219f51c7929ff915b71e5931a5d10edc5e15e73809fc2c47107592490bbe397",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/schema/manifest.schema.json",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "schema/manifest-v0.md",
+          "bytes": 6173,
+          "git_blob_sha1": "fb08e8897e41e933cb6ba653f2e545313057db28",
+          "sha256": "1361dbd123ae3f270ed39d1236b91d49d3ccdb9161dcfbdec4579a50be4f0a02",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/schema/manifest-v0.md",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "runner/src/linker.mjs",
+          "bytes": 4044,
+          "git_blob_sha1": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+          "sha256": "bae8e519361989bfadbb5d226cb9940255cd954c60b40ba42136a2b11161d391",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/runner/src/linker.mjs",
+          "snapshot_bytes_equal": true
+        }
+      ]
+    },
+    {
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "commit": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "commit_verification": "GitHub git commit API exact SHA",
+      "tree": "af8f26ced6f38435d534b330007bef917584b840",
+      "selected_paths": [
+        {
+          "path": "LICENSE",
+          "bytes": 1074,
+          "git_blob_sha1": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "sha256": "11d93abd8b3371d3d3dbc536e11e132f3482dc6334eca0006601cfd58229253e",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/protected-relation-fixtures/blob/fac26d2e8346aeab08194343b78c345d235c6935/LICENSE",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "spec/protected-relation-model.md",
+          "bytes": 7391,
+          "git_blob_sha1": "fd742a2f2e36c5216ddd8a789bb0cc521fc24b4f",
+          "sha256": "a985f324348890dfe085827e959ba6be1a7e5636f2d6ee1dff5e0869e2365e9a",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/protected-relation-fixtures/blob/fac26d2e8346aeab08194343b78c345d235c6935/spec/protected-relation-model.md",
+          "snapshot_bytes_equal": true
+        }
+      ]
+    },
+    {
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "commit": "f525737069dc4cef7741f805d08a988912f4454f",
+      "commit_verification": "GitHub git commit API exact SHA",
+      "tree": "40e1a752a4ceafc6670a5d0a2ba3d46d12fe9644",
+      "selected_paths": [
+        {
+          "path": "LICENSE",
+          "bytes": 1074,
+          "git_blob_sha1": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "sha256": "11d93abd8b3371d3d3dbc536e11e132f3482dc6334eca0006601cfd58229253e",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/protected-relation-fixtures/blob/f525737069dc4cef7741f805d08a988912f4454f/LICENSE"
+        },
+        {
+          "path": "conformance/guarantee-preservation-v0/README.md",
+          "bytes": 12833,
+          "git_blob_sha1": "7c468a47a4c1cb6c4259bf2de52e3ca4e75e4cae",
+          "sha256": "e84a3296f6b0fa4c64de0f279bc849588d95cd976ec371acec142d5df1e64c41",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/protected-relation-fixtures/blob/f525737069dc4cef7741f805d08a988912f4454f/conformance/guarantee-preservation-v0/README.md"
+        },
+        {
+          "path": "conformance/guarantee-preservation-v0/contract.schema.json",
+          "bytes": 6598,
+          "git_blob_sha1": "b2f3af30bfddee777d7beb5a5ecd19fa28af0e39",
+          "sha256": "44229b0a8322b4fe2f2c2946e0fa705e64c9bee4565693276e7db53155c5ae31",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/protected-relation-fixtures/blob/f525737069dc4cef7741f805d08a988912f4454f/conformance/guarantee-preservation-v0/contract.schema.json"
+        },
+        {
+          "path": "tools/guarantee_preservation.py",
+          "bytes": 10325,
+          "git_blob_sha1": "9efe4c60a5d6ac0072a2b6942f0240f73d56d500",
+          "sha256": "4cd064ae8af814c19d0948d86eed625e30d3190b91d73725c083071f86cc0b5d",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/protected-relation-fixtures/blob/f525737069dc4cef7741f805d08a988912f4454f/tools/guarantee_preservation.py"
+        }
+      ]
+    },
+    {
+      "repository": "pipavlo82/Chronicle",
+      "commit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "commit_verification": "GitHub git commit API exact SHA",
+      "tree": "632fb367689f7694bf7782ba8ef98f61ad1b8d6a",
+      "selected_paths": [
+        {
+          "path": "LICENSE",
+          "bytes": 10258,
+          "git_blob_sha1": "664988c2f914f7aa93b6a59a664b297211151afe",
+          "sha256": "5a92139183111df03bdbf51afb7a45f4578efc3c8b5d6a32d190b0dde939961e",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/Chronicle/blob/c467b48fd18fc8ec86f10582befa35946ce41914/LICENSE",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "docs/LICENSE_POLICY_V0.md",
+          "bytes": 4973,
+          "git_blob_sha1": "dfb7c0b872cfd895c8243d6c3a725651dc018db3",
+          "sha256": "89652644266a98d142a2e4793215834c30fc757e82f5ebae957a9159c78e4d92",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/Chronicle/blob/c467b48fd18fc8ec86f10582befa35946ce41914/docs/LICENSE_POLICY_V0.md",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "specs/chronicle_entry_v0.md",
+          "bytes": 11214,
+          "git_blob_sha1": "9ee49e8b3c88dadaf812e0c606b9e1bd9c6d87b5",
+          "sha256": "80853e5d2b517bedadf753583342e3a0be2fc31abca5af5ff8824f2369ba9de2",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/Chronicle/blob/c467b48fd18fc8ec86f10582befa35946ce41914/specs/chronicle_entry_v0.md",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "src/chronicle_entry_identity.mjs",
+          "bytes": 3448,
+          "git_blob_sha1": "ebb7fb23c671387478871698771afa4e437c66a1",
+          "sha256": "46f645118c0a97ea8de6e42f87ac1e10699551ae8f20cd3862f5f5826fa75110",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/Chronicle/blob/c467b48fd18fc8ec86f10582befa35946ce41914/src/chronicle_entry_identity.mjs",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "src/chronicle_receiptos_admission.mjs",
+          "bytes": 8011,
+          "git_blob_sha1": "e18c1c7af3e5286026b89c49e175dffea6c48c75",
+          "sha256": "3a8a44f4334f2a9a3ccdc91f0ae586908f10de430f2a10e4ca5abcbed7a80a25",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/Chronicle/blob/c467b48fd18fc8ec86f10582befa35946ce41914/src/chronicle_receiptos_admission.mjs",
+          "snapshot_bytes_equal": true
+        },
+        {
+          "path": "src/chronicle_position_artifact.mjs",
+          "bytes": 2080,
+          "git_blob_sha1": "533cecf050f681b8c886f38a71145f7c33a5d1b6",
+          "sha256": "b4df8ee54caa69f918c4d293d9a42bded36565ef7559fda5472a9a08f6784050",
+          "verification": "GitHub contents exact ref; independently recomputed Git blob OID and SHA256",
+          "url": "https://github.com/pipavlo82/Chronicle/blob/c467b48fd18fc8ec86f10582befa35946ce41914/src/chronicle_position_artifact.mjs",
+          "snapshot_bytes_equal": true
+        }
+      ]
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 13,
+      "state": "CLOSED",
+      "merged": true,
+      "merged_at": "2026-10-04T15:24:53Z",
+      "head_sha": "583b66b8c003acbbc7c68ba384b12db2bb1d41f6",
+      "base_sha": "07075d874c75da43f5ac8ed8769d5dbc01d56427",
+      "merge_commit_sha": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "url": "https://github.com/pipavlo82/protected-relation-fixtures/pull/13"
+    },
+    {
+      "number": 14,
+      "state": "OPEN",
+      "merged": false,
+      "merged_at": null,
+      "head_sha": "f525737069dc4cef7741f805d08a988912f4454f",
+      "base_sha": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "merge_commit_sha": "abd0ad724856ef572a8e5e08809b9a950b4a4221",
+      "url": "https://github.com/pipavlo82/protected-relation-fixtures/pull/14"
+    }
+  ],
+  "implementations": [
+    {
+      "adapter": "src/adapters/semantic_abi.mjs",
+      "additional_files": [
+        "schemas/semantic-contract.schema.json",
+        "tests/relations.test.mjs"
+      ],
+      "mode": "ORIGINAL_PUBLIC_NEUTRAL_SPEC_REIMPLEMENTATION",
+      "source_refs": [
+        {
+          "repository": "trustless-ai/semantic-abi",
+          "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee"
+        }
+      ],
+      "source_license": "Apache-2.0 runner/code; CC0-1.0 schema/spec",
+      "product_license": "Apache-2.0",
+      "maturity": "EXPERIMENTAL",
+      "implemented": "Neutral exact claim/scope/temporal compatibility and narrowly bounded recomputation-to-semantic coercion, extended with exact subjects, intervals, caller-observed authority/evidence and established assumptions",
+      "excluded": "All commercial/private Vértice adapters and captures; none imported or executed",
+      "native_execution": false
+    },
+    {
+      "adapter": "src/adapters/prf.mjs",
+      "additional_files": [
+        "tests/relations.test.mjs"
+      ],
+      "mode": "ORIGINAL_PUBLIC_EXPERIMENTAL_SPEC_REIMPLEMENTATION",
+      "source_refs": [
+        {
+          "repository": "pipavlo82/protected-relation-fixtures",
+          "commit": "fac26d2e8346aeab08194343b78c345d235c6935"
+        },
+        {
+          "repository": "pipavlo82/protected-relation-fixtures",
+          "commit": "f525737069dc4cef7741f805d08a988912f4454f"
+        }
+      ],
+      "source_license": "MIT",
+      "product_license": "Apache-2.0",
+      "maturity": "EXPERIMENTAL",
+      "implemented": "Exact bounded guarantee obligations/dependencies and UNKNOWN-before-FALSE PRESERVED/VIOLATED/UNVERIFIABLE outcomes using separate caller-accepted basis and observations",
+      "excluded": "No claim that PR14 is merged or upstream accepted; no upstream fixture/capture/Python source copied",
+      "native_execution": false
+    },
+    {
+      "adapter": "src/adapters/chronicle.mjs",
+      "additional_files": [
+        "tests/relations.test.mjs"
+      ],
+      "mode": "ORIGINAL_PUBLIC_SPEC_REIMPLEMENTATION_WITH_PRODUCT_CONTINUITY_EXTENSION",
+      "source_refs": [
+        {
+          "repository": "pipavlo82/Chronicle",
+          "commit": "c467b48fd18fc8ec86f10582befa35946ce41914"
+        }
+      ],
+      "source_license": "Apache-2.0 code/docs; brand rights reserved; underlying user objects retain separate provenance",
+      "product_license": "Apache-2.0",
+      "maturity": "EXPERIMENTAL",
+      "implemented": "Native new/idempotent/conflict identity vocabulary plus explicit product ordered sequence/predecessor/reference and historical/current state queries",
+      "whole_envelope_boundary": "Derived-entry equality is not whole original envelope equality. Optional caller digest separately binds the entire canonical supplied history object, including entries, observations and envelope fields, not original raw bytes or global history completeness. Required missing binding is UNVERIFIABLE.",
+      "native_execution": false
+    }
+  ],
+  "fresh_vectors": {
+    "path": "tests/relations.test.mjs",
+    "synthetic": true,
+    "copied_upstream_fixtures": false,
+    "test_command": "node --test tests/relations.test.mjs",
+    "last_result": "38 PASS, 0 FAIL",
+    "independence": "Adapter implementation and product tests authored in this task; not external oracle independence."
+  },
+  "upstream_dependency_bytes_copied": false,
+  "private_commercial_material_used": false
+}

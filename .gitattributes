@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.zip binary
+# Preserve pinned upstream/legal bytes and verbatim generated diagnostic streams.
+vendor/** -text -whitespace
+reports/*.tap -text -whitespace

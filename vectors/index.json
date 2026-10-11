@@ -1,0 +1,157 @@
+{
+  "schema": "receiptos.verify.vector-index.v1",
+  "synthetic": true,
+  "count": 30,
+  "vectors": [
+    {
+      "id": "V01",
+      "title": "Exact valid receipt for requested commit",
+      "path": "V01.json"
+    },
+    {
+      "id": "V02",
+      "title": "Authentic positive covers wrong requested commit",
+      "path": "V02.json"
+    },
+    {
+      "id": "V03",
+      "title": "Tampered native Crystal root",
+      "path": "V03.json"
+    },
+    {
+      "id": "V04",
+      "title": "Valid signature over wrong subject identity",
+      "path": "V04.json"
+    },
+    {
+      "id": "V05",
+      "title": "Required native result evidence missing",
+      "path": "V05.json"
+    },
+    {
+      "id": "V06",
+      "title": "Empty evidence inventory",
+      "path": "V06.json"
+    },
+    {
+      "id": "V07",
+      "title": "Reproduced negative predicate stays negative",
+      "path": "V07.json"
+    },
+    {
+      "id": "V08",
+      "title": "Native checker process exits with no semantic output",
+      "path": "V08.json"
+    },
+    {
+      "id": "V09",
+      "title": "Package and runner present without semantic execution claim",
+      "path": "V09.json"
+    },
+    {
+      "id": "V10",
+      "title": "Semantic ABI consumer scope mismatch",
+      "path": "V10.json"
+    },
+    {
+      "id": "V11",
+      "title": "Downstream drops upstream guarantee dependency",
+      "path": "V11.json"
+    },
+    {
+      "id": "V12",
+      "title": "Exact downstream guarantee and dependency preserved",
+      "path": "V12.json"
+    },
+    {
+      "id": "V13",
+      "title": "Exact authorized action survives accepted and duplicate retries",
+      "path": "V13.json"
+    },
+    {
+      "id": "V14",
+      "title": "Retry changes material action despite a valid signature",
+      "path": "V14.json"
+    },
+    {
+      "id": "V15",
+      "title": "Later state differs after historical commitment",
+      "path": "V15.json"
+    },
+    {
+      "id": "V16",
+      "title": "Unsupported product profile",
+      "path": "V16.json"
+    },
+    {
+      "id": "V17",
+      "title": "Valid QEV packaging without provider authentication",
+      "path": "V17.json"
+    },
+    {
+      "id": "V18",
+      "title": "Producer positive contradicts reproduced native negative",
+      "path": "V18.json"
+    },
+    {
+      "id": "V19",
+      "title": "Intact historical receipt cannot satisfy current authority profile",
+      "path": "V19.json"
+    },
+    {
+      "id": "V20",
+      "title": "Stochastic replay establishes no provenance",
+      "path": "V20.json"
+    },
+    {
+      "id": "V21",
+      "title": "Later divergence leaves the exact historical observation intact",
+      "path": "V21.json"
+    },
+    {
+      "id": "V22",
+      "title": "Caller-selected policy version differs",
+      "path": "V22.json"
+    },
+    {
+      "id": "V23",
+      "title": "Unknown canonicalization rules",
+      "path": "V23.json"
+    },
+    {
+      "id": "V24",
+      "title": "Weak grade cannot establish independent recomputation evidence",
+      "path": "V24.json"
+    },
+    {
+      "id": "V25",
+      "title": "Valid signature under a different expected actor",
+      "path": "V25.json"
+    },
+    {
+      "id": "V26",
+      "title": "Committed artifact bytes unavailable is a replay barrier",
+      "path": "V26.json"
+    },
+    {
+      "id": "V27",
+      "title": "Missing signer trust is independent of a checker crash",
+      "path": "V27.json"
+    },
+    {
+      "id": "V28",
+      "title": "Native Moth counts RVR and ReceiptOS preserve 32 requested / 0 delivered",
+      "path": "V28.json"
+    },
+    {
+      "id": "V29",
+      "title": "Independent Moth job claim cannot be replaced by saved claim",
+      "path": "V29.json"
+    },
+    {
+      "id": "V30",
+      "title": "Native Moth reproduced negative stays negative",
+      "path": "V30.json"
+    }
+  ]
+}

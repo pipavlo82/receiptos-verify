@@ -1,0 +1,47 @@
+ReceiptOS Verify — VERIFIED
+Projection: receiptos.verify.projection.v1
+VERIFIED. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED
+
+INPUT: ADMITTED
+CANONICALIZATION: VERIFIED
+INTEGRITY: VERIFIED [NATIVE_CRYSTAL_ROOT_MATCH]
+AUTHENTICITY: VERIFIED
+SUBJECT_BINDING: VERIFIED
+RECOMPUTATION: REPRODUCED [rvr.v0.digest_match, rvr.recompute.identical]
+EVIDENCE_SUFFICIENCY: SUFFICIENT
+SEMANTIC_COMPATIBILITY: COMPATIBLE [SEMANTIC_REQUIREMENT_ESTABLISHED]
+GUARANTEE_PRESERVATION: NOT_REQUESTED
+CONTINUITY: NOT_REQUESTED
+DOMAIN_ADAPTERS: NOT_REQUESTED
+PRODUCT_PROJECTION: VERIFIED [NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED]
+EXPLAINABLE_REPORT: GENERATED [NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED]
+PROVENANCE: RECORDED
+
+Integrity is not authenticity.
+Signature is not semantic correctness.
+Replay preserves negative outcomes.
+Historical observations are not repeated execution.
+
+ReceiptOS Verify — CONTRADICTED
+Projection: receiptos.verify.projection.v1
+Authenticated evidence covering commit 6d0d1867b0b3e1cb1c6c56caea39d583e4535250 does not establish the caller-selected claim for commit bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb. This does not establish that the requested commit executed or failed.
+
+INPUT: ADMITTED
+CANONICALIZATION: VERIFIED
+INTEGRITY: VERIFIED [NATIVE_CRYSTAL_ROOT_MATCH]
+AUTHENTICITY: VERIFIED
+SUBJECT_BINDING: CONTRADICTED [REQUESTED_SUBJECT_NOT_BOUND, COMMIT_MISMATCH]
+RECOMPUTATION: REPRODUCED [rvr.v0.digest_match, rvr.recompute.identical]
+EVIDENCE_SUFFICIENCY: SUFFICIENT
+SEMANTIC_COMPATIBILITY: COMPATIBLE [SEMANTIC_REQUIREMENT_ESTABLISHED]
+GUARANTEE_PRESERVATION: NOT_REQUESTED
+CONTINUITY: NOT_REQUESTED
+DOMAIN_ADAPTERS: NOT_REQUESTED
+PRODUCT_PROJECTION: CONTRADICTED [NATIVE_CRYSTAL_ROOT_MATCH, REQUESTED_SUBJECT_NOT_BOUND, COMMIT_MISMATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED]
+EXPLAINABLE_REPORT: GENERATED [NATIVE_CRYSTAL_ROOT_MATCH, REQUESTED_SUBJECT_NOT_BOUND, COMMIT_MISMATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED]
+PROVENANCE: RECORDED
+
+Integrity is not authenticity.
+Signature is not semantic correctness.
+Replay preserves negative outcomes.
+Historical observations are not repeated execution.

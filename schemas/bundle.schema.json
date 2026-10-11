@@ -1,0 +1,386 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:receiptos:verify:bundle:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "receiptos.verify.bundle.v1"
+    },
+    "canonicalization_profile": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024
+    },
+    "statement": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "receiptos.verify.statement.v1"
+        },
+        "verification_profile": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "subject": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "git-artifact"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "artifact_digest": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "commit": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "tree": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "artifact_path": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9._/-]+$",
+              "maxLength": 1024
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            }
+          },
+          "required": [
+            "kind",
+            "id",
+            "artifact_digest",
+            "commit",
+            "tree",
+            "artifact_path",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "claim": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "SHA256_EQUALS"
+            },
+            "expected_digest": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "kind",
+            "expected_digest"
+          ],
+          "additionalProperties": false
+        },
+        "policy": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "digest": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "id",
+            "version",
+            "digest"
+          ],
+          "additionalProperties": false
+        },
+        "semantic_contract": {
+          "title": "ReceiptOS neutral semantic contract with explicit product extensions",
+          "description": "Original schema; not upstream Semantic ABI manifest wire conformance. Independent context establishes actual authority/evidence.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "claim_type",
+            "authority_class",
+            "subject",
+            "scope",
+            "valid_after",
+            "valid_until",
+            "assumptions",
+            "evidence_requirements"
+          ],
+          "properties": {
+            "claim_type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "authority_class": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "subject": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "object",
+                  "minProperties": 1
+                }
+              ]
+            },
+            "scope": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "object",
+                  "minProperties": 1
+                }
+              ]
+            },
+            "valid_after": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "valid_until": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "issued_at": {
+              "type": "string",
+              "minLength": 1
+            },
+            "verification_time": {
+              "type": "string",
+              "minLength": 1
+            },
+            "assumptions": {
+              "type": "array",
+              "maxItems": 64,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              }
+            },
+            "evidence_requirements": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 64,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              }
+            }
+          },
+          "not": {
+            "properties": {
+              "issued_at": {},
+              "verification_time": {}
+            },
+            "required": [
+              "issued_at",
+              "verification_time"
+            ]
+          }
+        },
+        "asserted_result": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "CANNOT_CHECK"
+          ]
+        },
+        "evidence_manifest": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "digest": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "size": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "role",
+              "digest",
+              "size"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 256
+        },
+        "payload_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "crypto": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "key_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            }
+          },
+          "required": [
+            "provider",
+            "key_id"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "verification_profile",
+        "subject",
+        "claim",
+        "policy",
+        "semantic_contract",
+        "asserted_result",
+        "evidence_manifest",
+        "payload_digest",
+        "crypto"
+      ],
+      "additionalProperties": false
+    },
+    "signature_base64": {
+      "type": "string",
+      "maxLength": 1024
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1024
+          },
+          "bytes_base64": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 4194304
+          }
+        },
+        "required": [
+          "id",
+          "bytes_base64"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 256
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "crystal": {
+          "type": "object"
+        },
+        "rvr": {
+          "type": "object"
+        },
+        "relations": {
+          "type": "object",
+          "properties": {
+            "guarantee": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "continuity": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "domain": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "execution": {
+              "type": [
+                "object",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "guarantee",
+            "continuity",
+            "domain",
+            "execution"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "crystal",
+        "rvr",
+        "relations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "canonicalization_profile",
+    "statement",
+    "signature_base64",
+    "evidence",
+    "payload"
+  ],
+  "additionalProperties": false
+}

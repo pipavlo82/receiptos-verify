@@ -1,0 +1,267 @@
+{
+  "schema": "receiptos.verify.upstream-preservation.v1",
+  "scope": "All previously frozen public source snapshot files. No claim about unrelated live workstation worktrees.",
+  "repositories": 43,
+  "files": 21119,
+  "mismatches": 0,
+  "results": [
+    {
+      "repository": "akashmahlaz/betting-club",
+      "sourceSHA": "f85d3ea4e1a6e9ada21d576380c104a0b32976a1",
+      "files": 275,
+      "mismatches": []
+    },
+    {
+      "repository": "babyblueviper1/semantic-execution-guard",
+      "sourceSHA": "093dc4f7832c1e18ede0bf9de6fb590aad6fbea8",
+      "files": 1,
+      "mismatches": []
+    },
+    {
+      "repository": "casinocutup/Solana-Mines-Game",
+      "sourceSHA": "320556ec84e9f7951e9613fdf808cc413626f000",
+      "files": 18,
+      "mismatches": []
+    },
+    {
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "files": 53,
+      "mismatches": []
+    },
+    {
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "files": 5299,
+      "mismatches": []
+    },
+    {
+      "repository": "eddieoz/bitBingo",
+      "sourceSHA": "28ac36f60414edfcf272433be15b2b0a4e37404f",
+      "files": 82,
+      "mismatches": []
+    },
+    {
+      "repository": "ethereum/ERCs",
+      "sourceSHA": "b1f2bd8b1d31ec3bb25077f1a15295ad29e8a8fd",
+      "files": 1968,
+      "mismatches": []
+    },
+    {
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "files": 765,
+      "mismatches": []
+    },
+    {
+      "repository": "jdleo/provably-fair-dice",
+      "sourceSHA": "4297f223cd1289a40c43ab715ee14ec907666773",
+      "files": 70,
+      "mismatches": []
+    },
+    {
+      "repository": "justFiveDev/Solana-Casino-Jackpot",
+      "sourceSHA": "a1bb862aa9d4288b99f51df7bc33c17cf9d76d04",
+      "files": 36,
+      "mismatches": []
+    },
+    {
+      "repository": "OffchainLabs/community-helm-charts",
+      "sourceSHA": "3d2c62a7a8c494271cf783dfda215303d2c318cb",
+      "files": 114,
+      "mismatches": []
+    },
+    {
+      "repository": "open-quantum-safe/liboqs-java",
+      "sourceSHA": "97353bcc8e53152e999248b8dfc89a1ef05d045b",
+      "files": 35,
+      "mismatches": []
+    },
+    {
+      "repository": "PandaExplorer/Provably-Fair-iGaming-Demo",
+      "sourceSHA": "49d6141b7f1f27321e3dfcde857a86a1219e13c5",
+      "files": 2,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/-crystal-artifact",
+      "sourceSHA": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "files": 52,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "files": 91,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/conduct-witness",
+      "sourceSHA": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "files": 7,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "files": 19,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "files": 4445,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/decentralised",
+      "sourceSHA": "8f614bac346e9d618bbf69ea33cb175aa05e798d",
+      "files": 218,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/ERCs",
+      "sourceSHA": "98469bc93b6add1e3bc9501dafaa73311071145b",
+      "files": 1931,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "files": 198,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6cf885533b65eec232934700daaf9b977ef305f9",
+      "files": 26,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/pipavlo82.github.io",
+      "sourceSHA": "9a0139ebfa1df4fa6bb9133c0eb6be6d64e67037",
+      "files": 1,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/pq-receipt-profile",
+      "sourceSHA": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "files": 2,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/pqevm-vector-packs",
+      "sourceSHA": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "files": 7,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "files": 3016,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "files": 281,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/r4-saas-api",
+      "sourceSHA": "7815fd84dd7eb9347b8399719cfeff941ff8df2a",
+      "files": 20,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/receiptos-mvp",
+      "sourceSHA": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "files": 24,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "files": 140,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "files": 75,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "files": 780,
+      "mismatches": []
+    },
+    {
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "files": 48,
+      "mismatches": []
+    },
+    {
+      "repository": "Rohiteswar/Solana-SlotMachine",
+      "sourceSHA": "57a69e8f380826fbef79b5b3de8a94fece3b7181",
+      "files": 1,
+      "mismatches": []
+    },
+    {
+      "repository": "shentonyan/sealed-bid-award-erc",
+      "sourceSHA": "543da2e21d0269ac43880af4a71cb73248ed9eea",
+      "files": 53,
+      "mismatches": []
+    },
+    {
+      "repository": "tapiwamakandigona/zimbet",
+      "sourceSHA": "dc93bca4fdcb62b8255becb121f6aaa9c9b60532",
+      "files": 34,
+      "mismatches": []
+    },
+    {
+      "repository": "trustless-ai/agent-sdk",
+      "sourceSHA": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "files": 410,
+      "mismatches": []
+    },
+    {
+      "repository": "trustless-ai/ccip-router",
+      "sourceSHA": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "files": 96,
+      "mismatches": []
+    },
+    {
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "files": 150,
+      "mismatches": []
+    },
+    {
+      "repository": "trustless-ai/pq-agent-binding",
+      "sourceSHA": "4f934ad31e96979002d818cd8a5f12909c1b6713",
+      "files": 9,
+      "mismatches": []
+    },
+    {
+      "repository": "trustless-ai/primitives",
+      "sourceSHA": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "files": 7,
+      "mismatches": []
+    },
+    {
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "files": 226,
+      "mismatches": []
+    },
+    {
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "files": 34,
+      "mismatches": []
+    }
+  ]
+}

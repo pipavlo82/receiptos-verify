@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { inspectAdapters, adapters } from '../src/adapters/index.mjs';
+import { CryptoProviders, inspectVectorPack } from '../src/adapters/pq.mjs';
+import { inspectAnchor } from '../src/adapters/ledger.mjs';
+import { validateSchema } from '../src/core/schemas.mjs';
+import { readVector,runVector } from '../tools/corpus.mjs';
+test('all adapters self-describe exact source pins and explicit unsupported operations',async()=>{for(const d of inspectAdapters()){assert.match(d.sourceCommit,/^[0-9a-f]{40}$/);assert.ok(d.requiredEvidence.length);assert.ok(d.license);}for(const a of adapters) assert.equal((await a.bind_subject()).status,'UNSUPPORTED');});
+test('mock crypto never becomes real signature verification',async()=>{const p=new CryptoProviders().register('demo',{kind:'MOCK',verify:async()=>({valid:true})});const input={provider:'demo',key_id:'K',authority:{key_id:'K',valid_after:0,valid_until:10}};assert.equal((await p.verify(input,1)).status,'UNVERIFIABLE');assert.equal((await p.verify(input,10)).status,'UNVERIFIABLE');});
+test('PQ unavailable provider and empty vector pack cannot verify',async()=>{assert.equal((await new CryptoProviders().verify({provider:'mldsa65'},1)).status,'UNSUPPORTED');assert.equal(inspectVectorPack({vectors:[]}).status,'UNVERIFIABLE');});
+test('ledger extensions reserve XRPL and Ethereum without invented finality',()=>{for(const kind of ['xrpl','ethereum'])assert.equal(inspectAnchor({kind,transaction:'asserted'}).status,'UNSUPPORTED');assert.equal(inspectAnchor({kind:'offchain'}).status,'NOT_ESTABLISHED');});
+test('every product report conforms to the versioned report schema',async()=>{for(const id of ['V01','V02','V03','V08','V17','V23','V26'])assert.equal(validateSchema('report',await runVector(await readVector(id))),true);});

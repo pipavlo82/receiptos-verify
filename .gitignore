@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+.cache/
+reports/tmp/
+reports/final-closure.json
+reports/server.log
+reports/server-error.log

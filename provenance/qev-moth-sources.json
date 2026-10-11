@@ -1,0 +1,556 @@
+{
+  "schema": "receiptos.verify.qev-moth-sources.v1",
+  "sources": [
+    {
+      "adapter": "qev_moth",
+      "sourceRepository": "https://github.com/pipavlo82/quantum-execution-evidence",
+      "sourceCommit": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "sourceTree": "96db84eaa0d1a34a0a02020ac3a1329a8796ad70",
+      "license": "Apache-2.0 authored subset and Apache-2.0 nested RVR/ReceiptOS; original LICENSE and NOTICE retained",
+      "files": [
+        {
+          "sourcePath": "LICENSE",
+          "vendoredPath": "vendor/qev_moth/LICENSE",
+          "gitBlobSha1": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "sha256": "fa7fe2e14249d2da31c0d2a0bbefc17a1994a93b42ae652a3dab450b6f1c0251",
+          "size": 10377,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "NOTICE",
+          "vendoredPath": "vendor/qev_moth/NOTICE",
+          "gitBlobSha1": "c0e543cb4281ef24c257a1138afdda4132aa4db8",
+          "sha256": "19e374f11c3a1312b7838acf89cabe2b08ee133f39f63706d5013dd9d50bf43a",
+          "size": 478,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "docs/MOTH_COUNTS_RVR_V0.md",
+          "vendoredPath": "vendor/qev_moth/docs/MOTH_COUNTS_RVR_V0.md",
+          "gitBlobSha1": "43753088704ce0c304cafad0b51efd01999e3381",
+          "sha256": "4813aa8fcecffb98f1322cc6a844902b5d87c37e1ad44bfe29d7550b8cd1332a",
+          "size": 8083,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "docs/MOTH_RECEIPTOS_V0.md",
+          "vendoredPath": "vendor/qev_moth/docs/MOTH_RECEIPTOS_V0.md",
+          "gitBlobSha1": "466eedb2422ab46c2f3e5879f3a27176e8261f10",
+          "sha256": "3032b61be91c0188ecc6dcd542e63d14afca51881f8ee2404201853e413ca876",
+          "size": 8583,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/moth-receiptos-v0/conformance.json",
+          "vendoredPath": "vendor/qev_moth/profiles/moth-receiptos-v0/conformance.json",
+          "gitBlobSha1": "4d6748f44583f0cac0cdfc319aa2869ac53ae54d",
+          "sha256": "aa476480b1b2c6a9daa34ecc91023262625228264bb92f3d88bf24d4b93fb1e7",
+          "size": 2239,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/moth-receiptos-v0/profile.json",
+          "vendoredPath": "vendor/qev_moth/profiles/moth-receiptos-v0/profile.json",
+          "gitBlobSha1": "5749533f5e6e37c679003b706c85d6274422d2e3",
+          "sha256": "ce53536192a820740e3a9a62bf15e15791992024c298bcbef5ec7c28db331184",
+          "size": 3770,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/moth-receiptos-v0/sources.json",
+          "vendoredPath": "vendor/qev_moth/profiles/moth-receiptos-v0/sources.json",
+          "gitBlobSha1": "b9a18de477715c479171ebfc801f1c4ab75aeb9c",
+          "sha256": "8dd606705cc64197c730fa0ea979c1dd14dfceabc1c9b84d59ba42c78fdec5ad",
+          "size": 944,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/rvr-qev-moth-counts-v0/claim.json",
+          "vendoredPath": "vendor/qev_moth/profiles/rvr-qev-moth-counts-v0/claim.json",
+          "gitBlobSha1": "6414295bf7011b3ddc9f7b11f9f33aa5f2200a96",
+          "sha256": "b6a72e00592211a16c052ab7d76f5da920731dc070c81142d08e5f73b4d9e617",
+          "size": 623,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/rvr-qev-moth-counts-v0/conformance.json",
+          "vendoredPath": "vendor/qev_moth/profiles/rvr-qev-moth-counts-v0/conformance.json",
+          "gitBlobSha1": "4e56f6626aab87705825c735acc73445ac22fb3f",
+          "sha256": "f5c0086639e626d64a951ac16e83be10ea6eee16fb9165f1118ff5f6209e64c4",
+          "size": 1422,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+          "vendoredPath": "vendor/qev_moth/profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+          "gitBlobSha1": "49adeaa3718a6b7061ad690d3b4c28063f76c6e5",
+          "sha256": "3ac39d1015d5d1fa3a7a18f57ba3eb5d8dc4836768799eaa1cef98d104ebc6db",
+          "size": 148,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/rvr-qev-moth-counts-v0/roles.json",
+          "vendoredPath": "vendor/qev_moth/profiles/rvr-qev-moth-counts-v0/roles.json",
+          "gitBlobSha1": "aeba19e1869406f0e7d0ebaa64e2679c738de111",
+          "sha256": "9bbe74b0bd2a291acfc1d4d1d55ad4434ec69c6f684e1a464099ba5bfdbea926",
+          "size": 1049,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+          "vendoredPath": "vendor/qev_moth/profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+          "gitBlobSha1": "8aa89aa9842ef07a5e89ee7c5115847a831540cd",
+          "sha256": "360e348792e1347ae56cd39a948397be00ce6689391cee7b20ae3684ed0eaa27",
+          "size": 10722,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/rvr-qev-moth-counts-v0/sources.json",
+          "vendoredPath": "vendor/qev_moth/profiles/rvr-qev-moth-counts-v0/sources.json",
+          "gitBlobSha1": "475b47eee1826871b620a031908eba7bc041dec3",
+          "sha256": "11a70a1a122531af347db3fd5fcfaeebdff880570e522aef41d4ea4dcab44008",
+          "size": 1417,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+          "vendoredPath": "vendor/qev_moth/profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+          "gitBlobSha1": "9e5eacbad6778daf61d6a6f0d657425ba710c191",
+          "sha256": "da71c114b736338ffa198e69b003e872862eed7ad96e8123378a3eeab4f23aec",
+          "size": 7389,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/__init__.py",
+          "vendoredPath": "vendor/qev_moth/qev/__init__.py",
+          "gitBlobSha1": "b250517954c9171a2abdaa69ab0e40786e4c5824",
+          "sha256": "92b1dfb8965a5b874587727aaf58da03e130b3d861b93ab08292d5ca126908c7",
+          "size": 81,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/adapters.py",
+          "vendoredPath": "vendor/qev_moth/qev/adapters.py",
+          "gitBlobSha1": "012d1065cad9e9adb6b36d7c25fcefdc89e103da",
+          "sha256": "b5a881dee92d1b1e880ed38a966fde4784efe09295cf4010d4f859c31edd2802",
+          "size": 3152,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/admission.py",
+          "vendoredPath": "vendor/qev_moth/qev/admission.py",
+          "gitBlobSha1": "05b5b559afe5ff46be23e00c938e2b42dd1190ab",
+          "sha256": "3450ce9b1381454051a58cc5dc87b266f0f105156cd9131caf84f8091ae181e6",
+          "size": 6859,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/inventory.py",
+          "vendoredPath": "vendor/qev_moth/qev/inventory.py",
+          "gitBlobSha1": "9d9ab49e423df1f293551bc219581886516e08fe",
+          "sha256": "db01cbbb4752c0c37394c373d4df5520180f5804de65da5fbcad88fdfc013424",
+          "size": 11979,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/live_common.py",
+          "vendoredPath": "vendor/qev_moth/qev/live_common.py",
+          "gitBlobSha1": "8cb34b55823f2863ee5b92f48f012472b5cdaebb",
+          "sha256": "5b7a551784dbfedb91c1c94a75003cc2cf66be8167e6761cd26751fffd5a6071",
+          "size": 6097,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_comet.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_comet.py",
+          "gitBlobSha1": "757d379e0fafcfa992a495ff895f8858e19a8794",
+          "sha256": "76c51c23fb0c56799674a6e93c1e02bf8243e563bdbfa039f98f8798f13d815f",
+          "size": 15732,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_receiptos.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_receiptos.py",
+          "gitBlobSha1": "7caafeb25ef2f245439eeb36c8975b885f207502",
+          "sha256": "e874f1710ed9a486929cd6df80a4552fff799e9be46cba32367c64fb42dc7a7c",
+          "size": 9658,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_receiptos_bridge.ts",
+          "vendoredPath": "vendor/qev_moth/qev/moth_receiptos_bridge.ts",
+          "gitBlobSha1": "e778be4e677f5988b5e5c46e8047784019337cfa",
+          "sha256": "ea508b61416dd3060ab7009ea57fdb580d510c5539acc4921ca83b343766e218",
+          "size": 1075,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_receiptos_cli.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_receiptos_cli.py",
+          "gitBlobSha1": "767228b9e27a123009f721e84d27e92a6b3e5ff1",
+          "sha256": "55c5d46c93c5db52e4c9a91badd582ddc388980469f028e23a3e3c6a1b26aab0",
+          "size": 2720,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_receiptos_mutations.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_receiptos_mutations.py",
+          "gitBlobSha1": "cfb76d1a41024078ad2d3c8b2cd30385db02d613",
+          "sha256": "3c4be8f52d20fb11b17e011a756abf00ccd69eb4b550a1522db42f0344ff514b",
+          "size": 6071,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_replay.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_replay.py",
+          "gitBlobSha1": "ed446ef72a44d6c1257686ee35016f2977f25213",
+          "sha256": "1bd74334b37da8f982b4eb5c7566ab594fdc6a1410ef80f5966fcf713a91a9f1",
+          "size": 6473,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_rvr.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_rvr.py",
+          "gitBlobSha1": "b18e9313e6e0d9d69961abe745aecfedd4be0c0c",
+          "sha256": "9b5f805d23d9ffa452fed2eb022a998ccfe704727b1475fb475636f73d08660e",
+          "size": 9656,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_rvr_cli.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_rvr_cli.py",
+          "gitBlobSha1": "86ba2491d08b777776291fa76b79190a4f4fa74a",
+          "sha256": "ea4d81391558b5688c90df66fa12599c95ca8207063b86464c3c0717041ddde1",
+          "size": 2591,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_rvr_mutations.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_rvr_mutations.py",
+          "gitBlobSha1": "ae21495af46ede0ccc22a22870df92613e797687",
+          "sha256": "038ecaa224c7b27a82e348dd4d5df81e0f0781ce991e1f1b79fef54fcdc9f150",
+          "size": 6190,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/moth_rvr_relation.py",
+          "vendoredPath": "vendor/qev_moth/qev/moth_rvr_relation.py",
+          "gitBlobSha1": "5d64fb1f6d086ab91022640f98177d74b22461fd",
+          "sha256": "af78c4940b09f13ed14dac2cd5bc1e5e13949edad578b2b0f4d3dcf07a72fc71",
+          "size": 5622,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/source_inventory.py",
+          "vendoredPath": "vendor/qev_moth/qev/source_inventory.py",
+          "gitBlobSha1": "4e07de9da89e465c4e8a4f49951e8eac287c748c",
+          "sha256": "1fe1e86435513e040ad26d10d1ba7997a1df984d7fd5af3a3a7fe748f0a73478",
+          "size": 21442,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "qev/sources.py",
+          "vendoredPath": "vendor/qev_moth/qev/sources.py",
+          "gitBlobSha1": "baee43fabb4c76ab55e584f07d847dd7b08b1311",
+          "sha256": "f4aeba870302e6207d9c4de0c56fdecebc4c93e47d4dcd08a55db45ca9b64f01",
+          "size": 3816,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "tests/test_moth_receiptos.py",
+          "vendoredPath": "vendor/qev_moth/tests/test_moth_receiptos.py",
+          "gitBlobSha1": "2b45d669dca0e178cd97bc5b1137c41bb16163fe",
+          "sha256": "3f4483927a063681f67abdaa3252f374c6a227c695490c9478f2ea6d067b0817",
+          "size": 15062,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "tests/test_moth_rvr.py",
+          "vendoredPath": "vendor/qev_moth/tests/test_moth_rvr.py",
+          "gitBlobSha1": "6919f49861980d20f3b54a9d323f9b00dc3f0ff4",
+          "sha256": "63c8914174dca8f471542f08e4b6e5ab0c54ac18848dc67dfa5b0f24179618b8",
+          "size": 12423,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "tools/pin_moth_receiptos_profile.py",
+          "vendoredPath": "vendor/qev_moth/tools/pin_moth_receiptos_profile.py",
+          "gitBlobSha1": "2e37a19e8e7c5ec74f4f6480c2ba0e6aa0e26285",
+          "sha256": "ea455897e79427a05fb87c1018ba6d9c3778a3e350d5382504d3c84c7b1fa9cc",
+          "size": 1121,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "tools/pin_moth_rvr_profile.py",
+          "vendoredPath": "vendor/qev_moth/tools/pin_moth_rvr_profile.py",
+          "gitBlobSha1": "b63a621605aebdd403dcab9e674037ab8cebd622",
+          "sha256": "950e1443b5af83e3dd47cd6d00944a27832018de3eccda4b28a0c1a1029aa35a",
+          "size": 6009,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/LICENSE",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/LICENSE",
+          "gitBlobSha1": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "sha256": "fa7fe2e14249d2da31c0d2a0bbefc17a1994a93b42ae652a3dab450b6f1c0251",
+          "size": 10377,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "LICENSE",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+          "gitBlobSha1": "b560e2bfd04a39fc0f70ca749e7336e933679169",
+          "sha256": "f8b8c44bffa4d7cb827564cfa663ffe60396b4aa39991762c855a24765c1d159",
+          "size": 3890,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "schemas/evidence-capsule.v0.schema.json",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+          "gitBlobSha1": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+          "size": 491,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/canon/canonicalize.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+          "gitBlobSha1": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "sha256": "519e532b155f3c1f4720337d09bc2a8503e4546682695e798b8597ad8d187bf0",
+          "size": 803,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/canon/receipt-root.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+          "gitBlobSha1": "64223eac0425dd36edae7bf94a6373389eb0b5e1",
+          "sha256": "9a3f949160d2132778d71fd825d14d4fe96a24b037d80d5bc93fa9b4e34f0d24",
+          "size": 1315,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/capsule/crystal-mapping.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+          "gitBlobSha1": "20b789e2992ab4363bcc361467551d27d5e23183",
+          "sha256": "c024ec49d2a9c58caf5df811e7f89b5e81b9a75b93428c12bcdd39d6656dc6e9",
+          "size": 8898,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/capsule/evidence-capsule-v0.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+          "gitBlobSha1": "79f8214ad13b545fae42c3a82c4b3be9cadd0028",
+          "sha256": "d8d7174f5f2491fffe755b7b81dff44c15dfab55d7bfbf9c1cc752b654dd25ca",
+          "size": 11077,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/capsule/evidence-capsule.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+          "gitBlobSha1": "734df63bb397cf223eb5363a4f941e86fda021b8",
+          "sha256": "ac316f865b60fca90339e402545c1d88bc8735ab542b879137ec31948d01d09b",
+          "size": 4232,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/capsule/portable-proof-object-v0.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+          "gitBlobSha1": "ae7b47f4e3545cb30ae8f517db8f37cddb5b5a49",
+          "sha256": "31152a759230998aca3130abbcb48a1dc1c88ee8323a3ce3cc7bedd6e728addf",
+          "size": 4497,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/capsule/render-plan.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+          "gitBlobSha1": "4167afb1f1ee92379f95d46616fabdce224d9937",
+          "sha256": "4024972dd240b9e6d266b792db45fbfe622ee5fa8ee3425ff6b79a69acad7ba0",
+          "size": 2111,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/merkle/local-merkle.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/schema/types.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/schema/types.ts",
+          "gitBlobSha1": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "sha256": "0ceead0ed3c1ee307ee409b44542640fc89ed5a532e45f8f67abcf7fcbe491df",
+          "size": 3570,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/schema/types.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+          "vendoredPath": "vendor/qev_moth/vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+          "gitBlobSha1": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "sha256": "70dad3a005e0d09af6d3b4def8ab4c98e24d3ee9f19839d88894c42c5ac9da04",
+          "size": 1110,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/crystal-receipt.git",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "path": "src/receiptos/verify/verify-receipt.ts",
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          }
+        },
+        {
+          "sourcePath": "vendor/rvr-v0/LICENSE",
+          "vendoredPath": "vendor/qev_moth/vendor/rvr-v0/LICENSE",
+          "gitBlobSha1": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "sha256": "fa7fe2e14249d2da31c0d2a0bbefc17a1994a93b42ae652a3dab450b6f1c0251",
+          "size": 10377,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/recomputable-verification-receipts.git",
+            "commit": "549a7e150ddc75df88dc90ee93f331fea7464567",
+            "path": "LICENSE",
+            "tree": "7d116537bba404303c8ae264b1fda7596510ec1e"
+          }
+        },
+        {
+          "sourcePath": "vendor/rvr-v0/adapter.py",
+          "vendoredPath": "vendor/qev_moth/vendor/rvr-v0/adapter.py",
+          "gitBlobSha1": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "sha256": "03505efc8ee993f118fad2c71f706870d25de0da61a393a1f18f7b310bded235",
+          "size": 50109,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/recomputable-verification-receipts.git",
+            "commit": "549a7e150ddc75df88dc90ee93f331fea7464567",
+            "path": "conformance/rvr-v0/adapter.py",
+            "tree": "7d116537bba404303c8ae264b1fda7596510ec1e"
+          }
+        },
+        {
+          "sourcePath": "vendor/rvr-v0/verification-profile-manifest.schema.json",
+          "vendoredPath": "vendor/qev_moth/vendor/rvr-v0/verification-profile-manifest.schema.json",
+          "gitBlobSha1": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "sha256": "148afeb484d3866c1caae82e574182c1b748dd461dfaeb1d8095ecf4905690c1",
+          "size": 6479,
+          "copiedUnmodified": true,
+          "originalUpstream": {
+            "repository": "https://github.com/pipavlo82/recomputable-verification-receipts.git",
+            "commit": "549a7e150ddc75df88dc90ee93f331fea7464567",
+            "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+            "tree": "7d116537bba404303c8ae264b1fda7596510ec1e"
+          }
+        }
+      ],
+      "verification": {
+        "method": "Independent pinned GitHub commit/tree API plus local Git blob SHA-1 and SHA-256",
+        "apiTrees": [
+          "https://api.github.com/repos/pipavlo82/crystal-receipt/git/trees/e8ca80f5bcc623c702d94a86a64b645fe152d819?recursive=1",
+          "https://api.github.com/repos/pipavlo82/quantum-execution-evidence/git/trees/96db84eaa0d1a34a0a02020ac3a1329a8796ad70?recursive=1",
+          "https://api.github.com/repos/pipavlo82/recomputable-verification-receipts/git/trees/7d116537bba404303c8ae264b1fda7596510ec1e?recursive=1"
+        ]
+      },
+      "runtimeStatus": "IMPLEMENTED_TESTED_NATIVE_RUNTIME",
+      "capturedProviderBytesCopied": false,
+      "metadataOnlyHistoricalReferences": [
+        "profiles/rvr-qev-moth-counts-v0/claim.json",
+        "profiles/rvr-qev-moth-counts-v0/roles.json",
+        "profiles/rvr-qev-moth-counts-v0/conformance.json",
+        "profiles/moth-receiptos-v0/conformance.json"
+      ],
+      "adapterPaths": [
+        "src/adapters/qev_moth.mjs",
+        "src/adapters/native/qev-moth-bridge.py",
+        "src/adapters/native/qev-moth-fixture.py",
+        "src/adapters/native/process.mjs",
+        "src/adapters/native/pins.mjs"
+      ],
+      "tests": {
+        "command": [
+          "node",
+          "--test",
+          "tests/native.test.mjs",
+          "tests/qev.test.mjs",
+          "tests/qev_moth.test.mjs"
+        ],
+        "passed": 29,
+        "failed": 0,
+        "scope": "13 Crystal/generic RVR integration, 7 generic QEV, 9 synthetic Moth native counts/RVR/ReceiptOS tests; not complete upstream conformance/mutation suites"
+      },
+      "status": "IMPLEMENTED_TESTED_NATIVE_RUNTIME",
+      "nativeFunctions": [
+        "moth_rvr.context",
+        "moth_rvr.make_bundle",
+        "moth_rvr.recompute",
+        "moth_rvr_relation.evaluate",
+        "moth_comet.evaluate",
+        "moth_receiptos.create",
+        "moth_receiptos.replay",
+        "computeReceiptRoot",
+        "verifyHandoffReceiptRoot",
+        "createCapsuleSummaryFromEvidence",
+        "createPortableProofObjectV0"
+      ],
+      "providerAuthentication": "NOT_ESTABLISHED",
+      "upstreamTestsInvoked": false,
+      "syntheticFixtureOnly": true
+    }
+  ]
+}

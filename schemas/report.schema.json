@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:receiptos:verify:report:v1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "receiptos.verify.report.v1"
+    },
+    "projection_version": {
+      "const": "receiptos.verify.projection.v1"
+    },
+    "overall": {
+      "enum": [
+        "VERIFIED",
+        "CONTRADICTED",
+        "INSUFFICIENT_EVIDENCE",
+        "CANNOT_RECOMPUTE",
+        "REJECTED_MALFORMED",
+        "UNSUPPORTED_PROFILE"
+      ]
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1024
+      },
+      "maxItems": 256
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 65536
+    },
+    "required_layers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1024
+      },
+      "maxItems": 256
+    },
+    "layers": {
+      "type": "object",
+      "minProperties": 14,
+      "maxProperties": 14,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "status",
+          "reasonCodes",
+          "nativeResult"
+        ],
+        "properties": {
+          "status": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1024
+          },
+          "reasonCodes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "maxItems": 256
+          },
+          "nativeResult": {}
+        },
+        "additionalProperties": true
+      }
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1024
+      },
+      "maxItems": 256
+    }
+  },
+  "required": [
+    "schema",
+    "projection_version",
+    "overall",
+    "reason_codes",
+    "explanation",
+    "required_layers",
+    "layers",
+    "boundaries"
+  ],
+  "additionalProperties": false
+}

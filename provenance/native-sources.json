@@ -1,0 +1,193 @@
+{
+  "schema": "receiptos.verify.native-sources.v1",
+  "sources": [
+    {
+      "adapter": "crystal",
+      "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+      "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "sourceTree": "e8ca80f5bcc623c702d94a86a64b645fe152d819",
+      "license": "Apache-2.0",
+      "upstreamNoticePaths": [],
+      "verification": {
+        "method": "Independent gh api pinned Git commit/tree lookup and local Git blob SHA-1 comparison before copying",
+        "commitEndpoint": "https://api.github.com/repos/pipavlo82/crystal-receipt/git/commits/45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "treeEndpoint": "https://api.github.com/repos/pipavlo82/crystal-receipt/git/trees/e8ca80f5bcc623c702d94a86a64b645fe152d819?recursive=1"
+      },
+      "files": [
+        {
+          "sourcePath": "LICENSE",
+          "vendoredPath": "vendor/crystal/LICENSE",
+          "gitBlobSha1": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "sha256": "fa7fe2e14249d2da31c0d2a0bbefc17a1994a93b42ae652a3dab450b6f1c0251",
+          "size": 10377,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "src/receiptos/canon/canonicalize.ts",
+          "vendoredPath": "vendor/crystal/src/receiptos/canon/canonicalize.ts",
+          "gitBlobSha1": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+          "sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+          "size": 491,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "src/receiptos/canon/receipt-root.ts",
+          "vendoredPath": "vendor/crystal/src/receiptos/canon/receipt-root.ts",
+          "gitBlobSha1": "4dddf737b824cae91281a93eb563c9134cdc1bb0",
+          "sha256": "519e532b155f3c1f4720337d09bc2a8503e4546682695e798b8597ad8d187bf0",
+          "size": 803,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "src/receiptos/schema/types.ts",
+          "vendoredPath": "vendor/crystal/src/receiptos/schema/types.ts",
+          "gitBlobSha1": "c352a702a8ae55b953b740dcb3c37b99cac31cf3",
+          "sha256": "0ceead0ed3c1ee307ee409b44542640fc89ed5a532e45f8f67abcf7fcbe491df",
+          "size": 3570,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "src/receiptos/verify/verify-receipt.ts",
+          "vendoredPath": "vendor/crystal/src/receiptos/verify/verify-receipt.ts",
+          "gitBlobSha1": "2e2e45bf30529de93eac58a04465f17ef81edeaa",
+          "sha256": "70dad3a005e0d09af6d3b4def8ab4c98e24d3ee9f19839d88894c42c5ac9da04",
+          "size": 1110,
+          "copiedUnmodified": true
+        }
+      ],
+      "adapterPaths": [
+        "src/adapters/crystal.mjs",
+        "src/adapters/native/process.mjs",
+        "src/adapters/native/crystal-bridge.ts",
+        "src/adapters/native/pins.mjs"
+      ],
+      "status": "IMPLEMENTED_TESTED_NATIVE_RUNTIME",
+      "tests": {
+        "command": [
+          "node",
+          "--test",
+          "tests/native.test.mjs",
+          "tests/qev.test.mjs",
+          "tests/qev_moth.test.mjs"
+        ],
+        "passed": 29,
+        "failed": 0,
+        "scope": "13 Crystal/generic RVR integration, 7 generic QEV, 9 synthetic Moth native counts/RVR/ReceiptOS tests; not complete upstream conformance/mutation suites"
+      }
+    },
+    {
+      "adapter": "rvr",
+      "sourceRepository": "https://github.com/pipavlo82/recomputable-verification-receipts",
+      "sourceCommit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "sourceTree": "5d51b50a39683db0844098741bd2fc31fb5a8bcc",
+      "license": "Apache-2.0",
+      "upstreamNoticePaths": [],
+      "verification": {
+        "method": "Independent gh api pinned Git commit/tree lookup and local Git blob SHA-1 comparison before copying",
+        "commitEndpoint": "https://api.github.com/repos/pipavlo82/recomputable-verification-receipts/git/commits/9dd36e882dd372f264b77b179130948aa5adcbde",
+        "treeEndpoint": "https://api.github.com/repos/pipavlo82/recomputable-verification-receipts/git/trees/5d51b50a39683db0844098741bd2fc31fb5a8bcc?recursive=1"
+      },
+      "files": [
+        {
+          "sourcePath": "LICENSE",
+          "vendoredPath": "vendor/rvr/LICENSE",
+          "gitBlobSha1": "9b85a39db99de06afeaf7ccae22a25fb2ac8f19f",
+          "sha256": "fa7fe2e14249d2da31c0d2a0bbefc17a1994a93b42ae652a3dab450b6f1c0251",
+          "size": 10377,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/adapter.py",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/adapter.py",
+          "gitBlobSha1": "b0dfb0d389cbd6b634fef1c965a1b4077bca326e",
+          "sha256": "03505efc8ee993f118fad2c71f706870d25de0da61a393a1f18f7b310bded235",
+          "size": 50109,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/verification-profile.json",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/verification-profile.json",
+          "gitBlobSha1": "85aa57b928d35fa969fa23676b85716a763ee66b",
+          "sha256": "23cac7eb86aca7a8cc0422985f598b67dd3fe758bd2321f6bcbc5ab2f1c2d8ab",
+          "size": 4484,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/verification-profile-manifest.schema.json",
+          "gitBlobSha1": "1525538d1c0316c2c5fc2e0ff2c7e8b4731d3169",
+          "sha256": "148afeb484d3866c1caae82e574182c1b748dd461dfaeb1d8095ecf4905690c1",
+          "size": 6479,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+          "gitBlobSha1": "86e2045fca20f52d0649323670dc5945c7d85460",
+          "sha256": "ecded96c5f58f7057e2c5c0b6d9789942a9a7bf600f4a453387e99f8406e7baf",
+          "size": 2849,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/rvr.schema.json",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/rvr.schema.json",
+          "gitBlobSha1": "6ee92d50ef2ed50bb9508c5ddc15d7950fbdb852",
+          "sha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+          "size": 3883,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/expected.json",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/expected.json",
+          "gitBlobSha1": "53adbb9d53ab050693ef5ef9681bf73858d1443c",
+          "sha256": "0ed23ee3530df93dde2f879981d28ddb3f60fc250c8652d109dd65fdb22193ce",
+          "size": 3176,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/mutants.json",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/mutants.json",
+          "gitBlobSha1": "eed6c3ee0c1a8f002a9f25675dbfeae463775888",
+          "sha256": "d5d16cc53ec0d9be53968d7ffc01fe019cb8b2630390c04431f6ee9f54edf847",
+          "size": 1624,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/rvr-v0/vectors.json",
+          "vendoredPath": "vendor/rvr/conformance/rvr-v0/vectors.json",
+          "gitBlobSha1": "ba1dd37684d4f345a43664617b318271465f2da6",
+          "sha256": "170fc62576fa8edb22073f73b28d9ac0deff26451ef651378839cd458da7312f",
+          "size": 6641,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+          "vendoredPath": "vendor/rvr/docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+          "gitBlobSha1": "8bd2ae2962d0151998cdf3244e8cc2317215c742",
+          "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+          "size": 13294,
+          "copiedUnmodified": true
+        }
+      ],
+      "adapterPaths": [
+        "src/adapters/rvr.mjs",
+        "src/adapters/native/process.mjs",
+        "src/adapters/native/rvr-bridge.py",
+        "src/adapters/native/pins.mjs"
+      ],
+      "status": "IMPLEMENTED_TESTED_NATIVE_RUNTIME",
+      "tests": {
+        "command": [
+          "node",
+          "--test",
+          "tests/native.test.mjs",
+          "tests/qev.test.mjs",
+          "tests/qev_moth.test.mjs"
+        ],
+        "passed": 29,
+        "failed": 0,
+        "scope": "13 Crystal/generic RVR integration, 7 generic QEV, 9 synthetic Moth native counts/RVR/ReceiptOS tests; not complete upstream conformance/mutation suites"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+import { readFile,writeFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { isolatedCopy,isolatedRun,readVector,discrepancies } from './corpus.mjs';
+import { digest,sha256 } from '../src/core/common.mjs';
+const id=process.argv[2]??'V02';if(!/^V\d{2}$/.test(id)) throw new Error('EXACT_VECTOR_ID_REQUIRED');
+const vector=await readVector(id);if(vector.execution_setup)throw new Error('FAULT_INJECTION_VECTOR_USE_CORPUS_RUNNER');
+const folder=await isolatedCopy('operator-reproduction-'+id);
+const runs=[isolatedRun(folder,id),isolatedRun(folder,id)];
+const semantic=report=>({overall:report.overall,reason_codes:report.reason_codes,layers:Object.fromEntries(Object.entries(report.layers).map(([key,value])=>[key,{status:value.status,reasonCodes:value.reasonCodes,nativeResult:value.nativeResult}]))});
+const root=fileURLToPath(new URL('../',import.meta.url));
+const git=spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8',windowsHide:true});
+const receipt={schema:'receiptos.verify.local-reproduction-receipt.v1',operator_label:'local-build-agent',authenticity:'NOT_ESTABLISHED',independent_operator:'NOT_CLAIMED',isolation:'Separate product copy; installed dependencies shared from locked parent installation.',code_commit:git.status===0?git.stdout.trim():null,source_lock_sha256:sha256(await readFile(new URL('../source-lock.json',import.meta.url))),package_lock_sha256:sha256(await readFile(new URL('../package-lock.json',import.meta.url))),vector:id,vector_sha256:sha256(await readFile(new URL('../vectors/'+id+'.json',import.meta.url))),commands:runs.map(()=>[process.execPath,fileURLToPath(new URL('tools/verify-vector.mjs',folder)),fileURLToPath(new URL('vectors/'+id+'.json',folder))]),runs:runs.map(run=>({process_status:run.process_status,errors:run.report?discrepancies(vector,run.report):['NO_STRUCTURED_REPORT'],semantic_digest:run.report?digest(semantic(run.report)):null,overall:run.report?.overall??null})),replay:'CANNOT_RECOMPUTE'};
+if(receipt.runs.every(r=>r.process_status==='COMPLETED'&&!r.errors.length)&&receipt.runs[0].semantic_digest===receipt.runs[1].semantic_digest)receipt.replay='REPRODUCED';
+await writeFile(new URL('../reports/local-reproduction.json',import.meta.url),JSON.stringify(receipt,null,2)+'\n');console.log(JSON.stringify({vector:id,replay:receipt.replay,overall:receipt.runs[0].overall,independent_operator:'NOT_CLAIMED'}));process.exitCode=receipt.replay==='REPRODUCED'?0:1;

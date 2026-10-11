@@ -1,0 +1,16 @@
+export const mutations=[
+ {id:'ignore-requested-subject',file:'src/core/subject.mjs',witness:'V04',positive:'V01',changes:[["!equal(request.subject[field],statement.subject[field])","false"]]},
+ {id:'compare-receipt-to-itself',file:'src/core/subject.mjs',witness:'V04',positive:'V01',changes:[["!equal(request.subject[field],statement.subject[field])","!equal(statement.subject[field],statement.subject[field])"]]},
+ {id:'accept-any-valid-signature',file:'src/adapters/interpoll.mjs',witness:'V25',positive:'V13',changes:[["Object.entries(expected).some(([k,v])=>a[k]!==v)","false"]]},
+ {id:'promote-reproduced-to-verified',file:'src/projection/project.mjs',witness:'V07',positive:'V01',changes:[["layers.RECOMPUTATION?.semanticOutcome==='REFUTED'","false"]]},
+ {id:'accept-empty-evidence',file:'src/core/evidence.mjs',witness:'V06',positive:'V01',changes:[["const roles=['artifact','git-commit','git-tree','native-result'];","if(inspected.manifest.length===0) return result('SUFFICIENT');\n  const roles=['artifact','git-commit','git-tree','native-result'];"]]},
+ {id:'count-crash-as-semantic-refutation',file:'src/projection/project.mjs',witness:'V08',positive:'V01',fault:'crash-rvr',changes:[["return result('CANNOT_RECOMPUTE',reasons); // MUTATE: crash-kill","return result('CONTRADICTED',reasons); // MUTATE: crash-kill"]]},
+ {id:'package-presence-as-pass',file:'src/adapters/recompute_kit.mjs',witness:'V09',positive:'V01',changes:[["||report.executed!==true",""]]},
+ {id:'ignore-policy-version',file:'src/core/subject.mjs',witness:'V22',positive:'V01',changes:[["request.policy.id !== statement.policy.id || request.policy.version !== statement.policy.version || digest(request.policy) !== statement.policy.digest","false"]]},
+ {id:'ignore-guarantee-dependency',file:'src/adapters/prf.mjs',witness:'V11',positive:'V12',changes:[["if (list(source.dependencies)) for","if (false) for"],["for (const dependency of new Set([...source.dependencies, ...request.dependencies]))","for (const dependency of [])"],["!eq([...source.dependencies].sort(), [...request.dependencies].sort()) || !eq([...target.dependencies].sort(), [...request.dependencies].sort())","false"]]},
+ {id:'ignore-retry-action-change',file:'src/adapters/interpoll.mjs',witness:'V14',positive:'V13',changes:[["if(!exact)","if(false)"]]},
+ {id:'ignore-evidence-grade',file:'src/adapters/recompute_kit.mjs',witness:'V24',positive:'V01',changes:[["report.evidence_grade!=='LOCAL_RECOMPUTATION'","false"]]},
+ {id:'ignore-authority',file:'src/adapters/semantic_abi.mjs',witness:'V19',positive:'V01',changes:[["established.authority_class !== required.authority_class && !exactRecomputation","false"],["context.authority_class !== established.authority_class","false"]]},
+ {id:'ignore-commit',file:'src/core/subject.mjs',witness:'V02',positive:'V01',changes:[["'artifact_digest','commit','tree'","'artifact_digest','tree'"]]},
+ {id:'ignore-canonicalization-profile',file:'src/core/verify.mjs',witness:'V23',positive:'V01',changes:[["bundle.canonicalization_profile!==CANON","false"]]},
+];

@@ -1,0 +1,456 @@
+{
+  "id": "V21",
+  "title": "Later divergence leaves the exact historical observation intact",
+  "request": {
+    "schema": "receiptos.verify.request.v1",
+    "verification_profile": "receiptos.verify.git-artifact.v1",
+    "claim": {
+      "kind": "SHA256_EQUALS",
+      "expected_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+    },
+    "subject": {
+      "kind": "git-artifact",
+      "id": "demo:receiptos",
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+      "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+      "artifact_path": "result.txt",
+      "version": "1"
+    },
+    "policy": {
+      "id": "local-v1",
+      "version": "1",
+      "trusted_keys": [
+        {
+          "id": "synthetic-demo",
+          "spki_base64": "MCowBQYDK2VwAyEAiojj3XQJ8ZX9UtstPLpdcspnCb8dlBIb83SIAbQPb1w="
+        }
+      ],
+      "required_layers": [
+        "INTEGRITY",
+        "AUTHENTICITY",
+        "SUBJECT_BINDING",
+        "RECOMPUTATION",
+        "EVIDENCE_SUFFICIENCY",
+        "SEMANTIC_COMPATIBILITY"
+      ],
+      "minimum_grade": "LOCAL_RECOMPUTATION",
+      "verification_time": 1
+    },
+    "evidence": [],
+    "semantic_requirement": {
+      "claim_type": "artifact-digest",
+      "authority_class": "INDEPENDENT_RECOMPUTATION",
+      "subject": "demo:receiptos",
+      "scope": {
+        "artifact_path": "result.txt"
+      },
+      "valid_after": 0,
+      "valid_until": 100,
+      "assumptions": [],
+      "evidence_requirements": [
+        "artifact",
+        "execution"
+      ]
+    },
+    "requested_guarantees": [],
+    "continuity_request": {
+      "mode": "historical",
+      "entry_id": "entry-a",
+      "subject": "demo:receiptos",
+      "state": "A"
+    }
+  },
+  "bundle": {
+    "schema": "receiptos.verify.bundle.v1",
+    "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+    "statement": {
+      "schema": "receiptos.verify.statement.v1",
+      "verification_profile": "receiptos.verify.git-artifact.v1",
+      "subject": {
+        "kind": "git-artifact",
+        "id": "demo:receiptos",
+        "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+        "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+        "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+        "artifact_path": "result.txt",
+        "version": "1"
+      },
+      "claim": {
+        "kind": "SHA256_EQUALS",
+        "expected_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+      },
+      "policy": {
+        "id": "local-v1",
+        "version": "1",
+        "digest": "11ae01341e985bf3efbed2344d1eb4f35e194b2d7d03619caafd654f76fd0fa1"
+      },
+      "semantic_contract": {
+        "claim_type": "artifact-digest",
+        "authority_class": "INDEPENDENT_RECOMPUTATION",
+        "subject": "demo:receiptos",
+        "scope": {
+          "artifact_path": "result.txt"
+        },
+        "valid_after": 0,
+        "valid_until": 100,
+        "assumptions": [],
+        "evidence_requirements": [
+          "artifact",
+          "execution"
+        ]
+      },
+      "asserted_result": "PASS",
+      "evidence_manifest": [
+        {
+          "id": "artifact",
+          "role": "artifact",
+          "digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+          "size": 36
+        },
+        {
+          "id": "commit",
+          "role": "git-commit",
+          "digest": "47e86aa59fa6f0c28a9727b9833af81c68eeaff778eda9e9312077f4916db7ee",
+          "size": 192
+        },
+        {
+          "id": "tree",
+          "role": "git-tree",
+          "digest": "158bb5deadee4bb12cd66dd9a97c390b7cd10e4002bbcb5a90bf49d93deb12e3",
+          "size": 38
+        },
+        {
+          "id": "native-result",
+          "role": "native-result",
+          "digest": "49df175105cda22bf42796ae08ed1162e22a771cd0bc5a3193c1bdc48be415a4",
+          "size": 331
+        }
+      ],
+      "payload_digest": "aea245bcd56452fa1bfbbc2e7b8641ca137636192dade23359cbe2d73434a4c6",
+      "crypto": {
+        "provider": "ed25519",
+        "key_id": "synthetic-demo"
+      }
+    },
+    "signature_base64": "Sr2CLlRLqX4Q6gz1ijAmONr+JsJdQ/ipWwnp11PxcIsTkr55oLEurmLFK8Ol+viBN8SiCZWzcaDewrlel1vtBQ==",
+    "evidence": [
+      {
+        "id": "artifact",
+        "bytes_base64": "UmVjZWlwdE9TIFZlcmlmeSBzeW50aGV0aWMgYXJ0aWZhY3QK"
+      },
+      {
+        "id": "commit",
+        "bytes_base64": "dHJlZSA4ZDg0MGY2YTk4MzdjMWM4Zjc1ZTdhMDUxZGRjMmU5OTNkMGU1MTg0CmF1dGhvciBTeW50aGV0aWMgRml4dHVyZSA8Zml4dHVyZUBleGFtcGxlLmludmFsaWQ+IDAgKzAwMDAKY29tbWl0dGVyIFN5bnRoZXRpYyBGaXh0dXJlIDxmaXh0dXJlQGV4YW1wbGUuaW52YWxpZD4gMCArMDAwMAoKU3ludGhldGljIGV2aWRlbmNlIG9ubHkK"
+      },
+      {
+        "id": "tree",
+        "bytes_base64": "MTAwNjQ0IHJlc3VsdC50eHQAMEtSr1AEFGDCWtRgeYH+PD3mGws="
+      },
+      {
+        "id": "native-result",
+        "bytes_base64": "eyJldmFsdWF0aW9uIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6ImQyZTM4MDI4YjdhNDY0NmViNDZjOGFmMDQ1MGQxOWUzZjEyOGQ1YzViOWRiYmRiODUxOGFiYWIzN2IzOTM5MzMiLCJvYnNlcnZlZERpZ2VzdCI6ImQyZTM4MDI4YjdhNDY0NmViNDZjOGFmMDQ1MGQxOWUzZjEyOGQ1YzViOWRiYmRiODUxOGFiYWIzN2IzOTM5MzMiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIn0sIm91dGNvbWUiOiJWRVJJRklFRCIsInJlYXNvbkNvZGUiOiJydnIudjAuZGlnZXN0X21hdGNoIiwic2NoZW1hIjoicnZyLmNhbm9uaWNhbC1yZXN1bHQudjAifQ=="
+      }
+    ],
+    "payload": {
+      "crystal": {
+        "schema": "stealth.session.evidence.v1",
+        "session_id": "synthetic-receiptos-verify",
+        "directory": "local/synthetic",
+        "task": {
+          "title": "Synthetic local artifact evidence"
+        },
+        "agent": {
+          "id": "synthetic",
+          "runtime": "local"
+        },
+        "scope": {
+          "permission": null
+        },
+        "authorization": {
+          "delegation_ref": null,
+          "delegator": null,
+          "agent_operator": null,
+          "target": "local/synthetic",
+          "allowed_actions": [],
+          "authorization_valid_from": null,
+          "authorization_expiry": null,
+          "authorization_checked_at": 0,
+          "authorization_state_hash": "synthetic",
+          "authorized_at_execution": null
+        },
+        "execution": [],
+        "commands": [],
+        "changes": {
+          "files_changed": [],
+          "diff_sha256": null
+        },
+        "metadata": {
+          "message_count": 0,
+          "diff_count": 0,
+          "generated_by": "receiptos-verify-synthetic-fixture"
+        },
+        "anchor": {
+          "merkle_proof_status": "not attached",
+          "merkle_root": null,
+          "merkle_leaf_index": null,
+          "merkle_proof": [],
+          "onchain_anchor_status": "not anchored",
+          "network": "local/off-chain",
+          "contract": null,
+          "tx_hash": null,
+          "verifier_status": "not verified",
+          "receipt_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b"
+        }
+      },
+      "rvr": {
+        "originalBundle": {
+          "receipt": {
+            "claimDigest": "64b52a4e449ad87adc340de323fd01f5f601f232933df33e4b48dea61e260dc5",
+            "evidenceSetDigest": "3da4363fcf71ba61d452c18ec99a93eae2dd95ca2793e5bccb21ab48ef6e84ff",
+            "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+            "outcome": "VERIFIED",
+            "reasonCode": "rvr.v0.digest_match",
+            "resultDigest": "49df175105cda22bf42796ae08ed1162e22a771cd0bc5a3193c1bdc48be415a4"
+          },
+          "claim": {
+            "schema": "rvr.claim.sha256-equals.v0",
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+          },
+          "evidenceSet": {
+            "schema": "rvr.evidence-set.v0",
+            "members": [
+              {
+                "id": "artifact",
+                "status": "PRESENT",
+                "mediaType": "application/octet-stream",
+                "byteLength": "36",
+                "digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+              }
+            ]
+          },
+          "payloadsBase64": {
+            "artifact": "UmVjZWlwdE9TIFZlcmlmeSBzeW50aGV0aWMgYXJ0aWZhY3QK"
+          },
+          "verificationProfile": {
+            "schema": "rvr.verification-profile.v0",
+            "profileId": "rvr-generic-sha256-equals-v0",
+            "profileSchemaContract": {
+              "manifest": {
+                "id": "verification-profile-manifest-schema",
+                "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+                "sha256": "148afeb484d3866c1caae82e574182c1b748dd461dfaeb1d8095ecf4905690c1",
+                "requiredForRecomputation": true
+              },
+              "constraints": {
+                "id": "rvr-generic-sha256-equals-profile-schema",
+                "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+                "sha256": "ecded96c5f58f7057e2c5c0b6d9789942a9a7bf600f4a453387e99f8406e7baf",
+                "requiredForRecomputation": true
+              }
+            },
+            "dependencyResolution": {
+              "base": "SUPPLIED_PROFILE_PACKAGE_ROOT",
+              "pathFormat": "relative-posix-no-empty-dot-dotdot-or-colon-segments",
+              "locatorRole": "NORMATIVE_PACKAGE_RELATIVE_PATH",
+              "verificationOrder": "resolve-read-sha256-match-use"
+            },
+            "verificationSpecification": {
+              "id": "verification-specification",
+              "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+              "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+              "requiredForRecomputation": true
+            },
+            "conformanceVectorSet": {
+              "id": "rvr-v0-first-falsification-set",
+              "members": [
+                {
+                  "id": "expected-results",
+                  "path": "conformance/rvr-v0/expected.json",
+                  "sha256": "0ed23ee3530df93dde2f879981d28ddb3f60fc250c8652d109dd65fdb22193ce",
+                  "requiredForRecomputation": false
+                },
+                {
+                  "id": "adversarial-mutants",
+                  "path": "conformance/rvr-v0/mutants.json",
+                  "sha256": "d5d16cc53ec0d9be53968d7ffc01fe019cb8b2630390c04431f6ee9f54edf847",
+                  "requiredForRecomputation": false
+                },
+                {
+                  "id": "verification-vectors",
+                  "path": "conformance/rvr-v0/vectors.json",
+                  "sha256": "170fc62576fa8edb22073f73b28d9ac0deff26451ef651378839cd458da7312f",
+                  "requiredForRecomputation": false
+                }
+              ],
+              "digest": "2eb5e0c056d13c4beda4b3da6fafdcd34a6bd96479030e3914a79d08679c0687",
+              "digestRule": "sha256-utf8-sorted-path-tab-file-sha256-lf-rows"
+            },
+            "canonicalByteContract": {
+              "id": "rvr-canonical-json-v0",
+              "encoding": "UTF-8",
+              "domain": "null-boolean-unicode-scalar-string-array-object",
+              "objectKeyOrder": "unicode-scalar-value-ascending",
+              "arrayOrder": "preserved-with-duplicates",
+              "unicode": "scalar-values-only-no-normalization",
+              "numbers": "forbidden",
+              "stringEscaping": "rvr-json-string-escaping-v0",
+              "solidus": "literal",
+              "lineSeparators": "U+2028-and-U+2029-literal",
+              "whitespace": "none"
+            },
+            "schemaContracts": [
+              {
+                "id": "rvr-schema",
+                "path": "conformance/rvr-v0/rvr.schema.json",
+                "sha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+                "requiredForRecomputation": true
+              }
+            ],
+            "evidenceSetContract": {
+              "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+              "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+              "schemaPointer": "#/$defs/evidenceSet",
+              "digestRule": "sha256-utf8-rvr-canonical-json-v0-normalized-member-order"
+            },
+            "canonicalResultContract": {
+              "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+              "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+              "schemaPointer": "#/$defs/canonicalResult",
+              "outcomeProjection": "/outcome",
+              "reasonCodeProjection": "/reasonCode"
+            },
+            "resultHashRules": {
+              "algorithm": "SHA-256",
+              "input": "rvr-canonical-json-v0(canonicalResult)",
+              "encoding": "UTF-8-exactly-once",
+              "output": "lowercase-hex-no-prefix"
+            },
+            "reasonCodeNamespace": {
+              "verification": [
+                "rvr.v0.digest_match",
+                "rvr.v0.digest_mismatch",
+                "rvr.v0.required_evidence_unavailable"
+              ],
+              "recomputation": [
+                "rvr.recompute.identical",
+                "rvr.recompute.canonical_result_diverged",
+                "rvr.recompute.normative_dependency_unavailable",
+                "rvr.recompute.normative_dependency_identity_mismatch",
+                "rvr.recompute.committed_evidence_unavailable"
+              ],
+              "gateRejections": [
+                "rvr.gate.schema_invalid",
+                "rvr.gate.identity_mismatch",
+                "rvr.gate.result_projection_mismatch",
+                "rvr.gate.evidence_closure_incomplete"
+              ]
+            },
+            "externalContextPolicy": {
+              "mode": "FORBIDDEN_UNLESS_COMMITTED",
+              "ambientInputs": "FORBIDDEN",
+              "immutableCommitments": []
+            }
+          },
+          "canonicalResult": {
+            "schema": "rvr.canonical-result.v0",
+            "outcome": "VERIFIED",
+            "reasonCode": "rvr.v0.digest_match",
+            "evaluation": {
+              "operation": "SHA256_EQUALS",
+              "evidenceMember": "artifact",
+              "expectedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+              "observedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+            }
+          }
+        },
+        "candidateCase": {
+          "claim": {
+            "schema": "rvr.claim.sha256-equals.v0",
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+          },
+          "evidenceSet": {
+            "schema": "rvr.evidence-set.v0",
+            "members": [
+              {
+                "id": "artifact",
+                "status": "PRESENT",
+                "mediaType": "application/octet-stream",
+                "byteLength": "36",
+                "digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+              }
+            ]
+          },
+          "payloadsBase64": {
+            "artifact": "UmVjZWlwdE9TIFZlcmlmeSBzeW50aGV0aWMgYXJ0aWZhY3QK"
+          }
+        }
+      },
+      "relations": {
+        "guarantee": null,
+        "continuity": {
+          "entries": [
+            {
+              "entry_id": "entry-a",
+              "sequence": 0,
+              "predecessor_ref": null,
+              "receipt_root": "root-a",
+              "proof_object_ref": "proof-a",
+              "subject": "demo:receiptos",
+              "state": "A"
+            },
+            {
+              "entry_id": "entry-b",
+              "sequence": 1,
+              "predecessor_ref": "entry-a",
+              "receipt_root": "root-b",
+              "proof_object_ref": "proof-b",
+              "subject": "demo:receiptos",
+              "state": "B"
+            }
+          ]
+        },
+        "domain": null,
+        "execution": {
+          "package_present": true,
+          "runner_declared": true,
+          "executed": true,
+          "subject_digest": "1fc64f7f95fb54b134e71e4a064b28fe66d0cf7ce813df6d89187bdbf6b06c7b",
+          "executable_pin": "9dd36e882dd372f264b77b179130948aa5adcbde",
+          "evidence_grade": "LOCAL_RECOMPUTATION"
+        }
+      }
+    }
+  },
+  "expected": {
+    "overall": "VERIFIED",
+    "layers": {
+      "INPUT": "ADMITTED",
+      "CANONICALIZATION": "VERIFIED",
+      "INTEGRITY": "VERIFIED",
+      "AUTHENTICITY": "VERIFIED",
+      "SUBJECT_BINDING": "VERIFIED",
+      "RECOMPUTATION": "REPRODUCED",
+      "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+      "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+      "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+      "CONTINUITY": "PRESERVED",
+      "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+      "PRODUCT_PROJECTION": "VERIFIED",
+      "EXPLAINABLE_REPORT": "GENERATED",
+      "PROVENANCE": "RECORDED"
+    },
+    "reason_codes": [
+      "LATER_STATE_NONBLOCKING_FOR_HISTORICAL_CLAIM"
+    ]
+  },
+  "required_positive_controls": [
+    "V01"
+  ],
+  "mutation_killed": "none",
+  "execution_setup": null
+}

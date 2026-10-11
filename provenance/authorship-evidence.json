@@ -1,0 +1,4138 @@
+{
+  "schema": "receiptos.verify.authorship-evidence.v1",
+  "basis": "Frozen independent audit contribution ledger, with mechanical commit/PR/path attribution. Current integration is recorded separately in sources.json.",
+  "auditDate": "2026-10-11",
+  "soleOwnershipEstablished": false,
+  "allocationPercentagesCalculated": false,
+  "evidence": [
+    {
+      "id": "RV-C001",
+      "capability_id": "prf-relation",
+      "capability_name": "Protected-relation discrimination and oracle-blind adapter protocol",
+      "source_repository": "pipavlo82/protected-relation-fixtures",
+      "source_revision": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "source_paths": [
+        "tools/relation_discrimination.py",
+        "adapters/v0/run_adapter.py",
+        "adapters/v0/score_results.py",
+        "spec/external-adapter-contract-v0.md"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "b14d63e0d8f869c0b7aa0efdb1d2a0a23ed6dd68"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C002",
+      "capability_id": "prf-award",
+      "capability_name": "Award-to-actual-settlement guarantee boundary",
+      "source_repository": "pipavlo82/protected-relation-fixtures",
+      "source_revision": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "source_paths": [
+        "tools/award_actual_settlement.py",
+        "tools/validate_award_actual_settlement.py",
+        "conformance/award-actual-settlement-v0/suite.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "717f04b3216c560949331dfc084e2fa6bb5e95bd"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C003",
+      "capability_id": "prf-guarantee",
+      "capability_name": "Neutral bounded guarantee-preservation consumer",
+      "source_repository": "pipavlo82/protected-relation-fixtures",
+      "source_revision": "f525737069dc4cef7741f805d08a988912f4454f",
+      "source_paths": [
+        "tools/guarantee_preservation.py",
+        "tools/guarantee_preservation_adapters.py",
+        "conformance/guarantee-preservation-v0/contract.schema.json",
+        "conformance/guarantee-preservation-v0/consumer-inputs.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "OPEN_PR_14",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "f525737069dc4cef7741f805d08a988912f4454f"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C004",
+      "capability_id": "seg-relations",
+      "capability_name": "Exact conversion/direct-feed semantic relations",
+      "source_repository": "pipavlo82/semantic-execution-guard",
+      "source_revision": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "source_paths": [
+        "relations/robinhood-stock-token-v0/recompute.mjs",
+        "relations/robinhood-adjusted-feed-consumption-v0/recompute.mjs",
+        "relations/robinhood-stock-token-v0/relation.schema.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "a5f8aebff811ad12ffd6ba7ca01552f81dec35ac"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C005",
+      "capability_id": "seg-consumer",
+      "capability_name": "Price-carrying same-transaction protected effect",
+      "source_repository": "pipavlo82/semantic-execution-guard",
+      "source_revision": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "source_paths": [
+        "contracts/SemanticExecutionGuard.sol",
+        "contracts/ProtectedPriceConsumer.sol",
+        "contracts/ProtectedPriceActionTarget.sol",
+        "docs/protected-action-consumer-v0.md"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "UNLINKED_GIT_AUTHOR:babyblueviper1",
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "0454870b3ce632a2ba98a3d744472862120f6b5d",
+          "686d9247451d68c6910c2e6bae79664cb763b33f",
+          "8dc4f920bfbebf3531d6ebdbfcc3f16c154b5d04"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C006",
+      "capability_id": "artifact-ui",
+      "capability_name": "Deterministic paper/QR receipt-history carrier",
+      "source_repository": "pipavlo82/-crystal-artifact",
+      "source_revision": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "source_paths": [
+        "src/crystal-artifact.ts",
+        "src/canon.ts",
+        "src/types.ts",
+        "ui/ui.js",
+        "tests/golden-vectors.test.ts"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "1b355be8a72aea33675ea480827e767afbf70f0d",
+          "222c14258370ffb79af7091197e1b69a33844796",
+          "530a33342d528ea53bc2df92ecb484272653f1e1",
+          "89eb3aca49fb0673ffdae0ea38f71fae1d6849ab",
+          "a6b61123589a8064ece4b211ce160274bc6e32df",
+          "c0430d85d66fcc7b3da69a6a41767cef885f978e",
+          "c559fcac13eeca489e256888fcbc643017a6ace1",
+          "f519f08d96c55da9aad3f74a5e4058059967d8d1"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C007",
+      "capability_id": "r4-signature",
+      "capability_name": "Application-specific ECDSA recovery endpoint",
+      "source_repository": "pipavlo82/r4-saas-api",
+      "source_revision": "7815fd84dd7eb9347b8399719cfeff941ff8df2a",
+      "source_paths": [
+        "app/verify_route.py",
+        "app/main.py",
+        "requirements.txt"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "d80d5013781732be945f80ac051baf77241c271c"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C008",
+      "capability_id": "witness-key",
+      "capability_name": "Published Ed25519 witness key material",
+      "source_repository": "pipavlo82/pipavlo82.github.io",
+      "source_revision": "9a0139ebfa1df4fa6bb9133c0eb6be6d64e67037",
+      "source_paths": [
+        "keys/witness.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_FIXTURE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "authorship_evidence_commits": [
+          "9a0139ebfa1df4fa6bb9133c0eb6be6d64e67037"
+        ]
+      },
+      "downstream_adoption_evidence": "No ReceiptOS Verify implementation exists. Public source history is evidence of source contribution only.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C009",
+      "capability_id": "CR-ROOT",
+      "capability_name": "ReceiptOS evidence canonicalization and receipt-root recomputation",
+      "source_repository": "pipavlo82/crystal-receipt",
+      "source_revision": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "source_paths": [
+        "src/receiptos/canon/receipt-root.ts"
+      ],
+      "contribution_commit": "0b2b276d4e899ce43150e848c6e37cc26df71cbf",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-06-18T02:01:27Z",
+          "github_commit_url": "https://github.com/pipavlo82/crystal-receipt/commit/0b2b276d4e899ce43150e848c6e37cc26df71cbf",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": {
+        "repository": "pipavlo82/Chronicle",
+        "commit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "path": "src/chronicle_receiptos_root.mjs",
+        "evidence": "Chronicle source explicitly declares a literal port of Crystal canonicalization and root derivation."
+      },
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C010",
+      "capability_id": "CR-ROOT",
+      "capability_name": "ReceiptOS evidence canonicalization and receipt-root recomputation",
+      "source_repository": "pipavlo82/crystal-receipt",
+      "source_revision": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "source_paths": [
+        "src/receiptos/canon/receipt-root.ts"
+      ],
+      "contribution_commit": "9bd7742e6c44e955408cd5d10b32463381ce5f73",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-06-25T11:17:01Z",
+          "github_commit_url": "https://github.com/pipavlo82/crystal-receipt/commit/9bd7742e6c44e955408cd5d10b32463381ce5f73",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C011",
+      "capability_id": "CR-PORTABLE",
+      "capability_name": "Evidence capsule, provenance summary and portable proof object",
+      "source_repository": "pipavlo82/crystal-receipt",
+      "source_revision": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "source_paths": [
+        "src/receiptos/capsule/portable-proof-object-v0.ts"
+      ],
+      "contribution_commit": "b79f15beb1c23ff0bfb9f585efa1a9fba0ec901f",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-06-28T23:05:04Z",
+          "github_commit_url": "https://github.com/pipavlo82/crystal-receipt/commit/b79f15beb1c23ff0bfb9f585efa1a9fba0ec901f",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C012",
+      "capability_id": "CR-CONTINUITY",
+      "capability_name": "Checkpoint local predecessor/reference/sequence evaluator",
+      "source_repository": "pipavlo82/crystal-receipt",
+      "source_revision": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "source_paths": [
+        "src/receiptos/capsule/chronicle-checkpoint-continuity-v0.ts"
+      ],
+      "contribution_commit": "43ffc6033c5bbe01771091e78c2d17b09835dace",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-07-21T19:31:15Z",
+          "github_commit_url": "https://github.com/pipavlo82/crystal-receipt/commit/43ffc6033c5bbe01771091e78c2d17b09835dace",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C013",
+      "capability_id": "CR-TSEI",
+      "capability_name": "Transformation-stable evidence interoperability",
+      "source_repository": "pipavlo82/crystal-receipt",
+      "source_revision": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "source_paths": [
+        "src/receiptos/challenge/transformation-stability.ts"
+      ],
+      "contribution_commit": "3a9956563ada007acc1f3dc46e58e78e9bfd36aa",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-08-12T13:55:34Z",
+          "github_commit_url": "https://github.com/pipavlo82/crystal-receipt/commit/3a9956563ada007acc1f3dc46e58e78e9bfd36aa",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C014",
+      "capability_id": "RVR-CORE",
+      "capability_name": "Generic RVR dual-axis evaluation and replay",
+      "source_repository": "pipavlo82/recomputable-verification-receipts",
+      "source_revision": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "source_paths": [
+        "conformance/rvr-v0/adapter.py"
+      ],
+      "contribution_commit": "8b0081c78205a9308b9af96c41a34e4fde8adacc",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-08-26T20:58:31Z",
+          "github_commit_url": "https://github.com/pipavlo82/recomputable-verification-receipts/commit/8b0081c78205a9308b9af96c41a34e4fde8adacc",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": {
+        "repository": "pipavlo82/recomputable-verification-receipts",
+        "commit": "54f6b2fd1fe09c72482512e02fef48aaa47d486a",
+        "path": "profiles/judge-protocol-rvr-v0/adapter.py",
+        "evidence": "The Judge adapter author header explicitly attributes generic scaffolding to Pavlo at commit 287c0ea under Apache-2.0."
+      },
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C015",
+      "capability_id": "RVR-CORE",
+      "capability_name": "Generic RVR dual-axis evaluation and replay",
+      "source_repository": "pipavlo82/recomputable-verification-receipts",
+      "source_revision": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "source_paths": [
+        "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md"
+      ],
+      "contribution_commit": "8b0081c78205a9308b9af96c41a34e4fde8adacc",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-08-26T20:58:31Z",
+          "github_commit_url": "https://github.com/pipavlo82/recomputable-verification-receipts/commit/8b0081c78205a9308b9af96c41a34e4fde8adacc",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C016",
+      "capability_id": "RVR-CORE",
+      "capability_name": "Generic RVR dual-axis evaluation and replay",
+      "source_repository": "pipavlo82/recomputable-verification-receipts",
+      "source_revision": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "source_paths": [
+        "conformance/rvr-v0/adapter.py"
+      ],
+      "contribution_commit": "0cf9d2639b1c36ed5ea515f0d6ddb0c6035f633d",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_MUTATION_CONTROL"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-08-26T21:43:41Z",
+          "github_commit_url": "https://github.com/pipavlo82/recomputable-verification-receipts/commit/0cf9d2639b1c36ed5ea515f0d6ddb0c6035f633d",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C017",
+      "capability_id": "RVR-CORE",
+      "capability_name": "Generic RVR dual-axis evaluation and replay",
+      "source_repository": "pipavlo82/recomputable-verification-receipts",
+      "source_revision": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "source_paths": [
+        "conformance/rvr-v0/adapter.py"
+      ],
+      "contribution_commit": "48cb0692716afc18a81c0128e330f3e88f610f48",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-08-30T21:33:58Z",
+          "github_commit_url": "https://github.com/pipavlo82/recomputable-verification-receipts/commit/48cb0692716afc18a81c0128e330f3e88f610f48",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C018",
+      "capability_id": "RVR-INVINO-V1",
+      "capability_name": "Invinoveritas deterministic signed-verdict binding v1",
+      "source_repository": "pipavlo82/recomputable-verification-receipts",
+      "source_revision": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "source_paths": [
+        "profiles/invinoveritas-signed-verdict-v1/adapter.py"
+      ],
+      "contribution_commit": "3695273ea5385349a19ad124e7cfebf27118707b",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-09-03T16:32:31Z",
+          "github_commit_url": "https://github.com/pipavlo82/recomputable-verification-receipts/commit/3695273ea5385349a19ad124e7cfebf27118707b",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C019",
+      "capability_id": "RVR-JUDGE",
+      "capability_name": "Judge Protocol deterministic ruling reproduction",
+      "source_repository": "pipavlo82/recomputable-verification-receipts",
+      "source_revision": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "source_paths": [
+        "profiles/judge-protocol-rvr-v0/adapter.py"
+      ],
+      "contribution_commit": "54f6b2fd1fe09c72482512e02fef48aaa47d486a",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "MERGED_PR_9",
+      "contribution_types": [
+        "SHARED_TEAM_COMPONENT"
+      ],
+      "contributors": [
+        "vijaygopalbalasa"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "vijaygopalbalasa",
+          "git_author_name": "Vijaygopal B",
+          "git_author_date": "2026-09-28T16:07:55Z",
+          "github_commit_url": "https://github.com/pipavlo82/recomputable-verification-receipts/commit/54f6b2fd1fe09c72482512e02fef48aaa47d486a",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "Judge-specific profile author is vijaygopalbalasa; generic RVR scaffolding is explicitly attributed to Pavlo. Preserve Unicode License V3 notice and captured evidence provenance.",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": {
+        "pull_request": "https://github.com/pipavlo82/recomputable-verification-receipts/pull/9",
+        "merge_commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+        "source_head": "54f6b2fd1fe09c72482512e02fef48aaa47d486a"
+      },
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C020",
+      "capability_id": "RVR-RUST",
+      "capability_name": "Non-normative third implementation of frozen RC2",
+      "source_repository": "pipavlo82/recomputable-verification-receipts",
+      "source_revision": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "source_paths": [
+        "review/rc2-independent-rust/src/main.rs"
+      ],
+      "contribution_commit": "b84a6237ba47922fd7d45b349f5a17a4352b667f",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "INDEPENDENT_REPRODUCTION"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-08-27T00:02:25Z",
+          "github_commit_url": "https://github.com/pipavlo82/recomputable-verification-receipts/commit/b84a6237ba47922fd7d45b349f5a17a4352b667f",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C021",
+      "capability_id": "RSI-PLANE",
+      "capability_name": "Relational conformance admission/comparison and mapped mutation methodology",
+      "source_repository": "pipavlo82/relational-security-invariants",
+      "source_revision": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "source_paths": [
+        "rsi/run.py"
+      ],
+      "contribution_commit": "b0f93298453b3043765d4543c233fbb63647b11d",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-09-09T23:31:39Z",
+          "github_commit_url": "https://github.com/pipavlo82/relational-security-invariants/commit/b0f93298453b3043765d4543c233fbb63647b11d",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "AI-assisted proposal derived from an owner input digest, documented in research/provenance.md. This does not establish priority or sole authorship.",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C022",
+      "capability_id": "RSI-PLANE",
+      "capability_name": "Relational conformance admission/comparison and mapped mutation methodology",
+      "source_repository": "pipavlo82/relational-security-invariants",
+      "source_revision": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "source_paths": [
+        "runner/expectation_contract.py"
+      ],
+      "contribution_commit": "b881d2bee325dc86a8348e31d0d33e5b083cc3f4",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-09-10T00:42:51Z",
+          "github_commit_url": "https://github.com/pipavlo82/relational-security-invariants/commit/b881d2bee325dc86a8348e31d0d33e5b083cc3f4",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C023",
+      "capability_id": "CHRONICLE-ADMISSION",
+      "capability_name": "ReceiptOS evidence-backed history admission",
+      "source_repository": "pipavlo82/Chronicle",
+      "source_revision": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "source_paths": [
+        "src/chronicle_receiptos_admission.mjs"
+      ],
+      "contribution_commit": "1dceb87977d9cde071521b63c4d46fe83dd9704b",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "INTEGRATION_WORK",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-07-24T00:56:52Z",
+          "github_commit_url": "https://github.com/pipavlo82/Chronicle/commit/1dceb87977d9cde071521b63c4d46fe83dd9704b",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C024",
+      "capability_id": "CHRONICLE-ROOTS",
+      "capability_name": "Artifact/Collection/Portfolio aggregate roots and local views",
+      "source_repository": "pipavlo82/Chronicle",
+      "source_revision": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "source_paths": [
+        "src/chronicle_portfolio.mjs"
+      ],
+      "contribution_commit": "19ccfe3172dd6aff00a29ffccb7ee2996a800e93",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-06-28T02:52:36Z",
+          "github_commit_url": "https://github.com/pipavlo82/Chronicle/commit/19ccfe3172dd6aff00a29ffccb7ee2996a800e93",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C025",
+      "capability_id": "MVP-HMAC",
+      "capability_name": "Historical decision receipt HMAC/chain/replay seed",
+      "source_repository": "pipavlo82/receiptos-mvp",
+      "source_revision": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "source_paths": [
+        "src/receiptos.py"
+      ],
+      "contribution_commit": "28d17f711f0898cce01adb745f1b47868db71be7",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DOCUMENTATION_ONLY",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-03-29T16:41:04Z",
+          "github_commit_url": "https://github.com/pipavlo82/receiptos-mvp/commit/28d17f711f0898cce01adb745f1b47868db71be7",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C026",
+      "capability_id": "CRC-CLAIM-CELL",
+      "capability_name": "Claim identity and mutual-recompute Cell protocol/UI",
+      "source_repository": "pipavlo82/cross-reference-console",
+      "source_revision": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "source_paths": [
+        "reference/claim_id.py"
+      ],
+      "contribution_commit": "a82f8f10b3ae870195e0fd12d92ab45125e19fd8",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "SHARED_TEAM_COMPONENT"
+      ],
+      "contributors": [
+        "Echo-Merlini"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "Echo-Merlini",
+          "git_author_name": "Echo-Merlini",
+          "git_author_date": "2026-08-05T17:42:18Z",
+          "github_commit_url": "https://github.com/pipavlo82/cross-reference-console/commit/a82f8f10b3ae870195e0fd12d92ab45125e19fd8",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C027",
+      "capability_id": "CRC-CLAIM-CELL",
+      "capability_name": "Claim identity and mutual-recompute Cell protocol/UI",
+      "source_repository": "pipavlo82/cross-reference-console",
+      "source_revision": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "source_paths": [
+        "CELL-v1.md"
+      ],
+      "contribution_commit": "a82f8f10b3ae870195e0fd12d92ab45125e19fd8",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "UPSTREAM_ATTRIBUTED_REQUIREMENTS_NOT_COMMIT_AUTHOR",
+      "contribution_types": [
+        "REVIEW_ONLY"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "SECURITY_REVIEW",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "Echo-Merlini",
+          "git_author_name": "Echo-Merlini",
+          "git_author_date": "2026-08-05T17:42:18Z",
+          "github_commit_url": "https://github.com/pipavlo82/cross-reference-console/commit/a82f8f10b3ae870195e0fd12d92ab45125e19fd8",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "The actual commit author is Echo-Merlini. The original review comment was not recovered by this agent. VГ©rtice-specific work is excluded.",
+        "authorship_confidence": "UPSTREAM_REPORTED_ATTRIBUTION"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C028",
+      "capability_id": "CONDUCT-WITNESS",
+      "capability_name": "Pinned independent-operation conduct reproduction and workflow provenance",
+      "source_repository": "pipavlo82/conduct-witness",
+      "source_revision": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "source_paths": [
+        "reproduce.sh"
+      ],
+      "contribution_commit": "873304bfebdf84782dba32ee95333c0f299f24e8",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "INDEPENDENT_REPRODUCTION"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "INTEGRATION_WORK",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-10-02T01:19:58Z",
+          "github_commit_url": "https://github.com/pipavlo82/conduct-witness/commit/873304bfebdf84782dba32ee95333c0f299f24e8",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "Declared third-party template origin: 817913c54d6679e5aab1bb287c989651dea9d6c3. No open-source grant was found in this repository.",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C029",
+      "capability_id": "CONDUCT-WITNESS",
+      "capability_name": "Pinned independent-operation conduct reproduction and workflow provenance",
+      "source_repository": "pipavlo82/conduct-witness",
+      "source_revision": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "source_paths": [
+        "reproduce.sh"
+      ],
+      "contribution_commit": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "ON_DEFAULT_BRANCH",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "INTEGRATION_WORK",
+      "authorship_evidence": {
+        "mechanical_authorship": {
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "git_author_date": "2026-10-05T12:25:10Z",
+          "github_commit_url": "https://github.com/pipavlo82/conduct-witness/commit/2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+          "attribution_scope": "GitHub file-scoped commit history identifies author of this commit; does not establish sole ownership/originality of all lines."
+        },
+        "notes": "",
+        "authorship_confidence": "MECHANICALLY_ATTRIBUTED_COMMIT"
+      },
+      "downstream_adoption_evidence": null,
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C030",
+      "capability_id": "shared.encode",
+      "capability_name": "Explicit prospective JSON UTF-8 LF encoder",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "20ad60df7a034edaad2b1baf54e88886860e5a69",
+      "source_paths": [
+        "conformance/encode-json-utf8-lf-v0/README.md",
+        "conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.spec.md",
+        "conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.vectors.json",
+        "conformance/encode-json-utf8-lf-v0/encoder.py",
+        "conformance/encode-json-utf8-lf-v0/encoder.ts",
+        "conformance/encode-json-utf8-lf-v0/gate.py",
+        "conformance/encode-json-utf8-lf-v0/suite.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": 21,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/21",
+      "pr_head_sha": "20ad60df7a034edaad2b1baf54e88886860e5a69",
+      "pr_base_sha": "b97c72959c432ffc1b03ecccf821824a367b231e",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "f1d75a530761c983e8b6900f036935ac7758538c",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "20ad60df7a034edaad2b1baf54e88886860e5a69",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C031",
+      "capability_id": "shared.runner",
+      "capability_name": "Conformance declaration/pin and process classification methodology",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+      "source_paths": [
+        "tools/run_conformance.py",
+        "tools/test_run_conformance_failure_classification.py"
+      ],
+      "contribution_commit": "ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+      "pr_number": 22,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/22",
+      "pr_head_sha": "ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+      "pr_base_sha": "dbb984bcf92dea2b39d5752c5fcb6a53ec4728b3",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C032",
+      "capability_id": "shared.bps",
+      "capability_name": "Prospective shared basis-points golden vector adoption",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "4afc5540ee56c48cb37cb4b7815422fe758bd647",
+      "source_paths": [
+        "conformance/README.md",
+        "conformance/erc8275-win-rate-bps-v0/README.md",
+        "conformance/erc8275-win-rate-bps-v0/erc8275-win-rate-bps-v0.spec.md",
+        "conformance/erc8275-win-rate-bps-v0/erc8275-win-rate-bps-v0.vectors.json",
+        "conformance/erc8275-win-rate-bps-v0/gate.py",
+        "conformance/erc8275-win-rate-bps-v0/suite.json"
+      ],
+      "contribution_commit": "4afc5540ee56c48cb37cb4b7815422fe758bd647",
+      "pr_number": 28,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/28",
+      "pr_head_sha": "4afc5540ee56c48cb37cb4b7815422fe758bd647",
+      "pr_base_sha": "1dfc527d8f9b3561d32ca510f8fefd8d290391f6",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_VECTOR"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "4afc5540ee56c48cb37cb4b7815422fe758bd647",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C033",
+      "capability_id": "shared.event",
+      "capability_name": "Event-time authorization versus concurrent atomic admission",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "93946a40bd8e16312c274b6a5bc4d0773aaa44a8",
+      "source_paths": [
+        "conformance/event-time-concurrency-boundary-v0/README.md",
+        "conformance/event-time-concurrency-boundary-v0/boundary_check.py",
+        "conformance/event-time-concurrency-boundary-v0/mutation_check.py",
+        "conformance/event-time-concurrency-boundary-v0/suite.json",
+        "conformance/event-time-concurrency-boundary-v0/vectors.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": 45,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/45",
+      "pr_head_sha": "93946a40bd8e16312c274b6a5bc4d0773aaa44a8",
+      "pr_base_sha": "f5a25bd6bbf555c710d63915d4e5092548e3702c",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "c017c3db5f05ced525f8ab47fd4771acf726118d",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "93946a40bd8e16312c274b6a5bc4d0773aaa44a8",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C034",
+      "capability_id": "shared.consume",
+      "capability_name": "Consumption-time current-state validity",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+      "source_paths": [
+        "conformance/consumption-time-state-binding-v0/README.md",
+        "conformance/consumption-time-state-binding-v0/binding_check.py",
+        "conformance/consumption-time-state-binding-v0/mutation_check.py",
+        "conformance/consumption-time-state-binding-v0/suite.json",
+        "conformance/consumption-time-state-binding-v0/vectors.json"
+      ],
+      "contribution_commit": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+      "pr_number": 46,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/46",
+      "pr_head_sha": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+      "pr_base_sha": "c9002b8bac2d7933984fa54b5bc6ab8a3dcff461",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C035",
+      "capability_id": "shared.permission",
+      "capability_name": "Permission grant and epoch at actual consumption",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+      "source_paths": [
+        "conformance/permission-consumption-boundary-v0/README.md",
+        "conformance/permission-consumption-boundary-v0/mutation_check.py",
+        "conformance/permission-consumption-boundary-v0/permission_check.py",
+        "conformance/permission-consumption-boundary-v0/suite.json",
+        "conformance/permission-consumption-boundary-v0/vectors.json"
+      ],
+      "contribution_commit": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+      "pr_number": 47,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/47",
+      "pr_head_sha": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+      "pr_base_sha": "1c3287197b418d6049598359d2c2d5217d473265",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C036",
+      "capability_id": "shared.empty.pr65",
+      "capability_name": "Nonempty mutation/control inventory admission",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "source_paths": [
+        ".github/workflows/conformance.yml",
+        "conformance/authorized-preimage-schema-v0/mutation_check.py",
+        "conformance/authorized-preimage-schema-v0/suite.json",
+        "conformance/consumption-time-state-binding-v0/mutation_check.py",
+        "conformance/consumption-time-state-binding-v0/suite.json",
+        "conformance/encode-json-utf8-lf-v0/gate.py",
+        "conformance/event-time-concurrency-boundary-v0/mutation_check.py",
+        "conformance/event-time-concurrency-boundary-v0/suite.json",
+        "conformance/permission-consumption-boundary-v0/mutation_check.py",
+        "conformance/permission-consumption-boundary-v0/suite.json",
+        "conformance/scan-subject-binding-v0/mutation_check.py",
+        "conformance/scan-subject-binding-v0/suite.json",
+        "tools/test_mutation_inventory_nonempty.py"
+      ],
+      "contribution_commit": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "pr_number": 65,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/65",
+      "pr_head_sha": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "pr_base_sha": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "merged_open_status": "OPEN",
+      "contribution_types": [
+        "ORIGINAL_MUTATION_CONTROL"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The PR commit list associates the nonempty-inventory implementation and regression tests with pipavlo82. Exact head source was independently tested.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Open PR65 only; not adopted into default main.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C037",
+      "capability_id": "shared.event",
+      "capability_name": "Event-time authorization versus concurrent atomic admission",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "93946a40bd8e16312c274b6a5bc4d0773aaa44a8",
+      "source_paths": [
+        "conformance/event-time-concurrency-boundary-v0/README.md",
+        "conformance/event-time-concurrency-boundary-v0/boundary_check.py",
+        "conformance/event-time-concurrency-boundary-v0/mutation_check.py",
+        "conformance/event-time-concurrency-boundary-v0/suite.json",
+        "conformance/event-time-concurrency-boundary-v0/vectors.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": 45,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/45",
+      "pr_head_sha": "93946a40bd8e16312c274b6a5bc4d0773aaa44a8",
+      "pr_base_sha": "f5a25bd6bbf555c710d63915d4e5092548e3702c",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_MUTATION_CONTROL"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "c017c3db5f05ced525f8ab47fd4771acf726118d",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "93946a40bd8e16312c274b6a5bc4d0773aaa44a8",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C038",
+      "capability_id": "shared.consume",
+      "capability_name": "Consumption-time current-state validity",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+      "source_paths": [
+        "conformance/consumption-time-state-binding-v0/README.md",
+        "conformance/consumption-time-state-binding-v0/binding_check.py",
+        "conformance/consumption-time-state-binding-v0/mutation_check.py",
+        "conformance/consumption-time-state-binding-v0/suite.json",
+        "conformance/consumption-time-state-binding-v0/vectors.json"
+      ],
+      "contribution_commit": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+      "pr_number": 46,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/46",
+      "pr_head_sha": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+      "pr_base_sha": "c9002b8bac2d7933984fa54b5bc6ab8a3dcff461",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_MUTATION_CONTROL"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "6be5cffb0b286858f0749c5ffb5e66d2080cb03a",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C039",
+      "capability_id": "shared.permission",
+      "capability_name": "Permission grant and epoch at actual consumption",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+      "source_paths": [
+        "conformance/permission-consumption-boundary-v0/README.md",
+        "conformance/permission-consumption-boundary-v0/mutation_check.py",
+        "conformance/permission-consumption-boundary-v0/permission_check.py",
+        "conformance/permission-consumption-boundary-v0/suite.json",
+        "conformance/permission-consumption-boundary-v0/vectors.json"
+      ],
+      "contribution_commit": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+      "pr_number": 47,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/47",
+      "pr_head_sha": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+      "pr_base_sha": "1c3287197b418d6049598359d2c2d5217d473265",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_MUTATION_CONTROL"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "e06deac529d3a7cf4149bbb6f18c105b6e4dbdd3",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C040",
+      "capability_id": "shared.runner",
+      "capability_name": "Conformance declaration/pin and process classification methodology",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "a0a011cc7d8f4d657ae72b20b554c934fe735756",
+      "source_paths": [
+        ".gitattributes",
+        "conformance/deils-leg2-reveal-v0/README.md",
+        "conformance/deils-leg2-reveal-v0/invinoveritas_real_records_2026-07-31.json",
+        "conformance/deils-leg2-reveal-v0/reveal_check.py",
+        "conformance/deils-leg2-reveal-v0/vectors_invinoveritas_blindhit.json",
+        "conformance/pq-recovery-classes-v0/README.md",
+        "conformance/pq-recovery-classes-v0/recovery_check.py",
+        "conformance/pq-recovery-classes-v0/suite.json",
+        "conformance/pq-recovery-classes-v0/vectors.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": 4,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/4",
+      "pr_head_sha": "a0a011cc7d8f4d657ae72b20b554c934fe735756",
+      "pr_base_sha": "41afde2ccc1d5013ed8bbe59cb26dbacf0af9b63",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "SHARED_TEAM_COMPONENT"
+      ],
+      "contributors": [
+        "pipavlo82 PRsubmitter; TMerlini commit author"
+      ],
+      "evidence_unit": "INTEGRATION_WORK",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "a732a24ab323b06532107c656d43770efbbc8a88",
+            "login": "TMerlini",
+            "declared_author": "TMerlini"
+          },
+          {
+            "sha": "47e37607d63b800530842fa39f6ee47d6590a258",
+            "login": "TMerlini",
+            "declared_author": "TMerlini"
+          },
+          {
+            "sha": "dbea1c3d70b288923831b1a762c9d46b10ca25d1",
+            "login": "TMerlini",
+            "declared_author": "TMerlini"
+          },
+          {
+            "sha": "6f8e9e6632d84e189de334be9eaba02728b3e09b",
+            "login": "TMerlini",
+            "declared_author": "TMerlini"
+          },
+          {
+            "sha": "e92f630dfe36a67ae70e00df6b33dd674943ee14",
+            "login": "TMerlini",
+            "declared_author": "TMerlini"
+          },
+          {
+            "sha": "a0a011cc7d8f4d657ae72b20b554c934fe735756",
+            "login": "TMerlini",
+            "declared_author": "TMerlini"
+          }
+        ],
+        "authorship_evidence": "Pavlo opened PR4, but the actual listed implementation commit a0a011cc is authored by TMerlini. PR submission is not sole code authorship.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Shared pq-recovery integration; no sole-author claim.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C041",
+      "capability_id": "shared.scan",
+      "capability_name": "Subject-bound authenticated report versus reproduced scan",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "a05099ee5674f40148ee88ddf5105fdcf2fda607",
+      "source_paths": [
+        "conformance/scan-subject-binding-v0/README.md",
+        "conformance/scan-subject-binding-v0/mutation_check.py",
+        "conformance/scan-subject-binding-v0/scan_check.py",
+        "conformance/scan-subject-binding-v0/suite.json",
+        "conformance/scan-subject-binding-v0/vectors.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": 59,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/59",
+      "pr_head_sha": "a05099ee5674f40148ee88ddf5105fdcf2fda607",
+      "pr_base_sha": "560455688a32a0d49cdbded021ed565f83fe751c",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "SECURITY_FINDING"
+      ],
+      "contributors": [
+        "pipavlo82 review/finding; babyblueviper1 source author; zexoverz review"
+      ],
+      "evidence_unit": "SECURITY_REVIEW",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "aca5cde444c12f44eed061de21b554c255a03c8b",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "8008176311d26513f1c71b4dcb3b552da850bd45",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "6b8aaccfa45baa35a67c265aa94be5f93baaee63",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "e78eb1d9ba6425601e43ca17953c8e321801e2ab",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "a725f2e6aa0d887b8bd51d9081c07dbcad5c9c87",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "2cc03d48d0469a5c7deffa8edfb91e77395fe513",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "a05099ee5674f40148ee88ddf5105fdcf2fda607",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          }
+        ],
+        "authorship_evidence": "Source credits Pavlo for the M8 consuming-path signature guard and Zexo plus Pavlo for the verdict-wide grade invariant. PR59 code commits are authored by babyblueviper1. Exact review URLs and versions are retained.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged PR59; current main contains c6/M8, M10a-g and c7/M11.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C042",
+      "capability_id": "shared.reporter.pr57",
+      "capability_name": "Explicit reporter/self-grading adapter contract",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "3540251738350d45597a44b7908c3f6de98e9cce",
+      "source_paths": [
+        ".github/workflows/conformance.yml",
+        "conformance/aggregate-budget-v0/suite.json",
+        "conformance/authorized-preimage-schema-v0/suite.json",
+        "conformance/captured-admission-v0-review-profile-deadline/suite.json",
+        "conformance/captured-admission-v0-review-profile/suite.json",
+        "conformance/captured-admission-v0/suite.json",
+        "conformance/chronicle-checkpoint-continuity-v0/suite.json",
+        "conformance/communication-chain-v0/suite.json",
+        "conformance/companion-envelope-v0/suite.json",
+        "conformance/consumption-time-state-binding-v0/suite.json",
+        "conformance/encode-json-utf8-lf-v0/suite.json",
+        "conformance/ens-write-v0/suite.json",
+        "conformance/erc-8309-envelope-v0/suite.json",
+        "conformance/erc8275-win-rate-bps-v0/suite.json",
+        "conformance/event-time-concurrency-boundary-v0/suite.json",
+        "conformance/permission-consumption-boundary-v0/suite.json",
+        "conformance/pq-key-binding-v0/suite.json",
+        "conformance/pq-key-binding-v1-profile/suite.json",
+        "conformance/pq-key-binding-v1/suite.json",
+        "conformance/pq-recovery-classes-v0/suite.json",
+        "conformance/predicate-conformance-v0/suite.json",
+        "conformance/profile-amendment-v0/suite.json",
+        "conformance/profile-commitment-loop-v0/suite.json",
+        "conformance/provenance-anchor-v0/suite.json",
+        "conformance/scan-subject-binding-v0/README.md",
+        "conformance/scan-subject-binding-v0/suite.json",
+        "conformance/serializer-bindings/suite.json",
+        "conformance/tee-attested-leaf-v0/suite.json",
+        "conformance/tee-inference-enclave-v0/suite.json",
+        "conformance/tee-inference-v0/suite.json",
+        "conformance/verdict-profile-binding-v0/suite.json",
+        "tools/run_conformance.py",
+        "tools/test_run_conformance_checker_pins.py",
+        "tools/test_run_conformance_failure_classification.py",
+        "tools/test_run_conformance_reporter_contract.py"
+      ],
+      "contribution_commit": null,
+      "pr_number": 57,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/57",
+      "pr_head_sha": "3540251738350d45597a44b7908c3f6de98e9cce",
+      "pr_base_sha": "afd69037b3ef0cae7019eaa7328f3459954e116a",
+      "merged_open_status": "OPEN",
+      "contribution_types": [
+        "REVIEW_ONLY"
+      ],
+      "contributors": [
+        "pipavlo82 review; babyblueviper1 PR/code"
+      ],
+      "evidence_unit": "SECURITY_REVIEW",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "d7bb6c45e71a1c16726e3c327db059538ac7ee99",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "88bba5083b835cf813f7eb7a8c528405335ebb93",
+            "login": "babyblueviper1",
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "3540251738350d45597a44b7908c3f6de98e9cce",
+            "login": null,
+            "declared_author": "babyblueviper1"
+          }
+        ],
+        "authorship_evidence": "Pavlo reviews identify reporter-contract migration holes and residual self-grader discrimination. The runner implementation belongs to babyblueviper1.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Open PR57 only; not default behavior.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C043",
+      "capability_id": "Mutationoraclecrash-as-kill",
+      "capability_name": "Mutationoraclecrash-as-kill",
+      "source_repository": "trustless-ai/recompute-kit",
+      "source_revision": "c8fb4b7d6b7f6696c376da7405500171db1c3245",
+      "source_paths": [
+        "README.md",
+        "bin/recompute-mutation-survival",
+        "conformance/mutation-survival-v0/check",
+        "conformance/mutation-survival-v0/fixtures/crashing/mod.py",
+        "conformance/mutation-survival-v0/fixtures/crashing/mutations.json",
+        "conformance/mutation-survival-v0/fixtures/crashing/test.py",
+        "conformance/mutation-survival-v0/fixtures/decorative/mod.py",
+        "conformance/mutation-survival-v0/fixtures/decorative/mutations.json",
+        "conformance/mutation-survival-v0/fixtures/decorative/test.py",
+        "conformance/mutation-survival-v0/fixtures/load-bearing/mod.py",
+        "conformance/mutation-survival-v0/fixtures/load-bearing/mutations.json",
+        "conformance/mutation-survival-v0/fixtures/load-bearing/test.py",
+        "conformance/mutation-survival-v0/mutation-survival-v0.spec.md",
+        "conformance/mutation-survival-v0/mutation-survival-v0.vectors.json",
+        "conformance/mutation-survival-v0/suite.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": 17,
+      "pr_url": "https://github.com/trustless-ai/recompute-kit/pull/17",
+      "pr_head_sha": "c8fb4b7d6b7f6696c376da7405500171db1c3245",
+      "pr_base_sha": "dbb984bcf92dea2b39d5752c5fcb6a53ec4728b3",
+      "merged_open_status": "OPEN",
+      "contribution_types": [
+        "SECURITY_FINDING"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "SECURITY_REVIEW",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "69950486600d3536eac2f67fe2084f9540600b45",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "4ecf663f36a368e98c2f8f74089d26ff8bb50dad",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "c8fb4b7d6b7f6696c376da7405500171db1c3245",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          }
+        ],
+        "authorship_evidence": "Pavlo PR17 comments report a RuntimeError mutant counted KILLED 1/1 and executable-pin/replacement ambiguities. These are historical upstream-reported reproductions, not fresh runs in this audit.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "PR17 remains open; adoption is not established.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C044",
+      "capability_id": "shared.semantic",
+      "capability_name": "Typed claim,authority,scope and temporal compatibility",
+      "source_repository": "trustless-ai/semantic-abi",
+      "source_revision": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+      "source_paths": [
+        "runner/README.md",
+        "runner/demo.mjs",
+        "runner/src/classes.mjs",
+        "runner/src/evaluate.mjs",
+        "runner/src/linker.mjs",
+        "runner/src/manifest.mjs",
+        "runner/test/evaluate.test.mjs",
+        "runner/test/linker.test.mjs",
+        "runner/test/manifest.test.mjs",
+        "runner/vectors/relations.mjs",
+        "schema/manifest-v0.md",
+        "schema/manifest.schema.json"
+      ],
+      "contribution_commit": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+      "pr_number": 1,
+      "pr_url": "https://github.com/trustless-ai/semantic-abi/pull/1",
+      "pr_head_sha": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+      "pr_base_sha": "d729e3b61fabb2dd81fb7261ae94cde15e0a4a42",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "e15832420b7c6350bbf4934ad90391e6af7a109f",
+            "login": null,
+            "declared_author": "babyblueviper1"
+          },
+          {
+            "sha": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "Pavlo commit 8fb67bd43140a1cc7aab5c272796da0417d3ceaf changes the neutral model, manifest, linker and tests. The PR also contains babyblueviper1 adapter-port commit e158324 and Pavlo merge-resolution commit 4c4e29c6.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository.",
+        "selected_path_scope": "Neutral schema/runner/tests only. Complete PR changed-file evidence is retained in the raw audit evidence; it is not this contribution unit. VГ©rtice paths and babyblueviper1 adapter-port paths are excluded."
+      },
+      "downstream_adoption_evidence": "Merged PR1; neutral runtime is present on current main and 17 neutral tests pass.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C045",
+      "capability_id": "shared.registry",
+      "capability_name": "Discovery registry versus authority distinction",
+      "source_repository": "trustless-ai/primitives",
+      "source_revision": "77933c9d60a3c8996433614d02889c8835058090",
+      "source_paths": [
+        ".github/workflows/check.yml",
+        "README.md",
+        "check.py",
+        "gen.py",
+        "primitives.json",
+        "test_check.py"
+      ],
+      "contribution_commit": "77933c9d60a3c8996433614d02889c8835058090",
+      "pr_number": 1,
+      "pr_url": "https://github.com/trustless-ai/primitives/pull/1",
+      "pr_head_sha": "77933c9d60a3c8996433614d02889c8835058090",
+      "pr_base_sha": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "merged_open_status": "OPEN",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "INTEGRATION_WORK",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "77933c9d60a3c8996433614d02889c8835058090",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The exact PR head and actual commit authors associate the package-versus-runner coverage distinction with Pavlo.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Open PR1 only; current main retains the package-existence check.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C046",
+      "capability_id": "shared.ccip",
+      "capability_name": "Exact public-receipt observation transport",
+      "source_repository": "trustless-ai/ccip-router",
+      "source_revision": "57e7f0fa18b72dc060dabf5556c8a5e9f40ff4f0",
+      "source_paths": [
+        "conformance/tsei-profile-a-v0/README.md",
+        "conformance/tsei-profile-a-v0/fixtures/tsei-ia-real-v2-20260824-02.production-grounding.json",
+        "src/__tests__/tseiProfileA.test.ts",
+        "src/integrations/tseiProfileA.ts",
+        "src/lib.ts"
+      ],
+      "contribution_commit": "57e7f0fa18b72dc060dabf5556c8a5e9f40ff4f0",
+      "pr_number": 5,
+      "pr_url": "https://github.com/trustless-ai/ccip-router/pull/5",
+      "pr_head_sha": "57e7f0fa18b72dc060dabf5556c8a5e9f40ff4f0",
+      "pr_base_sha": "02678910a2f86033053300585f2c154c49ac0fc0",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "57e7f0fa18b72dc060dabf5556c8a5e9f40ff4f0",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C047",
+      "capability_id": "shared.ccip",
+      "capability_name": "Exact public-receipt observation transport",
+      "source_repository": "trustless-ai/ccip-router",
+      "source_revision": "4da3de6ebcc3a941e03ff13cfa5bac2d27a858b4",
+      "source_paths": [
+        "README.md",
+        "package.json",
+        "src/__tests__/tseiProfileAGateway.test.ts",
+        "src/index.ts",
+        "src/integrations/tseiProfileARouter.ts",
+        "src/lib.ts"
+      ],
+      "contribution_commit": "4da3de6ebcc3a941e03ff13cfa5bac2d27a858b4",
+      "pr_number": 6,
+      "pr_url": "https://github.com/trustless-ai/ccip-router/pull/6",
+      "pr_head_sha": "4da3de6ebcc3a941e03ff13cfa5bac2d27a858b4",
+      "pr_base_sha": "84b235dbdd919d38d6b20c7e41351714f9a8e04f",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "4da3de6ebcc3a941e03ff13cfa5bac2d27a858b4",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C048",
+      "capability_id": "shared.ccip",
+      "capability_name": "Exact public-receipt observation transport",
+      "source_repository": "trustless-ai/ccip-router",
+      "source_revision": "b46a3b928d5be8eed49117ed4990f6d67e6e1239",
+      "source_paths": [
+        ".env.example",
+        "DEPLOYMENT.md",
+        "README.md",
+        "src/__tests__/tseiProfileAGateway.test.ts",
+        "src/config.ts",
+        "src/index.ts",
+        "src/integrations/tseiProfileARouter.ts"
+      ],
+      "contribution_commit": null,
+      "pr_number": 8,
+      "pr_url": "https://github.com/trustless-ai/ccip-router/pull/8",
+      "pr_head_sha": "b46a3b928d5be8eed49117ed4990f6d67e6e1239",
+      "pr_base_sha": "7b23f8bf848bbffa88307b56141e7a46c4e8f2dc",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "59cef8a535ca2ce91e6fb9ba21c4bbafd73be908",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "b46a3b928d5be8eed49117ed4990f6d67e6e1239",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C049",
+      "capability_id": "shared.bps",
+      "capability_name": "Prospective shared basis-points golden vector adoption",
+      "source_repository": "trustless-ai/agent-sdk",
+      "source_revision": "e285642a7e2439c892ba4c062ed33e6e61c214da",
+      "source_paths": [
+        ".claude/skills/add-erc/SKILL.md",
+        "go/reputation/erc8275/recompute_test.go",
+        "python/src/agent_sdk/reputation/erc8275/README.md",
+        "python/tests/reputation/erc8275/test_recompute.py",
+        "rust/core/src/erc8275/recompute.rs",
+        "testkit/vectors/erc8275-reputation-bps-v0.vectors.json",
+        "typescript/src/reputation/ERC8275/README.md",
+        "typescript/test/reputation/ERC8275/recompute.test.ts"
+      ],
+      "contribution_commit": "e285642a7e2439c892ba4c062ed33e6e61c214da",
+      "pr_number": 23,
+      "pr_url": "https://github.com/trustless-ai/agent-sdk/pull/23",
+      "pr_head_sha": "e285642a7e2439c892ba4c062ed33e6e61c214da",
+      "pr_base_sha": "a924e2bc46e1a8c84d93f7575c8b9e5d8685535b",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_TEST"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "e285642a7e2439c892ba4c062ed33e6e61c214da",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "Pavlo commit e285642a7e2439c892ba4c062ed33e6e61c214da adds the prospective basis-points vector and four language conformance test integrations.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The shared SDK testkit and language tests actually reference the adopted vector.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C050",
+      "capability_id": "SDKwaitforstatusreceipt",
+      "capability_name": "SDKwaitforstatusreceipt",
+      "source_repository": "trustless-ai/agent-sdk",
+      "source_revision": "551c9bfa5192528cdf1c9746f450d25e0d4ffe36",
+      "source_paths": [
+        "python/src/agent_sdk/metering/erc8312/client.py",
+        "python/tests/metering/erc8312/test_erc.py"
+      ],
+      "contribution_commit": "551c9bfa5192528cdf1c9746f450d25e0d4ffe36",
+      "pr_number": 24,
+      "pr_url": "https://github.com/trustless-ai/agent-sdk/pull/24",
+      "pr_head_sha": "551c9bfa5192528cdf1c9746f450d25e0d4ffe36",
+      "pr_base_sha": "aa76a2fe96c227ea67af11a1ff0d7e4bc7e682d3",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "551c9bfa5192528cdf1c9746f450d25e0d4ffe36",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "Pavlo commit 551c9bfa5192528cdf1c9746f450d25e0d4ffe36 fixes Python ERC8312 transaction-receipt waiting and its regression test.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared SDK Python source; optional future adapter.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C051",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "774f2f239130b02a173190ea93972f5d31112f73",
+      "source_paths": [
+        "nodes.json"
+      ],
+      "contribution_commit": "774f2f239130b02a173190ea93972f5d31112f73",
+      "pr_number": 1,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/1",
+      "pr_head_sha": "774f2f239130b02a173190ea93972f5d31112f73",
+      "pr_base_sha": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "INTEGRATION_WORK",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "774f2f239130b02a173190ea93972f5d31112f73",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C052",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "b8a874f6ca9c42ad03510f2a7a3340b3714c4b7c",
+      "source_paths": [
+        "cells/df1a6bfe3063186f8a8327b75a5bfddae12d3518f2cc16f8fddbc6c311de9512/receiptos-recompute.cell.json"
+      ],
+      "contribution_commit": null,
+      "pr_number": 2,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/2",
+      "pr_head_sha": "b8a874f6ca9c42ad03510f2a7a3340b3714c4b7c",
+      "pr_base_sha": "3714ee2273e75981d9c27786da0842543e8db94d",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_FIXTURE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "d8248bb5865ae80f7bc6d9b4113530f45c1d60da",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "b8a874f6ca9c42ad03510f2a7a3340b3714c4b7c",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C053",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "65fa1ef81f67fb4cd171e94189dbb1832f61450f",
+      "source_paths": [
+        "CELL-v3.md",
+        "LINEAGE-REF.md",
+        "PROPOSAL-lane-distinctness.md",
+        "docs/VECTOR-MATRIX-v3-independence.md",
+        "ui/index.html"
+      ],
+      "contribution_commit": null,
+      "pr_number": 10,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/10",
+      "pr_head_sha": "65fa1ef81f67fb4cd171e94189dbb1832f61450f",
+      "pr_base_sha": "d136d1b75eab70cb6fa49055f514d04b00a5648e",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DOCUMENTATION_ONLY",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "20f34dca110e48de203bdfd4046cf3e723a6fac7",
+            "login": "pipavlo82",
+            "declared_author": "Pavel"
+          },
+          {
+            "sha": "55f8d6c9a7170bdfb99096227394bf90d47e163a",
+            "login": "pipavlo82",
+            "declared_author": "Pavel"
+          },
+          {
+            "sha": "6fc6c0a9c0318bad34a8c57e68fc9bcf1855f074",
+            "login": "pipavlo82",
+            "declared_author": "Pavel"
+          },
+          {
+            "sha": "a0389a3dd825321f0cc2c2532a1d3bedf3f4e36d",
+            "login": "pipavlo82",
+            "declared_author": "Pavel"
+          },
+          {
+            "sha": "a768dcf3ed6ec4a659803c168da5e26df3a8878e",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "65fa1ef81f67fb4cd171e94189dbb1832f61450f",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C054",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "7fff3ae43ebe4bf38e22084cd67fcfe240c494f9",
+      "source_paths": [
+        ".github/workflows/validate-pr.yml",
+        "ONBOARDING.md",
+        "reference/check_sunset.py",
+        "reference/create_cell.py",
+        "reference/registry_id.py",
+        "reference/test_cell_admission.py",
+        "reference/validate_cell.py"
+      ],
+      "contribution_commit": null,
+      "pr_number": 13,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/13",
+      "pr_head_sha": "7fff3ae43ebe4bf38e22084cd67fcfe240c494f9",
+      "pr_base_sha": "3f654d4793ca6cbeffa8c95c32586a5182224070",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "bbfe9dd33f77facf5f6d929d2fa301f1acc0d3e7",
+            "login": "pipavlo82",
+            "declared_author": "Pavel"
+          },
+          {
+            "sha": "7fff3ae43ebe4bf38e22084cd67fcfe240c494f9",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C055",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "135e149e6e89f283779ed2f0fe928fa7722892e6",
+      "source_paths": [
+        "cells/8c4de29c132d39033bf6467cde4d549b4f764a48b8f66af6cabf448878ec4048/receiptos-recompute.cell.json",
+        "ui/index.html"
+      ],
+      "contribution_commit": null,
+      "pr_number": 38,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/38",
+      "pr_head_sha": "135e149e6e89f283779ed2f0fe928fa7722892e6",
+      "pr_base_sha": "e6f7e350b57f9ebace2b4ac559c0deb3b6e47120",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_FIXTURE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "4ea9219c5ee0edcd83aeb9baeb762b8e8b25953a",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "135e149e6e89f283779ed2f0fe928fa7722892e6",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C056",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "3a7406f8fe18548ed8e971ebe02545336e2d087f",
+      "source_paths": [
+        "reference/test_cell_admission.py"
+      ],
+      "contribution_commit": "3a7406f8fe18548ed8e971ebe02545336e2d087f",
+      "pr_number": 42,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/42",
+      "pr_head_sha": "3a7406f8fe18548ed8e971ebe02545336e2d087f",
+      "pr_base_sha": "544d5e13352a5822ddbd3dec4af722404d3aaf29",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_TEST"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "3a7406f8fe18548ed8e971ebe02545336e2d087f",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C057",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "b2230b9f50a554821d1aad401f9989fcd9149833",
+      "source_paths": [
+        "ui/embed_snapshot.py"
+      ],
+      "contribution_commit": "b2230b9f50a554821d1aad401f9989fcd9149833",
+      "pr_number": 44,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/44",
+      "pr_head_sha": "b2230b9f50a554821d1aad401f9989fcd9149833",
+      "pr_base_sha": "1e801bdb95457c7be76cc89564e6629ef455785e",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "b2230b9f50a554821d1aad401f9989fcd9149833",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C058",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "21340e489f92156e1ae6a90cf15d019e329d9628",
+      "source_paths": [
+        ".github/workflows/validate-pr.yml",
+        "CELL-IN-FORCE.md",
+        "reference/gen_in_force.py"
+      ],
+      "contribution_commit": "21340e489f92156e1ae6a90cf15d019e329d9628",
+      "pr_number": 46,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/46",
+      "pr_head_sha": "21340e489f92156e1ae6a90cf15d019e329d9628",
+      "pr_base_sha": "308bb2218894d5b79a80bec41d015b2d59c278d4",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "21340e489f92156e1ae6a90cf15d019e329d9628",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C059",
+      "capability_id": "shared.crc",
+      "capability_name": "Claim and signed Cell boundaries/lineage activation",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "c5482b37061f1b9d3d51963f4d88f926dfae9631",
+      "source_paths": [
+        ".gitattributes",
+        "reference/gen_in_force.py"
+      ],
+      "contribution_commit": "c5482b37061f1b9d3d51963f4d88f926dfae9631",
+      "pr_number": 50,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/50",
+      "pr_head_sha": "c5482b37061f1b9d3d51963f4d88f926dfae9631",
+      "pr_base_sha": "630f26426cadbdf13b2ca769d8a9e1de983a6ec5",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "c5482b37061f1b9d3d51963f4d88f926dfae9631",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "The retained PR commit list associates this narrow contribution with pipavlo82; the files endpoint supplies the actual changed paths. The remaining repository is shared upstream work.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged shared source with the relevant file/profile present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C060",
+      "capability_id": "Attributionwitnessindependence",
+      "capability_name": "Attributionwitnessindependence",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "cc3e0b60c3ac645882827fe4a8c534059633325e",
+      "source_paths": [
+        "reference/test_operational_gates.py"
+      ],
+      "contribution_commit": "cc3e0b60c3ac645882827fe4a8c534059633325e",
+      "pr_number": 86,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/86",
+      "pr_head_sha": "cc3e0b60c3ac645882827fe4a8c534059633325e",
+      "pr_base_sha": "05baa1495abc431f457208fd8ff933d04043967b",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "SECURITY_FINDING"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "SECURITY_REVIEW",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "cc3e0b60c3ac645882827fe4a8c534059633325e",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          }
+        ],
+        "authorship_evidence": "Pavlo review comments supply exact-head counterexamples and attribution controls. Prior review execution is not relabeled as fresh audit execution.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "PR86 merged the third-rung methodology; PR90 fourth-rung work remains open.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C061",
+      "capability_id": "Attributionwitnessindependence",
+      "capability_name": "Attributionwitnessindependence",
+      "source_repository": "trustless-ai/cross-reference-console",
+      "source_revision": "be8dbed4303a1ccafd850fcfea447f917645f0f5",
+      "source_paths": [
+        ".github/workflows/validate-pr.yml",
+        "reference/rung4_crosscheck.py",
+        "reference/rung4_oracle.py",
+        "ui/index.html"
+      ],
+      "contribution_commit": null,
+      "pr_number": 90,
+      "pr_url": "https://github.com/trustless-ai/cross-reference-console/pull/90",
+      "pr_head_sha": "be8dbed4303a1ccafd850fcfea447f917645f0f5",
+      "pr_base_sha": "5d50bf951e475d33b75ec5d3428639871432ebdd",
+      "merged_open_status": "OPEN",
+      "contribution_types": [
+        "SECURITY_FINDING"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "SECURITY_REVIEW",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "3e949157666105697c679959c7709f6f415b986a",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "7abd73098abe7e9a2c8770aaa1019cdc0ec4a1bb",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "85eb61f56bfc222b1d33342f8a6eaa3f41afe54b",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "d2a568a694014f22e11c31f059b347495549c4ce",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "68d81de099227e1cb8338c7093c505c57bc96559",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "b1a1344c2415365e9fcac9106fd836a21e1ebc7c",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "7bf514451271ca1e4c9110d64490eeec6a08c2b0",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "be8dbed4303a1ccafd850fcfea447f917645f0f5",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          }
+        ],
+        "authorship_evidence": "Pavlo review comments document exact-head semantic-oracle and gate-attribution counterexamples. Historical reproduction claims remain upstream reported.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "PR90 remains open; subsequent fixes and residual review are recorded, not promoted to current main.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C062",
+      "capability_id": "shared.pqtime",
+      "capability_name": "Derived key-governance time and preserved legacy semantics",
+      "source_repository": "trustless-ai/pq-agent-binding",
+      "source_revision": "58ec9c0d215bd143dc4bc4ee83ae3f150ce5d6d5",
+      "source_paths": [
+        "README.md",
+        "spec/v1-temporal-authority.md"
+      ],
+      "contribution_commit": null,
+      "pr_number": 1,
+      "pr_url": "https://github.com/trustless-ai/pq-agent-binding/pull/1",
+      "pr_head_sha": "58ec9c0d215bd143dc4bc4ee83ae3f150ce5d6d5",
+      "pr_base_sha": "14c11bfe1030f29c1ef8550366c31b0bb12fd693",
+      "merged_open_status": "MERGED",
+      "contribution_types": [
+        "SECURITY_FINDING"
+      ],
+      "contributors": [
+        "pipavlo82 finding/review; Echo-Merlini spec commit"
+      ],
+      "evidence_unit": "SECURITY_REVIEW",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "642306a4f4f8dde707e9d6c5f728d47d3aa1d496",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "3263945b7678229bfe3726b788f1c0c0dcd448ca",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "e93f02202632a8666589e542c4c03999b76ee39c",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "d4d80d99e7a5305242eca88977253a619a9db7da",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "db2e40a010db702dc7dcd42ae54a7b720a2fbcec",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "4d69bdba0108bdf4d466c15a7371f44a0f54af10",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "0663c289ae2aa1e196c036fe263c25796943fc7f",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "7cfc83c1a726d7717e1b1d5de5d884d4c8bb0cc6",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "2b5f1bf5ab57c6c29f8a609aa5c4e812e3ca30b3",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "aac5614dcf00a08db847c8ec1a14e96e56d9d87a",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "1ebbf69d71f61c5dda671c76b9698f33330cd022",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "a4bf176cbaf993ed4bbee3c5cf1e0fe861cd4fe1",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          },
+          {
+            "sha": "58ec9c0d215bd143dc4bc4ee83ae3f150ce5d6d5",
+            "login": "Echo-Merlini",
+            "declared_author": "Echo-Merlini"
+          }
+        ],
+        "authorship_evidence": "README and specification credit Pavlo for the T0/unbound-key-epoch and complete-anchor-history findings. The actual PR specification commit is authored by Echo-Merlini.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Merged v1 section 10 and README credit; no fresh live-deployment proof.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C063",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "31b21ba98275250b32ca2998971cc550d765af6e",
+      "source_paths": [
+        "scripts/receipt-anchor/verify-root.mjs"
+      ],
+      "contribution_commit": "31b21ba98275250b32ca2998971cc550d765af6e",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C064",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "41b06d6f3708d139645f809bb56c5be55ef012e9",
+      "source_paths": [
+        "scripts/receipt-anchor/verify-root.mjs"
+      ],
+      "contribution_commit": "41b06d6f3708d139645f809bb56c5be55ef012e9",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C065",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "85ad94953446d1dd571bce3b40479df7e67d6a19",
+      "source_paths": [
+        "scripts/receipt-anchor/verify-handoff-evidence.mjs"
+      ],
+      "contribution_commit": "85ad94953446d1dd571bce3b40479df7e67d6a19",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C066",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "717f7baa62525ef7611c35fca1924ab8b5955644",
+      "source_paths": [
+        "scripts/receipt-anchor/build-merkle-batch.mjs"
+      ],
+      "contribution_commit": "717f7baa62525ef7611c35fca1924ab8b5955644",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C067",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "df06d7e9221ab315760501f8de7e5b408b434846",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "df06d7e9221ab315760501f8de7e5b408b434846",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C068",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "3acc90cc6d0577ae04a76c58af1cc7a0255635a9",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "3acc90cc6d0577ae04a76c58af1cc7a0255635a9",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C069",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "8fe2b951afa90d8d678d335708e30fe95cc6b880",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "8fe2b951afa90d8d678d335708e30fe95cc6b880",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C070",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "cce09a81784f7d327f351e428528284d1a66975a",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "cce09a81784f7d327f351e428528284d1a66975a",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C071",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "69d0d406d1a299137359f3923463f441850d9b6e",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "69d0d406d1a299137359f3923463f441850d9b6e",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C072",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "242f272b34053d44c2a970fe8f22f7fb0b490391",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "242f272b34053d44c2a970fe8f22f7fb0b490391",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C073",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "8976999799f2a2a6d7cd5b51438466cfc94962ed",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "8976999799f2a2a6d7cd5b51438466cfc94962ed",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C074",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "e22f793320b9de4b0280fb502b9fc280dbb4ca30",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "e22f793320b9de4b0280fb502b9fc280dbb4ca30",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C075",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "99250dc541be593f53441ca3d0657d2bdb8c2e8f",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "99250dc541be593f53441ca3d0657d2bdb8c2e8f",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C076",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "81cb03c56618444f0602632b40e467c6552ccb7b",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "81cb03c56618444f0602632b40e467c6552ccb7b",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C077",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "0bd2f7412f50b98c6deb1fba42440821105f5ad1",
+      "source_paths": [
+        "packages/opencode/src/session/handoff/evidence.ts"
+      ],
+      "contribution_commit": "0bd2f7412f50b98c6deb1fba42440821105f5ad1",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C078",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "b39fa15b5bd7ca24339bf49977b6b7f4fa9a1cc2",
+      "source_paths": [
+        "specs/receipt_protocol_spec_v0.md"
+      ],
+      "contribution_commit": "b39fa15b5bd7ca24339bf49977b6b7f4fa9a1cc2",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C079",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "3ea4ba1a52f173cc4cfa35ffdae63ae2fdff6e9a",
+      "source_paths": [
+        "specs/receipt_protocol_spec_v0.md"
+      ],
+      "contribution_commit": "3ea4ba1a52f173cc4cfa35ffdae63ae2fdff6e9a",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C080",
+      "capability_id": "shared.stealth",
+      "capability_name": "Portable coding-session evidence/root/Merkle profile",
+      "source_repository": "CYPHES-ATP/Stealth",
+      "source_revision": "b3c21a70f36e0aeabca9ed690908f7cbe47a7f8e",
+      "source_paths": [
+        "packages/app/src/utils/receipt-verifier.ts"
+      ],
+      "contribution_commit": "b3c21a70f36e0aeabca9ed690908f7cbe47a7f8e",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C081",
+      "capability_id": "shared.atpcontrols",
+      "capability_name": "ATP negative fixture/reason-code demo",
+      "source_repository": "CYPHES-ATP/Artifact-Two",
+      "source_revision": "6a8848feb6afdd3bee1ceac9c639f0aa2674cf2d",
+      "source_paths": [
+        "tools/redteam_demo.py"
+      ],
+      "contribution_commit": "6a8848feb6afdd3bee1ceac9c639f0aa2674cf2d",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C082",
+      "capability_id": "shared.atp",
+      "capability_name": "ATP signed bundle/hash/event/lease verifier",
+      "source_repository": "CYPHES-ATP/Artifact-Two",
+      "source_revision": "682044defc1e6482626cb4ba560a1c29620f46f5",
+      "source_paths": [
+        "docs/verifier-output-v0.md"
+      ],
+      "contribution_commit": "682044defc1e6482626cb4ba560a1c29620f46f5",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C083",
+      "capability_id": "shared.atp",
+      "capability_name": "ATP signed bundle/hash/event/lease verifier",
+      "source_repository": "CYPHES-ATP/Artifact-Two",
+      "source_revision": "5b30bf2e80be9d342b51afeadbf4208f483890f6",
+      "source_paths": [
+        "docs/verified-data-flywheel-v02.md"
+      ],
+      "contribution_commit": "5b30bf2e80be9d342b51afeadbf4208f483890f6",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C084",
+      "capability_id": "shared.actions",
+      "capability_name": "Signed public engagement and immutable retry evidence",
+      "source_repository": "Interpoll1/decentralised",
+      "source_revision": "2cfde5efc3d10b56c73e74723d3f328b77f2fc1f",
+      "source_paths": [
+        "shared-validation/engagement.js"
+      ],
+      "contribution_commit": "2cfde5efc3d10b56c73e74723d3f328b77f2fc1f",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C085",
+      "capability_id": "shared.actions",
+      "capability_name": "Signed public engagement and immutable retry evidence",
+      "source_repository": "Interpoll1/decentralised",
+      "source_revision": "a1eb47653aa7b8f0484ab977d75a5db41d226d02",
+      "source_paths": [
+        "src/services/reactionOutboxService.ts"
+      ],
+      "contribution_commit": "a1eb47653aa7b8f0484ab977d75a5db41d226d02",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C086",
+      "capability_id": "shared.coordination",
+      "capability_name": "Independent replay of bounded supplied coordination receipt",
+      "source_repository": "Interpoll1/decentralised",
+      "source_revision": "b1b8a3bf7714ac261f6d69334ba59d857eb3cc05",
+      "source_paths": [
+        "tools/coordination-impact/core.mjs"
+      ],
+      "contribution_commit": "b1b8a3bf7714ac261f6d69334ba59d857eb3cc05",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C087",
+      "capability_id": "shared.coordination",
+      "capability_name": "Independent replay of bounded supplied coordination receipt",
+      "source_repository": "Interpoll1/decentralised",
+      "source_revision": "55d95aa46de9f46d795bc4136ae936a2852365ab",
+      "source_paths": [
+        "tools/coordination-impact-v2/core.mjs"
+      ],
+      "contribution_commit": "55d95aa46de9f46d795bc4136ae936a2852365ab",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "authorship_evidence": "Current default-branch path history associates this exact commit and path with GitHub login pipavlo82. This establishes narrow path attribution, not sole ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The file exists on the exact current default snapshot. When an old PR head is unavailable, current canonical path history provides separate attribution.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C088",
+      "capability_id": "shared.atp",
+      "capability_name": "ATP signed bundle/hash/event/lease verifier",
+      "source_repository": "CYPHES-ATP/Artifact-Two",
+      "source_revision": "81e4b0dee080e0d7879505d2c30b1af2bf5fe04c",
+      "source_paths": [
+        "artifact_two/verifier.py"
+      ],
+      "contribution_commit": "81e4b0dee080e0d7879505d2c30b1af2bf5fe04c",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "SOURCE_PRESENT",
+      "contribution_types": [
+        "UPSTREAM_DEPENDENCY"
+      ],
+      "contributors": [
+        "atpprotocol"
+      ],
+      "evidence_unit": "DIRECT_PRODUCT_CODE",
+      "authorship_evidence": {
+        "authorship_evidence": "Current path history attributes core artifact_two/verifier.py commits 51946672d00fdecd2911d7be29acfc9b5dbbf86c and 81e4b0dee080e0d7879505d2c30b1af2bf5fe04c to atpprotocol. Pavlo contributions do not transfer core-verifier ownership.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "The upstream core verifier is present on the exact current default snapshot.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C089",
+      "capability_id": "shared.erc8404",
+      "capability_name": "Recomputable receipt standard proposal",
+      "source_repository": "ethereum/ERCs",
+      "source_revision": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+      "source_paths": [
+        "ERCS/erc-8404.md"
+      ],
+      "contribution_commit": null,
+      "pr_number": 1980,
+      "pr_url": "https://github.com/ethereum/ERCs/pull/1980",
+      "pr_head_sha": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+      "pr_base_sha": "c1dd56155835be7c83b17b5889d26b5a491a3cbe",
+      "merged_open_status": "OPEN",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "mechanical_commit_authors": [
+          {
+            "sha": "c574014f5d60ba2ad5cf1e70b3750a9fdf8549d3",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "2d107916cce68bf07f517c7fc1f2b277e28052bf",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "67afe61b0440f993ea9b3900ff8f35ae1e847b74",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "d53fb039eafa1527bf2f71560f80884cad0302c3",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "3d77c275e3584188c1e263ded33f94f8c5a3d489",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          },
+          {
+            "sha": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+            "login": "pipavlo82",
+            "declared_author": "Pavlo Tvardovskyi"
+          }
+        ],
+        "authorship_evidence": "Pavlo authored the ERC-8404 proposal in open PR1980. Exact head/base, commit authors and changed source paths are retained.",
+        "ownership_limit": "GitHub login, declared commit metadata and changed paths support mechanical attribution; they do not establish sole ownership of a repository."
+      },
+      "downstream_adoption_evidence": "Open proposal only; no accepted-standard or default-tree adoption claim.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C090",
+      "capability_id": "qev-moth-portable",
+      "capability_name": "Native ReceiptOS exact-byte portable Moth packaging",
+      "source_repository": "pipavlo82/quantum-execution-evidence",
+      "source_revision": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "source_paths": [
+        "qev/moth_receiptos.py"
+      ],
+      "contribution_commit": "7e1742e24f79b3119a1888037e67f32afbed0729",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/quantum-execution-evidence/commit/7e1742e24f79b3119a1888037e67f32afbed0729",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/quantum-execution-evidence/commits?sha=5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05&path=qev/moth_receiptos.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "QEV main executes the native adapter/profile and its tests. This is QEV adoption, not ReceiptOS Verify product adoption.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C091",
+      "capability_id": "qev-moth-rvr",
+      "capability_name": "Moth counts-native independent-claim RVR replay",
+      "source_repository": "pipavlo82/quantum-execution-evidence",
+      "source_revision": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "source_paths": [
+        "qev/moth_rvr.py"
+      ],
+      "contribution_commit": "e2dc4e9b9b24fcad6a16ffe7c0a58991abb05558",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/quantum-execution-evidence/commit/e2dc4e9b9b24fcad6a16ffe7c0a58991abb05558",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/quantum-execution-evidence/commits?sha=5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05&path=qev/moth_rvr.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "QEV main executes the native adapter/profile and its tests. This is QEV adoption, not ReceiptOS Verify product adoption.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C092",
+      "capability_id": "qev-cross-provider",
+      "capability_name": "Provider-neutral evidence/issues/capability projection",
+      "source_repository": "pipavlo82/quantum-execution-evidence",
+      "source_revision": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "source_paths": [
+        "qev/cross_provider.py"
+      ],
+      "contribution_commit": "d934e41f4faad0f6a93df268563c56f753e98458",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/quantum-execution-evidence/commit/d934e41f4faad0f6a93df268563c56f753e98458",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/quantum-execution-evidence/commits?sha=5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05&path=qev/cross_provider.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "QEV main executes the native adapter/profile and its tests. This is QEV adoption, not ReceiptOS Verify product adoption.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C093",
+      "capability_id": "SOURCE_EVIDENCE:pipavlo82/quantum-execution-evidence:tests/test_moth_receiptos.py",
+      "capability_name": "SOURCE_EVIDENCE:pipavlo82/quantum-execution-evidence:tests/test_moth_receiptos.py",
+      "source_repository": "pipavlo82/quantum-execution-evidence",
+      "source_revision": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "source_paths": [
+        "tests/test_moth_receiptos.py"
+      ],
+      "contribution_commit": "7e1742e24f79b3119a1888037e67f32afbed0729",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_TEST"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/quantum-execution-evidence/commit/7e1742e24f79b3119a1888037e67f32afbed0729",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/quantum-execution-evidence/commits?sha=5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05&path=tests/test_moth_receiptos.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "QEV main executes the native adapter/profile and its tests. This is QEV adoption, not ReceiptOS Verify product adoption.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C094",
+      "capability_id": "SOURCE_EVIDENCE:pipavlo82/quantum-execution-evidence:qev/moth_receiptos_mutations.py",
+      "capability_name": "SOURCE_EVIDENCE:pipavlo82/quantum-execution-evidence:qev/moth_receiptos_mutations.py",
+      "source_repository": "pipavlo82/quantum-execution-evidence",
+      "source_revision": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "source_paths": [
+        "qev/moth_receiptos_mutations.py"
+      ],
+      "contribution_commit": "7e1742e24f79b3119a1888037e67f32afbed0729",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_MUTATION_CONTROL"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "LOAD_BEARING_TEST_EVIDENCE",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/quantum-execution-evidence/commit/7e1742e24f79b3119a1888037e67f32afbed0729",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/quantum-execution-evidence/commits?sha=5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05&path=qev/moth_receiptos_mutations.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "QEV main executes the native adapter/profile and its tests. This is QEV adoption, not ReceiptOS Verify product adoption.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C095",
+      "capability_id": "pq-profile-spec",
+      "capability_name": "Long-lived attribution and crypto-agility profile proposal",
+      "source_repository": "pipavlo82/pq-receipt-profile",
+      "source_revision": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "source_paths": [
+        "README.md"
+      ],
+      "contribution_commit": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/pq-receipt-profile/commit/54cf1a3784a56f4624b41357148bbe9ba301c470",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/pq-receipt-profile/commits?sha=54cf1a3784a56f4624b41357148bbe9ba301c470&path=README.md&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C096",
+      "capability_id": "pq-profile-spec",
+      "capability_name": "Long-lived attribution and crypto-agility profile proposal",
+      "source_repository": "pipavlo82/pq-receipt-profile",
+      "source_revision": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "source_paths": [
+        "PRINCIPLES.md"
+      ],
+      "contribution_commit": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/pq-receipt-profile/commit/54cf1a3784a56f4624b41357148bbe9ba301c470",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/pq-receipt-profile/commits?sha=54cf1a3784a56f4624b41357148bbe9ba301c470&path=PRINCIPLES.md&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C097",
+      "capability_id": "pq-lab-adapter",
+      "capability_name": "Extension/backend adapter contracts and deterministic reasons",
+      "source_repository": "pipavlo82/receiptos-pq-lab",
+      "source_revision": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "source_paths": [
+        "src/extension_verifier.py"
+      ],
+      "contribution_commit": "1a098df0720cb9fcec28188c0520f78b6bd4c8b4",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/receiptos-pq-lab/commit/1a098df0720cb9fcec28188c0520f78b6bd4c8b4",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/receiptos-pq-lab/commits?sha=a705d9c1942c0f30725c9bddec6606a0cddf4fc6&path=src/extension_verifier.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C098",
+      "capability_id": "pq-lab-history",
+      "capability_name": "Game/session HMAC lineage demonstration",
+      "source_repository": "pipavlo82/receiptos-pq-lab",
+      "source_revision": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "source_paths": [
+        "src/stealth_handoff_adapter.py"
+      ],
+      "contribution_commit": "5c2d700a96f756aa597950e6453e4aedcab605db",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo",
+        "commit_url": "https://github.com/pipavlo82/receiptos-pq-lab/commit/5c2d700a96f756aa597950e6453e4aedcab605db",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/receiptos-pq-lab/commits?sha=a705d9c1942c0f30725c9bddec6606a0cddf4fc6&path=src/stealth_handoff_adapter.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C099",
+      "capability_id": "pq-lab-history",
+      "capability_name": "Game/session HMAC lineage demonstration",
+      "source_repository": "pipavlo82/receiptos-pq-lab",
+      "source_revision": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "source_paths": [
+        "demo/_demo_lib.py"
+      ],
+      "contribution_commit": "4806d6a07fb6f39b5a7993d81d76d30ab14e1ed9",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/receiptos-pq-lab/commit/4806d6a07fb6f39b5a7993d81d76d30ab14e1ed9",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/receiptos-pq-lab/commits?sha=a705d9c1942c0f30725c9bddec6606a0cddf4fc6&path=demo/_demo_lib.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C100",
+      "capability_id": "SOURCE_EVIDENCE:pipavlo82/receiptos-pq-lab:src/mldsa_backend_real.py",
+      "capability_name": "SOURCE_EVIDENCE:pipavlo82/receiptos-pq-lab:src/mldsa_backend_real.py",
+      "source_repository": "pipavlo82/receiptos-pq-lab",
+      "source_revision": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "source_paths": [
+        "src/mldsa_backend_real.py"
+      ],
+      "contribution_commit": "2004855168e70f7111c0d29bde47bc036df406c0",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/receiptos-pq-lab/commit/2004855168e70f7111c0d29bde47bc036df406c0",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/receiptos-pq-lab/commits?sha=a705d9c1942c0f30725c9bddec6606a0cddf4fc6&path=src/mldsa_backend_real.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C101",
+      "capability_id": "mldsa-main-parser",
+      "capability_name": "Structural MLDSA parser stub",
+      "source_repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "source_revision": "6cf885533b65eec232934700daaf9b977ef305f9",
+      "source_paths": [
+        "solidity/MLDSA65Verifier.sol"
+      ],
+      "contribution_commit": "58a78a7d3df65a1e7fb59c2613eca82feedafebc",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/ml-dsa-65-ethereum-verification/commit/58a78a7d3df65a1e7fb59c2613eca82feedafebc",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/ml-dsa-65-ethereum-verification/commits?sha=6cf885533b65eec232934700daaf9b977ef305f9&path=solidity/MLDSA65Verifier.sol&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C102",
+      "capability_id": "pq-vector-pack",
+      "capability_name": "SHA256-addressed vector pack container",
+      "source_repository": "pipavlo82/pqevm-vector-packs",
+      "source_revision": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "source_paths": [
+        "tools/validate_pack.py"
+      ],
+      "contribution_commit": "5051e9122f586f15ad7967131b7ffed225d5ab07",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/pqevm-vector-packs/commit/5051e9122f586f15ad7967131b7ffed225d5ab07",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/pqevm-vector-packs/commits?sha=05988be4f37394b21257d2b5e6c639b4746b698a&path=tools/validate_pack.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C103",
+      "capability_id": "SOURCE_EVIDENCE:pipavlo82/pqevm-vector-packs:packs/mldsa65_fips204/vectors.jsonl",
+      "capability_name": "SOURCE_EVIDENCE:pipavlo82/pqevm-vector-packs:packs/mldsa65_fips204/vectors.jsonl",
+      "source_repository": "pipavlo82/pqevm-vector-packs",
+      "source_revision": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "source_paths": [
+        "packs/mldsa65_fips204/vectors.jsonl"
+      ],
+      "contribution_commit": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_VECTOR"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "FIXTURE_OR_DATASET",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/pqevm-vector-packs/commit/05988be4f37394b21257d2b5e6c639b4746b698a",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/pqevm-vector-packs/commits?sha=05988be4f37394b21257d2b5e6c639b4746b698a&path=packs/mldsa65_fips204/vectors.jsonl&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C104",
+      "capability_id": "gas-methodology",
+      "capability_name": "Surface/lane/provenance aware benchmark methodology",
+      "source_repository": "pipavlo82/gas-per-secure-bit",
+      "source_revision": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "source_paths": [
+        "scripts/parse_bench.py"
+      ],
+      "contribution_commit": "5df443ecfcde3efe516ef1de4b60f5bfd903cb3e",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/gas-per-secure-bit/commit/5df443ecfcde3efe516ef1de4b60f5bfd903cb3e",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/gas-per-secure-bit/commits?sha=e95d3bac5129b47a949c14b94b6a07d21220ed17&path=scripts/parse_bench.py&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C105",
+      "capability_id": "gas-methodology",
+      "capability_name": "Surface/lane/provenance aware benchmark methodology",
+      "source_repository": "pipavlo82/gas-per-secure-bit",
+      "source_revision": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "source_paths": [
+        "spec/explicit_lanes.md"
+      ],
+      "contribution_commit": "5ec05580b5d13c5f1c4c509a51ced29270dc8e4a",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/gas-per-secure-bit/commit/5ec05580b5d13c5f1c4c509a51ced29270dc8e4a",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/gas-per-secure-bit/commits?sha=e95d3bac5129b47a949c14b94b6a07d21220ed17&path=spec/explicit_lanes.md&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C106",
+      "capability_id": "gas-methodology",
+      "capability_name": "Surface/lane/provenance aware benchmark methodology",
+      "source_repository": "pipavlo82/gas-per-secure-bit",
+      "source_revision": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "source_paths": [
+        "spec/dataset_schema.md"
+      ],
+      "contribution_commit": "5f8bb2d028001b7b881750a80d73168372931f92",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "REACHABLE_FROM_FROZEN_DEFAULT_HEAD",
+      "contribution_types": [
+        "ORIGINAL_SPEC"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "author_login": "pipavlo82",
+        "author_name": "Pavlo Tvardovskyi",
+        "commit_url": "https://github.com/pipavlo82/gas-per-secure-bit/commit/5f8bb2d028001b7b881750a80d73168372931f92",
+        "command": [
+          "gh",
+          "api",
+          "/repos/pipavlo82/gas-per-secure-bit/commits?sha=e95d3bac5129b47a949c14b94b6a07d21220ed17&path=spec/dataset_schema.md&per_page=1"
+        ],
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "Copies and reference pins are identified in overlaps; no product adoption is claimed.",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C107",
+      "capability_id": "mldsa-pr27-research",
+      "capability_name": "Unmerged POC NTT/PreA/ERC7913 surfaces",
+      "source_repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "source_revision": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "source_paths": [
+        "contracts/verifier/MLDSA65_Verifier_v2.sol",
+        "contracts/verifier/MLDSA65_ERC7913Verifier.sol",
+        "contracts/verifier/MLDSA65_ERC7913BoundCommitA.sol",
+        "docs/preA_packedA_ntt.md",
+        "test/MLDSA_ERC7913_PackedA.t.sol"
+      ],
+      "contribution_commit": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "pr_number": 27,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "OPEN_UNMERGED",
+      "contribution_types": [
+        "ORIGINAL_CODE"
+      ],
+      "contributors": [
+        "pipavlo82"
+      ],
+      "evidence_unit": "ADAPTER_IMPLEMENTATION",
+      "authorship_evidence": {
+        "attribution_boundary": "Mechanically linked commit or latest-path commit evidence; not proof of sole authorship of every file byte or independent expectation authorship."
+      },
+      "downstream_adoption_evidence": "NOT ESTABLISHED",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    },
+    {
+      "id": "RV-C108",
+      "capability_id": "ercs-source",
+      "capability_name": "Upstream ERC reference corpus fork",
+      "source_repository": "pipavlo82/ERCs",
+      "source_revision": "98469bc93b6add1e3bc9501dafaa73311071145b",
+      "source_paths": [
+        "ERCS/",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "contribution_commit": "98469bc93b6add1e3bc9501dafaa73311071145b",
+      "pr_number": null,
+      "pr_url": null,
+      "pr_head_sha": null,
+      "pr_base_sha": null,
+      "merged_open_status": "UPSTREAM_FORK_DEFAULT",
+      "contribution_types": [
+        "UPSTREAM_DEPENDENCY"
+      ],
+      "contributors": [
+        "upstreamERCauthors;defaultheadmudgen"
+      ],
+      "evidence_unit": "PRODUCT_SPECIFICATION",
+      "authorship_evidence": {
+        "attribution_boundary": "0pipavlo82linkedauthoredcommitsinreachableforkdefaultquery;donotcreditforkinventorytoPavlo"
+      },
+      "downstream_adoption_evidence": "NOT ESTABLISHED",
+      "timeScope": "FROZEN_PRE_IMPLEMENTATION_AUDIT"
+    }
+  ],
+  "limits": [
+    "PR opener, review finding, implementation author and upstream dependency remain different roles.",
+    "Historical review reproductions remain upstream reported unless specifically re-executed in this product.",
+    "No private/commercial Vértice implementation contribution is selected.",
+    "Product modes are not an allocation formula and do not transfer source ownership."
+  ],
+  "frozenAdoptionStatementScope": "Each downstream_adoption_evidence string is the frozen audit observation before this product existed. Current concrete reuse is in sources.json; no historical claim is backfilled."
+}

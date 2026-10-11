@@ -1,0 +1,40 @@
+{
+  "schema": "receiptos.verify.ui-validation.v1",
+  "observed_at": "2026-10-11T18:18:54.392368+00:00",
+  "method": "Manual browser interaction with the running localhost product; no synthetic browser-response stubbing",
+  "url": "http://127.0.0.1:8808/",
+  "viewport": "Existing narrow in-app browser viewport; no viewport override",
+  "checks": [
+    {
+      "scenario": "V01 same receipt and commit A",
+      "result": "VERIFIED",
+      "subject_binding": "VERIFIED",
+      "integrity": "VERIFIED",
+      "authenticity": "VERIFIED",
+      "recomputation": "REPRODUCED"
+    },
+    {
+      "scenario": "Ask for commit B after positive result",
+      "result": "INPUT CHANGED — VERIFY AGAIN",
+      "download_enabled": false,
+      "stale_positive_removed": true
+    },
+    {
+      "scenario": "Verify same receipt A against caller-selected commit B",
+      "result": "CONTRADICTED",
+      "subject_binding": "CONTRADICTED",
+      "integrity": "VERIFIED",
+      "authenticity": "VERIFIED",
+      "recomputation": "REPRODUCED",
+      "explanation": "Authenticated evidence covering A does not establish caller-selected claim for B; no assertion B executed or failed"
+    }
+  ],
+  "screenshot": {
+    "path": "reports/ui-demo.png",
+    "sha256": "1a329278ee361a43573c9bb921626e0d6e87dc9dadbf4694bb1ee40d13f331e9"
+  },
+  "limits": [
+    "Focused manual scenarios only; no complete accessibility or browser compatibility certification",
+    "Separate automated UI contract and local-server tests recorded in reports/tests.tap"
+  ]
+}

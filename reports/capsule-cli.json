@@ -1,0 +1,17 @@
+{
+  "pack": {
+    "exit": 0,
+    "containerDigest": "d4ee7d58e00048941792facafb150630e4da030dc359936540f8bfd235755109",
+    "manifestMerkleRoot": "913b043b70150e022446215e410b7b0c604907663d0ed557e700cfd9aac661d4",
+    "packagingOnly": true
+  },
+  "same_request": {
+    "exit": 0,
+    "overall": "VERIFIED"
+  },
+  "different_request": {
+    "exit": 2,
+    "overall": "CONTRADICTED"
+  },
+  "sameCapsule": true
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "receiptos.verify.independent-review.v1",
+  "reviewed_at_utc": "2026-10-11T18:09:36.268212+00:00",
+  "status": "SCOPED_CHECKS_PASSED",
+  "reviewer": "Separate review agent within the same implementation task",
+  "independence_boundary": "Not an external third-party audit, blanket security clearance, complete upstream conformance result, or independent oracle for all product semantics. The reviewer implemented relation adapters elsewhere in this task; host/UI review controls were separately authored against other agents code.",
+  "scope": {
+    "repository": "new local outputs/receiptos-verify only",
+    "head": null,
+    "working_tree_review": true,
+    "paths": [
+      {
+        "path": "web/app.mjs",
+        "sha256": "36c81fa830f29cf8c798ee70f0fdb436dedb8a56720d0845606674bc5e6ef24b"
+      },
+      {
+        "path": "web/index.html",
+        "sha256": "4c336c921f592c29b01370369c3d01321fa4e79080fbb55ee93fbb96e69dbf5c"
+      },
+      {
+        "path": "src/server.mjs",
+        "sha256": "2ad59107a0c6c0d6dcfd6225be84b02e2beadb7461e38d9fff66dbd281f83955"
+      },
+      {
+        "path": "src/core/verify.mjs",
+        "sha256": "98e67a46d0c01ea854304add24e6b828b490b6b0efd789a529738ccce658689b"
+      },
+      {
+        "path": "src/core/evidence.mjs",
+        "sha256": "39bf984a51d95127b58e65d23297d7b0ac24f82944c9770a7bee3a046e15a5ae"
+      },
+      {
+        "path": "src/core/subject.mjs",
+        "sha256": "b77349308fdc589f74709e2eb44cba06d7771b5bcb95db4069866e2e9fe70849"
+      },
+      {
+        "path": "src/core/authenticity.mjs",
+        "sha256": "90112f9f353e4f638c4f76a2ff629f55c6bfdbbba724843a8788a3edff519e55"
+      },
+      {
+        "path": "src/core/schemas.mjs",
+        "sha256": "d15e5d31fc127e755163d9fc8229007f634f6a3e848872246679561fa6dfe70c"
+      },
+      {
+        "path": "src/projection/project.mjs",
+        "sha256": "de9127b56ff52b2d1cdba3fda2ad3ebe4e39aa9fc0e48729252d56c1e1749886"
+      },
+      {
+        "path": "src/adapters/rvr.mjs",
+        "sha256": "600d0753b220360dc78f8a2e39d84709ebe9fe222b2ae4a774dbdb36440c707e"
+      },
+      {
+        "path": "src/adapters/native/process.mjs",
+        "sha256": "0cc7e4fa6a4b7b014ce4b9fc111d7a4dd42813358e60d560f3d231756b0d213c"
+      },
+      {
+        "path": "schemas/request.schema.json",
+        "sha256": "43ac5fd605ae171d5fceba721f793cd94a34270c4ff3198328c8119a427c18ef"
+      },
+      {
+        "path": "schemas/bundle.schema.json",
+        "sha256": "d459de36365f0dcd037fa3b00e9c1831d243ef0d473f3a9f7be58e1da7fa2877"
+      },
+      {
+        "path": "schemas/report.schema.json",
+        "sha256": "e722f8c87dcf51dffd1231bd56f761032736673ab7e8650cb7925a168f4b3259"
+      },
+      {
+        "path": "tests/review.test.mjs",
+        "sha256": "3e498b915f131e87d618fb17757a395d7999816494914dd88d99e334a5788deb"
+      },
+      {
+        "path": "tests/ui-contract.test.mjs",
+        "sha256": "d50b9b266413cfe092b3b9af3774e16383e3eb8b44a09e725f20312336a3c354"
+      },
+      {
+        "path": "schemas/semantic-contract.schema.json",
+        "sha256": "466e6acd1c1821b1befdfd960e79cf0c131f2f74aecf1ea387c22c036cb444c1"
+      },
+      {
+        "path": "tests/server.test.mjs",
+        "sha256": "29ed4e23706b65507eba6556144c6ba53d00ad481560a54be87b0596ce05b984"
+      }
+    ]
+  },
+  "verification": [
+    {
+      "command": "node --test --test-reporter=spec tests/review.test.mjs tests/ui-contract.test.mjs tests/server.test.mjs",
+      "passed": 37,
+      "failed": 0,
+      "breakdown": {
+        "independent_host_review": 18,
+        "ui_raw_json_report_contract": 18,
+        "existing_local_server_integration": 1
+      },
+      "meaning": "Fresh combined run after all reviewed host/UI/server fixes. Native runtime is real except explicit isolated child-process malformed-output injection controls, with a complete paired positive."
+    }
+  ],
+  "checked_boundaries": [
+    "Raw request and bundle text cross the UI/API boundary as strings without browser JSON normalization; strict duplicate-key/exponent rejection occurs in the verifier.",
+    "Malformed transport envelope is HTTP400 error JSON; malformed product documents are HTTP200 structured REJECTED_MALFORMED reports.",
+    "Package loading alone does not display VERIFIED; input edits, file loading, control changes, network errors and stale async verification responses invalidate the report and download.",
+    "The wrong-commit demo uses a known synthetic request and is disabled after manual input; it does not parse or repair untrusted raw text.",
+    "Successful replay of native REFUTED remains overall CONTRADICTED with the native negative visible.",
+    "Commit/path membership, signature trust, semantic compatibility, guarantee preservation and recomputation remain distinct layer obligations.",
+    "Structured rejection reports were freshly validated against report.schema.json after duplicate-key raw request/bundle documents, exponent tokens, malformed required_layers, and oversized/wide semantic assumptions.",
+    "Delayed-body concurrent POSTs were checked against the two-verifier execution gate.",
+    "Current generic RVR output guards reject missing canonical output, wrong canonical digest/profile identity, false evaluationPerformed, semantic inconsistency, nonzero exits and malformed stdout; a complete injected output remains a positive control."
+  ],
+  "findings": [
+    {
+      "id": "UI-STALE-REPORT",
+      "status": "RESOLVED_AND_RETESTED",
+      "detail": "Prior green report could survive edited inputs or failed subsequent verification; invalidation and revision guards now pass independent UI controls."
+    },
+    {
+      "id": "UI-RAW-DEMO-NORMALIZATION",
+      "status": "RESOLVED_AND_RETESTED",
+      "detail": "Wrong-commit button previously JSON.parse-normalized manual input; now loads known V02 request only in the permitted demo control state."
+    },
+    {
+      "id": "REPORT-DIAGNOSTIC-BOUNDS",
+      "status": "RESOLVED_AND_RETESTED",
+      "detail": "Missing assumption strings/lists can produce HTTP200 report documents exceeding schema reason-code length/count and explanation limits. Confirmed one2000-char premise,300 unique premises, and32 ~110-char premise names.",
+      "expected": "Every structured verification response should validate against report.schema.json, including negative and malformed inputs.",
+      "resolution": "Semantic list/name input bounds and report explanation bound were aligned. All three independently authored long/wide diagnostic cases now produce report-schema-valid negative responses."
+    },
+    {
+      "id": "SERVER-CONCURRENCY-RESERVATION",
+      "status": "RESOLVED_AND_RETESTED",
+      "detail": "Three requests with partial bodies sent before completion all pass the initial active counter test and return200; two-verifier limit is not rechecked before active++.",
+      "expected": "At least one of three simultaneous delayed-body verification attempts is refused with429 before a third verifier executes.",
+      "resolution": "The active verifier limit is rechecked immediately before admission to execution. Three delayed-body attempts now include the required429 busy response."
+    }
+  ],
+  "remaining_limitations": [
+    "UI testing by this reviewer evaluates actual app source in a minimal DOM harness, not a rendered browser. Any separate parent-agent manual browser check is outside this review evidence; layout, visual quality, accessibility and cross-browser behavior were not assessed here.",
+    "Tests are finite synthetic controls and targeted source inspection, not fuzzing, penetration testing or a complete cryptographic audit.",
+    "The local HTTP service was tested on ephemeral loopback ports; no remote deployment, live provider authentication, chain anchoring, official repository provenance or global history completeness was established.",
+    "Original public-spec relation adapters and bounded caller premises do not claim upstream native runtime conformance or external oracle independence."
+  ],
+  "write_boundary": "Only new repository test/report paths were written in this review; no upstream repository, private commercial material, remote write or commit.",
+  "unresolved_findings_in_reviewed_scope": 0,
+  "runtime": {
+    "node": "v22.15.0",
+    "platform": "Windows; loopback HTTP on ephemeral ports",
+    "test_dependencies": "Existing pinned project dependencies; no installation performed by this reviewer"
+  }
+}
