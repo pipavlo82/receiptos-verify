@@ -1,0 +1,97 @@
+{
+  "frozenCandidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "boundary": "D13 uses explicitly faulted disposable source; remaining cases exact fresh frozen server",
+  "rows": [
+    {
+      "case": "G10",
+      "bundleFileVisible": true,
+      "className": "verdict bad",
+      "layers": [
+        "INPUTADMITTED",
+        "CANONICALIZATIONVERIFIED",
+        "INTEGRITYVERIFIED",
+        "AUTHENTICITYVERIFIED",
+        "SUBJECT_BINDINGVERIFIED",
+        "RECOMPUTATIONREPRODUCED",
+        "EVIDENCE_SUFFICIENCYSUFFICIENT",
+        "SEMANTIC_COMPATIBILITYCONTRADICTED",
+        "GUARANTEE_PRESERVATIONNOT_REQUESTED",
+        "CONTINUITYNOT_REQUESTED",
+        "DOMAIN_ADAPTERSNOT_REQUESTED",
+        "PRODUCT_PROJECTIONCONTRADICTED",
+        "EXPLAINABLE_REPORTGENERATED",
+        "PROVENANCERECORDED"
+      ],
+      "requestFileVisible": true,
+      "verdict": "CONTRADICTED"
+    },
+    {
+      "case": "V17",
+      "className": "verdict neutral",
+      "layers": [
+        "INPUTADMITTED",
+        "CANONICALIZATIONVERIFIED",
+        "INTEGRITYVERIFIED",
+        "AUTHENTICITYVERIFIED",
+        "SUBJECT_BINDINGVERIFIED",
+        "RECOMPUTATIONREPRODUCED",
+        "EVIDENCE_SUFFICIENCYSUFFICIENT",
+        "SEMANTIC_COMPATIBILITYCOMPATIBLE",
+        "GUARANTEE_PRESERVATIONNOT_REQUESTED",
+        "CONTINUITYNOT_REQUESTED",
+        "DOMAIN_ADAPTERSUNVERIFIABLE",
+        "PRODUCT_PROJECTIONINSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORTGENERATED",
+        "PROVENANCERECORDED"
+      ],
+      "reason": "INSUFFICIENT_EVIDENCE. The caller-selected subject and policy match the covered subject and policy. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, SEMANTIC_REQUIREMENT_ESTABLISHED, PROVIDER_AUTHENTICATION_NOT_ESTABLISHED",
+      "verdict": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "case": "G17",
+      "className": "verdict neutral",
+      "color": "rgb(225, 197, 139)",
+      "verdict": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "case": "V01",
+      "className": "verdict good",
+      "color": "rgb(140, 224, 194)",
+      "verdict": "VERIFIED"
+    },
+    {
+      "case": "empty-object",
+      "staleCheck": {
+        "className": "verdict neutral",
+        "saveDisabled": true,
+        "verdict": "INPUT CHANGED — VERIFY AGAIN"
+      },
+      "className": "verdict bad",
+      "color": "rgb(255, 155, 169)",
+      "verdict": "REJECTED_MALFORMED"
+    },
+    {
+      "case": "D13-isolated-native-crash",
+      "className": "verdict neutral",
+      "color": "rgb(225, 197, 139)",
+      "layers": [
+        "INPUTADMITTED",
+        "CANONICALIZATIONVERIFIED",
+        "INTEGRITYVERIFIED",
+        "AUTHENTICITYVERIFIED",
+        "SUBJECT_BINDINGVERIFIED",
+        "RECOMPUTATIONCANNOT_RECOMPUTE",
+        "EVIDENCE_SUFFICIENCYSUFFICIENT",
+        "SEMANTIC_COMPATIBILITYCOMPATIBLE",
+        "GUARANTEE_PRESERVATIONNOT_REQUESTED",
+        "CONTINUITYNOT_REQUESTED",
+        "DOMAIN_ADAPTERSNOT_REQUESTED",
+        "PRODUCT_PROJECTIONCANNOT_RECOMPUTE",
+        "EXPLAINABLE_REPORTGENERATED",
+        "PROVENANCERECORDED"
+      ],
+      "reason": "CANNOT_RECOMPUTE: supplied evidence is evaluated only for the caller-selected claim surface. NATIVE_CRYSTAL_ROOT_MATCH, NATIVE_RVR_EXECUTION_UNAVAILABLE",
+      "verdict": "CANNOT_RECOMPUTE"
+    }
+  ]
+}

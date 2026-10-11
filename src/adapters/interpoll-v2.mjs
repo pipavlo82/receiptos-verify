@@ -20,6 +20,25 @@ const limitations = Object.freeze([
 ]);
 const object = x => !!x && typeof x === 'object' && !Array.isArray(x);
 const exactKeys = (x, required, optional = []) => object(x) && required.every(k => Object.hasOwn(x, k)) && Object.keys(x).every(k => required.includes(k) || optional.includes(k));
+const text = x => typeof x === 'string' && x.length > 0;
+function contextMalformed(context) {
+  if (!object(context) || Object.keys(context).some(k => !['requested_action', 'authority', 'required_outcome'].includes(k))) return true;
+  if (Object.hasOwn(context, 'required_outcome') && typeof context.required_outcome !== 'string') return true;
+  if (Object.hasOwn(context, 'authority')) {
+    if (!object(context.authority) || Object.keys(context.authority).some(k => !['actor', 'namespace'].includes(k))
+        || Object.values(context.authority).some(value => !text(value))) return true;
+  }
+  if (Object.hasOwn(context, 'requested_action')) {
+    const action = context.requested_action;
+    if (!object(action) || Object.keys(action).some(k => !materialFields.includes(k))) return true;
+    for (const [field, value] of Object.entries(action)) {
+      if (['version', 'createdAt'].includes(field)) {
+        if (!Number.isSafeInteger(value) || value < 0) return true;
+      } else if (!text(value)) return true;
+    }
+  }
+  return false;
+}
 export function actionMaterial(action) {
   if (!object(action)) return null;
   return Object.fromEntries(materialFields.map(k => [k, action[k]]));
@@ -51,6 +70,7 @@ export function evaluateInterpollV2(input, context = {}) {
       return output('CONTRADICTED', ['ACTION_SIGNATURE_INVALID'], native);
     }
     native.signature = 'VALID';
+    if (contextMalformed(context)) return output('REJECTED_MALFORMED', ['ACTION_CONTEXT_MALFORMED'], native);
     if (!exactKeys(context.requested_action, materialFields)) return output('INSUFFICIENT_EVIDENCE', ['CALLER_ACTION_REQUIRED'], native);
     if (!equal(actionMaterial(input.signed_intent), context.requested_action)) return output('CONTRADICTED', ['SIGNED_INTENT_REQUEST_MISMATCH'], native);
     if (!exactKeys(context.authority, ['actor', 'namespace']) || context.authority.actor !== input.signed_intent.actor || context.authority.namespace !== input.signed_intent.namespace) return output('UNSUPPORTED_PROFILE', ['ACTION_AUTHORITY_UNSUPPORTED'], native);

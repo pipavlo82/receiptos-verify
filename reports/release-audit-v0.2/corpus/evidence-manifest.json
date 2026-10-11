@@ -1,0 +1,130 @@
+{
+  "candidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "files": [
+    {
+      "path": "attribution-audit.json",
+      "bytes": 208316,
+      "sha256": "37d34969f133778773f69daea4ad1aca083d96e05f7956f387077fb4da6fa2be",
+      "originalRawSHA256": "5c61e052b4f5f940a80e9019e8cc252dd4e4bcc107a449d05155f1f706dca052"
+    },
+    {
+      "path": "audit_attribution.py",
+      "bytes": 2893,
+      "sha256": "d2da2077d040e680b93f5f0602f383da14810db5839feafe4e5adeba55c97ce1"
+    },
+    {
+      "path": "audit_ledger.py",
+      "bytes": 3351,
+      "sha256": "4ce2788d39758241a193e66ee0e6ca24d3a5607d5cb4b787be14258819dfc501"
+    },
+    {
+      "path": "audit_source_paths.py",
+      "bytes": 2167,
+      "sha256": "9c55a1203dc8c97114159580b7851e9912a25a7d7cc0443735b09681460b8d71"
+    },
+    {
+      "path": "audit_sources.py",
+      "bytes": 7456,
+      "sha256": "d203f7a67a10b8d2cfbce1a045ca691e5857bccf23f506ce66dcabea6e030d17"
+    },
+    {
+      "path": "audit_vectors.py",
+      "bytes": 21248,
+      "sha256": "3681eb8d6ff0c23bbb680caafe60d64811c1e2eae76255e19f9a3d9f21489fd1"
+    },
+    {
+      "path": "check_literal_oracles.py",
+      "bytes": 3299,
+      "sha256": "83565e347020c61b819a48186bf8c20fe4959ce2d02f4ef2dca2babbf3bfb6a7"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 4123,
+      "sha256": "cf2afe7b46f2705e087f358d81f30d3d2c62d0b25ea0e38b8af49e2b320685cc"
+    },
+    {
+      "path": "historical-ledger-audit.json",
+      "bytes": 2356235,
+      "sha256": "e70a323e3d6b5a8e0bd6ffbfc51b71ec6a1307ae062ba9ac9c1d76d2cbcfd516",
+      "originalRawSHA256": "24b8ab1c5878787b0443134e9d4ae227dc9bf7ff407194556d1446ae72800d1c"
+    },
+    {
+      "path": "literal-oracle-checks.json",
+      "bytes": 33376,
+      "sha256": "b11f2e04d2ac973a69d66820bed0633e32c728b985c00f35a19b3986dd5a8ce4"
+    },
+    {
+      "path": "official-apache-license-audit.json",
+      "bytes": 1913,
+      "sha256": "a1413baab4a602ab9736e25f60d594f67edea1f1a30fe4121d23d82ef293fd2b"
+    },
+    {
+      "path": "PROVENANCE_LICENSE_AUDIT.md",
+      "bytes": 22651,
+      "sha256": "19d462446a4c7a9450bf40e75702eee9f5a190d1dbdf800cab069a2530849e83"
+    },
+    {
+      "path": "public-source-observations.json",
+      "bytes": 630476,
+      "sha256": "5c429d051ec08cba40495c42f23260496678cfcee8c5179419fe625f368cdda8",
+      "originalRawSHA256": "de4d5b9b552e0871e1c2b9f9357b7e33d7fdff0e177aa99f341e73debcc2e2e4"
+    },
+    {
+      "path": "public-tree-observations.json",
+      "bytes": 11133002,
+      "sha256": "b75b038601fd3482b6ef1f10c61df7e93c5a28737b18f3a2bdc14aa5213e0e82"
+    },
+    {
+      "path": "source-audit.json",
+      "bytes": 125919,
+      "sha256": "aa370d6037d5c433ee8ec45b16ac3535dce59de19a0da1c4a0b108fc864fa278"
+    },
+    {
+      "path": "source-path-audit.json",
+      "bytes": 114532,
+      "sha256": "c8e1f558eee0e2f19b82061fe2ee5bae2c61097a7cbaaaf6d2dac48a4d3039c1"
+    },
+    {
+      "path": "V0_2_VECTOR_WITNESS_MATRIX.md",
+      "bytes": 29045,
+      "sha256": "ba4423eb84bc347a3bfe72fc5ce6e9e5e576cbbefce3ebf1478da88f7680a23f"
+    },
+    {
+      "path": "vector-witness-matrix.json",
+      "bytes": 130363,
+      "sha256": "b2049ea6eb1332ee3ba7ea0f5f4c9c5a5fefa3bc05c02d83e2cf319bff4a8ab4"
+    },
+    {
+      "path": "write_provenance_report.py",
+      "bytes": 11998,
+      "sha256": "e6dc33de414b73d8864c4884c2742b348b7c4f78afc1ac1e1fbd80c24ddbb44f"
+    }
+  ],
+  "captureSanitization": {
+    "originalRawManifestSHA256": "f58064ee2e91a949075c4995ea7ea314c8e076623de89407b6a1068cd7e3aba8",
+    "omissions": "Unnecessary API patch/body/content; exact originals quarantined locally; metadata-only mapping retained.",
+    "files": [
+      {
+        "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+        "beforeSHA256": "5c61e052b4f5f940a80e9019e8cc252dd4e4bcc107a449d05155f1f706dca052",
+        "afterSHA256": "37d34969f133778773f69daea4ad1aca083d96e05f7956f387077fb4da6fa2be",
+        "afterBytes": 208316,
+        "omittedFields": 112
+      },
+      {
+        "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+        "beforeSHA256": "24b8ab1c5878787b0443134e9d4ae227dc9bf7ff407194556d1446ae72800d1c",
+        "afterSHA256": "e70a323e3d6b5a8e0bd6ffbfc51b71ec6a1307ae062ba9ac9c1d76d2cbcfd516",
+        "afterBytes": 2356235,
+        "omittedFields": 852
+      },
+      {
+        "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+        "beforeSHA256": "de4d5b9b552e0871e1c2b9f9357b7e33d7fdff0e177aa99f341e73debcc2e2e4",
+        "afterSHA256": "5c429d051ec08cba40495c42f23260496678cfcee8c5179419fe625f368cdda8",
+        "afterBytes": 630476,
+        "omittedFields": 208
+      }
+    ]
+  }
+}

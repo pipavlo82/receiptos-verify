@@ -1,0 +1,442 @@
+{
+  "v1": [
+    {
+      "id": "ignore-requested-subject",
+      "file": "src/core/subject.mjs",
+      "witness": "V04",
+      "positive": "V01",
+      "changes": [
+        [
+          "!equal(request.subject[field],statement.subject[field])",
+          "false"
+        ]
+      ]
+    },
+    {
+      "id": "compare-receipt-to-itself",
+      "file": "src/core/subject.mjs",
+      "witness": "V04",
+      "positive": "V01",
+      "changes": [
+        [
+          "!equal(request.subject[field],statement.subject[field])",
+          "!equal(statement.subject[field],statement.subject[field])"
+        ]
+      ]
+    },
+    {
+      "id": "accept-any-valid-signature",
+      "file": "src/adapters/interpoll.mjs",
+      "witness": "V25",
+      "positive": "V13",
+      "changes": [
+        [
+          "Object.entries(expected).some(([k,v])=>a[k]!==v)",
+          "false"
+        ]
+      ]
+    },
+    {
+      "id": "promote-reproduced-to-verified",
+      "file": "src/projection/project.mjs",
+      "witness": "V07",
+      "positive": "V01",
+      "changes": [
+        [
+          "layers.RECOMPUTATION?.semanticOutcome==='REFUTED'",
+          "false"
+        ],
+        [
+          "||layers.RECOMPUTATION?.semanticOutcome!=='VERIFIED'",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "accept-empty-evidence",
+      "file": "src/core/evidence.mjs",
+      "witness": "V06",
+      "positive": "V01",
+      "changes": [
+        [
+          "const roles=['artifact','git-commit','git-tree','native-result'];",
+          "if(inspected.manifest.length===0) return result('SUFFICIENT');\n  const roles=['artifact','git-commit','git-tree','native-result'];"
+        ]
+      ]
+    },
+    {
+      "id": "count-crash-as-semantic-refutation",
+      "file": "src/projection/project.mjs",
+      "witness": "V08",
+      "positive": "V01",
+      "fault": "crash-rvr",
+      "changes": [
+        [
+          "return result('CANNOT_RECOMPUTE',reasons); // MUTATE: crash-kill",
+          "return result('CONTRADICTED',reasons); // MUTATE: crash-kill"
+        ]
+      ]
+    },
+    {
+      "id": "package-presence-as-pass",
+      "file": "src/adapters/recompute_kit.mjs",
+      "witness": "V09",
+      "positive": "V01",
+      "changes": [
+        [
+          "||report.executed!==true",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "ignore-policy-version",
+      "file": "src/core/subject.mjs",
+      "witness": "V22",
+      "positive": "V01",
+      "changes": [
+        [
+          "request.policy.id !== statement.policy.id || request.policy.version !== statement.policy.version || digest(request.policy) !== statement.policy.digest",
+          "false"
+        ]
+      ]
+    },
+    {
+      "id": "ignore-guarantee-dependency",
+      "file": "src/adapters/prf.mjs",
+      "witness": "V11",
+      "positive": "V12",
+      "changes": [
+        [
+          "if (list(source.dependencies)) for",
+          "if (false) for"
+        ],
+        [
+          "for (const dependency of new Set([...source.dependencies, ...request.dependencies]))",
+          "for (const dependency of [])"
+        ],
+        [
+          "!eq([...source.dependencies].sort(), [...request.dependencies].sort()) || !eq([...target.dependencies].sort(), [...request.dependencies].sort())",
+          "false"
+        ]
+      ]
+    },
+    {
+      "id": "ignore-retry-action-change",
+      "file": "src/adapters/interpoll.mjs",
+      "witness": "V14",
+      "positive": "V13",
+      "changes": [
+        [
+          "if(!exact)",
+          "if(false)"
+        ]
+      ]
+    },
+    {
+      "id": "ignore-evidence-grade",
+      "file": "src/adapters/recompute_kit.mjs",
+      "witness": "V24",
+      "positive": "V01",
+      "changes": [
+        [
+          "report.evidence_grade!=='LOCAL_RECOMPUTATION'",
+          "false"
+        ]
+      ]
+    },
+    {
+      "id": "ignore-authority",
+      "file": "src/adapters/semantic_abi.mjs",
+      "witness": "V19",
+      "positive": "V01",
+      "changes": [
+        [
+          "established.authority_class !== required.authority_class && !exactRecomputation",
+          "false"
+        ],
+        [
+          "context.authority_class !== established.authority_class",
+          "false"
+        ]
+      ]
+    },
+    {
+      "id": "ignore-commit",
+      "file": "src/core/subject.mjs",
+      "witness": "V02",
+      "positive": "V01",
+      "changes": [
+        [
+          "'artifact_digest','commit','tree'",
+          "'artifact_digest','tree'"
+        ]
+      ]
+    },
+    {
+      "id": "ignore-canonicalization-profile",
+      "file": "src/core/verify.mjs",
+      "witness": "V23",
+      "positive": "V01",
+      "changes": [
+        [
+          "bundle.canonicalization_profile!==CANON",
+          "false"
+        ]
+      ]
+    }
+  ],
+  "v2": [
+    {
+      "id": "M01",
+      "defect": "ignore authority identity",
+      "positive": "G01",
+      "witness": "G04",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "changes": [
+            [
+              "compare('authority',requested.authority,evidence.authority,'AUTHORITY_MISMATCH');",
+              "add('authority','COMPATIBLE',[]);"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "defect": "ignore scope at both product and native semantic link",
+      "positive": "G01",
+      "witness": "G05",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "changes": [
+            [
+              "compare('scope',requested.scope,evidence.scope,'SCOPE_MISMATCH');",
+              "add('scope','COMPATIBLE',[]);"
+            ]
+          ]
+        },
+        {
+          "file": "src/adapters/semantic-abi-v2.mjs",
+          "changes": [
+            [
+              "scope: encoded(surface.scope),",
+              "scope: encoded({}),"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "defect": "ignore policy version",
+      "positive": "G01",
+      "witness": "G06",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "changes": [
+            [
+              "compare('policy',requested.policy,evidence.policy,'POLICY_MISMATCH');",
+              "add('policy','COMPATIBLE',[]);"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "defect": "ignore dependency premise presence",
+      "positive": "G23",
+      "witness": "G07",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "changes": [
+            [
+              "if (!observed || observed.status !== 'SATISFIED' && observed.status !== 'CONTRADICTED') dependencyReasons.push('DEPENDENCY_MISSING');",
+              "if (false) dependencyReasons.push('DEPENDENCY_MISSING');"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "defect": "ignore dependency contradiction",
+      "positive": "G23",
+      "witness": "G08",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "changes": [
+            [
+              "if (observed?.status === 'CONTRADICTED') dependencyReasons.push('DEPENDENCY_CONTRADICTED');",
+              "if (false) dependencyReasons.push('DEPENDENCY_CONTRADICTED');"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "defect": "compare evidence subject to itself",
+      "positive": "G01",
+      "witness": "G03",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "changes": [
+            [
+              "compare('subject',identity(requested.subject),identity(evidence.subject),'SUBJECT_MISMATCH');",
+              "compare('subject',identity(evidence.subject),identity(evidence.subject),'SUBJECT_MISMATCH');"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "defect": "native positive bypasses semantic compatibility",
+      "positive": "G24",
+      "witness": "G11",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "changes": [
+            [
+              "  const obligations = [...new Set([...REQUIRED_V2,...required])];",
+              "  const obligations = [...new Set([...REQUIRED_V2,...required])];\n  if (layers.RECOMPUTATION?.semanticOutcome==='VERIFIED') return result('VERIFIED',reasons);"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "defect": "promote reproduced negative to verified",
+      "positive": "G24",
+      "witness": "G12",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "changes": [
+            [
+              "if (layers.RECOMPUTATION?.semanticOutcome==='REFUTED') return result('CONTRADICTED',[...reasons,'NATIVE_NEGATIVE_RESULT']);",
+              "if (false) return result('CONTRADICTED',[...reasons,'NATIVE_NEGATIVE_RESULT']);"
+            ],
+            [
+              "layers.RECOMPUTATION?.semanticOutcome!=='VERIFIED'",
+              "!['VERIFIED','REFUTED'].includes(layers.RECOMPUTATION?.semanticOutcome)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "defect": "allow retry to mutate signed material action",
+      "positive": "G13",
+      "witness": "G14",
+      "patches": [
+        {
+          "file": "src/adapters/interpoll-v2.mjs",
+          "changes": [
+            [
+              "if (!equal(attempt.action, input.signed_intent)) {",
+              "if (false) {"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "defect": "collapse native PRF UNVERIFIABLE to preserved",
+      "positive": "G15",
+      "witness": "G21",
+      "patches": [
+        {
+          "file": "src/adapters/prf-v2.mjs",
+          "changes": [
+            [
+              "if (actual.outcome === 'UNVERIFIABLE') return out(",
+              "if (false) return out("
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "defect": "ignore requested claim version",
+      "positive": "G01",
+      "witness": "G22",
+      "patches": [
+        {
+          "file": "src/core/claim-surface.mjs",
+          "changes": [
+            [
+              "compare('version',{claim:requested.version,subject:requested.subject.version},{claim:evidence.version,subject:evidence.subject.version},'VERSION_MISMATCH');",
+              "add('version','COMPATIBLE',[]);"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "defect": "integrity and signature override contradiction",
+      "positive": "G01",
+      "witness": "G18",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "changes": [
+            [
+              "  const obligations = [...new Set([...REQUIRED_V2,...required])];",
+              "  const obligations = [...new Set([...REQUIRED_V2,...required])];\n  if (layers.INTEGRITY.status==='VERIFIED' && layers.AUTHENTICITY.status==='VERIFIED') return result('VERIFIED',reasons);"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M13",
+      "defect": "promote authenticated scan report grade to local scanner recomputation",
+      "positive": "G24",
+      "witness": "G29",
+      "patches": [
+        {
+          "file": "src/core/evidence-v2.mjs",
+          "changes": [
+            [
+              "if (request.adapter==='trustless' && native.evidenceGrade!=='REPRODUCED') return result('INSUFFICIENT',['EVIDENCE_GRADE_NOT_ESTABLISHED']);",
+              "if (false) return result('INSUFFICIENT',['EVIDENCE_GRADE_NOT_ESTABLISHED']);"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M14",
+      "defect": "hide requested PRF native negative behind preserved transfer",
+      "positive": "G15",
+      "witness": "G30",
+      "patches": [
+        {
+          "file": "src/projection/project-v2.mjs",
+          "changes": [
+            [
+              "const prfProjection = layers.GUARANTEE_PRESERVATION.productProjection ?? null; // V02_MUTATE prf-product",
+              "const prfProjection = null; // V02_MUTATE prf-product"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

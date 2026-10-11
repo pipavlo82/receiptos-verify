@@ -1,0 +1,109 @@
+{
+  "phase": "input receipt envelope mistakenly used as verification input; not checker execution",
+  "exit": 3,
+  "actual": {
+    "schema": "receiptos.verify.report.v1",
+    "projection_version": "receiptos.verify.projection.v1",
+    "overall": "REJECTED_MALFORMED",
+    "reason_codes": [
+      "SCHEMA_MISMATCH"
+    ],
+    "explanation": "REJECTED_MALFORMED. The requested verification layers did not establish the claim. SCHEMA_MISMATCH",
+    "required_layers": [
+      "INTEGRITY",
+      "AUTHENTICITY",
+      "SUBJECT_BINDING",
+      "RECOMPUTATION",
+      "EVIDENCE_SUFFICIENCY",
+      "SEMANTIC_COMPATIBILITY"
+    ],
+    "layers": {
+      "INPUT": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "SCHEMA_MISMATCH"
+        ],
+        "nativeResult": {
+          "message": "data must have required property 'schema'; data must have required property 'verification_profile'; data must have required property 'claim'; data must have required property 'subject'; data must have required property 'policy'; data must have required property 'evidence'; data must have required property 'semantic_requirement'; data must have required property 'requested_guarantees'; data must NOT have additional properties; data must NOT have additional properties"
+        }
+      },
+      "CANONICALIZATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "INTEGRITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "AUTHENTICITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "SUBJECT_BINDING": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "RECOMPUTATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "EVIDENCE_SUFFICIENCY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "SEMANTIC_COMPATIBILITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "GUARANTEE_PRESERVATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CONTINUITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "DOMAIN_ADAPTERS": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "PRODUCT_PROJECTION": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "SCHEMA_MISMATCH"
+        ],
+        "nativeResult": null
+      },
+      "EXPLAINABLE_REPORT": {
+        "status": "GENERATED",
+        "reasonCodes": [
+          "SCHEMA_MISMATCH"
+        ],
+        "nativeResult": {
+          "explanation": "REJECTED_MALFORMED. The requested verification layers did not establish the claim. SCHEMA_MISMATCH"
+        }
+      },
+      "PROVENANCE": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      }
+    },
+    "boundaries": [
+      "Integrity is not authenticity.",
+      "Signature is not semantic correctness.",
+      "Replay preserves negative outcomes.",
+      "Historical observations are not repeated execution."
+    ]
+  }
+}

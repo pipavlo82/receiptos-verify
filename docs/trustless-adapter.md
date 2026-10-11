@@ -2,26 +2,28 @@
 
 The executable profile `receiptos.verify.trustless-scan.v2` wraps selected,
 unchanged public recompute-kit code. It runs the real native
-`scan_subject_binding.v0` relation and the real current-main conformance runner
+`scan_subject_binding.v0` relation and the real pinned-main conformance runner
 against fresh caller-supplied evidence. It does not run the complete
 recompute-kit suite inventory.
 
 ## Exact public source
 
-The mechanically observed public main is
+The public main observed when this adapter was pinned was
 `1a37bcaf91918fd8a98f164d97d0fddbc28c6755`, tree
 `7b64f2b3f51a3df93ab74d6ea717f74635799845`. PR65 is merged into this main.
 The selected scan checker and canonical runner are vendored byte-for-byte;
 runtime SHA-256 checks pin all executed upstream files and the selected spec.
 The CC0-1.0 source grant remains in `vendor/recompute-kit-v02/LICENSE`.
 
-PR57 is still OPEN at `197c6d26e68f85a117dd12a94924a7f959edaef4`, with
-base `1a37bcaf91918fd8a98f164d97d0fddbc28c6755`, when observed for v0.2.
-Its reporter/self-grading contract migration is not imported or presented as
-main. The executable adapter rejects this PR-only pin. Main's selected suite
+PR57 was OPEN at `197c6d26e68f85a117dd12a94924a7f959edaef4`, with
+base `1a37bcaf91918fd8a98f164d97d0fddbc28c6755`, at the source observation.
+Release audit independently found it merged at `2026-10-11T22:35:33Z`;
+current main is `3c3923956200d01ab74c2dcbb49b268739943bda`. The adapter
+retains its historical-main pin and does not import newly merged reporter
+behavior. It rejects source pins other than its exact selected pin. That pinned suite
 does not declare `adapter.contract`: the preserved native `contractMode` is
 therefore `null`. `runnerContractInterpretation: MAIN_SELF_GRADING` describes
-the observed main runner behavior separately. PR52 also remains open at
+the observed main runner behavior separately. PR52 was also open at the source observation at
 `7eaf8995748ec4a00cb313463d2555da8fea25b4`; its changes are not imported.
 
 `sourceMaturity: STABLE` identifies the merged source relation and

@@ -1,0 +1,311 @@
+{
+  "testedHead": "dde5419f453969ae33b9e88b3151dba3e370f196",
+  "testedSourceIdentity": [
+    {
+      "path": "schemas/request-v2.schema.json",
+      "sha256": "4c8e742c4418dc39006c2c6ea8787d0e12afadabaf690a9e68520d6ea3b815c6"
+    },
+    {
+      "path": "src/core/admission-v2.mjs",
+      "sha256": "d3263a9ad0076739235d215c145f433dfd6c1cc5388b5d613d337bb458ece78b"
+    },
+    {
+      "path": "tests/requirement-admission-release.test.mjs",
+      "sha256": "62c10e2a18f9a2700f0a9535733b63eb44b1afc11d76d231101552981d2fee07"
+    }
+  ],
+  "sourceUnchangedDuringReplay": true,
+  "generatedAt": "2026-10-11T23:19:43.329Z",
+  "total": 41,
+  "passed": 41,
+  "failed": [],
+  "results": [
+    {
+      "id": "continuity-binding-true",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "passed": true
+    },
+    {
+      "id": "continuity-binding-false",
+      "before": "VERIFIED",
+      "after": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    },
+    {
+      "id": "continuity-binding-_true_",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-binding-1",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-binding-__",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-binding-null",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-unknown-option",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-unknown-policy",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-malformed-mode",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-null-entry",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-missing-state",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "passed": true
+    },
+    {
+      "id": "continuity-null-digest",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-malformed-digest",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "continuity-wrong-ref-type",
+      "before": "CONTRADICTED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "interpoll_unknown_fresh_requirement",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "interpoll_unknown_server_requirement",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "interpoll_null_outcome",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "prf_unknown_policy_requirement",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "prf_unknown_evidence_requirement",
+      "before": "VERIFIED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "prf_null_known_requirement",
+      "before": "UNSUPPORTED_PROFILE",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "orphan_interpoll_requirement_on_rvr",
+      "before": "VERIFIED",
+      "after": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    },
+    {
+      "id": "orphan_prf_requirement_without_guarantee",
+      "before": "VERIFIED",
+      "after": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    },
+    {
+      "id": "D1",
+      "before": "VERIFIED",
+      "after": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    },
+    {
+      "id": "D2",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "D12",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "passed": true
+    },
+    {
+      "id": "D14",
+      "before": "UNSUPPORTED_PROFILE",
+      "after": "UNSUPPORTED_PROFILE",
+      "expected": "UNSUPPORTED_PROFILE",
+      "passed": true
+    },
+    {
+      "id": "A01",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A02",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A03",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A04",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A05",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A06",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A07",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A08",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "passed": true
+    },
+    {
+      "id": "A09",
+      "before": "INSUFFICIENT_EVIDENCE",
+      "after": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "passed": true
+    },
+    {
+      "id": "A10",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A11",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    },
+    {
+      "id": "A12",
+      "before": "REJECTED_MALFORMED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "A13",
+      "before": "REJECTED_MALFORMED",
+      "after": "REJECTED_MALFORMED",
+      "expected": "REJECTED_MALFORMED",
+      "passed": true
+    },
+    {
+      "id": "A14",
+      "before": "VERIFIED",
+      "after": "VERIFIED",
+      "expected": "VERIFIED",
+      "passed": true
+    },
+    {
+      "id": "A15",
+      "before": "CONTRADICTED",
+      "after": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "passed": true
+    }
+  ]
+}

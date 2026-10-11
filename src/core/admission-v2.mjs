@@ -43,6 +43,9 @@ export function admitV2(request, bundle) {
   validateV2Schema('bundle', bundle);
   validateSurfaceRelations(request);
   validateSurfaceRelations(bundle.statement.surface);
+  if (request.guarantee_requirement?.accepted_basis) {
+    uniqueIds(request.guarantee_requirement.accepted_basis.dependencies, 'DEPENDENCY_ID_DUPLICATE', 'Accepted guarantee dependency');
+  }
   uniqueIds(request.policy.trusted_keys, 'TRUST_KEY_ID_DUPLICATE', 'Trust key');
   uniqueIds(request.policy.accepted_authorities, 'AUTHORITY_ID_DUPLICATE', 'Accepted authority');
   uniqueIds(request.policy.dependency_results, 'DEPENDENCY_RESULT_ID_DUPLICATE', 'Dependency premise');

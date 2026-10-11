@@ -23,3 +23,17 @@ A matching digest, valid signature, native PASS or REPRODUCED result cannot over
 ## Compatibility with v0.1
 
 No v1 vector is migrated or regenerated. V1 callers retain the original schemas and projection. V2 inputs require an explicitly different statement signing domain (`receiptos.verify.statement.v2`); an old signature cannot be relabeled as v2. The original commit A/B witness remains a special case of the broader identity boundary.
+
+## Optional requirement contexts
+
+Supplied Interpoll, PRF and continuity context objects have closed, typed field
+contracts. Unknown semantic requirements and mistyped known fields are rejected,
+including null used as a defaulted outcome or non-Boolean envelope obligation.
+This admission does not add fresh-server authentication or chain evidence.
+
+Context presence alone does not activate a capability. Adapter selection and
+`requested_guarantees` remain authoritative: a valid PRF context with an empty
+requested-guarantee list stays inactive and establishes no transfer claim.
+Missing/partial supported context safely withholds the relevant result. Git
+object closure is specific to subject kind `git-artifact`; opaque generic kinds
+can carry matching labels without establishing Git repository membership.

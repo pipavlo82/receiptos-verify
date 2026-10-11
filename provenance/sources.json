@@ -10357,5 +10357,33 @@
       "path": "provenance/v02-actions-prf.json",
       "sha256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616"
     }
-  ]
+  ],
+  "v02ReleaseAuditObservation": {
+    "queriedAt": "2026-10-11T23:09:39.173Z",
+    "runtimePinsChanged": false,
+    "recomputeKitCurrentMain": {
+      "sha": "3c3923956200d01ab74c2dcbb49b268739943bda",
+      "tree": "950ea0aae7c5ccdd90446e1bf532a670837d3e0a",
+      "date": "2026-10-11T22:35:32Z",
+      "url": "https://github.com/trustless-ai/recompute-kit/commit/3c3923956200d01ab74c2dcbb49b268739943bda"
+    },
+    "PR57": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-11T22:35:33Z",
+      "head": "197c6d26e68f85a117dd12a94924a7f959edaef4",
+      "base": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "url": "https://github.com/trustless-ai/recompute-kit/pull/57"
+    },
+    "PRF_PR14": {
+      "state": "open",
+      "merged": false,
+      "mergedAt": null,
+      "head": "f525737069dc4cef7741f805d08a988912f4454f",
+      "base": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "url": "https://github.com/pipavlo82/protected-relation-fixtures/pull/14"
+    },
+    "scope": "Read-only release-audit observation; historical source fragments retain their own observation state. Current-main public vectors are audit-only CC0 fixtures, not newly imported runtime or reporter support.",
+    "evidence": "reports/release-audit-v0.2/domains/current-main-replay.json"
+  }
 }

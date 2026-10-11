@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "node",
+    "--test",
+    "--test-concurrency=1",
+    "tests/adapter-context-release.test.mjs",
+    "tests/interpoll-v2.test.mjs",
+    "tests/prf-v2.test.mjs"
+  ],
+  "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+  "exitCode": 0,
+  "seconds": 4.132123708724976,
+  "counts": {
+    "tests": 66,
+    "pass": 66,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "stdoutSha256": "f16d233c42ca91136dbef6386544c120c2c99d15890c620c7a97031ffe4e0e79",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

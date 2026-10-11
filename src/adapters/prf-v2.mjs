@@ -23,6 +23,11 @@ const limitations = Object.freeze([
 ]);
 const object = x => !!x && typeof x === 'object' && !Array.isArray(x);
 const exactKeys = (x, fields) => object(x) && fields.every(k => Object.hasOwn(x, k)) && Object.keys(x).every(k => fields.includes(k));
+function contextMalformed(context) {
+  if (!object(context) || Object.keys(context).some(k => !['accepted_basis', 'required_native_result', 'required_relation_input_digest', 'required_guarantee'].includes(k))) return true;
+  return ['accepted_basis', 'required_native_result'].some(k => Object.hasOwn(context, k) && !object(context[k]))
+    || ['required_relation_input_digest', 'required_guarantee'].some(k => Object.hasOwn(context, k) && typeof context[k] !== 'string');
+}
 const nativeShape = x => exactKeys(x, ['outcome', 'reason']) && ['PRESERVED', 'VIOLATED', 'UNVERIFIABLE'].includes(x.outcome) && typeof x.reason === 'string' && !!x.reason;
 const deps = x => Array.isArray(x) && x.length > 0 && x.every(d => exactKeys(d, ['id', 'version']) && typeof d.id === 'string' && !!d.id && typeof d.version === 'string' && !!d.version) && new Set(x.map(d => d.id)).size === x.length;
 const ordered = x => [...x].sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
@@ -49,6 +54,7 @@ export function evaluatePrfV2(input, context = {}) {
     if (!exactKeys(input, ['profile', 'upstream', 'downstream'])) return out('REJECTED_MALFORMED', ['PRF_INPUT_MALFORMED'], native);
     if (input.profile !== 'award-actual-settlement-v0') return out('UNSUPPORTED_PROFILE', ['PRF_PROFILE_UNSUPPORTED'], native);
     if (!exactKeys(input.upstream, ['award', 'settlements', 'native_result']) || !exactKeys(input.downstream, ['native_result', 'dependencies']) || !nativeShape(input.upstream.native_result) || !nativeShape(input.downstream.native_result)) return out('REJECTED_MALFORMED', ['PRF_INPUT_MALFORMED'], native);
+    if (contextMalformed(context)) return out('REJECTED_MALFORMED', ['PRF_CONTEXT_MALFORMED'], native);
     const source = fileURLToPath(new URL('../../vendor/prf-v02/award_actual_settlement.py', import.meta.url));
     try {
       if (sha256(readFileSync(source)) !== '5780733a43b023b52d8c035277ca2b926f5ab1ae40edcc74e61880b43d665cd1') return out('CANNOT_RECOMPUTE', ['PRF_NATIVE_SOURCE_MISMATCH'], native);

@@ -39,13 +39,13 @@
     },
     {
       "path": "docs/files-not-reused.md",
-      "bytes": 41659,
-      "sha256": "74c588159ef37d2d25d84eef2111e6a482d90ef80101dba29907d1c8d87a3fc2"
+      "bytes": 42399,
+      "sha256": "24ce37291478aa2934e622c0a6655d3ff3a7cb455bb79877446c171487d214a0"
     },
     {
       "path": "docs/generic-claim-boundary.md",
-      "bytes": 4015,
-      "sha256": "b2448bb2d50740f289b747535b6f58ac80424c9222d3f58a263d5368c6060c83"
+      "bytes": 4827,
+      "sha256": "1775ce838e7e3323621eebb96c53db486765642f809c2d7690d3bbd240af8f35"
     },
     {
       "path": "docs/guarantee-preservation.md",
@@ -79,8 +79,8 @@
     },
     {
       "path": "docs/trustless-adapter.md",
-      "bytes": 8160,
-      "sha256": "b62323da69ed6275cbe518643b63cb70e89e88699c280fa9123654788566c34e"
+      "bytes": 8345,
+      "sha256": "477966a4e98e8ad01b2f973fcb4b9f8a21707c8da4e4621f12b6d74602da48b6"
     },
     {
       "path": "docs/v0.2-architecture.md",
@@ -94,8 +94,8 @@
     },
     {
       "path": "FULL_WORK_REUSE_MAP.md",
-      "bytes": 49161,
-      "sha256": "46ca6b9848ac372225387c83a6f3020c6feb565ef7a0bafd6655d4cbc57f2add"
+      "bytes": 49308,
+      "sha256": "c97366caa65a34587050b79a411ef967e3d137ee560a7df6b710f2664423f2ea"
     },
     {
       "path": "LICENSE",
@@ -149,8 +149,8 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 14255,
-      "sha256": "54f4f94425f95a10291abbe6f675301d4b635ba776f0422efdba41b58262b453"
+      "bytes": 14610,
+      "sha256": "c4aff94daba0d7b21c4abe962e6f3672dec95db1234c4672288ca97080be79db"
     },
     {
       "path": "provenance/authorship-evidence.json",
@@ -189,8 +189,8 @@
     },
     {
       "path": "provenance/sources.json",
-      "bytes": 493895,
-      "sha256": "6f9f57056ddb0fcc247128c769a062e6480004db7d7cb577a8f142fc8e53552b"
+      "bytes": 495200,
+      "sha256": "820bb367cce5679451ab0e77c81de735109e3f1fede849a10bcbc2721a347fd5"
     },
     {
       "path": "provenance/upstream-state.json",
@@ -214,8 +214,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6917,
-      "sha256": "e0b91e403073ca0c721431d34b516ced9acfc7e56428fb60145e25dfed224724"
+      "bytes": 7118,
+      "sha256": "e65e8b1a25fe8d76c7f42d75f2c3b6a0fcd939845e5c3e33e2679b40f737bce9"
     },
     {
       "path": "RELEASE_AUDIT_v0.1.md",
@@ -249,8 +249,8 @@
     },
     {
       "path": "schemas/request-v2.schema.json",
-      "bytes": 6105,
-      "sha256": "523eacec884158b483ad7e7a465ae63737dc94e2547295838e2637fe1ae528eb"
+      "bytes": 9867,
+      "sha256": "4c8e742c4418dc39006c2c6ea8787d0e12afadabaf690a9e68520d6ea3b815c6"
     },
     {
       "path": "schemas/request.schema.json",
@@ -284,8 +284,8 @@
     },
     {
       "path": "src/adapters/interpoll-v2.mjs",
-      "bytes": 7651,
-      "sha256": "aaba5405a68e2b5ef61534e6e7954d1b1d79565f939ef0107b67a1bb550fbe1a"
+      "bytes": 8806,
+      "sha256": "498f6602e9509611deec9c42ac4473d0fd1635d764ffa63c306a17c3246fe57c"
     },
     {
       "path": "src/adapters/interpoll.mjs",
@@ -349,8 +349,8 @@
     },
     {
       "path": "src/adapters/prf-v2.mjs",
-      "bytes": 8362,
-      "sha256": "bb77a837386722388f997ef9127432263112ad87da9cea4fdb918b8694cb75c5"
+      "bytes": 8941,
+      "sha256": "4d8344adb9ed96b127974af38f12cd5eab78a0f3379393744d1334df059ec82b"
     },
     {
       "path": "src/adapters/prf.mjs",
@@ -414,8 +414,8 @@
     },
     {
       "path": "src/core/admission-v2.mjs",
-      "bytes": 3300,
-      "sha256": "a8cf05d11e59a02d7042f0def96f5172229eefcdf418317843f1d67ee81fc4b2"
+      "bytes": 3493,
+      "sha256": "d3263a9ad0076739235d215c145f433dfd6c1cc5388b5d613d337bb458ece78b"
     },
     {
       "path": "src/core/authenticity-v2.mjs",
@@ -508,6 +508,11 @@
       "sha256": "1fc56eaec12555310da8ddaff5091df64daa333b6e97a74857cd9c09a1fed89a"
     },
     {
+      "path": "tests/adapter-context-release.test.mjs",
+      "bytes": 5762,
+      "sha256": "ed399ffd3a01c876e9e2451dd800f43c8b686a087e4910a48a2bd3db4b46be1b"
+    },
+    {
       "path": "tests/admission-v2.test.mjs",
       "bytes": 11605,
       "sha256": "0fda67193cfd66b30dba28eb714425670171244acbdb527eed691c987f920409"
@@ -593,6 +598,11 @@
       "sha256": "aeb4ab6f8f1ca6bb99469b684af759172b2eb8dee7d93daf982ab587f4ed3f33"
     },
     {
+      "path": "tests/mutation-v1-release.test.mjs",
+      "bytes": 3032,
+      "sha256": "ba627c0ce1b648a8a394686fda62760d1a665a1d5414582dd1ef3c86c4a4ca36"
+    },
+    {
       "path": "tests/mutation-v2.test.mjs",
       "bytes": 4942,
       "sha256": "634ae79da850cc80770b7ddaf041a22791a1ebc6d52fd377dc1e1ab4dc69ec89"
@@ -661,6 +671,11 @@
       "path": "tests/relations.test.mjs",
       "bytes": 14292,
       "sha256": "f7e420e33f90a289ff5f53aa070d33cc55afc2b59be061ef2d6a138624b9dc5a"
+    },
+    {
+      "path": "tests/requirement-admission-release.test.mjs",
+      "bytes": 10537,
+      "sha256": "62c10e2a18f9a2700f0a9535733b63eb44b1afc11d76d231101552981d2fee07"
     },
     {
       "path": "tests/review.test.mjs",
@@ -768,6 +783,11 @@
       "sha256": "38dbc05b709caa40e48c320b9a2aae8338322ce21afaaebd0063a3df4c695453"
     },
     {
+      "path": "tools/mutation-harness-v1.mjs",
+      "bytes": 6544,
+      "sha256": "6b252a85eb93d03289a00d77d28b4814153765cf0d0c79a473a183aeded5703d"
+    },
+    {
       "path": "tools/mutation-harness-v2.mjs",
       "bytes": 8235,
       "sha256": "bfdd7ded597490223c047dab08b1dff4be03e961273c3baf61f1f9c9bc45dbbe"
@@ -789,8 +809,8 @@
     },
     {
       "path": "tools/run-mutations.mjs",
-      "bytes": 3054,
-      "sha256": "4f03bac0cfd7138e657bdfab9f1c6cec9ece227101db7ca885af103b17f7bae5"
+      "bytes": 549,
+      "sha256": "0de02b1a9565915ce77a558f7c8d41846c9f8937c4767ed4652b818610e6cbdf"
     },
     {
       "path": "tools/run-vectors-v2.mjs",
@@ -821,6 +841,11 @@
       "path": "V0_2_REVIEW_REPORT.md",
       "bytes": 26617,
       "sha256": "eec7257db6872ac8d6ee430e6ede00113cbcd98d1cd97480e957ffeec33cf348"
+    },
+    {
+      "path": "V0_2_VECTOR_WITNESS_MATRIX.md",
+      "bytes": 29045,
+      "sha256": "ba4423eb84bc347a3bfe72fc5ce6e9e5e576cbbefce3ebf1478da88f7680a23f"
     },
     {
       "path": "VECTOR_WITNESS_MATRIX.md",

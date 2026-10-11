@@ -1,0 +1,406 @@
+TAP version 13
+# Subtest: direct Interpoll rejects fresh admission requirement without upgrading supplied observations
+ok 1 - direct Interpoll rejects fresh admission requirement without upgrading supplied observations
+  ---
+  duration_ms: 85.645
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects server attestation requirement without upgrading supplied observations
+ok 2 - direct Interpoll rejects server attestation requirement without upgrading supplied observations
+  ---
+  duration_ms: 14.3365
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null outcome without upgrading supplied observations
+ok 3 - direct Interpoll rejects null outcome without upgrading supplied observations
+  ---
+  duration_ms: 13.8762
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects numeric outcome without upgrading supplied observations
+ok 4 - direct Interpoll rejects numeric outcome without upgrading supplied observations
+  ---
+  duration_ms: 14.2105
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null action without upgrading supplied observations
+ok 5 - direct Interpoll rejects null action without upgrading supplied observations
+  ---
+  duration_ms: 14.4461
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects array action without upgrading supplied observations
+ok 6 - direct Interpoll rejects array action without upgrading supplied observations
+  ---
+  duration_ms: 13.0455
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects extra action semantics without upgrading supplied observations
+ok 7 - direct Interpoll rejects extra action semantics without upgrading supplied observations
+  ---
+  duration_ms: 13.8055
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects wrong action parameter type without upgrading supplied observations
+ok 8 - direct Interpoll rejects wrong action parameter type without upgrading supplied observations
+  ---
+  duration_ms: 15.1932
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects unsafe action timestamp without upgrading supplied observations
+ok 9 - direct Interpoll rejects unsafe action timestamp without upgrading supplied observations
+  ---
+  duration_ms: 17.6429
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null authority without upgrading supplied observations
+ok 10 - direct Interpoll rejects null authority without upgrading supplied observations
+  ---
+  duration_ms: 13.4673
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects wrong authority field type without upgrading supplied observations
+ok 11 - direct Interpoll rejects wrong authority field type without upgrading supplied observations
+  ---
+  duration_ms: 14.1258
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects extra authority semantics without upgrading supplied observations
+ok 12 - direct Interpoll rejects extra authority semantics without upgrading supplied observations
+  ---
+  duration_ms: 13.9787
+  type: 'test'
+  ...
+# Subtest: direct Interpoll keeps a missing or partial selected action insufficient
+ok 13 - direct Interpoll keeps a missing or partial selected action insufficient
+  ---
+  duration_ms: 19.8895
+  type: 'test'
+  ...
+# Subtest: direct Interpoll outcome omission preserves documented default
+ok 14 - direct Interpoll outcome omission preserves documented default
+  ---
+  duration_ms: 13.3457
+  type: 'test'
+  ...
+# Subtest: direct Interpoll unsupported string outcome remains unsupported
+ok 15 - direct Interpoll unsupported string outcome remains unsupported
+  ---
+  duration_ms: 13.1269
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects unsupported policy requirement without claiming a transfer
+ok 16 - direct PRF rejects unsupported policy requirement without claiming a transfer
+  ---
+  duration_ms: 1.018
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects authenticated chain requirement without claiming a transfer
+ok 17 - direct PRF rejects authenticated chain requirement without claiming a transfer
+  ---
+  duration_ms: 0.2373
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null guarantee without claiming a transfer
+ok 18 - direct PRF rejects null guarantee without claiming a transfer
+  ---
+  duration_ms: 0.2363
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects numeric guarantee without claiming a transfer
+ok 19 - direct PRF rejects numeric guarantee without claiming a transfer
+  ---
+  duration_ms: 0.1975
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null tuple digest without claiming a transfer
+ok 20 - direct PRF rejects null tuple digest without claiming a transfer
+  ---
+  duration_ms: 0.2128
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects numeric tuple digest without claiming a transfer
+ok 21 - direct PRF rejects numeric tuple digest without claiming a transfer
+  ---
+  duration_ms: 0.1891
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null basis without claiming a transfer
+ok 22 - direct PRF rejects null basis without claiming a transfer
+  ---
+  duration_ms: 0.2511
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects array basis without claiming a transfer
+ok 23 - direct PRF rejects array basis without claiming a transfer
+  ---
+  duration_ms: 0.2225
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null native expectation without claiming a transfer
+ok 24 - direct PRF rejects null native expectation without claiming a transfer
+  ---
+  duration_ms: 0.2731
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects array native expectation without claiming a transfer
+ok 25 - direct PRF rejects array native expectation without claiming a transfer
+  ---
+  duration_ms: 0.2068
+  type: 'test'
+  ...
+# Subtest: direct PRF preserves safe missing and partial premise outcomes
+ok 26 - direct PRF preserves safe missing and partial premise outcomes
+  ---
+  duration_ms: 305.6653
+  type: 'test'
+  ...
+# Subtest: direct PRF supported context still executes the pinned native relation
+ok 27 - direct PRF supported context still executes the pinned native relation
+  ---
+  duration_ms: 147.7739
+  type: 'test'
+  ...
+# Subtest: direct PRF unsupported string guarantee remains unsupported
+ok 28 - direct PRF unsupported string guarantee remains unsupported
+  ---
+  duration_ms: 134.0371
+  type: 'test'
+  ...
+# Subtest: I01 native signed action matches independently selected execution
+ok 29 - I01 native signed action matches independently selected execution
+  ---
+  duration_ms: 80.791
+  type: 'test'
+  ...
+# Subtest: I02 valid signature does not authorize changed accepted target
+ok 30 - I02 valid signature does not authorize changed accepted target
+  ---
+  duration_ms: 14.9978
+  type: 'test'
+  ...
+# Subtest: I03 valid signature does not authorize changed accepted action type
+ok 31 - I03 valid signature does not authorize changed accepted action type
+  ---
+  duration_ms: 13.8728
+  type: 'test'
+  ...
+# Subtest: I04 pending retry and duplicate preserve exact intent and original execution
+ok 32 - I04 pending retry and duplicate preserve exact intent and original execution
+  ---
+  duration_ms: 15.0688
+  type: 'test'
+  ...
+# Subtest: I05 material retry mutation is contradicted despite valid original signature
+ok 33 - I05 material retry mutation is contradicted despite valid original signature
+  ---
+  duration_ms: 15.004
+  type: 'test'
+  ...
+# Subtest: I06 duplicate acceptance does not establish a new execution
+ok 34 - I06 duplicate acceptance does not establish a new execution
+  ---
+  duration_ms: 14.7257
+  type: 'test'
+  ...
+# Subtest: I07 signature and accepted intent do not replace execution observation
+ok 35 - I07 signature and accepted intent do not replace execution observation
+  ---
+  duration_ms: 13.8535
+  type: 'test'
+  ...
+# Subtest: I08 valid signature with unsupported caller authority is withheld
+ok 36 - I08 valid signature with unsupported caller authority is withheld
+  ---
+  duration_ms: 13.6089
+  type: 'test'
+  ...
+# Subtest: caller requested action is never derived from evidence itself
+ok 37 - caller requested action is never derived from evidence itself
+  ---
+  duration_ms: 15.1207
+  type: 'test'
+  ...
+# Subtest: valid signed action for A cannot satisfy caller selected target B
+ok 38 - valid signed action for A cannot satisfy caller selected target B
+  ---
+  duration_ms: 14.0518
+  type: 'test'
+  ...
+# Subtest: signed intent tampering fails actual native Schnorr relation
+ok 39 - signed intent tampering fails actual native Schnorr relation
+  ---
+  duration_ms: 8.7052
+  type: 'test'
+  ...
+# Subtest: altered trace bytes without new commitment are contradicted
+ok 40 - altered trace bytes without new commitment are contradicted
+  ---
+  duration_ms: 13.778
+  type: 'test'
+  ...
+# Subtest: a reproduced supplied rejection remains negative
+ok 41 - a reproduced supplied rejection remains negative
+  ---
+  duration_ms: 12.7656
+  type: 'test'
+  ...
+# Subtest: commitment cannot promote duplicate into a new execution
+ok 42 - commitment cannot promote duplicate into a new execution
+  ---
+  duration_ms: 14.988
+  type: 'test'
+  ...
+# Subtest: distinct execution observation must bind existing exact action attempt
+ok 43 - distinct execution observation must bind existing exact action attempt
+  ---
+  duration_ms: 14.7853
+  type: 'test'
+  ...
+# Subtest: authorization only is a separately selected narrower claim
+ok 44 - authorization only is a separately selected narrower claim
+  ---
+  duration_ms: 13.6108
+  type: 'test'
+  ...
+# Subtest: duplicate attempts and extra semantic fields are malformed
+ok 45 - duplicate attempts and extra semantic fields are malformed
+  ---
+  duration_ms: 25.4884
+  type: 'test'
+  ...
+# Subtest: synthetic signatures, trace commitments and bounded result are deterministic
+ok 46 - synthetic signatures, trace commitments and bounded result are deterministic
+  ---
+  duration_ms: 30.3549
+  type: 'test'
+  ...
+# Subtest: Interpoll evaluator preserves caller-selected and producer input bytes
+ok 47 - Interpoll evaluator preserves caller-selected and producer input bytes
+  ---
+  duration_ms: 13.4374
+  type: 'test'
+  ...
+# Subtest: PRF executes exact merged main native award relation
+ok 48 - PRF executes exact merged main native award relation
+  ---
+  duration_ms: 141.6208
+  type: 'test'
+  ...
+# Subtest: PRF changed actual payment diverges from producer positive native result
+ok 49 - PRF changed actual payment diverges from producer positive native result
+  ---
+  duration_ms: 132.0988
+  type: 'test'
+  ...
+# Subtest: PRF reproduced native negative can preserve transfer without becoming positive
+ok 50 - PRF reproduced native negative can preserve transfer without becoming positive
+  ---
+  duration_ms: 129.9367
+  type: 'test'
+  ...
+# Subtest: PRF changed downstream native relation is violated despite positive upstream
+ok 51 - PRF changed downstream native relation is violated despite positive upstream
+  ---
+  duration_ms: 119.9134
+  type: 'test'
+  ...
+# Subtest: PRF downstream cannot drop a caller required dependency
+ok 52 - PRF downstream cannot drop a caller required dependency
+  ---
+  duration_ms: 131.9521
+  type: 'test'
+  ...
+# Subtest: PRF downstream cannot substitute a dependency version
+ok 53 - PRF downstream cannot substitute a dependency version
+  ---
+  duration_ms: 126.9617
+  type: 'test'
+  ...
+# Subtest: PRF missing separately selected acceptance basis is unverifiable
+ok 54 - PRF missing separately selected acceptance basis is unverifiable
+  ---
+  duration_ms: 126.35
+  type: 'test'
+  ...
+# Subtest: PRF empty dependency basis is not preservation evidence
+ok 55 - PRF empty dependency basis is not preservation evidence
+  ---
+  duration_ms: 126.0438
+  type: 'test'
+  ...
+# Subtest: PRF unknown native premises are not promoted by process exit zero
+ok 56 - PRF unknown native premises are not promoted by process exit zero
+  ---
+  duration_ms: 129.3841
+  type: 'test'
+  ...
+# Subtest: PRF native result retained rather than inferred from expected fixture field
+ok 57 - PRF native result retained rather than inferred from expected fixture field
+  ---
+  duration_ms: 128.7847
+  type: 'test'
+  ...
+# Subtest: PRF changed caller selected native expectation cannot self-grade
+ok 58 - PRF changed caller selected native expectation cannot self-grade
+  ---
+  duration_ms: 125.9536
+  type: 'test'
+  ...
+# Subtest: PRF unknown profile and guarantee versions remain unsupported
+ok 59 - PRF unknown profile and guarantee versions remain unsupported
+  ---
+  duration_ms: 129.6906
+  type: 'test'
+  ...
+# Subtest: PRF caller-selected dependency ordering is set based with exact versions
+ok 60 - PRF caller-selected dependency ordering is set based with exact versions
+  ---
+  duration_ms: 135.6723
+  type: 'test'
+  ...
+# Subtest: PRF duplicate dependency identities do not establish preservation
+ok 61 - PRF duplicate dependency identities do not establish preservation
+  ---
+  duration_ms: 120.8394
+  type: 'test'
+  ...
+# Subtest: PRF malformed producer native vocabulary is rejected
+ok 62 - PRF malformed producer native vocabulary is rejected
+  ---
+  duration_ms: 0.2611
+  type: 'test'
+  ...
+# Subtest: PRF unavailable native execution is not a contradiction or positive verdict
+ok 63 - PRF unavailable native execution is not a contradiction or positive verdict
+  ---
+  duration_ms: 75.6927
+  type: 'test'
+  ...
+# Subtest: PRF evaluator does not mutate independent consumer requirements
+ok 64 - PRF evaluator does not mutate independent consumer requirements
+  ---
+  duration_ms: 116.2085
+  type: 'test'
+  ...
+# Subtest: PRF missing independently selected relation input cannot self-bind to producer
+ok 65 - PRF missing independently selected relation input cannot self-bind to producer
+  ---
+  duration_ms: 118.5695
+  type: 'test'
+  ...
+# Subtest: PRF unrelated compatible award cannot reuse caller relation selector
+ok 66 - PRF unrelated compatible award cannot reuse caller relation selector
+  ---
+  duration_ms: 117.4468
+  type: 'test'
+  ...
+1..66
+# tests 66
+# suites 0
+# pass 66
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3958.1475

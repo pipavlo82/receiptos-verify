@@ -1,0 +1,45 @@
+[
+  {
+    "label": "normal",
+    "argv": [
+      "node",
+      "--test",
+      "tests/requirement-admission-release.test.mjs",
+      "tests/guarantee-boundary-v2.test.mjs",
+      "tests/admission-v2.test.mjs"
+    ],
+    "exitCode": 0,
+    "counts": {
+      "tests": 125,
+      "pass": 125,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "stdoutSha256": "4de3366a23365685dbad1f2c4eb94957d47ad17f2c16322edc58c5a90aace25e",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "no-opt",
+    "argv": [
+      "node",
+      "--no-opt",
+      "--test",
+      "tests/requirement-admission-release.test.mjs",
+      "tests/guarantee-boundary-v2.test.mjs",
+      "tests/admission-v2.test.mjs"
+    ],
+    "exitCode": 0,
+    "counts": {
+      "tests": 125,
+      "pass": 125,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "stdoutSha256": "a1f5d288b387068274975fcd46559673060bc1c8675683dc09c381932905b966",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

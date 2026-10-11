@@ -1,0 +1,62 @@
+{
+  "name": "native-crash",
+  "before_input_identity": "Exact catalog and unchanged V01/V07 files from retained before receipt",
+  "catalog": {
+    "id": "native-crash",
+    "file": "src/adapters/native/rvr-bridge.py",
+    "positive": "V01",
+    "witness": "V07",
+    "changes": [
+      [
+        "    request = native.parse_json_bytes(data, 'bridge stdin')",
+        "    request = native.parse_json_bytes(data, 'bridge stdin')\n    if request.get('operation') == 'recompute' and request['input']['originalBundle']['canonicalResult']['outcome'] == 'REFUTED':\n        sys.exit(7)"
+      ]
+    ]
+  },
+  "source_sha256": "6b252a85eb93d03289a00d77d28b4814153765cf0d0c79a473a183aeded5703d",
+  "observed": {
+    "schema": "receiptos.verify.mutation-report.v1",
+    "method": "Applied source change, preserved positive and semantic disagreement. Unexpected inner/outer crashes and invalid native/host outputs are not kills. V08 holds its intentional fault fixed in baseline and mutant.",
+    "count": 1,
+    "passed": false,
+    "counts": {
+      "KILLED": 0,
+      "SURVIVED": 0,
+      "CRASHED": 1,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    },
+    "rows": [
+      {
+        "id": "native-crash",
+        "source_file": "src/adapters/native/rvr-bridge.py",
+        "original_sha256": "4d471ea31ea41f54886debcc77895140622243385bed2961909ec6acde890048",
+        "mutant_sha256": "d59ace492bbfe68d7a9146e050fbb3c01598e971745b91fb3d6f13beee23b1c1",
+        "applied": true,
+        "positive": "V01",
+        "witness": "V07",
+        "baseline_controls_valid": true,
+        "positive_process_status": "COMPLETED",
+        "positive_preserved": true,
+        "witness_process_status": "COMPLETED",
+        "baseline_projection": "CONTRADICTED",
+        "mutant_projection": "CANNOT_RECOMPUTE",
+        "witness_reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "NATIVE_RVR_EXECUTION_UNAVAILABLE",
+          "NO_SEMANTIC_EXECUTION",
+          "SEMANTIC_PREMISE_UNESTABLISHED",
+          "MISSING_OBSERVED_AUTHORITY",
+          "MISSING_EVIDENCE:ARTIFACT",
+          "MISSING_EVIDENCE:EXECUTION"
+        ],
+        "expected_fault_preserved": false,
+        "checker_execution_failed": true,
+        "checker_output_invalid": true,
+        "status": "CRASHED"
+      }
+    ]
+  }
+}

@@ -106,9 +106,13 @@ captures, application databases, private Vértice code or upstream secrets were
 imported. `tools/check-provenance-v2.mjs` mechanically checks the 43-row historical
 boundary, additive mappings, complete new vendor byte closure and legal files.
 
-Recompute-kit PR57 remains `OPEN` at
-`197c6d26e68f85a117dd12a94924a7f959edaef4`; its reporter-contract behavior is
-not selected by the current-main adapter. Native selected main contract mode
-remains null and the explicit product interpretation is `MAIN_SELF_GRADING`.
-PRF PR14 similarly remains distinct from merged main. These source observations
-have the time scope of the corresponding v0.2 source fragments.
+The frozen source fragments record PR57 as OPEN when the adapter was pinned.
+Independent release audit at `2026-10-11T23:09:39.173Z` found PR57 merged at
+`2026-10-11T22:35:33Z`, with head `197c6d26e68f85a117dd12a94924a7f959edaef4`
+and current main `3c3923956200d01ab74c2dcbb49b268739943bda`. These new
+observations supplement the historical record; they do not rewrite it or repin
+runtime. The adapter retains `1a37bcaf91918fd8a98f164d97d0fddbc28c6755`, native
+contract mode null and product interpretation `MAIN_SELF_GRADING`; newly merged
+reporter behavior is not selected. PRF PR14 remains OPEN at its exact pin.
+Current-state evidence and audit-only public vectors retain their CC0 source
+identity in `reports/release-audit-v0.2/domains/current-main-replay.json`.
