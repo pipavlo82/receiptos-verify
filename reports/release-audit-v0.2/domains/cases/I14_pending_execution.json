@@ -1,0 +1,151 @@
+{
+  "id": "I14_pending_execution",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "INSUFFICIENT_EVIDENCE",
+    "notes": ""
+  },
+  "input": {
+    "input": {
+      "signed_intent": {
+        "version": 1,
+        "namespace": "v3",
+        "kind": "reaction",
+        "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+        "targetType": "post",
+        "targetId": "audit02-fresh-target",
+        "value": "up",
+        "createdAt": 123,
+        "nonce": "33333333333333333333333333333333",
+        "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+        "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+      },
+      "accepted_action": {
+        "status": "accepted",
+        "action": {
+          "version": 1,
+          "namespace": "v3",
+          "kind": "reaction",
+          "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+          "targetType": "post",
+          "targetId": "audit02-fresh-target",
+          "value": "up",
+          "createdAt": 123,
+          "nonce": "33333333333333333333333333333333",
+          "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+          "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+        }
+      },
+      "attempts": [
+        {
+          "id": "audit-attempt-one",
+          "action": {
+            "version": 1,
+            "namespace": "v3",
+            "kind": "reaction",
+            "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+            "targetType": "post",
+            "targetId": "audit02-fresh-target",
+            "value": "up",
+            "createdAt": 123,
+            "nonce": "33333333333333333333333333333333",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+          },
+          "delivery_status": "pending",
+          "execution_attempted": true
+        }
+      ],
+      "observation": {
+        "action_id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+        "attempt_id": "audit-attempt-one",
+        "result": "APPLIED"
+      },
+      "final_committed_result": {
+        "action_id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+        "attempt_ids": [
+          "audit-attempt-one"
+        ],
+        "observation_digest": "1cd187d8fd99927cd7356ad31bf897e490eadd35d9f950944d8375c51ae9fd79",
+        "evidence_digest": "1330527e10059995343d373ce9b727aeea27e9cd5d32e6f335673801c694171f"
+      }
+    },
+    "context": {
+      "requested_action": {
+        "version": 1,
+        "namespace": "v3",
+        "kind": "reaction",
+        "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+        "targetType": "post",
+        "targetId": "audit02-fresh-target",
+        "value": "up",
+        "createdAt": 123,
+        "nonce": "33333333333333333333333333333333"
+      },
+      "authority": {
+        "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+        "namespace": "v3"
+      },
+      "required_outcome": "EXECUTION_OBSERVED"
+    }
+  },
+  "output": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "reasonCodes": [
+      "ACTION_EXECUTION_ACCEPTANCE_NOT_ESTABLISHED"
+    ],
+    "nativeResult": {
+      "signature": "VALID",
+      "admission": "NOT_EVALUATED",
+      "retry_relation": "PRESERVED",
+      "execution": "NOT_ESTABLISHED",
+      "final_commitment": "PRESERVED",
+      "acceptance_status": "accepted"
+    },
+    "productProjection": {
+      "status": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "ACTION_EXECUTION_ACCEPTANCE_NOT_ESTABLISHED"
+      ]
+    },
+    "provenance": {
+      "profileId": "receiptos.verify.interpoll-action.v2",
+      "sourceRepository": "Interpoll1/decentralised",
+      "sourceCommit": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "license": "Unlicense upstream; Apache-2.0 product glue",
+      "maturity": "EXPERIMENTAL",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "native-schnorr-authorization",
+        "caller-selected-action",
+        "exact-retry",
+        "supplied-observation-binding",
+        "trace-commitment"
+      ],
+      "requiredEvidence": [
+        "signed_intent",
+        "accepted_action",
+        "attempts",
+        "observation",
+        "final_committed_result"
+      ],
+      "nativeVocabulary": [
+        "VALID",
+        "INVALID",
+        "accepted",
+        "duplicate",
+        "PRESERVED",
+        "VIOLATED",
+        "NOT_ESTABLISHED"
+      ]
+    },
+    "limitations": [
+      "Native Schnorr verification establishes key control over the signed intent; fresh server admission is not evaluated.",
+      "Execution observations and relay acceptance are supplied artifacts, not independently authenticated Interpoll server or SQL execution.",
+      "A trace digest binds supplied bytes only. It does not establish that an action was executed, viewed by a human, or accepted by a deployed relay."
+    ]
+  },
+  "assessment": "PASS",
+  "actual": "INSUFFICIENT_EVIDENCE",
+  "inputSha256": "e74c227d5b770d8fa2f2d3ba9922da38977fa91274216c9e93732e3c1e16fa70"
+}

@@ -1,0 +1,989 @@
+{
+  "schema": "receiptos.independent.literal-oracle-checks.v02",
+  "candidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "count": 140,
+  "passed": 140,
+  "checks": [
+    {
+      "vector": "V01",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V01",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V02",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V02",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V03",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V03",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V04",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V04",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V05",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V05",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V06",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V06",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V07",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "REFUTED",
+      "expected": "REFUTED",
+      "matches": true
+    },
+    {
+      "vector": "V07",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V08",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V08",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V09",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V09",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V10",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V10",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V11",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V11",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V12",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V12",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V13",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V13",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V14",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V14",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V15",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V15",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V16",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V16",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V17",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V17",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V18",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "REFUTED",
+      "expected": "REFUTED",
+      "matches": true
+    },
+    {
+      "vector": "V18",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V19",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V19",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V20",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V20",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V21",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V21",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V22",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V22",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V23",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V23",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V24",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V24",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V25",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V25",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V26",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V26",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V27",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V27",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V28",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V28",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V29",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V29",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "V30",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "V30",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G01",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G01",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G02",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G02",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G03",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G03",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G04",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G04",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G05",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G05",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G06",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G06",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G07",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G07",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G08",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G08",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G09",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G09",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G10",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G10",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G11",
+      "relation": "Independent one-leaf committed corpus identity",
+      "actual": "sha256:4b9cb567eb2f111b202d0040043c40c90b2bba1eb74b73cdd59330f46ba969b8",
+      "expected": "sha256:4b9cb567eb2f111b202d0040043c40c90b2bba1eb74b73cdd59330f46ba969b8",
+      "matches": true
+    },
+    {
+      "vector": "G11",
+      "relation": "Independent source-scan finding",
+      "actual": "NO_FINDING",
+      "expected": "NO_FINDING",
+      "matches": true
+    },
+    {
+      "vector": "G12",
+      "relation": "Independent one-leaf committed corpus identity",
+      "actual": "sha256:d41d78f5d2eb57b4ac9f078bd9b10925a32f504a57b88fbb836c649121eadd85",
+      "expected": "sha256:d41d78f5d2eb57b4ac9f078bd9b10925a32f504a57b88fbb836c649121eadd85",
+      "matches": true
+    },
+    {
+      "vector": "G12",
+      "relation": "Independent source-scan finding",
+      "actual": "CONTRADICTED",
+      "expected": "CONTRADICTED",
+      "matches": true
+    },
+    {
+      "vector": "G13",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "G13",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "vector": "G14",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "G14",
+      "relation": "Independent retry action equality",
+      "actual": false,
+      "expected": false,
+      "matches": true
+    },
+    {
+      "vector": "G15",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G15",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G15",
+      "relation": "Independent PRF award/settlement finite arithmetic",
+      "actual": "PRESERVED",
+      "expected": "PRESERVED",
+      "matches": true
+    },
+    {
+      "vector": "G16",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G16",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G16",
+      "relation": "Independent PRF award/settlement finite arithmetic",
+      "actual": "PRESERVED",
+      "expected": "PRESERVED",
+      "matches": true
+    },
+    {
+      "vector": "G17",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G17",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G18",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G18",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G19",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G19",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G20",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G20",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G21",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G21",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G21",
+      "relation": "Independent PRF award/settlement finite arithmetic",
+      "actual": "UNVERIFIABLE",
+      "expected": "UNVERIFIABLE",
+      "matches": true
+    },
+    {
+      "vector": "G22",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G22",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G23",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G23",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G24",
+      "relation": "Independent one-leaf committed corpus identity",
+      "actual": "sha256:4b9cb567eb2f111b202d0040043c40c90b2bba1eb74b73cdd59330f46ba969b8",
+      "expected": "sha256:4b9cb567eb2f111b202d0040043c40c90b2bba1eb74b73cdd59330f46ba969b8",
+      "matches": true
+    },
+    {
+      "vector": "G24",
+      "relation": "Independent source-scan finding",
+      "actual": "NO_FINDING",
+      "expected": "NO_FINDING",
+      "matches": true
+    },
+    {
+      "vector": "G25",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G25",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G26",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G26",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G27",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G27",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G28",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G28",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G29",
+      "relation": "Independent one-leaf committed corpus identity",
+      "actual": "sha256:4b9cb567eb2f111b202d0040043c40c90b2bba1eb74b73cdd59330f46ba969b8",
+      "expected": "sha256:4b9cb567eb2f111b202d0040043c40c90b2bba1eb74b73cdd59330f46ba969b8",
+      "matches": true
+    },
+    {
+      "vector": "G29",
+      "relation": "Independent source-scan finding",
+      "actual": "NO_FINDING",
+      "expected": "NO_FINDING",
+      "matches": true
+    },
+    {
+      "vector": "G30",
+      "relation": "Python hashlib artifact predicate vs saved native result",
+      "actual": "VERIFIED",
+      "expected": "VERIFIED",
+      "matches": true
+    },
+    {
+      "vector": "G30",
+      "relation": "Independent SHA256 artifact identity",
+      "actual": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "expected": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "matches": true
+    },
+    {
+      "vector": "G30",
+      "relation": "Independent PRF award/settlement finite arithmetic",
+      "actual": "VIOLATED",
+      "expected": "VIOLATED",
+      "matches": true
+    },
+    {
+      "vector": "I01",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I01",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "vector": "I02",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I02",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "vector": "I03",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I03",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "vector": "I04",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I04",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "vector": "I05",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I05",
+      "relation": "Independent retry action equality",
+      "actual": false,
+      "expected": false,
+      "matches": true
+    },
+    {
+      "vector": "I06",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I06",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "vector": "I07",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I07",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    },
+    {
+      "vector": "I08",
+      "relation": "Independent Python signed-intent ID",
+      "actual": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "expected": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "matches": true
+    },
+    {
+      "vector": "I08",
+      "relation": "Independent retry action equality",
+      "actual": true,
+      "expected": true,
+      "matches": true
+    }
+  ],
+  "boundary": "Separate Python hash/arithmetic/field equality witnesses, not full native verifier or cryptographic signature conformance."
+}

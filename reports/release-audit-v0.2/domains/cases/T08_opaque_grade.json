@@ -1,0 +1,1029 @@
+{
+  "id": "T08_opaque_grade",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "INSUFFICIENT_EVIDENCE",
+    "notes": ""
+  },
+  "input": {
+    "request": {
+      "schema": "receiptos.verify.request.v2",
+      "verification_profile": "receiptos.verify.generic.v2",
+      "adapter": "trustless",
+      "claim": {
+        "id": "audit02:scan-result",
+        "kind": "TRUSTLESS_CHECK",
+        "parameters": {
+          "profile": "scan_subject_binding.v0",
+          "case_id": "independent_opaque",
+          "input_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94"
+        }
+      },
+      "subject": {
+        "kind": "trustless-native-case",
+        "id": "independent_opaque",
+        "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+        "version": "1"
+      },
+      "scope": {
+        "case_id": "independent_opaque",
+        "relation": "scan-subject-binding"
+      },
+      "authority": {
+        "id": "audit02-public-test-key",
+        "class": "INDEPENDENT_RECOMPUTATION"
+      },
+      "policy": {
+        "id": "audit02-policy",
+        "version": "1",
+        "trusted_keys": [
+          {
+            "id": "audit02-public-test-key",
+            "spki_base64": "MCowBQYDK2VwAyEAslwb7dnn4YIVGpJI8foGC8ubu91WXcMLa9MmKXbvTHs="
+          }
+        ],
+        "required_layers": [
+          "INTEGRITY",
+          "AUTHENTICITY",
+          "SUBJECT_BINDING",
+          "RECOMPUTATION",
+          "EVIDENCE_SUFFICIENCY",
+          "SEMANTIC_COMPATIBILITY"
+        ],
+        "minimum_grade": "LOCAL_RECOMPUTATION",
+        "verification_time": 10,
+        "established_assumptions": [],
+        "dependency_results": [],
+        "accepted_authorities": [
+          {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          }
+        ]
+      },
+      "time": {
+        "not_before": 0,
+        "not_after": 20
+      },
+      "version": "2",
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "adapter-input",
+        "execution"
+      ],
+      "evidence": [],
+      "requested_guarantees": []
+    },
+    "bundle": {
+      "schema": "receiptos.verify.bundle.v2",
+      "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+      "statement": {
+        "schema": "receiptos.verify.statement.v2",
+        "verification_profile": "receiptos.verify.generic.v2",
+        "adapter": "trustless",
+        "surface": {
+          "claim": {
+            "id": "audit02:scan-result",
+            "kind": "TRUSTLESS_CHECK",
+            "parameters": {
+              "profile": "scan_subject_binding.v0",
+              "case_id": "independent_opaque",
+              "input_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94"
+            }
+          },
+          "subject": {
+            "kind": "trustless-native-case",
+            "id": "independent_opaque",
+            "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+            "version": "1"
+          },
+          "scope": {
+            "case_id": "independent_opaque",
+            "relation": "scan-subject-binding"
+          },
+          "authority": {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          },
+          "time": {
+            "not_before": 0,
+            "not_after": 20
+          },
+          "version": "2",
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "adapter-input",
+            "execution"
+          ],
+          "policy": {
+            "id": "audit02-policy",
+            "version": "1"
+          }
+        },
+        "asserted_result": "PASS",
+        "evidence_manifest": [
+          {
+            "id": "adapter-input",
+            "role": "adapter-input",
+            "digest": "33a5d453e3a64d7ee03dfa6ba90c196546d15d0d2e535b45d6d15288d9d93183",
+            "size": 1479
+          }
+        ],
+        "payload_digest": "5c9b92ea25c187563d1f7786076700fe3ec814a26609d11f853fd04a6d951e14",
+        "crypto": {
+          "provider": "ed25519",
+          "key_id": "audit02-public-test-key"
+        }
+      },
+      "signature_base64": "QRSKgGptamZiP4w/s7Z+mk8woEaaPFRrgaMgLkxa5Hw4tkd5vl3f1bN5QKrlde07mzX+EJnZAG9qrckShVA7Bw==",
+      "evidence": [
+        {
+          "id": "adapter-input",
+          "bytes_base64": "eyJhcnRpZmFjdCI6eyJwcm9maWxlIjoic2Nhbl9zdWJqZWN0X2JpbmRpbmcudjAiLCJyZXByb2R1Y2VkIjoxLCJyZXN1bHRzIjpbeyJjYXNlX2lkIjoiaW5kZXBlbmRlbnRfb3BhcXVlIiwicmVwcm9kdWNlZCI6dHJ1ZSwicmVzdWx0Ijp7ImV2aWRlbmNlX2dyYWRlIjoiQVVUSEVOVElDQVRFRF9SRVBPUlQiLCJyZXBsYXlfYmluZGluZ3MiOiJ2YWxpZCIsInJlc3VsdF9vbmx5X2NoZWNrIjoiVkFMSUQiLCJzdWJqZWN0X2JvdW5kX2NoZWNrIjoiTk9fRklORElORyJ9fV0sInRvdGFsIjoxfSwiY2FzZV9pZCI6ImluZGVwZW5kZW50X29wYXF1ZSIsImlucHV0Ijp7ImNvcnB1cyI6W3siY29udGVudCI6IkFsbG93ZWQgYW1vdW50IGlzIDM3IFVTRC4iLCJpZCI6ImluZGVwZW5kZW50LWF1ZGl0LXBvbGljeSJ9XSwiZGVjaXNpb24iOnsiYW5zd2VyIjoiMzcgVVNEIiwiY29ycHVzX3Jvb3QiOiJzaGEyNTY6NzkzZThkMTUzNzZiZmFiZGFjMDg1NGY5YTAxOWRiNmE4NTlmNTVlZTlkNjdmYWI1YzY2YjM0MzMwNzhjODRiNCIsImVmZmVjdGl2ZV9kYXRhc2V0X2RpZ2VzdCI6InNoYTI1Njo3OTNlOGQxNTM3NmJmYWJkYWMwODU0ZjlhMDE5ZGI2YTg1OWY1NWVlOWQ2N2ZhYjVjNjZiMzQzMzA3OGM4NGI0IiwiaW5jbHVzaW9uX3Byb29mcyI6W10sImsiOjEsInF1ZXJ5IjoiYWxsb3dlZCBhbW91bnQiLCJyZXRyaWV2ZWQiOlt7ImNvbnRlbnQiOiJBbGxvd2VkIGFtb3VudCBpcyAzNyBVU0QuIiwiaWQiOiJpbmRlcGVuZGVudC1hdWRpdC1wb2xpY3kifV19LCJtYW5pZmVzdCI6eyJib2R5Ijp7InJhZ19jb3JwdXMiOnsibWVya2xlX3Jvb3QiOiJzaGEyNTY6NzkzZThkMTUzNzZiZmFiZGFjMDg1NGY5YTAxOWRiNmE4NTlmNTVlZTlkNjdmYWI1YzY2YjM0MzMwNzhjODRiNCIsInBvaXNvbmluZ19zY2FuIjp7InJlc3VsdCI6ImNsZWFuIiwic2Nhbm5lcl92ZXJzaW9uIjoiYXVkaXQwMi1vcGFxdWUvMSIsInNlbWFudGljcyI6InJlY29yZHdpc2UiLCJzdWJqZWN0X2RpZ2VzdCI6InNoYTI1Njo3OTNlOGQxNTM3NmJmYWJkYWMwODU0ZjlhMDE5ZGI2YTg1OWY1NWVlOWQ2N2ZhYjVjNjZiMzQzMzA3OGM4NGI0In19fSwic2lnIjoiOTFjZTAzZTAxM2IzMzAxNTI0NmY2N2M2NGVlYTBmYzBjMzlmYTYxZWYwODI0MTNhMDMzMzNlZmQwNGE4M2MzMDI4MmZkZmViNzAyNWNiNDNiMjZlYzRlNGJjNjgzZTk3ZDRhMGFmZWZhMDgzYTNjNjVkOWYyYjc0NzU5YzUyMDEifSwicHVibGljX2tleV9lZDI1NTE5IjoiYjI1YzFiZWRkOWU3ZTE4MjE1MWE5MjQ4ZjFmYTA2MGJjYjliYmJkZDU2NWRjMzBiNmJkMzI2Mjk3NmVmNGM3YiIsInRveV9zY2FuIjp7InBhdHRlcm4iOiJhdWRpdC1wb2lzb24tdG9rZW4iLCJzY2FubmVyX3ZlcnNpb24iOiJhdWRpdDAyLWRldGFjaGVkLXRveS8xIn19LCJwcm9maWxlIjoic2Nhbl9zdWJqZWN0X2JpbmRpbmcudjAiLCJzb3VyY2VfcGluIjoiMWEzN2JjYWY5MTkxOGZkOGE5OGYxNjRkOTdkMGZkZGJjMjhjNjc1NSJ9"
+        }
+      ],
+      "payload": {
+        "crystal": {
+          "schema": "stealth.session.evidence.v1",
+          "session_id": "independent-v02-domain-audit",
+          "directory": "local/synthetic",
+          "task": {
+            "title": "Fresh audit artifact"
+          },
+          "agent": {
+            "id": "synthetic",
+            "runtime": "local"
+          },
+          "scope": {
+            "permission": null
+          },
+          "authorization": {
+            "delegation_ref": null,
+            "delegator": null,
+            "agent_operator": null,
+            "target": "local/synthetic",
+            "allowed_actions": [],
+            "authorization_valid_from": null,
+            "authorization_expiry": null,
+            "authorization_checked_at": 0,
+            "authorization_state_hash": "synthetic",
+            "authorized_at_execution": null
+          },
+          "execution": [],
+          "commands": [],
+          "changes": {
+            "files_changed": [],
+            "diff_sha256": null
+          },
+          "metadata": {
+            "message_count": 0,
+            "diff_count": 0,
+            "generated_by": "receiptos-verify-synthetic-fixture"
+          },
+          "anchor": {
+            "merkle_proof_status": "not attached",
+            "merkle_root": null,
+            "merkle_leaf_index": null,
+            "merkle_proof": [],
+            "onchain_anchor_status": "not anchored",
+            "network": "local/off-chain",
+            "contract": null,
+            "tx_hash": null,
+            "verifier_status": "not verified",
+            "receipt_root": "0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba"
+          }
+        },
+        "adapter": {
+          "profile": "scan_subject_binding.v0",
+          "source_pin": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+          "case_id": "independent_opaque",
+          "input": {
+            "public_key_ed25519": "b25c1bedd9e7e182151a9248f1fa060bcb9bbbdd565dc30b6bd3262976ef4c7b",
+            "toy_scan": {
+              "scanner_version": "audit02-detached-toy/1",
+              "pattern": "audit-poison-token"
+            },
+            "corpus": [
+              {
+                "id": "independent-audit-policy",
+                "content": "Allowed amount is 37 USD."
+              }
+            ],
+            "manifest": {
+              "body": {
+                "rag_corpus": {
+                  "merkle_root": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+                  "poisoning_scan": {
+                    "result": "clean",
+                    "scanner_version": "audit02-opaque/1",
+                    "subject_digest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+                    "semantics": "recordwise"
+                  }
+                }
+              },
+              "sig": "91ce03e013b33015246f67c64eea0fc0c39fa61ef082413a03333efd04a83c30282fdfeb7025cb43b26ec4e4bc683e97d4a0afefa083a3c65d9f2b74759c5201"
+            },
+            "decision": {
+              "corpus_root": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+              "effective_dataset_digest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+              "query": "allowed amount",
+              "k": 1,
+              "retrieved": [
+                {
+                  "id": "independent-audit-policy",
+                  "content": "Allowed amount is 37 USD."
+                }
+              ],
+              "answer": "37 USD",
+              "inclusion_proofs": []
+            }
+          },
+          "artifact": {
+            "profile": "scan_subject_binding.v0",
+            "reproduced": 1,
+            "results": [
+              {
+                "case_id": "independent_opaque",
+                "reproduced": true,
+                "result": {
+                  "evidence_grade": "AUTHENTICATED_REPORT",
+                  "replay_bindings": "valid",
+                  "result_only_check": "VALID",
+                  "subject_bound_check": "NO_FINDING"
+                }
+              }
+            ],
+            "total": 1
+          }
+        },
+        "guarantees": null,
+        "continuity": null
+      }
+    }
+  },
+  "output": {
+    "schema": "receiptos.verify.report.v2",
+    "projection_version": "receiptos.verify.projection.v2",
+    "overall": "INSUFFICIENT_EVIDENCE",
+    "reason_codes": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+      "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED",
+      "EVIDENCE_GRADE_NOT_ESTABLISHED"
+    ],
+    "explanation": "INSUFFICIENT_EVIDENCE: supplied evidence is evaluated only for the caller-selected claim surface. NATIVE_CRYSTAL_ROOT_MATCH, TRUSTLESS_NATIVE_RESULT_REPRODUCED, TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED, EVIDENCE_GRADE_NOT_ESTABLISHED",
+    "required_layers": [
+      "INTEGRITY",
+      "AUTHENTICITY",
+      "SUBJECT_BINDING",
+      "RECOMPUTATION",
+      "EVIDENCE_SUFFICIENCY",
+      "SEMANTIC_COMPATIBILITY"
+    ],
+    "layers": {
+      "INPUT": {
+        "status": "ADMITTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CANONICALIZATION": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "profile": "receiptos.verify.canonical-json.v1",
+          "statement_digest": "1044e5d4722445243c65ce93493f9eab05844bf475b15a747fe602b342a52b2e"
+        }
+      },
+      "INTEGRITY": {
+        "status": "VERIFIED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH"
+        ],
+        "nativeResult": {
+          "ok": true,
+          "receipt_root": "0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba",
+          "recomputed_root": "0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba"
+        },
+        "limitations": [
+          "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+          "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+          "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+        ],
+        "provenance": {
+          "profileId": "crystal.handoff-receipt-root.v1",
+          "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+          "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "license": "Apache-2.0",
+          "maturity": "STABLE",
+          "capabilities": [
+            "NATIVE_RECEIPT_ROOT_INTEGRITY"
+          ],
+          "requiredEvidence": [
+            "native-crystal-evidence"
+          ],
+          "nativeVocabulary": {
+            "integrity": [
+              "ok:true",
+              "ok:false"
+            ],
+            "fields": [
+              "ok",
+              "receipt_root",
+              "recomputed_root"
+            ]
+          },
+          "runtime": "Bun 1.3.14",
+          "functions": [
+            "verifyHandoffReceiptRoot"
+          ]
+        },
+        "execution": {
+          "status": "COMPLETED",
+          "argv": [
+            "C:/Users/msi/.bun/bin/bun.exe",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\src\\adapters\\native\\crystal-bridge.ts"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "{\"ok\":true,\"value\":{\"ok\":true,\"receipt_root\":\"0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba\",\"recomputed_root\":\"0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba\"},\"runtime\":\"Bun 1.3.14\"}\n",
+          "stderr": "",
+          "stdoutSha256": "a2efb06e8c274fe2e0d333d62c8604904523307c5ded36167019baba1d58b61a",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "truncated": false
+        }
+      },
+      "AUTHENTICITY": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "provider": "ed25519",
+          "key_id": "audit02-public-test-key",
+          "boundary": "Authenticates the supplied statement, not arbitrary semantic authority."
+        }
+      },
+      "SUBJECT_BINDING": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "requested": {
+            "kind": "trustless-native-case",
+            "id": "independent_opaque",
+            "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+            "version": "1"
+          },
+          "covered": {
+            "kind": "trustless-native-case",
+            "id": "independent_opaque",
+            "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+            "version": "1"
+          }
+        }
+      },
+      "RECOMPUTATION": {
+        "status": "REPRODUCED",
+        "semanticOutcome": "VERIFIED",
+        "recomputationStatus": "REPRODUCED",
+        "reasonCodes": [
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED"
+        ],
+        "nativeResult": {
+          "suiteId": "scan_subject_binding.v0",
+          "checkId": "conformance",
+          "caseId": "independent_opaque",
+          "verdict": "PASS",
+          "semanticVerdict": "NO_FINDING",
+          "evidenceGrade": "AUTHENTICATED_REPORT",
+          "sourcePin": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+          "vectorCorpusIdentity": "52c1d653c4128633117c9c93dd338a271c956e6c720efb342d3ffefbdac05856",
+          "contractMode": null,
+          "runnerContractInterpretation": "MAIN_SELF_GRADING",
+          "result": {
+            "evidence_grade": "AUTHENTICATED_REPORT",
+            "replay_bindings": "valid",
+            "result_only_check": "VALID",
+            "subject_bound_check": "NO_FINDING"
+          },
+          "savedArtifact": {
+            "profile": "scan_subject_binding.v0",
+            "reproduced": 1,
+            "results": [
+              {
+                "case_id": "independent_opaque",
+                "reproduced": true,
+                "result": {
+                  "evidence_grade": "AUTHENTICATED_REPORT",
+                  "replay_bindings": "valid",
+                  "result_only_check": "VALID",
+                  "subject_bound_check": "NO_FINDING"
+                }
+              }
+            ],
+            "total": 1
+          },
+          "recomputedArtifact": {
+            "profile": "scan_subject_binding.v0",
+            "reproduced": 1,
+            "results": [
+              {
+                "case_id": "independent_opaque",
+                "reproduced": true,
+                "result": {
+                  "evidence_grade": "AUTHENTICATED_REPORT",
+                  "replay_bindings": "valid",
+                  "result_only_check": "VALID",
+                  "subject_bound_check": "NO_FINDING"
+                }
+              }
+            ],
+            "total": 1
+          },
+          "runner": {
+            "detail": "}",
+            "kind": "SUITE",
+            "name": "scan-subject-binding-v0/conformance",
+            "ok": true,
+            "verdict": "PASS"
+          },
+          "replayFailures": []
+        },
+        "execution": {
+          "status": "COMPLETED",
+          "exitCode": 0,
+          "signal": null,
+          "argv": [
+            "python",
+            "-I",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\src\\adapters\\native\\trustless-bridge.py"
+          ],
+          "stdout": "{\"computed_corpus_digest\":\"sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4\",\"computed_effective_dataset_digest\":\"sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4\",\"native_artifact\":{\"profile\":\"scan_subject_binding.v0\",\"reproduced\":1,\"results\":[{\"case_id\":\"independent_opaque\",\"reproduced\":true,\"result\":{\"evidence_grade\":\"AUTHENTICATED_REPORT\",\"replay_bindings\":\"valid\",\"result_only_check\":\"VALID\",\"subject_bound_check\":\"NO_FINDING\"}}],\"total\":1},\"native_exit_code\":0,\"native_result\":{\"evidence_grade\":\"AUTHENTICATED_REPORT\",\"replay_bindings\":\"valid\",\"result_only_check\":\"VALID\",\"subject_bound_check\":\"NO_FINDING\"},\"native_stderr\":\"\",\"native_vector_digest\":\"52c1d653c4128633117c9c93dd338a271c956e6c720efb342d3ffefbdac05856\",\"ok\":true,\"profile\":\"scan_subject_binding.v0\",\"python_version\":\"3.12.10\",\"replay_failures\":[],\"runner_result\":{\"detail\":\"}\",\"kind\":\"SUITE\",\"name\":\"scan-subject-binding-v0/conformance\",\"ok\":true,\"verdict\":\"PASS\"},\"signature_valid\":true}\n",
+          "stderr": "",
+          "stdoutSha256": "7753677af8370e849f1df228e3ecb52db140fe2cc71352b1f52828c4de282700",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "provenance": {
+          "profileId": "receiptos.verify.trustless-scan.v2",
+          "nativeProfileId": "scan_subject_binding.v0",
+          "sourceRepository": "https://github.com/trustless-ai/recompute-kit",
+          "sourceCommit": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+          "license": "CC0-1.0",
+          "maturity": "EXPERIMENTAL",
+          "sourceMaturity": "STABLE",
+          "sourceState": "PUBLIC_MAIN",
+          "integrationMode": "PINNED_SOURCE",
+          "capabilities": [
+            "NATIVE_SCAN_SUBJECT_BINDING",
+            "NATIVE_ED25519_MANIFEST_CHECK",
+            "NATIVE_RESULT_REPLAY",
+            "NATIVE_SELF_GRADING_RUNNER"
+          ],
+          "requiredEvidence": [
+            "signed-scan-manifest",
+            "corpus-and-decision",
+            "saved-native-scan-result"
+          ],
+          "nativeVocabulary": {
+            "semantic": [
+              "NO_FINDING",
+              "CONTRADICTED",
+              "CANNOT_ESTABLISH",
+              "NOT_VALID"
+            ],
+            "evidenceGrade": [
+              "REPRODUCED",
+              "AUTHENTICATED_REPORT",
+              null
+            ],
+            "runner": [
+              "PASS",
+              "SUITE",
+              "DRIFT",
+              "RUNNER",
+              "NOT COVERED",
+              "UNVERIFIABLE"
+            ],
+            "replay": [
+              "REPRODUCED",
+              "DIVERGED",
+              "CANNOT_RECOMPUTE"
+            ]
+          },
+          "contractMode": "MAIN_SELF_GRADING",
+          "reporterContract": "NOT_IMPLEMENTED",
+          "functions": [
+            "check_decision",
+            "sig_ok",
+            "subject_bound",
+            "result_only",
+            "main",
+            "run_suite"
+          ]
+        },
+        "limitations": [
+          "sourceMaturity STABLE identifies the merged public relation; maturity EXPERIMENTAL identifies this bounded product integration, not production security certification or full recompute-kit conformance.",
+          "Only scan_subject_binding.v0 is executable here. Other suites and PR57 reporter contracts are unsupported.",
+          "NO_FINDING means only this declared scanner found nothing in its bound subject; it never means POISONING_ABSENT.",
+          "AUTHENTICATED_REPORT establishes a signed assertion; it does not establish scanner-origin execution.",
+          "The supplied scanner pattern/version is a declared deterministic toy scan, not a general poisoning detector.",
+          "Canonical runner PASS records reproduction against the saved target; it is not an independent positive semantic verdict."
+        ],
+        "evidenceGrade": "AUTHENTICATED_REPORT",
+        "semanticCompatibility": null,
+        "observedSubject": {
+          "kind": "rag-effective-dataset",
+          "id": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+          "version": "audit02-opaque/1",
+          "artifact_digest": "793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4"
+        },
+        "observedArtifactDigest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+        "nativeBinding": {
+          "profileId": "scan_subject_binding.v0",
+          "caseId": "independent_opaque",
+          "inputDigest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+          "subject": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+          "corpusDigest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4"
+        },
+        "binding": {
+          "corpusDigest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+          "effectiveDatasetDigest": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+          "signedScannerSubject": "sha256:793e8d15376bfabdac0854f9a019db6a859f55ee9d67fab5c66b3433078c84b4",
+          "signatureValid": true,
+          "scannerVersion": "audit02-opaque/1",
+          "declaredToyScan": {
+            "scanner_version": "audit02-detached-toy/1",
+            "pattern": "audit-poison-token"
+          },
+          "query": "allowed amount",
+          "k": 1
+        }
+      },
+      "EVIDENCE_SUFFICIENCY": {
+        "status": "INSUFFICIENT",
+        "reasonCodes": [
+          "EVIDENCE_GRADE_NOT_ESTABLISHED"
+        ],
+        "nativeResult": null
+      },
+      "SEMANTIC_COMPATIBILITY": {
+        "status": "COMPATIBLE",
+        "reasonCodes": [],
+        "nativeResult": {
+          "manifest_validation": {
+            "producer": {
+              "valid": true,
+              "errors": []
+            },
+            "consumer": {
+              "valid": true,
+              "errors": []
+            }
+          },
+          "link": {
+            "valid": true,
+            "edge": {
+              "producer_claim": {
+                "claim_type": "{\"id\":\"audit02:scan-result\",\"kind\":\"TRUSTLESS_CHECK\",\"parameters\":{\"case_id\":\"independent_opaque\",\"input_digest\":\"8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94\",\"profile\":\"scan_subject_binding.v0\"}}",
+                "authority_class": "INDEPENDENT_RECOMPUTATION",
+                "scope": "{\"case_id\":\"independent_opaque\",\"relation\":\"scan-subject-binding\"}",
+                "verification_time": "{\"not_after\":20,\"not_before\":0,\"profile\":\"receiptos.interval.v2\"}"
+              },
+              "consumer_requirement": {
+                "claim_type": "{\"id\":\"audit02:scan-result\",\"kind\":\"TRUSTLESS_CHECK\",\"parameters\":{\"case_id\":\"independent_opaque\",\"input_digest\":\"8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94\",\"profile\":\"scan_subject_binding.v0\"}}",
+                "authority_class": "INDEPENDENT_RECOMPUTATION",
+                "scope": "{\"case_id\":\"independent_opaque\",\"relation\":\"scan-subject-binding\"}",
+                "verification_time": "{\"not_after\":20,\"not_before\":0,\"profile\":\"receiptos.interval.v2\"}"
+              }
+            }
+          },
+          "pair_evaluation": null
+        },
+        "compatibility": {
+          "status": "COMPATIBLE",
+          "reasonCodes": [],
+          "nativeResult": null,
+          "dimensions": {
+            "claim": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "subject": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "artifact": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "commit": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "authority": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "scope": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "policy": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "version": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "time": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "assumptions": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "dependencies": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            },
+            "evidence_basis": {
+              "status": "COMPATIBLE",
+              "reasonCodes": []
+            }
+          },
+          "requested": {
+            "claim": {
+              "id": "audit02:scan-result",
+              "kind": "TRUSTLESS_CHECK",
+              "parameters": {
+                "profile": "scan_subject_binding.v0",
+                "case_id": "independent_opaque",
+                "input_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94"
+              }
+            },
+            "subject": {
+              "kind": "trustless-native-case",
+              "id": "independent_opaque",
+              "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+              "version": "1"
+            },
+            "scope": {
+              "case_id": "independent_opaque",
+              "relation": "scan-subject-binding"
+            },
+            "authority": {
+              "id": "audit02-public-test-key",
+              "class": "INDEPENDENT_RECOMPUTATION"
+            },
+            "policy": {
+              "id": "audit02-policy",
+              "version": "1"
+            },
+            "version": "2",
+            "time": {
+              "not_before": 0,
+              "not_after": 20
+            },
+            "assumptions": [],
+            "dependencies": [],
+            "evidence_requirements": [
+              "adapter-input",
+              "execution"
+            ]
+          },
+          "evidence": {
+            "claim": {
+              "id": "audit02:scan-result",
+              "kind": "TRUSTLESS_CHECK",
+              "parameters": {
+                "profile": "scan_subject_binding.v0",
+                "case_id": "independent_opaque",
+                "input_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94"
+              }
+            },
+            "subject": {
+              "kind": "trustless-native-case",
+              "id": "independent_opaque",
+              "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+              "version": "1"
+            },
+            "scope": {
+              "case_id": "independent_opaque",
+              "relation": "scan-subject-binding"
+            },
+            "authority": {
+              "id": "audit02-public-test-key",
+              "class": "INDEPENDENT_RECOMPUTATION"
+            },
+            "time": {
+              "not_before": 0,
+              "not_after": 20
+            },
+            "version": "2",
+            "assumptions": [],
+            "dependencies": [],
+            "evidence_requirements": [
+              "adapter-input",
+              "execution"
+            ],
+            "policy": {
+              "id": "audit02-policy",
+              "version": "1"
+            }
+          }
+        },
+        "expectedSemanticPair": null,
+        "observedSemanticPair": "PRESERVED",
+        "requestedSurface": {
+          "claim": {
+            "id": "audit02:scan-result",
+            "kind": "TRUSTLESS_CHECK",
+            "parameters": {
+              "profile": "scan_subject_binding.v0",
+              "case_id": "independent_opaque",
+              "input_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94"
+            }
+          },
+          "subject": {
+            "kind": "trustless-native-case",
+            "id": "independent_opaque",
+            "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+            "version": "1"
+          },
+          "scope": {
+            "case_id": "independent_opaque",
+            "relation": "scan-subject-binding"
+          },
+          "authority": {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          },
+          "policy": {
+            "id": "audit02-policy",
+            "version": "1"
+          },
+          "version": "2",
+          "time": {
+            "not_before": 0,
+            "not_after": 20
+          },
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "adapter-input",
+            "execution"
+          ]
+        },
+        "evidenceSurface": {
+          "claim": {
+            "id": "audit02:scan-result",
+            "kind": "TRUSTLESS_CHECK",
+            "parameters": {
+              "profile": "scan_subject_binding.v0",
+              "case_id": "independent_opaque",
+              "input_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94"
+            }
+          },
+          "subject": {
+            "kind": "trustless-native-case",
+            "id": "independent_opaque",
+            "artifact_digest": "8b2fac670e8939d4187120714f4a35b62587ebe8f93a8a67fbde2161e99e0f94",
+            "version": "1"
+          },
+          "scope": {
+            "case_id": "independent_opaque",
+            "relation": "scan-subject-binding"
+          },
+          "authority": {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          },
+          "time": {
+            "not_before": 0,
+            "not_after": 20
+          },
+          "version": "2",
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "adapter-input",
+            "execution"
+          ],
+          "policy": {
+            "id": "audit02-policy",
+            "version": "1"
+          }
+        },
+        "provenance": {
+          "profileId": "receiptos.verify.semantic-abi.v2",
+          "sourceRepository": "trustless-ai/semantic-abi",
+          "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+          "sourcePaths": [
+            "runner/src/classes.mjs",
+            "runner/src/linker.mjs",
+            "runner/src/manifest.mjs",
+            "runner/src/evaluate.mjs"
+          ],
+          "license": "Apache-2.0",
+          "maturity": "EXPERIMENTAL",
+          "integrationMode": "PINNED_SOURCE",
+          "capabilities": [
+            "native-manifest-validation",
+            "native-semantic-link",
+            "native-pair-evaluation",
+            "generic-claim-surface-compatibility"
+          ],
+          "requiredEvidence": [
+            "evidence-declared semantic surface",
+            "independently established evidence basis and dependencies"
+          ],
+          "nativeVocabulary": [
+            "valid",
+            "TYPE_ERROR",
+            "PRESERVED",
+            "VIOLATED",
+            "UNVERIFIABLE",
+            "PASS",
+            "FAIL",
+            "CANNOT_CHECK"
+          ]
+        },
+        "limitations": [
+          "The unchanged public neutral linker and pair evaluator execute locally; no private or commercial adapter is imported.",
+          "The native v0 claim/scope/temporal strings embed product canonical JSON. This encoding is not native upstream manifest interchange conformance.",
+          "Subject, artifact, authority identity, policy, version, applicability, assumptions, dependencies and accepted evidence are checked by the separate product relation.",
+          "A native valid edge or backend-conformance PASS does not establish product VERIFIED, authority authenticity or real-world truth.",
+          "No detached pair oracle is invented. Pair conformance is evaluated only when an independently selected context.expected_pair is supplied."
+        ]
+      },
+      "GUARANTEE_PRESERVATION": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CONTINUITY": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "DOMAIN_ADAPTERS": {
+        "status": "NOT_REQUESTED",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "PRODUCT_PROJECTION": {
+        "status": "INSUFFICIENT_EVIDENCE",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED",
+          "EVIDENCE_GRADE_NOT_ESTABLISHED"
+        ],
+        "nativeResult": null
+      },
+      "EXPLAINABLE_REPORT": {
+        "status": "GENERATED",
+        "reasonCodes": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+          "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED",
+          "EVIDENCE_GRADE_NOT_ESTABLISHED"
+        ],
+        "nativeResult": {
+          "explanation": "INSUFFICIENT_EVIDENCE: supplied evidence is evaluated only for the caller-selected claim surface. NATIVE_CRYSTAL_ROOT_MATCH, TRUSTLESS_NATIVE_RESULT_REPRODUCED, TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED, EVIDENCE_GRADE_NOT_ESTABLISHED"
+        }
+      },
+      "PROVENANCE": {
+        "status": "RECORDED",
+        "reasonCodes": [],
+        "nativeResult": {
+          "sources": "provenance/sources.json",
+          "adapters": [
+            {
+              "profileId": "crystal.handoff-receipt-root.v1",
+              "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+              "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+              "license": "Apache-2.0",
+              "maturity": "STABLE",
+              "capabilities": [
+                "NATIVE_RECEIPT_ROOT_INTEGRITY"
+              ],
+              "requiredEvidence": [
+                "native-crystal-evidence"
+              ],
+              "nativeVocabulary": {
+                "integrity": [
+                  "ok:true",
+                  "ok:false"
+                ],
+                "fields": [
+                  "ok",
+                  "receipt_root",
+                  "recomputed_root"
+                ]
+              }
+            },
+            {
+              "profileId": "receiptos.verify.trustless-scan.v2",
+              "nativeProfileId": "scan_subject_binding.v0",
+              "sourceRepository": "https://github.com/trustless-ai/recompute-kit",
+              "sourceCommit": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+              "license": "CC0-1.0",
+              "maturity": "EXPERIMENTAL",
+              "sourceMaturity": "STABLE",
+              "sourceState": "PUBLIC_MAIN",
+              "integrationMode": "PINNED_SOURCE",
+              "capabilities": [
+                "NATIVE_SCAN_SUBJECT_BINDING",
+                "NATIVE_ED25519_MANIFEST_CHECK",
+                "NATIVE_RESULT_REPLAY",
+                "NATIVE_SELF_GRADING_RUNNER"
+              ],
+              "requiredEvidence": [
+                "signed-scan-manifest",
+                "corpus-and-decision",
+                "saved-native-scan-result"
+              ],
+              "nativeVocabulary": {
+                "semantic": [
+                  "NO_FINDING",
+                  "CONTRADICTED",
+                  "CANNOT_ESTABLISH",
+                  "NOT_VALID"
+                ],
+                "evidenceGrade": [
+                  "REPRODUCED",
+                  "AUTHENTICATED_REPORT",
+                  null
+                ],
+                "runner": [
+                  "PASS",
+                  "SUITE",
+                  "DRIFT",
+                  "RUNNER",
+                  "NOT COVERED",
+                  "UNVERIFIABLE"
+                ],
+                "replay": [
+                  "REPRODUCED",
+                  "DIVERGED",
+                  "CANNOT_RECOMPUTE"
+                ]
+              }
+            },
+            {
+              "profileId": "receiptos.verify.semantic-abi.v2",
+              "sourceRepository": "trustless-ai/semantic-abi",
+              "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+              "sourcePaths": [
+                "runner/src/classes.mjs",
+                "runner/src/linker.mjs",
+                "runner/src/manifest.mjs",
+                "runner/src/evaluate.mjs"
+              ],
+              "license": "Apache-2.0",
+              "maturity": "EXPERIMENTAL",
+              "integrationMode": "PINNED_SOURCE",
+              "capabilities": [
+                "native-manifest-validation",
+                "native-semantic-link",
+                "native-pair-evaluation",
+                "generic-claim-surface-compatibility"
+              ],
+              "requiredEvidence": [
+                "evidence-declared semantic surface",
+                "independently established evidence basis and dependencies"
+              ],
+              "nativeVocabulary": [
+                "valid",
+                "TYPE_ERROR",
+                "PRESERVED",
+                "VIOLATED",
+                "UNVERIFIABLE",
+                "PASS",
+                "FAIL",
+                "CANNOT_CHECK"
+              ]
+            }
+          ],
+          "boundary": "Pinned public computations and product relations; supplied execution observations do not establish external execution provenance."
+        }
+      }
+    },
+    "boundaries": [
+      "Integrity is not authenticity.",
+      "Signature is not semantic correctness or accepted authority.",
+      "Replay preserves negative outcomes.",
+      "Supplied observations are not external execution provenance.",
+      "Exact compatibility is not general scope entailment."
+    ]
+  },
+  "assessment": "PASS",
+  "actual": "INSUFFICIENT_EVIDENCE",
+  "inputSha256": "4a4de60fa063529eb4ceed92a0afacbb2bed9c20c5baf7a5f76c81688af12d27"
+}

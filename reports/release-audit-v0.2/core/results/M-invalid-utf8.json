@@ -1,0 +1,457 @@
+{
+  "id": "M-invalid-utf8",
+  "relation": "Invalid UTF-8 byte input",
+  "oracle": {
+    "type": "INDEPENDENT_LITERAL",
+    "overall": "REJECTED_MALFORMED",
+    "reason": "INVALID_UTF8"
+  },
+  "input": {
+    "request": {
+      "encoding": "base64",
+      "bytes": "eyL/IjoxfQ=="
+    },
+    "bundle": {
+      "encoding": "json",
+      "value": {
+        "schema": "receiptos.verify.bundle.v2",
+        "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+        "statement": {
+          "schema": "receiptos.verify.statement.v2",
+          "verification_profile": "receiptos.verify.generic.v2",
+          "adapter": "rvr",
+          "surface": {
+            "claim": {
+              "id": "audit02:sha256-equals",
+              "kind": "SHA256_EQUALS",
+              "parameters": {
+                "expected_digest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a"
+              }
+            },
+            "subject": {
+              "kind": "git-artifact",
+              "id": "audit02:independent-artifact",
+              "version": "audit.v2",
+              "artifact_digest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a",
+              "commit": "edf89e1f94aff196a34711aaf21f6d8777083a54",
+              "tree": "507a80b8590da182123549f741856161847cc659",
+              "artifact_path": "audited.txt"
+            },
+            "scope": {
+              "evidence_member": "artifact"
+            },
+            "authority": {
+              "id": "audit02-key",
+              "class": "INDEPENDENT_RECOMPUTATION"
+            },
+            "policy": {
+              "id": "audit02-policy",
+              "version": "audit.2"
+            },
+            "version": "audit.2",
+            "time": {
+              "not_before": 1791676700,
+              "not_after": 1791676900
+            },
+            "assumptions": [],
+            "dependencies": [],
+            "evidence_requirements": [
+              "artifact",
+              "native-result",
+              "adapter-input",
+              "execution"
+            ]
+          },
+          "asserted_result": "PASS",
+          "evidence_manifest": [
+            {
+              "id": "artifact",
+              "role": "artifact",
+              "digest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a",
+              "size": 56
+            },
+            {
+              "id": "commit",
+              "role": "git-commit",
+              "digest": "6cd86297033ec0d64c51631d80438c2a61d82be279ce630365b4db4880c5d3b7",
+              "size": 219
+            },
+            {
+              "id": "tree",
+              "role": "git-tree",
+              "digest": "b6bc9b95e022425b9d4cbcd106795465c9d1744f0a7346e28d3e940fd8c91a98",
+              "size": 39
+            },
+            {
+              "id": "native-result",
+              "role": "native-result",
+              "digest": "ead3fab7b58a04a6af00b7b39a7fcc389ad0a031bd0d7cfa0659f21832aafc16",
+              "size": 331
+            },
+            {
+              "id": "adapter-input",
+              "role": "adapter-input",
+              "digest": "ea6cc1f90697670880f93d5a684c8d4fd0d7d90750ea252796ce9a9d540952ac",
+              "size": 5627
+            }
+          ],
+          "payload_digest": "b1f87cb47aa4f11fe06216ff4758fb546160083013d76af9d467e5d538fd1536",
+          "crypto": {
+            "provider": "ed25519",
+            "key_id": "audit02-key"
+          }
+        },
+        "signature_base64": "R+iunvWHqjY1jyUzU+WDp/T2btOwUEn4kLtcHy4emGAr4f/S/rwYiWjbJj+bTEVeOUMRWx9NCRQ2xD1hiv/SCg==",
+        "evidence": [
+          {
+            "id": "artifact",
+            "bytes_base64": "SW5kZXBlbmRlbnQgdjAuMiByZWxlYXNlIGF1ZGl0OiBwdWJsaWMgYm91bmRlZCBhcnRpZmFjdAo="
+          },
+          {
+            "id": "commit",
+            "bytes_base64": "dHJlZSA1MDdhODBiODU5MGRhMTgyMTIzNTQ5Zjc0MTg1NjE2MTg0N2NjNjU5CmF1dGhvciBJbmRlcGVuZGVudCBBdWRpdG9yIDxzeW50aGV0aWNAZXhhbXBsZS5pbnZhbGlkPiAxNzkxNjc2ODAwICswMDAwCmNvbW1pdHRlciBJbmRlcGVuZGVudCBBdWRpdG9yIDxzeW50aGV0aWNAZXhhbXBsZS5pbnZhbGlkPiAxNzkxNjc2ODAwICswMDAwCgpGcmVzaCByZWxlYXNlIGF1ZGl0IG9ubHkK"
+          },
+          {
+            "id": "tree",
+            "bytes_base64": "MTAwNjQ0IGF1ZGl0ZWQudHh0APE1KywLL2CQDvbJfWq9x6/P0mp/"
+          },
+          {
+            "id": "native-result",
+            "bytes_base64": "eyJldmFsdWF0aW9uIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6IjU0NGU3NjNkZWQ2MTQ5NTE0MmUyNmVhMWIwNzM0YmE2NjI2YjkxYmE3YzU4MGY5Zjc0ZWU4M2YxNzk0YjdiOWEiLCJvYnNlcnZlZERpZ2VzdCI6IjU0NGU3NjNkZWQ2MTQ5NTE0MmUyNmVhMWIwNzM0YmE2NjI2YjkxYmE3YzU4MGY5Zjc0ZWU4M2YxNzk0YjdiOWEiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIn0sIm91dGNvbWUiOiJWRVJJRklFRCIsInJlYXNvbkNvZGUiOiJydnIudjAuZGlnZXN0X21hdGNoIiwic2NoZW1hIjoicnZyLmNhbm9uaWNhbC1yZXN1bHQudjAifQ=="
+          },
+          {
+            "id": "adapter-input",
+            "bytes_base64": "eyJjYW5kaWRhdGVDYXNlIjp7ImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6IjU0NGU3NjNkZWQ2MTQ5NTE0MmUyNmVhMWIwNzM0YmE2NjI2YjkxYmE3YzU4MGY5Zjc0ZWU4M2YxNzk0YjdiOWEiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjU2IiwiZGlnZXN0IjoiNTQ0ZTc2M2RlZDYxNDk1MTQyZTI2ZWExYjA3MzRiYTY2MjZiOTFiYTdjNTgwZjlmNzRlZTgzZjE3OTRiN2I5YSIsImlkIjoiYXJ0aWZhY3QiLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0iLCJzdGF0dXMiOiJQUkVTRU5UIn1dLCJzY2hlbWEiOiJydnIuZXZpZGVuY2Utc2V0LnYwIn0sInBheWxvYWRzQmFzZTY0Ijp7ImFydGlmYWN0IjoiU1c1a1pYQmxibVJsYm5RZ2RqQXVNaUJ5Wld4bFlYTmxJR0YxWkdsME9pQndkV0pzYVdNZ1ltOTFibVJsWkNCaGNuUnBabUZqZEFvPSJ9fSwib3JpZ2luYWxCdW5kbGUiOnsiY2Fub25pY2FsUmVzdWx0Ijp7ImV2YWx1YXRpb24iOnsiZXZpZGVuY2VNZW1iZXIiOiJhcnRpZmFjdCIsImV4cGVjdGVkRGlnZXN0IjoiNTQ0ZTc2M2RlZDYxNDk1MTQyZTI2ZWExYjA3MzRiYTY2MjZiOTFiYTdjNTgwZjlmNzRlZTgzZjE3OTRiN2I5YSIsIm9ic2VydmVkRGlnZXN0IjoiNTQ0ZTc2M2RlZDYxNDk1MTQyZTI2ZWExYjA3MzRiYTY2MjZiOTFiYTdjNTgwZjlmNzRlZTgzZjE3OTRiN2I5YSIsIm9wZXJhdGlvbiI6IlNIQTI1Nl9FUVVBTFMifSwib3V0Y29tZSI6IlZFUklGSUVEIiwicmVhc29uQ29kZSI6InJ2ci52MC5kaWdlc3RfbWF0Y2giLCJzY2hlbWEiOiJydnIuY2Fub25pY2FsLXJlc3VsdC52MCJ9LCJjbGFpbSI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiI1NDRlNzYzZGVkNjE0OTUxNDJlMjZlYTFiMDczNGJhNjYyNmI5MWJhN2M1ODBmOWY3NGVlODNmMTc5NGI3YjlhIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyIsInNjaGVtYSI6InJ2ci5jbGFpbS5zaGEyNTYtZXF1YWxzLnYwIn0sImV2aWRlbmNlU2V0Ijp7Im1lbWJlcnMiOlt7ImJ5dGVMZW5ndGgiOiI1NiIsImRpZ2VzdCI6IjU0NGU3NjNkZWQ2MTQ5NTE0MmUyNmVhMWIwNzM0YmE2NjI2YjkxYmE3YzU4MGY5Zjc0ZWU4M2YxNzk0YjdiOWEiLCJpZCI6ImFydGlmYWN0IiwibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIiwic3RhdHVzIjoiUFJFU0VOVCJ9XSwic2NoZW1hIjoicnZyLmV2aWRlbmNlLXNldC52MCJ9LCJwYXlsb2Fkc0Jhc2U2NCI6eyJhcnRpZmFjdCI6IlNXNWtaWEJsYm1SbGJuUWdkakF1TWlCeVpXeGxZWE5sSUdGMVpHbDBPaUJ3ZFdKc2FXTWdZbTkxYm1SbFpDQmhjblJwWm1GamRBbz0ifSwicmVjZWlwdCI6eyJjbGFpbURpZ2VzdCI6ImMxNmY3MTI1YjJmYzg2OTQ0NWI3Njc1NWNlODIxYmM5Nzc4ODRiMmIxZTdiMzljMTU0NmEwOTZhZDcxOGIxYTYiLCJldmlkZW5jZVNldERpZ2VzdCI6IjhhYWI0ZWRhNzkxNjcwNzZiZjA2NmFiOWNlZGFiMDEyZmJiZTljMjlmNzI1NTY0MDBjMDA5YzYyZDYxMTA5YmYiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6ImVhZDNmYWI3YjU4YTA0YTZhZjAwYjdiMzlhN2ZjYzM4OWFkMGEwMzFiZDBkN2NmYTA2NTlmMjE4MzJhYWZjMTYiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9LCJ2ZXJpZmljYXRpb25Qcm9maWxlIjp7ImNhbm9uaWNhbEJ5dGVDb250cmFjdCI6eyJhcnJheU9yZGVyIjoicHJlc2VydmVkLXdpdGgtZHVwbGljYXRlcyIsImRvbWFpbiI6Im51bGwtYm9vbGVhbi11bmljb2RlLXNjYWxhci1zdHJpbmctYXJyYXktb2JqZWN0IiwiZW5jb2RpbmciOiJVVEYtOCIsImlkIjoicnZyLWNhbm9uaWNhbC1qc29uLXYwIiwibGluZVNlcGFyYXRvcnMiOiJVKzIwMjgtYW5kLVUrMjAyOS1saXRlcmFsIiwibnVtYmVycyI6ImZvcmJpZGRlbiIsIm9iamVjdEtleU9yZGVyIjoidW5pY29kZS1zY2FsYXItdmFsdWUtYXNjZW5kaW5nIiwic29saWR1cyI6ImxpdGVyYWwiLCJzdHJpbmdFc2NhcGluZyI6InJ2ci1qc29uLXN0cmluZy1lc2NhcGluZy12MCIsInVuaWNvZGUiOiJzY2FsYXItdmFsdWVzLW9ubHktbm8tbm9ybWFsaXphdGlvbiIsIndoaXRlc3BhY2UiOiJub25lIn0sImNhbm9uaWNhbFJlc3VsdENvbnRyYWN0Ijp7Im91dGNvbWVQcm9qZWN0aW9uIjoiL291dGNvbWUiLCJyZWFzb25Db2RlUHJvamVjdGlvbiI6Ii9yZWFzb25Db2RlIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9jYW5vbmljYWxSZXN1bHQiLCJzY2hlbWFTaGEyNTYiOiI5Nzc5OTQwM2Q4ZWI5NmMwNDY5MzAzOTZjMzllMGYxYzNlNzZkNmMzNWZkMDQzNTkzNzQ0NmNlODQ0YmQ0ZGFlIn0sImNvbmZvcm1hbmNlVmVjdG9yU2V0Ijp7ImRpZ2VzdCI6IjJlYjVlMGMwNTZkMTNjNGJlZGE0YjNkYTZmYWZkY2QzNGE2YmQ5NjQ3OTAzMGUzOTE0YTc5ZDA4Njc5YzA2ODciLCJkaWdlc3RSdWxlIjoic2hhMjU2LXV0Zjgtc29ydGVkLXBhdGgtdGFiLWZpbGUtc2hhMjU2LWxmLXJvd3MiLCJpZCI6InJ2ci12MC1maXJzdC1mYWxzaWZpY2F0aW9uLXNldCIsIm1lbWJlcnMiOlt7ImlkIjoiZXhwZWN0ZWQtcmVzdWx0cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvZXhwZWN0ZWQuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjBlZDIzZWUzNTMwZGY5M2RkZTJmODc5OTgxZDI4ZGRiM2Y2MGZjMjUwYzg2NTJkMTA5ZGQ2NWZkYjIyMTkzY2UifSx7ImlkIjoiYWR2ZXJzYXJpYWwtbXV0YW50cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvbXV0YW50cy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiZDVkMTZjYzUzZWMwZDliZTUzOTY4ZDdmZmMwMWZlMDE5Y2I4YjI2MzAzOTBjMDQ0MzFmNmVlOWY1NGVkZjg0NyJ9LHsiaWQiOiJ2ZXJpZmljYXRpb24tdmVjdG9ycyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvdmVjdG9ycy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiMTcwZmM2MjU3NmZhOGVkYjIyMDczZjczYjI4ZDlhYzBkZWZmMjY0NTFlZjY1MTM3ODgzOWNkNDU4ZGE3MzEyZiJ9XX0sImRlcGVuZGVuY3lSZXNvbHV0aW9uIjp7ImJhc2UiOiJTVVBQTElFRF9QUk9GSUxFX1BBQ0tBR0VfUk9PVCIsImxvY2F0b3JSb2xlIjoiTk9STUFUSVZFX1BBQ0tBR0VfUkVMQVRJVkVfUEFUSCIsInBhdGhGb3JtYXQiOiJyZWxhdGl2ZS1wb3NpeC1uby1lbXB0eS1kb3QtZG90ZG90LW9yLWNvbG9uLXNlZ21lbnRzIiwidmVyaWZpY2F0aW9uT3JkZXIiOiJyZXNvbHZlLXJlYWQtc2hhMjU2LW1hdGNoLXVzZSJ9LCJldmlkZW5jZVNldENvbnRyYWN0Ijp7ImRpZ2VzdFJ1bGUiOiJzaGEyNTYtdXRmOC1ydnItY2Fub25pY2FsLWpzb24tdjAtbm9ybWFsaXplZC1tZW1iZXItb3JkZXIiLCJzY2hlbWFQYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInNjaGVtYVBvaW50ZXIiOiIjLyRkZWZzL2V2aWRlbmNlU2V0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJleHRlcm5hbENvbnRleHRQb2xpY3kiOnsiYW1iaWVudElucHV0cyI6IkZPUkJJRERFTiIsImltbXV0YWJsZUNvbW1pdG1lbnRzIjpbXSwibW9kZSI6IkZPUkJJRERFTl9VTkxFU1NfQ09NTUlUVEVEIn0sInByb2ZpbGVJZCI6InJ2ci1nZW5lcmljLXNoYTI1Ni1lcXVhbHMtdjAiLCJwcm9maWxlU2NoZW1hQ29udHJhY3QiOnsiY29uc3RyYWludHMiOnsiaWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXByb2ZpbGUtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwLnByb2ZpbGUuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6ImVjZGVkOTZjNWY1OGY3MDU3ZTJjNWMwYjZkOTc4OTk0MmE5YTdiZjYwMGY0YTQ1MzM4N2U5OWY4NDA2ZTdiYWYifSwibWFuaWZlc3QiOnsiaWQiOiJ2ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlcmlmaWNhdGlvbi1wcm9maWxlLW1hbmlmZXN0LnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiIxNDhhZmViNDg0ZDM4NjZjMWNhYWU4MmU1NzQxODJjMWI3NDhkZDQ2MWRmYWViMWQ4MDk1ZWNmNDkwNTY5MGMxIn19LCJyZWFzb25Db2RlTmFtZXNwYWNlIjp7ImdhdGVSZWplY3Rpb25zIjpbInJ2ci5nYXRlLnNjaGVtYV9pbnZhbGlkIiwicnZyLmdhdGUuaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIuZ2F0ZS5yZXN1bHRfcHJvamVjdGlvbl9taXNtYXRjaCIsInJ2ci5nYXRlLmV2aWRlbmNlX2Nsb3N1cmVfaW5jb21wbGV0ZSJdLCJyZWNvbXB1dGF0aW9uIjpbInJ2ci5yZWNvbXB1dGUuaWRlbnRpY2FsIiwicnZyLnJlY29tcHV0ZS5jYW5vbmljYWxfcmVzdWx0X2RpdmVyZ2VkIiwicnZyLnJlY29tcHV0ZS5ub3JtYXRpdmVfZGVwZW5kZW5jeV91bmF2YWlsYWJsZSIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIucmVjb21wdXRlLmNvbW1pdHRlZF9ldmlkZW5jZV91bmF2YWlsYWJsZSJdLCJ2ZXJpZmljYXRpb24iOlsicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJ2ci52MC5kaWdlc3RfbWlzbWF0Y2giLCJydnIudjAucmVxdWlyZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXX0sInJlc3VsdEhhc2hSdWxlcyI6eyJhbGdvcml0aG0iOiJTSEEtMjU2IiwiZW5jb2RpbmciOiJVVEYtOC1leGFjdGx5LW9uY2UiLCJpbnB1dCI6InJ2ci1jYW5vbmljYWwtanNvbi12MChjYW5vbmljYWxSZXN1bHQpIiwib3V0cHV0IjoibG93ZXJjYXNlLWhleC1uby1wcmVmaXgifSwic2NoZW1hIjoicnZyLnZlcmlmaWNhdGlvbi1wcm9maWxlLnYwIiwic2NoZW1hQ29udHJhY3RzIjpbeyJpZCI6InJ2ci1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9XSwidmVyaWZpY2F0aW9uU3BlY2lmaWNhdGlvbiI6eyJpZCI6InZlcmlmaWNhdGlvbi1zcGVjaWZpY2F0aW9uIiwicGF0aCI6ImRvY3Mvc3BlYy9SRUNPTVBVVEFCTEVfVkVSSUZJQ0FUSU9OX1JFQ0VJUFRTX1YwLm1kIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiI4MTA3N2RkYmY1MDYyNGJjNzA5NDFjZjUzYTRmNTQyNjA0ZTkyNmE2NTNkN2ZjYjNhMzYzMTBmZjU0MzBiOTczIn19fX0="
+          }
+        ],
+        "payload": {
+          "crystal": {
+            "schema": "stealth.session.evidence.v1",
+            "session_id": "independent-v02-release-audit",
+            "directory": "audit/synthetic",
+            "task": {
+              "title": "Independent bounded artifact audit"
+            },
+            "agent": {
+              "id": "release-auditor",
+              "runtime": "local"
+            },
+            "scope": {
+              "permission": null
+            },
+            "execution": [],
+            "commands": [],
+            "changes": {
+              "files_changed": [],
+              "diff_sha256": null
+            },
+            "metadata": {
+              "generated_by": "independent-release-auditor"
+            },
+            "anchor": {
+              "receipt_root": "0xceed1eef4a2e6d03156dc72b65e590b7559121a6b578dc5ce5e1bded99fc2aab",
+              "network": "local/off-chain",
+              "onchain_anchor_status": "not anchored"
+            }
+          },
+          "adapter": {
+            "originalBundle": {
+              "receipt": {
+                "claimDigest": "c16f7125b2fc869445b76755ce821bc977884b2b1e7b39c1546a096ad718b1a6",
+                "evidenceSetDigest": "8aab4eda79167076bf066ab9cedab012fbbe9c29f72556400c009c62d61109bf",
+                "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+                "outcome": "VERIFIED",
+                "reasonCode": "rvr.v0.digest_match",
+                "resultDigest": "ead3fab7b58a04a6af00b7b39a7fcc389ad0a031bd0d7cfa0659f21832aafc16"
+              },
+              "claim": {
+                "schema": "rvr.claim.sha256-equals.v0",
+                "operation": "SHA256_EQUALS",
+                "evidenceMember": "artifact",
+                "expectedDigest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a"
+              },
+              "evidenceSet": {
+                "schema": "rvr.evidence-set.v0",
+                "members": [
+                  {
+                    "id": "artifact",
+                    "status": "PRESENT",
+                    "mediaType": "application/octet-stream",
+                    "byteLength": "56",
+                    "digest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a"
+                  }
+                ]
+              },
+              "payloadsBase64": {
+                "artifact": "SW5kZXBlbmRlbnQgdjAuMiByZWxlYXNlIGF1ZGl0OiBwdWJsaWMgYm91bmRlZCBhcnRpZmFjdAo="
+              },
+              "verificationProfile": {
+                "schema": "rvr.verification-profile.v0",
+                "profileId": "rvr-generic-sha256-equals-v0",
+                "profileSchemaContract": {
+                  "manifest": {
+                    "id": "verification-profile-manifest-schema",
+                    "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+                    "sha256": "148afeb484d3866c1caae82e574182c1b748dd461dfaeb1d8095ecf4905690c1",
+                    "requiredForRecomputation": true
+                  },
+                  "constraints": {
+                    "id": "rvr-generic-sha256-equals-profile-schema",
+                    "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+                    "sha256": "ecded96c5f58f7057e2c5c0b6d9789942a9a7bf600f4a453387e99f8406e7baf",
+                    "requiredForRecomputation": true
+                  }
+                },
+                "dependencyResolution": {
+                  "base": "SUPPLIED_PROFILE_PACKAGE_ROOT",
+                  "pathFormat": "relative-posix-no-empty-dot-dotdot-or-colon-segments",
+                  "locatorRole": "NORMATIVE_PACKAGE_RELATIVE_PATH",
+                  "verificationOrder": "resolve-read-sha256-match-use"
+                },
+                "verificationSpecification": {
+                  "id": "verification-specification",
+                  "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+                  "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+                  "requiredForRecomputation": true
+                },
+                "conformanceVectorSet": {
+                  "id": "rvr-v0-first-falsification-set",
+                  "members": [
+                    {
+                      "id": "expected-results",
+                      "path": "conformance/rvr-v0/expected.json",
+                      "sha256": "0ed23ee3530df93dde2f879981d28ddb3f60fc250c8652d109dd65fdb22193ce",
+                      "requiredForRecomputation": false
+                    },
+                    {
+                      "id": "adversarial-mutants",
+                      "path": "conformance/rvr-v0/mutants.json",
+                      "sha256": "d5d16cc53ec0d9be53968d7ffc01fe019cb8b2630390c04431f6ee9f54edf847",
+                      "requiredForRecomputation": false
+                    },
+                    {
+                      "id": "verification-vectors",
+                      "path": "conformance/rvr-v0/vectors.json",
+                      "sha256": "170fc62576fa8edb22073f73b28d9ac0deff26451ef651378839cd458da7312f",
+                      "requiredForRecomputation": false
+                    }
+                  ],
+                  "digest": "2eb5e0c056d13c4beda4b3da6fafdcd34a6bd96479030e3914a79d08679c0687",
+                  "digestRule": "sha256-utf8-sorted-path-tab-file-sha256-lf-rows"
+                },
+                "canonicalByteContract": {
+                  "id": "rvr-canonical-json-v0",
+                  "encoding": "UTF-8",
+                  "domain": "null-boolean-unicode-scalar-string-array-object",
+                  "objectKeyOrder": "unicode-scalar-value-ascending",
+                  "arrayOrder": "preserved-with-duplicates",
+                  "unicode": "scalar-values-only-no-normalization",
+                  "numbers": "forbidden",
+                  "stringEscaping": "rvr-json-string-escaping-v0",
+                  "solidus": "literal",
+                  "lineSeparators": "U+2028-and-U+2029-literal",
+                  "whitespace": "none"
+                },
+                "schemaContracts": [
+                  {
+                    "id": "rvr-schema",
+                    "path": "conformance/rvr-v0/rvr.schema.json",
+                    "sha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+                    "requiredForRecomputation": true
+                  }
+                ],
+                "evidenceSetContract": {
+                  "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+                  "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+                  "schemaPointer": "#/$defs/evidenceSet",
+                  "digestRule": "sha256-utf8-rvr-canonical-json-v0-normalized-member-order"
+                },
+                "canonicalResultContract": {
+                  "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+                  "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+                  "schemaPointer": "#/$defs/canonicalResult",
+                  "outcomeProjection": "/outcome",
+                  "reasonCodeProjection": "/reasonCode"
+                },
+                "resultHashRules": {
+                  "algorithm": "SHA-256",
+                  "input": "rvr-canonical-json-v0(canonicalResult)",
+                  "encoding": "UTF-8-exactly-once",
+                  "output": "lowercase-hex-no-prefix"
+                },
+                "reasonCodeNamespace": {
+                  "verification": [
+                    "rvr.v0.digest_match",
+                    "rvr.v0.digest_mismatch",
+                    "rvr.v0.required_evidence_unavailable"
+                  ],
+                  "recomputation": [
+                    "rvr.recompute.identical",
+                    "rvr.recompute.canonical_result_diverged",
+                    "rvr.recompute.normative_dependency_unavailable",
+                    "rvr.recompute.normative_dependency_identity_mismatch",
+                    "rvr.recompute.committed_evidence_unavailable"
+                  ],
+                  "gateRejections": [
+                    "rvr.gate.schema_invalid",
+                    "rvr.gate.identity_mismatch",
+                    "rvr.gate.result_projection_mismatch",
+                    "rvr.gate.evidence_closure_incomplete"
+                  ]
+                },
+                "externalContextPolicy": {
+                  "mode": "FORBIDDEN_UNLESS_COMMITTED",
+                  "ambientInputs": "FORBIDDEN",
+                  "immutableCommitments": []
+                }
+              },
+              "canonicalResult": {
+                "schema": "rvr.canonical-result.v0",
+                "outcome": "VERIFIED",
+                "reasonCode": "rvr.v0.digest_match",
+                "evaluation": {
+                  "operation": "SHA256_EQUALS",
+                  "evidenceMember": "artifact",
+                  "expectedDigest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a",
+                  "observedDigest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a"
+                }
+              }
+            },
+            "candidateCase": {
+              "claim": {
+                "schema": "rvr.claim.sha256-equals.v0",
+                "operation": "SHA256_EQUALS",
+                "evidenceMember": "artifact",
+                "expectedDigest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a"
+              },
+              "evidenceSet": {
+                "schema": "rvr.evidence-set.v0",
+                "members": [
+                  {
+                    "id": "artifact",
+                    "status": "PRESENT",
+                    "mediaType": "application/octet-stream",
+                    "byteLength": "56",
+                    "digest": "544e763ded61495142e26ea1b0734ba6626b91ba7c580f9f74ee83f1794b7b9a"
+                  }
+                ]
+              },
+              "payloadsBase64": {
+                "artifact": "SW5kZXBlbmRlbnQgdjAuMiByZWxlYXNlIGF1ZGl0OiBwdWJsaWMgYm91bmRlZCBhcnRpZmFjdAo="
+              }
+            }
+          },
+          "guarantees": null,
+          "continuity": null
+        }
+      }
+    }
+  },
+  "actual": {
+    "schema": "receiptos.verify.report.v1",
+    "projection_version": "receiptos.verify.projection.v1",
+    "overall": "REJECTED_MALFORMED",
+    "reason_codes": [
+      "INVALID_UTF8"
+    ],
+    "explanation": "REJECTED_MALFORMED. The requested verification layers did not establish the claim. INVALID_UTF8",
+    "required_layers": [
+      "INTEGRITY",
+      "AUTHENTICITY",
+      "SUBJECT_BINDING",
+      "RECOMPUTATION",
+      "EVIDENCE_SUFFICIENCY",
+      "SEMANTIC_COMPATIBILITY"
+    ],
+    "layers": {
+      "INPUT": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "INVALID_UTF8"
+        ],
+        "nativeResult": {
+          "message": "JSON must be valid UTF-8."
+        }
+      },
+      "CANONICALIZATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "INTEGRITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "AUTHENTICITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "SUBJECT_BINDING": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "RECOMPUTATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "EVIDENCE_SUFFICIENCY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "SEMANTIC_COMPATIBILITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "GUARANTEE_PRESERVATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CONTINUITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "DOMAIN_ADAPTERS": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "PRODUCT_PROJECTION": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "INVALID_UTF8"
+        ],
+        "nativeResult": null
+      },
+      "EXPLAINABLE_REPORT": {
+        "status": "GENERATED",
+        "reasonCodes": [
+          "INVALID_UTF8"
+        ],
+        "nativeResult": {
+          "explanation": "REJECTED_MALFORMED. The requested verification layers did not establish the claim. INVALID_UTF8"
+        }
+      },
+      "PROVENANCE": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      }
+    },
+    "boundaries": [
+      "Integrity is not authenticity.",
+      "Signature is not semantic correctness.",
+      "Replay preserves negative outcomes.",
+      "Historical observations are not repeated execution."
+    ]
+  },
+  "passed": true,
+  "inputSha256": "8974286214ec919d4bda89838242b9fab785c386c77e217f430f9ba08c4b6f61"
+}

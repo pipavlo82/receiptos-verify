@@ -1,0 +1,78 @@
+{
+  "createdAt": "2026-10-11T23:10:19.144Z",
+  "cases": [
+    {
+      "id": "interpoll_unknown_fresh_requirement",
+      "overall": "VERIFIED",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "EXACT_SIGNED_ACTION_SUPPLIED_EXECUTION_RELATION"
+      ]
+    },
+    {
+      "id": "interpoll_unknown_server_requirement",
+      "overall": "VERIFIED",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "EXACT_SIGNED_ACTION_SUPPLIED_EXECUTION_RELATION"
+      ]
+    },
+    {
+      "id": "interpoll_null_outcome",
+      "overall": "VERIFIED",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "EXACT_SIGNED_ACTION_SUPPLIED_EXECUTION_RELATION"
+      ]
+    },
+    {
+      "id": "prf_unknown_policy_requirement",
+      "overall": "VERIFIED",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+      ]
+    },
+    {
+      "id": "prf_unknown_evidence_requirement",
+      "overall": "VERIFIED",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED"
+      ]
+    },
+    {
+      "id": "prf_null_known_requirement",
+      "overall": "UNSUPPORTED_PROFILE",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "PRF_GUARANTEE_UNSUPPORTED",
+        "UNSUPPORTED_PROFILE"
+      ]
+    },
+    {
+      "id": "orphan_interpoll_requirement_on_rvr",
+      "overall": "VERIFIED",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ]
+    },
+    {
+      "id": "orphan_prf_requirement_without_guarantee",
+      "overall": "VERIFIED",
+      "reasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ]
+    }
+  ]
+}

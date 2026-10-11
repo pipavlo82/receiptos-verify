@@ -1,0 +1,404 @@
+{
+  "id": "S06_version",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "CONTRADICTED",
+    "notes": "Same artifact digest retained. Detached requested surface differs only in the declared attack dimension."
+  },
+  "input": {
+    "requested": {
+      "claim": {
+        "id": "audit02:artifact-integrity",
+        "kind": "SHA256_EQUALS",
+        "parameters": {
+          "expected_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+        }
+      },
+      "subject": {
+        "kind": "portable-artifact",
+        "id": "audit02:portable-a",
+        "version": "2026-10-11",
+        "artifact_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+      },
+      "scope": {
+        "evidence_member": "artifact"
+      },
+      "authority": {
+        "id": "audit02-public-test-key",
+        "class": "INDEPENDENT_RECOMPUTATION"
+      },
+      "time": {
+        "not_before": 0,
+        "not_after": 20
+      },
+      "version": "3",
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "artifact",
+        "native-result",
+        "adapter-input",
+        "execution"
+      ],
+      "policy": {
+        "id": "audit02-policy",
+        "version": "1"
+      }
+    },
+    "observed": {
+      "claim": {
+        "id": "audit02:artifact-integrity",
+        "kind": "SHA256_EQUALS",
+        "parameters": {
+          "expected_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+        }
+      },
+      "subject": {
+        "kind": "portable-artifact",
+        "id": "audit02:portable-a",
+        "version": "2026-10-11",
+        "artifact_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+      },
+      "scope": {
+        "evidence_member": "artifact"
+      },
+      "authority": {
+        "id": "audit02-public-test-key",
+        "class": "INDEPENDENT_RECOMPUTATION"
+      },
+      "time": {
+        "not_before": 0,
+        "not_after": 20
+      },
+      "version": "2",
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "artifact",
+        "native-result",
+        "adapter-input",
+        "execution"
+      ],
+      "policy": {
+        "id": "audit02-policy",
+        "version": "1"
+      }
+    },
+    "context": {
+      "verification_time": 10,
+      "established_assumptions": [],
+      "dependency_results": [],
+      "evidence_basis": [
+        "artifact",
+        "native-result",
+        "adapter-input",
+        "execution"
+      ],
+      "expected_pair": "PRESERVED"
+    }
+  },
+  "output": {
+    "status": "CONTRADICTED",
+    "reasonCodes": [
+      "VERSION_MISMATCH"
+    ],
+    "nativeResult": {
+      "manifest_validation": {
+        "producer": {
+          "valid": true,
+          "errors": []
+        },
+        "consumer": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "link": {
+        "valid": true,
+        "edge": {
+          "producer_claim": {
+            "claim_type": "{\"id\":\"audit02:artifact-integrity\",\"kind\":\"SHA256_EQUALS\",\"parameters\":{\"expected_digest\":\"9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40\"}}",
+            "authority_class": "INDEPENDENT_RECOMPUTATION",
+            "scope": "{\"evidence_member\":\"artifact\"}",
+            "verification_time": "{\"not_after\":20,\"not_before\":0,\"profile\":\"receiptos.interval.v2\"}"
+          },
+          "consumer_requirement": {
+            "claim_type": "{\"id\":\"audit02:artifact-integrity\",\"kind\":\"SHA256_EQUALS\",\"parameters\":{\"expected_digest\":\"9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40\"}}",
+            "authority_class": "INDEPENDENT_RECOMPUTATION",
+            "scope": "{\"evidence_member\":\"artifact\"}",
+            "verification_time": "{\"not_after\":20,\"not_before\":0,\"profile\":\"receiptos.interval.v2\"}"
+          }
+        }
+      },
+      "pair_evaluation": {
+        "relation": "native-semantic-claim-edge",
+        "vector": "caller-selected-semantic-pair",
+        "adapter": "pinned-public-semantic-abi-linker",
+        "expected_pair": "PRESERVED",
+        "observed_pair": "PRESERVED",
+        "backend_conformance": "PASS"
+      }
+    },
+    "compatibility": {
+      "status": "CONTRADICTED",
+      "reasonCodes": [
+        "VERSION_MISMATCH"
+      ],
+      "nativeResult": null,
+      "dimensions": {
+        "claim": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "subject": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "artifact": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "commit": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "authority": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "scope": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "policy": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "version": {
+          "status": "CONTRADICTED",
+          "reasonCodes": [
+            "VERSION_MISMATCH"
+          ]
+        },
+        "time": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "assumptions": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "dependencies": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "evidence_basis": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        }
+      },
+      "requested": {
+        "claim": {
+          "id": "audit02:artifact-integrity",
+          "kind": "SHA256_EQUALS",
+          "parameters": {
+            "expected_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+          }
+        },
+        "subject": {
+          "kind": "portable-artifact",
+          "id": "audit02:portable-a",
+          "version": "2026-10-11",
+          "artifact_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+        },
+        "scope": {
+          "evidence_member": "artifact"
+        },
+        "authority": {
+          "id": "audit02-public-test-key",
+          "class": "INDEPENDENT_RECOMPUTATION"
+        },
+        "time": {
+          "not_before": 0,
+          "not_after": 20
+        },
+        "version": "3",
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "artifact",
+          "native-result",
+          "adapter-input",
+          "execution"
+        ],
+        "policy": {
+          "id": "audit02-policy",
+          "version": "1"
+        }
+      },
+      "evidence": {
+        "claim": {
+          "id": "audit02:artifact-integrity",
+          "kind": "SHA256_EQUALS",
+          "parameters": {
+            "expected_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+          }
+        },
+        "subject": {
+          "kind": "portable-artifact",
+          "id": "audit02:portable-a",
+          "version": "2026-10-11",
+          "artifact_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+        },
+        "scope": {
+          "evidence_member": "artifact"
+        },
+        "authority": {
+          "id": "audit02-public-test-key",
+          "class": "INDEPENDENT_RECOMPUTATION"
+        },
+        "time": {
+          "not_before": 0,
+          "not_after": 20
+        },
+        "version": "2",
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "artifact",
+          "native-result",
+          "adapter-input",
+          "execution"
+        ],
+        "policy": {
+          "id": "audit02-policy",
+          "version": "1"
+        }
+      }
+    },
+    "expectedSemanticPair": "PRESERVED",
+    "observedSemanticPair": "PRESERVED",
+    "requestedSurface": {
+      "claim": {
+        "id": "audit02:artifact-integrity",
+        "kind": "SHA256_EQUALS",
+        "parameters": {
+          "expected_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+        }
+      },
+      "subject": {
+        "kind": "portable-artifact",
+        "id": "audit02:portable-a",
+        "version": "2026-10-11",
+        "artifact_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+      },
+      "scope": {
+        "evidence_member": "artifact"
+      },
+      "authority": {
+        "id": "audit02-public-test-key",
+        "class": "INDEPENDENT_RECOMPUTATION"
+      },
+      "time": {
+        "not_before": 0,
+        "not_after": 20
+      },
+      "version": "3",
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "artifact",
+        "native-result",
+        "adapter-input",
+        "execution"
+      ],
+      "policy": {
+        "id": "audit02-policy",
+        "version": "1"
+      }
+    },
+    "evidenceSurface": {
+      "claim": {
+        "id": "audit02:artifact-integrity",
+        "kind": "SHA256_EQUALS",
+        "parameters": {
+          "expected_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+        }
+      },
+      "subject": {
+        "kind": "portable-artifact",
+        "id": "audit02:portable-a",
+        "version": "2026-10-11",
+        "artifact_digest": "9b295d0362885c6f45f21cbd01ebeb4e7d55263cb2bbd91b5153362ed27a9c40"
+      },
+      "scope": {
+        "evidence_member": "artifact"
+      },
+      "authority": {
+        "id": "audit02-public-test-key",
+        "class": "INDEPENDENT_RECOMPUTATION"
+      },
+      "time": {
+        "not_before": 0,
+        "not_after": 20
+      },
+      "version": "2",
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "artifact",
+        "native-result",
+        "adapter-input",
+        "execution"
+      ],
+      "policy": {
+        "id": "audit02-policy",
+        "version": "1"
+      }
+    },
+    "provenance": {
+      "profileId": "receiptos.verify.semantic-abi.v2",
+      "sourceRepository": "trustless-ai/semantic-abi",
+      "sourceCommit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "sourcePaths": [
+        "runner/src/classes.mjs",
+        "runner/src/linker.mjs",
+        "runner/src/manifest.mjs",
+        "runner/src/evaluate.mjs"
+      ],
+      "license": "Apache-2.0",
+      "maturity": "EXPERIMENTAL",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "native-manifest-validation",
+        "native-semantic-link",
+        "native-pair-evaluation",
+        "generic-claim-surface-compatibility"
+      ],
+      "requiredEvidence": [
+        "evidence-declared semantic surface",
+        "independently established evidence basis and dependencies"
+      ],
+      "nativeVocabulary": [
+        "valid",
+        "TYPE_ERROR",
+        "PRESERVED",
+        "VIOLATED",
+        "UNVERIFIABLE",
+        "PASS",
+        "FAIL",
+        "CANNOT_CHECK"
+      ]
+    },
+    "limitations": [
+      "The unchanged public neutral linker and pair evaluator execute locally; no private or commercial adapter is imported.",
+      "The native v0 claim/scope/temporal strings embed product canonical JSON. This encoding is not native upstream manifest interchange conformance.",
+      "Subject, artifact, authority identity, policy, version, applicability, assumptions, dependencies and accepted evidence are checked by the separate product relation.",
+      "A native valid edge or backend-conformance PASS does not establish product VERIFIED, authority authenticity or real-world truth.",
+      "No detached pair oracle is invented. Pair conformance is evaluated only when an independently selected context.expected_pair is supplied."
+    ]
+  },
+  "assessment": "PASS",
+  "actual": "CONTRADICTED",
+  "inputSha256": "f1301c9337d6fb4e664de99c5c682b98e8b533dd5c5c31258366b61e6f6a6e51"
+}

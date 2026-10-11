@@ -1,0 +1,948 @@
+[
+  {
+    "id": "continuity-binding-true",
+    "expected": "INSUFFICIENT_EVIDENCE",
+    "actual": "INSUFFICIENT_EVIDENCE",
+    "continuity": {
+      "status": "UNVERIFIABLE",
+      "reasonCodes": [
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-binding-false",
+    "expected": "VERIFIED",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "LOCAL_CONTINUITY_PRESERVED",
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "LOCAL_CONTINUITY_PRESERVED",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-binding-_true_",
+    "expected": "NOT_VERIFIED",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "LOCAL_CONTINUITY_PRESERVED",
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "LOCAL_CONTINUITY_PRESERVED",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-binding-1",
+    "expected": "NOT_VERIFIED",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "LOCAL_CONTINUITY_PRESERVED",
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "LOCAL_CONTINUITY_PRESERVED",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-binding-__",
+    "expected": "NOT_VERIFIED",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "LOCAL_CONTINUITY_PRESERVED",
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "LOCAL_CONTINUITY_PRESERVED",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-binding-null",
+    "expected": "NOT_VERIFIED",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "LOCAL_CONTINUITY_PRESERVED",
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "LOCAL_CONTINUITY_PRESERVED",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-unknown-option",
+    "expected": "NOT_VERIFIED",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "LOCAL_CONTINUITY_PRESERVED",
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "LOCAL_CONTINUITY_PRESERVED",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-unknown-policy",
+    "expected": "NOT_VERIFIED",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "LOCAL_CONTINUITY_PRESERVED",
+        "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "LOCAL_CONTINUITY_PRESERVED",
+      "WHOLE_OBSERVATION_ENVELOPE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "continuity-malformed-mode",
+    "expected": "NOT_VERIFIED",
+    "actual": "INSUFFICIENT_EVIDENCE",
+    "continuity": {
+      "status": "UNVERIFIABLE",
+      "reasonCodes": [
+        "CONTINUITY_REQUEST_UNSUPPORTED"
+      ],
+      "nativeResult": {
+        "identity_classification": null,
+        "selected_entry": null,
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "CONTINUITY_REQUEST_UNSUPPORTED"
+    ]
+  },
+  {
+    "id": "continuity-null-entry",
+    "expected": "NOT_VERIFIED",
+    "actual": "INSUFFICIENT_EVIDENCE",
+    "continuity": {
+      "status": "UNVERIFIABLE",
+      "reasonCodes": [
+        "CONTINUITY_REQUEST_UNSUPPORTED"
+      ],
+      "nativeResult": {
+        "identity_classification": null,
+        "selected_entry": null,
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "CONTINUITY_REQUEST_UNSUPPORTED"
+    ]
+  },
+  {
+    "id": "continuity-missing-state",
+    "expected": "NOT_VERIFIED",
+    "actual": "INSUFFICIENT_EVIDENCE",
+    "continuity": {
+      "status": "UNVERIFIABLE",
+      "reasonCodes": [
+        "HISTORY_QUERY_BINDING_MISSING"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "HISTORY_QUERY_BINDING_MISSING"
+    ]
+  },
+  {
+    "id": "continuity-null-digest",
+    "expected": "NOT_VERIFIED",
+    "actual": "INSUFFICIENT_EVIDENCE",
+    "continuity": {
+      "status": "UNVERIFIABLE",
+      "reasonCodes": [
+        "WHOLE_OBSERVATION_ENVELOPE_DIGEST_UNSUPPORTED"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "WHOLE_OBSERVATION_ENVELOPE_DIGEST_UNSUPPORTED"
+    ]
+  },
+  {
+    "id": "continuity-malformed-digest",
+    "expected": "NOT_VERIFIED",
+    "actual": "INSUFFICIENT_EVIDENCE",
+    "continuity": {
+      "status": "UNVERIFIABLE",
+      "reasonCodes": [
+        "WHOLE_OBSERVATION_ENVELOPE_DIGEST_UNSUPPORTED"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "WHOLE_OBSERVATION_ENVELOPE_DIGEST_UNSUPPORTED"
+    ]
+  },
+  {
+    "id": "continuity-wrong-ref-type",
+    "expected": "NOT_VERIFIED",
+    "actual": "CONTRADICTED",
+    "continuity": {
+      "status": "VIOLATED",
+      "reasonCodes": [
+        "HISTORY_REFERENCE_NOT_BOUND"
+      ],
+      "nativeResult": {
+        "identity_classification": "new",
+        "selected_entry": {
+          "entry_id": "audit-entry",
+          "proof_object_ref": "audit-proof",
+          "receipt_root": "audit-root",
+          "sequence": 0,
+          "predecessor_ref": null,
+          "subject": {
+            "id": "independent-history-subject"
+          },
+          "state": {
+            "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        },
+        "later_entries": [],
+        "whole_envelope_binding": "NOT_ESTABLISHED"
+      },
+      "limitations": [
+        "Chronicle native identity vocabulary is retained; sequence/predecessor/currentness are a new ReceiptOS profile, not an upstream native verifier.",
+        "Supplied history establishes local continuity only, not authority, completeness, a transparency log, global latest state or official provenance.",
+        "Derived-entry equality does not bind all original observation-envelope bytes. Whole-envelope binding is a separate canonical product obligation."
+      ],
+      "provenance": {
+        "profileId": "receiptos.verify.continuity.v1",
+        "sourceRepository": "pipavlo82/Chronicle",
+        "sourceCommit": "c467b48fd18fc8ec86f10582befa35946ce41914",
+        "license": "Apache-2.0",
+        "maturity": "EXPERIMENTAL",
+        "mode": "PUBLIC_SPEC_REIMPLEMENTATION_WITH_EXPLICIT_CONTINUITY_EXTENSION",
+        "capabilities": [
+          "native-entry-identity",
+          "exact-proof-reference",
+          "product-sequence-predecessor",
+          "historical-current-separation",
+          "whole-envelope-binding"
+        ],
+        "requiredEvidence": [
+          "ordered supplied entries",
+          "requested anchor identity",
+          "original envelope for whole-envelope claims"
+        ],
+        "nativeVocabulary": [
+          "new",
+          "idempotent",
+          "conflict"
+        ]
+      }
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "HISTORY_REFERENCE_NOT_BOUND"
+    ]
+  },
+  {
+    "id": "git-kind-git-artifact",
+    "expected": "INVESTIGATE",
+    "actual": "INSUFFICIENT_EVIDENCE",
+    "continuity": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical",
+      "GIT_CLOSURE_UNAVAILABLE"
+    ]
+  },
+  {
+    "id": "git-kind-unsupported-git-artifact",
+    "expected": "INVESTIGATE",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical"
+    ]
+  },
+  {
+    "id": "git-kind-opaque-artifact",
+    "expected": "INVESTIGATE",
+    "actual": "VERIFIED",
+    "continuity": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "reason": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "rvr.v0.digest_match",
+      "rvr.recompute.identical"
+    ]
+  }
+]

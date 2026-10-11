@@ -1,0 +1,258 @@
+{
+  "id": "T02_native_negative",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "REPRODUCED",
+    "notes": ""
+  },
+  "input": {
+    "input": {
+      "profile": "scan_subject_binding.v0",
+      "source_pin": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "case_id": "independent_negative",
+      "input": {
+        "public_key_ed25519": "b25c1bedd9e7e182151a9248f1fa060bcb9bbbdd565dc30b6bd3262976ef4c7b",
+        "toy_scan": {
+          "scanner_version": "audit02-detached-toy/1",
+          "pattern": "audit-poison-token"
+        },
+        "corpus": [
+          {
+            "id": "independent-audit-policy",
+            "content": "Allowed amount is 37 USD. audit-poison-token"
+          }
+        ],
+        "manifest": {
+          "body": {
+            "rag_corpus": {
+              "merkle_root": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+              "poisoning_scan": {
+                "result": "clean",
+                "scanner_version": "audit02-detached-toy/1",
+                "subject_digest": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+                "semantics": "recordwise"
+              }
+            }
+          },
+          "sig": "40cc374f9859c230a88cc8b1048ad1ccd0a54e71889abb83d6a7db58b3d74bcaee22aed381cd48ca73b2600daee0b50350eb02f25af550f1feb514c41fa32102"
+        },
+        "decision": {
+          "corpus_root": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+          "effective_dataset_digest": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+          "query": "allowed amount",
+          "k": 1,
+          "retrieved": [
+            {
+              "id": "independent-audit-policy",
+              "content": "Allowed amount is 37 USD. audit-poison-token"
+            }
+          ],
+          "answer": "37 USD",
+          "inclusion_proofs": []
+        }
+      },
+      "artifact": {
+        "profile": "scan_subject_binding.v0",
+        "reproduced": 1,
+        "results": [
+          {
+            "case_id": "independent_negative",
+            "reproduced": true,
+            "result": {
+              "evidence_grade": "REPRODUCED",
+              "replay_bindings": "valid",
+              "result_only_check": "VALID",
+              "subject_bound_check": "CONTRADICTED"
+            }
+          }
+        ],
+        "total": 1
+      }
+    },
+    "context": {}
+  },
+  "output": {
+    "status": "REPRODUCED",
+    "semanticOutcome": "REFUTED",
+    "recomputationStatus": "REPRODUCED",
+    "reasonCodes": [
+      "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+      "TRUSTLESS_NATIVE_CONTRADICTION"
+    ],
+    "nativeResult": {
+      "suiteId": "scan_subject_binding.v0",
+      "checkId": "conformance",
+      "caseId": "independent_negative",
+      "verdict": "PASS",
+      "semanticVerdict": "CONTRADICTED",
+      "evidenceGrade": "REPRODUCED",
+      "sourcePin": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "vectorCorpusIdentity": "a0681603f559d682da0462f0b8710d91cb3f6efe51f9935c9f9e4ff911a5c9ea",
+      "contractMode": null,
+      "runnerContractInterpretation": "MAIN_SELF_GRADING",
+      "result": {
+        "evidence_grade": "REPRODUCED",
+        "replay_bindings": "valid",
+        "result_only_check": "VALID",
+        "subject_bound_check": "CONTRADICTED"
+      },
+      "savedArtifact": {
+        "profile": "scan_subject_binding.v0",
+        "reproduced": 1,
+        "results": [
+          {
+            "case_id": "independent_negative",
+            "reproduced": true,
+            "result": {
+              "evidence_grade": "REPRODUCED",
+              "replay_bindings": "valid",
+              "result_only_check": "VALID",
+              "subject_bound_check": "CONTRADICTED"
+            }
+          }
+        ],
+        "total": 1
+      },
+      "recomputedArtifact": {
+        "profile": "scan_subject_binding.v0",
+        "reproduced": 1,
+        "results": [
+          {
+            "case_id": "independent_negative",
+            "reproduced": true,
+            "result": {
+              "evidence_grade": "REPRODUCED",
+              "replay_bindings": "valid",
+              "result_only_check": "VALID",
+              "subject_bound_check": "CONTRADICTED"
+            }
+          }
+        ],
+        "total": 1
+      },
+      "runner": {
+        "detail": "}",
+        "kind": "SUITE",
+        "name": "scan-subject-binding-v0/conformance",
+        "ok": true,
+        "verdict": "PASS"
+      },
+      "replayFailures": []
+    },
+    "execution": {
+      "status": "COMPLETED",
+      "exitCode": 0,
+      "signal": null,
+      "argv": [
+        "python",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\src\\adapters\\native\\trustless-bridge.py"
+      ],
+      "stdout": "{\"computed_corpus_digest\":\"sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f\",\"computed_effective_dataset_digest\":\"sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f\",\"native_artifact\":{\"profile\":\"scan_subject_binding.v0\",\"reproduced\":1,\"results\":[{\"case_id\":\"independent_negative\",\"reproduced\":true,\"result\":{\"evidence_grade\":\"REPRODUCED\",\"replay_bindings\":\"valid\",\"result_only_check\":\"VALID\",\"subject_bound_check\":\"CONTRADICTED\"}}],\"total\":1},\"native_exit_code\":0,\"native_result\":{\"evidence_grade\":\"REPRODUCED\",\"replay_bindings\":\"valid\",\"result_only_check\":\"VALID\",\"subject_bound_check\":\"CONTRADICTED\"},\"native_stderr\":\"\",\"native_vector_digest\":\"a0681603f559d682da0462f0b8710d91cb3f6efe51f9935c9f9e4ff911a5c9ea\",\"ok\":true,\"profile\":\"scan_subject_binding.v0\",\"python_version\":\"3.12.10\",\"replay_failures\":[],\"runner_result\":{\"detail\":\"}\",\"kind\":\"SUITE\",\"name\":\"scan-subject-binding-v0/conformance\",\"ok\":true,\"verdict\":\"PASS\"},\"signature_valid\":true}\n",
+      "stderr": "",
+      "stdoutSha256": "8ba82b8c254f4af21a52f760a5f9a7e9fd47a1d2c92ad20597090336b67c8aa0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "provenance": {
+      "profileId": "receiptos.verify.trustless-scan.v2",
+      "nativeProfileId": "scan_subject_binding.v0",
+      "sourceRepository": "https://github.com/trustless-ai/recompute-kit",
+      "sourceCommit": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "license": "CC0-1.0",
+      "maturity": "EXPERIMENTAL",
+      "sourceMaturity": "STABLE",
+      "sourceState": "PUBLIC_MAIN",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "NATIVE_SCAN_SUBJECT_BINDING",
+        "NATIVE_ED25519_MANIFEST_CHECK",
+        "NATIVE_RESULT_REPLAY",
+        "NATIVE_SELF_GRADING_RUNNER"
+      ],
+      "requiredEvidence": [
+        "signed-scan-manifest",
+        "corpus-and-decision",
+        "saved-native-scan-result"
+      ],
+      "nativeVocabulary": {
+        "semantic": [
+          "NO_FINDING",
+          "CONTRADICTED",
+          "CANNOT_ESTABLISH",
+          "NOT_VALID"
+        ],
+        "evidenceGrade": [
+          "REPRODUCED",
+          "AUTHENTICATED_REPORT",
+          null
+        ],
+        "runner": [
+          "PASS",
+          "SUITE",
+          "DRIFT",
+          "RUNNER",
+          "NOT COVERED",
+          "UNVERIFIABLE"
+        ],
+        "replay": [
+          "REPRODUCED",
+          "DIVERGED",
+          "CANNOT_RECOMPUTE"
+        ]
+      },
+      "contractMode": "MAIN_SELF_GRADING",
+      "reporterContract": "NOT_IMPLEMENTED",
+      "functions": [
+        "check_decision",
+        "sig_ok",
+        "subject_bound",
+        "result_only",
+        "main",
+        "run_suite"
+      ]
+    },
+    "limitations": [
+      "sourceMaturity STABLE identifies the merged public relation; maturity EXPERIMENTAL identifies this bounded product integration, not production security certification or full recompute-kit conformance.",
+      "Only scan_subject_binding.v0 is executable here. Other suites and PR57 reporter contracts are unsupported.",
+      "NO_FINDING means only this declared scanner found nothing in its bound subject; it never means POISONING_ABSENT.",
+      "AUTHENTICATED_REPORT establishes a signed assertion; it does not establish scanner-origin execution.",
+      "The supplied scanner pattern/version is a declared deterministic toy scan, not a general poisoning detector.",
+      "Canonical runner PASS records reproduction against the saved target; it is not an independent positive semantic verdict."
+    ],
+    "evidenceGrade": "REPRODUCED",
+    "semanticCompatibility": null,
+    "observedSubject": {
+      "kind": "rag-effective-dataset",
+      "id": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+      "version": "audit02-detached-toy/1",
+      "artifact_digest": "9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f"
+    },
+    "observedArtifactDigest": "9a546b3719a03cbac10ab2be5c06603ac3d2dfb88cfdf525088851c3fc11fe4d",
+    "nativeBinding": {
+      "profileId": "scan_subject_binding.v0",
+      "caseId": "independent_negative",
+      "inputDigest": "9a546b3719a03cbac10ab2be5c06603ac3d2dfb88cfdf525088851c3fc11fe4d",
+      "subject": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+      "corpusDigest": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f"
+    },
+    "binding": {
+      "corpusDigest": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+      "effectiveDatasetDigest": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+      "signedScannerSubject": "sha256:9d53475c1112205042f9b438e855d84f4caee1111228d7842c1cac77f7c7e35f",
+      "signatureValid": true,
+      "scannerVersion": "audit02-detached-toy/1",
+      "declaredToyScan": {
+        "scanner_version": "audit02-detached-toy/1",
+        "pattern": "audit-poison-token"
+      },
+      "query": "allowed amount",
+      "k": 1
+    }
+  },
+  "assessment": "PASS",
+  "actual": "REPRODUCED",
+  "inputSha256": "f531aebd07fc782b9f08f5cfca946182fa40b6a80db3b64cc110a600c711e5c4"
+}
