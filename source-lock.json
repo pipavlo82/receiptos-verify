@@ -8,6 +8,11 @@
       "sha256": "126d3ed14818ca13d9e9d10e9a477bc66b5a795b3f44aedd9b518863f4965d25"
     },
     {
+      "path": ".github/workflows/canonical-pinned.yml",
+      "bytes": 1625,
+      "sha256": "9e4d7503cd2d9cca10f585d2b2246c9a3fce0a75b7027b7cff3a8fe995b5d134"
+    },
+    {
       "path": ".gitignore",
       "bytes": 125,
       "sha256": "39ed31851cb0144838794e09f3eb5f7d0e8a1d6e68915cebf11cd5eba51f0769"
@@ -46,6 +51,11 @@
       "path": "docs/provenance.md",
       "bytes": 5174,
       "sha256": "c63a057fcdf53af00ff5e25d81baf8ad5095d233e7d2ef7a042ddbe0f027728f"
+    },
+    {
+      "path": "docs/publication-v0.1.0.md",
+      "bytes": 2512,
+      "sha256": "016774dc27c06a1452a144fc2c52ea3e82fd71c7e2895f15c8a6ca0e59094a8e"
     },
     {
       "path": "docs/trust-boundaries.md",
@@ -481,6 +491,11 @@
       "path": "tools/preserve-npm-licenses.mjs",
       "bytes": 1422,
       "sha256": "b82e65c8d081766f5af1c18d8c0910401aba95371b928641d5f4e2f2df3ace4e"
+    },
+    {
+      "path": "tools/public_release_gate.py",
+      "bytes": 9351,
+      "sha256": "50257e857646659a70d62fa4f6ca86f4e897c6038e9194cdfc667b45b907b49a"
     },
     {
       "path": "tools/reproduce.mjs",
