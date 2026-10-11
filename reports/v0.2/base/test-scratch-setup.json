@@ -1,0 +1,6 @@
+{
+  "path": "reports/tmp",
+  "initially_absent": true,
+  "created_empty": true,
+  "reason": "git.test.mjs requires an existing mkdtemp parent"
+}

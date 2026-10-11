@@ -1,0 +1,7 @@
+{
+  "observed_utc": "2026-10-11T22:46:28.018688+00:00",
+  "raw": "62cd3e59c8f568496ed087d55f0aec3d63363b0a\trefs/heads/main\nd2226e56a935fc68e1571fa805468d8e1cadb69f\trefs/tags/v0.1.0\n62cd3e59c8f568496ed087d55f0aec3d63363b0a\trefs/tags/v0.1.0^{}\n",
+  "main": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "peeled_tag": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "tag_object": "d2226e56a935fc68e1571fa805468d8e1cadb69f"
+}

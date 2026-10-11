@@ -1,0 +1,459 @@
+{
+  "id": "G02",
+  "title": "Same authenticated receipt cannot establish another commit",
+  "synthetic": true,
+  "oracle": {
+    "kind": "DETACHED_LITERAL_RELATIONAL_EXPECTATION",
+    "relation": "Same authenticated receipt cannot establish another commit",
+    "positive_control": "G01",
+    "mutants": []
+  },
+  "request": {
+    "schema": "receiptos.verify.request.v2",
+    "verification_profile": "receiptos.verify.generic.v2",
+    "adapter": "rvr",
+    "claim": {
+      "id": "synthetic:artifact-predicate",
+      "kind": "SHA256_EQUALS",
+      "parameters": {
+        "expected_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+      }
+    },
+    "subject": {
+      "kind": "git-artifact",
+      "id": "demo:receiptos",
+      "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+      "commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+      "artifact_path": "result.txt",
+      "version": "1"
+    },
+    "scope": {
+      "evidence_member": "artifact"
+    },
+    "authority": {
+      "id": "synthetic-demo",
+      "class": "INDEPENDENT_RECOMPUTATION"
+    },
+    "policy": {
+      "id": "local-generic",
+      "version": "2",
+      "trusted_keys": [
+        {
+          "id": "synthetic-demo",
+          "spki_base64": "MCowBQYDK2VwAyEAiojj3XQJ8ZX9UtstPLpdcspnCb8dlBIb83SIAbQPb1w="
+        }
+      ],
+      "required_layers": [
+        "INTEGRITY",
+        "AUTHENTICITY",
+        "SUBJECT_BINDING",
+        "RECOMPUTATION",
+        "EVIDENCE_SUFFICIENCY",
+        "SEMANTIC_COMPATIBILITY"
+      ],
+      "minimum_grade": "LOCAL_RECOMPUTATION",
+      "verification_time": 1,
+      "established_assumptions": [],
+      "dependency_results": [],
+      "accepted_authorities": [
+        {
+          "id": "synthetic-demo",
+          "class": "INDEPENDENT_RECOMPUTATION"
+        }
+      ]
+    },
+    "version": "2",
+    "time": {
+      "not_before": 0,
+      "not_after": 100
+    },
+    "assumptions": [],
+    "dependencies": [],
+    "evidence_requirements": [
+      "artifact",
+      "adapter-input",
+      "execution"
+    ],
+    "evidence": [],
+    "requested_guarantees": []
+  },
+  "bundle": {
+    "schema": "receiptos.verify.bundle.v2",
+    "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+    "statement": {
+      "schema": "receiptos.verify.statement.v2",
+      "verification_profile": "receiptos.verify.generic.v2",
+      "adapter": "rvr",
+      "surface": {
+        "claim": {
+          "id": "synthetic:artifact-predicate",
+          "kind": "SHA256_EQUALS",
+          "parameters": {
+            "expected_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+          }
+        },
+        "subject": {
+          "kind": "git-artifact",
+          "id": "demo:receiptos",
+          "artifact_digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+          "commit": "6d0d1867b0b3e1cb1c6c56caea39d583e4535250",
+          "tree": "8d840f6a9837c1c8f75e7a051ddc2e993d0e5184",
+          "artifact_path": "result.txt",
+          "version": "1"
+        },
+        "scope": {
+          "evidence_member": "artifact"
+        },
+        "authority": {
+          "id": "synthetic-demo",
+          "class": "INDEPENDENT_RECOMPUTATION"
+        },
+        "policy": {
+          "id": "local-generic",
+          "version": "2"
+        },
+        "version": "2",
+        "time": {
+          "not_before": 0,
+          "not_after": 100
+        },
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "artifact",
+          "adapter-input",
+          "execution"
+        ]
+      },
+      "asserted_result": "PASS",
+      "evidence_manifest": [
+        {
+          "id": "artifact",
+          "role": "artifact",
+          "digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+          "size": 36
+        },
+        {
+          "id": "commit",
+          "role": "git-commit",
+          "digest": "47e86aa59fa6f0c28a9727b9833af81c68eeaff778eda9e9312077f4916db7ee",
+          "size": 192
+        },
+        {
+          "id": "tree",
+          "role": "git-tree",
+          "digest": "158bb5deadee4bb12cd66dd9a97c390b7cd10e4002bbcb5a90bf49d93deb12e3",
+          "size": 38
+        },
+        {
+          "id": "native-result",
+          "role": "native-result",
+          "digest": "49df175105cda22bf42796ae08ed1162e22a771cd0bc5a3193c1bdc48be415a4",
+          "size": 331
+        },
+        {
+          "id": "adapter-input",
+          "role": "adapter-input",
+          "digest": "f00063c94409363e594dff4c1ab754c43a055fb715388047b3a21acade0dac98",
+          "size": 5571
+        }
+      ],
+      "payload_digest": "f0f5862812cf63d06c5e399a9709f443b7e47a4f156dcb826fb9607f55dc0b93",
+      "crypto": {
+        "provider": "ed25519",
+        "key_id": "synthetic-demo"
+      }
+    },
+    "signature_base64": "KPEVN6dLSY+QjJ+adTfv3GrZzC8VQnIGWxZVPqsZuLZylu9lmP6myhMT2G3kPQOLe68XrFbh+iZkDiBMOjqiCw==",
+    "evidence": [
+      {
+        "id": "artifact",
+        "bytes_base64": "UmVjZWlwdE9TIFZlcmlmeSBzeW50aGV0aWMgYXJ0aWZhY3QK"
+      },
+      {
+        "id": "commit",
+        "bytes_base64": "dHJlZSA4ZDg0MGY2YTk4MzdjMWM4Zjc1ZTdhMDUxZGRjMmU5OTNkMGU1MTg0CmF1dGhvciBTeW50aGV0aWMgRml4dHVyZSA8Zml4dHVyZUBleGFtcGxlLmludmFsaWQ+IDAgKzAwMDAKY29tbWl0dGVyIFN5bnRoZXRpYyBGaXh0dXJlIDxmaXh0dXJlQGV4YW1wbGUuaW52YWxpZD4gMCArMDAwMAoKU3ludGhldGljIGV2aWRlbmNlIG9ubHkK"
+      },
+      {
+        "id": "tree",
+        "bytes_base64": "MTAwNjQ0IHJlc3VsdC50eHQAMEtSr1AEFGDCWtRgeYH+PD3mGws="
+      },
+      {
+        "id": "native-result",
+        "bytes_base64": "eyJldmFsdWF0aW9uIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6ImQyZTM4MDI4YjdhNDY0NmViNDZjOGFmMDQ1MGQxOWUzZjEyOGQ1YzViOWRiYmRiODUxOGFiYWIzN2IzOTM5MzMiLCJvYnNlcnZlZERpZ2VzdCI6ImQyZTM4MDI4YjdhNDY0NmViNDZjOGFmMDQ1MGQxOWUzZjEyOGQ1YzViOWRiYmRiODUxOGFiYWIzN2IzOTM5MzMiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIn0sIm91dGNvbWUiOiJWRVJJRklFRCIsInJlYXNvbkNvZGUiOiJydnIudjAuZGlnZXN0X21hdGNoIiwic2NoZW1hIjoicnZyLmNhbm9uaWNhbC1yZXN1bHQudjAifQ=="
+      },
+      {
+        "id": "adapter-input",
+        "bytes_base64": "eyJjYW5kaWRhdGVDYXNlIjp7ImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6ImQyZTM4MDI4YjdhNDY0NmViNDZjOGFmMDQ1MGQxOWUzZjEyOGQ1YzViOWRiYmRiODUxOGFiYWIzN2IzOTM5MzMiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM2IiwiZGlnZXN0IjoiZDJlMzgwMjhiN2E0NjQ2ZWI0NmM4YWYwNDUwZDE5ZTNmMTI4ZDVjNWI5ZGJiZGI4NTE4YWJhYjM3YjM5MzkzMyIsImlkIjoiYXJ0aWZhY3QiLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0iLCJzdGF0dXMiOiJQUkVTRU5UIn1dLCJzY2hlbWEiOiJydnIuZXZpZGVuY2Utc2V0LnYwIn0sInBheWxvYWRzQmFzZTY0Ijp7ImFydGlmYWN0IjoiVW1WalpXbHdkRTlUSUZabGNtbG1lU0J6ZVc1MGFHVjBhV01nWVhKMGFXWmhZM1FLIn19LCJvcmlnaW5hbEJ1bmRsZSI6eyJjYW5vbmljYWxSZXN1bHQiOnsiZXZhbHVhdGlvbiI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiJkMmUzODAyOGI3YTQ2NDZlYjQ2YzhhZjA0NTBkMTllM2YxMjhkNWM1YjlkYmJkYjg1MThhYmFiMzdiMzkzOTMzIiwib2JzZXJ2ZWREaWdlc3QiOiJkMmUzODAyOGI3YTQ2NDZlYjQ2YzhhZjA0NTBkMTllM2YxMjhkNWM1YjlkYmJkYjg1MThhYmFiMzdiMzkzOTMzIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyJ9LCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInNjaGVtYSI6InJ2ci5jYW5vbmljYWwtcmVzdWx0LnYwIn0sImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6ImQyZTM4MDI4YjdhNDY0NmViNDZjOGFmMDQ1MGQxOWUzZjEyOGQ1YzViOWRiYmRiODUxOGFiYWIzN2IzOTM5MzMiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM2IiwiZGlnZXN0IjoiZDJlMzgwMjhiN2E0NjQ2ZWI0NmM4YWYwNDUwZDE5ZTNmMTI4ZDVjNWI5ZGJiZGI4NTE4YWJhYjM3YjM5MzkzMyIsImlkIjoiYXJ0aWZhY3QiLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0iLCJzdGF0dXMiOiJQUkVTRU5UIn1dLCJzY2hlbWEiOiJydnIuZXZpZGVuY2Utc2V0LnYwIn0sInBheWxvYWRzQmFzZTY0Ijp7ImFydGlmYWN0IjoiVW1WalpXbHdkRTlUSUZabGNtbG1lU0J6ZVc1MGFHVjBhV01nWVhKMGFXWmhZM1FLIn0sInJlY2VpcHQiOnsiY2xhaW1EaWdlc3QiOiI2NGI1MmE0ZTQ0OWFkODdhZGMzNDBkZTMyM2ZkMDFmNWY2MDFmMjMyOTMzZGYzM2U0YjQ4ZGVhNjFlMjYwZGM1IiwiZXZpZGVuY2VTZXREaWdlc3QiOiIzZGE0MzYzZmNmNzFiYTYxZDQ1MmMxOGVjOTlhOTNlYWUyZGQ5NWNhMjc5M2U1YmNjYjIxYWI0OGVmNmU4NGZmIiwib3V0Y29tZSI6IlZFUklGSUVEIiwicmVhc29uQ29kZSI6InJ2ci52MC5kaWdlc3RfbWF0Y2giLCJyZXN1bHREaWdlc3QiOiI0OWRmMTc1MTA1Y2RhMjJiZjQyNzk2YWUwOGVkMTE2MmUyMmE3NzFjZDBiYzVhMzE5M2MxYmRjNDhiZTQxNWE0IiwidmVyaWZpY2F0aW9uUHJvZmlsZURpZ2VzdCI6IjUxZjc5NDQyZTk2MzM5Y2E0NWU5ZTZjYzBjODIzMjgzM2VmYmVlMjBlNzQ4MGRmMDA5ODdkYmM5N2RhNzI5NDgifSwidmVyaWZpY2F0aW9uUHJvZmlsZSI6eyJjYW5vbmljYWxCeXRlQ29udHJhY3QiOnsiYXJyYXlPcmRlciI6InByZXNlcnZlZC13aXRoLWR1cGxpY2F0ZXMiLCJkb21haW4iOiJudWxsLWJvb2xlYW4tdW5pY29kZS1zY2FsYXItc3RyaW5nLWFycmF5LW9iamVjdCIsImVuY29kaW5nIjoiVVRGLTgiLCJpZCI6InJ2ci1jYW5vbmljYWwtanNvbi12MCIsImxpbmVTZXBhcmF0b3JzIjoiVSsyMDI4LWFuZC1VKzIwMjktbGl0ZXJhbCIsIm51bWJlcnMiOiJmb3JiaWRkZW4iLCJvYmplY3RLZXlPcmRlciI6InVuaWNvZGUtc2NhbGFyLXZhbHVlLWFzY2VuZGluZyIsInNvbGlkdXMiOiJsaXRlcmFsIiwic3RyaW5nRXNjYXBpbmciOiJydnItanNvbi1zdHJpbmctZXNjYXBpbmctdjAiLCJ1bmljb2RlIjoic2NhbGFyLXZhbHVlcy1vbmx5LW5vLW5vcm1hbGl6YXRpb24iLCJ3aGl0ZXNwYWNlIjoibm9uZSJ9LCJjYW5vbmljYWxSZXN1bHRDb250cmFjdCI6eyJvdXRjb21lUHJvamVjdGlvbiI6Ii9vdXRjb21lIiwicmVhc29uQ29kZVByb2plY3Rpb24iOiIvcmVhc29uQ29kZSIsInNjaGVtYVBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvcnZyLnNjaGVtYS5qc29uIiwic2NoZW1hUG9pbnRlciI6IiMvJGRlZnMvY2Fub25pY2FsUmVzdWx0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJjb25mb3JtYW5jZVZlY3RvclNldCI6eyJkaWdlc3QiOiIyZWI1ZTBjMDU2ZDEzYzRiZWRhNGIzZGE2ZmFmZGNkMzRhNmJkOTY0NzkwMzBlMzkxNGE3OWQwODY3OWMwNjg3IiwiZGlnZXN0UnVsZSI6InNoYTI1Ni11dGY4LXNvcnRlZC1wYXRoLXRhYi1maWxlLXNoYTI1Ni1sZi1yb3dzIiwiaWQiOiJydnItdjAtZmlyc3QtZmFsc2lmaWNhdGlvbi1zZXQiLCJtZW1iZXJzIjpbeyJpZCI6ImV4cGVjdGVkLXJlc3VsdHMiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL2V4cGVjdGVkLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOmZhbHNlLCJzaGEyNTYiOiIwZWQyM2VlMzUzMGRmOTNkZGUyZjg3OTk4MWQyOGRkYjNmNjBmYzI1MGM4NjUyZDEwOWRkNjVmZGIyMjE5M2NlIn0seyJpZCI6ImFkdmVyc2FyaWFsLW11dGFudHMiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL211dGFudHMuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6ImQ1ZDE2Y2M1M2VjMGQ5YmU1Mzk2OGQ3ZmZjMDFmZTAxOWNiOGIyNjMwMzkwYzA0NDMxZjZlZTlmNTRlZGY4NDcifSx7ImlkIjoidmVyaWZpY2F0aW9uLXZlY3RvcnMiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlY3RvcnMuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjE3MGZjNjI1NzZmYThlZGIyMjA3M2Y3M2IyOGQ5YWMwZGVmZjI2NDUxZWY2NTEzNzg4MzljZDQ1OGRhNzMxMmYifV19LCJkZXBlbmRlbmN5UmVzb2x1dGlvbiI6eyJiYXNlIjoiU1VQUExJRURfUFJPRklMRV9QQUNLQUdFX1JPT1QiLCJsb2NhdG9yUm9sZSI6Ik5PUk1BVElWRV9QQUNLQUdFX1JFTEFUSVZFX1BBVEgiLCJwYXRoRm9ybWF0IjoicmVsYXRpdmUtcG9zaXgtbm8tZW1wdHktZG90LWRvdGRvdC1vci1jb2xvbi1zZWdtZW50cyIsInZlcmlmaWNhdGlvbk9yZGVyIjoicmVzb2x2ZS1yZWFkLXNoYTI1Ni1tYXRjaC11c2UifSwiZXZpZGVuY2VTZXRDb250cmFjdCI6eyJkaWdlc3RSdWxlIjoic2hhMjU2LXV0ZjgtcnZyLWNhbm9uaWNhbC1qc29uLXYwLW5vcm1hbGl6ZWQtbWVtYmVyLW9yZGVyIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9ldmlkZW5jZVNldCIsInNjaGVtYVNoYTI1NiI6Ijk3Nzk5NDAzZDhlYjk2YzA0NjkzMDM5NmMzOWUwZjFjM2U3NmQ2YzM1ZmQwNDM1OTM3NDQ2Y2U4NDRiZDRkYWUifSwiZXh0ZXJuYWxDb250ZXh0UG9saWN5Ijp7ImFtYmllbnRJbnB1dHMiOiJGT1JCSURERU4iLCJpbW11dGFibGVDb21taXRtZW50cyI6W10sIm1vZGUiOiJGT1JCSURERU5fVU5MRVNTX0NPTU1JVFRFRCJ9LCJwcm9maWxlSWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwIiwicHJvZmlsZVNjaGVtYUNvbnRyYWN0Ijp7ImNvbnN0cmFpbnRzIjp7ImlkIjoicnZyLWdlbmVyaWMtc2hhMjU2LWVxdWFscy1wcm9maWxlLXNjaGVtYSIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvcnZyLWdlbmVyaWMtc2hhMjU2LWVxdWFscy12MC5wcm9maWxlLnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiJlY2RlZDk2YzVmNThmNzA1N2UyYzVjMGI2ZDk3ODk5NDJhOWE3YmY2MDBmNGE0NTMzODdlOTlmODQwNmU3YmFmIn0sIm1hbmlmZXN0Ijp7ImlkIjoidmVyaWZpY2F0aW9uLXByb2ZpbGUtbWFuaWZlc3Qtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC92ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiMTQ4YWZlYjQ4NGQzODY2YzFjYWFlODJlNTc0MTgyYzFiNzQ4ZGQ0NjFkZmFlYjFkODA5NWVjZjQ5MDU2OTBjMSJ9fSwicmVhc29uQ29kZU5hbWVzcGFjZSI6eyJnYXRlUmVqZWN0aW9ucyI6WyJydnIuZ2F0ZS5zY2hlbWFfaW52YWxpZCIsInJ2ci5nYXRlLmlkZW50aXR5X21pc21hdGNoIiwicnZyLmdhdGUucmVzdWx0X3Byb2plY3Rpb25fbWlzbWF0Y2giLCJydnIuZ2F0ZS5ldmlkZW5jZV9jbG9zdXJlX2luY29tcGxldGUiXSwicmVjb21wdXRhdGlvbiI6WyJydnIucmVjb21wdXRlLmlkZW50aWNhbCIsInJ2ci5yZWNvbXB1dGUuY2Fub25pY2FsX3Jlc3VsdF9kaXZlcmdlZCIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfdW5hdmFpbGFibGUiLCJydnIucmVjb21wdXRlLm5vcm1hdGl2ZV9kZXBlbmRlbmN5X2lkZW50aXR5X21pc21hdGNoIiwicnZyLnJlY29tcHV0ZS5jb21taXR0ZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXSwidmVyaWZpY2F0aW9uIjpbInJ2ci52MC5kaWdlc3RfbWF0Y2giLCJydnIudjAuZGlnZXN0X21pc21hdGNoIiwicnZyLnYwLnJlcXVpcmVkX2V2aWRlbmNlX3VuYXZhaWxhYmxlIl19LCJyZXN1bHRIYXNoUnVsZXMiOnsiYWxnb3JpdGhtIjoiU0hBLTI1NiIsImVuY29kaW5nIjoiVVRGLTgtZXhhY3RseS1vbmNlIiwiaW5wdXQiOiJydnItY2Fub25pY2FsLWpzb24tdjAoY2Fub25pY2FsUmVzdWx0KSIsIm91dHB1dCI6Imxvd2VyY2FzZS1oZXgtbm8tcHJlZml4In0sInNjaGVtYSI6InJ2ci52ZXJpZmljYXRpb24tcHJvZmlsZS52MCIsInNjaGVtYUNvbnRyYWN0cyI6W3siaWQiOiJydnItc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6Ijk3Nzk5NDAzZDhlYjk2YzA0NjkzMDM5NmMzOWUwZjFjM2U3NmQ2YzM1ZmQwNDM1OTM3NDQ2Y2U4NDRiZDRkYWUifV0sInZlcmlmaWNhdGlvblNwZWNpZmljYXRpb24iOnsiaWQiOiJ2ZXJpZmljYXRpb24tc3BlY2lmaWNhdGlvbiIsInBhdGgiOiJkb2NzL3NwZWMvUkVDT01QVVRBQkxFX1ZFUklGSUNBVElPTl9SRUNFSVBUU19WMC5tZCIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiODEwNzdkZGJmNTA2MjRiYzcwOTQxY2Y1M2E0ZjU0MjYwNGU5MjZhNjUzZDdmY2IzYTM2MzEwZmY1NDMwYjk3MyJ9fX19"
+      }
+    ],
+    "payload": {
+      "crystal": {
+        "schema": "stealth.session.evidence.v1",
+        "session_id": "synthetic-receiptos-verify",
+        "directory": "local/synthetic",
+        "task": {
+          "title": "Synthetic local artifact evidence"
+        },
+        "agent": {
+          "id": "synthetic",
+          "runtime": "local"
+        },
+        "scope": {
+          "permission": null
+        },
+        "authorization": {
+          "delegation_ref": null,
+          "delegator": null,
+          "agent_operator": null,
+          "target": "local/synthetic",
+          "allowed_actions": [],
+          "authorization_valid_from": null,
+          "authorization_expiry": null,
+          "authorization_checked_at": 0,
+          "authorization_state_hash": "synthetic",
+          "authorized_at_execution": null
+        },
+        "execution": [],
+        "commands": [],
+        "changes": {
+          "files_changed": [],
+          "diff_sha256": null
+        },
+        "metadata": {
+          "message_count": 0,
+          "diff_count": 0,
+          "generated_by": "receiptos-verify-synthetic-fixture"
+        },
+        "anchor": {
+          "merkle_proof_status": "not attached",
+          "merkle_root": null,
+          "merkle_leaf_index": null,
+          "merkle_proof": [],
+          "onchain_anchor_status": "not anchored",
+          "network": "local/off-chain",
+          "contract": null,
+          "tx_hash": null,
+          "verifier_status": "not verified",
+          "receipt_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b"
+        }
+      },
+      "adapter": {
+        "originalBundle": {
+          "receipt": {
+            "claimDigest": "64b52a4e449ad87adc340de323fd01f5f601f232933df33e4b48dea61e260dc5",
+            "evidenceSetDigest": "3da4363fcf71ba61d452c18ec99a93eae2dd95ca2793e5bccb21ab48ef6e84ff",
+            "verificationProfileDigest": "51f79442e96339ca45e9e6cc0c8232833efbee20e7480df00987dbc97da72948",
+            "outcome": "VERIFIED",
+            "reasonCode": "rvr.v0.digest_match",
+            "resultDigest": "49df175105cda22bf42796ae08ed1162e22a771cd0bc5a3193c1bdc48be415a4"
+          },
+          "claim": {
+            "schema": "rvr.claim.sha256-equals.v0",
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+          },
+          "evidenceSet": {
+            "schema": "rvr.evidence-set.v0",
+            "members": [
+              {
+                "id": "artifact",
+                "status": "PRESENT",
+                "mediaType": "application/octet-stream",
+                "byteLength": "36",
+                "digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+              }
+            ]
+          },
+          "payloadsBase64": {
+            "artifact": "UmVjZWlwdE9TIFZlcmlmeSBzeW50aGV0aWMgYXJ0aWZhY3QK"
+          },
+          "verificationProfile": {
+            "schema": "rvr.verification-profile.v0",
+            "profileId": "rvr-generic-sha256-equals-v0",
+            "profileSchemaContract": {
+              "manifest": {
+                "id": "verification-profile-manifest-schema",
+                "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+                "sha256": "148afeb484d3866c1caae82e574182c1b748dd461dfaeb1d8095ecf4905690c1",
+                "requiredForRecomputation": true
+              },
+              "constraints": {
+                "id": "rvr-generic-sha256-equals-profile-schema",
+                "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+                "sha256": "ecded96c5f58f7057e2c5c0b6d9789942a9a7bf600f4a453387e99f8406e7baf",
+                "requiredForRecomputation": true
+              }
+            },
+            "dependencyResolution": {
+              "base": "SUPPLIED_PROFILE_PACKAGE_ROOT",
+              "pathFormat": "relative-posix-no-empty-dot-dotdot-or-colon-segments",
+              "locatorRole": "NORMATIVE_PACKAGE_RELATIVE_PATH",
+              "verificationOrder": "resolve-read-sha256-match-use"
+            },
+            "verificationSpecification": {
+              "id": "verification-specification",
+              "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+              "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+              "requiredForRecomputation": true
+            },
+            "conformanceVectorSet": {
+              "id": "rvr-v0-first-falsification-set",
+              "members": [
+                {
+                  "id": "expected-results",
+                  "path": "conformance/rvr-v0/expected.json",
+                  "sha256": "0ed23ee3530df93dde2f879981d28ddb3f60fc250c8652d109dd65fdb22193ce",
+                  "requiredForRecomputation": false
+                },
+                {
+                  "id": "adversarial-mutants",
+                  "path": "conformance/rvr-v0/mutants.json",
+                  "sha256": "d5d16cc53ec0d9be53968d7ffc01fe019cb8b2630390c04431f6ee9f54edf847",
+                  "requiredForRecomputation": false
+                },
+                {
+                  "id": "verification-vectors",
+                  "path": "conformance/rvr-v0/vectors.json",
+                  "sha256": "170fc62576fa8edb22073f73b28d9ac0deff26451ef651378839cd458da7312f",
+                  "requiredForRecomputation": false
+                }
+              ],
+              "digest": "2eb5e0c056d13c4beda4b3da6fafdcd34a6bd96479030e3914a79d08679c0687",
+              "digestRule": "sha256-utf8-sorted-path-tab-file-sha256-lf-rows"
+            },
+            "canonicalByteContract": {
+              "id": "rvr-canonical-json-v0",
+              "encoding": "UTF-8",
+              "domain": "null-boolean-unicode-scalar-string-array-object",
+              "objectKeyOrder": "unicode-scalar-value-ascending",
+              "arrayOrder": "preserved-with-duplicates",
+              "unicode": "scalar-values-only-no-normalization",
+              "numbers": "forbidden",
+              "stringEscaping": "rvr-json-string-escaping-v0",
+              "solidus": "literal",
+              "lineSeparators": "U+2028-and-U+2029-literal",
+              "whitespace": "none"
+            },
+            "schemaContracts": [
+              {
+                "id": "rvr-schema",
+                "path": "conformance/rvr-v0/rvr.schema.json",
+                "sha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+                "requiredForRecomputation": true
+              }
+            ],
+            "evidenceSetContract": {
+              "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+              "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+              "schemaPointer": "#/$defs/evidenceSet",
+              "digestRule": "sha256-utf8-rvr-canonical-json-v0-normalized-member-order"
+            },
+            "canonicalResultContract": {
+              "schemaPath": "conformance/rvr-v0/rvr.schema.json",
+              "schemaSha256": "97799403d8eb96c046930396c39e0f1c3e76d6c35fd0435937446ce844bd4dae",
+              "schemaPointer": "#/$defs/canonicalResult",
+              "outcomeProjection": "/outcome",
+              "reasonCodeProjection": "/reasonCode"
+            },
+            "resultHashRules": {
+              "algorithm": "SHA-256",
+              "input": "rvr-canonical-json-v0(canonicalResult)",
+              "encoding": "UTF-8-exactly-once",
+              "output": "lowercase-hex-no-prefix"
+            },
+            "reasonCodeNamespace": {
+              "verification": [
+                "rvr.v0.digest_match",
+                "rvr.v0.digest_mismatch",
+                "rvr.v0.required_evidence_unavailable"
+              ],
+              "recomputation": [
+                "rvr.recompute.identical",
+                "rvr.recompute.canonical_result_diverged",
+                "rvr.recompute.normative_dependency_unavailable",
+                "rvr.recompute.normative_dependency_identity_mismatch",
+                "rvr.recompute.committed_evidence_unavailable"
+              ],
+              "gateRejections": [
+                "rvr.gate.schema_invalid",
+                "rvr.gate.identity_mismatch",
+                "rvr.gate.result_projection_mismatch",
+                "rvr.gate.evidence_closure_incomplete"
+              ]
+            },
+            "externalContextPolicy": {
+              "mode": "FORBIDDEN_UNLESS_COMMITTED",
+              "ambientInputs": "FORBIDDEN",
+              "immutableCommitments": []
+            }
+          },
+          "canonicalResult": {
+            "schema": "rvr.canonical-result.v0",
+            "outcome": "VERIFIED",
+            "reasonCode": "rvr.v0.digest_match",
+            "evaluation": {
+              "operation": "SHA256_EQUALS",
+              "evidenceMember": "artifact",
+              "expectedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933",
+              "observedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+            }
+          }
+        },
+        "candidateCase": {
+          "claim": {
+            "schema": "rvr.claim.sha256-equals.v0",
+            "operation": "SHA256_EQUALS",
+            "evidenceMember": "artifact",
+            "expectedDigest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+          },
+          "evidenceSet": {
+            "schema": "rvr.evidence-set.v0",
+            "members": [
+              {
+                "id": "artifact",
+                "status": "PRESENT",
+                "mediaType": "application/octet-stream",
+                "byteLength": "36",
+                "digest": "d2e38028b7a4646eb46c8af0450d19e3f128d5c5b9dbbdb8518abab37b393933"
+              }
+            ]
+          },
+          "payloadsBase64": {
+            "artifact": "UmVjZWlwdE9TIFZlcmlmeSBzeW50aGV0aWMgYXJ0aWZhY3QK"
+          }
+        }
+      },
+      "guarantees": null,
+      "continuity": null
+    }
+  },
+  "expected": {
+    "overall": "CONTRADICTED",
+    "layers": {
+      "INPUT": "ADMITTED",
+      "CANONICALIZATION": "VERIFIED",
+      "INTEGRITY": "VERIFIED",
+      "AUTHENTICITY": "VERIFIED",
+      "SUBJECT_BINDING": "CONTRADICTED",
+      "RECOMPUTATION": "REPRODUCED",
+      "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+      "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+      "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+      "CONTINUITY": "NOT_REQUESTED",
+      "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+      "PRODUCT_PROJECTION": "CONTRADICTED",
+      "EXPLAINABLE_REPORT": "GENERATED",
+      "PROVENANCE": "RECORDED"
+    },
+    "native": {
+      "RECOMPUTATION.semanticOutcome": "VERIFIED",
+      "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+    },
+    "reason_codes": [
+      "SUBJECT_MISMATCH"
+    ]
+  }
+}

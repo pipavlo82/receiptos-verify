@@ -32,5 +32,5 @@ for(const m of mutations) {
 }
 const counts=Object.fromEntries(['KILLED','SURVIVED','CRASHED','INVALID_OUTPUT','NOT_APPLIED','CONTROL_BROKEN','INVALID_BASELINE'].map(k=>[k,rows.filter(r=>r.status===k).length]));
 const report={schema:'receiptos.verify.mutation-report.v1',method:'Applied source change + preserved positive + structured semantic distinguishing witness. Checker crash is never itself a kill.',count:rows.length,counts,rows};
-await writeFile(new URL('../reports/mutations.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(counts));
+await writeFile(process.argv.includes('--out')?process.argv[process.argv.indexOf('--out')+1]:new URL('../reports/mutations.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(counts));
 process.exitCode=counts.KILLED===mutations.length?0:1;

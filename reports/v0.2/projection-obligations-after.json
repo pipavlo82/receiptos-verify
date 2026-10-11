@@ -1,0 +1,116 @@
+{
+  "captured_utc": "2026-10-11T22:46:28.279Z",
+  "source_sha256": "cbc0592d3f3ea7569afb19ce71f3b0d835d9d45494fe0a11062a44337ccead5e",
+  "positive_layers": {
+    "INPUT": {
+      "status": "ADMITTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "CANONICALIZATION": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "INTEGRITY": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "AUTHENTICITY": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "SUBJECT_BINDING": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "RECOMPUTATION": {
+      "status": "REPRODUCED",
+      "reasonCodes": [],
+      "nativeResult": null,
+      "semanticOutcome": "VERIFIED"
+    },
+    "EVIDENCE_SUFFICIENCY": {
+      "status": "SUFFICIENT",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "SEMANTIC_COMPATIBILITY": {
+      "status": "COMPATIBLE",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "GUARANTEE_PRESERVATION": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "CONTINUITY": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "DOMAIN_ADAPTERS": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "PRODUCT_PROJECTION": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "EXPLAINABLE_REPORT": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "PROVENANCE": {
+      "status": "RECORDED",
+      "reasonCodes": [],
+      "nativeResult": null
+    }
+  },
+  "input_descriptions": [
+    "Array(1)",
+    "enumerable throwing accessor at array index 0",
+    "[\"INTEGRITY\",\"INTEGRITY\"]"
+  ],
+  "positive_layer_byte_identity": "canonical same literal object from retained before receipt",
+  "getter_calls": 0,
+  "results": [
+    {
+      "name": "sparse-array",
+      "result": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "PROJECTION_INPUT_MALFORMED"
+        ],
+        "nativeResult": null
+      }
+    },
+    {
+      "name": "accessor-array",
+      "result": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "PROJECTION_INPUT_MALFORMED"
+        ],
+        "nativeResult": null
+      }
+    },
+    {
+      "name": "duplicate-array",
+      "result": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "PROJECTION_INPUT_MALFORMED"
+        ],
+        "nativeResult": null
+      }
+    }
+  ]
+}

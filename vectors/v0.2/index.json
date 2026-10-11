@@ -1,0 +1,158 @@
+{
+  "schema": "receiptos.verify.vector-index.v2",
+  "oracle": "Detached literal relation/status/reason expectations; generated native evidence is never its expected product verdict.",
+  "vectors": [
+    {
+      "id": "G01",
+      "title": "Exact generic claim and subject permit verification"
+    },
+    {
+      "id": "G02",
+      "title": "Same authenticated receipt cannot establish another commit"
+    },
+    {
+      "id": "G03",
+      "title": "Same artifact cannot establish another subject identity"
+    },
+    {
+      "id": "G04",
+      "title": "Same subject cannot establish another authority identity"
+    },
+    {
+      "id": "G05",
+      "title": "Evidence with exact narrow scope cannot establish broader requested scope"
+    },
+    {
+      "id": "G06",
+      "title": "Policy version must be preserved"
+    },
+    {
+      "id": "G07",
+      "title": "Declared dependency needs independently accepted premise"
+    },
+    {
+      "id": "G08",
+      "title": "Contradicted dependency cannot support requested claim"
+    },
+    {
+      "id": "G09",
+      "title": "Native Semantic ABI exact declaration links compatibly"
+    },
+    {
+      "id": "G10",
+      "title": "Native Semantic ABI rejects incompatible scope with identical subject"
+    },
+    {
+      "id": "G11",
+      "title": "Real recompute-kit native PASS cannot bypass incompatible requested claim"
+    },
+    {
+      "id": "G12",
+      "title": "Reproduced negative recompute-kit remains negative"
+    },
+    {
+      "id": "G13",
+      "title": "Interpoll signed intent binds exact supplied execution trace"
+    },
+    {
+      "id": "G14",
+      "title": "Valid action signature cannot authorize changed retry parameter"
+    },
+    {
+      "id": "G15",
+      "title": "Native PRF relation and downstream dependencies preserved"
+    },
+    {
+      "id": "G16",
+      "title": "Changed downstream PRF dependency violates transfer relation"
+    },
+    {
+      "id": "G17",
+      "title": "Valid receipt cannot establish unsupported semantic profile"
+    },
+    {
+      "id": "G18",
+      "title": "Integrity VERIFIED cannot override semantic contradiction"
+    },
+    {
+      "id": "G19",
+      "title": "Authenticity VERIFIED cannot override authority mismatch"
+    },
+    {
+      "id": "G20",
+      "title": "Non-Git artifact claim establishes all bounded requested layers"
+    },
+    {
+      "id": "G21",
+      "title": "PRF missing settlement remains UNVERIFIABLE"
+    },
+    {
+      "id": "G22",
+      "title": "Requested claim version is independent from subject version"
+    },
+    {
+      "id": "G23",
+      "title": "Satisfied dependency positive control"
+    },
+    {
+      "id": "G24",
+      "title": "Real recompute-kit native positive with compatible surface"
+    },
+    {
+      "id": "G25",
+      "title": "Same commit label cannot establish different artifact digest"
+    },
+    {
+      "id": "G26",
+      "title": "Unestablished upstream assumption remains insufficient"
+    },
+    {
+      "id": "G27",
+      "title": "Time applicability excludes expired evidence"
+    },
+    {
+      "id": "G28",
+      "title": "Empty attachments cannot certify success"
+    },
+    {
+      "id": "G29",
+      "title": "Authenticated opaque scanner report is not local scanner recomputation"
+    },
+    {
+      "id": "G30",
+      "title": "PRF reproduced native negative remains negative with preserved transfer"
+    },
+    {
+      "id": "I01",
+      "title": "Exact signed action and matching supplied execution"
+    },
+    {
+      "id": "I02",
+      "title": "Signature for target A cannot establish requested target B"
+    },
+    {
+      "id": "I03",
+      "title": "Signature for reaction cannot establish another action type"
+    },
+    {
+      "id": "I04",
+      "title": "Retry preserves exact intent with no duplicate new execution"
+    },
+    {
+      "id": "I05",
+      "title": "Retry changes material signed parameter"
+    },
+    {
+      "id": "I06",
+      "title": "Duplicate acceptance alone does not establish new execution"
+    },
+    {
+      "id": "I07",
+      "title": "Missing execution observation remains insufficient"
+    },
+    {
+      "id": "I08",
+      "title": "Valid action signature with unsupported action authority"
+    }
+  ]
+}

@@ -1,0 +1,787 @@
+{
+  "schema": "receiptos.verify.projection-table.v2",
+  "projection_version": "receiptos.verify.projection.v2",
+  "product_vocabulary": [
+    "VERIFIED",
+    "CONTRADICTED",
+    "INSUFFICIENT_EVIDENCE",
+    "CANNOT_RECOMPUTE",
+    "REJECTED_MALFORMED",
+    "UNSUPPORTED_PROFILE"
+  ],
+  "mandatory_layers": [
+    "INTEGRITY",
+    "AUTHENTICITY",
+    "SUBJECT_BINDING",
+    "RECOMPUTATION",
+    "EVIDENCE_SUFFICIENCY",
+    "SEMANTIC_COMPATIBILITY"
+  ],
+  "consumer_optional_layers": [
+    "GUARANTEE_PRESERVATION",
+    "CONTINUITY",
+    "DOMAIN_ADAPTERS"
+  ],
+  "success_statuses": {
+    "INTEGRITY": [
+      "VERIFIED"
+    ],
+    "AUTHENTICITY": [
+      "VERIFIED"
+    ],
+    "SUBJECT_BINDING": [
+      "VERIFIED"
+    ],
+    "RECOMPUTATION": [
+      "REPRODUCED"
+    ],
+    "EVIDENCE_SUFFICIENCY": [
+      "SUFFICIENT"
+    ],
+    "SEMANTIC_COMPATIBILITY": [
+      "COMPATIBLE"
+    ],
+    "GUARANTEE_PRESERVATION": [
+      "PRESERVED"
+    ],
+    "CONTINUITY": [
+      "PRESERVED",
+      "VERIFIED"
+    ],
+    "DOMAIN_ADAPTERS": [
+      "VERIFIED",
+      "PRESERVED"
+    ]
+  },
+  "precedence": [
+    {
+      "order": 1,
+      "predicate": "Invalid 14-layer structural contract, optional nested PRF productProjection, unknown status, invalid obligations or non-Boolean profile support",
+      "result": "REJECTED_MALFORMED"
+    },
+    {
+      "order": 2,
+      "predicate": "Any layer or supplied nested PRF product projection has REJECTED_MALFORMED",
+      "result": "REJECTED_MALFORMED"
+    },
+    {
+      "order": 3,
+      "predicate": "Any layer has CONTRADICTED or VIOLATED, any supplied nested PRF product projection has CONTRADICTED, or recomputation.semanticOutcome is REFUTED",
+      "result": "CONTRADICTED"
+    },
+    {
+      "order": 4,
+      "predicate": "Profile is unsupported, any required obligation has UNSUPPORTED or UNSUPPORTED_PROFILE, or required PRF product projection is UNSUPPORTED_PROFILE",
+      "result": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "order": 5,
+      "predicate": "Any required obligation has CANNOT_RECOMPUTE or DIVERGED, or required PRF product projection is CANNOT_RECOMPUTE",
+      "result": "CANNOT_RECOMPUTE"
+    },
+    {
+      "order": 6,
+      "predicate": "Input not ADMITTED, canonicalization not VERIFIED, native semanticOutcome not VERIFIED, required nested PRF product projection not VERIFIED, or any required success status absent",
+      "result": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "order": 7,
+      "predicate": "All preceding guards clear",
+      "result": "VERIFIED"
+    }
+  ],
+  "base_case": {
+    "statuses": {
+      "INPUT": "ADMITTED",
+      "CANONICALIZATION": "VERIFIED",
+      "INTEGRITY": "VERIFIED",
+      "AUTHENTICITY": "VERIFIED",
+      "SUBJECT_BINDING": "VERIFIED",
+      "RECOMPUTATION": "REPRODUCED",
+      "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+      "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+      "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+      "CONTINUITY": "NOT_REQUESTED",
+      "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+      "PRODUCT_PROJECTION": "NOT_RUN",
+      "EXPLAINABLE_REPORT": "NOT_RUN",
+      "PROVENANCE": "RECORDED"
+    },
+    "recomputation_semantic_outcome": "VERIFIED"
+  },
+  "literal_cases": [
+    {
+      "id": "all-required-layers-exact",
+      "patches": {},
+      "required": [],
+      "supported": true,
+      "expected": "VERIFIED"
+    },
+    {
+      "id": "integrity-not_run",
+      "patches": {
+        "INTEGRITY": {
+          "status": "NOT_RUN"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "authenticity-not_established",
+      "patches": {
+        "AUTHENTICITY": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "subject_binding-contradicted",
+      "patches": {
+        "SUBJECT_BINDING": {
+          "status": "CONTRADICTED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "semantic_compatibility-contradicted",
+      "patches": {
+        "SEMANTIC_COMPATIBILITY": {
+          "status": "CONTRADICTED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "guarantee_preservation-violated",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "VIOLATED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "continuity-violated",
+      "patches": {
+        "CONTINUITY": {
+          "status": "VIOLATED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "domain_adapters-contradicted",
+      "patches": {
+        "DOMAIN_ADAPTERS": {
+          "status": "CONTRADICTED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "recomputation-cannot_recompute",
+      "patches": {
+        "RECOMPUTATION": {
+          "status": "CANNOT_RECOMPUTE"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CANNOT_RECOMPUTE"
+    },
+    {
+      "id": "recomputation-diverged",
+      "patches": {
+        "RECOMPUTATION": {
+          "status": "DIVERGED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CANNOT_RECOMPUTE"
+    },
+    {
+      "id": "integrity-cannot_recompute",
+      "patches": {
+        "INTEGRITY": {
+          "status": "CANNOT_RECOMPUTE"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CANNOT_RECOMPUTE"
+    },
+    {
+      "id": "recomputation-unsupported",
+      "patches": {
+        "RECOMPUTATION": {
+          "status": "UNSUPPORTED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "id": "semantic_compatibility-unsupported",
+      "patches": {
+        "SEMANTIC_COMPATIBILITY": {
+          "status": "UNSUPPORTED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "id": "input-not_run",
+      "patches": {
+        "INPUT": {
+          "status": "NOT_RUN"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "canonicalization-not_run",
+      "patches": {
+        "CANONICALIZATION": {
+          "status": "NOT_RUN"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "reproduced-negative",
+      "patches": {
+        "RECOMPUTATION": {
+          "semanticOutcome": "REFUTED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "reproduced-unverifiable",
+      "patches": {
+        "RECOMPUTATION": {
+          "semanticOutcome": "UNVERIFIABLE"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "native-pass-only",
+      "patches": {
+        "RECOMPUTATION": {
+          "semanticOutcome": "UNVERIFIABLE",
+          "nativeResult": {
+            "verdict": "PASS",
+            "package_present": true,
+            "runner_declared": true,
+            "exit_code": 0
+          }
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "unsupported-profile",
+      "patches": {},
+      "required": [],
+      "supported": false,
+      "expected": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "id": "required-guarantee-unverifiable",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE"
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "required-continuity-unverifiable",
+      "patches": {
+        "CONTINUITY": {
+          "status": "UNVERIFIABLE"
+        }
+      },
+      "required": [
+        "CONTINUITY"
+      ],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "required-domain-unestablished",
+      "patches": {
+        "DOMAIN_ADAPTERS": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      "required": [
+        "DOMAIN_ADAPTERS"
+      ],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "required-domain-unsupported",
+      "patches": {
+        "DOMAIN_ADAPTERS": {
+          "status": "UNSUPPORTED_PROFILE"
+        }
+      },
+      "required": [
+        "DOMAIN_ADAPTERS"
+      ],
+      "supported": true,
+      "expected": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "id": "guarantee-preserved",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "PRESERVED"
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "VERIFIED"
+    },
+    {
+      "id": "continuity-preserved",
+      "patches": {
+        "CONTINUITY": {
+          "status": "PRESERVED"
+        }
+      },
+      "required": [
+        "CONTINUITY"
+      ],
+      "supported": true,
+      "expected": "VERIFIED"
+    },
+    {
+      "id": "domain-verified",
+      "patches": {
+        "DOMAIN_ADAPTERS": {
+          "status": "VERIFIED"
+        }
+      },
+      "required": [
+        "DOMAIN_ADAPTERS"
+      ],
+      "supported": true,
+      "expected": "VERIFIED"
+    },
+    {
+      "id": "malformed-precedes-contradiction",
+      "patches": {
+        "INPUT": {
+          "status": "REJECTED_MALFORMED"
+        },
+        "SUBJECT_BINDING": {
+          "status": "CONTRADICTED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "REJECTED_MALFORMED"
+    },
+    {
+      "id": "contradiction-precedes-unsupported",
+      "patches": {
+        "SEMANTIC_COMPATIBILITY": {
+          "status": "CONTRADICTED"
+        }
+      },
+      "required": [],
+      "supported": false,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "unsupported-precedes-cannot",
+      "patches": {
+        "RECOMPUTATION": {
+          "status": "CANNOT_RECOMPUTE"
+        }
+      },
+      "required": [],
+      "supported": false,
+      "expected": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "id": "cannot-precedes-insufficient",
+      "patches": {
+        "RECOMPUTATION": {
+          "status": "CANNOT_RECOMPUTE"
+        },
+        "AUTHENTICITY": {
+          "status": "NOT_ESTABLISHED"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CANNOT_RECOMPUTE"
+    },
+    {
+      "id": "invalid-status-is-malformed",
+      "patches": {
+        "INTEGRITY": {
+          "status": "PASS"
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "REJECTED_MALFORMED"
+    },
+    {
+      "id": "boolean-status-is-malformed",
+      "patches": {
+        "SEMANTIC_COMPATIBILITY": {
+          "status": true
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "REJECTED_MALFORMED"
+    },
+    {
+      "id": "truthy-object-status-is-malformed",
+      "patches": {
+        "SUBJECT_BINDING": {
+          "status": {
+            "valid": true
+          }
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "REJECTED_MALFORMED"
+    },
+    {
+      "id": "prf-product-positive",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "PRESERVED",
+          "productProjection": {
+            "status": "VERIFIED",
+            "reasonCodes": [
+              "PRF_POSITIVE"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "VERIFIED"
+    },
+    {
+      "id": "prf-negative-transfer-preserved",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "PRESERVED",
+          "productProjection": {
+            "status": "CONTRADICTED",
+            "reasonCodes": [
+              "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "prf-unsupported-profile",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE",
+          "productProjection": {
+            "status": "UNSUPPORTED_PROFILE",
+            "reasonCodes": [
+              "PRF_PROFILE_UNSUPPORTED"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "id": "prf-malformed-input",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE",
+          "productProjection": {
+            "status": "REJECTED_MALFORMED",
+            "reasonCodes": [
+              "PRF_INPUT_MALFORMED"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "REJECTED_MALFORMED"
+    },
+    {
+      "id": "prf-checker-unavailable",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE",
+          "productProjection": {
+            "status": "CANNOT_RECOMPUTE",
+            "reasonCodes": [
+              "PRF_NATIVE_EXECUTION_UNAVAILABLE"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "CANNOT_RECOMPUTE"
+    },
+    {
+      "id": "prf-native-insufficient",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE",
+          "productProjection": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "PRF_NATIVE_RELATION_UNESTABLISHED"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "prf-preserved-cannot-override-insufficient-product",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "PRESERVED",
+          "productProjection": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "PRF_PRODUCT_INSUFFICIENT"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "id": "prf-preserved-cannot-override-unavailable-product",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "PRESERVED",
+          "productProjection": {
+            "status": "CANNOT_RECOMPUTE",
+            "reasonCodes": [
+              "PRF_NATIVE_EXECUTION_UNAVAILABLE"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "CANNOT_RECOMPUTE"
+    },
+    {
+      "id": "prf-negative-precedes-unsupported",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "PRESERVED",
+          "productProjection": {
+            "status": "CONTRADICTED",
+            "reasonCodes": [
+              "PRF_NATIVE_NEGATIVE"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": false,
+      "expected": "CONTRADICTED"
+    },
+    {
+      "id": "prf-malformed-precedes-contradiction",
+      "patches": {
+        "SUBJECT_BINDING": {
+          "status": "CONTRADICTED"
+        },
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE",
+          "productProjection": {
+            "status": "REJECTED_MALFORMED",
+            "reasonCodes": [
+              "PRF_INPUT_MALFORMED"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "REJECTED_MALFORMED"
+    },
+    {
+      "id": "prf-unsupported-precedes-cannot",
+      "patches": {
+        "RECOMPUTATION": {
+          "status": "CANNOT_RECOMPUTE"
+        },
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE",
+          "productProjection": {
+            "status": "UNSUPPORTED_PROFILE",
+            "reasonCodes": [
+              "PRF_PROFILE_UNSUPPORTED"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "UNSUPPORTED_PROFILE"
+    },
+    {
+      "id": "prf-cannot-precedes-insufficient",
+      "patches": {
+        "AUTHENTICITY": {
+          "status": "NOT_ESTABLISHED"
+        },
+        "GUARANTEE_PRESERVATION": {
+          "status": "UNVERIFIABLE",
+          "productProjection": {
+            "status": "CANNOT_RECOMPUTE",
+            "reasonCodes": [
+              "PRF_NATIVE_EXECUTION_UNAVAILABLE"
+            ]
+          }
+        }
+      },
+      "required": [
+        "GUARANTEE_PRESERVATION"
+      ],
+      "supported": true,
+      "expected": "CANNOT_RECOMPUTE"
+    },
+    {
+      "id": "supplied-prf-negative-not-ignored-when-optional",
+      "patches": {
+        "GUARANTEE_PRESERVATION": {
+          "status": "PRESERVED",
+          "productProjection": {
+            "status": "CONTRADICTED",
+            "reasonCodes": [
+              "PRF_NATIVE_NEGATIVE"
+            ]
+          }
+        }
+      },
+      "required": [],
+      "supported": true,
+      "expected": "CONTRADICTED"
+    }
+  ],
+  "oracle_boundary": "Literal expected outcomes were written independently of projectV2; cases only supply layer records, never derive expected := implementation(actual).",
+  "non_claims": [
+    "Native PASS or process exit 0 is not semantic evidence.",
+    "REPRODUCED does not imply positive semantic outcome.",
+    "Optional omitted guarantees and continuity are not silently claimed.",
+    "Projection does not establish authenticity, dependency soundness or provenance beyond its input layers.",
+    "A preserved downstream transfer cannot promote a separately negative or unavailable requested PRF tuple obligation."
+  ],
+  "nested_product_projection": {
+    "layer": "GUARANTEE_PRESERVATION",
+    "optional": true,
+    "exact_fields": [
+      "status",
+      "reasonCodes"
+    ],
+    "status_vocabulary": [
+      "VERIFIED",
+      "CONTRADICTED",
+      "INSUFFICIENT_EVIDENCE",
+      "CANNOT_RECOMPUTE",
+      "REJECTED_MALFORMED",
+      "UNSUPPORTED_PROFILE"
+    ],
+    "reason_codes": "Array of nonempty strings; no Boolean or truthy coercion",
+    "supplied_failure_precedence": [
+      "REJECTED_MALFORMED",
+      "CONTRADICTED"
+    ],
+    "required_obligation_failure_precedence": [
+      "UNSUPPORTED_PROFILE",
+      "CANNOT_RECOMPUTE",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "required_success": "VERIFIED",
+    "boundary": "Native PRF tuple product result is separate from PRESERVED/VIOLATED/UNVERIFIABLE transfer status and from the surrounding RVR claim."
+  }
+}

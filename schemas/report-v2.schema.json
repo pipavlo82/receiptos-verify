@@ -1,0 +1,531 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:receiptos:verify:report:v2",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "receiptos.verify.report.v2"
+    },
+    "projection_version": {
+      "const": "receiptos.verify.projection.v2"
+    },
+    "overall": {
+      "enum": [
+        "VERIFIED",
+        "CONTRADICTED",
+        "INSUFFICIENT_EVIDENCE",
+        "CANNOT_RECOMPUTE",
+        "REJECTED_MALFORMED",
+        "UNSUPPORTED_PROFILE"
+      ]
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1024
+      },
+      "maxItems": 256
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 65536
+    },
+    "required_layers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "INTEGRITY",
+          "AUTHENTICITY",
+          "SUBJECT_BINDING",
+          "RECOMPUTATION",
+          "EVIDENCE_SUFFICIENCY",
+          "SEMANTIC_COMPATIBILITY",
+          "GUARANTEE_PRESERVATION",
+          "CONTINUITY",
+          "DOMAIN_ADAPTERS"
+        ]
+      },
+      "maxItems": 9,
+      "uniqueItems": true
+    },
+    "layers": {
+      "type": "object",
+      "properties": {
+        "INPUT": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "CANONICALIZATION": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "INTEGRITY": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "AUTHENTICITY": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "SUBJECT_BINDING": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "RECOMPUTATION": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "EVIDENCE_SUFFICIENCY": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "SEMANTIC_COMPATIBILITY": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "GUARANTEE_PRESERVATION": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "CONTINUITY": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "DOMAIN_ADAPTERS": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "PRODUCT_PROJECTION": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "EXPLAINABLE_REPORT": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        },
+        "PROVENANCE": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "reasonCodes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "maxItems": 256
+            },
+            "nativeResult": {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+            }
+          },
+          "required": [
+            "status",
+            "reasonCodes",
+            "nativeResult"
+          ],
+          "additionalProperties": {
+            "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/json"
+          },
+          "maxProperties": 64
+        }
+      },
+      "required": [
+        "INPUT",
+        "CANONICALIZATION",
+        "INTEGRITY",
+        "AUTHENTICITY",
+        "SUBJECT_BINDING",
+        "RECOMPUTATION",
+        "EVIDENCE_SUFFICIENCY",
+        "SEMANTIC_COMPATIBILITY",
+        "GUARANTEE_PRESERVATION",
+        "CONTINUITY",
+        "DOMAIN_ADAPTERS",
+        "PRODUCT_PROJECTION",
+        "EXPLAINABLE_REPORT",
+        "PROVENANCE"
+      ],
+      "additionalProperties": false
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 65536
+      },
+      "maxItems": 64
+    }
+  },
+  "required": [
+    "schema",
+    "projection_version",
+    "overall",
+    "reason_codes",
+    "explanation",
+    "required_layers",
+    "layers",
+    "boundaries"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,329 @@
+{
+  "id": "I01",
+  "title": "Exact signed action and matching supplied execution",
+  "synthetic": true,
+  "oracle": {
+    "kind": "DETACHED_LITERAL_RELATIONAL_EXPECTATION",
+    "relation": "Exact signed action and matching supplied execution",
+    "positive_control": "G13",
+    "mutants": []
+  },
+  "request": {
+    "schema": "receiptos.verify.request.v2",
+    "verification_profile": "receiptos.verify.generic.v2",
+    "adapter": "interpoll",
+    "claim": {
+      "id": "synthetic:agent-action",
+      "kind": "SIGNED_ACTION_TRACE",
+      "parameters": {
+        "action": {
+          "version": 1,
+          "namespace": "v1",
+          "kind": "reaction",
+          "actor": "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+          "targetType": "post",
+          "targetId": "synthetic-post-a",
+          "value": "up",
+          "createdAt": 1000,
+          "nonce": "00000000000000000000000000000000"
+        },
+        "outcome": "EXECUTION_OBSERVED"
+      }
+    },
+    "subject": {
+      "kind": "agent-action",
+      "id": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+      "artifact_digest": "12f25a06a086df187fa11436008f326f41feff2388010f6141cd7eb4a81dece9",
+      "version": "1"
+    },
+    "scope": {
+      "namespace": "v1",
+      "observation": "supplied-trace-only"
+    },
+    "authority": {
+      "id": "synthetic-demo",
+      "class": "INDEPENDENT_RECOMPUTATION"
+    },
+    "policy": {
+      "id": "local-generic",
+      "version": "2",
+      "trusted_keys": [
+        {
+          "id": "synthetic-demo",
+          "spki_base64": "MCowBQYDK2VwAyEAiojj3XQJ8ZX9UtstPLpdcspnCb8dlBIb83SIAbQPb1w="
+        }
+      ],
+      "required_layers": [
+        "INTEGRITY",
+        "AUTHENTICITY",
+        "SUBJECT_BINDING",
+        "RECOMPUTATION",
+        "EVIDENCE_SUFFICIENCY",
+        "SEMANTIC_COMPATIBILITY"
+      ],
+      "minimum_grade": "LOCAL_RECOMPUTATION",
+      "verification_time": 1,
+      "established_assumptions": [],
+      "dependency_results": [],
+      "accepted_authorities": [
+        {
+          "id": "synthetic-demo",
+          "class": "INDEPENDENT_RECOMPUTATION"
+        }
+      ]
+    },
+    "version": "2",
+    "time": {
+      "not_before": 0,
+      "not_after": 100
+    },
+    "assumptions": [],
+    "dependencies": [],
+    "evidence_requirements": [
+      "adapter-input",
+      "execution"
+    ],
+    "evidence": [],
+    "requested_guarantees": [],
+    "adapter_requirement": {
+      "requested_action": {
+        "version": 1,
+        "namespace": "v1",
+        "kind": "reaction",
+        "actor": "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+        "targetType": "post",
+        "targetId": "synthetic-post-a",
+        "value": "up",
+        "createdAt": 1000,
+        "nonce": "00000000000000000000000000000000"
+      },
+      "authority": {
+        "actor": "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+        "namespace": "v1"
+      },
+      "required_outcome": "EXECUTION_OBSERVED"
+    }
+  },
+  "bundle": {
+    "schema": "receiptos.verify.bundle.v2",
+    "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+    "statement": {
+      "schema": "receiptos.verify.statement.v2",
+      "verification_profile": "receiptos.verify.generic.v2",
+      "adapter": "interpoll",
+      "surface": {
+        "claim": {
+          "id": "synthetic:agent-action",
+          "kind": "SIGNED_ACTION_TRACE",
+          "parameters": {
+            "action": {
+              "version": 1,
+              "namespace": "v1",
+              "kind": "reaction",
+              "actor": "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+              "targetType": "post",
+              "targetId": "synthetic-post-a",
+              "value": "up",
+              "createdAt": 1000,
+              "nonce": "00000000000000000000000000000000"
+            },
+            "outcome": "EXECUTION_OBSERVED"
+          }
+        },
+        "subject": {
+          "kind": "agent-action",
+          "id": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+          "artifact_digest": "12f25a06a086df187fa11436008f326f41feff2388010f6141cd7eb4a81dece9",
+          "version": "1"
+        },
+        "scope": {
+          "namespace": "v1",
+          "observation": "supplied-trace-only"
+        },
+        "authority": {
+          "id": "synthetic-demo",
+          "class": "INDEPENDENT_RECOMPUTATION"
+        },
+        "policy": {
+          "id": "local-generic",
+          "version": "2"
+        },
+        "version": "2",
+        "time": {
+          "not_before": 0,
+          "not_after": 100
+        },
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "adapter-input",
+          "execution"
+        ]
+      },
+      "asserted_result": "PASS",
+      "evidence_manifest": [
+        {
+          "id": "adapter-input",
+          "role": "adapter-input",
+          "digest": "12f25a06a086df187fa11436008f326f41feff2388010f6141cd7eb4a81dece9",
+          "size": 2025
+        }
+      ],
+      "payload_digest": "b6cb5cc6a9596aae1ebdbd34488cbb83208bddafc60158dc28f01fb48260dbe5",
+      "crypto": {
+        "provider": "ed25519",
+        "key_id": "synthetic-demo"
+      }
+    },
+    "signature_base64": "AnOh4vj2yof6AzmNBU6GyyMsR0fFBg7cA9vh1Qo07yKVzXCNE4E4DZR0+H/NVqJ+z2L6g0jqRNPdE1K6tAF5Cw==",
+    "evidence": [
+      {
+        "id": "adapter-input",
+        "bytes_base64": "eyJhY2NlcHRlZF9hY3Rpb24iOnsiYWN0aW9uIjp7ImFjdG9yIjoiZjkzMDhhMDE5MjU4YzMxMDQ5MzQ0Zjg1Zjg5ZDUyMjliNTMxYzg0NTgzNmY5OWIwODYwMWYxMTNiY2UwMzZmOSIsImNyZWF0ZWRBdCI6MTAwMCwiaWQiOiIzZTA3NmIxMmI1Y2UwODFhOTA0NTNkNTAwNWMxZDBiZjdlNTZjYTc3MDA3NGVmZGUwYzFkMmJkZDkzYTRjZmE0Iiwia2luZCI6InJlYWN0aW9uIiwibmFtZXNwYWNlIjoidjEiLCJub25jZSI6IjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwic2lnbmF0dXJlIjoiNjM3ZGI4MmYwNzU4NjU0OWRjOTVmN2JkMDBjN2UyNWY4ZWIyZGQ5MDdmMDhjNjNmYzc1MzVkYTlhODhiNzU0YjA1MTM5YWNjNGNkOTJjNjBkYzU5ZGVlOWExZDhlM2NiNTk3Y2I1ZDFmYjE2Y2M3MDEyMmM4ZGIzMmUwZGQ5NmUiLCJ0YXJnZXRJZCI6InN5bnRoZXRpYy1wb3N0LWEiLCJ0YXJnZXRUeXBlIjoicG9zdCIsInZhbHVlIjoidXAiLCJ2ZXJzaW9uIjoxfSwic3RhdHVzIjoiYWNjZXB0ZWQifSwiYXR0ZW1wdHMiOlt7ImFjdGlvbiI6eyJhY3RvciI6ImY5MzA4YTAxOTI1OGMzMTA0OTM0NGY4NWY4OWQ1MjI5YjUzMWM4NDU4MzZmOTliMDg2MDFmMTEzYmNlMDM2ZjkiLCJjcmVhdGVkQXQiOjEwMDAsImlkIjoiM2UwNzZiMTJiNWNlMDgxYTkwNDUzZDUwMDVjMWQwYmY3ZTU2Y2E3NzAwNzRlZmRlMGMxZDJiZGQ5M2E0Y2ZhNCIsImtpbmQiOiJyZWFjdGlvbiIsIm5hbWVzcGFjZSI6InYxIiwibm9uY2UiOiIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsInNpZ25hdHVyZSI6IjYzN2RiODJmMDc1ODY1NDlkYzk1ZjdiZDAwYzdlMjVmOGViMmRkOTA3ZjA4YzYzZmM3NTM1ZGE5YTg4Yjc1NGIwNTEzOWFjYzRjZDkyYzYwZGM1OWRlZTlhMWQ4ZTNjYjU5N2NiNWQxZmIxNmNjNzAxMjJjOGRiMzJlMGRkOTZlIiwidGFyZ2V0SWQiOiJzeW50aGV0aWMtcG9zdC1hIiwidGFyZ2V0VHlwZSI6InBvc3QiLCJ2YWx1ZSI6InVwIiwidmVyc2lvbiI6MX0sImRlbGl2ZXJ5X3N0YXR1cyI6ImFjY2VwdGVkIiwiZXhlY3V0aW9uX2F0dGVtcHRlZCI6dHJ1ZSwiaWQiOiJzeW50aGV0aWMtYXR0ZW1wdC0xIn1dLCJmaW5hbF9jb21taXR0ZWRfcmVzdWx0Ijp7ImFjdGlvbl9pZCI6IjNlMDc2YjEyYjVjZTA4MWE5MDQ1M2Q1MDA1YzFkMGJmN2U1NmNhNzcwMDc0ZWZkZTBjMWQyYmRkOTNhNGNmYTQiLCJhdHRlbXB0X2lkcyI6WyJzeW50aGV0aWMtYXR0ZW1wdC0xIl0sImV2aWRlbmNlX2RpZ2VzdCI6IjE3Y2YyNjljNTA0MGYyY2JiNmU3MzdhYTlmZDAxOGU3NDEzYzY3YjNhODhlNWNkNjQzMmYyYzRkOGFhZTQ5MGYiLCJvYnNlcnZhdGlvbl9kaWdlc3QiOiI2ZDI1ZjM0YjE1NDdjOGRlMjYxNmRiMWI1YjA0ZWE2ZmZkNGM1ZGUyYWJiNjBjY2ZkMGJlZjNmNDE1OTE5YTVhIn0sIm9ic2VydmF0aW9uIjp7ImFjdGlvbl9pZCI6IjNlMDc2YjEyYjVjZTA4MWE5MDQ1M2Q1MDA1YzFkMGJmN2U1NmNhNzcwMDc0ZWZkZTBjMWQyYmRkOTNhNGNmYTQiLCJhdHRlbXB0X2lkIjoic3ludGhldGljLWF0dGVtcHQtMSIsInJlc3VsdCI6IkFQUExJRUQifSwic2lnbmVkX2ludGVudCI6eyJhY3RvciI6ImY5MzA4YTAxOTI1OGMzMTA0OTM0NGY4NWY4OWQ1MjI5YjUzMWM4NDU4MzZmOTliMDg2MDFmMTEzYmNlMDM2ZjkiLCJjcmVhdGVkQXQiOjEwMDAsImlkIjoiM2UwNzZiMTJiNWNlMDgxYTkwNDUzZDUwMDVjMWQwYmY3ZTU2Y2E3NzAwNzRlZmRlMGMxZDJiZGQ5M2E0Y2ZhNCIsImtpbmQiOiJyZWFjdGlvbiIsIm5hbWVzcGFjZSI6InYxIiwibm9uY2UiOiIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsInNpZ25hdHVyZSI6IjYzN2RiODJmMDc1ODY1NDlkYzk1ZjdiZDAwYzdlMjVmOGViMmRkOTA3ZjA4YzYzZmM3NTM1ZGE5YTg4Yjc1NGIwNTEzOWFjYzRjZDkyYzYwZGM1OWRlZTlhMWQ4ZTNjYjU5N2NiNWQxZmIxNmNjNzAxMjJjOGRiMzJlMGRkOTZlIiwidGFyZ2V0SWQiOiJzeW50aGV0aWMtcG9zdC1hIiwidGFyZ2V0VHlwZSI6InBvc3QiLCJ2YWx1ZSI6InVwIiwidmVyc2lvbiI6MX19"
+      }
+    ],
+    "payload": {
+      "crystal": {
+        "schema": "stealth.session.evidence.v1",
+        "session_id": "synthetic-receiptos-verify",
+        "directory": "local/synthetic",
+        "task": {
+          "title": "Synthetic local artifact evidence"
+        },
+        "agent": {
+          "id": "synthetic",
+          "runtime": "local"
+        },
+        "scope": {
+          "permission": null
+        },
+        "authorization": {
+          "delegation_ref": null,
+          "delegator": null,
+          "agent_operator": null,
+          "target": "local/synthetic",
+          "allowed_actions": [],
+          "authorization_valid_from": null,
+          "authorization_expiry": null,
+          "authorization_checked_at": 0,
+          "authorization_state_hash": "synthetic",
+          "authorized_at_execution": null
+        },
+        "execution": [],
+        "commands": [],
+        "changes": {
+          "files_changed": [],
+          "diff_sha256": null
+        },
+        "metadata": {
+          "message_count": 0,
+          "diff_count": 0,
+          "generated_by": "receiptos-verify-synthetic-fixture"
+        },
+        "anchor": {
+          "merkle_proof_status": "not attached",
+          "merkle_root": null,
+          "merkle_leaf_index": null,
+          "merkle_proof": [],
+          "onchain_anchor_status": "not anchored",
+          "network": "local/off-chain",
+          "contract": null,
+          "tx_hash": null,
+          "verifier_status": "not verified",
+          "receipt_root": "0x925dd296e326196f1cd753f7b8f82bb4a7addc5a75651c808f4db79e5738712b"
+        }
+      },
+      "adapter": {
+        "signed_intent": {
+          "version": 1,
+          "namespace": "v1",
+          "kind": "reaction",
+          "actor": "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+          "targetType": "post",
+          "targetId": "synthetic-post-a",
+          "value": "up",
+          "createdAt": 1000,
+          "nonce": "00000000000000000000000000000000",
+          "id": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+          "signature": "637db82f07586549dc95f7bd00c7e25f8eb2dd907f08c63fc7535da9a88b754b05139acc4cd92c60dc59dee9a1d8e3cb597cb5d1fb16cc70122c8db32e0dd96e"
+        },
+        "accepted_action": {
+          "status": "accepted",
+          "action": {
+            "version": 1,
+            "namespace": "v1",
+            "kind": "reaction",
+            "actor": "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+            "targetType": "post",
+            "targetId": "synthetic-post-a",
+            "value": "up",
+            "createdAt": 1000,
+            "nonce": "00000000000000000000000000000000",
+            "id": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+            "signature": "637db82f07586549dc95f7bd00c7e25f8eb2dd907f08c63fc7535da9a88b754b05139acc4cd92c60dc59dee9a1d8e3cb597cb5d1fb16cc70122c8db32e0dd96e"
+          }
+        },
+        "attempts": [
+          {
+            "id": "synthetic-attempt-1",
+            "action": {
+              "version": 1,
+              "namespace": "v1",
+              "kind": "reaction",
+              "actor": "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+              "targetType": "post",
+              "targetId": "synthetic-post-a",
+              "value": "up",
+              "createdAt": 1000,
+              "nonce": "00000000000000000000000000000000",
+              "id": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+              "signature": "637db82f07586549dc95f7bd00c7e25f8eb2dd907f08c63fc7535da9a88b754b05139acc4cd92c60dc59dee9a1d8e3cb597cb5d1fb16cc70122c8db32e0dd96e"
+            },
+            "delivery_status": "accepted",
+            "execution_attempted": true
+          }
+        ],
+        "observation": {
+          "action_id": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+          "attempt_id": "synthetic-attempt-1",
+          "result": "APPLIED"
+        },
+        "final_committed_result": {
+          "action_id": "3e076b12b5ce081a90453d5005c1d0bf7e56ca770074efde0c1d2bdd93a4cfa4",
+          "attempt_ids": [
+            "synthetic-attempt-1"
+          ],
+          "observation_digest": "6d25f34b1547c8de2616db1b5b04ea6ffd4c5de2abb60ccfd0bef3f415919a5a",
+          "evidence_digest": "17cf269c5040f2cbb6e737aa9fd018e7413c67b3a88e5cd6432f2c4d8aae490f"
+        }
+      },
+      "guarantees": null,
+      "continuity": null
+    }
+  },
+  "expected": {
+    "overall": "VERIFIED",
+    "layers": {
+      "INPUT": "ADMITTED",
+      "CANONICALIZATION": "VERIFIED",
+      "INTEGRITY": "VERIFIED",
+      "AUTHENTICITY": "VERIFIED",
+      "SUBJECT_BINDING": "VERIFIED",
+      "RECOMPUTATION": "REPRODUCED",
+      "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+      "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+      "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+      "CONTINUITY": "NOT_REQUESTED",
+      "DOMAIN_ADAPTERS": "VERIFIED",
+      "PRODUCT_PROJECTION": "VERIFIED",
+      "EXPLAINABLE_REPORT": "GENERATED",
+      "PROVENANCE": "RECORDED"
+    },
+    "native": {
+      "RECOMPUTATION.semanticOutcome": "VERIFIED",
+      "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+      "RECOMPUTATION.nativeResult.signature": "VALID"
+    },
+    "reason_codes": []
+  }
+}

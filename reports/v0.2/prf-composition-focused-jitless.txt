@@ -1,0 +1,693 @@
+TAP version 13
+# Warning: disabling flag --expose_wasm due to conflicting flags
+# Subtest: v2 exact supported guarantee declaration preserves the separately selected relation
+ok 1 - v2 exact supported guarantee declaration preserves the separately selected relation
+  ---
+  duration_ms: 999.6827
+  type: 'test'
+  ...
+# Subtest: v2 refuses original independent probe declaration instead of silently ignoring caller conditions
+ok 2 - v2 refuses original independent probe declaration instead of silently ignoring caller conditions
+  ---
+  duration_ms: 343.1826
+  type: 'test'
+  ...
+# Subtest: v2 refuses unknown guarantee version instead of silently ignoring caller conditions
+ok 3 - v2 refuses unknown guarantee version instead of silently ignoring caller conditions
+  ---
+  duration_ms: 401.2487
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional semantic parameters instead of silently ignoring caller conditions
+ok 4 - v2 refuses additional semantic parameters instead of silently ignoring caller conditions
+  ---
+  duration_ms: 367.4016
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional scope instead of silently ignoring caller conditions
+ok 5 - v2 refuses additional scope instead of silently ignoring caller conditions
+  ---
+  duration_ms: 367.5268
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional authority requirement instead of silently ignoring caller conditions
+ok 6 - v2 refuses additional authority requirement instead of silently ignoring caller conditions
+  ---
+  duration_ms: 359.0481
+  type: 'test'
+  ...
+# Subtest: v2 refuses false-valued additional field instead of silently ignoring caller conditions
+ok 7 - v2 refuses false-valued additional field instead of silently ignoring caller conditions
+  ---
+  duration_ms: 327.7896
+  type: 'test'
+  ...
+# Subtest: v2 refuses null-valued additional field instead of silently ignoring caller conditions
+ok 8 - v2 refuses null-valued additional field instead of silently ignoring caller conditions
+  ---
+  duration_ms: 325.003
+  type: 'test'
+  ...
+# Subtest: v2 refuses unknown guarantee identity instead of silently ignoring caller conditions
+ok 9 - v2 refuses unknown guarantee identity instead of silently ignoring caller conditions
+  ---
+  duration_ms: 322.6571
+  type: 'test'
+  ...
+# Subtest: v2 multiple guarantee obligations cannot be reduced to one supported guarantee
+ok 10 - v2 multiple guarantee obligations cannot be reduced to one supported guarantee
+  ---
+  duration_ms: 302.295
+  type: 'test'
+  ...
+# Subtest: v2 an unrequested guarantee does not manufacture a preservation claim
+ok 11 - v2 an unrequested guarantee does not manufacture a preservation claim
+  ---
+  duration_ms: 293.2536
+  type: 'test'
+  ...
+# Warning: disabling flag --expose_wasm due to conflicting flags
+# Subtest: v2 composed positive native PRF tuple and transfer permit overall verification
+ok 12 - v2 composed positive native PRF tuple and transfer permit overall verification
+  ---
+  duration_ms: 992.0892
+  type: 'test'
+  ...
+# Subtest: v2 composed faithfully transferred PRF negative remains globally negative
+ok 13 - v2 composed faithfully transferred PRF negative remains globally negative
+  ---
+  duration_ms: 514.4249
+  type: 'test'
+  ...
+# Subtest: v2 composed unsupported PRF profile retains unsupported classification
+ok 14 - v2 composed unsupported PRF profile retains unsupported classification
+  ---
+  duration_ms: 376.4233
+  type: 'test'
+  ...
+# Subtest: v2 composed malformed native PRF declaration retains malformed classification
+ok 15 - v2 composed malformed native PRF declaration retains malformed classification
+  ---
+  duration_ms: 383.0811
+  type: 'test'
+  ...
+# Subtest: v2 composed reproduced PRF unknown premises remain insufficient
+ok 16 - v2 composed reproduced PRF unknown premises remain insufficient
+  ---
+  duration_ms: 529.2825
+  type: 'test'
+  ...
+# Subtest: v2 composed PRF crashed checker is unavailable computation rather than semantic refutation
+ok 17 - v2 composed PRF crashed checker is unavailable computation rather than semantic refutation
+  ---
+  duration_ms: 401.764
+  type: 'test'
+  ...
+# Subtest: v2 composed PRF malformed native output is unavailable computation rather than semantic refutation
+ok 18 - v2 composed PRF malformed native output is unavailable computation rather than semantic refutation
+  ---
+  duration_ms: 405.4526
+  type: 'test'
+  ...
+# Warning: disabling flag --expose_wasm due to conflicting flags
+# Subtest: PRF executes exact merged main native award relation
+ok 19 - PRF executes exact merged main native award relation
+  ---
+  duration_ms: 199.3536
+  type: 'test'
+  ...
+# Subtest: PRF changed actual payment diverges from producer positive native result
+ok 20 - PRF changed actual payment diverges from producer positive native result
+  ---
+  duration_ms: 160.3712
+  type: 'test'
+  ...
+# Subtest: PRF reproduced native negative can preserve transfer without becoming positive
+ok 21 - PRF reproduced native negative can preserve transfer without becoming positive
+  ---
+  duration_ms: 167.4222
+  type: 'test'
+  ...
+# Subtest: PRF changed downstream native relation is violated despite positive upstream
+ok 22 - PRF changed downstream native relation is violated despite positive upstream
+  ---
+  duration_ms: 160.5054
+  type: 'test'
+  ...
+# Subtest: PRF downstream cannot drop a caller required dependency
+ok 23 - PRF downstream cannot drop a caller required dependency
+  ---
+  duration_ms: 167.2399
+  type: 'test'
+  ...
+# Subtest: PRF downstream cannot substitute a dependency version
+ok 24 - PRF downstream cannot substitute a dependency version
+  ---
+  duration_ms: 198.6274
+  type: 'test'
+  ...
+# Subtest: PRF missing separately selected acceptance basis is unverifiable
+ok 25 - PRF missing separately selected acceptance basis is unverifiable
+  ---
+  duration_ms: 177.5633
+  type: 'test'
+  ...
+# Subtest: PRF empty dependency basis is not preservation evidence
+ok 26 - PRF empty dependency basis is not preservation evidence
+  ---
+  duration_ms: 168.9498
+  type: 'test'
+  ...
+# Subtest: PRF unknown native premises are not promoted by process exit zero
+ok 27 - PRF unknown native premises are not promoted by process exit zero
+  ---
+  duration_ms: 152.9284
+  type: 'test'
+  ...
+# Subtest: PRF native result retained rather than inferred from expected fixture field
+ok 28 - PRF native result retained rather than inferred from expected fixture field
+  ---
+  duration_ms: 154.6222
+  type: 'test'
+  ...
+# Subtest: PRF changed caller selected native expectation cannot self-grade
+ok 29 - PRF changed caller selected native expectation cannot self-grade
+  ---
+  duration_ms: 156.2191
+  type: 'test'
+  ...
+# Subtest: PRF unknown profile and guarantee versions remain unsupported
+ok 30 - PRF unknown profile and guarantee versions remain unsupported
+  ---
+  duration_ms: 180.3852
+  type: 'test'
+  ...
+# Subtest: PRF caller-selected dependency ordering is set based with exact versions
+ok 31 - PRF caller-selected dependency ordering is set based with exact versions
+  ---
+  duration_ms: 163.2962
+  type: 'test'
+  ...
+# Subtest: PRF duplicate dependency identities do not establish preservation
+ok 32 - PRF duplicate dependency identities do not establish preservation
+  ---
+  duration_ms: 158.1271
+  type: 'test'
+  ...
+# Subtest: PRF malformed producer native vocabulary is rejected
+ok 33 - PRF malformed producer native vocabulary is rejected
+  ---
+  duration_ms: 0.3404
+  type: 'test'
+  ...
+# Subtest: PRF unavailable native execution is not a contradiction or positive verdict
+ok 34 - PRF unavailable native execution is not a contradiction or positive verdict
+  ---
+  duration_ms: 112.7198
+  type: 'test'
+  ...
+# Subtest: PRF evaluator does not mutate independent consumer requirements
+ok 35 - PRF evaluator does not mutate independent consumer requirements
+  ---
+  duration_ms: 161.8226
+  type: 'test'
+  ...
+# Subtest: PRF missing independently selected relation input cannot self-bind to producer
+ok 36 - PRF missing independently selected relation input cannot self-bind to producer
+  ---
+  duration_ms: 169.6311
+  type: 'test'
+  ...
+# Subtest: PRF unrelated compatible award cannot reuse caller relation selector
+ok 37 - PRF unrelated compatible award cannot reuse caller relation selector
+  ---
+  duration_ms: 149.0393
+  type: 'test'
+  ...
+# Warning: disabling flag --expose_wasm due to conflicting flags
+# Subtest: v0.2 projection success mapping agrees with the independently specified table
+ok 38 - v0.2 projection success mapping agrees with the independently specified table
+  ---
+  duration_ms: 6.9588
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness all-required-layers-exact
+ok 39 - v0.2 projection literal witness all-required-layers-exact
+  ---
+  duration_ms: 1.5718
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness integrity-not_run
+ok 40 - v0.2 projection literal witness integrity-not_run
+  ---
+  duration_ms: 0.6634
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness authenticity-not_established
+ok 41 - v0.2 projection literal witness authenticity-not_established
+  ---
+  duration_ms: 0.6801
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness subject_binding-contradicted
+ok 42 - v0.2 projection literal witness subject_binding-contradicted
+  ---
+  duration_ms: 1.0137
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness semantic_compatibility-contradicted
+ok 43 - v0.2 projection literal witness semantic_compatibility-contradicted
+  ---
+  duration_ms: 1.2303
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness guarantee_preservation-violated
+ok 44 - v0.2 projection literal witness guarantee_preservation-violated
+  ---
+  duration_ms: 1.079
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness continuity-violated
+ok 45 - v0.2 projection literal witness continuity-violated
+  ---
+  duration_ms: 1.1469
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness domain_adapters-contradicted
+ok 46 - v0.2 projection literal witness domain_adapters-contradicted
+  ---
+  duration_ms: 1.1183
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness recomputation-cannot_recompute
+ok 47 - v0.2 projection literal witness recomputation-cannot_recompute
+  ---
+  duration_ms: 1.3011
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness recomputation-diverged
+ok 48 - v0.2 projection literal witness recomputation-diverged
+  ---
+  duration_ms: 1.1313
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness integrity-cannot_recompute
+ok 49 - v0.2 projection literal witness integrity-cannot_recompute
+  ---
+  duration_ms: 1.8076
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness recomputation-unsupported
+ok 50 - v0.2 projection literal witness recomputation-unsupported
+  ---
+  duration_ms: 0.7918
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness semantic_compatibility-unsupported
+ok 51 - v0.2 projection literal witness semantic_compatibility-unsupported
+  ---
+  duration_ms: 1.0036
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness input-not_run
+ok 52 - v0.2 projection literal witness input-not_run
+  ---
+  duration_ms: 1.1406
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness canonicalization-not_run
+ok 53 - v0.2 projection literal witness canonicalization-not_run
+  ---
+  duration_ms: 0.9561
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness reproduced-negative
+ok 54 - v0.2 projection literal witness reproduced-negative
+  ---
+  duration_ms: 1.1075
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness reproduced-unverifiable
+ok 55 - v0.2 projection literal witness reproduced-unverifiable
+  ---
+  duration_ms: 1.0065
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness native-pass-only
+ok 56 - v0.2 projection literal witness native-pass-only
+  ---
+  duration_ms: 1.1134
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness unsupported-profile
+ok 57 - v0.2 projection literal witness unsupported-profile
+  ---
+  duration_ms: 0.9408
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-guarantee-unverifiable
+ok 58 - v0.2 projection literal witness required-guarantee-unverifiable
+  ---
+  duration_ms: 0.8512
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-continuity-unverifiable
+ok 59 - v0.2 projection literal witness required-continuity-unverifiable
+  ---
+  duration_ms: 0.7044
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-domain-unestablished
+ok 60 - v0.2 projection literal witness required-domain-unestablished
+  ---
+  duration_ms: 1.5207
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-domain-unsupported
+ok 61 - v0.2 projection literal witness required-domain-unsupported
+  ---
+  duration_ms: 1.0102
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness guarantee-preserved
+ok 62 - v0.2 projection literal witness guarantee-preserved
+  ---
+  duration_ms: 1.0144
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness continuity-preserved
+ok 63 - v0.2 projection literal witness continuity-preserved
+  ---
+  duration_ms: 1.1604
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness domain-verified
+ok 64 - v0.2 projection literal witness domain-verified
+  ---
+  duration_ms: 0.9805
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness malformed-precedes-contradiction
+ok 65 - v0.2 projection literal witness malformed-precedes-contradiction
+  ---
+  duration_ms: 0.9335
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness contradiction-precedes-unsupported
+ok 66 - v0.2 projection literal witness contradiction-precedes-unsupported
+  ---
+  duration_ms: 0.9788
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness unsupported-precedes-cannot
+ok 67 - v0.2 projection literal witness unsupported-precedes-cannot
+  ---
+  duration_ms: 0.9452
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness cannot-precedes-insufficient
+ok 68 - v0.2 projection literal witness cannot-precedes-insufficient
+  ---
+  duration_ms: 1.0069
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness invalid-status-is-malformed
+ok 69 - v0.2 projection literal witness invalid-status-is-malformed
+  ---
+  duration_ms: 0.8993
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness boolean-status-is-malformed
+ok 70 - v0.2 projection literal witness boolean-status-is-malformed
+  ---
+  duration_ms: 0.925
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness truthy-object-status-is-malformed
+ok 71 - v0.2 projection literal witness truthy-object-status-is-malformed
+  ---
+  duration_ms: 1.3898
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-product-positive
+ok 72 - v0.2 projection literal witness prf-product-positive
+  ---
+  duration_ms: 1.1894
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-negative-transfer-preserved
+ok 73 - v0.2 projection literal witness prf-negative-transfer-preserved
+  ---
+  duration_ms: 1.002
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-unsupported-profile
+ok 74 - v0.2 projection literal witness prf-unsupported-profile
+  ---
+  duration_ms: 0.9765
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-malformed-input
+ok 75 - v0.2 projection literal witness prf-malformed-input
+  ---
+  duration_ms: 0.9984
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-checker-unavailable
+ok 76 - v0.2 projection literal witness prf-checker-unavailable
+  ---
+  duration_ms: 1.0207
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-native-insufficient
+ok 77 - v0.2 projection literal witness prf-native-insufficient
+  ---
+  duration_ms: 1.0299
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-preserved-cannot-override-insufficient-product
+ok 78 - v0.2 projection literal witness prf-preserved-cannot-override-insufficient-product
+  ---
+  duration_ms: 0.6956
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-preserved-cannot-override-unavailable-product
+ok 79 - v0.2 projection literal witness prf-preserved-cannot-override-unavailable-product
+  ---
+  duration_ms: 0.5968
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-negative-precedes-unsupported
+ok 80 - v0.2 projection literal witness prf-negative-precedes-unsupported
+  ---
+  duration_ms: 0.6812
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-malformed-precedes-contradiction
+ok 81 - v0.2 projection literal witness prf-malformed-precedes-contradiction
+  ---
+  duration_ms: 1.1287
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-unsupported-precedes-cannot
+ok 82 - v0.2 projection literal witness prf-unsupported-precedes-cannot
+  ---
+  duration_ms: 1.0174
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-cannot-precedes-insufficient
+ok 83 - v0.2 projection literal witness prf-cannot-precedes-insufficient
+  ---
+  duration_ms: 0.9933
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness supplied-prf-negative-not-ignored-when-optional
+ok 84 - v0.2 projection literal witness supplied-prf-negative-not-ignored-when-optional
+  ---
+  duration_ms: 0.9064
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed missing layer
+ok 85 - v0.2 projection rejects malformed missing layer
+  ---
+  duration_ms: 1.0847
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed renamed layer
+ok 86 - v0.2 projection rejects malformed renamed layer
+  ---
+  duration_ms: 0.8788
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed extra layer
+ok 87 - v0.2 projection rejects malformed extra layer
+  ---
+  duration_ms: 0.9007
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed missing native result
+ok 88 - v0.2 projection rejects malformed missing native result
+  ---
+  duration_ms: 0.8467
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed missing status
+ok 89 - v0.2 projection rejects malformed missing status
+  ---
+  duration_ms: 0.8525
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed string reason array
+ok 90 - v0.2 projection rejects malformed string reason array
+  ---
+  duration_ms: 0.8746
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed holey reason array
+ok 91 - v0.2 projection rejects malformed holey reason array
+  ---
+  duration_ms: 0.7175
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed unsupported native semantic outcome
+ok 92 - v0.2 projection rejects malformed unsupported native semantic outcome
+  ---
+  duration_ms: 0.8827
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed Boolean native semantic outcome
+ok 93 - v0.2 projection rejects malformed Boolean native semantic outcome
+  ---
+  duration_ms: 1.2745
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed extra hidden member
+ok 94 - v0.2 projection rejects malformed extra hidden member
+  ---
+  duration_ms: 0.6374
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed symbol member
+ok 95 - v0.2 projection rejects malformed symbol member
+  ---
+  duration_ms: 0.3693
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed status accessor
+ok 96 - v0.2 projection rejects malformed status accessor
+  ---
+  duration_ms: 0.3743
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed semantic-outcome accessor
+ok 97 - v0.2 projection rejects malformed semantic-outcome accessor
+  ---
+  duration_ms: 0.4451
+  type: 'test'
+  ...
+# Subtest: v0.2 projection requires explicit known obligations and Boolean support flag
+ok 98 - v0.2 projection requires explicit known obligations and Boolean support flag
+  ---
+  duration_ms: 1.7225
+  type: 'test'
+  ...
+# Subtest: v0.2 projection never treats an empty consumer obligation list as zero verification obligations
+ok 99 - v0.2 projection never treats an empty consumer obligation list as zero verification obligations
+  ---
+  duration_ms: 0.34
+  type: 'test'
+  ...
+# Subtest: v0.2 projection refuses to promote absent native semantic outcome
+ok 100 - v0.2 projection refuses to promote absent native semantic outcome
+  ---
+  duration_ms: 0.357
+  type: 'test'
+  ...
+# Subtest: v0.2 projection preserves a crashed checker as unavailable computation
+ok 101 - v0.2 projection preserves a crashed checker as unavailable computation
+  ---
+  duration_ms: 0.6557
+  type: 'test'
+  ...
+# Subtest: v0.2 projection keeps provider authentication NOT_ESTABLISHED insufficient when domain is required
+ok 102 - v0.2 projection keeps provider authentication NOT_ESTABLISHED insufficient when domain is required
+  ---
+  duration_ms: 0.356
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: null
+ok 103 - v0.2 projection rejects malformed nested PRF product projection: null
+  ---
+  duration_ms: 0.3205
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: array
+ok 104 - v0.2 projection rejects malformed nested PRF product projection: array
+  ---
+  duration_ms: 0.2865
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: unknown status
+ok 105 - v0.2 projection rejects malformed nested PRF product projection: unknown status
+  ---
+  duration_ms: 0.8626
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: Boolean status
+ok 106 - v0.2 projection rejects malformed nested PRF product projection: Boolean status
+  ---
+  duration_ms: 0.507
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: missing status
+ok 107 - v0.2 projection rejects malformed nested PRF product projection: missing status
+  ---
+  duration_ms: 0.5618
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: missing reasons
+ok 108 - v0.2 projection rejects malformed nested PRF product projection: missing reasons
+  ---
+  duration_ms: 0.5137
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: extra field
+ok 109 - v0.2 projection rejects malformed nested PRF product projection: extra field
+  ---
+  duration_ms: 0.5339
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: string reasons
+ok 110 - v0.2 projection rejects malformed nested PRF product projection: string reasons
+  ---
+  duration_ms: 0.5448
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: non-string reason
+ok 111 - v0.2 projection rejects malformed nested PRF product projection: non-string reason
+  ---
+  duration_ms: 0.5533
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: holey reasons
+ok 112 - v0.2 projection rejects malformed nested PRF product projection: holey reasons
+  ---
+  duration_ms: 0.3902
+  type: 'test'
+  ...
+# Subtest: v0.2 projection preserves nested PRF reasons without altering transfer or native result
+ok 113 - v0.2 projection preserves nested PRF reasons without altering transfer or native result
+  ---
+  duration_ms: 1.032
+  type: 'test'
+  ...
+1..113
+# tests 113
+# suites 0
+# pass 113
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5037.9661
+Warning: disabling flag --expose_wasm due to conflicting flags

@@ -1,0 +1,17 @@
+{
+  "profile": "scan_subject_binding.v0",
+  "reproduced": 1,
+  "results": [
+    {
+      "case_id": "receiptos_negative",
+      "reproduced": true,
+      "result": {
+        "evidence_grade": "REPRODUCED",
+        "replay_bindings": "valid",
+        "result_only_check": "VALID",
+        "subject_bound_check": "CONTRADICTED"
+      }
+    }
+  ],
+  "total": 1
+}

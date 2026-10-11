@@ -62,6 +62,12 @@ async function domain(request,input) {
   return result('UNSUPPORTED',['DOMAIN_PROFILE_UNSUPPORTED']);
 }
 export async function verify(requestInput,bundleInput) {
+  // Additive version dispatch; the audited v1 admission and semantics remain below.
+  try {
+    const versioned=typeof requestInput==='string'||Buffer.isBuffer(requestInput)?parseStrict(requestInput):requestInput;
+    const schema=versioned&&typeof versioned==='object'?Object.getOwnPropertyDescriptor(versioned,'schema'):null;
+    if(schema&&Object.hasOwn(schema,'value')&&schema.value==='receiptos.verify.request.v2') return (await import('./verify-v2.mjs')).verifyV2(requestInput,bundleInput);
+  } catch { /* The v1 admission below returns the original malformed-input report. */ }
   const layers=Object.fromEntries(LAYER_NAMES.map(k=>[k,result('NOT_RUN')]));
   let request,bundle,inspected,supported=false,admitted=false;
   try {

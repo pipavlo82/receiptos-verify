@@ -1,0 +1,304 @@
+{
+  "schema": "receiptos.verify.v02-actions-prf-sources.v1",
+  "observedAt": "2026-10-11T21:43:17.041006+00:00",
+  "sourceIdentityMethod": "GitHub REST default_branch and commits/HEAD; exact pinned Contents API raw bytes and Git blob verification; PR14 status and head/base from pull API; contribution commit author and changed paths",
+  "sourceOwnershipIsNotAuthorship": true,
+  "allUpstreamsReadOnly": true,
+  "sources": [
+    {
+      "capabilityId": "interpoll-native-signed-action-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "defaultBranch": "master",
+      "paths": [
+        "shared-validation/engagement.js",
+        "LICENSE"
+      ],
+      "license": "Unlicense",
+      "integrationMode": "PINNED_SOURCE",
+      "maturity": "EXPERIMENTAL",
+      "nativeSourceStatus": "CURRENT_DEFAULT_BRANCH",
+      "executes": "native verifyAction with fresh:false; native actionBytes for independent deterministic fixture signing",
+      "productFiles": [
+        "src/adapters/interpoll-v2.mjs",
+        "vendor/interpoll-v02/engagement.js",
+        "vendor/interpoll-v02/LICENSE",
+        "tests/interpoll-v2.test.mjs",
+        "tests/helpers/interpoll-v02-fixture.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "Interpoll1/decentralised",
+          "commit": "2cfde5efc3d10b56c73e74723d3f328b77f2fc1f",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "shared-validation/engagement.js",
+            "docs/security/PUBLIC_ENGAGEMENT_V1.md"
+          ],
+          "role": "signed public engagement action implementation",
+          "evidence_url": "https://github.com/Interpoll1/decentralised/commit/2cfde5efc3d10b56c73e74723d3f328b77f2fc1f",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "files": [
+        {
+          "source_repository": "Interpoll1/decentralised",
+          "source_sha": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+          "source_path": "shared-validation/engagement.js",
+          "product_path": "vendor/interpoll-v02/engagement.js",
+          "sha256": "50f609b6408d81dfa12c3a454a6db7a2d98600e1ed81ac68131f0bbc81d6d5c3",
+          "bytes": 3823,
+          "git_blob_sha1": "791b0b1aaa5af6743a966c1c441bd6e3f7424794",
+          "copied_unmodified": true
+        },
+        {
+          "source_repository": "Interpoll1/decentralised",
+          "source_sha": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+          "source_path": "LICENSE",
+          "product_path": "vendor/interpoll-v02/LICENSE",
+          "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e",
+          "bytes": 1211,
+          "git_blob_sha1": "fdddb29aa445bf3d6a5d843d6dd77e10a9f99657",
+          "copied_unmodified": true
+        }
+      ],
+      "limits": [
+        "key control over exact signed intent, not fresh admission",
+        "no server execution, SQL atomicity, target existence, deployment, viewing or human uniqueness proof"
+      ]
+    },
+    {
+      "capabilityId": "interpoll-exact-retry-trace-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "defaultBranch": "master",
+      "paths": [
+        "src/services/reactionOutboxService.ts",
+        "src/services/publicEngagementService.ts",
+        "shared-validation/engagement-store.js",
+        "docs/security/PUBLIC_ENGAGEMENT_REVIEW_FOLLOWUP.md"
+      ],
+      "license": "Unlicense",
+      "integrationMode": "REIMPLEMENTED_FROM_SPEC",
+      "maturity": "EXPERIMENTAL",
+      "executes": "product exact signed action / acceptance / retry / supplied observation / committed trace comparisons",
+      "productFiles": [
+        "src/adapters/interpoll-v2.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "docs/interpoll-adapter.md"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "Interpoll1/decentralised",
+          "commit": "a1eb47653aa7b8f0484ab977d75a5db41d226d02",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "src/services/reactionOutboxService.ts",
+            "src/services/publicEngagementService.ts",
+            "docs/security/PUBLIC_ENGAGEMENT_REVIEW_FOLLOWUP.md"
+          ],
+          "role": "durable exact signed reaction retries",
+          "evidence_url": "https://github.com/Interpoll1/decentralised/commit/a1eb47653aa7b8f0484ab977d75a5db41d226d02",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "original TypeScript outbox and database store are not copied or executed",
+        "supplied execution observations do not prove actual relay execution"
+      ]
+    },
+    {
+      "capabilityId": "prf-main-award-settlement-native-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "defaultBranch": "main",
+      "paths": [
+        "tools/award_actual_settlement.py",
+        "LICENSE"
+      ],
+      "license": "MIT",
+      "integrationMode": "PINNED_SOURCE",
+      "maturity": "STABLE",
+      "nativeSourceStatus": "MERGED_MAIN",
+      "executes": "Python isolated native relation(award,settlements) over fresh synthetic tuples selected independently by mandatory caller input digest; no upstream fixture or expected-case lookup",
+      "productFiles": [
+        "src/adapters/prf-v2.mjs",
+        "vendor/prf-v02/award_actual_settlement.py",
+        "vendor/prf-v02/LICENSE",
+        "tests/prf-v2.test.mjs",
+        "tests/helpers/prf-v02-fixture.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/protected-relation-fixtures",
+          "commit": "717f04b3216c560949331dfc084e2fa6bb5e95bd",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "tools/award_actual_settlement.py",
+            "tests/test_award_actual_settlement.py"
+          ],
+          "role": "bounded award-to-actual-settlement relation implementation",
+          "evidence_url": "https://github.com/pipavlo82/protected-relation-fixtures/commit/717f04b3216c560949331dfc084e2fa6bb5e95bd",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "files": [
+        {
+          "source_repository": "pipavlo82/protected-relation-fixtures",
+          "source_sha": "fac26d2e8346aeab08194343b78c345d235c6935",
+          "source_path": "tools/award_actual_settlement.py",
+          "product_path": "vendor/prf-v02/award_actual_settlement.py",
+          "sha256": "5780733a43b023b52d8c035277ca2b926f5ab1ae40edcc74e61880b43d665cd1",
+          "bytes": 10986,
+          "git_blob_sha1": "3210be9b560e61663b6978bb3ae5843f6f3f2901",
+          "copied_unmodified": true
+        },
+        {
+          "source_repository": "pipavlo82/protected-relation-fixtures",
+          "source_sha": "fac26d2e8346aeab08194343b78c345d235c6935",
+          "source_path": "LICENSE",
+          "product_path": "vendor/prf-v02/LICENSE",
+          "sha256": "11d93abd8b3371d3d3dbc536e11e132f3482dc6334eca0006601cfd58229253e",
+          "bytes": 1074,
+          "git_blob_sha1": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "copied_unmodified": true
+        }
+      ],
+      "limits": [
+        "one supplied synthetic award and settlement list",
+        "no universal incentive guarantee, authenticated chain or award authority"
+      ]
+    },
+    {
+      "capabilityId": "prf-downstream-native-dependency-transfer-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "paths": [
+        "tools/guarantee_preservation.py",
+        "tools/guarantee_preservation_adapters.py",
+        "conformance/guarantee-preservation-v0/README.md"
+      ],
+      "license": "MIT",
+      "integrationMode": "REIMPLEMENTED_FROM_SPEC",
+      "maturity": "EXPERIMENTAL",
+      "sourcePR": {
+        "number": 14,
+        "state": "OPEN",
+        "merged": false,
+        "headSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+        "baseSHA": "fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "executes": "bounded product relation for caller-selected award/settlement input, exact native result and caller accepted dependency identities/versions; native VIOLATED may retain PRESERVED transfer",
+      "productFiles": [
+        "src/adapters/prf-v2.mjs",
+        "tests/prf-v2.test.mjs",
+        "docs/guarantee-preservation.md"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/protected-relation-fixtures",
+          "commit": "f525737069dc4cef7741f805d08a988912f4454f",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "tools/guarantee_preservation.py",
+            "tools/guarantee_preservation_adapters.py"
+          ],
+          "role": "experimental bounded guarantee preservation contract implementation",
+          "evidence_url": "https://github.com/pipavlo82/protected-relation-fixtures/commit/f525737069dc4cef7741f805d08a988912f4454f",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "open PR is not main",
+        "no PR14 wire conformance or Python consumer execution",
+        "accepted basis completeness and authority are caller premises",
+        "separate supplied PRF award/settlement obligation, not arbitrary surrounding RVR/Trustless native result transfer"
+      ]
+    },
+    {
+      "capabilityId": "rsi-v02-independent-relation-tests",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+      "sourceTree": "03750c1d457991025e824f6e8a58a3815cc34cab",
+      "defaultBranch": "main",
+      "paths": [
+        "README.md",
+        "spec/relation-profile-contract-v0.md",
+        "research/rsi-v0-mutation-matrix.md"
+      ],
+      "license": "Apache-2.0 repository authored material; no source bytes imported",
+      "integrationMode": "METHODOLOGY_ONLY",
+      "maturity": "STABLE",
+      "productFiles": [
+        "tests/interpoll-v2.test.mjs",
+        "tests/prf-v2.test.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/relational-security-invariants",
+          "commit": "30e13ba3a39915c91a607f70975c669ead7a231e",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "spec/relation-profile-contract-v0.md"
+          ],
+          "role": "additive relation-profile contract",
+          "evidence_url": "https://github.com/pipavlo82/relational-security-invariants/commit/30e13ba3a39915c91a607f70975c669ead7a231e",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "methodology transfer is not RSI runtime integration or independent oracle proof"
+      ]
+    },
+    {
+      "capabilityId": "seg-v02-caller-context-binding-method",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "18f595b537017e5ff7b9074366c3065e877488f9",
+      "sourceTree": "fcb73100729bc1e94ca5b62a625dc6524ddbefe3",
+      "defaultBranch": "main",
+      "paths": [
+        "README.md",
+        "relations/robinhood-stock-token-v0/README.md",
+        "PROVENANCE.md"
+      ],
+      "license": "Apache-2.0 repository authored material; no source bytes imported",
+      "integrationMode": "METHODOLOGY_ONLY",
+      "maturity": "STABLE",
+      "productFiles": [
+        "src/adapters/interpoll-v2.mjs",
+        "src/adapters/prf-v2.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/prf-v2.test.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/semantic-execution-guard",
+          "commit": "a5f8aebff811ad12ffd6ba7ca01552f81dec35ac",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "relations/robinhood-stock-token-v0/recompute.mjs"
+          ],
+          "role": "public local synthetic semantic relation implementation",
+          "evidence_url": "https://github.com/pipavlo82/semantic-execution-guard/commit/a5f8aebff811ad12ffd6ba7ca01552f81dec35ac",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "separate caller context, semantic substitutions and explicit execution boundaries only",
+        "no Solidity guard, deployment or testnet evidence imported"
+      ]
+    }
+  ]
+}

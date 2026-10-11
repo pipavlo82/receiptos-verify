@@ -2,7 +2,9 @@
 
 A local verification product that answers **what supplied evidence is allowed to establish for a caller-selected claim**. It preserves native adapter results and adds a separate, versioned product projection.
 
-**Local experimental v0.1.** This repository has no remote. Existing upstream repositories remain read-only. No private Vértice implementation is included.
+**Local v0.2 review build, based on public v0.1.0.** Existing upstream repositories remain read-only. No private Vértice implementation is included. V0.2 is unpushed and has no release tag.
+
+ReceiptOS Verify does not answer only whether a receipt is intact. It evaluates what supplied evidence actually establishes for a caller-selected claim, within explicit bounded profiles. The v2 contract keeps claim, subject, artifact, authority, scope, policy/version, time, assumptions and dependencies separate. See [generic boundary](docs/generic-claim-boundary.md), [v0.2 architecture](docs/v0.2-architecture.md) and [v0.2 review report](V0_2_REVIEW_REPORT.md).
 
 The [release-candidate audit](RELEASE_AUDIT_v0.1.md) separates the original saved build reports from fresh candidate findings, fixes and release checks. Original saved counts are historical observations, not the current release verdict.
 
@@ -17,10 +19,14 @@ npm test
 npm run vectors
 npm run mutations
 npm run check:sources
+npm run vectors:v2
+npm run mutations:v2
+npm run demo:v2
+npm run check:provenance
 npm start
 ```
 
-The UI listens only at **http://127.0.0.1:8808/**. Verification runs offline once dependencies are installed. It makes no provider, ledger, scanner or model calls. Do not serve it publicly.
+The UI listens only at **http://127.0.0.1:8808/**. Verification runs offline once dependencies are installed. It makes no external provider, ledger, scanner-service or model calls. The Trustless adapter runs its pinned deterministic toy scanner locally. Do not serve it publicly.
 
 `node tools/reproduce.mjs V02` runs the saved-artifact control twice in a separate local copy and records exact commands, locks, commit and semantic digests in `reports/local-reproduction.json`. That receipt remains unsigned and does not claim a second independent operator.
 
@@ -45,14 +51,16 @@ Authenticated evidence for A does not establish the caller-selected claim for B.
 
 ## Implemented surfaces
 
+V0.2 adds versioned executable integrations: the neutral public Semantic ABI linker/validator, the actual main recompute-kit scan checker and conformance runner, Interpoll's native signed-action verification with exact supplied retry traces, and PRF's main award/settlement relation with a separately experimental downstream preservation rule. Native verdicts, replay and product compatibility remain distinct. These are bounded integrations, not whole-upstream conformance or external execution authentication. PR57 and PR14 are still open at the frozen source observation; PR57 reporter behavior is not implemented or labeled main.
+
 - Real pinned native Crystal root verification and RVR digest/replay; separate product Ed25519 signature and Git object closure.
-- Neutral Semantic ABI compatibility, exact PRF guarantee/dependency preservation, and Chronicle historical/current continuity. These are original public-spec reimplementations with explicit product extensions; PRF14 remains experimental and pinned to its open head.
+- The v1 compatibility path retains neutral Semantic ABI compatibility, PRF guarantee/dependency preservation and Chronicle historical/current continuity as public-spec reimplementations with explicit product extensions. The v2 native upgrades above remain separately versioned; PRF14 remains experimental and pinned to its open head.
 - Recompute-kit execution/report/grade discipline; Interpoll Schnorr signed action and exact retries.
 - Native QEV finite postprocessing and optional counts/RVR/ReceiptOS capabilities, with provider authenticity unestablished.
 - Original portable product capsules/Merkle proofs, human-readable reports, local inspection UI, full provenance.
 - Experimental crypto-provider/temporal-authority, stochastic replay and Ethereum/XRPL/off-chain anchor boundaries. No ML-DSA verifier or live ledger adapter is claimed.
 
-The registry contains 12 surfaces: 11 bounded executable relations or admission operations and one ledger interface. Capability maturity is 2 STABLE, 9 EXPERIMENTAL and 1 INTERFACE_ONLY; the raw ledger descriptor still uses EXPERIMENTAL. Chronicle checks supplied continuity and exact reference strings; it does not calculate or verify Artifact/Collection/Portfolio aggregate roots.
+The unchanged v1 registry contains 12 surfaces: 11 bounded executable relations or admission operations and one ledger interface. Its capability maturity is 2 STABLE, 9 EXPERIMENTAL and 1 INTERFACE_ONLY; the raw ledger descriptor still uses EXPERIMENTAL. The four v2 modules upgrade/version those capability families rather than claiming sixteen independent verifiers. Chronicle checks supplied continuity and exact reference strings; it does not calculate or verify Artifact/Collection/Portfolio aggregate roots.
 
 The main Git artifact profile has six mandatory layers; policy cannot omit subject binding. Domain, guarantee and continuity obligations become required when requested. Product projection evaluates these requirements separately from native roots, signatures and replay.
 

@@ -1,0 +1,35 @@
+{
+  "observation": "Two complete suite invocations were launched concurrently in the same checkout. Both had one process-boundary-control failure with opposite unexpected classifications.",
+  "source_evidence": [
+    "tests/mutation-runner.test.mjs uses reports/tmp/mutation-output-regression/ and rewrites the same verifier script for each assertion.",
+    "tests/corpus-v02.test.mjs uses reports/tmp/v02-harness-negative-controls/ and rewrites the same verifier script for each assertion."
+  ],
+  "inference": "Shared fixed scratch paths explain opposite unexpected classifications in concurrent full suite invocations; sequential final normal/no-opt runs both pass 624/624.",
+  "decision": "Preserve original v0.1 tests; run full modes sequentially in one checkout or in distinct fresh checkouts.",
+  "sequential_confirmation": {
+    "normal": {
+      "tests": 624,
+      "pass": 624,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "no-opt": {
+      "tests": 624,
+      "pass": 624,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "repeat": {
+      "tests": 624,
+      "pass": 624,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  }
+}
