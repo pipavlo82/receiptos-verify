@@ -1,0 +1,1475 @@
+{
+  "public_base": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "tested_implementation": "57067b18dd2e5c1aae9ad47476bece6e0aa51cf7",
+  "files": [
+    {
+      "change": "M",
+      "path": ".gitattributes"
+    },
+    {
+      "change": "M",
+      "path": ".gitignore"
+    },
+    {
+      "change": "M",
+      "path": "FULL_WORK_REUSE_MAP.md"
+    },
+    {
+      "change": "M",
+      "path": "LICENSING.md"
+    },
+    {
+      "change": "M",
+      "path": "NOTICE"
+    },
+    {
+      "change": "M",
+      "path": "PROVENANCE.md"
+    },
+    {
+      "change": "M",
+      "path": "README.md"
+    },
+    {
+      "change": "A",
+      "path": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/generic-claim-boundary.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/guarantee-preservation.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/interpoll-adapter.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/product-projection.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/semantic-abi-adapter.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/trustless-adapter.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/v0.2-architecture.md"
+    },
+    {
+      "change": "A",
+      "path": "docs/v0.2-vector-mutation-witnesses.md"
+    },
+    {
+      "change": "A",
+      "path": "mutations/catalog-v2.mjs"
+    },
+    {
+      "change": "M",
+      "path": "package-lock.json"
+    },
+    {
+      "change": "M",
+      "path": "package.json"
+    },
+    {
+      "change": "A",
+      "path": "profiles/product-projection-v2.json"
+    },
+    {
+      "change": "M",
+      "path": "provenance/sources.json"
+    },
+    {
+      "change": "A",
+      "path": "provenance/v02-actions-prf.json"
+    },
+    {
+      "change": "A",
+      "path": "provenance/v02-semantic-abi.json"
+    },
+    {
+      "change": "A",
+      "path": "provenance/v02-trustless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/adapter-inventory.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/capsule-demo.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/capsule-demo.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/cli-demo.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/cli-demo.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/commands.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/dependencies.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/dependencies.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/dependency-resolution.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/dependency-resolution.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/final-diff-check.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/final-diff-check.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/final-source-lock.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/final-source-lock.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/initial-diff-check.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/initial-diff-check.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/initial-source-lock.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/initial-source-lock.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/install.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/install.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/local-reproduction.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/local-reproduction.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/local-reproduction.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/mutations.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/mutations.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/mutations.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/summary.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/test-scratch-setup.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/tests.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/tests.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/tracked-files.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/vectors.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/vectors.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/vectors.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-bun.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-bun.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-node.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-node.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-npm.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-npm.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-python-path.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-python-path.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-python.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/base/version-python.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/before-ui-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/before-ui-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/before-ui-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/cli-v01-final.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/cli-v01-final.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/cli-v02-final.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/cli-v02-final.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/core-final-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/core-final-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/core-final-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/core-green-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/core-green-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/core-green-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/demos.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/dependency-inventory.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/dependency-inventory.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-env-variant.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-env-variant.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-jitless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-jitless.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-path-a.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-path-a.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-path-b.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-path-b.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G01-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-env-variant.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-env-variant.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-jitless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-jitless.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-path-a.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-path-a.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-path-b.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-path-b.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G02-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-env-variant.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-env-variant.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-jitless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-jitless.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-path-a.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-path-a.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-path-b.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-path-b.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G10-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-env-variant.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-env-variant.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-jitless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-jitless.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-path-a.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-path-a.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-path-b.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-path-b.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G12-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-env-variant.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-env-variant.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-jitless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-jitless.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-path-a.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-path-a.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-path-b.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-path-b.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G14-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-env-variant.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-env-variant.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-jitless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-jitless.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-path-a.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-path-a.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-path-b.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-path-b.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G15-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-env-variant.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-env-variant.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-jitless.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-jitless.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-path-a.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-path-a.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-path-b.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-path-b.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/G30-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/prf-native-relation-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/prf-native-relation-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/prf-native-relation-optimized.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/prf-native-relation-optimized.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/prf-native-relation-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/prf-native-relation-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/rvr-bridge-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/rvr-bridge-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/rvr-bridge-optimized.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/rvr-bridge-optimized.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/rvr-bridge-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/rvr-bridge-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-bridge-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-bridge-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-bridge-optimized.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-bridge-optimized.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-bridge-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-bridge-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-native-cli-input.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-native-cli-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-native-cli-normal.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-native-cli-optimized.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-native-cli-optimized.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-native-cli-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/determinism/trustless-native-cli-repeat.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/diff-check-final.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/diff-check-final.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/grade-finding-after.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/grade-finding-before.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/guarantee-finding-after.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/guarantee-finding-before.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/interim-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/interim-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/interim-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/jitless-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/jitless-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/jitless-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/local-gate.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/mutation-invalid-native-before.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/mutations.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/negative-control-test-evidence.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/no-opt-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/no-opt-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/no-opt-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/normal-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/normal-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/normal-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/parallel-gate-failures/assessment.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/parallel-gate-failures/no-opt-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/parallel-gate-failures/no-opt-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/parallel-gate-failures/no-opt-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/parallel-gate-failures/normal-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/parallel-gate-failures/normal-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/parallel-gate-failures/normal-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/prf-composition-finding-after.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/prf-composition-finding-before.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/prf-composition-focused-jitless.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/prf-composition-focused-normal.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/projection-obligations-after.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/projection-obligations-after.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/projection-obligations-after.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/projection-obligations-before.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/provenance-license-validation.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/provenance-license-validation.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/public-base-identity.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/public-base-identity.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/public-base-identity.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/regression-mutations.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/repeat-tests.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/repeat-tests.stderr.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/repeat-tests.stdout.txt"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/source-lock-validation.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/source-lock-validation.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/source-lock-write.stderr"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/source-lock-write.stdout"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/trustless-determinism/negative-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/trustless-determinism/negative-optimized.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/trustless-determinism/negative-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/trustless-determinism/positive-normal.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/trustless-determinism/positive-optimized.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/trustless-determinism/positive-repeat.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/trustless-determinism/summary.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/ui-evidence-grade.png"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/ui-prf-preserved-negative.png"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/ui-scope-contradiction.png"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/unchanged-v01-artifacts.json"
+    },
+    {
+      "change": "A",
+      "path": "reports/v0.2/vectors.json"
+    },
+    {
+      "change": "A",
+      "path": "schemas/bundle-v2.schema.json"
+    },
+    {
+      "change": "A",
+      "path": "schemas/claim-surface.schema.json"
+    },
+    {
+      "change": "A",
+      "path": "schemas/report-v2.schema.json"
+    },
+    {
+      "change": "A",
+      "path": "schemas/request-v2.schema.json"
+    },
+    {
+      "change": "M",
+      "path": "source-lock.json"
+    },
+    {
+      "change": "A",
+      "path": "src/adapters/index-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/adapters/interpoll-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/adapters/native/trustless-bridge.py"
+    },
+    {
+      "change": "A",
+      "path": "src/adapters/prf-v2.mjs"
+    },
+    {
+      "change": "M",
+      "path": "src/adapters/protocol.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/adapters/semantic-abi-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/adapters/trustless.mjs"
+    },
+    {
+      "change": "M",
+      "path": "src/cli.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/core/admission-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/core/authenticity-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/core/claim-surface.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/core/evidence-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/core/verify-v2.mjs"
+    },
+    {
+      "change": "M",
+      "path": "src/core/verify.mjs"
+    },
+    {
+      "change": "A",
+      "path": "src/projection/project-v2.mjs"
+    },
+    {
+      "change": "M",
+      "path": "src/server.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/admission-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/corpus-v02.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/determinism-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/generic-boundary-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/guarantee-boundary-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/helpers/interpoll-v02-fixture.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/helpers/prf-v02-fixture.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/helpers/trustless-v02-fixture.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/interpoll-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/isolation-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/mutation-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/native-boundary-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/prf-composition-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/prf-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/projection-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/provenance-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/registry-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/semantic-abi-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/trustless-grade-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/trustless-v02.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tests/ui-v2.test.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/capture-tests-v2.py"
+    },
+    {
+      "change": "A",
+      "path": "tools/check-provenance-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/corpus-v2.mjs"
+    },
+    {
+      "change": "M",
+      "path": "tools/corpus.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/demos-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/determinism-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/fixtures-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/generate-v02-vectors.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/mutation-harness-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/run-mutations-v2.mjs"
+    },
+    {
+      "change": "M",
+      "path": "tools/run-mutations.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/run-vectors-v2.mjs"
+    },
+    {
+      "change": "M",
+      "path": "tools/run-vectors.mjs"
+    },
+    {
+      "change": "A",
+      "path": "tools/verify-vector-v2.mjs"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G01.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G02.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G03.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G04.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G05.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G06.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G07.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G08.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G09.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G10.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G11.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G12.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G13.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G14.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G15.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G16.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G17.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G18.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G19.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G20.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G21.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G22.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G23.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G24.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G25.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G26.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G27.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G28.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G29.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/G30.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I01.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I02.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I03.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I04.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I05.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I06.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I07.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/I08.json"
+    },
+    {
+      "change": "A",
+      "path": "vectors/v0.2/index.json"
+    },
+    {
+      "change": "A",
+      "path": "vendor/interpoll-v02/LICENSE"
+    },
+    {
+      "change": "A",
+      "path": "vendor/interpoll-v02/engagement.js"
+    },
+    {
+      "change": "A",
+      "path": "vendor/prf-v02/LICENSE"
+    },
+    {
+      "change": "A",
+      "path": "vendor/prf-v02/award_actual_settlement.py"
+    },
+    {
+      "change": "A",
+      "path": "vendor/recompute-kit-v02/LICENSE"
+    },
+    {
+      "change": "A",
+      "path": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/README.md"
+    },
+    {
+      "change": "A",
+      "path": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/scan_check.py"
+    },
+    {
+      "change": "A",
+      "path": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/suite.json"
+    },
+    {
+      "change": "A",
+      "path": "vendor/recompute-kit-v02/tools/run_conformance.py"
+    },
+    {
+      "change": "A",
+      "path": "vendor/semantic-abi-v02/LICENSE"
+    },
+    {
+      "change": "A",
+      "path": "vendor/semantic-abi-v02/runner/src/classes.mjs"
+    },
+    {
+      "change": "A",
+      "path": "vendor/semantic-abi-v02/runner/src/evaluate.mjs"
+    },
+    {
+      "change": "A",
+      "path": "vendor/semantic-abi-v02/runner/src/linker.mjs"
+    },
+    {
+      "change": "A",
+      "path": "vendor/semantic-abi-v02/runner/src/manifest.mjs"
+    },
+    {
+      "change": "M",
+      "path": "web/index.html"
+    },
+    {
+      "change": "M",
+      "path": "web/style.css"
+    }
+  ],
+  "numstat": "1\t0\t.gitattributes\n1\t0\t.gitignore\n75\t5\tFULL_WORK_REUSE_MAP.md\n3\t1\tLICENSING.md\n9\t0\tNOTICE\n59\t2\tPROVENANCE.md\n12\t4\tREADME.md\n68\t0\tTHIRD_PARTY_NOTICES.md\n25\t0\tdocs/generic-claim-boundary.md\n117\t0\tdocs/guarantee-preservation.md\n81\t0\tdocs/interpoll-adapter.md\n52\t0\tdocs/product-projection.md\n29\t0\tdocs/semantic-abi-adapter.md\n145\t0\tdocs/trustless-adapter.md\n31\t0\tdocs/v0.2-architecture.md\n204\t0\tdocs/v0.2-vector-mutation-witnesses.md\n23\t0\tmutations/catalog-v2.mjs\n2\t2\tpackage-lock.json\n7\t2\tpackage.json\n787\t0\tprofiles/product-projection-v2.json\n919\t38\tprovenance/sources.json\n304\t0\tprovenance/v02-actions-prf.json\n183\t0\tprovenance/v02-semantic-abi.json\n136\t0\tprovenance/v02-trustless.json\n555\t0\treports/v0.2/adapter-inventory.json\n0\t0\treports/v0.2/base/capsule-demo.stderr\n1\t0\treports/v0.2/base/capsule-demo.stdout\n0\t0\treports/v0.2/base/cli-demo.stderr\n873\t0\treports/v0.2/base/cli-demo.stdout\n251\t0\treports/v0.2/base/commands.json\n0\t0\treports/v0.2/base/dependencies.stderr\n45\t0\treports/v0.2/base/dependencies.stdout\n0\t0\treports/v0.2/base/dependency-resolution.stderr\n2\t0\treports/v0.2/base/dependency-resolution.stdout\n0\t0\treports/v0.2/base/final-diff-check.stderr\n0\t0\treports/v0.2/base/final-diff-check.stdout\n0\t0\treports/v0.2/base/final-source-lock.stderr\n1\t0\treports/v0.2/base/final-source-lock.stdout\n0\t0\treports/v0.2/base/initial-diff-check.stderr\n0\t0\treports/v0.2/base/initial-diff-check.stdout\n0\t0\treports/v0.2/base/initial-source-lock.stderr\n1\t0\treports/v0.2/base/initial-source-lock.stdout\n5\t0\treports/v0.2/base/install.stderr\n2\t0\treports/v0.2/base/install.stdout\n39\t0\treports/v0.2/base/local-reproduction.json\n0\t0\treports/v0.2/base/local-reproduction.stderr\n1\t0\treports/v0.2/base/local-reproduction.stdout\n329\t0\treports/v0.2/base/mutations.json\n0\t0\treports/v0.2/base/mutations.stderr\n19\t0\treports/v0.2/base/mutations.stdout\n312\t0\treports/v0.2/base/summary.json\n6\t0\treports/v0.2/base/test-scratch-setup.json\n0\t0\treports/v0.2/base/tests.stderr\n1664\t0\treports/v0.2/base/tests.stdout\n4391\t0\treports/v0.2/base/tracked-files.json\n1579\t0\treports/v0.2/base/vectors.json\n0\t0\treports/v0.2/base/vectors.stderr\n5\t0\treports/v0.2/base/vectors.stdout\n0\t0\treports/v0.2/base/version-bun.stderr\n1\t0\treports/v0.2/base/version-bun.stdout\n0\t0\treports/v0.2/base/version-node.stderr\n1\t0\treports/v0.2/base/version-node.stdout\n0\t0\treports/v0.2/base/version-npm.stderr\n1\t0\treports/v0.2/base/version-npm.stdout\n0\t0\treports/v0.2/base/version-python-path.stderr\n1\t0\treports/v0.2/base/version-python-path.stdout\n0\t0\treports/v0.2/base/version-python.stderr\n1\t0\treports/v0.2/base/version-python.stdout\n45\t0\treports/v0.2/before-ui-tests.json\n0\t0\treports/v0.2/before-ui-tests.stderr.txt\n3286\t0\treports/v0.2/before-ui-tests.stdout.txt\n0\t0\treports/v0.2/cli-v01-final.stderr\n873\t0\treports/v0.2/cli-v01-final.stdout\n0\t0\treports/v0.2/cli-v02-final.stderr\n6608\t0\treports/v0.2/cli-v02-final.stdout\n43\t0\treports/v0.2/core-final-tests.json\n0\t0\treports/v0.2/core-final-tests.stderr.txt\n3158\t0\treports/v0.2/core-final-tests.stdout.txt\n43\t0\treports/v0.2/core-green-tests.json\n0\t0\treports/v0.2/core-green-tests.stderr.txt\n3164\t0\treports/v0.2/core-green-tests.stdout.txt\n6608\t0\treports/v0.2/demos.json\n0\t0\treports/v0.2/dependency-inventory.stderr\n45\t0\treports/v0.2/dependency-inventory.stdout\n1131\t0\treports/v0.2/determinism.json\n1\t0\treports/v0.2/determinism/G01-env-variant.json\n0\t0\treports/v0.2/determinism/G01-env-variant.stderr.txt\n1\t0\treports/v0.2/determinism/G01-jitless.json\n1\t0\treports/v0.2/determinism/G01-jitless.stderr.txt\n1\t0\treports/v0.2/determinism/G01-normal.json\n0\t0\treports/v0.2/determinism/G01-normal.stderr.txt\n1\t0\treports/v0.2/determinism/G01-path-a.json\n0\t0\treports/v0.2/determinism/G01-path-a.stderr.txt\n1\t0\treports/v0.2/determinism/G01-path-b.json\n0\t0\treports/v0.2/determinism/G01-path-b.stderr.txt\n1\t0\treports/v0.2/determinism/G01-repeat.json\n0\t0\treports/v0.2/determinism/G01-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/G02-env-variant.json\n0\t0\treports/v0.2/determinism/G02-env-variant.stderr.txt\n1\t0\treports/v0.2/determinism/G02-jitless.json\n1\t0\treports/v0.2/determinism/G02-jitless.stderr.txt\n1\t0\treports/v0.2/determinism/G02-normal.json\n0\t0\treports/v0.2/determinism/G02-normal.stderr.txt\n1\t0\treports/v0.2/determinism/G02-path-a.json\n0\t0\treports/v0.2/determinism/G02-path-a.stderr.txt\n1\t0\treports/v0.2/determinism/G02-path-b.json\n0\t0\treports/v0.2/determinism/G02-path-b.stderr.txt\n1\t0\treports/v0.2/determinism/G02-repeat.json\n0\t0\treports/v0.2/determinism/G02-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/G10-env-variant.json\n0\t0\treports/v0.2/determinism/G10-env-variant.stderr.txt\n1\t0\treports/v0.2/determinism/G10-jitless.json\n1\t0\treports/v0.2/determinism/G10-jitless.stderr.txt\n1\t0\treports/v0.2/determinism/G10-normal.json\n0\t0\treports/v0.2/determinism/G10-normal.stderr.txt\n1\t0\treports/v0.2/determinism/G10-path-a.json\n0\t0\treports/v0.2/determinism/G10-path-a.stderr.txt\n1\t0\treports/v0.2/determinism/G10-path-b.json\n0\t0\treports/v0.2/determinism/G10-path-b.stderr.txt\n1\t0\treports/v0.2/determinism/G10-repeat.json\n0\t0\treports/v0.2/determinism/G10-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/G12-env-variant.json\n0\t0\treports/v0.2/determinism/G12-env-variant.stderr.txt\n1\t0\treports/v0.2/determinism/G12-jitless.json\n1\t0\treports/v0.2/determinism/G12-jitless.stderr.txt\n1\t0\treports/v0.2/determinism/G12-normal.json\n0\t0\treports/v0.2/determinism/G12-normal.stderr.txt\n1\t0\treports/v0.2/determinism/G12-path-a.json\n0\t0\treports/v0.2/determinism/G12-path-a.stderr.txt\n1\t0\treports/v0.2/determinism/G12-path-b.json\n0\t0\treports/v0.2/determinism/G12-path-b.stderr.txt\n1\t0\treports/v0.2/determinism/G12-repeat.json\n0\t0\treports/v0.2/determinism/G12-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/G14-env-variant.json\n0\t0\treports/v0.2/determinism/G14-env-variant.stderr.txt\n1\t0\treports/v0.2/determinism/G14-jitless.json\n1\t0\treports/v0.2/determinism/G14-jitless.stderr.txt\n1\t0\treports/v0.2/determinism/G14-normal.json\n0\t0\treports/v0.2/determinism/G14-normal.stderr.txt\n1\t0\treports/v0.2/determinism/G14-path-a.json\n0\t0\treports/v0.2/determinism/G14-path-a.stderr.txt\n1\t0\treports/v0.2/determinism/G14-path-b.json\n0\t0\treports/v0.2/determinism/G14-path-b.stderr.txt\n1\t0\treports/v0.2/determinism/G14-repeat.json\n0\t0\treports/v0.2/determinism/G14-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/G15-env-variant.json\n0\t0\treports/v0.2/determinism/G15-env-variant.stderr.txt\n1\t0\treports/v0.2/determinism/G15-jitless.json\n1\t0\treports/v0.2/determinism/G15-jitless.stderr.txt\n1\t0\treports/v0.2/determinism/G15-normal.json\n0\t0\treports/v0.2/determinism/G15-normal.stderr.txt\n1\t0\treports/v0.2/determinism/G15-path-a.json\n0\t0\treports/v0.2/determinism/G15-path-a.stderr.txt\n1\t0\treports/v0.2/determinism/G15-path-b.json\n0\t0\treports/v0.2/determinism/G15-path-b.stderr.txt\n1\t0\treports/v0.2/determinism/G15-repeat.json\n0\t0\treports/v0.2/determinism/G15-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/G30-env-variant.json\n0\t0\treports/v0.2/determinism/G30-env-variant.stderr.txt\n1\t0\treports/v0.2/determinism/G30-jitless.json\n1\t0\treports/v0.2/determinism/G30-jitless.stderr.txt\n1\t0\treports/v0.2/determinism/G30-normal.json\n0\t0\treports/v0.2/determinism/G30-normal.stderr.txt\n1\t0\treports/v0.2/determinism/G30-path-a.json\n0\t0\treports/v0.2/determinism/G30-path-a.stderr.txt\n1\t0\treports/v0.2/determinism/G30-path-b.json\n0\t0\treports/v0.2/determinism/G30-path-b.stderr.txt\n1\t0\treports/v0.2/determinism/G30-repeat.json\n0\t0\treports/v0.2/determinism/G30-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/prf-native-relation-normal.json\n0\t0\treports/v0.2/determinism/prf-native-relation-normal.stderr.txt\n1\t0\treports/v0.2/determinism/prf-native-relation-optimized.json\n0\t0\treports/v0.2/determinism/prf-native-relation-optimized.stderr.txt\n1\t0\treports/v0.2/determinism/prf-native-relation-repeat.json\n0\t0\treports/v0.2/determinism/prf-native-relation-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/rvr-bridge-normal.json\n0\t0\treports/v0.2/determinism/rvr-bridge-normal.stderr.txt\n1\t0\treports/v0.2/determinism/rvr-bridge-optimized.json\n0\t0\treports/v0.2/determinism/rvr-bridge-optimized.stderr.txt\n1\t0\treports/v0.2/determinism/rvr-bridge-repeat.json\n0\t0\treports/v0.2/determinism/rvr-bridge-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/trustless-bridge-normal.json\n0\t0\treports/v0.2/determinism/trustless-bridge-normal.stderr.txt\n1\t0\treports/v0.2/determinism/trustless-bridge-optimized.json\n0\t0\treports/v0.2/determinism/trustless-bridge-optimized.stderr.txt\n1\t0\treports/v0.2/determinism/trustless-bridge-repeat.json\n0\t0\treports/v0.2/determinism/trustless-bridge-repeat.stderr.txt\n1\t0\treports/v0.2/determinism/trustless-native-cli-input.json\n17\t0\treports/v0.2/determinism/trustless-native-cli-normal.json\n0\t0\treports/v0.2/determinism/trustless-native-cli-normal.stderr.txt\n17\t0\treports/v0.2/determinism/trustless-native-cli-optimized.json\n0\t0\treports/v0.2/determinism/trustless-native-cli-optimized.stderr.txt\n17\t0\treports/v0.2/determinism/trustless-native-cli-repeat.json\n0\t0\treports/v0.2/determinism/trustless-native-cli-repeat.stderr.txt\n0\t0\treports/v0.2/diff-check-final.stderr\n0\t0\treports/v0.2/diff-check-final.stdout\n1125\t0\treports/v0.2/grade-finding-after.json\n39\t0\treports/v0.2/grade-finding-before.json\n1224\t0\treports/v0.2/guarantee-finding-after.json\n26\t0\treports/v0.2/guarantee-finding-before.json\n42\t0\treports/v0.2/interim-tests.json\n0\t0\treports/v0.2/interim-tests.stderr.txt\n2946\t0\treports/v0.2/interim-tests.stdout.txt\n50\t0\treports/v0.2/jitless-tests.json\n1\t0\treports/v0.2/jitless-tests.stderr.txt\n3308\t0\treports/v0.2/jitless-tests.stdout.txt\n163\t0\treports/v0.2/local-gate.json\n205\t0\treports/v0.2/mutation-invalid-native-before.json\n2043\t0\treports/v0.2/mutations.json\n15\t0\treports/v0.2/negative-control-test-evidence.json\n53\t0\treports/v0.2/no-opt-tests.json\n0\t0\treports/v0.2/no-opt-tests.stderr.txt\n3754\t0\treports/v0.2/no-opt-tests.stdout.txt\n52\t0\treports/v0.2/normal-tests.json\n0\t0\treports/v0.2/normal-tests.stderr.txt\n3754\t0\treports/v0.2/normal-tests.stdout.txt\n35\t0\treports/v0.2/parallel-gate-failures/assessment.json\n52\t0\treports/v0.2/parallel-gate-failures/no-opt-tests.json\n0\t0\treports/v0.2/parallel-gate-failures/no-opt-tests.stderr.txt\n3556\t0\treports/v0.2/parallel-gate-failures/no-opt-tests.stdout.txt\n51\t0\treports/v0.2/parallel-gate-failures/normal-tests.json\n0\t0\treports/v0.2/parallel-gate-failures/normal-tests.stderr.txt\n3556\t0\treports/v0.2/parallel-gate-failures/normal-tests.stdout.txt\n8313\t0\treports/v0.2/prf-composition-finding-after.json\n8273\t0\treports/v0.2/prf-composition-finding-before.json\n693\t0\treports/v0.2/prf-composition-focused-jitless.txt\n688\t0\treports/v0.2/prf-composition-focused-normal.txt\n116\t0\treports/v0.2/projection-obligations-after.json\n0\t0\treports/v0.2/projection-obligations-after.stderr\n1\t0\treports/v0.2/projection-obligations-after.stdout\n107\t0\treports/v0.2/projection-obligations-before.json\n0\t0\treports/v0.2/provenance-license-validation.stderr\n1\t0\treports/v0.2/provenance-license-validation.stdout\n7\t0\treports/v0.2/public-base-identity.json\n0\t0\treports/v0.2/public-base-identity.stderr\n3\t0\treports/v0.2/public-base-identity.stdout\n329\t0\treports/v0.2/regression-mutations.json\n52\t0\treports/v0.2/repeat-tests.json\n0\t0\treports/v0.2/repeat-tests.stderr.txt\n3754\t0\treports/v0.2/repeat-tests.stdout.txt\n0\t0\treports/v0.2/source-lock-validation.stderr\n1\t0\treports/v0.2/source-lock-validation.stdout\n0\t0\treports/v0.2/source-lock-write.stderr\n1\t0\treports/v0.2/source-lock-write.stdout\n1\t0\treports/v0.2/trustless-determinism/negative-normal.json\n1\t0\treports/v0.2/trustless-determinism/negative-optimized.json\n1\t0\treports/v0.2/trustless-determinism/negative-repeat.json\n1\t0\treports/v0.2/trustless-determinism/positive-normal.json\n1\t0\treports/v0.2/trustless-determinism/positive-optimized.json\n1\t0\treports/v0.2/trustless-determinism/positive-repeat.json\n59\t0\treports/v0.2/trustless-determinism/summary.json\n-\t-\treports/v0.2/ui-evidence-grade.png\n-\t-\treports/v0.2/ui-prf-preserved-negative.png\n-\t-\treports/v0.2/ui-scope-contradiction.png\n2770\t0\treports/v0.2/unchanged-v01-artifacts.json\n43943\t0\treports/v0.2/vectors.json\n196\t0\tschemas/bundle-v2.schema.json\n313\t0\tschemas/claim-surface.schema.json\n531\t0\tschemas/report-v2.schema.json\n247\t0\tschemas/request-v2.schema.json\n613\t38\tsource-lock.json\n21\t0\tsrc/adapters/index-v2.mjs\n91\t0\tsrc/adapters/interpoll-v2.mjs\n109\t0\tsrc/adapters/native/trustless-bridge.py\n84\t0\tsrc/adapters/prf-v2.mjs\n1\t1\tsrc/adapters/protocol.mjs\n122\t0\tsrc/adapters/semantic-abi-v2.mjs\n185\t0\tsrc/adapters/trustless.mjs\n3\t0\tsrc/cli.mjs\n62\t0\tsrc/core/admission-v2.mjs\n16\t0\tsrc/core/authenticity-v2.mjs\n72\t0\tsrc/core/claim-surface.mjs\n42\t0\tsrc/core/evidence-v2.mjs\n128\t0\tsrc/core/verify-v2.mjs\n6\t0\tsrc/core/verify.mjs\n55\t0\tsrc/projection/project-v2.mjs\n6\t1\tsrc/server.mjs\n141\t0\ttests/admission-v2.test.mjs\n50\t0\ttests/corpus-v02.test.mjs\n25\t0\ttests/determinism-v2.test.mjs\n212\t0\ttests/generic-boundary-v2.test.mjs\n71\t0\ttests/guarantee-boundary-v2.test.mjs\n25\t0\ttests/helpers/interpoll-v02-fixture.mjs\n16\t0\ttests/helpers/prf-v02-fixture.mjs\n57\t0\ttests/helpers/trustless-v02-fixture.mjs\n112\t0\ttests/interpoll-v2.test.mjs\n12\t0\ttests/isolation-v2.test.mjs\n63\t0\ttests/mutation-v2.test.mjs\n20\t0\ttests/native-boundary-v2.test.mjs\n117\t0\ttests/prf-composition-v2.test.mjs\n123\t0\ttests/prf-v2.test.mjs\n127\t0\ttests/projection-v2.test.mjs\n68\t0\ttests/provenance-v2.test.mjs\n14\t0\ttests/registry-v2.test.mjs\n153\t0\ttests/semantic-abi-v2.test.mjs\n33\t0\ttests/trustless-grade-v2.test.mjs\n177\t0\ttests/trustless-v02.test.mjs\n210\t0\ttests/ui-v2.test.mjs\n31\t0\ttools/capture-tests-v2.py\n150\t0\ttools/check-provenance-v2.mjs\n110\t0\ttools/corpus-v2.mjs\n7\t2\ttools/corpus.mjs\n36\t0\ttools/demos-v2.mjs\n136\t0\ttools/determinism-v2.mjs\n64\t0\ttools/fixtures-v2.mjs\n71\t0\ttools/generate-v02-vectors.mjs\n132\t0\ttools/mutation-harness-v2.mjs\n7\t0\ttools/run-mutations-v2.mjs\n1\t1\ttools/run-mutations.mjs\n41\t0\ttools/run-vectors-v2.mjs\n1\t1\ttools/run-vectors.mjs\n18\t0\ttools/verify-vector-v2.mjs\n457\t0\tvectors/v0.2/G01.json\n459\t0\tvectors/v0.2/G02.json\n461\t0\tvectors/v0.2/G03.json\n461\t0\tvectors/v0.2/G04.json\n461\t0\tvectors/v0.2/G05.json\n461\t0\tvectors/v0.2/G06.json\n471\t0\tvectors/v0.2/G07.json\n477\t0\tvectors/v0.2/G08.json\n457\t0\tvectors/v0.2/G09.json\n460\t0\tvectors/v0.2/G10.json\n297\t0\tvectors/v0.2/G11.json\n298\t0\tvectors/v0.2/G12.json\n329\t0\tvectors/v0.2/G13.json\n352\t0\tvectors/v0.2/G14.json\n523\t0\tvectors/v0.2/G15.json\n525\t0\tvectors/v0.2/G16.json\n460\t0\tvectors/v0.2/G17.json\n461\t0\tvectors/v0.2/G18.json\n461\t0\tvectors/v0.2/G19.json\n451\t0\tvectors/v0.2/G20.json\n519\t0\tvectors/v0.2/G21.json\n461\t0\tvectors/v0.2/G22.json\n473\t0\tvectors/v0.2/G23.json\n293\t0\tvectors/v0.2/G24.json\n459\t0\tvectors/v0.2/G25.json\n463\t0\tvectors/v0.2/G26.json\n459\t0\tvectors/v0.2/G27.json\n438\t0\tvectors/v0.2/G28.json\n299\t0\tvectors/v0.2/G29.json\n530\t0\tvectors/v0.2/G30.json\n329\t0\tvectors/v0.2/I01.json\n331\t0\tvectors/v0.2/I02.json\n331\t0\tvectors/v0.2/I03.json\n348\t0\tvectors/v0.2/I04.json\n352\t0\tvectors/v0.2/I05.json\n331\t0\tvectors/v0.2/I06.json\n327\t0\tvectors/v0.2/I07.json\n331\t0\tvectors/v0.2/I08.json\n158\t0\tvectors/v0.2/index.json\n24\t0\tvendor/interpoll-v02/LICENSE\n59\t0\tvendor/interpoll-v02/engagement.js\n21\t0\tvendor/prf-v02/LICENSE\n218\t0\tvendor/prf-v02/award_actual_settlement.py\n10\t0\tvendor/recompute-kit-v02/LICENSE\n66\t0\tvendor/recompute-kit-v02/conformance/scan-subject-binding-v0/README.md\n180\t0\tvendor/recompute-kit-v02/conformance/scan-subject-binding-v0/scan_check.py\n41\t0\tvendor/recompute-kit-v02/conformance/scan-subject-binding-v0/suite.json\n546\t0\tvendor/recompute-kit-v02/tools/run_conformance.py\n202\t0\tvendor/semantic-abi-v02/LICENSE\n17\t0\tvendor/semantic-abi-v02/runner/src/classes.mjs\n79\t0\tvendor/semantic-abi-v02/runner/src/evaluate.mjs\n101\t0\tvendor/semantic-abi-v02/runner/src/linker.mjs\n105\t0\tvendor/semantic-abi-v02/runner/src/manifest.mjs\n2\t2\tweb/index.html\n5\t0\tweb/style.css\n"
+}

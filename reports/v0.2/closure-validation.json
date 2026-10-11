@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "tested_implementation": "57067b18dd2e5c1aae9ad47476bece6e0aa51cf7",
+  "checks": [
+    {
+      "check": "test-byte-receipt-normal",
+      "status": "PASS"
+    },
+    {
+      "check": "test-byte-receipt-repeat",
+      "status": "PASS"
+    },
+    {
+      "check": "test-byte-receipt-no-opt",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh-command-byte-receipts",
+      "count": 42,
+      "status": "PASS"
+    },
+    {
+      "check": "local-command-byte-receipts",
+      "count": 18,
+      "status": "PASS"
+    },
+    {
+      "check": "fresh-tracked-inventory-versus-exact-git-blobs",
+      "count": 974,
+      "status": "PASS"
+    },
+    {
+      "check": "determinism-exact-command-streams",
+      "count": 54,
+      "status": "PASS"
+    },
+    {
+      "check": "frozen-v01-tracked-identities-and-original-local-bytes",
+      "count": 456,
+      "status": "PASS"
+    },
+    {
+      "check": "no-runtime-or-test-change-since-freshly-tested-implementation",
+      "status": "PASS"
+    },
+    {
+      "check": "source-lock",
+      "status": "PASS",
+      "stdout": "{\"status\":\"PASS\",\"files\":338,\"sourceLockDigest\":\"86cf26a39b103ca32344119c2a5a183d7fcf0616b07257bd356435b2b12fbf2a\"}"
+    },
+    {
+      "check": "provenance-license",
+      "status": "PASS",
+      "stdout": "{\"status\":\"PASS\",\"publicBase\":\"62cd3e59c8f568496ed087d55f0aec3d63363b0a\",\"historicalRepositories\":43,\"historicalSourceEntries\":74,\"newIntegrations\":8,\"newSourceRepositories\":6,\"newVendorFiles\":14,\"sourceFragments\":3,\"npmLicensePackages\":7,\"boundary\":\"Offline identity/attribution/notice consistency; not independent authorship adjudication, legal opinion or semantic soundness proof.\"}"
+    },
+    {
+      "check": "diff",
+      "status": "PASS",
+      "stdout": ""
+    }
+  ]
+}
