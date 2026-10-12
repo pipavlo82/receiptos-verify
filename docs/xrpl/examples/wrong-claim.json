@@ -1,0 +1,133 @@
+{
+  "fixture_kind": "SYNTHETIC_ARCHITECTURE_EXAMPLE_NOT_EXECUTED",
+  "warning": "No signed transaction, actual ledger observation, native receipt or authentic XRPL checkpoint is supplied. All anchor identifiers are illustrative. Expected states hold only under the stated independently established premises.",
+  "anchor": {
+    "profile": "xrpl-receipt-anchor-v0",
+    "receipt_root": "80bdfab9999aef91c22273606ebdab12e8cf3c0e262187ae0b641ab182486697",
+    "claim_preimage": {
+      "receipt_profile": "crystal.handoff-receipt-root.v1",
+      "verification_profile": "receiptos.verify.generic.v2",
+      "surface": {
+        "claim": {
+          "id": "synthetic-commit-A",
+          "kind": "SHA256_EQUALS",
+          "parameters": {
+            "expected_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        },
+        "subject": {
+          "kind": "git-artifact",
+          "id": "synthetic:repo/path",
+          "version": "1",
+          "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "artifact_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        },
+        "scope": {
+          "evidence_member": "artifact"
+        },
+        "authority": {
+          "id": "synthetic-receipt-authority",
+          "class": "INDEPENDENT_RECOMPUTATION"
+        },
+        "policy": {
+          "id": "synthetic-consumer-policy",
+          "version": "1"
+        },
+        "version": "1",
+        "time": {
+          "not_before": 0,
+          "not_after": 2000000000
+        },
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "artifact",
+          "native-result",
+          "adapter-input",
+          "execution"
+        ]
+      },
+      "network_binding": {
+        "network_id": 0,
+        "trusted_checkpoint": {
+          "ledger_index": 1,
+          "ledger_hash": "0000000000000000000000000000000000000000000000000000000000000003"
+        }
+      }
+    },
+    "claim_digest": "4502e5ed22b9edb46fbdc15e77c58959772a8c461c82b02fa96c8ee2259dd24e",
+    "memo": {
+      "MemoType": "726563656970746F732F7872706C2D726563656970742D616E63686F722D7630",
+      "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+      "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+    }
+  },
+  "requested_surface": {
+    "claim": {
+      "id": "synthetic-commit-B",
+      "kind": "SHA256_EQUALS",
+      "parameters": {
+        "expected_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    },
+    "subject": {
+      "kind": "git-artifact",
+      "id": "synthetic:repo/path",
+      "version": "1",
+      "commit": "cccccccccccccccccccccccccccccccccccccccc",
+      "artifact_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "scope": {
+      "evidence_member": "artifact"
+    },
+    "authority": {
+      "id": "synthetic-receipt-authority",
+      "class": "INDEPENDENT_RECOMPUTATION"
+    },
+    "policy": {
+      "id": "synthetic-consumer-policy",
+      "version": "1"
+    },
+    "version": "1",
+    "time": {
+      "not_before": 0,
+      "not_after": 2000000000
+    },
+    "assumptions": [],
+    "dependencies": [],
+    "evidence_requirements": [
+      "artifact",
+      "native-result",
+      "adapter-input",
+      "execution"
+    ]
+  },
+  "observation_placeholders": {
+    "transaction_type": "AccountSet",
+    "transaction_hash": "0000000000000000000000000000000000000000000000000000000000000001",
+    "ledger_hash": "0000000000000000000000000000000000000000000000000000000000000002",
+    "ledger_index": 2,
+    "submitting_account": "ACCOUNT_TO_BE_SELECTED_BY_CALLER",
+    "authorization_mode": "MASTER_OR_REGULAR_OR_MULTISIGN",
+    "required_transaction_result": "tesSUCCESS",
+    "required_validated": true,
+    "trust_policy": "Independently selected chain/checkpoint and trusted fully validating server; no saved-boolean proof."
+  },
+  "assumed_premises": [
+    "Receipt root independently verified by pinned root profile",
+    "Evidence declaration is independently bound to the receipt",
+    "Exact anchor included with tesSUCCESS on the caller-selected validated chain",
+    "Account authorization and expected account policy independently established"
+  ],
+  "expected_under_stated_premises": {
+    "anchor_native": "ANCHOR_MATCH",
+    "receipt_integrity": "VERIFIED",
+    "claim_subject_compatibility": "CONTRADICTED",
+    "overall": "CONTRADICTED",
+    "reason_codes": [
+      "CLAIM_MISMATCH",
+      "SUBJECT_MISMATCH"
+    ],
+    "explanation": "Anchor compares to evidence A; caller compatibility compares A with independently requested B. Authenticated evidence for A does not establish B."
+  }
+}

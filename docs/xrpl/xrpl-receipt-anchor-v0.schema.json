@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:receiptos:proposal:xrpl-receipt-anchor-v0",
+  "title": "PROPOSED ReceiptOS XRPL anchor commitment descriptor; not XRPL transaction schema",
+  "description": "Documentation-only proposed profile. Import the frozen product claim-surface schema. Validation proves shape only, never hashes, signature authorization, ledger inclusion, canonical-byte equality or semantic truth. Examples validate their anchor member against this schema.",
+  "type": "object",
+  "properties": {
+    "profile": {
+      "const": "xrpl-receipt-anchor-v0"
+    },
+    "receipt_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "claim_preimage": {
+      "type": "object",
+      "properties": {
+        "receipt_profile": {
+          "const": "crystal.handoff-receipt-root.v1"
+        },
+        "verification_profile": {
+          "const": "receiptos.verify.generic.v2"
+        },
+        "surface": {
+          "$ref": "urn:receiptos:verify:claim-surface:v2"
+        },
+        "network_binding": {
+          "type": "object",
+          "properties": {
+            "network_id": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967295
+            },
+            "trusted_checkpoint": {
+              "type": "object",
+              "properties": {
+                "ledger_index": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 4294967295
+                },
+                "ledger_hash": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "required": [
+                "ledger_index",
+                "ledger_hash"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "network_id",
+            "trusted_checkpoint"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "receipt_profile",
+        "verification_profile",
+        "surface",
+        "network_binding"
+      ],
+      "additionalProperties": false
+    },
+    "claim_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "memo": {
+      "type": "object",
+      "properties": {
+        "MemoType": {
+          "const": "726563656970746F732F7872706C2D726563656970742D616E63686F722D7630"
+        },
+        "MemoFormat": {
+          "const": "6170706C69636174696F6E2F6F637465742D73747265616D"
+        },
+        "MemoData": {
+          "type": "string",
+          "pattern": "^[0-9A-F]{128}$"
+        }
+      },
+      "required": [
+        "MemoType",
+        "MemoFormat",
+        "MemoData"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "profile",
+    "receipt_root",
+    "claim_preimage",
+    "claim_digest",
+    "memo"
+  ],
+  "additionalProperties": false,
+  "$comment": "MemoData must decode to receipt_root[32] || claim_digest[32]. C = SHA256(ASCII(receiptos.xrpl-receipt-anchor-v0.claim) || 0x00 || UTF8(JCS(claim_preimage))). Schema cannot enforce these relations. Root profile v1 and generic verification v2 are distinct. For the pinned native root, verify its known 0x-prefixed 64 hex representation, then decode the 32-byte digest to normalized lowercase descriptor hex. Check duplicate keys before JSON parsing; use existing closed claim-surface admission and safe-integer limits. Check checkpoint index <= anchor ledger index and same validated history under independently accepted chain trust. Check submitting Account against caller policy, separately from receipt authority. V0 carrier: standalone AccountSet with ordinary Sequence >0, no Ticket, no account-setting fields, no Delegate/Sponsor/batch context. Anchor metadata is external to R, which excludes top-level anchor in the pinned Crystal profile."
+}

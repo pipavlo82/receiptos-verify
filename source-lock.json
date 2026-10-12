@@ -93,6 +93,31 @@
       "sha256": "27b38aaa39ff19351392ade77254c42d4df4b60dbbc3eeb885eb56e3217b7033"
     },
     {
+      "path": "docs/xrpl/examples/matching-claim.json",
+      "bytes": 4752,
+      "sha256": "117cdd4c06c2969c6619a790853b5579bdedc8e6a5e4ce494bb35963c5a8dff9"
+    },
+    {
+      "path": "docs/xrpl/examples/wrong-claim.json",
+      "bytes": 4811,
+      "sha256": "26042856f97a4d87a4d4cb001cca260132adc65b96150eaf57a3fecae47e7fbc"
+    },
+    {
+      "path": "docs/xrpl/RECEIPTOS_VERIFY_XRPL_NOTE.md",
+      "bytes": 8211,
+      "sha256": "43b8eec0410648df4e3001ce540f41c3c9e6aa07001abd42f86c4119ae25a55c"
+    },
+    {
+      "path": "docs/xrpl/REFERENCES.md",
+      "bytes": 7098,
+      "sha256": "bb2eeda8a67aa794c120cab90c6a96192ea10a6bedac64b08c77d8192159c529"
+    },
+    {
+      "path": "docs/xrpl/xrpl-receipt-anchor-v0.schema.json",
+      "bytes": 3911,
+      "sha256": "020f4a05f424f1034a3a59ee03d616a00fccbb440aba9788e6a3e097602fedd4"
+    },
+    {
       "path": "FULL_WORK_REUSE_MAP.md",
       "bytes": 49308,
       "sha256": "c97366caa65a34587050b79a411ef967e3d137ee560a7df6b710f2664423f2ea"
@@ -126,6 +151,11 @@
       "path": "NOTICE",
       "bytes": 864,
       "sha256": "26f2f6ae76f46cd03852e4625aad656932ce9a1a9f48bb80e97e4693fa101c46"
+    },
+    {
+      "path": "output/ReceiptOS_Verify_XRPL_Technical_Note.pdf",
+      "bytes": 24817,
+      "sha256": "a7ecbde0b7461209298193e3199547f2d1d988f06ea568942f7739ec4d1b63f7"
     },
     {
       "path": "package-lock.json",
@@ -1726,6 +1756,11 @@
       "path": "web/style.css",
       "bytes": 8154,
       "sha256": "fc276ced6e8d38e5e37e49d0362e6a94a9b1b99f6e2b4129012808a75e0537f9"
+    },
+    {
+      "path": "XRPL_NOTE_REVIEW_REPORT.md",
+      "bytes": 19984,
+      "sha256": "65fed4b4c0b3ea6cd309e06b6e378fe2ea88357945870c3b466535f13bafad44"
     }
   ]
 }
