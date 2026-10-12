@@ -1,0 +1,157 @@
+{
+  "schema": "receiptos.audit.local-history-curation.v1",
+  "frozen_anchor": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "old_head": "1ddfc74c3b0d99b003b4fbe30a2ccb29ce13b417",
+  "new_head": "eb942148eeb489db809b39e053ec905105cc3056",
+  "branch": "feat/v0.2-generic-trustless-boundary",
+  "raw_bundle": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-raw-audit-unpublished.bundle",
+  "raw_bundle_sha256": "bdcda1d52ff39859be852c110c32fc010649a24e54268fad1d608ea9669aff3b",
+  "mapping": [
+    {
+      "original_local_commit": "dde5419f453969ae33b9e88b3151dba3e370f196",
+      "sanitized_commit": "a9800bbb88a372e58d461b315dd7648cde26e79a",
+      "tree": "ab837fc00b2d9f2ff8a7289f53d7af6581cbd061",
+      "non_report_blobs_identical": true,
+      "file_mappings": [
+        {
+          "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+          "beforeSHA256": "5c61e052b4f5f940a80e9019e8cc252dd4e4bcc107a449d05155f1f706dca052",
+          "afterSHA256": "37d34969f133778773f69daea4ad1aca083d96e05f7956f387077fb4da6fa2be",
+          "afterBytes": 208316,
+          "omittedFields": 112
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+          "beforeSHA256": "24b8ab1c5878787b0443134e9d4ae227dc9bf7ff407194556d1446ae72800d1c",
+          "afterSHA256": "e70a323e3d6b5a8e0bd6ffbfc51b71ec6a1307ae062ba9ac9c1d76d2cbcfd516",
+          "afterBytes": 2356235,
+          "omittedFields": 852
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+          "beforeSHA256": "de4d5b9b552e0871e1c2b9f9357b7e33d7fdff0e177aa99f341e73debcc2e2e4",
+          "afterSHA256": "5c429d051ec08cba40495c42f23260496678cfcee8c5179419fe625f368cdda8",
+          "afterBytes": 630476,
+          "omittedFields": 208
+        }
+      ]
+    },
+    {
+      "original_local_commit": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f",
+      "sanitized_commit": "2c602f6434f9b9095bf7ae2d678a7f48f16078cd",
+      "tree": "5490112cd98ea53b5ee07284994db84b8a26750e",
+      "non_report_blobs_identical": true,
+      "file_mappings": [
+        {
+          "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+          "beforeSHA256": "5c61e052b4f5f940a80e9019e8cc252dd4e4bcc107a449d05155f1f706dca052",
+          "afterSHA256": "37d34969f133778773f69daea4ad1aca083d96e05f7956f387077fb4da6fa2be",
+          "afterBytes": 208316,
+          "omittedFields": 112
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+          "beforeSHA256": "24b8ab1c5878787b0443134e9d4ae227dc9bf7ff407194556d1446ae72800d1c",
+          "afterSHA256": "e70a323e3d6b5a8e0bd6ffbfc51b71ec6a1307ae062ba9ac9c1d76d2cbcfd516",
+          "afterBytes": 2356235,
+          "omittedFields": 852
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+          "beforeSHA256": "de4d5b9b552e0871e1c2b9f9357b7e33d7fdff0e177aa99f341e73debcc2e2e4",
+          "afterSHA256": "5c429d051ec08cba40495c42f23260496678cfcee8c5179419fe625f368cdda8",
+          "afterBytes": 630476,
+          "omittedFields": 208
+        }
+      ]
+    },
+    {
+      "original_local_commit": "40fcaa7bbf43872c1ab6d63565ad3c2d9808b81c",
+      "sanitized_commit": "e719f2ddfea026ee8d7b1b3f9e3ca9ce606345a3",
+      "tree": "1a672247fbc2b056162299112f64826c456e6563",
+      "non_report_blobs_identical": true,
+      "file_mappings": [
+        {
+          "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+          "beforeSHA256": "5c61e052b4f5f940a80e9019e8cc252dd4e4bcc107a449d05155f1f706dca052",
+          "afterSHA256": "37d34969f133778773f69daea4ad1aca083d96e05f7956f387077fb4da6fa2be",
+          "afterBytes": 208316,
+          "omittedFields": 112
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+          "beforeSHA256": "24b8ab1c5878787b0443134e9d4ae227dc9bf7ff407194556d1446ae72800d1c",
+          "afterSHA256": "e70a323e3d6b5a8e0bd6ffbfc51b71ec6a1307ae062ba9ac9c1d76d2cbcfd516",
+          "afterBytes": 2356235,
+          "omittedFields": 852
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+          "beforeSHA256": "de4d5b9b552e0871e1c2b9f9357b7e33d7fdff0e177aa99f341e73debcc2e2e4",
+          "afterSHA256": "5c429d051ec08cba40495c42f23260496678cfcee8c5179419fe625f368cdda8",
+          "afterBytes": 630476,
+          "omittedFields": 208
+        }
+      ]
+    },
+    {
+      "original_local_commit": "3df769c4d873d6f354d1627a97967eec645bd727",
+      "sanitized_commit": "b97201fe9c1122f59a3e12ccba0a0921b5fd87ea",
+      "tree": "fa6be822c89e4d4657910a84d107abc80806de09",
+      "non_report_blobs_identical": true,
+      "file_mappings": [
+        {
+          "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+          "beforeSHA256": "5c61e052b4f5f940a80e9019e8cc252dd4e4bcc107a449d05155f1f706dca052",
+          "afterSHA256": "37d34969f133778773f69daea4ad1aca083d96e05f7956f387077fb4da6fa2be",
+          "afterBytes": 208316,
+          "omittedFields": 112
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+          "beforeSHA256": "24b8ab1c5878787b0443134e9d4ae227dc9bf7ff407194556d1446ae72800d1c",
+          "afterSHA256": "e70a323e3d6b5a8e0bd6ffbfc51b71ec6a1307ae062ba9ac9c1d76d2cbcfd516",
+          "afterBytes": 2356235,
+          "omittedFields": 852
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+          "beforeSHA256": "de4d5b9b552e0871e1c2b9f9357b7e33d7fdff0e177aa99f341e73debcc2e2e4",
+          "afterSHA256": "5c429d051ec08cba40495c42f23260496678cfcee8c5179419fe625f368cdda8",
+          "afterBytes": 630476,
+          "omittedFields": 208
+        }
+      ]
+    },
+    {
+      "original_local_commit": "1ddfc74c3b0d99b003b4fbe30a2ccb29ce13b417",
+      "sanitized_commit": "eb942148eeb489db809b39e053ec905105cc3056",
+      "tree": "3fa1cea8387f733cab6a0868acf6060ec958b06d",
+      "non_report_blobs_identical": true,
+      "file_mappings": [
+        {
+          "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+          "beforeSHA256": "5c61e052b4f5f940a80e9019e8cc252dd4e4bcc107a449d05155f1f706dca052",
+          "afterSHA256": "37d34969f133778773f69daea4ad1aca083d96e05f7956f387077fb4da6fa2be",
+          "afterBytes": 208316,
+          "omittedFields": 112
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+          "beforeSHA256": "24b8ab1c5878787b0443134e9d4ae227dc9bf7ff407194556d1446ae72800d1c",
+          "afterSHA256": "e70a323e3d6b5a8e0bd6ffbfc51b71ec6a1307ae062ba9ac9c1d76d2cbcfd516",
+          "afterBytes": 2356235,
+          "omittedFields": 852
+        },
+        {
+          "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+          "beforeSHA256": "de4d5b9b552e0871e1c2b9f9357b7e33d7fdff0e177aa99f341e73debcc2e2e4",
+          "afterSHA256": "5c429d051ec08cba40495c42f23260496678cfcee8c5179419fe625f368cdda8",
+          "afterBytes": 630476,
+          "omittedFields": 208
+        }
+      ]
+    }
+  ],
+  "boundary": "Only agent-created local audit commits after frozen anchor curated; frozen/main/tags and all non-report blobs preserved. Raw originals remain unpublished work evidence. Execution receipts retain original identities."
+}

@@ -1,0 +1,94 @@
+{
+  "id": "T07_package_presence",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "REJECTED_MALFORMED",
+    "notes": ""
+  },
+  "input": {
+    "input": {
+      "package_present": true,
+      "runner_declared": true,
+      "exitCode": 0
+    },
+    "context": {}
+  },
+  "output": {
+    "status": "REJECTED_MALFORMED",
+    "semanticOutcome": "UNVERIFIABLE",
+    "recomputationStatus": "CANNOT_RECOMPUTE",
+    "reasonCodes": [
+      "TRUSTLESS_INPUT_MALFORMED"
+    ],
+    "nativeResult": null,
+    "provenance": {
+      "profileId": "receiptos.verify.trustless-scan.v2",
+      "nativeProfileId": "scan_subject_binding.v0",
+      "sourceRepository": "https://github.com/trustless-ai/recompute-kit",
+      "sourceCommit": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "license": "CC0-1.0",
+      "maturity": "EXPERIMENTAL",
+      "sourceMaturity": "STABLE",
+      "sourceState": "PUBLIC_MAIN",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "NATIVE_SCAN_SUBJECT_BINDING",
+        "NATIVE_ED25519_MANIFEST_CHECK",
+        "NATIVE_RESULT_REPLAY",
+        "NATIVE_SELF_GRADING_RUNNER"
+      ],
+      "requiredEvidence": [
+        "signed-scan-manifest",
+        "corpus-and-decision",
+        "saved-native-scan-result"
+      ],
+      "nativeVocabulary": {
+        "semantic": [
+          "NO_FINDING",
+          "CONTRADICTED",
+          "CANNOT_ESTABLISH",
+          "NOT_VALID"
+        ],
+        "evidenceGrade": [
+          "REPRODUCED",
+          "AUTHENTICATED_REPORT",
+          null
+        ],
+        "runner": [
+          "PASS",
+          "SUITE",
+          "DRIFT",
+          "RUNNER",
+          "NOT COVERED",
+          "UNVERIFIABLE"
+        ],
+        "replay": [
+          "REPRODUCED",
+          "DIVERGED",
+          "CANNOT_RECOMPUTE"
+        ]
+      },
+      "contractMode": "MAIN_SELF_GRADING",
+      "reporterContract": "NOT_IMPLEMENTED",
+      "functions": [
+        "check_decision",
+        "sig_ok",
+        "subject_bound",
+        "result_only",
+        "main",
+        "run_suite"
+      ]
+    },
+    "limitations": [
+      "sourceMaturity STABLE identifies the merged public relation; maturity EXPERIMENTAL identifies this bounded product integration, not production security certification or full recompute-kit conformance.",
+      "Only scan_subject_binding.v0 is executable here. Other suites and PR57 reporter contracts are unsupported.",
+      "NO_FINDING means only this declared scanner found nothing in its bound subject; it never means POISONING_ABSENT.",
+      "AUTHENTICATED_REPORT establishes a signed assertion; it does not establish scanner-origin execution.",
+      "The supplied scanner pattern/version is a declared deterministic toy scan, not a general poisoning detector.",
+      "Canonical runner PASS records reproduction against the saved target; it is not an independent positive semantic verdict."
+    ]
+  },
+  "assessment": "PASS",
+  "actual": "REJECTED_MALFORMED",
+  "inputSha256": "5df68a5eeac75f73d4543dbf432a2160d51bd7fe8807b3dccdbc761bd54a5bc7"
+}

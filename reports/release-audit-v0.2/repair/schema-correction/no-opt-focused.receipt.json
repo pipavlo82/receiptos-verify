@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "node",
+    "--no-opt",
+    "--test",
+    "--test-concurrency=1",
+    "tests/interpoll-request-classification-release.test.mjs",
+    "tests/adapter-context-release.test.mjs",
+    "tests/requirement-admission-release.test.mjs"
+  ],
+  "exitCode": 0,
+  "counts": {
+    "tests": 75,
+    "pass": 75,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "stdoutSha256": "e67cab1684d0e1189870300b5cc54f5b62bc664c62e9485f54e5eac7255166cc",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

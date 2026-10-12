@@ -1,0 +1,163 @@
+{
+  "status": "PASS",
+  "base": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "branch": "feat/v0.2-generic-trustless-boundary",
+  "source_lock": {
+    "status": "PASS",
+    "files": 337,
+    "sourceLockDigest": "49ec1e4e79a40844013fe8180a7f1b8cd2a03ffadf6c0c2c821f34d206f66200"
+  },
+  "provenance_license": {
+    "status": "PASS",
+    "publicBase": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+    "historicalRepositories": 43,
+    "historicalSourceEntries": 74,
+    "newIntegrations": 8,
+    "newSourceRepositories": 6,
+    "newVendorFiles": 14,
+    "sourceFragments": 3,
+    "npmLicensePackages": 7,
+    "boundary": "Offline identity/attribution/notice consistency; not independent authorship adjudication, legal opinion or semantic soundness proof."
+  },
+  "package_lock_sha256": "699f2fc389c8d95ad0e5c7f2ef1b3566152b1f9e5123e2ab49cb5c9d59285023",
+  "controller_sha256": "c429c858eb0a4e956966ab8a98d6f6577392bc6f5d2f6bb6d2994eb0b96ead2c",
+  "commands": [
+    {
+      "label": "public-base-identity",
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/tags/v0.1.0",
+        "refs/tags/v0.1.0^{}"
+      ],
+      "started_utc": "2026-10-11T22:46:28.018688+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "1f84b6ee7f8bc788d535c0b9aecfae000cbf281af0a859130e825d3db8ba6dd1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "projection-obligations-after",
+      "argv": [
+        "node",
+        "--input-type=module",
+        "-e",
+        "\nimport {readFile,writeFile} from 'node:fs/promises';\nimport {createHash} from 'node:crypto';\nimport {projectV2} from './src/projection/project-v2.mjs';\nconst before=JSON.parse(await readFile('reports/v0.2/projection-obligations-before.json','utf8'));\nconst results=[];let getterCalls=0;\nconst accessor=[];Object.defineProperty(accessor,'0',{enumerable:true,get(){getterCalls++;throw new Error('OBLIGATION_GETTER_EXECUTED');}});accessor.length=1;\nfor(const [name,required] of [['sparse-array',Array(1)],['accessor-array',accessor],['duplicate-array',['INTEGRITY','INTEGRITY']]]){\n  const result=projectV2(before.positive_layers,required);results.push({name,result});\n  if(result.status!=='REJECTED_MALFORMED')throw new Error('UNREPAIRED_OBLIGATION_BOUNDARY');\n}\nif(getterCalls!==0)throw new Error('GETTER_EXECUTED');\nconst report={captured_utc:new Date().toISOString(),source_sha256:createHash('sha256').update(await readFile('src/projection/project-v2.mjs')).digest('hex'),\n positive_layers:before.positive_layers,input_descriptions:before.input_descriptions,positive_layer_byte_identity:'canonical same literal object from retained before receipt',getter_calls:getterCalls,results};\nawait writeFile('reports/v0.2/projection-obligations-after.json',JSON.stringify(report,null,2)+'\\n');\nconsole.log(JSON.stringify({getterCalls,results}));\n"
+      ],
+      "started_utc": "2026-10-11T22:46:28.231793+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "60e56f3c2d05b7737c633050768019c64c070c6946e200385b040e01c68dcb24",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "source-lock-write",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs",
+        "--write"
+      ],
+      "started_utc": "2026-10-11T22:47:21.748038+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "9c6d54886db73b9b3a00ac61a4f66db2cb7aff88b4df14755f505e3119cddee2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "source-lock-validation",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs"
+      ],
+      "started_utc": "2026-10-11T22:47:22.002635+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "75e289dfdd522acdaf6c8770c1ee597eaa68220f9599a13cf89cc1119bc48695",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "provenance-license-validation",
+      "argv": [
+        "node",
+        "tools/check-provenance-v2.mjs"
+      ],
+      "started_utc": "2026-10-11T22:47:22.268756+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "751ea2d07b3ccc3e9de1daf9d4fb17b4daa8f13e6b84eb1f0d8331f0099c7d60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-inventory",
+      "argv": [
+        "npm.cmd",
+        "ls",
+        "--all",
+        "--json"
+      ],
+      "started_utc": "2026-10-11T22:47:22.394082+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "bbf2855ef29e0ff33b12f542a8d2e8de1d6db1d233f269816cc8f576bb4e9193",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cli-v01-final",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "demo"
+      ],
+      "started_utc": "2026-10-11T22:47:24.009181+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "d54674ca2d48d5659ca7c3268a7e9f693a6309a9886d56481c94378e7c57a48e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cli-v02-final",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "demo-v2"
+      ],
+      "started_utc": "2026-10-11T22:47:25.232914+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "b66ba674a8b9d35f806194f41defd9a89ef0acde810eb3927efe626720ace041",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "diff-check-final",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "started_utc": "2026-10-11T22:47:29.919610+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "tests": {
+    "normal": {
+      "tests": 624,
+      "pass": 624,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "no-opt": {
+      "tests": 624,
+      "pass": 624,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "repeat": {
+      "tests": 624,
+      "pass": 624,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  }
+}

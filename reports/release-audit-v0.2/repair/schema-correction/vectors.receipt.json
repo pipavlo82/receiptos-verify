@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "node",
+    "tools/run-vectors-v2.mjs",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-schema-correction\\vectors.json"
+  ],
+  "exitCode": 0,
+  "counts": {
+    "count": 68,
+    "passed": 68,
+    "failed": 0
+  },
+  "stdoutSha256": "b031e6ce38465307f57e998557f2058b78887006311ed20bbf8e9ec5567b2627",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

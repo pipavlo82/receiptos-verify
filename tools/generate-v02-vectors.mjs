@@ -1,0 +1,71 @@
+import { mkdir,writeFile } from 'node:fs/promises';
+import { baselineV2,trustlessV2,interpollV2,resignV2,reattachAdapterV2 } from './fixtures-v2.mjs';
+import { requestSurface } from '../src/core/claim-surface.mjs';
+import { digest } from '../src/core/common.mjs';
+import { refreshInterpollCommitment } from '../tests/helpers/interpoll-v02-fixture.mjs';
+import { makePrfFixture } from '../tests/helpers/prf-v02-fixture.mjs';
+
+// Detached literal oracles: this generator never imports verify/project/adapters
+// to calculate expectations. Native constructors only supply fresh evidence.
+const positive={INPUT:'ADMITTED',CANONICALIZATION:'VERIFIED',INTEGRITY:'VERIFIED',AUTHENTICITY:'VERIFIED',SUBJECT_BINDING:'VERIFIED',RECOMPUTATION:'REPRODUCED',EVIDENCE_SUFFICIENCY:'SUFFICIENT',SEMANTIC_COMPATIBILITY:'COMPATIBLE',GUARANTEE_PRESERVATION:'NOT_REQUESTED',CONTINUITY:'NOT_REQUESTED',DOMAIN_ADAPTERS:'NOT_REQUESTED'};
+const rows=[];
+async function add(id,title,factory,change,overall='VERIFIED',layers={},reasons=[],mutants=[],control='G01') {
+  const pair=await factory();if(change)await change(pair);
+  const negative=['G12','G14','I02','I03','I05'].includes(id), unavailable=['G28','I06','I07','I08'].includes(id);
+  const native={'RECOMPUTATION.semanticOutcome':negative?'REFUTED':unavailable?'UNVERIFIABLE':'VERIFIED',
+    'SEMANTIC_COMPATIBILITY.observedSemanticPair':['G05','G10','G11','G18'].includes(id)?'VIOLATED':'PRESERVED'};
+  if(['G11','G12','G24','G29'].includes(id))Object.assign(native,{'RECOMPUTATION.nativeResult.verdict':'PASS','RECOMPUTATION.nativeResult.semanticVerdict':id==='G12'?'CONTRADICTED':'NO_FINDING'});
+  if(id==='G29')native['RECOMPUTATION.nativeResult.evidenceGrade']='AUTHENTICATED_REPORT';
+  if(id.startsWith('I')||['G13','G14'].includes(id))native['RECOMPUTATION.nativeResult.signature']='VALID';
+  if(['G15','G16','G21'].includes(id))native['GUARANTEE_PRESERVATION.nativeResult.upstream.outcome']=id==='G21'?'UNVERIFIABLE':'PRESERVED';
+  if(id==='G30')Object.assign(native,{'GUARANTEE_PRESERVATION.nativeResult.upstream.outcome':'VIOLATED','GUARANTEE_PRESERVATION.nativeResult.recomputation':'REPRODUCED','GUARANTEE_PRESERVATION.nativeResult.transfer.outcome':'PRESERVED','GUARANTEE_PRESERVATION.productProjection.status':'CONTRADICTED'});
+  const expected={overall,layers:{...positive,PRODUCT_PROJECTION:overall,EXPLAINABLE_REPORT:'GENERATED',PROVENANCE:'RECORDED',...layers},native,reason_codes:reasons};
+  const vector={id,title,synthetic:true,oracle:{kind:'DETACHED_LITERAL_RELATIONAL_EXPECTATION',relation:title,positive_control:control,mutants},...pair,expected};
+  rows.push({id,title});await writeFile(new URL('../vectors/v0.2/'+id+'.json',import.meta.url),JSON.stringify(vector,null,2)+'\n');
+}
+const semantic={SEMANTIC_COMPATIBILITY:'CONTRADICTED'};
+const subject={...semantic,SUBJECT_BINDING:'CONTRADICTED'};
+const dependency=pair=>{pair.request.dependencies=[{id:'upstream-relation',version:'1'}];pair.bundle.statement.surface.dependencies=structuredClone(pair.request.dependencies);resignV2(pair);};
+const withPrf=async()=>{const pair=await baselineV2(),fixture=makePrfFixture();pair.request.requested_guarantees=[{id:'native-result-and-dependencies-preserved'}];pair.request.guarantee_requirement=fixture.context;pair.bundle.payload.guarantees=fixture.input;return resignV2(pair);};
+const traceChanged=pair=>{refreshInterpollCommitment(pair.bundle.payload.adapter);pair.request.subject.artifact_digest=digest(pair.bundle.payload.adapter);pair.bundle.statement.surface.subject.artifact_digest=pair.request.subject.artifact_digest;reattachAdapterV2(pair);};
+await mkdir(new URL('../vectors/v0.2/',import.meta.url),{recursive:true});
+await add('G01','Exact generic claim and subject permit verification',baselineV2);
+await add('G02','Same authenticated receipt cannot establish another commit',baselineV2,p=>p.request.subject.commit='b'.repeat(40),'CONTRADICTED',subject,['SUBJECT_MISMATCH']);
+await add('G03','Same artifact cannot establish another subject identity',baselineV2,p=>p.request.subject.id='synthetic:other','CONTRADICTED',subject,['SUBJECT_MISMATCH'],['M06']);
+await add('G04','Same subject cannot establish another authority identity',baselineV2,p=>p.request.authority.id='other-authority','CONTRADICTED',semantic,['AUTHORITY_MISMATCH'],['M01']);
+await add('G05','Evidence with exact narrow scope cannot establish broader requested scope',baselineV2,p=>p.request.scope={all_artifacts:true},'CONTRADICTED',semantic,['SCOPE_MISMATCH'],['M02']);
+await add('G06','Policy version must be preserved',baselineV2,p=>p.request.policy.version='3','CONTRADICTED',semantic,['POLICY_MISMATCH'],['M03']);
+await add('G07','Declared dependency needs independently accepted premise',baselineV2,dependency,'INSUFFICIENT_EVIDENCE',{SEMANTIC_COMPATIBILITY:'INSUFFICIENT_EVIDENCE'},['DEPENDENCY_MISSING'],['M04'],'G23');
+await add('G08','Contradicted dependency cannot support requested claim',baselineV2,p=>{dependency(p);p.request.policy.dependency_results=[{id:'upstream-relation',version:'1',status:'CONTRADICTED'}];},'CONTRADICTED',semantic,['DEPENDENCY_CONTRADICTED'],['M05'],'G23');
+await add('G09','Native Semantic ABI exact declaration links compatibly',baselineV2,p=>{p.request.adapter='semantic-abi';p.bundle.statement.adapter='semantic-abi';resignV2(p);});
+await add('G10','Native Semantic ABI rejects incompatible scope with identical subject',baselineV2,p=>{p.request.adapter='semantic-abi';p.bundle.statement.adapter='semantic-abi';resignV2(p);p.request.scope={tenant:'broader'};},'CONTRADICTED',semantic,['SCOPE_MISMATCH','SEMANTIC_ABI_TYPE_ERROR'],[],'G09');
+await add('G11','Real recompute-kit native PASS cannot bypass incompatible requested claim',trustlessV2,p=>p.request.claim.id='other-claim','CONTRADICTED',semantic,['CLAIM_MISMATCH'],['M07'],'G24');
+await add('G12','Reproduced negative recompute-kit remains negative',()=>trustlessV2({negative:true}),null,'CONTRADICTED',{},['NATIVE_NEGATIVE_RESULT','TRUSTLESS_NATIVE_CONTRADICTION'],['M08'],'G24');
+await add('G13','Interpoll signed intent binds exact supplied execution trace',interpollV2,null,'VERIFIED',{DOMAIN_ADAPTERS:'VERIFIED'},[],[],'G13');
+await add('G14','Valid action signature cannot authorize changed retry parameter',interpollV2,p=>{const retry=structuredClone(p.bundle.payload.adapter.attempts[0]);retry.id='retry-attempt';retry.action.value='down';retry.delivery_status='pending';retry.execution_attempted=false;p.bundle.payload.adapter.attempts.push(retry);traceChanged(p);},'CONTRADICTED',{DOMAIN_ADAPTERS:'CONTRADICTED'},['RETRY_AUTHORIZED_ACTION_CHANGED'],['M09'],'G13');
+await add('G15','Native PRF relation and downstream dependencies preserved',withPrf,null,'VERIFIED',{GUARANTEE_PRESERVATION:'PRESERVED'},[],[],'G15');
+await add('G16','Changed downstream PRF dependency violates transfer relation',withPrf,p=>{p.bundle.payload.guarantees.downstream.dependencies[0].version='2';resignV2(p);},'CONTRADICTED',{GUARANTEE_PRESERVATION:'VIOLATED'},['PRF_GUARANTEE_DEPENDENCY_CHANGED'],[],'G15');
+await add('G17','Valid receipt cannot establish unsupported semantic profile',baselineV2,p=>p.request.semantic_profile='unsupported.semantic.v999','UNSUPPORTED_PROFILE',{},['UNSUPPORTED_PROFILE']);
+await add('G18','Integrity VERIFIED cannot override semantic contradiction',baselineV2,p=>p.request.claim.id='different-claim','CONTRADICTED',semantic,['CLAIM_MISMATCH'],['M12']);
+await add('G19','Authenticity VERIFIED cannot override authority mismatch',baselineV2,p=>p.request.authority.id='unaccepted-caller-authority','CONTRADICTED',semantic,['AUTHORITY_MISMATCH'],['M01']);
+await add('G20','Non-Git artifact claim establishes all bounded requested layers',baselineV2,p=>{p.request.subject={kind:'portable-artifact',id:'synthetic:portable',artifact_digest:p.request.subject.artifact_digest,version:'1'};p.bundle.statement.surface=structuredClone(requestSurface(p.request));resignV2(p);});
+await add('G21','PRF missing settlement remains UNVERIFIABLE',withPrf,p=>{const native={outcome:'UNVERIFIABLE',reason:'missing_settlement'};p.bundle.payload.guarantees.upstream.settlements=[];p.bundle.payload.guarantees.upstream.native_result=structuredClone(native);p.bundle.payload.guarantees.downstream.native_result=structuredClone(native);p.request.guarantee_requirement.required_native_result=structuredClone(native);p.request.guarantee_requirement.required_relation_input_digest=digest({award:p.bundle.payload.guarantees.upstream.award,settlements:[]});resignV2(p);},'INSUFFICIENT_EVIDENCE',{GUARANTEE_PRESERVATION:'UNVERIFIABLE'},['PRF_NATIVE_RELATION_UNESTABLISHED'],['M10'],'G15');
+await add('G22','Requested claim version is independent from subject version',baselineV2,p=>p.request.version='3','CONTRADICTED',subject,['VERSION_MISMATCH'],['M11']);
+await add('G23','Satisfied dependency positive control',baselineV2,p=>{dependency(p);p.request.policy.dependency_results=[{id:'upstream-relation',version:'1',status:'SATISFIED'}];});
+await add('G24','Real recompute-kit native positive with compatible surface',trustlessV2);
+await add('G25','Same commit label cannot establish different artifact digest',baselineV2,p=>p.request.subject.artifact_digest='a'.repeat(64),'CONTRADICTED',subject,['ARTIFACT_MISMATCH']);
+await add('G26','Unestablished upstream assumption remains insufficient',baselineV2,p=>{p.request.assumptions=['trusted-input-source'];p.bundle.statement.surface.assumptions=['trusted-input-source'];resignV2(p);},'INSUFFICIENT_EVIDENCE',{SEMANTIC_COMPATIBILITY:'INSUFFICIENT_EVIDENCE'},['ASSUMPTION_UNESTABLISHED']);
+await add('G27','Time applicability excludes expired evidence',baselineV2,p=>p.request.policy.verification_time=100,'CONTRADICTED',semantic,['TIME_MISMATCH']);
+await add('G28','Empty attachments cannot certify success',baselineV2,p=>p.bundle.evidence=[],'CANNOT_RECOMPUTE',{SUBJECT_BINDING:'INSUFFICIENT_EVIDENCE',RECOMPUTATION:'CANNOT_RECOMPUTE',EVIDENCE_SUFFICIENCY:'INSUFFICIENT',SEMANTIC_COMPATIBILITY:'INSUFFICIENT_EVIDENCE'},['COMMITTED_EVIDENCE_UNAVAILABLE']);
+await add('G29','Authenticated opaque scanner report is not local scanner recomputation',()=>trustlessV2({opaque:true}),null,'INSUFFICIENT_EVIDENCE',{EVIDENCE_SUFFICIENCY:'INSUFFICIENT'},['EVIDENCE_GRADE_NOT_ESTABLISHED','TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED'],['M13'],'G24');
+await add('G30','PRF reproduced native negative remains negative with preserved transfer',withPrf,p=>{const g=p.bundle.payload.guarantees,n={outcome:'VIOLATED',reason:'amount_mismatch'};g.upstream.settlements[0].amount=100;g.upstream.native_result=structuredClone(n);g.downstream.native_result=structuredClone(n);p.request.guarantee_requirement.required_native_result=structuredClone(n);p.request.guarantee_requirement.required_relation_input_digest=digest({award:g.upstream.award,settlements:g.upstream.settlements});resignV2(p);},'CONTRADICTED',{GUARANTEE_PRESERVATION:'PRESERVED'},['PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED'],['M14'],'G15');
+await add('I01','Exact signed action and matching supplied execution',interpollV2,null,'VERIFIED',{DOMAIN_ADAPTERS:'VERIFIED'},[],[],'G13');
+await add('I02','Signature for target A cannot establish requested target B',interpollV2,p=>p.request.adapter_requirement.requested_action.targetId='other-target','CONTRADICTED',{DOMAIN_ADAPTERS:'CONTRADICTED'},['SIGNED_INTENT_REQUEST_MISMATCH'],[],'I01');
+await add('I03','Signature for reaction cannot establish another action type',interpollV2,p=>p.request.adapter_requirement.requested_action.kind='other-kind','CONTRADICTED',{DOMAIN_ADAPTERS:'CONTRADICTED'},['SIGNED_INTENT_REQUEST_MISMATCH'],[],'I01');
+await add('I04','Retry preserves exact intent with no duplicate new execution',interpollV2,p=>{const extra=structuredClone(p.bundle.payload.adapter.attempts[0]);extra.id='duplicate-attempt';extra.delivery_status='duplicate';extra.execution_attempted=false;p.bundle.payload.adapter.attempts.push(extra);traceChanged(p);},'VERIFIED',{DOMAIN_ADAPTERS:'VERIFIED'},[],[],'I01');
+await add('I05','Retry changes material signed parameter',interpollV2,p=>{const retry=structuredClone(p.bundle.payload.adapter.attempts[0]);retry.id='retry-attempt';retry.action.value='down';retry.delivery_status='pending';retry.execution_attempted=false;p.bundle.payload.adapter.attempts.push(retry);traceChanged(p);},'CONTRADICTED',{DOMAIN_ADAPTERS:'CONTRADICTED'},['RETRY_AUTHORIZED_ACTION_CHANGED'],['M09'],'I04');
+await add('I06','Duplicate acceptance alone does not establish new execution',interpollV2,p=>{const input=p.bundle.payload.adapter;input.accepted_action.status='duplicate';input.attempts[0].delivery_status='duplicate';input.attempts[0].execution_attempted=false;traceChanged(p);},'INSUFFICIENT_EVIDENCE',{DOMAIN_ADAPTERS:'INSUFFICIENT_EVIDENCE'},['ACTION_NEW_EXECUTION_NOT_ESTABLISHED'],[],'I01');
+await add('I07','Missing execution observation remains insufficient',interpollV2,p=>{p.bundle.payload.adapter.observation=null;traceChanged(p);},'INSUFFICIENT_EVIDENCE',{DOMAIN_ADAPTERS:'INSUFFICIENT_EVIDENCE'},['ACTION_EXECUTION_OBSERVATION_MISSING'],[],'I01');
+await add('I08','Valid action signature with unsupported action authority',interpollV2,p=>p.request.adapter_requirement.authority.namespace='unsupported','UNSUPPORTED_PROFILE',{DOMAIN_ADAPTERS:'UNSUPPORTED_PROFILE'},['ACTION_AUTHORITY_UNSUPPORTED'],[],'I01');
+await writeFile(new URL('../vectors/v0.2/index.json',import.meta.url),JSON.stringify({schema:'receiptos.verify.vector-index.v2',oracle:'Detached literal relation/status/reason expectations; generated native evidence is never its expected product verdict.',vectors:rows},null,2)+'\n');
+console.log(JSON.stringify({generated:rows.length,original_vectors_modified:0}));

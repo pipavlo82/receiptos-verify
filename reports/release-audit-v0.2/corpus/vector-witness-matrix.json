@@ -1,0 +1,3058 @@
+{
+  "schema": "receiptos.independent.audit.vector-matrix.v02",
+  "candidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "count": 68,
+  "assessmentCounts": {
+    "LOAD_BEARING": 63,
+    "REDUNDANT": 5
+  },
+  "duplicates": [
+    [
+      "G13",
+      "I01"
+    ],
+    [
+      "G14",
+      "I05"
+    ]
+  ],
+  "method": "Manual review of literal vector inputs and expectation constructors, independent Python equality/hash/arithmetic/premise reasoning; no verifier/projection calls used to derive expected statuses.",
+  "rows": [
+    {
+      "vector": "V01",
+      "path": "vectors/V01.json",
+      "fileSHA256": "d5a32237d3308c9c695e01de0bac290fd8b1635b0ff97eefa36a9c42a59abf60",
+      "pairDigest": "3b4f9969c1e0a0ffbd30ee1c863099852df460735b5e54c4d1ef2957a772e8d5",
+      "claim": "Caller exact commit and SHA256 predicate",
+      "relation": "Artifact bytes, Git commit/tree/path and caller surface agree",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "SHA256 of decoded 36-byte artifact equals caller digest; baseline supplies the positive control for substitutions",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V02",
+      "path": "vectors/V02.json",
+      "fileSHA256": "07d1b213f47bea09e1c0f4b4838c8650ed291823501c8ee479a2431e851cb2e2",
+      "pairDigest": "e7c7e1c50d196f439add95af702cc8a3a2291616289f71cfdc4a1de3cdd5fe2d",
+      "claim": "Caller-selected commit B",
+      "relation": "requested.commit != receipt.commit",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "CONTRADICTED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "REQUESTED_SUBJECT_NOT_BOUND",
+        "COMMIT_MISMATCH"
+      ],
+      "independentOracle": "Literal string inequality; the receipt and native result retain commit A",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-commit"
+      ],
+      "declaredVectorMutants": [
+        "ignore-commit"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V03",
+      "path": "vectors/V03.json",
+      "fileSHA256": "ffed3aab7dfbbefc81a4b08361f6e8644e740e532904700ff3aaab0dbbf450cf",
+      "pairDigest": "cbb9d99d283c834dc71bf7d220c7b4103355cb784cd909a5556531ae4125c7ac",
+      "claim": "Crystal root integrity",
+      "relation": "stored anchor root != recomputed receipt root",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "REJECTED_MALFORMED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "REJECTED_MALFORMED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "REJECTED_MALFORMED",
+      "reasonCodes": [
+        "RECEIPT_ROOT_MISMATCH"
+      ],
+      "independentOracle": "One signed payload root is replaced by 64 zeroes; valid outer re-signing cannot repair the native Crystal relation",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "ignore-native-root"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V04",
+      "path": "vectors/V04.json",
+      "fileSHA256": "317db536a10988de784bba7cda4dcf934f767d755cc8286dd740dc86e8e382cd",
+      "pairDigest": "a68ee5dd8480eaa63ccf86e8642522b9aca72568dfc3500ee953e1eab0ae6839",
+      "claim": "Caller-selected subject identity",
+      "relation": "requested.subject.id != receipt.subject.id",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "CONTRADICTED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "ID_MISMATCH"
+      ],
+      "independentOracle": "Literal subject-ID inequality with unchanged valid signed evidence",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-requested-subject",
+        "compare-receipt-to-itself"
+      ],
+      "declaredVectorMutants": [
+        "ignore-requested-subject"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V05",
+      "path": "vectors/V05.json",
+      "fileSHA256": "5eb373d9f5f6028bfe9ec6ab5c7437fd2d54e9de8c40e91bee3108567d225db2",
+      "pairDigest": "a3eb43fc81ede94156275c970e4a557d9cc4791bc9b5aacbaac452db9bc3523e",
+      "claim": "Evidence completeness",
+      "relation": "Required native-result role absent",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "EVIDENCE_MISSING"
+      ],
+      "independentOracle": "Count/role inspection independently finds missing native-result manifest member",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "missing-evidence"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V06",
+      "path": "vectors/V06.json",
+      "fileSHA256": "a9f52ea515d28af95d1a966ea26fd5db80873eaec7697c171fd7af74ac3d76c9",
+      "pairDigest": "55bd8f4f0d12010132bf0d25906a76c23df88917be76e5c08c8a0c0752120174",
+      "claim": "Nonempty evidence sufficiency",
+      "relation": "Zero manifest members cannot establish required roles",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "EVIDENCE_MISSING"
+      ],
+      "independentOracle": "Literal empty list; replay payload presence is distinct from committed attachment sufficiency",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "accept-empty-evidence"
+      ],
+      "declaredVectorMutants": [
+        "accept-empty-evidence"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V07",
+      "path": "vectors/V07.json",
+      "fileSHA256": "ef6621c0235388cdbe4b9d1c07ada77f5395b7a20e93496eacfa53cfc00c1bc0",
+      "pairDigest": "582e2931eaf130a9eb040ec2fee713a2fc640fb02f884c28c4a85c2dea7b5145",
+      "claim": "Negative digest predicate",
+      "relation": "artifact SHA256 != selected expected digest",
+      "nativeResult": {
+        "original_rvr.outcome": "REFUTED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "NATIVE_NEGATIVE_RESULT"
+      ],
+      "independentOracle": "Independent hashlib yields nonzero artifact digest versus all-zero required digest",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "promote-reproduced-to-verified"
+      ],
+      "declaredVectorMutants": [
+        "promote-reproduced"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V08",
+      "path": "vectors/V08.json",
+      "fileSHA256": "40d22cb814abad190abb3edef14082a9c04aa504f5bc636409323389a1d57323",
+      "pairDigest": "28df6243571f603f1d8d179b8f7e6cd1fb09c1f94a20f18bb8f6c51933f6f2e7",
+      "claim": "Unavailable checker",
+      "relation": "Process crash != semantic refutation",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "CANNOT_RECOMPUTE",
+        "fresh_native_output": "UNAVAILABLE (saved original exists but is not fresh execution)"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "CANNOT_RECOMPUTE",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "UNVERIFIABLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CANNOT_RECOMPUTE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CANNOT_RECOMPUTE",
+      "reasonCodes": [
+        "NATIVE_RVR_EXECUTION_UNAVAILABLE"
+      ],
+      "independentOracle": "Explicit execution_setup crash-rvr is part of the vector; identical input bytes to V01 alone are not the complete witness",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "count-crash-as-semantic-refutation"
+      ],
+      "declaredVectorMutants": [
+        "crash-as-refutation"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V09",
+      "path": "vectors/V09.json",
+      "fileSHA256": "b7360e01c3661eabb9aa68f8080a32ff331f10f6d90f13c1d050dae44c7ad4cf",
+      "pairDigest": "70b96cd765be375bab2e889bb281e1e234036aa9e732eac3c75df561e9c8d6ee",
+      "claim": "Signed execution declaration completeness",
+      "relation": "package_present && runner_declared && !executed is insufficient",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "UNVERIFIABLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "EXECUTION_REPORT_INCOMPLETE"
+      ],
+      "independentOracle": "Literal executed=false; this vector does not prove that no host native process ran",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "package-presence-as-pass"
+      ],
+      "declaredVectorMutants": [
+        "package-presence"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V10",
+      "path": "vectors/V10.json",
+      "fileSHA256": "b2641310f8de1ebb84cf89bcd213c809ae8c25dc574eeb1e9ad017bab3f2dba9",
+      "pairDigest": "154616f8b60706a42424d7f05fd091a0abbe06e42761783687b46ce4653b0267",
+      "claim": "Consumer semantic scope",
+      "relation": "requested scope path != declared scope path",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "INCOMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SEMANTIC_SCOPE_MISMATCH"
+      ],
+      "independentOracle": "Literal different.txt vs result.txt mismatch; SHA256 identity remains equal",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "ignore-semantic-scope"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V11",
+      "path": "vectors/V11.json",
+      "fileSHA256": "285db184551d0b60cc5b1fa5b22a7375a8c936a1ff69a989a069801fee8ee183",
+      "pairDigest": "fa10750f7ac9fd088ec24568584171730d88ccaefffab101d5715de92757f1f4",
+      "claim": "Guarantee dependency retention",
+      "relation": "Downstream guarantee drops required dependency and relation",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "VIOLATED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "GUARANTEE_DEPENDENCY_DROPPED"
+      ],
+      "independentOracle": "Independent set membership: source-binding required upstream and caller, absent downstream",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-guarantee-dependency"
+      ],
+      "declaredVectorMutants": [
+        "ignore-guarantee-dependency"
+      ],
+      "positiveControls": [
+        "V12"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V12",
+      "path": "vectors/V12.json",
+      "fileSHA256": "862cd8d0c1f422f3d3f34b536eb9dccc2fe10032c479176a6ea8317bf941bcda",
+      "pairDigest": "e59488c338d3b2a774224ce88ca582cdf8072734eb396c7b7dd6608e443e11bb",
+      "claim": "Positive guarantee transfer",
+      "relation": "Exact obligations and dependency survive transfer",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "PRESERVED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent equality of guarantee, dependency and accepted caller obligation premises",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V13",
+      "path": "vectors/V13.json",
+      "fileSHA256": "a122db5d4e9fe5407e51f9af0487299efa93601eef1d0ece38ac3052dd984442",
+      "pairDigest": "1e1c8e2732a7391f3dfb767545d34ac3e46ae8c29588bcb82d6fe4947a8317f3",
+      "claim": "Authorized action/retries",
+      "relation": "Signed material equals accepted/duplicate action",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "interpoll"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "PRESERVED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent canonical-field comparison; no server execution provenance is claimed",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V14",
+      "path": "vectors/V14.json",
+      "fileSHA256": "ad923c4a3f2b5c5798b04c0c96584b8fa8615a399bd287a877aaf58ed0f06cd2",
+      "pairDigest": "55299e3a35e50567a5256ce9c9423fce61fb84ae5841f8a6a791164aecdecba0",
+      "claim": "Retry material binding",
+      "relation": "Retry down differs from authorized up",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "interpoll"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "VIOLATED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "RETRY_AUTHORIZED_ACTION_CHANGED"
+      ],
+      "independentOracle": "Literal action value inequality; both original and substituted action can have valid signatures",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-retry-action-change"
+      ],
+      "declaredVectorMutants": [
+        "ignore-retry-action"
+      ],
+      "positiveControls": [
+        "V13"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V15",
+      "path": "vectors/V15.json",
+      "fileSHA256": "4da497a1e55da47d51d864394a01130d080c3eada031689d44253d6d5073201e",
+      "pairDigest": "36fa44316f9824a777e2bafa5201c310b170ad5add6ce3e4604510a2207a9385",
+      "claim": "Current-state continuity",
+      "relation": "Later entry state B supersedes current claim A",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "VIOLATED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "LATER_STATE_SUPERSEDES_CURRENT_CLAIM"
+      ],
+      "independentOracle": "Independent ordered entry inspection; historical observation A remains present",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "ignore-continuity"
+      ],
+      "positiveControls": [
+        "V21"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V16",
+      "path": "vectors/V16.json",
+      "fileSHA256": "007cbefec969816ebc93aefc09ec071f2518b39270ec10ef1c64dd58add32245",
+      "pairDigest": "456310d200a69340187b2ebcf7db2b8da89fb83e431bde1e5d8632a9d321b970",
+      "claim": "Known profile admission",
+      "relation": "Unsupported product profile cannot certify",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "UNSUPPORTED_PROFILE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "UNSUPPORTED_PROFILE",
+      "reasonCodes": [
+        "UNSUPPORTED_PROFILE"
+      ],
+      "independentOracle": "Literal unsupported.v9 is absent from finite declared profile inventory",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "accept-unknown-profile"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V17",
+      "path": "vectors/V17.json",
+      "fileSHA256": "14970f4841ba6332490cd9a0e68e54c1a1469fd697d2d8526b968997392627c5",
+      "pairDigest": "e1faffe9a5cb8f55615dc9e6d23a72f342cd769ad0dc746198976da66dec3195",
+      "claim": "QEV provider authority",
+      "relation": "Valid packaging/replay does not establish provider authentication",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "qev"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "UNVERIFIABLE",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "PROVIDER_AUTHENTICATION_NOT_ESTABLISHED"
+      ],
+      "independentOracle": "Native synthetic evidence lacks accepted provider authentication; outer signer is not the provider",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "infer-provider-authenticity"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V18",
+      "path": "vectors/V18.json",
+      "fileSHA256": "2e6c8802ab8355729c8eb0f64739172553e7b019c2d9d4cd1b71a11cb6fd535e",
+      "pairDigest": "0f6fa5a43b9a301b5d1109bbbf3c01b86ea04adfea12345066a76bc0d076c280",
+      "claim": "Producer vs native semantic result",
+      "relation": "Producer PASS contradicts replayed REFUTED",
+      "nativeResult": {
+        "original_rvr.outcome": "REFUTED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "ASSERTED_NATIVE_RESULT_CONTRADICTION",
+        "NATIVE_NEGATIVE_RESULT"
+      ],
+      "independentOracle": "Independent SHA256 mismatch plus producer PASS literal; negative result is not replaced by replay success",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "trust-producer-pass"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V19",
+      "path": "vectors/V19.json",
+      "fileSHA256": "22b580f8d15c1037e411f45438d18132896e9d59c45815527e7d8db1165ed9fd",
+      "pairDigest": "a9de8a7c915b02a61d5985587bb822d72e0ab026e99b49bf14060e893a438bab",
+      "claim": "Authority class applicability",
+      "relation": "Historical capture cannot satisfy current recomputation requirement",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "INCOMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SEMANTIC_AUTHORITY_CLASS_MISMATCH"
+      ],
+      "independentOracle": "Literal authority-class inequality; positive signature is a separate fact",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-authority"
+      ],
+      "declaredVectorMutants": [
+        "ignore-authority"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V20",
+      "path": "vectors/V20.json",
+      "fileSHA256": "1fea16119e235ba5f8249483a69bd3acd0f308891560f1069c1467d35b8c2bd3",
+      "pairDigest": "f6ff455f21ebf7519c59c94127aeca6affb2b9916c5d15fa5a4f2a813f6a36be",
+      "claim": "Stochastic provenance boundary",
+      "relation": "Deterministic stream replay does not authenticate origin",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "stochastic"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "UNVERIFIABLE",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "STOCHASTIC_PROVENANCE_NOT_ESTABLISHED"
+      ],
+      "independentOracle": "Independently decoded stream [1,2,3] can reproduce a selection; no provenance evidence exists",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "infer-rng-provenance"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V21",
+      "path": "vectors/V21.json",
+      "fileSHA256": "57649453cb4b8a502edc8f7f8f925a911a9eb9171028f4159212664a4ffbbf51",
+      "pairDigest": "3b4dd3841ad948b217b926d7bce6852eaf6200236de1b6a5d41eebbfafed660d",
+      "claim": "Historical continuity",
+      "relation": "Later divergence does not negate exact earlier observation",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "PRESERVED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [
+        "LATER_STATE_NONBLOCKING_FOR_HISTORICAL_CLAIM"
+      ],
+      "independentOracle": "Same A/B entry sequence as V15 with separately requested historical mode",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V22",
+      "path": "vectors/V22.json",
+      "fileSHA256": "b416db45cd229a137e14754d96f1e19fc55da8b4332518b6b5f617404003006a",
+      "pairDigest": "a9e3cbf603d7a31ed474cd4d5db0b65ba7d0259def959a5fe2b37b6585e9bec0",
+      "claim": "Caller policy version",
+      "relation": "Caller policy version 2 != committed version 1",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "CONTRADICTED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "POLICY_MISMATCH"
+      ],
+      "independentOracle": "Literal policy version inequality; old schema binds complete policy digest too",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-policy-version"
+      ],
+      "declaredVectorMutants": [
+        "ignore-policy-version"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V23",
+      "path": "vectors/V23.json",
+      "fileSHA256": "87908168b86dcf11cadda990943a9551eb1cde0d84158b0353dd98cfb0aeb9d4",
+      "pairDigest": "7c0510b3a560d792ef61b811310d8577c3b05ce5eab3d5c5f1b6a0cb904b4934",
+      "claim": "Canonicalization profile admission",
+      "relation": "Unknown canonicalization profile cannot be assumed",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "NOT_RUN"
+      },
+      "expectedLayerResults": {
+        "INPUT": "REJECTED_MALFORMED",
+        "CANONICALIZATION": "NOT_RUN",
+        "INTEGRITY": "NOT_RUN",
+        "AUTHENTICITY": "NOT_RUN",
+        "SUBJECT_BINDING": "NOT_RUN",
+        "RECOMPUTATION": "NOT_RUN",
+        "EVIDENCE_SUFFICIENCY": "NOT_RUN",
+        "SEMANTIC_COMPATIBILITY": "NOT_RUN",
+        "GUARANTEE_PRESERVATION": "NOT_RUN",
+        "CONTINUITY": "NOT_RUN",
+        "DOMAIN_ADAPTERS": "NOT_RUN",
+        "PRODUCT_PROJECTION": "REJECTED_MALFORMED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "NOT_RUN"
+      },
+      "productResult": "REJECTED_MALFORMED",
+      "reasonCodes": [
+        "CANONICALIZATION_PROFILE_UNSUPPORTED"
+      ],
+      "independentOracle": "Literal unknown-canon is outside finite supported canonicalization vocabulary",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-canonicalization-profile"
+      ],
+      "declaredVectorMutants": [
+        "ignore-canonicalization"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V24",
+      "path": "vectors/V24.json",
+      "fileSHA256": "86a1a425c03a7c8a16180487390cfe9d43b7442df636b35e00eb6146e4bfc24c",
+      "pairDigest": "06cb21361b9bc94f487195bf9d55d6343e7c097f356fc791f734c5c279b5a2fb",
+      "claim": "Evidence grade",
+      "relation": "Producer assertion cannot satisfy local recomputation grade",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "UNVERIFIABLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "EVIDENCE_GRADE_NOT_ESTABLISHED"
+      ],
+      "independentOracle": "Literal PRODUCER_ASSERTION vs LOCAL_RECOMPUTATION requirement",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "ignore-evidence-grade"
+      ],
+      "declaredVectorMutants": [
+        "ignore-evidence-grade"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V25",
+      "path": "vectors/V25.json",
+      "fileSHA256": "7aea0346a456e1466fb4af856e02fe4bbc3210118bebd65ce9ed45b037b861ef",
+      "pairDigest": "5b7555bf29e8bae8e38bcb13dffefd79ed0efe0a086ad7172c51286d41b935e0",
+      "claim": "Expected actor authority",
+      "relation": "Valid signed actor differs from caller-authorized actor",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "interpoll"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "CONTRADICTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "ACTION_AUTHORITY_MISMATCH"
+      ],
+      "independentOracle": "Literal expected zero actor differs from signed actor; signature validity alone is insufficient",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "accept-any-valid-signature"
+      ],
+      "declaredVectorMutants": [
+        "accept-any-signature"
+      ],
+      "positiveControls": [
+        "V13"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V26",
+      "path": "vectors/V26.json",
+      "fileSHA256": "79319737dc911c6ceafc3ff4037ae1cb358c16451d0a6c36de0e5a3b60bda9da",
+      "pairDigest": "560d2a9ee1707b31f589229830552ffdc479e1108383f860bcd713b9b8ac9415",
+      "claim": "Committed bytes availability",
+      "relation": "Null artifact bytes cannot be replayed",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "CANNOT_RECOMPUTE",
+        "fresh_native_output": "UNAVAILABLE (saved original exists but is not fresh execution)"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "CANNOT_RECOMPUTE",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "UNVERIFIABLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CANNOT_RECOMPUTE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CANNOT_RECOMPUTE",
+      "reasonCodes": [
+        "COMMITTED_EVIDENCE_UNAVAILABLE"
+      ],
+      "independentOracle": "Literal committed attachment bytes=null; saved original native payload does not fill missing committed bytes",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "use-unavailable-bytes"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V27",
+      "path": "vectors/V27.json",
+      "fileSHA256": "6f74c8e2ac75a6a3a18abf0a750b426e49923c56939ec06ae9341b61f3da58d3",
+      "pairDigest": "e7aa3f0b6d3b915bd29f724ba9fd39e4a2cccdca491e47de71460ae94647357e",
+      "claim": "Trust failure plus checker crash",
+      "relation": "Missing signer trust is not hidden by unavailable replay",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "CANNOT_RECOMPUTE",
+        "fresh_native_output": "UNAVAILABLE (saved original exists but is not fresh execution)"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "NOT_ESTABLISHED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "CANNOT_RECOMPUTE",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "UNVERIFIABLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "SIGNER_NOT_TRUSTED",
+        "NATIVE_RVR_EXECUTION_UNAVAILABLE"
+      ],
+      "independentOracle": "Independent empty trusted_keys plus explicit crash setup; checks projection precedence, not another pure crash witness",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "crash-obscures-trust"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V28",
+      "path": "vectors/V28.json",
+      "fileSHA256": "e28ef3b3f45024ee24a64d26bc2ca143e877dbffc782508f94d5b257dd236482",
+      "pairDigest": "02fd116cc48d90bc7ea77f686f6fbd2f1a4da861ee94461239128da481c25f6a",
+      "claim": "Moth counts packaging vs authority",
+      "relation": "Requested32/delivered0 is preserved without provider proof",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "qev"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "UNVERIFIABLE",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "PROVIDER_AUTHENTICATION_NOT_ESTABLISHED"
+      ],
+      "independentOracle": "Explicit synthetic native requested/delivered fields and absent provider authentication; no real QPU proof",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "infer-hardware-authentication"
+      ],
+      "positiveControls": [
+        "V01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V29",
+      "path": "vectors/V29.json",
+      "fileSHA256": "702a27be58c9429af61d29938ebe7c961c292bc83f9858ce7fc3402489bec92d",
+      "pairDigest": "f457880d10d230015e06b42382a1598a9d3baec794540baa59ff344a1d976377",
+      "claim": "Independent domain claim selection",
+      "relation": "Caller job differs from captured native claim job",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "qev"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "CONTRADICTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "INDEPENDENT_CLAIM_MISMATCH"
+      ],
+      "independentOracle": "Literal jobId substitution; preserved native capture cannot choose the caller claim",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "ignore-domain-claim"
+      ],
+      "positiveControls": [
+        "V28"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "V30",
+      "path": "vectors/V30.json",
+      "fileSHA256": "84d8198df77810306fda379519a32a3e891f598cb4db7bf1ea4e6aad5cf33643",
+      "pairDigest": "41d5442534fd7734de02abfd22fc9128ffaf9c58e86e3551d7e947439ef6a9fe",
+      "claim": "Domain reproduced negative",
+      "relation": "Replayed refuted counts remain negative",
+      "nativeResult": {
+        "original_rvr.outcome": "VERIFIED",
+        "replay": "REPRODUCED",
+        "domain_profile": "qev"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "CONTRADICTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "PROVIDER_AUTHENTICATION_NOT_ESTABLISHED"
+      ],
+      "independentOracle": "Fresh synthetic refuted-counts constructor, literal negative product expectation; not independent general QEV conformance",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "promote-domain-reproduced"
+      ],
+      "positiveControls": [
+        "V28"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "nativeAssertionBoundary": "Original v1 comparator does not separately assert native result fields; above native source outcome is inspected, while replay/layer/product expectations are literal."
+    },
+    {
+      "vector": "G01",
+      "path": "vectors/v0.2/G01.json",
+      "fileSHA256": "5727fe2a9ade58c90ca76101d0bae92936f060ab89dd8c43d8f8e580d2729c21",
+      "pairDigest": "5fc681d75dc8afedf2f500caa7bbc6032b261b19080068cac096828b3c5b0ebf",
+      "claim": "Exact generic SHA256 claim",
+      "relation": "All separately typed requested and evidence dimensions agree",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent surface equality and hashlib artifact predicate; native constructions are evidence, not expected product output",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G02",
+      "path": "vectors/v0.2/G02.json",
+      "fileSHA256": "c2c816c1c4fd606f54648cc6ebcca213d5c60ad61af1f27f8debdfafdc478982",
+      "pairDigest": "93d9a22a639287d5cc99e786022febccbe5b70d9f7872114c9bc2b9d27f385a8",
+      "claim": "Commit applicability",
+      "relation": "Requested commit B differs while receipt retains A",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "CONTRADICTED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SUBJECT_MISMATCH"
+      ],
+      "independentOracle": "Independent string inequality in subject.commit; native artifact predicate remains positive",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G03",
+      "path": "vectors/v0.2/G03.json",
+      "fileSHA256": "e6144cb1d92147f2af3361ff407fb16d79e2f156e40321606041dbe0a9e2d522",
+      "pairDigest": "c22cd58f7ac87d9be9dc30fdaf1ac774f09315a8da044ab6a54ae68b5a441428",
+      "claim": "Subject applicability",
+      "relation": "Same artifact belongs to different requested subject",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "CONTRADICTED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SUBJECT_MISMATCH"
+      ],
+      "independentOracle": "Independent requested/evidence subject.id inequality with identical artifact digest",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M06"
+      ],
+      "declaredVectorMutants": [
+        "M06"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G04",
+      "path": "vectors/v0.2/G04.json",
+      "fileSHA256": "203ac24477f36bf7c7639565a033f1e15e8ebcbc90bba7aad745e80e12e30632",
+      "pairDigest": "b1ccb7b441f4ecea3e6310400e27c3b40b6bd2e4c179e29541029c4d3f6e9436",
+      "claim": "Authority applicability",
+      "relation": "Requested authority ID differs from signed evidence authority",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "AUTHORITY_MISMATCH"
+      ],
+      "independentOracle": "Independent authority.id inequality; same artifact and subject cannot repair it",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M01"
+      ],
+      "declaredVectorMutants": [
+        "M01"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G05",
+      "path": "vectors/v0.2/G05.json",
+      "fileSHA256": "8601d66716fe17b8359e3517ca59be88a0863fe5956a0823e5eed68c7806dfd5",
+      "pairDigest": "5da89ae50b9449fca71c417e5fdf9b74180f779f7c74fdba32bd4a41455e6787",
+      "claim": "Scope applicability",
+      "relation": "Requested broad scope differs from bound evidence-member scope",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "VIOLATED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SCOPE_MISMATCH"
+      ],
+      "independentOracle": "Independent JSON structure inequality; native scope link is also negative",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M02"
+      ],
+      "declaredVectorMutants": [
+        "M02"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G06",
+      "path": "vectors/v0.2/G06.json",
+      "fileSHA256": "ded90f38ab4acf098da849d8ce3ee29e03ece2fc216a2652dbb6bef0160ec146",
+      "pairDigest": "05f6f0db5e6c4402adeeced628389e0457ddfb8120802ee651876f6cbad9cea7",
+      "claim": "Policy version applicability",
+      "relation": "Requested policy version3 differs from evidence version2",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "POLICY_MISMATCH"
+      ],
+      "independentOracle": "Independent policy.version inequality, not a policy hash shortcut",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M03"
+      ],
+      "declaredVectorMutants": [
+        "M03"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G07",
+      "path": "vectors/v0.2/G07.json",
+      "fileSHA256": "965908533d3450b9c73be753c0a3dc5412fd2a94945db77c13c145e458e372d6",
+      "pairDigest": "dd93a6cb7e44df27ab2845c2a505b44db106351f143a7c0a9b121767c1681f55",
+      "claim": "Dependency presence",
+      "relation": "Declared dependency lacks a caller-accepted satisfied premise",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "INSUFFICIENT_EVIDENCE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "DEPENDENCY_MISSING"
+      ],
+      "independentOracle": "Independent declared dependency membership vs empty policy.dependency_results",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M04"
+      ],
+      "declaredVectorMutants": [
+        "M04"
+      ],
+      "positiveControls": [
+        "G23"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G08",
+      "path": "vectors/v0.2/G08.json",
+      "fileSHA256": "73cb0e5de47bcc25e7e5a98f1efd93ba30214121244d2de7397cb7ebdb40333d",
+      "pairDigest": "f26184ee3bde9a15c3689794ad72e877dd2a73ef6fe5f45881e06420ca33f732",
+      "claim": "Dependency contradiction",
+      "relation": "Caller premise explicitly CONTRADICTED",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "DEPENDENCY_CONTRADICTED"
+      ],
+      "independentOracle": "Independent literal dependency status CONTRADICTED, not missing evidence",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M05"
+      ],
+      "declaredVectorMutants": [
+        "M05"
+      ],
+      "positiveControls": [
+        "G23"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G09",
+      "path": "vectors/v0.2/G09.json",
+      "fileSHA256": "b8d0ffa04c2842a6a6c621cde87308abc7e0fcca32f02c972e9a5e6a7b5a4878",
+      "pairDigest": "be5be02e6045c215616899e95a55b367c6825dd9f6ae323c0d55c866e2766ab2",
+      "claim": "Semantic ABI exact declaration",
+      "relation": "Native neutral declaration links exact claim and scope",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent exact same declarative input relation; only bounded product embedding is exercised",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "REDUNDANT",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G10",
+      "path": "vectors/v0.2/G10.json",
+      "fileSHA256": "da439f4ae911a6cc7f031adff628319d55a10c3bd6e0e95590eaf6c2fd5f4254",
+      "pairDigest": "e59711474707e7b6be34117b71e2335233cdb5645d7c3841a6c5d171381cc999",
+      "claim": "Semantic ABI scope expansion",
+      "relation": "Native declared scope differs from broader consumer scope",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "VIOLATED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SCOPE_MISMATCH",
+        "SEMANTIC_ABI_TYPE_ERROR"
+      ],
+      "independentOracle": "Independent JSON scope mismatch through advertised semantic-abi adapter ID; no digest override",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G09"
+      ],
+      "assessment": "REDUNDANT",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G11",
+      "path": "vectors/v0.2/G11.json",
+      "fileSHA256": "3c373bd478ea1746cad1478b7705d314038b46929904d380dee93bb4ab9b9eaf",
+      "pairDigest": "36f7b5417da88bcb7bcad7d7fe4e0a114e80d32b0e43a53b3edccba8b04e8ed9",
+      "claim": "Trustless native/result separation",
+      "relation": "Native PASS/NO_FINDING cannot establish a different requested claim ID",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "VIOLATED",
+        "RECOMPUTATION.nativeResult.verdict": "PASS",
+        "RECOMPUTATION.nativeResult.semanticVerdict": "NO_FINDING"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "CLAIM_MISMATCH"
+      ],
+      "independentOracle": "Independent claim.id substitution, native one-document corpus unchanged",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M07"
+      ],
+      "declaredVectorMutants": [
+        "M07"
+      ],
+      "positiveControls": [
+        "G24"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G12",
+      "path": "vectors/v0.2/G12.json",
+      "fileSHA256": "fafd048e8e716ac2cd51d9a2095f1bfd49d52b3b1e99986e405968f8fc88708a",
+      "pairDigest": "5a93ece243448f4a50e9bf0bd9e4d4c057c866c1b40cdb485cf24831b4d31418",
+      "claim": "Trustless negative replay",
+      "relation": "Scanner recomputation contradicts clean claim although native conformance PASS",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "REFUTED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.verdict": "PASS",
+        "RECOMPUTATION.nativeResult.semanticVerdict": "CONTRADICTED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "NATIVE_NEGATIVE_RESULT",
+        "TRUSTLESS_NATIVE_CONTRADICTION"
+      ],
+      "independentOracle": "Independent substring poison present in document whose signed scan says clean; PASS means runner reproduced expected contradiction",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M08"
+      ],
+      "declaredVectorMutants": [
+        "M08"
+      ],
+      "positiveControls": [
+        "G24"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G13",
+      "path": "vectors/v0.2/G13.json",
+      "fileSHA256": "e6dd3a7828f707384694d5c44585eacc9b90ef64d7aa12e6df220c3c306d5a59",
+      "pairDigest": "b3937b23e29543019fc2132f1c4357c5dc12268224aea4dfd786f7ea3038a28a",
+      "claim": "Signed agent-action supplied trace",
+      "relation": "Exact signed intent equals accepted action, attempts and observation",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "VERIFIED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent material field/ID/result inspection; checks only supplied trace, not remote execution",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G13"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    },
+    {
+      "vector": "G14",
+      "path": "vectors/v0.2/G14.json",
+      "fileSHA256": "a3e2a4518b9b3f8d39225a73e17cc6b767a1ef8ca3f8a9487c925a48733e97d2",
+      "pairDigest": "f1896c657ed3799db78edeb2cccb6250344bbc65c93fd9531fc14c6b4ed1bd4d",
+      "claim": "Retry material binding",
+      "relation": "Second retry changes up to down with same signed intent",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "REFUTED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "CONTRADICTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "RETRY_AUTHORIZED_ACTION_CHANGED"
+      ],
+      "independentOracle": "Independent second attempt value inequality; first matching accepted attempt remains intact",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M09"
+      ],
+      "declaredVectorMutants": [
+        "M09"
+      ],
+      "positiveControls": [
+        "G13"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    },
+    {
+      "vector": "G15",
+      "path": "vectors/v0.2/G15.json",
+      "fileSHA256": "8cd47ee20e89a87e58c5f0d2238abfad07a25e9780360e3774f833ee66ea0bd7",
+      "pairDigest": "9a68c067c59ab9835e51d00b5beabc7c2337daa8b79705f50886b83fa846bef5",
+      "claim": "PRF positive relation and transfer",
+      "relation": "Actual accepted settlement amount50 equals finalized award price50 and dependencies preserved",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "GUARANTEE_PRESERVATION.nativeResult.upstream.outcome": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "PRESERVED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent arithmetic and exact dependency membership, not copied upstream expected output",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G15"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G16",
+      "path": "vectors/v0.2/G16.json",
+      "fileSHA256": "cf2cf3b8baeb5648acb167ad8249550dc8d76f990a752cb105423662e6a39cc3",
+      "pairDigest": "4544ec64389e07fe71931b9fefc47425395f41f34a28fa3a5819b0d7a7e56ccb",
+      "claim": "Downstream guarantee dependency",
+      "relation": "Same native positive result loses exact dependency version downstream",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "GUARANTEE_PRESERVATION.nativeResult.upstream.outcome": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "VIOLATED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "PRF_GUARANTEE_DEPENDENCY_CHANGED"
+      ],
+      "independentOracle": "Independent downstream dependency version2 vs accepted version1",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G15"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G17",
+      "path": "vectors/v0.2/G17.json",
+      "fileSHA256": "74c5317210ae934b45c0f8462cb949017920400e661fe754e096501beb70199e",
+      "pairDigest": "551fe66f1b2d60007ab21a323e50621a50565d489f1f62d0abc143dc769de218",
+      "claim": "Semantic profile support",
+      "relation": "Unknown semantic profile version cannot certify",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "UNSUPPORTED_PROFILE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "UNSUPPORTED_PROFILE",
+      "reasonCodes": [
+        "UNSUPPORTED_PROFILE"
+      ],
+      "independentOracle": "Literal unsupported.semantic.v999 absent from supported finite profile set",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G18",
+      "path": "vectors/v0.2/G18.json",
+      "fileSHA256": "abe86e0d1dfd22e4cf57bd401c99e56abea9b6b8f9e8c23c3ac748ce8bb0338d",
+      "pairDigest": "fdf321f640e5453370bf5f88f29ccc7d9366e1dff43fb6fec21d20a00f978828",
+      "claim": "Integrity cannot override semantics",
+      "relation": "Valid integrity/signature coexist with wrong claim identity",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "VIOLATED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "CLAIM_MISMATCH"
+      ],
+      "independentOracle": "Independent claim.id mismatch; mutant M12 targets projection bypass rather than claim comparison",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M12"
+      ],
+      "declaredVectorMutants": [
+        "M12"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G19",
+      "path": "vectors/v0.2/G19.json",
+      "fileSHA256": "fdb7dcd29fb8018b553d7f6892e408ce945ec9a539b0348dd20ec67dabab3028",
+      "pairDigest": "0ef8e77d3afc0a6454cf027a7e53fe79d3401696747646c5a85d15d25c0bbdd3",
+      "claim": "Authenticity cannot override authority",
+      "relation": "Same authority-ID mismatch branch as G04",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "AUTHORITY_MISMATCH"
+      ],
+      "independentOracle": "Independent authority.id mismatch; different label repeats G04 relation with same M01",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "M01"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "REDUNDANT",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G20",
+      "path": "vectors/v0.2/G20.json",
+      "fileSHA256": "3137f3955e8a5e3a1cf50ba032e8c0d89bd0915861aa1fd21d78471356bd9dca",
+      "pairDigest": "3e79e0aa00d073d1368d770c0794728bdf463a2e786d005d7bb4ee076548b2e4",
+      "claim": "Non-Git generic subject",
+      "relation": "Portable artifact can satisfy bounded SHA256 claim without commit/tree",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent artifact bytes and surface match after intentionally omitting all Git-specific subject fields",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G21",
+      "path": "vectors/v0.2/G21.json",
+      "fileSHA256": "0fd57affe79447474ea36d433498c1607d306cd9f5ccc3ff3a2db59319f7c4de",
+      "pairDigest": "c169ab9e7fe54fed56f2415826b5d2ef6a1648f0b9fe899a7c783b20142fcaa2",
+      "claim": "PRF insufficient native relation",
+      "relation": "No settlement cannot establish award payment or positive guarantee",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "GUARANTEE_PRESERVATION.nativeResult.upstream.outcome": "UNVERIFIABLE"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "UNVERIFIABLE",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "PRF_NATIVE_RELATION_UNESTABLISHED"
+      ],
+      "independentOracle": "Independent empty settlement list; literal native missing_settlement and UNVERIFIABLE are not positive",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M10"
+      ],
+      "declaredVectorMutants": [
+        "M10"
+      ],
+      "positiveControls": [
+        "G15"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G22",
+      "path": "vectors/v0.2/G22.json",
+      "fileSHA256": "1a3904d76db8f7deddc9d82a9aabf0ddee64c4d76be318cc5c389990a435164d",
+      "pairDigest": "44f05425109244c68fff26c0dd2a6cfd6e93345a05d877aa62d9e4ddb9733b04",
+      "claim": "Claim version applicability",
+      "relation": "Claim version3 differs despite unchanged subject version1",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "CONTRADICTED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "VERSION_MISMATCH"
+      ],
+      "independentOracle": "Independent top-level version inequality; distinct from policy.version and subject.version",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M11"
+      ],
+      "declaredVectorMutants": [
+        "M11"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G23",
+      "path": "vectors/v0.2/G23.json",
+      "fileSHA256": "7d507244777be5a838b7fa2aa0855f03d5a0137466a629170630c7c38a977799",
+      "pairDigest": "1dca3cbcd5a5056ae574d960a42de0346496a8f57954112bfcf7fb0c8e281754",
+      "claim": "Dependency positive control",
+      "relation": "Required exact dependency has accepted SATISFIED premise",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent exact id/version/status membership; premise is caller accepted, not independently proven upstream truth",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G24",
+      "path": "vectors/v0.2/G24.json",
+      "fileSHA256": "d6cc30a3175d30044dd0b622be7318e6d244741f5f0205ab9862b9248ed0d2be",
+      "pairDigest": "4300e099de931f69f7d7de3d33913ba67e9ae6bb7c6be0ef31d9725866316bbd",
+      "claim": "Trustless positive native result",
+      "relation": "Saved scan artifact matches fresh replay over one clean document",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.verdict": "PASS",
+        "RECOMPUTATION.nativeResult.semanticVerdict": "NO_FINDING"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent absence of poison substring and leaf SHA256 construction; native verdict PASS/semantic NO_FINDING kept separate",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G25",
+      "path": "vectors/v0.2/G25.json",
+      "fileSHA256": "bcc29da9cb257a71c7c0fe38d4a0304550ed1f22b183425efc924570a1ae5519",
+      "pairDigest": "844c62d4a1f251bb2a190eec927795894eea510682e8c3f1e6d602591e1b81a0",
+      "claim": "Artifact applicability",
+      "relation": "Same commit label cannot establish requested different artifact digest",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "CONTRADICTED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "ARTIFACT_MISMATCH"
+      ],
+      "independentOracle": "Independent artifact_digest inequality while commit remains fixed",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G26",
+      "path": "vectors/v0.2/G26.json",
+      "fileSHA256": "6790ee7fc9901f161faa553817926cf5d833a40da64f1ffc5f249aa8485b7244",
+      "pairDigest": "c8c12dff879d8586caf13a489c7576d97b20d7324533ae588cf3aa0846aa8ad9",
+      "claim": "Assumption applicability",
+      "relation": "Declared assumption absent from accepted premise set",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "INSUFFICIENT_EVIDENCE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "ASSUMPTION_UNESTABLISHED"
+      ],
+      "independentOracle": "Independent required assumption membership vs empty established_assumptions",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G27",
+      "path": "vectors/v0.2/G27.json",
+      "fileSHA256": "64ff3d037378f229fb3588451a5b0937dffee3f4be76c9d9c36ce37ed170d754",
+      "pairDigest": "0fc2d0d284fb679daac32fca9544c4d74bedd892df83ed6948589e08ead68d2e",
+      "claim": "Time applicability",
+      "relation": "Verification instant100 is excluded by half-open [0,100)",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "CONTRADICTED",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "TIME_MISMATCH"
+      ],
+      "independentOracle": "Independent integer inequality t < not_after fails exactly at100",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G28",
+      "path": "vectors/v0.2/G28.json",
+      "fileSHA256": "5ec2e9bbafedd09eb1de20ed84031d40c9d27d92bb0dfd047b6fd8ce471791d2",
+      "pairDigest": "9373f598d669224e1a97621269619b41f6cd901691b09425eca611ddab84c05c",
+      "claim": "Committed evidence availability",
+      "relation": "Manifest still commits evidence while attachment list is empty",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "UNVERIFIABLE",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "INSUFFICIENT_EVIDENCE",
+        "RECOMPUTATION": "CANNOT_RECOMPUTE",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "INSUFFICIENT_EVIDENCE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CANNOT_RECOMPUTE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CANNOT_RECOMPUTE",
+      "reasonCodes": [
+        "COMMITTED_EVIDENCE_UNAVAILABLE"
+      ],
+      "independentOracle": "Independent manifest-to-attachment missing-set calculation; distinct from V06 zero manifest",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G29",
+      "path": "vectors/v0.2/G29.json",
+      "fileSHA256": "dedf24e7ec6b840fc395739afdf2e14e023db798b79bdc62d684ce1aad54590c",
+      "pairDigest": "dd51ab79840fb73e8019b0fe22486c127f3f4146cde3fb05b4149c3264a22233",
+      "claim": "Native evidence-grade boundary",
+      "relation": "Authenticated opaque report is not actual local scanner replay",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.verdict": "PASS",
+        "RECOMPUTATION.nativeResult.semanticVerdict": "NO_FINDING",
+        "RECOMPUTATION.nativeResult.evidenceGrade": "AUTHENTICATED_REPORT"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "EVIDENCE_GRADE_NOT_ESTABLISHED",
+        "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED"
+      ],
+      "independentOracle": "Independent scanner_version opaque vs supported toy scanner; native grade AUTHENTICATED_REPORT is lower than local scanner execution",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M13"
+      ],
+      "declaredVectorMutants": [
+        "M13"
+      ],
+      "positiveControls": [
+        "G24"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "G30",
+      "path": "vectors/v0.2/G30.json",
+      "fileSHA256": "9e02177e42366795827ca4e719563eca367e019966c8a72796f49eb3f5d3b17e",
+      "pairDigest": "884e281597497c0559474e630fb6a960547775e3e802f7c8d92d5c40f24f408d",
+      "claim": "Native negative vs transfer preservation",
+      "relation": "Native amount100 violates award50 while same negative result/dependencies transfer exactly",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "GUARANTEE_PRESERVATION.nativeResult.upstream.outcome": "VIOLATED",
+        "GUARANTEE_PRESERVATION.nativeResult.recomputation": "REPRODUCED",
+        "GUARANTEE_PRESERVATION.nativeResult.transfer.outcome": "PRESERVED",
+        "GUARANTEE_PRESERVATION.productProjection.status": "CONTRADICTED"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "PRESERVED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+      ],
+      "independentOracle": "Independent arithmetic100 !=50 and exact negative-result equality; PRESERVED transfer is not native positivity",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [
+        "M14"
+      ],
+      "declaredVectorMutants": [
+        "M14"
+      ],
+      "positiveControls": [
+        "G15"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "I01",
+      "path": "vectors/v0.2/I01.json",
+      "fileSHA256": "3e13b8673486ec45be40405d9ea4c0d89f7c40afa256fbe92b3bf03d07246b59",
+      "pairDigest": "b3937b23e29543019fc2132f1c4357c5dc12268224aea4dfd786f7ea3038a28a",
+      "claim": "Exact signed action",
+      "relation": "Exact same semantic input as G13",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "VERIFIED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Byte-canonical input identity with G13; no additional semantic branch",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "G13"
+      ],
+      "assessment": "REDUNDANT",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    },
+    {
+      "vector": "I02",
+      "path": "vectors/v0.2/I02.json",
+      "fileSHA256": "2f8317f6c032c0a63b0316640f014979fbf17be5358bc03e385e52f2f8460a8c",
+      "pairDigest": "091cb4ebec71209f27d206dc0d69d0bd89b4a4ebe08276341b55b68b5f8ef429",
+      "claim": "Signed target binding",
+      "relation": "Caller requested targetB differs from signed targetA",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "REFUTED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "CONTRADICTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SIGNED_INTENT_REQUEST_MISMATCH"
+      ],
+      "independentOracle": "Independent targetId inequality; signature remains the same",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "I01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "I03",
+      "path": "vectors/v0.2/I03.json",
+      "fileSHA256": "548ff15fb09e50d39b92c032f9a5c467c9f3fae6c0e04e0f9508d25c67bfbdef",
+      "pairDigest": "ef5025dafc79d00c7d6b3751b35f074f5ef22ad010f660c0722fe4ebc8f2bf68",
+      "claim": "Signed action-type binding",
+      "relation": "Caller requested other-kind differs from signed reaction",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "REFUTED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "CONTRADICTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "SIGNED_INTENT_REQUEST_MISMATCH"
+      ],
+      "independentOracle": "Independent kind inequality; signature remains the same",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "I01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance."
+    },
+    {
+      "vector": "I04",
+      "path": "vectors/v0.2/I04.json",
+      "fileSHA256": "c9545b4a5e3d48b63b359a351a0fce85c28226636ad415d67dbc365f58959aae",
+      "pairDigest": "6108f4f6f07b9f10904c229ca03931f453061c07bd43fc516a9411c0d4d6b09d",
+      "claim": "Exact retry without duplicate execution",
+      "relation": "Second duplicate retains identical signed intent and declares no new execution",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "VERIFIED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "VERIFIED",
+        "PRODUCT_PROJECTION": "VERIFIED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "VERIFIED",
+      "reasonCodes": [],
+      "independentOracle": "Independent exact action equality, duplicate status and execution_attempted=false; first execution/observation still supplies positive basis",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "I01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    },
+    {
+      "vector": "I05",
+      "path": "vectors/v0.2/I05.json",
+      "fileSHA256": "ad416e47e9902aea87a379646f345a1eb2b0c44bec63a32b82dcb8af248e2bf7",
+      "pairDigest": "f1896c657ed3799db78edeb2cccb6250344bbc65c93fd9531fc14c6b4ed1bd4d",
+      "claim": "Retry material binding",
+      "relation": "Exact same mutated second-retry input as G14",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "REFUTED",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "CONTRADICTED",
+        "PRODUCT_PROJECTION": "CONTRADICTED",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "CONTRADICTED",
+      "reasonCodes": [
+        "RETRY_AUTHORIZED_ACTION_CHANGED"
+      ],
+      "independentOracle": "Byte-canonical input identity with G14; different positive control I04 strengthens local presentation, not new negative branch",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "M09"
+      ],
+      "positiveControls": [
+        "I04"
+      ],
+      "assessment": "REDUNDANT",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    },
+    {
+      "vector": "I06",
+      "path": "vectors/v0.2/I06.json",
+      "fileSHA256": "ef28c92e2886b70c5e8b65d298c677287f6692364131b2f061da0b7f680604b7",
+      "pairDigest": "7ead234444861b549070e6c72a284693398312a07c69bb04516b349ffca766cd",
+      "claim": "Duplicate is not new execution",
+      "relation": "All delivery duplicate and execution_attempted=false",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "UNVERIFIABLE",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "INSUFFICIENT_EVIDENCE",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "ACTION_NEW_EXECUTION_NOT_ESTABLISHED"
+      ],
+      "independentOracle": "Independent absence of any execution attempt; a supplied prior observation is not a new execution",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "I01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    },
+    {
+      "vector": "I07",
+      "path": "vectors/v0.2/I07.json",
+      "fileSHA256": "56c480cea456fe160db7c493979b965925421b326f6dbee701e0abd6863bd98f",
+      "pairDigest": "349706aa71cd94816423f07e4a39a09d02795075ed7023b43f3d1f60bdae0258",
+      "claim": "Observation sufficiency",
+      "relation": "Execution intent/attempt without observation is insufficient",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "UNVERIFIABLE",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "INSUFFICIENT_EVIDENCE",
+        "PRODUCT_PROJECTION": "INSUFFICIENT_EVIDENCE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "INSUFFICIENT_EVIDENCE",
+      "reasonCodes": [
+        "ACTION_EXECUTION_OBSERVATION_MISSING"
+      ],
+      "independentOracle": "Literal observation=null; exact action signature cannot establish observation/result",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "I01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    },
+    {
+      "vector": "I08",
+      "path": "vectors/v0.2/I08.json",
+      "fileSHA256": "429eb6e7260c51e73ccbd81cd4587250f33461fe3edeaa72a63c4f74d0fcfcf5",
+      "pairDigest": "ccbc8fa72c02260fa7c77eb5476cb800ca5c350e04d83b7ec7c2cd70640be830",
+      "claim": "Authority namespace support",
+      "relation": "Valid signature namespace v1 cannot satisfy unsupported authority namespace",
+      "nativeResult": {
+        "RECOMPUTATION.semanticOutcome": "UNVERIFIABLE",
+        "SEMANTIC_COMPATIBILITY.observedSemanticPair": "PRESERVED",
+        "RECOMPUTATION.nativeResult.signature": "VALID"
+      },
+      "expectedLayerResults": {
+        "INPUT": "ADMITTED",
+        "CANONICALIZATION": "VERIFIED",
+        "INTEGRITY": "VERIFIED",
+        "AUTHENTICITY": "VERIFIED",
+        "SUBJECT_BINDING": "VERIFIED",
+        "RECOMPUTATION": "REPRODUCED",
+        "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+        "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+        "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+        "CONTINUITY": "NOT_REQUESTED",
+        "DOMAIN_ADAPTERS": "UNSUPPORTED_PROFILE",
+        "PRODUCT_PROJECTION": "UNSUPPORTED_PROFILE",
+        "EXPLAINABLE_REPORT": "GENERATED",
+        "PROVENANCE": "RECORDED"
+      },
+      "productResult": "UNSUPPORTED_PROFILE",
+      "reasonCodes": [
+        "ACTION_AUTHORITY_UNSUPPORTED"
+      ],
+      "independentOracle": "Independent unsupported authority namespace literal; unsupported classification distinct from contradictory actor",
+      "expectedDerivedIndependently": true,
+      "measuredCatalogMutants": [],
+      "declaredVectorMutants": [
+        "none"
+      ],
+      "positiveControls": [
+        "I01"
+      ],
+      "assessment": "LOAD_BEARING",
+      "oracleBoundary": "Literal product relational oracle. Shared fixture constructors do not prove native cryptographic/canonicalization/full-upstream algorithm conformance.",
+      "fixtureConstructionBoundary": "Trace commitment and actionMaterial helpers are implementation shared; independent substitution/equality/observation oracle does not independently prove trace format."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "python",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py",
+    "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\cases\\independent_positive-native-input.json"
+  ],
+  "status": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py\", line 180, in <module>\r\n    sys.exit(main())\r\n             ^^^^^^\r\n  File \"C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py\", line 172, in main\r\n    got, ok = evaluate(name, c, pub, toy)\r\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py\", line 148, in evaluate\r\n    f = check_decision(pub, c[\"corpus\"], c[\"manifest\"], c[\"decision\"])\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py\", line 109, in check_decision\r\n    if answer(ret) != dec[\"answer\"]: f.append(\"answer recompute\")\r\n       ^^^^^^^^^^^\r\n  File \"C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-domains\\repo\\vendor\\recompute-kit-v02\\conformance\\scan-subject-binding-v0\\scan_check.py\", line 92, in answer\r\n    def answer(ret): return re.search(r\"is (\\d+) USD\", ret[0][\"content\"]).group(1) + \" USD\"\r\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAttributeError: 'NoneType' object has no attribute 'group'\r\n",
+  "checkerSha256": "8c35eb3c2dcbd30ce190c569a797cde1c7d86cc0130985b8a533cad640fe0a06"
+}

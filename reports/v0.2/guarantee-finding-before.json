@@ -1,0 +1,26 @@
+{
+  "finding": "Unsupported requested-guarantee fields were silently ignored",
+  "evidenceKind": "ACTUAL_PRE_FIX_PROBE_TRANSCRIPT",
+  "sourcePath": "src/core/verify-v2.mjs",
+  "preFixSourceSha256": null,
+  "probeTimeUtc": null,
+  "fullInputRetained": false,
+  "fullReportRetained": false,
+  "limitations": [
+    "The probe was actually executed before the one-line fix, but its complete input/report, source SHA and execution time were not saved then.",
+    "The exact executed script and its actual concise stdout are retained from the tool transcript. No old implementation was rerun and no pre-fix output was reconstructed.",
+    "baselineV2 and makePrfFixture generated the native positive input at execution time; this transcript is not a complete frozen input artifact."
+  ],
+  "unsupportedDeclaration": [
+    {
+      "id": "native-result-and-dependencies-preserved",
+      "version": "unknown-99",
+      "parameters": {
+        "preserve": "whole-application-behavior"
+      }
+    }
+  ],
+  "executedScript": "import { baselineV2, resignV2 } from './tools/fixtures-v2.mjs';\nimport { verifyV2 } from './src/core/verify-v2.mjs';\nimport { makePrfFixture } from './tests/helpers/prf-v02-fixture.mjs';\nconst g=await baselineV2(); const p=makePrfFixture();\ng.request.requested_guarantees=[{id:'native-result-and-dependencies-preserved',version:'unknown-99',parameters:{preserve:'whole-application-behavior'}}];\ng.request.guarantee_requirement=p.context; g.bundle.payload.guarantees=p.input; resignV2(g);\nconst r=await verifyV2(g.request,g.bundle);\nconsole.log(JSON.stringify({keys:Object.keys(r),overall:r.overall,guarantee:r.layers.GUARANTEE_PRESERVATION.status,guaranteeReasons:r.layers.GUARANTEE_PRESERVATION.reasonCodes,projection:r.layers.PRODUCT_PROJECTION,explanation:r.layers.EXPLAINABLE_REPORT.nativeResult}));\n",
+  "actualStdout": "{\"keys\":[\"schema\",\"projection_version\",\"overall\",\"reason_codes\",\"explanation\",\"required_layers\",\"layers\",\"boundaries\"],\"overall\":\"VERIFIED\",\"guarantee\":\"PRESERVED\",\"guaranteeReasons\":[\"PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED\"],\"projection\":{\"status\":\"VERIFIED\",\"reasonCodes\":[\"NATIVE_CRYSTAL_ROOT_MATCH\",\"rvr.v0.digest_match\",\"rvr.recompute.identical\",\"PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED\"],\"nativeResult\":null},\"explanation\":{\"explanation\":\"VERIFIED: supplied evidence is evaluated only for the caller-selected claim surface. NATIVE_CRYSTAL_ROOT_MATCH, rvr.v0.digest_match, rvr.recompute.identical, PRF_NATIVE_RESULT_AND_DEPENDENCIES_PRESERVED\"}}\n",
+  "actualProcessExitCode": 0
+}

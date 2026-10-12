@@ -1,0 +1,189 @@
+{
+  "schema": "receiptos.independent.audit-curation-review.v1",
+  "head": "eb942148eeb489db809b39e053ec905105cc3056",
+  "tree": "3fa1cea8387f733cab6a0868acf6060ec958b06d",
+  "frozenAnchor": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "frozenAncestor": true,
+  "commits": [
+    {
+      "rawCommit": "dde5419f453969ae33b9e88b3151dba3e370f196",
+      "sanitizedCommit": "a9800bbb88a372e58d461b315dd7648cde26e79a",
+      "rawCommitReachable": false,
+      "sanitizedCommitReachable": true,
+      "changedPaths": [
+        "reports/release-audit-v0.2/corpus/attribution-audit.json",
+        "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+        "reports/release-audit-v0.2/corpus/public-source-observations.json"
+      ],
+      "nonReportChanges": []
+    },
+    {
+      "rawCommit": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f",
+      "sanitizedCommit": "2c602f6434f9b9095bf7ae2d678a7f48f16078cd",
+      "rawCommitReachable": false,
+      "sanitizedCommitReachable": true,
+      "changedPaths": [
+        "reports/release-audit-v0.2/corpus/attribution-audit.json",
+        "reports/release-audit-v0.2/corpus/evidence-manifest.json",
+        "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+        "reports/release-audit-v0.2/corpus/public-source-observations.json"
+      ],
+      "nonReportChanges": []
+    },
+    {
+      "rawCommit": "40fcaa7bbf43872c1ab6d63565ad3c2d9808b81c",
+      "sanitizedCommit": "e719f2ddfea026ee8d7b1b3f9e3ca9ce606345a3",
+      "rawCommitReachable": false,
+      "sanitizedCommitReachable": true,
+      "changedPaths": [
+        "reports/release-audit-v0.2/corpus/attribution-audit.json",
+        "reports/release-audit-v0.2/corpus/evidence-manifest.json",
+        "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+        "reports/release-audit-v0.2/corpus/public-source-observations.json"
+      ],
+      "nonReportChanges": []
+    },
+    {
+      "rawCommit": "3df769c4d873d6f354d1627a97967eec645bd727",
+      "sanitizedCommit": "b97201fe9c1122f59a3e12ccba0a0921b5fd87ea",
+      "rawCommitReachable": false,
+      "sanitizedCommitReachable": true,
+      "changedPaths": [
+        "reports/release-audit-v0.2/corpus/attribution-audit.json",
+        "reports/release-audit-v0.2/corpus/evidence-manifest.json",
+        "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+        "reports/release-audit-v0.2/corpus/public-source-observations.json"
+      ],
+      "nonReportChanges": []
+    },
+    {
+      "rawCommit": "1ddfc74c3b0d99b003b4fbe30a2ccb29ce13b417",
+      "sanitizedCommit": "eb942148eeb489db809b39e053ec905105cc3056",
+      "rawCommitReachable": false,
+      "sanitizedCommitReachable": true,
+      "changedPaths": [
+        "reports/release-audit-v0.2/corpus/attribution-audit.json",
+        "reports/release-audit-v0.2/corpus/evidence-manifest.json",
+        "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+        "reports/release-audit-v0.2/corpus/public-source-observations.json"
+      ],
+      "nonReportChanges": []
+    }
+  ],
+  "rawBlobOccurrences": [
+    {
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "rawBlob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "rawBlob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "rawBlob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "rawBlob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "rawBlob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "rawBlob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "rawBlob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "rawBlob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "rawBlob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "rawBlob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "rawBlob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "rawBlob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "rawBlob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "rawBlob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    },
+    {
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "rawBlob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "rawBlobReachable": false,
+      "rawSHA256Matches": true,
+      "sanitizedSHA256Matches": true
+    }
+  ],
+  "uniqueRawBlobs": 3,
+  "rawBundleSHA256": "bdcda1d52ff39859be852c110c32fc010649a24e54268fad1d608ea9669aff3b",
+  "rawBundleMatches": true,
+  "committedLock": {
+    "files": 344,
+    "matched": 344,
+    "failures": [],
+    "sha256": "3c7399a199fcff7fd4f381746d0a22071800065a9798b422fd49a36c0889f4e4"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:receiptos:verify:bundle:v2",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "receiptos.verify.bundle.v2"
+    },
+    "canonicalization_profile": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024
+    },
+    "statement": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "receiptos.verify.statement.v2"
+        },
+        "verification_profile": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "surface": {
+          "$ref": "urn:receiptos:verify:claim-surface:v2"
+        },
+        "adapter": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "asserted_result": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "CANNOT_CHECK"
+          ]
+        },
+        "evidence_manifest": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1024
+              },
+              "digest": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "size": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "role",
+              "digest",
+              "size"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 256
+        },
+        "payload_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "crypto": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            },
+            "key_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1024
+            }
+          },
+          "required": [
+            "provider",
+            "key_id"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "verification_profile",
+        "surface",
+        "adapter",
+        "asserted_result",
+        "evidence_manifest",
+        "payload_digest",
+        "crypto"
+      ],
+      "additionalProperties": false
+    },
+    "signature_base64": {
+      "type": "string",
+      "maxLength": 1024,
+      "pattern": "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1024
+          },
+          "bytes_base64": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 4194304,
+                "pattern": "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "bytes_base64"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 256
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "crystal": {
+          "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/jsonObject"
+        },
+        "adapter": {
+          "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/jsonObject"
+        },
+        "guarantees": {
+          "anyOf": [
+            {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/jsonObject"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "continuity": {
+          "anyOf": [
+            {
+              "$ref": "urn:receiptos:verify:claim-surface:v2#/$defs/jsonObject"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crystal",
+        "adapter",
+        "guarantees",
+        "continuity"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "canonicalization_profile",
+    "statement",
+    "signature_base64",
+    "evidence",
+    "payload"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+{
+  "phase": "incomplete disposable CLI dependency copy; not native checker execution",
+  "exit": 1,
+  "stdout": "",
+  "stderr": "node:internal/modules/esm/resolve:275\r\n    throw new ERR_MODULE_NOT_FOUND(\r\n          ^\r\n\r\nError [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-d13\\tools\\fixtures.mjs' imported from C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\audit02-d13\\src\\cli.mjs\r\n    at finalizeResolution (node:internal/modules/esm/resolve:275:11)\r\n    at moduleResolve (node:internal/modules/esm/resolve:860:10)\r\n    at defaultResolve (node:internal/modules/esm/resolve:984:11)\r\n    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)\r\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)\r\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)\r\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)\r\n    at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {\r\n  code: 'ERR_MODULE_NOT_FOUND',\r\n  url: 'file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/work/audit02-d13/tools/fixtures.mjs'\r\n}\r\n\r\nNode.js v22.15.0\r\n"
+}

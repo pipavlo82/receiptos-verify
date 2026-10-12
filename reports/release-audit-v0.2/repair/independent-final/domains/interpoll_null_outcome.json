@@ -1,0 +1,471 @@
+{
+  "id": "interpoll_null_outcome",
+  "sourceHead": "eb942148eeb489db809b39e053ec905105cc3056",
+  "sourceHashes": {
+    "src/adapters/interpoll-v2.mjs": "498f6602e9509611deec9c42ac4473d0fd1635d764ffa63c306a17c3246fe57c",
+    "src/adapters/prf-v2.mjs": "4d8344adb9ed96b127974af38f12cd5eab78a0f3379393744d1334df059ec82b",
+    "schemas/request-v2.schema.json": "116ab4ba890d570ba5d92fbf2b476aedc71a4101ca2a5a575853bb31ec843cb5",
+    "src/core/admission-v2.mjs": "d3263a9ad0076739235d215c145f433dfd6c1cc5388b5d613d337bb458ece78b"
+  },
+  "input": {
+    "request": {
+      "schema": "receiptos.verify.request.v2",
+      "verification_profile": "receiptos.verify.generic.v2",
+      "adapter": "interpoll",
+      "claim": {
+        "id": "audit02:signed-execution",
+        "kind": "SIGNED_ACTION_TRACE",
+        "parameters": {
+          "action": {
+            "version": 1,
+            "namespace": "v3",
+            "kind": "reaction",
+            "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+            "targetType": "post",
+            "targetId": "audit02-fresh-target",
+            "value": "up",
+            "createdAt": 123,
+            "nonce": "33333333333333333333333333333333"
+          },
+          "outcome": "EXECUTION_OBSERVED"
+        }
+      },
+      "subject": {
+        "kind": "agent-action",
+        "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+        "version": "1",
+        "artifact_digest": "426833f4cea6d720b410463ddd9fe4ed01b84b318b453c4675985301ec0ac738"
+      },
+      "scope": {
+        "namespace": "v3",
+        "observation": "supplied-trace-only"
+      },
+      "authority": {
+        "id": "audit02-public-test-key",
+        "class": "INDEPENDENT_RECOMPUTATION"
+      },
+      "policy": {
+        "id": "audit02-policy",
+        "version": "1",
+        "trusted_keys": [
+          {
+            "id": "audit02-public-test-key",
+            "spki_base64": "MCowBQYDK2VwAyEAslwb7dnn4YIVGpJI8foGC8ubu91WXcMLa9MmKXbvTHs="
+          }
+        ],
+        "required_layers": [
+          "INTEGRITY",
+          "AUTHENTICITY",
+          "SUBJECT_BINDING",
+          "RECOMPUTATION",
+          "EVIDENCE_SUFFICIENCY",
+          "SEMANTIC_COMPATIBILITY"
+        ],
+        "minimum_grade": "LOCAL_RECOMPUTATION",
+        "verification_time": 10,
+        "established_assumptions": [],
+        "dependency_results": [],
+        "accepted_authorities": [
+          {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          }
+        ]
+      },
+      "time": {
+        "not_before": 0,
+        "not_after": 20
+      },
+      "version": "2",
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "adapter-input",
+        "execution"
+      ],
+      "evidence": [],
+      "requested_guarantees": [],
+      "adapter_requirement": {
+        "requested_action": {
+          "version": 1,
+          "namespace": "v3",
+          "kind": "reaction",
+          "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+          "targetType": "post",
+          "targetId": "audit02-fresh-target",
+          "value": "up",
+          "createdAt": 123,
+          "nonce": "33333333333333333333333333333333"
+        },
+        "authority": {
+          "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+          "namespace": "v3"
+        },
+        "required_outcome": null
+      }
+    },
+    "bundle": {
+      "schema": "receiptos.verify.bundle.v2",
+      "canonicalization_profile": "receiptos.verify.canonical-json.v1",
+      "statement": {
+        "schema": "receiptos.verify.statement.v2",
+        "verification_profile": "receiptos.verify.generic.v2",
+        "adapter": "interpoll",
+        "surface": {
+          "claim": {
+            "id": "audit02:signed-execution",
+            "kind": "SIGNED_ACTION_TRACE",
+            "parameters": {
+              "action": {
+                "version": 1,
+                "namespace": "v3",
+                "kind": "reaction",
+                "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                "targetType": "post",
+                "targetId": "audit02-fresh-target",
+                "value": "up",
+                "createdAt": 123,
+                "nonce": "33333333333333333333333333333333"
+              },
+              "outcome": "EXECUTION_OBSERVED"
+            }
+          },
+          "subject": {
+            "kind": "agent-action",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "version": "1",
+            "artifact_digest": "426833f4cea6d720b410463ddd9fe4ed01b84b318b453c4675985301ec0ac738"
+          },
+          "scope": {
+            "namespace": "v3",
+            "observation": "supplied-trace-only"
+          },
+          "authority": {
+            "id": "audit02-public-test-key",
+            "class": "INDEPENDENT_RECOMPUTATION"
+          },
+          "time": {
+            "not_before": 0,
+            "not_after": 20
+          },
+          "version": "2",
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "adapter-input",
+            "execution"
+          ],
+          "policy": {
+            "id": "audit02-policy",
+            "version": "1"
+          }
+        },
+        "asserted_result": "PASS",
+        "evidence_manifest": [
+          {
+            "id": "adapter-input",
+            "role": "adapter-input",
+            "digest": "426833f4cea6d720b410463ddd9fe4ed01b84b318b453c4675985301ec0ac738",
+            "size": 2028
+          }
+        ],
+        "payload_digest": "04f09f4b3b6947d7f9e1e1440bc3f9ab2487f1047118041f2404c6d5ed0edc15",
+        "crypto": {
+          "provider": "ed25519",
+          "key_id": "audit02-public-test-key"
+        }
+      },
+      "signature_base64": "oIPvTemxLaUZwLvSsTUxN3lGcZsyWfrk/XQDjTIyicEqwqQ8gImaO4s7Ya/u7S6FSfR33gx2gI6cNq3MbanHDA==",
+      "evidence": [
+        {
+          "id": "adapter-input",
+          "bytes_base64": "eyJhY2NlcHRlZF9hY3Rpb24iOnsiYWN0aW9uIjp7ImFjdG9yIjoiMmZhMjEwNGQ2YjM4ZDExYjAyMzAwMTA1NTk4NzkxMjRlNDJhYjhkZmVmZjVmZjI5ZGM5Y2RhZGQ0ZWNhY2MzZiIsImNyZWF0ZWRBdCI6MTIzLCJpZCI6ImNlYTcwMjQ0YTMwOGE3NWJhNjFkNTM5MWRhMzE2NTE5YzI5ZjI0ZmQzYjllZDA5MDc4ZDlkY2QzM2UzMGIzYmQiLCJraW5kIjoicmVhY3Rpb24iLCJuYW1lc3BhY2UiOiJ2MyIsIm5vbmNlIjoiMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMiLCJzaWduYXR1cmUiOiI3ZmI4MDI1ZGEwNTQ4NWM5NjdiNzM3NzIwNjBkNTI1MDc1MzkxNmZhODc4MGIwZmYxOWY5MDg1OGQ2NzU5ZGVjY2M2YWUzYzk2ZjE1YzBiYWM1ZTdiNWFhMzY0YzNiNTYzMjVlZjEzNDgwMTVjNDIxYTk1MzI2OTFmOWE5NWUyYyIsInRhcmdldElkIjoiYXVkaXQwMi1mcmVzaC10YXJnZXQiLCJ0YXJnZXRUeXBlIjoicG9zdCIsInZhbHVlIjoidXAiLCJ2ZXJzaW9uIjoxfSwic3RhdHVzIjoiYWNjZXB0ZWQifSwiYXR0ZW1wdHMiOlt7ImFjdGlvbiI6eyJhY3RvciI6IjJmYTIxMDRkNmIzOGQxMWIwMjMwMDEwNTU5ODc5MTI0ZTQyYWI4ZGZlZmY1ZmYyOWRjOWNkYWRkNGVjYWNjM2YiLCJjcmVhdGVkQXQiOjEyMywiaWQiOiJjZWE3MDI0NGEzMDhhNzViYTYxZDUzOTFkYTMxNjUxOWMyOWYyNGZkM2I5ZWQwOTA3OGQ5ZGNkMzNlMzBiM2JkIiwia2luZCI6InJlYWN0aW9uIiwibmFtZXNwYWNlIjoidjMiLCJub25jZSI6IjMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzIiwic2lnbmF0dXJlIjoiN2ZiODAyNWRhMDU0ODVjOTY3YjczNzcyMDYwZDUyNTA3NTM5MTZmYTg3ODBiMGZmMTlmOTA4NThkNjc1OWRlY2NjNmFlM2M5NmYxNWMwYmFjNWU3YjVhYTM2NGMzYjU2MzI1ZWYxMzQ4MDE1YzQyMWE5NTMyNjkxZjlhOTVlMmMiLCJ0YXJnZXRJZCI6ImF1ZGl0MDItZnJlc2gtdGFyZ2V0IiwidGFyZ2V0VHlwZSI6InBvc3QiLCJ2YWx1ZSI6InVwIiwidmVyc2lvbiI6MX0sImRlbGl2ZXJ5X3N0YXR1cyI6ImFjY2VwdGVkIiwiZXhlY3V0aW9uX2F0dGVtcHRlZCI6dHJ1ZSwiaWQiOiJhdWRpdC1hdHRlbXB0LW9uZSJ9XSwiZmluYWxfY29tbWl0dGVkX3Jlc3VsdCI6eyJhY3Rpb25faWQiOiJjZWE3MDI0NGEzMDhhNzViYTYxZDUzOTFkYTMxNjUxOWMyOWYyNGZkM2I5ZWQwOTA3OGQ5ZGNkMzNlMzBiM2JkIiwiYXR0ZW1wdF9pZHMiOlsiYXVkaXQtYXR0ZW1wdC1vbmUiXSwiZXZpZGVuY2VfZGlnZXN0IjoiYzRkMTMyZGY2ZTlmYjY2NzdhZWNjMjYxM2QwOGY3NmNmYjU3MWFmYjcyMzFiNjE3MmNkYjU5Y2Y1YjJkOTI0ZSIsIm9ic2VydmF0aW9uX2RpZ2VzdCI6IjFjZDE4N2Q4ZmQ5OTkyN2NkNzM1NmFkMzFiZjg5N2U0OTBlYWRkMzVkOWY5NTA5NDRkODM3NWM1MWFlOWZkNzkifSwib2JzZXJ2YXRpb24iOnsiYWN0aW9uX2lkIjoiY2VhNzAyNDRhMzA4YTc1YmE2MWQ1MzkxZGEzMTY1MTljMjlmMjRmZDNiOWVkMDkwNzhkOWRjZDMzZTMwYjNiZCIsImF0dGVtcHRfaWQiOiJhdWRpdC1hdHRlbXB0LW9uZSIsInJlc3VsdCI6IkFQUExJRUQifSwic2lnbmVkX2ludGVudCI6eyJhY3RvciI6IjJmYTIxMDRkNmIzOGQxMWIwMjMwMDEwNTU5ODc5MTI0ZTQyYWI4ZGZlZmY1ZmYyOWRjOWNkYWRkNGVjYWNjM2YiLCJjcmVhdGVkQXQiOjEyMywiaWQiOiJjZWE3MDI0NGEzMDhhNzViYTYxZDUzOTFkYTMxNjUxOWMyOWYyNGZkM2I5ZWQwOTA3OGQ5ZGNkMzNlMzBiM2JkIiwia2luZCI6InJlYWN0aW9uIiwibmFtZXNwYWNlIjoidjMiLCJub25jZSI6IjMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzIiwic2lnbmF0dXJlIjoiN2ZiODAyNWRhMDU0ODVjOTY3YjczNzcyMDYwZDUyNTA3NTM5MTZmYTg3ODBiMGZmMTlmOTA4NThkNjc1OWRlY2NjNmFlM2M5NmYxNWMwYmFjNWU3YjVhYTM2NGMzYjU2MzI1ZWYxMzQ4MDE1YzQyMWE5NTMyNjkxZjlhOTVlMmMiLCJ0YXJnZXRJZCI6ImF1ZGl0MDItZnJlc2gtdGFyZ2V0IiwidGFyZ2V0VHlwZSI6InBvc3QiLCJ2YWx1ZSI6InVwIiwidmVyc2lvbiI6MX19"
+        }
+      ],
+      "payload": {
+        "crystal": {
+          "schema": "stealth.session.evidence.v1",
+          "session_id": "independent-v02-domain-audit",
+          "directory": "local/synthetic",
+          "task": {
+            "title": "Fresh audit artifact"
+          },
+          "agent": {
+            "id": "synthetic",
+            "runtime": "local"
+          },
+          "scope": {
+            "permission": null
+          },
+          "authorization": {
+            "delegation_ref": null,
+            "delegator": null,
+            "agent_operator": null,
+            "target": "local/synthetic",
+            "allowed_actions": [],
+            "authorization_valid_from": null,
+            "authorization_expiry": null,
+            "authorization_checked_at": 0,
+            "authorization_state_hash": "synthetic",
+            "authorized_at_execution": null
+          },
+          "execution": [],
+          "commands": [],
+          "changes": {
+            "files_changed": [],
+            "diff_sha256": null
+          },
+          "metadata": {
+            "message_count": 0,
+            "diff_count": 0,
+            "generated_by": "receiptos-verify-synthetic-fixture"
+          },
+          "anchor": {
+            "merkle_proof_status": "not attached",
+            "merkle_root": null,
+            "merkle_leaf_index": null,
+            "merkle_proof": [],
+            "onchain_anchor_status": "not anchored",
+            "network": "local/off-chain",
+            "contract": null,
+            "tx_hash": null,
+            "verifier_status": "not verified",
+            "receipt_root": "0x927a5671030e85a60d93624292ce560da393ccd79c92412a4d00a5c5b7bcd4ba"
+          }
+        },
+        "adapter": {
+          "signed_intent": {
+            "version": 1,
+            "namespace": "v3",
+            "kind": "reaction",
+            "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+            "targetType": "post",
+            "targetId": "audit02-fresh-target",
+            "value": "up",
+            "createdAt": 123,
+            "nonce": "33333333333333333333333333333333",
+            "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+          },
+          "accepted_action": {
+            "status": "accepted",
+            "action": {
+              "version": 1,
+              "namespace": "v3",
+              "kind": "reaction",
+              "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+              "targetType": "post",
+              "targetId": "audit02-fresh-target",
+              "value": "up",
+              "createdAt": 123,
+              "nonce": "33333333333333333333333333333333",
+              "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+              "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+            }
+          },
+          "attempts": [
+            {
+              "id": "audit-attempt-one",
+              "action": {
+                "version": 1,
+                "namespace": "v3",
+                "kind": "reaction",
+                "actor": "2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f",
+                "targetType": "post",
+                "targetId": "audit02-fresh-target",
+                "value": "up",
+                "createdAt": 123,
+                "nonce": "33333333333333333333333333333333",
+                "id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+                "signature": "7fb8025da05485c967b73772060d5250753916fa8780b0ff19f90858d6759deccc6ae3c96f15c0bac5e7b5aa364c3b56325ef1348015c421a9532691f9a95e2c"
+              },
+              "delivery_status": "accepted",
+              "execution_attempted": true
+            }
+          ],
+          "observation": {
+            "action_id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "attempt_id": "audit-attempt-one",
+            "result": "APPLIED"
+          },
+          "final_committed_result": {
+            "action_id": "cea70244a308a75ba61d5391da316519c29f24fd3b9ed09078d9dcd33e30b3bd",
+            "attempt_ids": [
+              "audit-attempt-one"
+            ],
+            "observation_digest": "1cd187d8fd99927cd7356ad31bf897e490eadd35d9f950944d8375c51ae9fd79",
+            "evidence_digest": "c4d132df6e9fb6677aecc2613d08f76cfb571afb7231b6172cdb59cf5b2d924e"
+          }
+        },
+        "guarantees": null,
+        "continuity": null
+      }
+    }
+  },
+  "inputSha256": "2238bb9f84ad21b14d74e595e4dd67dc6499c9c6ff152fb7f2f8a590c624ea3a",
+  "frozenBeforeFileSha256": "a1e6b5e21af290acd5027736e227a2d7268a3ddae9c1734b60d3061184c6fb26",
+  "frozenBeforeOverall": "VERIFIED",
+  "composed": {
+    "schema": "receiptos.verify.report.v2",
+    "projection_version": "receiptos.verify.projection.v2",
+    "overall": "REJECTED_MALFORMED",
+    "reason_codes": [
+      "SCHEMA_MISMATCH"
+    ],
+    "explanation": "REJECTED_MALFORMED: supplied evidence is evaluated only for the caller-selected claim surface. SCHEMA_MISMATCH",
+    "required_layers": [
+      "INTEGRITY",
+      "AUTHENTICITY",
+      "SUBJECT_BINDING",
+      "RECOMPUTATION",
+      "EVIDENCE_SUFFICIENCY",
+      "SEMANTIC_COMPATIBILITY"
+    ],
+    "layers": {
+      "INPUT": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "SCHEMA_MISMATCH"
+        ],
+        "nativeResult": {
+          "message": "data/adapter_requirement/required_outcome must be equal to one of the allowed values"
+        }
+      },
+      "CANONICALIZATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "INTEGRITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "AUTHENTICITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "SUBJECT_BINDING": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "RECOMPUTATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "EVIDENCE_SUFFICIENCY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "SEMANTIC_COMPATIBILITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "GUARANTEE_PRESERVATION": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "CONTINUITY": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "DOMAIN_ADAPTERS": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      },
+      "PRODUCT_PROJECTION": {
+        "status": "REJECTED_MALFORMED",
+        "reasonCodes": [
+          "SCHEMA_MISMATCH"
+        ],
+        "nativeResult": null
+      },
+      "EXPLAINABLE_REPORT": {
+        "status": "GENERATED",
+        "reasonCodes": [
+          "SCHEMA_MISMATCH"
+        ],
+        "nativeResult": {
+          "explanation": "REJECTED_MALFORMED: supplied evidence is evaluated only for the caller-selected claim surface. SCHEMA_MISMATCH"
+        }
+      },
+      "PROVENANCE": {
+        "status": "NOT_RUN",
+        "reasonCodes": [],
+        "nativeResult": null
+      }
+    },
+    "boundaries": [
+      "Integrity is not authenticity.",
+      "Signature is not semantic correctness or accepted authority.",
+      "Replay preserves negative outcomes.",
+      "Supplied observations are not external execution provenance.",
+      "Exact compatibility is not general scope entailment."
+    ]
+  },
+  "direct": {
+    "status": "REJECTED_MALFORMED",
+    "reasonCodes": [
+      "ACTION_CONTEXT_MALFORMED"
+    ],
+    "nativeResult": {
+      "signature": "VALID",
+      "admission": "NOT_EVALUATED",
+      "retry_relation": "NOT_ESTABLISHED",
+      "execution": "NOT_ESTABLISHED",
+      "final_commitment": "NOT_ESTABLISHED",
+      "acceptance_status": "accepted"
+    },
+    "productProjection": {
+      "status": "REJECTED_MALFORMED",
+      "reasonCodes": [
+        "ACTION_CONTEXT_MALFORMED"
+      ]
+    },
+    "provenance": {
+      "profileId": "receiptos.verify.interpoll-action.v2",
+      "sourceRepository": "Interpoll1/decentralised",
+      "sourceCommit": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "license": "Unlicense upstream; Apache-2.0 product glue",
+      "maturity": "EXPERIMENTAL",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "native-schnorr-authorization",
+        "caller-selected-action",
+        "exact-retry",
+        "supplied-observation-binding",
+        "trace-commitment"
+      ],
+      "requiredEvidence": [
+        "signed_intent",
+        "accepted_action",
+        "attempts",
+        "observation",
+        "final_committed_result"
+      ],
+      "nativeVocabulary": [
+        "VALID",
+        "INVALID",
+        "accepted",
+        "duplicate",
+        "PRESERVED",
+        "VIOLATED",
+        "NOT_ESTABLISHED"
+      ]
+    },
+    "limitations": [
+      "Native Schnorr verification establishes key control over the signed intent; fresh server admission is not evaluated.",
+      "Execution observations and relay acceptance are supplied artifacts, not independently authenticated Interpoll server or SQL execution.",
+      "A trace digest binds supplied bytes only. It does not establish that an action was executed, viewed by a human, or accepted by a deployed relay."
+    ]
+  },
+  "assessment": "PASS"
+}

@@ -1,0 +1,4252 @@
+TAP version 13
+# Subtest: direct Interpoll rejects fresh admission requirement without upgrading supplied observations
+ok 1 - direct Interpoll rejects fresh admission requirement without upgrading supplied observations
+  ---
+  duration_ms: 165.1362
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects server attestation requirement without upgrading supplied observations
+ok 2 - direct Interpoll rejects server attestation requirement without upgrading supplied observations
+  ---
+  duration_ms: 24.0393
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null outcome without upgrading supplied observations
+ok 3 - direct Interpoll rejects null outcome without upgrading supplied observations
+  ---
+  duration_ms: 25.2344
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects numeric outcome without upgrading supplied observations
+ok 4 - direct Interpoll rejects numeric outcome without upgrading supplied observations
+  ---
+  duration_ms: 19.8952
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null action without upgrading supplied observations
+ok 5 - direct Interpoll rejects null action without upgrading supplied observations
+  ---
+  duration_ms: 22.834
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects array action without upgrading supplied observations
+ok 6 - direct Interpoll rejects array action without upgrading supplied observations
+  ---
+  duration_ms: 20.1068
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects extra action semantics without upgrading supplied observations
+ok 7 - direct Interpoll rejects extra action semantics without upgrading supplied observations
+  ---
+  duration_ms: 21.879
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects wrong action parameter type without upgrading supplied observations
+ok 8 - direct Interpoll rejects wrong action parameter type without upgrading supplied observations
+  ---
+  duration_ms: 22.4654
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects unsafe action timestamp without upgrading supplied observations
+ok 9 - direct Interpoll rejects unsafe action timestamp without upgrading supplied observations
+  ---
+  duration_ms: 21.7878
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null authority without upgrading supplied observations
+ok 10 - direct Interpoll rejects null authority without upgrading supplied observations
+  ---
+  duration_ms: 26.7632
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects wrong authority field type without upgrading supplied observations
+ok 11 - direct Interpoll rejects wrong authority field type without upgrading supplied observations
+  ---
+  duration_ms: 22.3215
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects extra authority semantics without upgrading supplied observations
+ok 12 - direct Interpoll rejects extra authority semantics without upgrading supplied observations
+  ---
+  duration_ms: 26.8722
+  type: 'test'
+  ...
+# Subtest: direct Interpoll keeps a missing or partial selected action insufficient
+ok 13 - direct Interpoll keeps a missing or partial selected action insufficient
+  ---
+  duration_ms: 36.8493
+  type: 'test'
+  ...
+# Subtest: direct Interpoll outcome omission preserves documented default
+ok 14 - direct Interpoll outcome omission preserves documented default
+  ---
+  duration_ms: 23.2451
+  type: 'test'
+  ...
+# Subtest: direct Interpoll unsupported string outcome remains unsupported
+ok 15 - direct Interpoll unsupported string outcome remains unsupported
+  ---
+  duration_ms: 27.1921
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects unsupported policy requirement without claiming a transfer
+ok 16 - direct PRF rejects unsupported policy requirement without claiming a transfer
+  ---
+  duration_ms: 2.4651
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects authenticated chain requirement without claiming a transfer
+ok 17 - direct PRF rejects authenticated chain requirement without claiming a transfer
+  ---
+  duration_ms: 0.5095
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null guarantee without claiming a transfer
+ok 18 - direct PRF rejects null guarantee without claiming a transfer
+  ---
+  duration_ms: 0.4496
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects numeric guarantee without claiming a transfer
+ok 19 - direct PRF rejects numeric guarantee without claiming a transfer
+  ---
+  duration_ms: 0.3925
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null tuple digest without claiming a transfer
+ok 20 - direct PRF rejects null tuple digest without claiming a transfer
+  ---
+  duration_ms: 0.3657
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects numeric tuple digest without claiming a transfer
+ok 21 - direct PRF rejects numeric tuple digest without claiming a transfer
+  ---
+  duration_ms: 0.3521
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null basis without claiming a transfer
+ok 22 - direct PRF rejects null basis without claiming a transfer
+  ---
+  duration_ms: 0.5777
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects array basis without claiming a transfer
+ok 23 - direct PRF rejects array basis without claiming a transfer
+  ---
+  duration_ms: 0.3532
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null native expectation without claiming a transfer
+ok 24 - direct PRF rejects null native expectation without claiming a transfer
+  ---
+  duration_ms: 1.258
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects array native expectation without claiming a transfer
+ok 25 - direct PRF rejects array native expectation without claiming a transfer
+  ---
+  duration_ms: 0.4261
+  type: 'test'
+  ...
+# Subtest: direct PRF preserves safe missing and partial premise outcomes
+ok 26 - direct PRF preserves safe missing and partial premise outcomes
+  ---
+  duration_ms: 1091.4707
+  type: 'test'
+  ...
+# Subtest: direct PRF supported context still executes the pinned native relation
+ok 27 - direct PRF supported context still executes the pinned native relation
+  ---
+  duration_ms: 360.7026
+  type: 'test'
+  ...
+# Subtest: direct PRF unsupported string guarantee remains unsupported
+ok 28 - direct PRF unsupported string guarantee remains unsupported
+  ---
+  duration_ms: 300.6581
+  type: 'test'
+  ...
+# Subtest: v0.2 admission accepts generic shape without asserting integrity or authenticity
+ok 29 - v0.2 admission accepts generic shape without asserting integrity or authenticity
+  ---
+  duration_ms: 45.8162
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request claim
+ok 30 - v0.2 admission requires request claim
+  ---
+  duration_ms: 4.6462
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence claim
+ok 31 - v0.2 admission requires signed evidence claim
+  ---
+  duration_ms: 5.9516
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request subject
+ok 32 - v0.2 admission requires request subject
+  ---
+  duration_ms: 7.33
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence subject
+ok 33 - v0.2 admission requires signed evidence subject
+  ---
+  duration_ms: 2.4451
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request scope
+ok 34 - v0.2 admission requires request scope
+  ---
+  duration_ms: 1.3953
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence scope
+ok 35 - v0.2 admission requires signed evidence scope
+  ---
+  duration_ms: 1.8532
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request authority
+ok 36 - v0.2 admission requires request authority
+  ---
+  duration_ms: 1.3573
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence authority
+ok 37 - v0.2 admission requires signed evidence authority
+  ---
+  duration_ms: 2.0825
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request policy
+ok 38 - v0.2 admission requires request policy
+  ---
+  duration_ms: 8.4226
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence policy
+ok 39 - v0.2 admission requires signed evidence policy
+  ---
+  duration_ms: 1.9542
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request version
+ok 40 - v0.2 admission requires request version
+  ---
+  duration_ms: 1.3034
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence version
+ok 41 - v0.2 admission requires signed evidence version
+  ---
+  duration_ms: 1.6466
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request time
+ok 42 - v0.2 admission requires request time
+  ---
+  duration_ms: 1.2779
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence time
+ok 43 - v0.2 admission requires signed evidence time
+  ---
+  duration_ms: 1.4644
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request assumptions
+ok 44 - v0.2 admission requires request assumptions
+  ---
+  duration_ms: 1.3424
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence assumptions
+ok 45 - v0.2 admission requires signed evidence assumptions
+  ---
+  duration_ms: 1.589
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request dependencies
+ok 46 - v0.2 admission requires request dependencies
+  ---
+  duration_ms: 1.1203
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence dependencies
+ok 47 - v0.2 admission requires signed evidence dependencies
+  ---
+  duration_ms: 1.5452
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request evidence_requirements
+ok 48 - v0.2 admission requires request evidence_requirements
+  ---
+  duration_ms: 1.2549
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence evidence_requirements
+ok 49 - v0.2 admission requires signed evidence evidence_requirements
+  ---
+  duration_ms: 1.5596
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate request dependency
+ok 50 - v0.2 admission rejects duplicate request dependency
+  ---
+  duration_ms: 1.5487
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate evidence dependency
+ok 51 - v0.2 admission rejects duplicate evidence dependency
+  ---
+  duration_ms: 2.65
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects conflicting dependency premises
+ok 52 - v0.2 admission rejects conflicting dependency premises
+  ---
+  duration_ms: 1.7839
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects reversed conflicting dependency premises
+ok 53 - v0.2 admission rejects reversed conflicting dependency premises
+  ---
+  duration_ms: 3.8073
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate dependency premise versions
+ok 54 - v0.2 admission rejects duplicate dependency premise versions
+  ---
+  duration_ms: 1.4461
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate trust key IDs
+ok 55 - v0.2 admission rejects duplicate trust key IDs
+  ---
+  duration_ms: 1.3247
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate accepted authority IDs
+ok 56 - v0.2 admission rejects duplicate accepted authority IDs
+  ---
+  duration_ms: 1.2639
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate manifest IDs
+ok 57 - v0.2 admission rejects duplicate manifest IDs
+  ---
+  duration_ms: 1.332
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate attachment IDs
+ok 58 - v0.2 admission rejects duplicate attachment IDs
+  ---
+  duration_ms: 14.3049
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate singular evidence role
+ok 59 - v0.2 admission rejects duplicate singular evidence role
+  ---
+  duration_ms: 1.4455
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate guarantee identity
+ok 60 - v0.2 admission rejects duplicate guarantee identity
+  ---
+  duration_ms: 1.7474
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate requested evidence IDs
+ok 61 - v0.2 admission rejects duplicate requested evidence IDs
+  ---
+  duration_ms: 1.1499
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate assumptions
+ok 62 - v0.2 admission rejects duplicate assumptions
+  ---
+  duration_ms: 1.0089
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate evidence requirements
+ok 63 - v0.2 admission rejects duplicate evidence requirements
+  ---
+  duration_ms: 0.961
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects empty evidence requirements
+ok 64 - v0.2 admission rejects empty evidence requirements
+  ---
+  duration_ms: 1.0321
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unknown extra request field
+ok 65 - v0.2 admission rejects unknown extra request field
+  ---
+  duration_ms: 1.1881
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unknown extra statement field
+ok 66 - v0.2 admission rejects unknown extra statement field
+  ---
+  duration_ms: 1.4523
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe timestamp
+ok 67 - v0.2 admission rejects unsafe timestamp
+  ---
+  duration_ms: 1.0634
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects empty time interval
+ok 68 - v0.2 admission rejects empty time interval
+  ---
+  duration_ms: 1.4283
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects reversed evidence time interval
+ok 69 - v0.2 admission rejects reversed evidence time interval
+  ---
+  duration_ms: 2.6022
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects negative timestamp
+ok 70 - v0.2 admission rejects negative timestamp
+  ---
+  duration_ms: 1.3467
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects malformed artifact hash
+ok 71 - v0.2 admission rejects malformed artifact hash
+  ---
+  duration_ms: 1.3435
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects uppercase artifact hash
+ok 72 - v0.2 admission rejects uppercase artifact hash
+  ---
+  duration_ms: 1.5812
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects malformed commit
+ok 73 - v0.2 admission rejects malformed commit
+  ---
+  duration_ms: 1.2763
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects noncanonical base64 padding bits
+ok 74 - v0.2 admission rejects noncanonical base64 padding bits
+  ---
+  duration_ms: 1.4528
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects malformed base64 attachment
+ok 75 - v0.2 admission rejects malformed base64 attachment
+  ---
+  duration_ms: 1.4881
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects metadata layer consumer obligation
+ok 76 - v0.2 admission rejects metadata layer consumer obligation
+  ---
+  duration_ms: 1.3028
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unknown consumer layer
+ok 77 - v0.2 admission rejects unknown consumer layer
+  ---
+  duration_ms: 1.2318
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects overlong subject identifier
+ok 78 - v0.2 admission rejects overlong subject identifier
+  ---
+  duration_ms: 1.201
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects NaN parameter
+ok 79 - v0.2 admission rejects NaN parameter
+  ---
+  duration_ms: 1.0774
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects Infinity parameter
+ok 80 - v0.2 admission rejects Infinity parameter
+  ---
+  duration_ms: 1.1058
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects negative zero parameter
+ok 81 - v0.2 admission rejects negative zero parameter
+  ---
+  duration_ms: 6.5809
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects accessor input
+ok 82 - v0.2 admission rejects accessor input
+  ---
+  duration_ms: 1.3963
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects sparse dependency array
+ok 83 - v0.2 admission rejects sparse dependency array
+  ---
+  duration_ms: 1.8513
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path ../secret
+ok 84 - v0.2 admission rejects unsafe artifact path ../secret
+  ---
+  duration_ms: 5.0295
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path ./artifact
+ok 85 - v0.2 admission rejects unsafe artifact path ./artifact
+  ---
+  duration_ms: 4.4443
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path/../artifact
+ok 86 - v0.2 admission rejects unsafe artifact path path/../artifact
+  ---
+  duration_ms: 1.7452
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path /absolute
+ok 87 - v0.2 admission rejects unsafe artifact path /absolute
+  ---
+  duration_ms: 1.2888
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path C:/secret
+ok 88 - v0.2 admission rejects unsafe artifact path C:/secret
+  ---
+  duration_ms: 6.5232
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path file://secret
+ok 89 - v0.2 admission rejects unsafe artifact path file://secret
+  ---
+  duration_ms: 1.1087
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path https://example.test/data
+ok 90 - v0.2 admission rejects unsafe artifact path https://example.test/data
+  ---
+  duration_ms: 1.1039
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path\\artifact
+ok 91 - v0.2 admission rejects unsafe artifact path path\\artifact
+  ---
+  duration_ms: 1.0721
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path//artifact
+ok 92 - v0.2 admission rejects unsafe artifact path path//artifact
+  ---
+  duration_ms: 1.077
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path/%2e%2e/artifact
+ok 93 - v0.2 admission rejects unsafe artifact path path/%2e%2e/artifact
+  ---
+  duration_ms: 1.0755
+  type: 'test'
+  ...
+# Subtest: v0.2 admission allows bounded unknown adapters/profiles for explicit unsupported projection
+ok 94 - v0.2 admission allows bounded unknown adapters/profiles for explicit unsupported projection
+  ---
+  duration_ms: 0.8802
+  type: 'test'
+  ...
+# Subtest: v0.2 admission preserves unavailable/null and empty evidence for insufficiency layers
+ok 95 - v0.2 admission preserves unavailable/null and empty evidence for insufficiency layers
+  ---
+  duration_ms: 1.2928
+  type: 'test'
+  ...
+# Subtest: v0.2 identifiers preserve exact legal Unicode without normalization aliases
+ok 96 - v0.2 identifiers preserve exact legal Unicode without normalization aliases
+  ---
+  duration_ms: 0.9324
+  type: 'test'
+  ...
+# Subtest: v0.2 raw JSON duplicate semantic members are refused before admission
+ok 97 - v0.2 raw JSON duplicate semantic members are refused before admission
+  ---
+  duration_ms: 2.8345
+  type: 'test'
+  ...
+# Subtest: v0.2 report schema requires exact named fourteen-layer inventory and finite overall status
+ok 98 - v0.2 report schema requires exact named fourteen-layer inventory and finite overall status
+  ---
+  duration_ms: 35.7846
+  type: 'test'
+  ...
+# Subtest: v0.2 admission fails closed for wrong root types and unsupported schema validator names
+ok 99 - v0.2 admission fails closed for wrong root types and unsupported schema validator names
+  ---
+  duration_ms: 2.7756
+  type: 'test'
+  ...
+# Subtest: strict parser accepts strings and Buffers containing legal JSON values
+ok 100 - strict parser accepts strings and Buffers containing legal JSON values
+  ---
+  duration_ms: 7.8179
+  type: 'test'
+  ...
+# Subtest: duplicate keys are rejected at every object level, including escaped aliases
+ok 101 - duplicate keys are rejected at every object level, including escaped aliases
+  ---
+  duration_ms: 3.091
+  type: 'test'
+  ...
+# Subtest: malformed UTF-8 is rejected rather than replaced
+ok 102 - malformed UTF-8 is rejected rather than replaced
+  ---
+  duration_ms: 1.4432
+  type: 'test'
+  ...
+# Subtest: unpaired surrogate escapes and raw JS surrogate code units are rejected
+ok 103 - unpaired surrogate escapes and raw JS surrogate code units are rejected
+  ---
+  duration_ms: 0.71
+  type: 'test'
+  ...
+# Subtest: keys must be nonempty printable ASCII after decoding; Unicode values remain allowed
+ok 104 - keys must be nonempty printable ASCII after decoding; Unicode values remain allowed
+  ---
+  duration_ms: 1.5363
+  type: 'test'
+  ...
+# Subtest: all three prototype-related keys are blocked, including nested and escaped forms
+ok 105 - all three prototype-related keys are blocked, including nested and escaped forms
+  ---
+  duration_ms: 1.0959
+  type: 'test'
+  ...
+# Subtest: integer overflow, decimal/exponent tokens, negative zero and nonfinite tokens are rejected
+ok 106 - integer overflow, decimal/exponent tokens, negative zero and nonfinite tokens are rejected
+  ---
+  duration_ms: 1.4283
+  type: 'test'
+  ...
+# Subtest: only JSON whitespace and one complete JSON value are accepted
+ok 107 - only JSON whitespace and one complete JSON value are accepted
+  ---
+  duration_ms: 1.5097
+  type: 'test'
+  ...
+# Subtest: parser rejects values outside its string-or-Buffer API
+ok 108 - parser rejects values outside its string-or-Buffer API
+  ---
+  duration_ms: 0.8637
+  type: 'test'
+  ...
+# Subtest: nesting admits exactly 32 containers and rejects the 33rd
+ok 109 - nesting admits exactly 32 containers and rejects the 33rd
+  ---
+  duration_ms: 2.2821
+  type: 'test'
+  ...
+# Subtest: document size is measured in raw UTF-8 bytes, including JSON punctuation and whitespace
+ok 110 - document size is measured in raw UTF-8 bytes, including JSON punctuation and whitespace
+  ---
+  duration_ms: 1135.381
+  type: 'test'
+  ...
+# Subtest: canonical goldens preserve arrays, sort ASCII keys lexically and emit no terminal LF
+ok 111 - canonical goldens preserve arrays, sort ASCII keys lexically and emit no terminal LF
+  ---
+  duration_ms: 2.2585
+  type: 'test'
+  ...
+# Subtest: Unicode scalars are preserved without normalization or unnecessary ASCII escaping
+ok 112 - Unicode scalars are preserved without normalization or unnecessary ASCII escaping
+  ---
+  duration_ms: 0.4692
+  type: 'test'
+  ...
+# Subtest: canonicalizer accepts plain and null-prototype JSON dictionaries without changing input
+ok 113 - canonicalizer accepts plain and null-prototype JSON dictionaries without changing input
+  ---
+  duration_ms: 0.2811
+  type: 'test'
+  ...
+# Subtest: canonicalizer refuses non-JSON types, cycles, sparse arrays and invalid keys/strings
+ok 114 - canonicalizer refuses non-JSON types, cycles, sparse arrays and invalid keys/strings
+  ---
+  duration_ms: 1.323
+  type: 'test'
+  ...
+# Subtest: canonicalizer rejects getters and toJSON without invoking producer code
+ok 115 - canonicalizer rejects getters and toJSON without invoking producer code
+  ---
+  duration_ms: 0.6948
+  type: 'test'
+  ...
+# Subtest: error codes are stable across identical invalid input and canonicalizer calls
+ok 116 - error codes are stable across identical invalid input and canonicalizer calls
+  ---
+  duration_ms: 0.4912
+  type: 'test'
+  ...
+# Subtest: canonical bytes agree with an independent Python stdlib reference on legal goldens
+ok 117 - canonical bytes agree with an independent Python stdlib reference on legal goldens
+  ---
+  duration_ms: 257.9487
+  type: 'test'
+  ...
+# Subtest: 1-leaf Python golden root and every inclusion proof
+ok 118 - 1-leaf Python golden root and every inclusion proof
+  ---
+  duration_ms: 8.3983
+  type: 'test'
+  ...
+# Subtest: 2-leaf Python golden root and every inclusion proof
+ok 119 - 2-leaf Python golden root and every inclusion proof
+  ---
+  duration_ms: 4.2105
+  type: 'test'
+  ...
+# Subtest: 3-leaf Python golden root and every inclusion proof
+ok 120 - 3-leaf Python golden root and every inclusion proof
+  ---
+  duration_ms: 2.9971
+  type: 'test'
+  ...
+# Subtest: manifest sorts input IDs, preserves exact bytes and rejects duplicate/empty IDs
+ok 121 - manifest sorts input IDs, preserves exact bytes and rejects duplicate/empty IDs
+  ---
+  duration_ms: 6.9882
+  type: 'test'
+  ...
+# Subtest: proof rejects changed leaf ID/digest/size and a wrong expected root
+ok 122 - proof rejects changed leaf ID/digest/size and a wrong expected root
+  ---
+  duration_ms: 2.1813
+  type: 'test'
+  ...
+# Subtest: proof rejects changed index/count, sibling direction/hash, missing and extra nodes
+ok 123 - proof rejects changed index/count, sibling direction/hash, missing and extra nodes
+  ---
+  duration_ms: 4.5796
+  type: 'test'
+  ...
+# Subtest: three-leaf odd node uses its own hash and count-bound root
+ok 124 - three-leaf odd node uses its own hash and count-bound root
+  ---
+  duration_ms: 1.7374
+  type: 'test'
+  ...
+# Subtest: one-leaf proof rejects surplus sibling and impossible index
+ok 125 - one-leaf proof rejects surplus sibling and impossible index
+  ---
+  duration_ms: 1.05
+  type: 'test'
+  ...
+# Subtest: capsule round trip preserves Unicode, array order and independently captured entire container
+ok 126 - capsule round trip preserves Unicode, array order and independently captured entire container
+  ---
+  duration_ms: 6.8825
+  type: 'test'
+  ...
+# Subtest: canonical key ordering produces deterministic capsules
+ok 127 - canonical key ordering produces deterministic capsules
+  ---
+  duration_ms: 2.4378
+  type: 'test'
+  ...
+# Subtest: full-container capture binds fields outside native roots
+ok 128 - full-container capture binds fields outside native roots
+  ---
+  duration_ms: 4.0167
+  type: 'test'
+  ...
+# Subtest: wrong independently selected subject and request digest are rejected
+ok 129 - wrong independently selected subject and request digest are rejected
+  ---
+  duration_ms: 5.6576
+  type: 'test'
+  ...
+# Subtest: packaging preserves request/bundle disagreement for later semantic verification
+ok 130 - packaging preserves request/bundle disagreement for later semantic verification
+  ---
+  duration_ms: 2.4088
+  type: 'test'
+  ...
+# Subtest: rejects noncanonical container whitespace/order and duplicate escaped JSON keys
+ok 131 - rejects noncanonical container whitespace/order and duplicate escaped JSON keys
+  ---
+  duration_ms: 3.2247
+  type: 'test'
+  ...
+# Subtest: rejects duplicate or unsorted document and manifest IDs
+ok 132 - rejects duplicate or unsorted document and manifest IDs
+  ---
+  duration_ms: 6.1458
+  type: 'test'
+  ...
+# Subtest: rejects embedded byte tampering even when the JSON remains valid
+ok 133 - rejects embedded byte tampering even when the JSON remains valid
+  ---
+  duration_ms: 2.3169
+  type: 'test'
+  ...
+# Subtest: rejects a noncanonical embedded document even after manifest/root are recomputed
+ok 134 - rejects a noncanonical embedded document even after manifest/root are recomputed
+  ---
+  duration_ms: 2.7095
+  type: 'test'
+  ...
+# Subtest: rejects mismatched Merkle root, unknown container fields and malformed base64
+ok 135 - rejects mismatched Merkle root, unknown container fields and malformed base64
+  ---
+  duration_ms: 4.5126
+  type: 'test'
+  ...
+# Subtest: document schemas and external expectations are explicit
+ok 136 - document schemas and external expectations are explicit
+  ---
+  duration_ms: 4.3643
+  type: 'test'
+  ...
+# Subtest: manifest admission never executes JS accessors and hashes require string fields
+ok 137 - manifest admission never executes JS accessors and hashes require string fields
+  ---
+  duration_ms: 0.7269
+  type: 'test'
+  ...
+# Subtest: object IDs and external expectation accessors are rejected without coercion or execution
+ok 138 - object IDs and external expectation accessors are rejected without coercion or execution
+  ---
+  duration_ms: 1.5495
+  type: 'test'
+  ...
+# Subtest: v0.2 isolated witness process rejects malformed output and distinguishes crash
+ok 139 - v0.2 isolated witness process rejects malformed output and distinguishes crash
+  ---
+  duration_ms: 2647.4853
+  type: 'test'
+  ...
+# Subtest: v0.2 wrong semantic verdict remains a semantic witness rather than invalid output
+ok 140 - v0.2 wrong semantic verdict remains a semantic witness rather than invalid output
+  ---
+  duration_ms: 3.9956
+  type: 'test'
+  ...
+# Subtest: v0.2 witness references remain confined to the new corpus
+ok 141 - v0.2 witness references remain confined to the new corpus
+  ---
+  duration_ms: 1.1899
+  type: 'test'
+  ...
+# Subtest: sum at the safe integer boundary retains numeric compatibility
+ok 142 - sum at the safe integer boundary retains numeric compatibility
+  ---
+  duration_ms: 5.8614
+  type: 'test'
+  ...
+# Subtest: individually admitted safe sizes overflow into exact JSON-safe decimal strings
+ok 143 - individually admitted safe sizes overflow into exact JSON-safe decimal strings
+  ---
+  duration_ms: 0.9377
+  type: 'test'
+  ...
+# Subtest: available-byte totals use the same exact representation without allocating enormous buffers
+ok 144 - available-byte totals use the same exact representation without allocating enormous buffers
+  ---
+  duration_ms: 0.3924
+  type: 'test'
+  ...
+# Subtest: ordinary incomplete inventory separates committed and available bytes from process success
+ok 145 - ordinary incomplete inventory separates committed and available bytes from process success
+  ---
+  duration_ms: 1.1733
+  type: 'test'
+  ...
+# Subtest: empty analytics inventory stays zero and establishes no security guarantee
+ok 146 - empty analytics inventory stays zero and establishes no security guarantee
+  ---
+  duration_ms: 1.6353
+  type: 'test'
+  ...
+# Subtest: v0.2 deterministic report identity excludes only nested execution.argv
+ok 147 - v0.2 deterministic report identity excludes only nested execution.argv
+  ---
+  duration_ms: 6.6403
+  type: 'test'
+  ...
+# Subtest: v0.2 determinism identity preserves statuses, reasons, native data, evidence, policy, grade and pins
+ok 148 - v0.2 determinism identity preserves statuses, reasons, native data, evidence, policy, grade and pins
+  ---
+  duration_ms: 3.6235
+  type: 'test'
+  ...
+# Subtest: v0.2 native determinism cannot certify an empty, errored or merely successful JSON process
+ok 149 - v0.2 native determinism cannot certify an empty, errored or merely successful JSON process
+  ---
+  duration_ms: 1.0947
+  type: 'test'
+  ...
+# Subtest: all adapters self-describe exact source pins and explicit unsupported operations
+ok 150 - all adapters self-describe exact source pins and explicit unsupported operations
+  ---
+  duration_ms: 2.8159
+  type: 'test'
+  ...
+# Subtest: mock crypto never becomes real signature verification
+ok 151 - mock crypto never becomes real signature verification
+  ---
+  duration_ms: 0.7962
+  type: 'test'
+  ...
+# Subtest: PQ unavailable provider and empty vector pack cannot verify
+ok 152 - PQ unavailable provider and empty vector pack cannot verify
+  ---
+  duration_ms: 0.5608
+  type: 'test'
+  ...
+# Subtest: ledger extensions reserve XRPL and Ethereum without invented finality
+ok 153 - ledger extensions reserve XRPL and Ethereum without invented finality
+  ---
+  duration_ms: 0.4413
+  type: 'test'
+  ...
+# Subtest: every product report conforms to the versioned report schema
+ok 154 - every product report conforms to the versioned report schema
+  ---
+  duration_ms: 7888.3503
+  type: 'test'
+  ...
+# Subtest: v0.2 exact original A/A witness establishes all six mandatory layers
+ok 155 - v0.2 exact original A/A witness establishes all six mandatory layers
+  ---
+  duration_ms: 15.8793
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected claim identity remains independent of authenticated native PASS
+ok 156 - v0.2 caller-selected claim identity remains independent of authenticated native PASS
+  ---
+  duration_ms: 750.6724
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected claim predicate remains independent of authenticated native PASS
+ok 157 - v0.2 caller-selected claim predicate remains independent of authenticated native PASS
+  ---
+  duration_ms: 691.9102
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected subject identity remains independent of authenticated native PASS
+ok 158 - v0.2 caller-selected subject identity remains independent of authenticated native PASS
+  ---
+  duration_ms: 650.6302
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected same artifact wrong commit remains independent of authenticated native PASS
+ok 159 - v0.2 caller-selected same artifact wrong commit remains independent of authenticated native PASS
+  ---
+  duration_ms: 689.9999
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected same commit wrong artifact remains independent of authenticated native PASS
+ok 160 - v0.2 caller-selected same commit wrong artifact remains independent of authenticated native PASS
+  ---
+  duration_ms: 636.6246
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected artifact tree remains independent of authenticated native PASS
+ok 161 - v0.2 caller-selected artifact tree remains independent of authenticated native PASS
+  ---
+  duration_ms: 671.347
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected artifact path remains independent of authenticated native PASS
+ok 162 - v0.2 caller-selected artifact path remains independent of authenticated native PASS
+  ---
+  duration_ms: 669.9405
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected subject version remains independent of authenticated native PASS
+ok 163 - v0.2 caller-selected subject version remains independent of authenticated native PASS
+  ---
+  duration_ms: 621.6377
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected authority identity remains independent of authenticated native PASS
+ok 164 - v0.2 caller-selected authority identity remains independent of authenticated native PASS
+  ---
+  duration_ms: 657.7161
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected authority class remains independent of authenticated native PASS
+ok 165 - v0.2 caller-selected authority class remains independent of authenticated native PASS
+  ---
+  duration_ms: 633.2452
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected requested broader scope remains independent of authenticated native PASS
+ok 166 - v0.2 caller-selected requested broader scope remains independent of authenticated native PASS
+  ---
+  duration_ms: 641.6967
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected policy identity remains independent of authenticated native PASS
+ok 167 - v0.2 caller-selected policy identity remains independent of authenticated native PASS
+  ---
+  duration_ms: 815.942
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected policy version remains independent of authenticated native PASS
+ok 168 - v0.2 caller-selected policy version remains independent of authenticated native PASS
+  ---
+  duration_ms: 774.2692
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected claim version remains independent of authenticated native PASS
+ok 169 - v0.2 caller-selected claim version remains independent of authenticated native PASS
+  ---
+  duration_ms: 670.789
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected time surface remains independent of authenticated native PASS
+ok 170 - v0.2 caller-selected time surface remains independent of authenticated native PASS
+  ---
+  duration_ms: 759.8079
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected time upper endpoint is excluded remains independent of authenticated native PASS
+ok 171 - v0.2 caller-selected time upper endpoint is excluded remains independent of authenticated native PASS
+  ---
+  duration_ms: 665.4256
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected assumption unestablished remains independent of authenticated native PASS
+ok 172 - v0.2 caller-selected assumption unestablished remains independent of authenticated native PASS
+  ---
+  duration_ms: 679.1497
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected dependency missing remains independent of authenticated native PASS
+ok 173 - v0.2 caller-selected dependency missing remains independent of authenticated native PASS
+  ---
+  duration_ms: 726.6609
+  type: 'test'
+  ...
+# Subtest: v0.2 caller-selected dependency contradicted remains independent of authenticated native PASS
+ok 174 - v0.2 caller-selected dependency contradicted remains independent of authenticated native PASS
+  ---
+  duration_ms: 736.8068
+  type: 'test'
+  ...
+# Subtest: v0.2 independent authority acceptance is required even with exact valid signature
+ok 175 - v0.2 independent authority acceptance is required even with exact valid signature
+  ---
+  duration_ms: 812.4003
+  type: 'test'
+  ...
+# Subtest: v0.2 an absent trusted signer cannot authenticate the statement
+ok 176 - v0.2 an absent trusted signer cannot authenticate the statement
+  ---
+  duration_ms: 911.9394
+  type: 'test'
+  ...
+# Subtest: v0.2 explanation never calls subject-mismatched evidence authenticated when signer is untrusted
+ok 177 - v0.2 explanation never calls subject-mismatched evidence authenticated when signer is untrusted
+  ---
+  duration_ms: 803.9084
+  type: 'test'
+  ...
+# Subtest: v0.2 correctly reproduced negative native RVR evidence remains contradicted
+ok 178 - v0.2 correctly reproduced negative native RVR evidence remains contradicted
+  ---
+  duration_ms: 1277.7285
+  type: 'test'
+  ...
+# Subtest: v0.2 empty evidence cannot certify a supplied native PASS payload
+ok 179 - v0.2 empty evidence cannot certify a supplied native PASS payload
+  ---
+  duration_ms: 614.2978
+  type: 'test'
+  ...
+# Subtest: v0.2 missing committed attachment is unavailable recomputation, not contradiction
+ok 180 - v0.2 missing committed attachment is unavailable recomputation, not contradiction
+  ---
+  duration_ms: 192.3553
+  type: 'test'
+  ...
+# Subtest: v0.2 null committed attachment stays unavailable evidence
+ok 181 - v0.2 null committed attachment stays unavailable evidence
+  ---
+  duration_ms: 206.5847
+  type: 'test'
+  ...
+# Subtest: v0.2 unknown generic profile is unsupported after native observation is preserved
+ok 182 - v0.2 unknown generic profile is unsupported after native observation is preserved
+  ---
+  duration_ms: 606.2387
+  type: 'test'
+  ...
+# Subtest: v0.2 unknown semantic profile cannot inherit native success
+ok 183 - v0.2 unknown semantic profile cannot inherit native success
+  ---
+  duration_ms: 547.7979
+  type: 'test'
+  ...
+# Subtest: v0.2 unknown adapter stays unsupported rather than manufactured success
+ok 184 - v0.2 unknown adapter stays unsupported rather than manufactured success
+  ---
+  duration_ms: 169.7317
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed null requested subject never reaches semantic acceptance
+ok 185 - v0.2 malformed null requested subject never reaches semantic acceptance
+  ---
+  duration_ms: 1.3761
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed absent requested subject never reaches semantic acceptance
+ok 186 - v0.2 malformed absent requested subject never reaches semantic acceptance
+  ---
+  duration_ms: 0.9311
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed conflicting dependency policy never reaches semantic acceptance
+ok 187 - v0.2 malformed conflicting dependency policy never reaches semantic acceptance
+  ---
+  duration_ms: 1.8784
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed duplicate authority identities never reaches semantic acceptance
+ok 188 - v0.2 malformed duplicate authority identities never reaches semantic acceptance
+  ---
+  duration_ms: 1.8722
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed duplicate evidence never reaches semantic acceptance
+ok 189 - v0.2 malformed duplicate evidence never reaches semantic acceptance
+  ---
+  duration_ms: 1.894
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed unknown extra request field never reaches semantic acceptance
+ok 190 - v0.2 malformed unknown extra request field never reaches semantic acceptance
+  ---
+  duration_ms: 0.9663
+  type: 'test'
+  ...
+# Subtest: v0.2 invalid UTF-8 and duplicate raw JSON members are rejected
+ok 191 - v0.2 invalid UTF-8 and duplicate raw JSON members are rejected
+  ---
+  duration_ms: 2.7903
+  type: 'test'
+  ...
+# Subtest: v0.2 same native Trustless PASS survives unchanged under incompatible requested claim
+ok 192 - v0.2 same native Trustless PASS survives unchanged under incompatible requested claim
+  ---
+  duration_ms: 2946.1645
+  type: 'test'
+  ...
+# Subtest: v0.2 Trustless runner PASS on correctly reproduced negative stays negative
+ok 193 - v0.2 Trustless runner PASS on correctly reproduced negative stays negative
+  ---
+  duration_ms: 1713.4633
+  type: 'test'
+  ...
+# Subtest: v0.2 detached canonical/signature/native fixture establishes A and rejects B
+ok 194 - v0.2 detached canonical/signature/native fixture establishes A and rejects B
+  ---
+  duration_ms: 1108.9094
+  type: 'test'
+  ...
+# Subtest: known Git blob vectors include the object header and byte length
+ok 195 - known Git blob vectors include the object header and byte length
+  ---
+  duration_ms: 300.7385
+  type: 'test'
+  ...
+# Subtest: commit, tree and blob identities agree with independent Git CLI fixtures
+ok 196 - commit, tree and blob identities agree with independent Git CLI fixtures
+  ---
+  duration_ms: 593.7651
+  type: 'test'
+  ...
+# Subtest: flat regular file closure returns independently computed identities
+ok 197 - flat regular file closure returns independently computed identities
+  ---
+  duration_ms: 3.412
+  type: 'test'
+  ...
+# Subtest: nested directory closure and executable regular files verify
+ok 198 - nested directory closure and executable regular files verify
+  ---
+  duration_ms: 506.0316
+  type: 'test'
+  ...
+# Subtest: wrong declared commit and root tree identities are rejected
+ok 199 - wrong declared commit and root tree identities are rejected
+  ---
+  duration_ms: 1.683
+  type: 'test'
+  ...
+# Subtest: changed artifact bytes cannot borrow the original file membership
+ok 200 - changed artifact bytes cannot borrow the original file membership
+  ---
+  duration_ms: 0.6121
+  type: 'test'
+  ...
+# Subtest: wrong path and exact-case mismatch cannot select another file
+ok 201 - wrong path and exact-case mismatch cannot select another file
+  ---
+  duration_ms: 0.9883
+  type: 'test'
+  ...
+# Subtest: missing or substituted intermediate/root tree rejects incomplete closure
+ok 202 - missing or substituted intermediate/root tree rejects incomplete closure
+  ---
+  duration_ms: 1.4132
+  type: 'test'
+  ...
+# Subtest: duplicate tree objects and duplicate evidence IDs are rejected
+ok 203 - duplicate tree objects and duplicate evidence IDs are rejected
+  ---
+  duration_ms: 1.331
+  type: 'test'
+  ...
+# Subtest: duplicate names reject file/file and file/directory ambiguity
+ok 204 - duplicate names reject file/file and file/directory ambiguity
+  ---
+  duration_ms: 1.5442
+  type: 'test'
+  ...
+# Subtest: canonical Git ordering treats directory suffix as slash, not NUL
+ok 205 - canonical Git ordering treats directory suffix as slash, not NUL
+  ---
+  duration_ms: 1.2168
+  type: 'test'
+  ...
+# Subtest: duplicate and conflicting commit tree headers are malformed even when addressed exactly
+ok 206 - duplicate and conflicting commit tree headers are malformed even when addressed exactly
+  ---
+  duration_ms: 0.7967
+  type: 'test'
+  ...
+# Subtest: commit header structure rejects truncation, continuations and missing structural headers
+ok 207 - commit header structure rejects truncation, continuations and missing structural headers
+  ---
+  duration_ms: 1.1238
+  type: 'test'
+  ...
+# Subtest: opaque multiline signature headers and message tree text do not change root binding
+ok 208 - opaque multiline signature headers and message tree text do not change root binding
+  ---
+  duration_ms: 0.4677
+  type: 'test'
+  ...
+# Subtest: truncated tree modes, names and binary object identities are rejected
+ok 209 - truncated tree modes, names and binary object identities are rejected
+  ---
+  duration_ms: 1.0142
+  type: 'test'
+  ...
+# Subtest: symlinks, submodules and noncanonical modes are rejected, including unused trees
+ok 210 - symlinks, submodules and noncanonical modes are rejected, including unused trees
+  ---
+  duration_ms: 1.1851
+  type: 'test'
+  ...
+# Subtest: unsafe subject paths and unsafe tree entry names are rejected
+ok 211 - unsafe subject paths and unsafe tree entry names are rejected
+  ---
+  duration_ms: 1.6721
+  type: 'test'
+  ...
+# Subtest: malformed API arguments and missing or repeated required roles fail closed
+ok 212 - malformed API arguments and missing or repeated required roles fail closed
+  ---
+  duration_ms: 1.1117
+  type: 'test'
+  ...
+# Subtest: v2 exact supported guarantee declaration preserves the separately selected relation
+ok 213 - v2 exact supported guarantee declaration preserves the separately selected relation
+  ---
+  duration_ms: 2214.331
+  type: 'test'
+  ...
+# Subtest: v2 refuses original independent probe declaration instead of silently ignoring caller conditions
+ok 214 - v2 refuses original independent probe declaration instead of silently ignoring caller conditions
+  ---
+  duration_ms: 705.6691
+  type: 'test'
+  ...
+# Subtest: v2 refuses unknown guarantee version instead of silently ignoring caller conditions
+ok 215 - v2 refuses unknown guarantee version instead of silently ignoring caller conditions
+  ---
+  duration_ms: 651.9036
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional semantic parameters instead of silently ignoring caller conditions
+ok 216 - v2 refuses additional semantic parameters instead of silently ignoring caller conditions
+  ---
+  duration_ms: 635.4514
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional scope instead of silently ignoring caller conditions
+ok 217 - v2 refuses additional scope instead of silently ignoring caller conditions
+  ---
+  duration_ms: 680.2752
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional authority requirement instead of silently ignoring caller conditions
+ok 218 - v2 refuses additional authority requirement instead of silently ignoring caller conditions
+  ---
+  duration_ms: 724.3954
+  type: 'test'
+  ...
+# Subtest: v2 refuses false-valued additional field instead of silently ignoring caller conditions
+ok 219 - v2 refuses false-valued additional field instead of silently ignoring caller conditions
+  ---
+  duration_ms: 666.0217
+  type: 'test'
+  ...
+# Subtest: v2 refuses null-valued additional field instead of silently ignoring caller conditions
+ok 220 - v2 refuses null-valued additional field instead of silently ignoring caller conditions
+  ---
+  duration_ms: 613.8093
+  type: 'test'
+  ...
+# Subtest: v2 refuses unknown guarantee identity instead of silently ignoring caller conditions
+ok 221 - v2 refuses unknown guarantee identity instead of silently ignoring caller conditions
+  ---
+  duration_ms: 633.9213
+  type: 'test'
+  ...
+# Subtest: v2 multiple guarantee obligations cannot be reduced to one supported guarantee
+ok 222 - v2 multiple guarantee obligations cannot be reduced to one supported guarantee
+  ---
+  duration_ms: 633.8902
+  type: 'test'
+  ...
+# Subtest: v2 an unrequested guarantee does not manufacture a preservation claim
+ok 223 - v2 an unrequested guarantee does not manufacture a preservation claim
+  ---
+  duration_ms: 618.6122
+  type: 'test'
+  ...
+# Subtest: typed request for another Interpoll action reaches the signed-intent relation
+ok 224 - typed request for another Interpoll action reaches the signed-intent relation
+  ---
+  duration_ms: 612.3853
+  type: 'test'
+  ...
+# Subtest: typed unsupported Interpoll authority reaches the authority policy relation
+ok 225 - typed unsupported Interpoll authority reaches the authority policy relation
+  ---
+  duration_ms: 410.0206
+  type: 'test'
+  ...
+# Subtest: null requested action kind remains malformed rather than an untyped semantic request
+ok 226 - null requested action kind remains malformed rather than an untyped semantic request
+  ---
+  duration_ms: 5.5145
+  type: 'test'
+  ...
+# Subtest: null authority namespace remains malformed rather than an untyped semantic request
+ok 227 - null authority namespace remains malformed rather than an untyped semantic request
+  ---
+  duration_ms: 3.9687
+  type: 'test'
+  ...
+# Subtest: I01 native signed action matches independently selected execution
+ok 228 - I01 native signed action matches independently selected execution
+  ---
+  duration_ms: 193.7093
+  type: 'test'
+  ...
+# Subtest: I02 valid signature does not authorize changed accepted target
+ok 229 - I02 valid signature does not authorize changed accepted target
+  ---
+  duration_ms: 37.3672
+  type: 'test'
+  ...
+# Subtest: I03 valid signature does not authorize changed accepted action type
+ok 230 - I03 valid signature does not authorize changed accepted action type
+  ---
+  duration_ms: 60.7022
+  type: 'test'
+  ...
+# Subtest: I04 pending retry and duplicate preserve exact intent and original execution
+ok 231 - I04 pending retry and duplicate preserve exact intent and original execution
+  ---
+  duration_ms: 33.8672
+  type: 'test'
+  ...
+# Subtest: I05 material retry mutation is contradicted despite valid original signature
+ok 232 - I05 material retry mutation is contradicted despite valid original signature
+  ---
+  duration_ms: 32.0139
+  type: 'test'
+  ...
+# Subtest: I06 duplicate acceptance does not establish a new execution
+ok 233 - I06 duplicate acceptance does not establish a new execution
+  ---
+  duration_ms: 55.3612
+  type: 'test'
+  ...
+# Subtest: I07 signature and accepted intent do not replace execution observation
+ok 234 - I07 signature and accepted intent do not replace execution observation
+  ---
+  duration_ms: 19.6296
+  type: 'test'
+  ...
+# Subtest: I08 valid signature with unsupported caller authority is withheld
+ok 235 - I08 valid signature with unsupported caller authority is withheld
+  ---
+  duration_ms: 24.8315
+  type: 'test'
+  ...
+# Subtest: caller requested action is never derived from evidence itself
+ok 236 - caller requested action is never derived from evidence itself
+  ---
+  duration_ms: 22.2233
+  type: 'test'
+  ...
+# Subtest: valid signed action for A cannot satisfy caller selected target B
+ok 237 - valid signed action for A cannot satisfy caller selected target B
+  ---
+  duration_ms: 20.9471
+  type: 'test'
+  ...
+# Subtest: signed intent tampering fails actual native Schnorr relation
+ok 238 - signed intent tampering fails actual native Schnorr relation
+  ---
+  duration_ms: 24.877
+  type: 'test'
+  ...
+# Subtest: altered trace bytes without new commitment are contradicted
+ok 239 - altered trace bytes without new commitment are contradicted
+  ---
+  duration_ms: 22.6203
+  type: 'test'
+  ...
+# Subtest: a reproduced supplied rejection remains negative
+ok 240 - a reproduced supplied rejection remains negative
+  ---
+  duration_ms: 22.8495
+  type: 'test'
+  ...
+# Subtest: commitment cannot promote duplicate into a new execution
+ok 241 - commitment cannot promote duplicate into a new execution
+  ---
+  duration_ms: 20.9182
+  type: 'test'
+  ...
+# Subtest: distinct execution observation must bind existing exact action attempt
+ok 242 - distinct execution observation must bind existing exact action attempt
+  ---
+  duration_ms: 21.6307
+  type: 'test'
+  ...
+# Subtest: authorization only is a separately selected narrower claim
+ok 243 - authorization only is a separately selected narrower claim
+  ---
+  duration_ms: 23.032
+  type: 'test'
+  ...
+# Subtest: duplicate attempts and extra semantic fields are malformed
+ok 244 - duplicate attempts and extra semantic fields are malformed
+  ---
+  duration_ms: 35.8763
+  type: 'test'
+  ...
+# Subtest: synthetic signatures, trace commitments and bounded result are deterministic
+ok 245 - synthetic signatures, trace commitments and bounded result are deterministic
+  ---
+  duration_ms: 51.006
+  type: 'test'
+  ...
+# Subtest: Interpoll evaluator preserves caller-selected and producer input bytes
+ok 246 - Interpoll evaluator preserves caller-selected and producer input bytes
+  ---
+  duration_ms: 21.675
+  type: 'test'
+  ...
+# Subtest: concurrent original crash/mutation controls use distinct complete copies
+ok 247 - concurrent original crash/mutation controls use distinct complete copies
+  ---
+  duration_ms: 3388.6355
+  type: 'test'
+  ...
+# Subtest: mutation witness process rejects malformed and incoherent structured output
+ok 248 - mutation witness process rejects malformed and incoherent structured output
+  ---
+  duration_ms: 2643.6397
+  type: 'test'
+  ...
+# Subtest: literal-vector comparison rejects malformed report even when overall matches
+ok 249 - literal-vector comparison rejects malformed report even when overall matches
+  ---
+  duration_ms: 1.4694
+  type: 'test'
+  ...
+# Subtest: isolation folder names stay short for long mutant descriptions
+ok 250 - isolation folder names stay short for long mutant descriptions
+  ---
+  duration_ms: 6034.9538
+  type: 'test'
+  ...
+# Subtest: v1 release mutation gate refuses zero inventory
+ok 251 - v1 release mutation gate refuses zero inventory
+  ---
+  duration_ms: 3.2529
+  type: 'test'
+  ...
+# Subtest: v1 release mutation gate refuses unapplied and no-op changes
+ok 252 - v1 release mutation gate refuses unapplied and no-op changes
+  ---
+  duration_ms: 7286.9768
+  type: 'test'
+  ...
+# Subtest: v1 release mutation gate refuses an outer process crash
+ok 253 - v1 release mutation gate refuses an outer process crash
+  ---
+  duration_ms: 7755.6377
+  type: 'test'
+  ...
+# Subtest: v1 release mutation gate refuses invalid outer JSON despite exit zero
+ok 254 - v1 release mutation gate refuses invalid outer JSON despite exit zero
+  ---
+  duration_ms: 5607.5293
+  type: 'test'
+  ...
+# Subtest: v1 release mutation gate refuses a damaged positive control
+ok 255 - v1 release mutation gate refuses a damaged positive control
+  ---
+  duration_ms: 4268.8967
+  type: 'test'
+  ...
+# Subtest: v1 release mutation gate refuses inner-native crash with preserved positive
+ok 256 - v1 release mutation gate refuses inner-native crash with preserved positive
+  ---
+  duration_ms: 3674.9767
+  type: 'test'
+  ...
+# Subtest: v1 release mutation gate refuses inner-native null with preserved positive
+ok 257 - v1 release mutation gate refuses inner-native null with preserved positive
+  ---
+  duration_ms: 3009.1011
+  type: 'test'
+  ...
+# Subtest: v1 fixed crash baseline still witnesses false semantic refutation
+ok 258 - v1 fixed crash baseline still witnesses false semantic refutation
+  ---
+  duration_ms: 3281.6211
+  type: 'test'
+  ...
+# Subtest: v0.2 empty mutation inventory is a failing gate
+ok 259 - v0.2 empty mutation inventory is a failing gate
+  ---
+  duration_ms: 4.2711
+  type: 'test'
+  ...
+# Subtest: v0.2 unapplied mutation and exact no-op cannot count as kills
+ok 260 - v0.2 unapplied mutation and exact no-op cannot count as kills
+  ---
+  duration_ms: 7146.2902
+  type: 'test'
+  ...
+# Subtest: v0.2 actual crashing mutant is CRASHED rather than a semantic kill
+ok 261 - v0.2 actual crashing mutant is CRASHED rather than a semantic kill
+  ---
+  duration_ms: 8735.0394
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed output is INVALID_OUTPUT rather than a semantic kill
+ok 262 - v0.2 malformed output is INVALID_OUTPUT rather than a semantic kill
+  ---
+  duration_ms: 4965.9945
+  type: 'test'
+  ...
+# Subtest: v0.2 damaged but well-formed positive control prevents a semantic kill
+ok 263 - v0.2 damaged but well-formed positive control prevents a semantic kill
+  ---
+  duration_ms: 4549.4143
+  type: 'test'
+  ...
+# Subtest: v0.2 native checker crash inside a structured host report is never a semantic kill
+ok 264 - v0.2 native checker crash inside a structured host report is never a semantic kill
+  ---
+  duration_ms: 4692.2654
+  type: 'test'
+  ...
+# Subtest: v0.2 malformed native output with exit zero inside a valid host report is not a semantic kill
+ok 265 - v0.2 malformed native output with exit zero inside a valid host report is not a semantic kill
+  ---
+  duration_ms: 4125.3355
+  type: 'test'
+  ...
+# Subtest: v0.2 native semantic NOT_VALID is distinct from invalid checker output
+ok 266 - v0.2 native semantic NOT_VALID is distinct from invalid checker output
+  ---
+  duration_ms: 0.3993
+  type: 'test'
+  ...
+# Subtest: signed unknown predicate parameters do not expand native digest semantics
+ok 267 - signed unknown predicate parameters do not expand native digest semantics
+  ---
+  duration_ms: 2395.1722
+  type: 'test'
+  ...
+# Subtest: arbitrary producer attachment labels cannot invent an accepted evidence basis
+ok 268 - arbitrary producer attachment labels cannot invent an accepted evidence basis
+  ---
+  duration_ms: 1298.8592
+  type: 'test'
+  ...
+# Subtest: version dispatch never executes an object API schema getter
+ok 269 - version dispatch never executes an object API schema getter
+  ---
+  duration_ms: 2.0578
+  type: 'test'
+  ...
+# Subtest: vendored source bytes match independently recorded pinned Git blob and SHA-256 identities
+ok 270 - vendored source bytes match independently recorded pinned Git blob and SHA-256 identities
+  ---
+  duration_ms: 131.7649
+  type: 'test'
+  ...
+# Subtest: Crystal invokes exact native root functions and captures real process output
+ok 271 - Crystal invokes exact native root functions and captures real process output
+  ---
+  duration_ms: 576.7569
+  type: 'test'
+  ...
+# Subtest: Crystal covered-byte tamper fails while excluded anchor changes remain native-valid
+ok 272 - Crystal covered-byte tamper fails while excluded anchor changes remain native-valid
+  ---
+  duration_ms: 680.7948
+  type: 'test'
+  ...
+# Subtest: Crystal missing root is insufficient, not a fabricated native positive
+ok 273 - Crystal missing root is insufficient, not a fabricated native positive
+  ---
+  duration_ms: 483.1577
+  type: 'test'
+  ...
+# Subtest: RVR native make_bundle and recompute preserve VERIFIED and REPRODUCED
+ok 274 - RVR native make_bundle and recompute preserve VERIFIED and REPRODUCED
+  ---
+  duration_ms: 824.0382
+  type: 'test'
+  ...
+# Subtest: RVR successfully reproduced negative remains REFUTED and product-negative
+ok 275 - RVR successfully reproduced negative remains REFUTED and product-negative
+  ---
+  duration_ms: 826.4959
+  type: 'test'
+  ...
+# Subtest: RVR native DIVERGED control refutes a self-consistent saved positive
+ok 276 - RVR native DIVERGED control refutes a self-consistent saved positive
+  ---
+  duration_ms: 826.4548
+  type: 'test'
+  ...
+# Subtest: RVR declared UNAVAILABLE can REPRODUCE UNVERIFIABLE without semantic success
+ok 277 - RVR declared UNAVAILABLE can REPRODUCE UNVERIFIABLE without semantic success
+  ---
+  duration_ms: 837.4072
+  type: 'test'
+  ...
+# Subtest: RVR committed PRESENT payload unavailable is a native replay barrier
+ok 278 - RVR committed PRESENT payload unavailable is a native replay barrier
+  ---
+  duration_ms: 804.3629
+  type: 'test'
+  ...
+# Subtest: RVR malformed evidence and producer-chosen profile cannot execute different semantics
+ok 279 - RVR malformed evidence and producer-chosen profile cannot execute different semantics
+  ---
+  duration_ms: 1693.3111
+  type: 'test'
+  ...
+# Subtest: nonzero process code cannot supply semantic output even with valid positive JSON
+ok 280 - nonzero process code cannot supply semantic output even with valid positive JSON
+  ---
+  duration_ms: 0.5201
+  type: 'test'
+  ...
+# Subtest: native source inventories cannot be empty, incomplete, duplicated or repinned
+ok 281 - native source inventories cannot be empty, incomplete, duplicated or repinned
+  ---
+  duration_ms: 3.5585
+  type: 'test'
+  ...
+# Subtest: native process imports create no Python bytecode in the vendor tree
+ok 282 - native process imports create no Python bytecode in the vendor tree
+  ---
+  duration_ms: 936.7661
+  type: 'test'
+  ...
+# Subtest: complete explicit authority admits only the half-open interval
+ok 283 - complete explicit authority admits only the half-open interval
+  ---
+  duration_ms: 5.2482
+  type: 'test'
+  ...
+# Subtest: missing valid_after is not an open-ended authority interval
+ok 284 - missing valid_after is not an open-ended authority interval
+  ---
+  duration_ms: 0.7423
+  type: 'test'
+  ...
+# Subtest: malformed valid_after object:null rejects before crypto
+ok 285 - malformed valid_after object:null rejects before crypto
+  ---
+  duration_ms: 0.4811
+  type: 'test'
+  ...
+# Subtest: malformed valid_after string:0 rejects before crypto
+ok 286 - malformed valid_after string:0 rejects before crypto
+  ---
+  duration_ms: 0.6101
+  type: 'test'
+  ...
+# Subtest: malformed valid_after boolean:false rejects before crypto
+ok 287 - malformed valid_after boolean:false rejects before crypto
+  ---
+  duration_ms: 0.6375
+  type: 'test'
+  ...
+# Subtest: malformed valid_after number:0.5 rejects before crypto
+ok 288 - malformed valid_after number:0.5 rejects before crypto
+  ---
+  duration_ms: 0.5917
+  type: 'test'
+  ...
+# Subtest: malformed valid_after number:NaN rejects before crypto
+ok 289 - malformed valid_after number:NaN rejects before crypto
+  ---
+  duration_ms: 0.4495
+  type: 'test'
+  ...
+# Subtest: malformed valid_after number:Infinity rejects before crypto
+ok 290 - malformed valid_after number:Infinity rejects before crypto
+  ---
+  duration_ms: 0.2513
+  type: 'test'
+  ...
+# Subtest: malformed valid_after number:9007199254740992 rejects before crypto
+ok 291 - malformed valid_after number:9007199254740992 rejects before crypto
+  ---
+  duration_ms: 1.0247
+  type: 'test'
+  ...
+# Subtest: malformed valid_after number:-1 rejects before crypto
+ok 292 - malformed valid_after number:-1 rejects before crypto
+  ---
+  duration_ms: 1.0411
+  type: 'test'
+  ...
+# Subtest: missing valid_until is not an open-ended authority interval
+ok 293 - missing valid_until is not an open-ended authority interval
+  ---
+  duration_ms: 0.4642
+  type: 'test'
+  ...
+# Subtest: malformed valid_until object:null rejects before crypto
+ok 294 - malformed valid_until object:null rejects before crypto
+  ---
+  duration_ms: 0.4895
+  type: 'test'
+  ...
+# Subtest: malformed valid_until string:0 rejects before crypto
+ok 295 - malformed valid_until string:0 rejects before crypto
+  ---
+  duration_ms: 0.2391
+  type: 'test'
+  ...
+# Subtest: malformed valid_until boolean:false rejects before crypto
+ok 296 - malformed valid_until boolean:false rejects before crypto
+  ---
+  duration_ms: 0.21
+  type: 'test'
+  ...
+# Subtest: malformed valid_until number:0.5 rejects before crypto
+ok 297 - malformed valid_until number:0.5 rejects before crypto
+  ---
+  duration_ms: 0.2065
+  type: 'test'
+  ...
+# Subtest: malformed valid_until number:NaN rejects before crypto
+ok 298 - malformed valid_until number:NaN rejects before crypto
+  ---
+  duration_ms: 0.1936
+  type: 'test'
+  ...
+# Subtest: malformed valid_until number:Infinity rejects before crypto
+ok 299 - malformed valid_until number:Infinity rejects before crypto
+  ---
+  duration_ms: 0.1851
+  type: 'test'
+  ...
+# Subtest: malformed valid_until number:9007199254740992 rejects before crypto
+ok 300 - malformed valid_until number:9007199254740992 rejects before crypto
+  ---
+  duration_ms: 0.3759
+  type: 'test'
+  ...
+# Subtest: malformed valid_until number:-1 rejects before crypto
+ok 301 - malformed valid_until number:-1 rejects before crypto
+  ---
+  duration_ms: 3.1698
+  type: 'test'
+  ...
+# Subtest: equal endpoints are not an established authority interval
+ok 302 - equal endpoints are not an established authority interval
+  ---
+  duration_ms: 0.4983
+  type: 'test'
+  ...
+# Subtest: inverted endpoints are not an established authority interval
+ok 303 - inverted endpoints are not an established authority interval
+  ---
+  duration_ms: 4.3898
+  type: 'test'
+  ...
+# Subtest: absent explicit revocation state is unknown
+ok 304 - absent explicit revocation state is unknown
+  ---
+  duration_ms: 0.8403
+  type: 'test'
+  ...
+# Subtest: revocation object:null is not explicit unrevoked authority
+ok 305 - revocation object:null is not explicit unrevoked authority
+  ---
+  duration_ms: 1.0753
+  type: 'test'
+  ...
+# Subtest: revocation number:0 is not explicit unrevoked authority
+ok 306 - revocation number:0 is not explicit unrevoked authority
+  ---
+  duration_ms: 0.3221
+  type: 'test'
+  ...
+# Subtest: revocation string:false is not explicit unrevoked authority
+ok 307 - revocation string:false is not explicit unrevoked authority
+  ---
+  duration_ms: 0.221
+  type: 'test'
+  ...
+# Subtest: revocation object:[object Object] is not explicit unrevoked authority
+ok 308 - revocation object:[object Object] is not explicit unrevoked authority
+  ---
+  duration_ms: 0.2003
+  type: 'test'
+  ...
+# Subtest: revocation object: is not explicit unrevoked authority
+ok 309 - revocation object: is not explicit unrevoked authority
+  ---
+  duration_ms: 0.2064
+  type: 'test'
+  ...
+# Subtest: revocation boolean:true is not explicit unrevoked authority
+ok 310 - revocation boolean:true is not explicit unrevoked authority
+  ---
+  duration_ms: 0.1901
+  type: 'test'
+  ...
+# Subtest: both key identities missing cannot satisfy exact key authority
+ok 311 - both key identities missing cannot satisfy exact key authority
+  ---
+  duration_ms: 0.3437
+  type: 'test'
+  ...
+# Subtest: both key identities empty cannot satisfy exact key authority
+ok 312 - both key identities empty cannot satisfy exact key authority
+  ---
+  duration_ms: 0.4104
+  type: 'test'
+  ...
+# Subtest: both key identities non-string cannot satisfy exact key authority
+ok 313 - both key identities non-string cannot satisfy exact key authority
+  ---
+  duration_ms: 0.2676
+  type: 'test'
+  ...
+# Subtest: different key identities cannot satisfy exact key authority
+ok 314 - different key identities cannot satisfy exact key authority
+  ---
+  duration_ms: 0.2404
+  type: 'test'
+  ...
+# Subtest: invalid verification time number:-1 rejects before crypto
+ok 315 - invalid verification time number:-1 rejects before crypto
+  ---
+  duration_ms: 0.3292
+  type: 'test'
+  ...
+# Subtest: invalid verification time number:NaN rejects before crypto
+ok 316 - invalid verification time number:NaN rejects before crypto
+  ---
+  duration_ms: 0.5123
+  type: 'test'
+  ...
+# Subtest: invalid verification time number:Infinity rejects before crypto
+ok 317 - invalid verification time number:Infinity rejects before crypto
+  ---
+  duration_ms: 0.3098
+  type: 'test'
+  ...
+# Subtest: invalid verification time number:9007199254740992 rejects before crypto
+ok 318 - invalid verification time number:9007199254740992 rejects before crypto
+  ---
+  duration_ms: 0.2724
+  type: 'test'
+  ...
+# Subtest: invalid verification time string:5 rejects before crypto
+ok 319 - invalid verification time string:5 rejects before crypto
+  ---
+  duration_ms: 0.2166
+  type: 'test'
+  ...
+# Subtest: invalid verification time number:5.5 rejects before crypto
+ok 320 - invalid verification time number:5.5 rejects before crypto
+  ---
+  duration_ms: 0.2764
+  type: 'test'
+  ...
+# Subtest: MOCK remains unestablished after a complete temporal gate
+ok 321 - MOCK remains unestablished after a complete temporal gate
+  ---
+  duration_ms: 0.2396
+  type: 'test'
+  ...
+# Subtest: STRUCTURAL remains unestablished after a complete temporal gate
+ok 322 - STRUCTURAL remains unestablished after a complete temporal gate
+  ---
+  duration_ms: 0.1284
+  type: 'test'
+  ...
+# Subtest: a real-provider contract negative remains negative after temporal admission
+ok 323 - a real-provider contract negative remains negative after temporal admission
+  ---
+  duration_ms: 0.4212
+  type: 'test'
+  ...
+# Subtest: v2 composed positive native PRF tuple and transfer permit overall verification
+ok 324 - v2 composed positive native PRF tuple and transfer permit overall verification
+  ---
+  duration_ms: 1626.0235
+  type: 'test'
+  ...
+# Subtest: v2 composed faithfully transferred PRF negative remains globally negative
+ok 325 - v2 composed faithfully transferred PRF negative remains globally negative
+  ---
+  duration_ms: 997.0073
+  type: 'test'
+  ...
+# Subtest: v2 composed unsupported PRF profile retains unsupported classification
+ok 326 - v2 composed unsupported PRF profile retains unsupported classification
+  ---
+  duration_ms: 626.8004
+  type: 'test'
+  ...
+# Subtest: v2 composed malformed native PRF declaration retains malformed classification
+ok 327 - v2 composed malformed native PRF declaration retains malformed classification
+  ---
+  duration_ms: 606.3809
+  type: 'test'
+  ...
+# Subtest: v2 composed reproduced PRF unknown premises remain insufficient
+ok 328 - v2 composed reproduced PRF unknown premises remain insufficient
+  ---
+  duration_ms: 943.9385
+  type: 'test'
+  ...
+# Subtest: v2 composed PRF crashed checker is unavailable computation rather than semantic refutation
+ok 329 - v2 composed PRF crashed checker is unavailable computation rather than semantic refutation
+  ---
+  duration_ms: 765.7688
+  type: 'test'
+  ...
+# Subtest: v2 composed PRF malformed native output is unavailable computation rather than semantic refutation
+ok 330 - v2 composed PRF malformed native output is unavailable computation rather than semantic refutation
+  ---
+  duration_ms: 955.434
+  type: 'test'
+  ...
+# Subtest: PRF executes exact merged main native award relation
+ok 331 - PRF executes exact merged main native award relation
+  ---
+  duration_ms: 301.522
+  type: 'test'
+  ...
+# Subtest: PRF changed actual payment diverges from producer positive native result
+ok 332 - PRF changed actual payment diverges from producer positive native result
+  ---
+  duration_ms: 299.2913
+  type: 'test'
+  ...
+# Subtest: PRF reproduced native negative can preserve transfer without becoming positive
+ok 333 - PRF reproduced native negative can preserve transfer without becoming positive
+  ---
+  duration_ms: 269.2459
+  type: 'test'
+  ...
+# Subtest: PRF changed downstream native relation is violated despite positive upstream
+ok 334 - PRF changed downstream native relation is violated despite positive upstream
+  ---
+  duration_ms: 268.5571
+  type: 'test'
+  ...
+# Subtest: PRF downstream cannot drop a caller required dependency
+ok 335 - PRF downstream cannot drop a caller required dependency
+  ---
+  duration_ms: 272.4482
+  type: 'test'
+  ...
+# Subtest: PRF downstream cannot substitute a dependency version
+ok 336 - PRF downstream cannot substitute a dependency version
+  ---
+  duration_ms: 297.0005
+  type: 'test'
+  ...
+# Subtest: PRF missing separately selected acceptance basis is unverifiable
+ok 337 - PRF missing separately selected acceptance basis is unverifiable
+  ---
+  duration_ms: 290.0511
+  type: 'test'
+  ...
+# Subtest: PRF empty dependency basis is not preservation evidence
+ok 338 - PRF empty dependency basis is not preservation evidence
+  ---
+  duration_ms: 277.2806
+  type: 'test'
+  ...
+# Subtest: PRF unknown native premises are not promoted by process exit zero
+ok 339 - PRF unknown native premises are not promoted by process exit zero
+  ---
+  duration_ms: 291.8845
+  type: 'test'
+  ...
+# Subtest: PRF native result retained rather than inferred from expected fixture field
+ok 340 - PRF native result retained rather than inferred from expected fixture field
+  ---
+  duration_ms: 270.0709
+  type: 'test'
+  ...
+# Subtest: PRF changed caller selected native expectation cannot self-grade
+ok 341 - PRF changed caller selected native expectation cannot self-grade
+  ---
+  duration_ms: 279.0197
+  type: 'test'
+  ...
+# Subtest: PRF unknown profile and guarantee versions remain unsupported
+ok 342 - PRF unknown profile and guarantee versions remain unsupported
+  ---
+  duration_ms: 279.3365
+  type: 'test'
+  ...
+# Subtest: PRF caller-selected dependency ordering is set based with exact versions
+ok 343 - PRF caller-selected dependency ordering is set based with exact versions
+  ---
+  duration_ms: 288.933
+  type: 'test'
+  ...
+# Subtest: PRF duplicate dependency identities do not establish preservation
+ok 344 - PRF duplicate dependency identities do not establish preservation
+  ---
+  duration_ms: 267.5658
+  type: 'test'
+  ...
+# Subtest: PRF malformed producer native vocabulary is rejected
+ok 345 - PRF malformed producer native vocabulary is rejected
+  ---
+  duration_ms: 0.449
+  type: 'test'
+  ...
+# Subtest: PRF unavailable native execution is not a contradiction or positive verdict
+ok 346 - PRF unavailable native execution is not a contradiction or positive verdict
+  ---
+  duration_ms: 189.1387
+  type: 'test'
+  ...
+# Subtest: PRF evaluator does not mutate independent consumer requirements
+ok 347 - PRF evaluator does not mutate independent consumer requirements
+  ---
+  duration_ms: 287.3118
+  type: 'test'
+  ...
+# Subtest: PRF missing independently selected relation input cannot self-bind to producer
+ok 348 - PRF missing independently selected relation input cannot self-bind to producer
+  ---
+  duration_ms: 287.146
+  type: 'test'
+  ...
+# Subtest: PRF unrelated compatible award cannot reuse caller relation selector
+ok 349 - PRF unrelated compatible award cannot reuse caller relation selector
+  ---
+  duration_ms: 259.3434
+  type: 'test'
+  ...
+# Subtest: corpus is nonempty with all twenty required classes
+ok 350 - corpus is nonempty with all twenty required classes
+  ---
+  duration_ms: 4.5317
+  type: 'test'
+  ...
+# Subtest: V01 Exact valid receipt for requested commit
+ok 351 - V01 Exact valid receipt for requested commit
+  ---
+  duration_ms: 812.4973
+  type: 'test'
+  ...
+# Subtest: V02 Authentic positive covers wrong requested commit
+ok 352 - V02 Authentic positive covers wrong requested commit
+  ---
+  duration_ms: 653.4646
+  type: 'test'
+  ...
+# Subtest: V03 Tampered native Crystal root
+ok 353 - V03 Tampered native Crystal root
+  ---
+  duration_ms: 626.2733
+  type: 'test'
+  ...
+# Subtest: V04 Valid signature over wrong subject identity
+ok 354 - V04 Valid signature over wrong subject identity
+  ---
+  duration_ms: 654.6109
+  type: 'test'
+  ...
+# Subtest: V05 Required native result evidence missing
+ok 355 - V05 Required native result evidence missing
+  ---
+  duration_ms: 650.6984
+  type: 'test'
+  ...
+# Subtest: V06 Empty evidence inventory
+ok 356 - V06 Empty evidence inventory
+  ---
+  duration_ms: 622.3168
+  type: 'test'
+  ...
+# Subtest: V07 Reproduced negative predicate stays negative
+ok 357 - V07 Reproduced negative predicate stays negative
+  ---
+  duration_ms: 714.7992
+  type: 'test'
+  ...
+# Subtest: V08 Native checker process exits with no semantic output
+ok 358 - V08 Native checker process exits with no semantic output
+  ---
+  duration_ms: 4874.7039
+  type: 'test'
+  ...
+# Subtest: V09 Package and runner present without semantic execution claim
+ok 359 - V09 Package and runner present without semantic execution claim
+  ---
+  duration_ms: 784.6787
+  type: 'test'
+  ...
+# Subtest: V10 Semantic ABI consumer scope mismatch
+ok 360 - V10 Semantic ABI consumer scope mismatch
+  ---
+  duration_ms: 828.4871
+  type: 'test'
+  ...
+# Subtest: V11 Downstream drops upstream guarantee dependency
+ok 361 - V11 Downstream drops upstream guarantee dependency
+  ---
+  duration_ms: 871.193
+  type: 'test'
+  ...
+# Subtest: V12 Exact downstream guarantee and dependency preserved
+ok 362 - V12 Exact downstream guarantee and dependency preserved
+  ---
+  duration_ms: 710.1317
+  type: 'test'
+  ...
+# Subtest: V13 Exact authorized action survives accepted and duplicate retries
+ok 363 - V13 Exact authorized action survives accepted and duplicate retries
+  ---
+  duration_ms: 755.2743
+  type: 'test'
+  ...
+# Subtest: V14 Retry changes material action despite a valid signature
+ok 364 - V14 Retry changes material action despite a valid signature
+  ---
+  duration_ms: 692.3123
+  type: 'test'
+  ...
+# Subtest: V15 Later state differs after historical commitment
+ok 365 - V15 Later state differs after historical commitment
+  ---
+  duration_ms: 598.1075
+  type: 'test'
+  ...
+# Subtest: V16 Unsupported product profile
+ok 366 - V16 Unsupported product profile
+  ---
+  duration_ms: 610.2787
+  type: 'test'
+  ...
+# Subtest: V17 Valid QEV packaging without provider authentication
+ok 367 - V17 Valid QEV packaging without provider authentication
+  ---
+  duration_ms: 1046.3642
+  type: 'test'
+  ...
+# Subtest: V18 Producer positive contradicts reproduced native negative
+ok 368 - V18 Producer positive contradicts reproduced native negative
+  ---
+  duration_ms: 548.2712
+  type: 'test'
+  ...
+# Subtest: V19 Intact historical receipt cannot satisfy current authority profile
+ok 369 - V19 Intact historical receipt cannot satisfy current authority profile
+  ---
+  duration_ms: 539.0875
+  type: 'test'
+  ...
+# Subtest: V20 Stochastic replay establishes no provenance
+ok 370 - V20 Stochastic replay establishes no provenance
+  ---
+  duration_ms: 535.6664
+  type: 'test'
+  ...
+# Subtest: V21 Later divergence leaves the exact historical observation intact
+ok 371 - V21 Later divergence leaves the exact historical observation intact
+  ---
+  duration_ms: 495.018
+  type: 'test'
+  ...
+# Subtest: V22 Caller-selected policy version differs
+ok 372 - V22 Caller-selected policy version differs
+  ---
+  duration_ms: 465.8861
+  type: 'test'
+  ...
+# Subtest: V23 Unknown canonicalization rules
+ok 373 - V23 Unknown canonicalization rules
+  ---
+  duration_ms: 2.4204
+  type: 'test'
+  ...
+# Subtest: V24 Weak grade cannot establish independent recomputation evidence
+ok 374 - V24 Weak grade cannot establish independent recomputation evidence
+  ---
+  duration_ms: 473.2554
+  type: 'test'
+  ...
+# Subtest: V25 Valid signature under a different expected actor
+ok 375 - V25 Valid signature under a different expected actor
+  ---
+  duration_ms: 484.8532
+  type: 'test'
+  ...
+# Subtest: V26 Committed artifact bytes unavailable is a replay barrier
+ok 376 - V26 Committed artifact bytes unavailable is a replay barrier
+  ---
+  duration_ms: 152.0827
+  type: 'test'
+  ...
+# Subtest: V27 Missing signer trust is independent of a checker crash
+ok 377 - V27 Missing signer trust is independent of a checker crash
+  ---
+  duration_ms: 1758.9769
+  type: 'test'
+  ...
+# Subtest: V28 Native Moth counts RVR and ReceiptOS preserve 32 requested / 0 delivered
+ok 378 - V28 Native Moth counts RVR and ReceiptOS preserve 32 requested / 0 delivered
+  ---
+  duration_ms: 2375.9538
+  type: 'test'
+  ...
+# Subtest: V29 Independent Moth job claim cannot be replaced by saved claim
+ok 379 - V29 Independent Moth job claim cannot be replaced by saved claim
+  ---
+  duration_ms: 1006.5202
+  type: 'test'
+  ...
+# Subtest: V30 Native Moth reproduced negative stays negative
+ok 380 - V30 Native Moth reproduced negative stays negative
+  ---
+  duration_ms: 2070.94
+  type: 'test'
+  ...
+# Subtest: empty projection cannot produce VERIFIED
+ok 381 - empty projection cannot produce VERIFIED
+  ---
+  duration_ms: 0.3812
+  type: 'test'
+  ...
+# Subtest: duplicate JSON keys are rejected before execution
+ok 382 - duplicate JSON keys are rejected before execution
+  ---
+  duration_ms: 1.4382
+  type: 'test'
+  ...
+# Subtest: caller cannot remove subject binding from required obligations
+ok 383 - caller cannot remove subject binding from required obligations
+  ---
+  duration_ms: 347.4633
+  type: 'test'
+  ...
+# Subtest: unsupported profile does not hide independently detectable attachment tamper
+ok 384 - unsupported profile does not hide independently detectable attachment tamper
+  ---
+  duration_ms: 5.6687
+  type: 'test'
+  ...
+# Subtest: native claim cannot be silently repaired before replay
+ok 385 - native claim cannot be silently repaired before replay
+  ---
+  duration_ms: 122.6665
+  type: 'test'
+  ...
+# Subtest: ambiguous native result attachments are rejected
+ok 386 - ambiguous native result attachments are rejected
+  ---
+  duration_ms: 2.7786
+  type: 'test'
+  ...
+# Subtest: caller action requirement cannot override observed retry bytes
+ok 387 - caller action requirement cannot override observed retry bytes
+  ---
+  duration_ms: 2.3783
+  type: 'test'
+  ...
+# Subtest: empty detached authorization cannot establish producer selected action
+ok 388 - empty detached authorization cannot establish producer selected action
+  ---
+  duration_ms: 1.7877
+  type: 'test'
+  ...
+# Subtest: authenticated definite FAIL contradicts a positive native replay without erasing either result
+ok 389 - authenticated definite FAIL contradicts a positive native replay without erasing either result
+  ---
+  duration_ms: 1269.5167
+  type: 'test'
+  ...
+# Subtest: independent recomputation may resolve producer CANNOT_CHECK uncertainty
+ok 390 - independent recomputation may resolve producer CANNOT_CHECK uncertainty
+  ---
+  duration_ms: 651.7284
+  type: 'test'
+  ...
+# Subtest: independent native REFUTED replay remains negative
+ok 391 - independent native REFUTED replay remains negative
+  ---
+  duration_ms: 605.2832
+  type: 'test'
+  ...
+# Subtest: projection admits a complete exact positive
+ok 392 - projection admits a complete exact positive
+  ---
+  duration_ms: 0.8881
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result "UNVERIFIABLE"
+ok 393 - replay identity cannot substitute for native semantic result "UNVERIFIABLE"
+  ---
+  duration_ms: 0.4194
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result null
+ok 394 - replay identity cannot substitute for native semantic result null
+  ---
+  duration_ms: 0.3978
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result "PASS"
+ok 395 - replay identity cannot substitute for native semantic result "PASS"
+  ---
+  duration_ms: 0.3132
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result true
+ok 396 - replay identity cannot substitute for native semantic result true
+  ---
+  duration_ms: 0.2758
+  type: 'test'
+  ...
+# Subtest: replay identity cannot substitute for native semantic result 1
+ok 397 - replay identity cannot substitute for native semantic result 1
+  ---
+  duration_ms: 0.6873
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: null layers
+ok 398 - projection rejects malformed internal input: null layers
+  ---
+  duration_ms: 1.0202
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: null required
+ok 399 - projection rejects malformed internal input: null required
+  ---
+  duration_ms: 0.3769
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: string false support
+ok 400 - projection rejects malformed internal input: string false support
+  ---
+  duration_ms: 0.213
+  type: 'test'
+  ...
+# Subtest: projection rejects malformed internal input: object reason codes
+ok 401 - projection rejects malformed internal input: object reason codes
+  ---
+  duration_ms: 0.2456
+  type: 'test'
+  ...
+# Subtest: projection cannot remove implicit mandatory subject and evidence obligations
+ok 402 - projection cannot remove implicit mandatory subject and evidence obligations
+  ---
+  duration_ms: 0.2404
+  type: 'test'
+  ...
+# Subtest: projection requires successful INPUT admission
+ok 403 - projection requires successful INPUT admission
+  ---
+  duration_ms: 0.3105
+  type: 'test'
+  ...
+# Subtest: projection requires successful CANONICALIZATION admission
+ok 404 - projection requires successful CANONICALIZATION admission
+  ---
+  duration_ms: 0.1805
+  type: 'test'
+  ...
+# Subtest: projection preserves the exact explicit contradiction reason
+ok 405 - projection preserves the exact explicit contradiction reason
+  ---
+  duration_ms: 0.2494
+  type: 'test'
+  ...
+# Subtest: v0.2 projection success mapping agrees with the independently specified table
+ok 406 - v0.2 projection success mapping agrees with the independently specified table
+  ---
+  duration_ms: 7.0458
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness all-required-layers-exact
+ok 407 - v0.2 projection literal witness all-required-layers-exact
+  ---
+  duration_ms: 2.6489
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness integrity-not_run
+ok 408 - v0.2 projection literal witness integrity-not_run
+  ---
+  duration_ms: 1.9212
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness authenticity-not_established
+ok 409 - v0.2 projection literal witness authenticity-not_established
+  ---
+  duration_ms: 0.8598
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness subject_binding-contradicted
+ok 410 - v0.2 projection literal witness subject_binding-contradicted
+  ---
+  duration_ms: 1.1318
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness semantic_compatibility-contradicted
+ok 411 - v0.2 projection literal witness semantic_compatibility-contradicted
+  ---
+  duration_ms: 1.0074
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness guarantee_preservation-violated
+ok 412 - v0.2 projection literal witness guarantee_preservation-violated
+  ---
+  duration_ms: 0.9358
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness continuity-violated
+ok 413 - v0.2 projection literal witness continuity-violated
+  ---
+  duration_ms: 0.8011
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness domain_adapters-contradicted
+ok 414 - v0.2 projection literal witness domain_adapters-contradicted
+  ---
+  duration_ms: 1.6587
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness recomputation-cannot_recompute
+ok 415 - v0.2 projection literal witness recomputation-cannot_recompute
+  ---
+  duration_ms: 1.6402
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness recomputation-diverged
+ok 416 - v0.2 projection literal witness recomputation-diverged
+  ---
+  duration_ms: 1.7054
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness integrity-cannot_recompute
+ok 417 - v0.2 projection literal witness integrity-cannot_recompute
+  ---
+  duration_ms: 0.8759
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness recomputation-unsupported
+ok 418 - v0.2 projection literal witness recomputation-unsupported
+  ---
+  duration_ms: 0.7443
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness semantic_compatibility-unsupported
+ok 419 - v0.2 projection literal witness semantic_compatibility-unsupported
+  ---
+  duration_ms: 0.5661
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness input-not_run
+ok 420 - v0.2 projection literal witness input-not_run
+  ---
+  duration_ms: 0.6084
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness canonicalization-not_run
+ok 421 - v0.2 projection literal witness canonicalization-not_run
+  ---
+  duration_ms: 0.5802
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness reproduced-negative
+ok 422 - v0.2 projection literal witness reproduced-negative
+  ---
+  duration_ms: 0.652
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness reproduced-unverifiable
+ok 423 - v0.2 projection literal witness reproduced-unverifiable
+  ---
+  duration_ms: 0.6421
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness native-pass-only
+ok 424 - v0.2 projection literal witness native-pass-only
+  ---
+  duration_ms: 0.7025
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness unsupported-profile
+ok 425 - v0.2 projection literal witness unsupported-profile
+  ---
+  duration_ms: 0.64
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-guarantee-unverifiable
+ok 426 - v0.2 projection literal witness required-guarantee-unverifiable
+  ---
+  duration_ms: 0.8378
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-continuity-unverifiable
+ok 427 - v0.2 projection literal witness required-continuity-unverifiable
+  ---
+  duration_ms: 1.1981
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-domain-unestablished
+ok 428 - v0.2 projection literal witness required-domain-unestablished
+  ---
+  duration_ms: 0.6675
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness required-domain-unsupported
+ok 429 - v0.2 projection literal witness required-domain-unsupported
+  ---
+  duration_ms: 0.615
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness guarantee-preserved
+ok 430 - v0.2 projection literal witness guarantee-preserved
+  ---
+  duration_ms: 0.6342
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness continuity-preserved
+ok 431 - v0.2 projection literal witness continuity-preserved
+  ---
+  duration_ms: 0.6761
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness domain-verified
+ok 432 - v0.2 projection literal witness domain-verified
+  ---
+  duration_ms: 0.7953
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness malformed-precedes-contradiction
+ok 433 - v0.2 projection literal witness malformed-precedes-contradiction
+  ---
+  duration_ms: 0.6768
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness contradiction-precedes-unsupported
+ok 434 - v0.2 projection literal witness contradiction-precedes-unsupported
+  ---
+  duration_ms: 0.8032
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness unsupported-precedes-cannot
+ok 435 - v0.2 projection literal witness unsupported-precedes-cannot
+  ---
+  duration_ms: 0.7624
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness cannot-precedes-insufficient
+ok 436 - v0.2 projection literal witness cannot-precedes-insufficient
+  ---
+  duration_ms: 0.7213
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness invalid-status-is-malformed
+ok 437 - v0.2 projection literal witness invalid-status-is-malformed
+  ---
+  duration_ms: 0.5291
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness boolean-status-is-malformed
+ok 438 - v0.2 projection literal witness boolean-status-is-malformed
+  ---
+  duration_ms: 1.1808
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness truthy-object-status-is-malformed
+ok 439 - v0.2 projection literal witness truthy-object-status-is-malformed
+  ---
+  duration_ms: 0.5803
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-product-positive
+ok 440 - v0.2 projection literal witness prf-product-positive
+  ---
+  duration_ms: 0.8517
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-negative-transfer-preserved
+ok 441 - v0.2 projection literal witness prf-negative-transfer-preserved
+  ---
+  duration_ms: 1.3459
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-unsupported-profile
+ok 442 - v0.2 projection literal witness prf-unsupported-profile
+  ---
+  duration_ms: 0.6375
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-malformed-input
+ok 443 - v0.2 projection literal witness prf-malformed-input
+  ---
+  duration_ms: 0.7419
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-checker-unavailable
+ok 444 - v0.2 projection literal witness prf-checker-unavailable
+  ---
+  duration_ms: 0.857
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-native-insufficient
+ok 445 - v0.2 projection literal witness prf-native-insufficient
+  ---
+  duration_ms: 0.6752
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-preserved-cannot-override-insufficient-product
+ok 446 - v0.2 projection literal witness prf-preserved-cannot-override-insufficient-product
+  ---
+  duration_ms: 0.7706
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-preserved-cannot-override-unavailable-product
+ok 447 - v0.2 projection literal witness prf-preserved-cannot-override-unavailable-product
+  ---
+  duration_ms: 0.7018
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-negative-precedes-unsupported
+ok 448 - v0.2 projection literal witness prf-negative-precedes-unsupported
+  ---
+  duration_ms: 0.5572
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-malformed-precedes-contradiction
+ok 449 - v0.2 projection literal witness prf-malformed-precedes-contradiction
+  ---
+  duration_ms: 1.295
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-unsupported-precedes-cannot
+ok 450 - v0.2 projection literal witness prf-unsupported-precedes-cannot
+  ---
+  duration_ms: 0.6348
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness prf-cannot-precedes-insufficient
+ok 451 - v0.2 projection literal witness prf-cannot-precedes-insufficient
+  ---
+  duration_ms: 0.6793
+  type: 'test'
+  ...
+# Subtest: v0.2 projection literal witness supplied-prf-negative-not-ignored-when-optional
+ok 452 - v0.2 projection literal witness supplied-prf-negative-not-ignored-when-optional
+  ---
+  duration_ms: 0.6176
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed missing layer
+ok 453 - v0.2 projection rejects malformed missing layer
+  ---
+  duration_ms: 0.929
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed renamed layer
+ok 454 - v0.2 projection rejects malformed renamed layer
+  ---
+  duration_ms: 0.9542
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed extra layer
+ok 455 - v0.2 projection rejects malformed extra layer
+  ---
+  duration_ms: 0.6294
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed missing native result
+ok 456 - v0.2 projection rejects malformed missing native result
+  ---
+  duration_ms: 0.811
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed missing status
+ok 457 - v0.2 projection rejects malformed missing status
+  ---
+  duration_ms: 0.8472
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed string reason array
+ok 458 - v0.2 projection rejects malformed string reason array
+  ---
+  duration_ms: 0.5975
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed holey reason array
+ok 459 - v0.2 projection rejects malformed holey reason array
+  ---
+  duration_ms: 0.8199
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed unsupported native semantic outcome
+ok 460 - v0.2 projection rejects malformed unsupported native semantic outcome
+  ---
+  duration_ms: 0.7475
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed Boolean native semantic outcome
+ok 461 - v0.2 projection rejects malformed Boolean native semantic outcome
+  ---
+  duration_ms: 2.8011
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed extra hidden member
+ok 462 - v0.2 projection rejects malformed extra hidden member
+  ---
+  duration_ms: 0.7661
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed symbol member
+ok 463 - v0.2 projection rejects malformed symbol member
+  ---
+  duration_ms: 0.609
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed status accessor
+ok 464 - v0.2 projection rejects malformed status accessor
+  ---
+  duration_ms: 0.6797
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed semantic-outcome accessor
+ok 465 - v0.2 projection rejects malformed semantic-outcome accessor
+  ---
+  duration_ms: 0.7378
+  type: 'test'
+  ...
+# Subtest: v0.2 projection requires explicit known obligations and Boolean support flag
+ok 466 - v0.2 projection requires explicit known obligations and Boolean support flag
+  ---
+  duration_ms: 4.1642
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects sparse obligations without throwing
+ok 467 - v0.2 projection rejects sparse obligations without throwing
+  ---
+  duration_ms: 0.4114
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects accessor obligations without executing them
+ok 468 - v0.2 projection rejects accessor obligations without executing them
+  ---
+  duration_ms: 0.3442
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects duplicate obligations
+ok 469 - v0.2 projection rejects duplicate obligations
+  ---
+  duration_ms: 1.085
+  type: 'test'
+  ...
+# Subtest: v0.2 projection never treats an empty consumer obligation list as zero verification obligations
+ok 470 - v0.2 projection never treats an empty consumer obligation list as zero verification obligations
+  ---
+  duration_ms: 0.7896
+  type: 'test'
+  ...
+# Subtest: v0.2 projection refuses to promote absent native semantic outcome
+ok 471 - v0.2 projection refuses to promote absent native semantic outcome
+  ---
+  duration_ms: 0.5105
+  type: 'test'
+  ...
+# Subtest: v0.2 projection preserves a crashed checker as unavailable computation
+ok 472 - v0.2 projection preserves a crashed checker as unavailable computation
+  ---
+  duration_ms: 1.4974
+  type: 'test'
+  ...
+# Subtest: v0.2 projection keeps provider authentication NOT_ESTABLISHED insufficient when domain is required
+ok 473 - v0.2 projection keeps provider authentication NOT_ESTABLISHED insufficient when domain is required
+  ---
+  duration_ms: 1.0831
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: null
+ok 474 - v0.2 projection rejects malformed nested PRF product projection: null
+  ---
+  duration_ms: 0.59
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: array
+ok 475 - v0.2 projection rejects malformed nested PRF product projection: array
+  ---
+  duration_ms: 0.8839
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: unknown status
+ok 476 - v0.2 projection rejects malformed nested PRF product projection: unknown status
+  ---
+  duration_ms: 0.4342
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: Boolean status
+ok 477 - v0.2 projection rejects malformed nested PRF product projection: Boolean status
+  ---
+  duration_ms: 0.3947
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: missing status
+ok 478 - v0.2 projection rejects malformed nested PRF product projection: missing status
+  ---
+  duration_ms: 0.3506
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: missing reasons
+ok 479 - v0.2 projection rejects malformed nested PRF product projection: missing reasons
+  ---
+  duration_ms: 0.3697
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: extra field
+ok 480 - v0.2 projection rejects malformed nested PRF product projection: extra field
+  ---
+  duration_ms: 0.5292
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: string reasons
+ok 481 - v0.2 projection rejects malformed nested PRF product projection: string reasons
+  ---
+  duration_ms: 0.3683
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: non-string reason
+ok 482 - v0.2 projection rejects malformed nested PRF product projection: non-string reason
+  ---
+  duration_ms: 0.4384
+  type: 'test'
+  ...
+# Subtest: v0.2 projection rejects malformed nested PRF product projection: holey reasons
+ok 483 - v0.2 projection rejects malformed nested PRF product projection: holey reasons
+  ---
+  duration_ms: 0.705
+  type: 'test'
+  ...
+# Subtest: v0.2 projection preserves nested PRF reasons without altering transfer or native result
+ok 484 - v0.2 projection preserves nested PRF reasons without altering transfer or native result
+  ---
+  duration_ms: 1.8068
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance retains exact public base, all 43 repository accounts and vendor closure
+ok 485 - v0.2 provenance retains exact public base, all 43 repository accounts and vendor closure
+  ---
+  duration_ms: 135.0238
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects dropped historical repository
+ok 486 - v0.2 provenance rejects dropped historical repository
+  ---
+  duration_ms: 7.4008
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects historical capability rewriting
+ok 487 - v0.2 provenance rejects historical capability rewriting
+  ---
+  duration_ms: 27.7217
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects changed historical repository authorship/role
+ok 488 - v0.2 provenance rejects changed historical repository authorship/role
+  ---
+  duration_ms: 8.7033
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects duplicate historical repositories
+ok 489 - v0.2 provenance rejects duplicate historical repositories
+  ---
+  duration_ms: 7.7682
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects wrong public base
+ok 490 - v0.2 provenance rejects wrong public base
+  ---
+  duration_ms: 24.4791
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects invented source pins
+ok 491 - v0.2 provenance rejects invented source pins
+  ---
+  duration_ms: 35.6559
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects unsupported integration mode
+ok 492 - v0.2 provenance rejects unsupported integration mode
+  ---
+  duration_ms: 34.0654
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects undeclared maturity
+ok 493 - v0.2 provenance rejects undeclared maturity
+  ---
+  duration_ms: 35.4788
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance refuses ownership as authorship
+ok 494 - v0.2 provenance refuses ownership as authorship
+  ---
+  duration_ms: 32.3273
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance requires concrete contribution evidence
+ok 495 - v0.2 provenance requires concrete contribution evidence
+  ---
+  duration_ms: 37.2214
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects contribution URLs outside the source repository
+ok 496 - v0.2 provenance rejects contribution URLs outside the source repository
+  ---
+  duration_ms: 37.9836
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects missing license attribution
+ok 497 - v0.2 provenance rejects missing license attribution
+  ---
+  duration_ms: 32.4725
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects private/domain-specific source selection
+ok 498 - v0.2 provenance rejects private/domain-specific source selection
+  ---
+  duration_ms: 34.4057
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects malicious product path references
+ok 499 - v0.2 provenance rejects malicious product path references
+  ---
+  duration_ms: 35.1645
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects copied source mislabeled as original specification work
+ok 500 - v0.2 provenance rejects copied source mislabeled as original specification work
+  ---
+  duration_ms: 37.0084
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects copied byte hash mismatch
+ok 501 - v0.2 provenance rejects copied byte hash mismatch
+  ---
+  duration_ms: 35.864
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects copied source outside declared source paths
+ok 502 - v0.2 provenance rejects copied source outside declared source paths
+  ---
+  duration_ms: 34.4026
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance binds exact source fragments
+ok 503 - v0.2 provenance binds exact source fragments
+  ---
+  duration_ms: 23.6847
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects PR14 labeling as stable main
+ok 504 - v0.2 provenance rejects PR14 labeling as stable main
+  ---
+  duration_ms: 44.3839
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects silently enabling open PR57 behavior in main adapter
+ok 505 - v0.2 provenance rejects silently enabling open PR57 behavior in main adapter
+  ---
+  duration_ms: 32.5488
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance rejects repository v2 integration misattribution
+ok 506 - v0.2 provenance rejects repository v2 integration misattribution
+  ---
+  duration_ms: 44.697
+  type: 'test'
+  ...
+# Subtest: v0.2 provenance detects undeclared vendor bytes in a separate temporary product
+ok 507 - v0.2 provenance detects undeclared vendor bytes in a separate temporary product
+  ---
+  duration_ms: 353.3592
+  type: 'test'
+  ...
+# Subtest: QEV selected files and nested original Semantic ABI identities remain exact
+ok 508 - QEV selected files and nested original Semantic ABI identities remain exact
+  ---
+  duration_ms: 130.3368
+  type: 'test'
+  ...
+# Subtest: fresh synthetic counts recompute, while provider authentication remains unestablished
+ok 509 - fresh synthetic counts recompute, while provider authentication remains unestablished
+  ---
+  duration_ms: 1012.078
+  type: 'test'
+  ...
+# Subtest: a supplied QPU label cannot authenticate execution
+ok 510 - a supplied QPU label cannot authenticate execution
+  ---
+  duration_ms: 1063.3633
+  type: 'test'
+  ...
+# Subtest: repinned wrong counts are refuted by native postprocessing
+ok 511 - repinned wrong counts are refuted by native postprocessing
+  ---
+  duration_ms: 993.323
+  type: 'test'
+  ...
+# Subtest: independently selected request mismatch remains a native binding refutation
+ok 512 - independently selected request mismatch remains a native binding refutation
+  ---
+  duration_ms: 953.9473
+  type: 'test'
+  ...
+# Subtest: missing raw observations cannot establish finite postprocessing
+ok 513 - missing raw observations cannot establish finite postprocessing
+  ---
+  duration_ms: 938.2846
+  type: 'test'
+  ...
+# Subtest: unsupported physical elevation and malformed native inputs remain separate
+ok 514 - unsupported physical elevation and malformed native inputs remain separate
+  ---
+  duration_ms: 1935.5711
+  type: 'test'
+  ...
+# Subtest: Moth sources are exact independently verified metadata/code, with no capture payload inventory
+ok 515 - Moth sources are exact independently verified metadata/code, with no capture payload inventory
+  ---
+  duration_ms: 3096.0414
+  type: 'test'
+  ...
+# Subtest: fresh synthetic native counts/RVR/ReceiptOS preserve requested 32 and delivered 0 without provider authority
+ok 516 - fresh synthetic native counts/RVR/ReceiptOS preserve requested 32 and delivered 0 without provider authority
+  ---
+  duration_ms: 2828.1662
+  type: 'test'
+  ...
+# Subtest: native counts contradiction with complete repinned evidence stays REFUTED plus REPRODUCED
+ok 517 - native counts contradiction with complete repinned evidence stays REFUTED plus REPRODUCED
+  ---
+  duration_ms: 5444.8476
+  type: 'test'
+  ...
+# Subtest: declared missing decisive member reproduces UNVERIFIABLE without fabricated arithmetic
+ok 518 - declared missing decisive member reproduces UNVERIFIABLE without fabricated arithmetic
+  ---
+  duration_ms: 3766.2445
+  type: 'test'
+  ...
+# Subtest: changed candidate evidence diverges from a saved native positive
+ok 519 - changed candidate evidence diverges from a saved native positive
+  ---
+  duration_ms: 4248.5327
+  type: 'test'
+  ...
+# Subtest: independent requested claim mismatch is preserved as a native binding rejection
+ok 520 - independent requested claim mismatch is preserved as a native binding rejection
+  ---
+  duration_ms: 484.6772
+  type: 'test'
+  ...
+# Subtest: portable anchor and separately supplied native bundle cannot drift
+ok 521 - portable anchor and separately supplied native bundle cannot drift
+  ---
+  duration_ms: 3347.6375
+  type: 'test'
+  ...
+# Subtest: committed PRESENT bytes missing are a replay barrier and synthetic wrapper is mandatory
+ok 522 - committed PRESENT bytes missing are a replay barrier and synthetic wrapper is mandatory
+  ---
+  duration_ms: 776.1897
+  type: 'test'
+  ...
+# Subtest: own native invocations clean temporary payloads and create no bytecode in an isolated product copy
+ok 523 - own native invocations clean temporary payloads and create no bytecode in an isolated product copy
+  ---
+  duration_ms: 3396.0607
+  type: 'test'
+  ...
+# Subtest: v1 registry remains twelve surfaces; versioned generic pipeline declares eight including one interface
+ok 524 - v1 registry remains twelve surfaces; versioned generic pipeline declares eight including one interface
+  ---
+  duration_ms: 2.3859
+  type: 'test'
+  ...
+# Subtest: unimplemented adapter operation reports explicit unsupported rather than canned success
+ok 525 - unimplemented adapter operation reports explicit unsupported rather than canned success
+  ---
+  duration_ms: 0.4082
+  type: 'test'
+  ...
+# Subtest: semantic product schema compiles strictly and rejects dual temporal fields
+ok 526 - semantic product schema compiles strictly and rejects dual temporal fields
+  ---
+  duration_ms: 171.4849
+  type: 'test'
+  ...
+# Subtest: neutral semantic positive is exact and independent evidence is present
+ok 527 - neutral semantic positive is exact and independent evidence is present
+  ---
+  duration_ms: 2.275
+  type: 'test'
+  ...
+# Subtest: semantic claim mismatch preserves paired positive
+ok 528 - semantic claim mismatch preserves paired positive
+  ---
+  duration_ms: 1.5104
+  type: 'test'
+  ...
+# Subtest: semantic subject mismatch preserves paired positive
+ok 529 - semantic subject mismatch preserves paired positive
+  ---
+  duration_ms: 1.073
+  type: 'test'
+  ...
+# Subtest: semantic scope mismatch preserves paired positive
+ok 530 - semantic scope mismatch preserves paired positive
+  ---
+  duration_ms: 0.4803
+  type: 'test'
+  ...
+# Subtest: semantic time mismatch preserves paired positive
+ok 531 - semantic time mismatch preserves paired positive
+  ---
+  duration_ms: 1.2359
+  type: 'test'
+  ...
+# Subtest: missing actual authority cannot be backfilled from producer label
+ok 532 - missing actual authority cannot be backfilled from producer label
+  ---
+  duration_ms: 0.804
+  type: 'test'
+  ...
+# Subtest: declared execution class does not replace observed execution
+ok 533 - declared execution class does not replace observed execution
+  ---
+  duration_ms: 0.4922
+  type: 'test'
+  ...
+# Subtest: unestablished assumptions withhold semantics
+ok 534 - unestablished assumptions withhold semantics
+  ---
+  duration_ms: 1.0566
+  type: 'test'
+  ...
+# Subtest: issued-at and verification-time are distinct native boundaries
+ok 535 - issued-at and verification-time are distinct native boundaries
+  ---
+  duration_ms: 1.449
+  type: 'test'
+  ...
+# Subtest: recomputation supports only exact recomputable semantic authority
+ok 536 - recomputation supports only exact recomputable semantic authority
+  ---
+  duration_ms: 0.4935
+  type: 'test'
+  ...
+# Subtest: unknown authority and vacuous evidence cannot establish semantic compatibility
+ok 537 - unknown authority and vacuous evidence cannot establish semantic compatibility
+  ---
+  duration_ms: 2.1674
+  type: 'test'
+  ...
+# Subtest: experimental PRF descriptor pins open PR14 rather than merged main
+ok 538 - experimental PRF descriptor pins open PR14 rather than merged main
+  ---
+  duration_ms: 0.3142
+  type: 'test'
+  ...
+# Subtest: downstream exact guarantee and dependency obligations are preserved
+ok 539 - downstream exact guarantee and dependency obligations are preserved
+  ---
+  duration_ms: 2.9468
+  type: 'test'
+  ...
+# Subtest: guarantee dropped dependency distinguishes paired preserved control
+ok 540 - guarantee dropped dependency distinguishes paired preserved control
+  ---
+  duration_ms: 1.492
+  type: 'test'
+  ...
+# Subtest: guarantee changed obligation distinguishes paired preserved control
+ok 541 - guarantee changed obligation distinguishes paired preserved control
+  ---
+  duration_ms: 1.0556
+  type: 'test'
+  ...
+# Subtest: guarantee refuted obligation distinguishes paired preserved control
+ok 542 - guarantee refuted obligation distinguishes paired preserved control
+  ---
+  duration_ms: 0.7239
+  type: 'test'
+  ...
+# Subtest: guarantee refuted dependency distinguishes paired preserved control
+ok 543 - guarantee refuted dependency distinguishes paired preserved control
+  ---
+  duration_ms: 0.7804
+  type: 'test'
+  ...
+# Subtest: guarantee wrong subject distinguishes paired preserved control
+ok 544 - guarantee wrong subject distinguishes paired preserved control
+  ---
+  duration_ms: 0.701
+  type: 'test'
+  ...
+# Subtest: UNKNOWN dependency precedes a separate FALSE obligation
+ok 545 - UNKNOWN dependency precedes a separate FALSE obligation
+  ---
+  duration_ms: 0.4213
+  type: 'test'
+  ...
+# Subtest: producer dependency label does not supply separate accepted basis
+ok 546 - producer dependency label does not supply separate accepted basis
+  ---
+  duration_ms: 0.4033
+  type: 'test'
+  ...
+# Subtest: circular dependency basis is not an established guarantee
+ok 547 - circular dependency basis is not an established guarantee
+  ---
+  duration_ms: 0.4716
+  type: 'test'
+  ...
+# Subtest: requested obligation upgrade is not supplied by a broader producer label
+ok 548 - requested obligation upgrade is not supplied by a broader producer label
+  ---
+  duration_ms: 0.4999
+  type: 'test'
+  ...
+# Subtest: extra dependency and duplicate obligation are not accepted as an exact contract
+ok 549 - extra dependency and duplicate obligation are not accepted as an exact contract
+  ---
+  duration_ms: 0.5767
+  type: 'test'
+  ...
+# Subtest: malformed independent guarantee premise fails closed without throwing
+ok 550 - malformed independent guarantee premise fails closed without throwing
+  ---
+  duration_ms: 0.7736
+  type: 'test'
+  ...
+# Subtest: empty requested guarantees are explicitly NOT_REQUESTED
+ok 551 - empty requested guarantees are explicitly NOT_REQUESTED
+  ---
+  duration_ms: 0.2107
+  type: 'test'
+  ...
+# Subtest: later state is nonblocking for exact historical request
+ok 552 - later state is nonblocking for exact historical request
+  ---
+  duration_ms: 0.9666
+  type: 'test'
+  ...
+# Subtest: same old anchor cannot assert current state after later entry
+ok 553 - same old anchor cannot assert current state after later entry
+  ---
+  duration_ms: 0.3316
+  type: 'test'
+  ...
+# Subtest: history predecessor control is explicit
+ok 554 - history predecessor control is explicit
+  ---
+  duration_ms: 1.046
+  type: 'test'
+  ...
+# Subtest: history sequence control is explicit
+ok 555 - history sequence control is explicit
+  ---
+  duration_ms: 0.4251
+  type: 'test'
+  ...
+# Subtest: history missing sequence control is explicit
+ok 556 - history missing sequence control is explicit
+  ---
+  duration_ms: 0.8072
+  type: 'test'
+  ...
+# Subtest: history missing anchor control is explicit
+ok 557 - history missing anchor control is explicit
+  ---
+  duration_ms: 0.3875
+  type: 'test'
+  ...
+# Subtest: history wrong reference control is explicit
+ok 558 - history wrong reference control is explicit
+  ---
+  duration_ms: 0.2325
+  type: 'test'
+  ...
+# Subtest: native identity conflict is retained separately from continuity
+ok 559 - native identity conflict is retained separately from continuity
+  ---
+  duration_ms: 0.3154
+  type: 'test'
+  ...
+# Subtest: idempotent duplicate is not another sequence step
+ok 560 - idempotent duplicate is not another sequence step
+  ---
+  duration_ms: 0.2329
+  type: 'test'
+  ...
+# Subtest: derived-entry equality cannot satisfy required whole-envelope binding
+ok 561 - derived-entry equality cannot satisfy required whole-envelope binding
+  ---
+  duration_ms: 0.199
+  type: 'test'
+  ...
+# Subtest: whole-envelope digest binds fields omitted from native derived entry
+ok 562 - whole-envelope digest binds fields omitted from native derived entry
+  ---
+  duration_ms: 1.7065
+  type: 'test'
+  ...
+# Subtest: relation reports are deterministic and do not mutate caller inputs
+ok 563 - relation reports are deterministic and do not mutate caller inputs
+  ---
+  duration_ms: 0.7421
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-_true_
+ok 564 - release admission rejects frozen fail-open continuity-binding-_true_
+  ---
+  duration_ms: 38.5506
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-1
+ok 565 - release admission rejects frozen fail-open continuity-binding-1
+  ---
+  duration_ms: 7.1569
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-__
+ok 566 - release admission rejects frozen fail-open continuity-binding-__
+  ---
+  duration_ms: 8.3305
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-null
+ok 567 - release admission rejects frozen fail-open continuity-binding-null
+  ---
+  duration_ms: 6.4179
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-option
+ok 568 - release admission rejects frozen fail-open continuity-unknown-option
+  ---
+  duration_ms: 8.3008
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-policy
+ok 569 - release admission rejects frozen fail-open continuity-unknown-policy
+  ---
+  duration_ms: 7.5753
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+ok 570 - release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+  ---
+  duration_ms: 12.949
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+ok 571 - release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+  ---
+  duration_ms: 8.9608
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_null_outcome
+ok 572 - release admission rejects captured unsupported requirement interpoll_null_outcome
+  ---
+  duration_ms: 5.9404
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+ok 573 - release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+  ---
+  duration_ms: 10.013
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+ok 574 - release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+  ---
+  duration_ms: 4.0596
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_null_known_requirement
+ok 575 - release admission rejects captured unsupported requirement prf_null_known_requirement
+  ---
+  duration_ms: 6.2944
+  type: 'test'
+  ...
+# Subtest: release admission preserves limited continuity with Boolean false
+ok 576 - release admission preserves limited continuity with Boolean false
+  ---
+  duration_ms: 839.5669
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true without envelope evidence stays insufficient
+ok 577 - release admission Boolean true without envelope evidence stays insufficient
+  ---
+  duration_ms: 711.0862
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true plus independently hashed envelope remains preserved
+ok 578 - release admission Boolean true plus independently hashed envelope remains preserved
+  ---
+  duration_ms: 721.7175
+  type: 'test'
+  ...
+# Subtest: release admission supported Interpoll request retains valid native signature and exact relation
+ok 579 - release admission supported Interpoll request retains valid native signature and exact relation
+  ---
+  duration_ms: 340.329
+  type: 'test'
+  ...
+# Subtest: release admission only omitted Interpoll outcome receives the existing default
+ok 580 - release admission only omitted Interpoll outcome receives the existing default
+  ---
+  duration_ms: 408.7189
+  type: 'test'
+  ...
+# Subtest: release admission missing Interpoll context keeps insufficient evidence behavior
+ok 581 - release admission missing Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 242.2248
+  type: 'test'
+  ...
+# Subtest: release admission empty supported Interpoll context keeps insufficient evidence behavior
+ok 582 - release admission empty supported Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 273.0751
+  type: 'test'
+  ...
+# Subtest: release admission typed different requested action remains a semantic contradiction
+ok 583 - release admission typed different requested action remains a semantic contradiction
+  ---
+  duration_ms: 345.371
+  type: 'test'
+  ...
+# Subtest: release admission supported PRF requirement preserves native tuple and transfer separately
+ok 584 - release admission supported PRF requirement preserves native tuple and transfer separately
+  ---
+  duration_ms: 1069.7401
+  type: 'test'
+  ...
+# Subtest: release admission absent PRF context keeps selector insufficiency behavior
+ok 585 - release admission absent PRF context keeps selector insufficiency behavior
+  ---
+  duration_ms: 1366.9554
+  type: 'test'
+  ...
+# Subtest: release admission typed unsupported PRF guarantee stays explicitly unsupported
+ok 586 - release admission typed unsupported PRF guarantee stays explicitly unsupported
+  ---
+  duration_ms: 1069.5337
+  type: 'test'
+  ...
+# Subtest: release admission valid inactive PRF context makes no unrequested guarantee claim
+ok 587 - release admission valid inactive PRF context makes no unrequested guarantee claim
+  ---
+  duration_ms: 586.3755
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity context before semantic execution
+ok 588 - release admission refuses null continuity context before semantic execution
+  ---
+  duration_ms: 1.3181
+  type: 'test'
+  ...
+# Subtest: release admission refuses unknown continuity mode before semantic execution
+ok 589 - release admission refuses unknown continuity mode before semantic execution
+  ---
+  duration_ms: 1.0998
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity subject selector before semantic execution
+ok 590 - release admission refuses null continuity subject selector before semantic execution
+  ---
+  duration_ms: 1.0658
+  type: 'test'
+  ...
+# Subtest: release admission refuses nonstring continuity root reference before semantic execution
+ok 591 - release admission refuses nonstring continuity root reference before semantic execution
+  ---
+  duration_ms: 1.4581
+  type: 'test'
+  ...
+# Subtest: release admission refuses null Interpoll context before semantic execution
+ok 592 - release admission refuses null Interpoll context before semantic execution
+  ---
+  duration_ms: 1.0763
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll requested action field before semantic execution
+ok 593 - release admission refuses extra Interpoll requested action field before semantic execution
+  ---
+  duration_ms: 1.275
+  type: 'test'
+  ...
+# Subtest: release admission refuses missing Interpoll action nonce before semantic execution
+ok 594 - release admission refuses missing Interpoll action nonce before semantic execution
+  ---
+  duration_ms: 1.1478
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll material parameter type before semantic execution
+ok 595 - release admission refuses wrong Interpoll material parameter type before semantic execution
+  ---
+  duration_ms: 1.0627
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll authority field before semantic execution
+ok 596 - release admission refuses extra Interpoll authority field before semantic execution
+  ---
+  duration_ms: 1.0966
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll authority type before semantic execution
+ok 597 - release admission refuses wrong Interpoll authority type before semantic execution
+  ---
+  duration_ms: 1.1949
+  type: 'test'
+  ...
+# Subtest: release admission refuses unsupported Interpoll outcome before semantic execution
+ok 598 - release admission refuses unsupported Interpoll outcome before semantic execution
+  ---
+  duration_ms: 1.0846
+  type: 'test'
+  ...
+# Subtest: release admission refuses null PRF context before semantic execution
+ok 599 - release admission refuses null PRF context before semantic execution
+  ---
+  duration_ms: 1.1243
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF accepted basis field before semantic execution
+ok 600 - release admission refuses extra PRF accepted basis field before semantic execution
+  ---
+  duration_ms: 1.3087
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF dependency version type before semantic execution
+ok 601 - release admission refuses wrong PRF dependency version type before semantic execution
+  ---
+  duration_ms: 1.1504
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF dependency field before semantic execution
+ok 602 - release admission refuses extra PRF dependency field before semantic execution
+  ---
+  duration_ms: 1.1741
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF native result field before semantic execution
+ok 603 - release admission refuses extra PRF native result field before semantic execution
+  ---
+  duration_ms: 1.1634
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF native vocabulary before semantic execution
+ok 604 - release admission refuses wrong PRF native vocabulary before semantic execution
+  ---
+  duration_ms: 1.1997
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF tuple selector type before semantic execution
+ok 605 - release admission refuses wrong PRF tuple selector type before semantic execution
+  ---
+  duration_ms: 1.1494
+  type: 'test'
+  ...
+# Subtest: release admission rejects ambiguous accepted PRF dependency identities
+ok 606 - release admission rejects ambiguous accepted PRF dependency identities
+  ---
+  duration_ms: 3.0275
+  type: 'test'
+  ...
+# Subtest: malformed non-array required_layers {} returns structured rejection
+ok 607 - malformed non-array required_layers {} returns structured rejection
+  ---
+  duration_ms: 34.3034
+  type: 'test'
+  ...
+# Subtest: malformed non-array required_layers 42 returns structured rejection
+ok 608 - malformed non-array required_layers 42 returns structured rejection
+  ---
+  duration_ms: 3.2209
+  type: 'test'
+  ...
+# Subtest: malformed non-array required_layers false returns structured rejection
+ok 609 - malformed non-array required_layers false returns structured rejection
+  ---
+  duration_ms: 3.9529
+  type: 'test'
+  ...
+# Subtest: unknown caller-required obligation is rejected rather than silently omitted
+ok 610 - unknown caller-required obligation is rejected rather than silently omitted
+  ---
+  duration_ms: 10.7036
+  type: 'test'
+  ...
+# Subtest: committed unavailable artifact prevents native execution
+ok 611 - committed unavailable artifact prevents native execution
+  ---
+  duration_ms: 251.2988
+  type: 'test'
+  ...
+# Subtest: committed unavailable native-result prevents native execution
+ok 612 - committed unavailable native-result prevents native execution
+  ---
+  duration_ms: 215.3319
+  type: 'test'
+  ...
+# Subtest: absent caller trust precedes a separate committed-byte replay barrier
+ok 613 - absent caller trust precedes a separate committed-byte replay barrier
+  ---
+  duration_ms: 294.6842
+  type: 'test'
+  ...
+# Subtest: unaccepted detached guarantee basis precedes a separate committed-byte replay barrier
+ok 614 - unaccepted detached guarantee basis precedes a separate committed-byte replay barrier
+  ---
+  duration_ms: 255.5362
+  type: 'test'
+  ...
+# Subtest: independent EVIDENCE_GRADE_NOT_ESTABLISHED premise precedes a runtime barrier
+ok 615 - independent EVIDENCE_GRADE_NOT_ESTABLISHED premise precedes a runtime barrier
+  ---
+  duration_ms: 1.033
+  type: 'test'
+  ...
+# Subtest: independent DEPENDENCY_BASIS_NOT_SEPARATELY_ACCEPTED premise precedes a runtime barrier
+ok 616 - independent DEPENDENCY_BASIS_NOT_SEPARATELY_ACCEPTED premise precedes a runtime barrier
+  ---
+  duration_ms: 0.8732
+  type: 'test'
+  ...
+# Subtest: native-output injection has a complete paired positive control
+ok 617 - native-output injection has a complete paired positive control
+  ---
+  duration_ms: 1919.797
+  type: 'test'
+  ...
+# Subtest: structured native positive with missing fresh canonical result cannot establish verification
+ok 618 - structured native positive with missing fresh canonical result cannot establish verification
+  ---
+  duration_ms: 1193.9918
+  type: 'test'
+  ...
+# Subtest: structured native positive with unbound canonical result digest cannot establish verification
+ok 619 - structured native positive with unbound canonical result digest cannot establish verification
+  ---
+  duration_ms: 1212.9403
+  type: 'test'
+  ...
+# Subtest: structured native positive with false evaluation-performed flag cannot establish verification
+ok 620 - structured native positive with false evaluation-performed flag cannot establish verification
+  ---
+  duration_ms: 1346.3427
+  type: 'test'
+  ...
+# Subtest: structured native positive with wrong native profile identity cannot establish verification
+ok 621 - structured native positive with wrong native profile identity cannot establish verification
+  ---
+  duration_ms: 1149.2272
+  type: 'test'
+  ...
+# Subtest: structured native positive with inconsistent native semantic result cannot establish verification
+ok 622 - structured native positive with inconsistent native semantic result cannot establish verification
+  ---
+  duration_ms: 1001.6743
+  type: 'test'
+  ...
+# Subtest: valid-looking stdout with nonzero checker exit is a replay barrier
+ok 623 - valid-looking stdout with nonzero checker exit is a replay barrier
+  ---
+  duration_ms: 1016.1224
+  type: 'test'
+  ...
+# Subtest: malformed checker stdout is a replay barrier and never a predicate refutation
+ok 624 - malformed checker stdout is a replay barrier and never a predicate refutation
+  ---
+  duration_ms: 958.0942
+  type: 'test'
+  ...
+# Subtest: v0.2 executes the pinned neutral linker and preserves exact native fields
+ok 625 - v0.2 executes the pinned neutral linker and preserves exact native fields
+  ---
+  duration_ms: 13.3646
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product subject mismatch
+ok 626 - v0.2 native edge cannot override product subject mismatch
+  ---
+  duration_ms: 3.5003
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product artifact mismatch
+ok 627 - v0.2 native edge cannot override product artifact mismatch
+  ---
+  duration_ms: 4.4186
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product authority identity mismatch
+ok 628 - v0.2 native edge cannot override product authority identity mismatch
+  ---
+  duration_ms: 4.6867
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product authority class mismatch
+ok 629 - v0.2 native edge cannot override product authority class mismatch
+  ---
+  duration_ms: 3.1914
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product broader requested scope mismatch
+ok 630 - v0.2 native edge cannot override product broader requested scope mismatch
+  ---
+  duration_ms: 4.0805
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product policy mismatch
+ok 631 - v0.2 native edge cannot override product policy mismatch
+  ---
+  duration_ms: 3.7308
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product policy version mismatch
+ok 632 - v0.2 native edge cannot override product policy version mismatch
+  ---
+  duration_ms: 12.7641
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product claim version mismatch
+ok 633 - v0.2 native edge cannot override product claim version mismatch
+  ---
+  duration_ms: 4.6964
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product claim mismatch
+ok 634 - v0.2 native edge cannot override product claim mismatch
+  ---
+  duration_ms: 3.4443
+  type: 'test'
+  ...
+# Subtest: v0.2 native edge cannot override product time identity mismatch
+ok 635 - v0.2 native edge cannot override product time identity mismatch
+  ---
+  duration_ms: 4.4384
+  type: 'test'
+  ...
+# Subtest: v0.2 missing dependency is not supplied by a producer declaration
+ok 636 - v0.2 missing dependency is not supplied by a producer declaration
+  ---
+  duration_ms: 2.5594
+  type: 'test'
+  ...
+# Subtest: v0.2 contradictory dependency is preserved separately from native compatible edge
+ok 637 - v0.2 contradictory dependency is preserved separately from native compatible edge
+  ---
+  duration_ms: 2.6609
+  type: 'test'
+  ...
+# Subtest: v0.2 accepted evidence basis is an independent premise
+ok 638 - v0.2 accepted evidence basis is an independent premise
+  ---
+  duration_ms: 4.6783
+  type: 'test'
+  ...
+# Subtest: v0.2 equal artifact hash never overrides an incompatible semantic declaration
+ok 639 - v0.2 equal artifact hash never overrides an incompatible semantic declaration
+  ---
+  duration_ms: 2.716
+  type: 'test'
+  ...
+# Subtest: v0.2 pair-conformance PASS on an observed negative remains product contradiction
+ok 640 - v0.2 pair-conformance PASS on an observed negative remains product contradiction
+  ---
+  duration_ms: 2.048
+  type: 'test'
+  ...
+# Subtest: v0.2 native bounded recomputation coercion does not widen the product authority relation
+ok 641 - v0.2 native bounded recomputation coercion does not widen the product authority relation
+  ---
+  duration_ms: 0.9218
+  type: 'test'
+  ...
+# Subtest: v0.2 unsupported authority vocabulary is not an executable compatible declaration
+ok 642 - v0.2 unsupported authority vocabulary is not an executable compatible declaration
+  ---
+  duration_ms: 0.9683
+  type: 'test'
+  ...
+# Subtest: v0.2 does not upgrade native validity with an unsupported pair oracle
+ok 643 - v0.2 does not upgrade native validity with an unsupported pair oracle
+  ---
+  duration_ms: 0.9421
+  type: 'test'
+  ...
+# Subtest: v0.2 vendored neutral runtime equals source-pinned bytes
+ok 644 - v0.2 vendored neutral runtime equals source-pinned bytes
+  ---
+  duration_ms: 110.5242
+  type: 'test'
+  ...
+# Subtest: local UI serves real verification; hostile origin and paths fail
+ok 645 - local UI serves real verification; hostile origin and paths fail
+  ---
+  duration_ms: 1015.1237
+  type: 'test'
+  ...
+# Subtest: v0.2 locally rerun native scanner preserves the positive evidence-grade control
+ok 646 - v0.2 locally rerun native scanner preserves the positive evidence-grade control
+  ---
+  duration_ms: 2519.6201
+  type: 'test'
+  ...
+# Subtest: v0.2 wrapper replay cannot upgrade an authenticated opaque scanner assertion to local scan recomputation
+ok 647 - v0.2 wrapper replay cannot upgrade an authenticated opaque scanner assertion to local scan recomputation
+  ---
+  duration_ms: 2599.8537
+  type: 'test'
+  ...
+# Subtest: Trustless current-main source pin and scope are explicit
+ok 648 - Trustless current-main source pin and scope are explicit
+  ---
+  duration_ms: 2.5577
+  type: 'test'
+  ...
+# Subtest: Trustless actual native positive preserves suite PASS, native NO_FINDING, and replay separately
+ok 649 - Trustless actual native positive preserves suite PASS, native NO_FINDING, and replay separately
+  ---
+  duration_ms: 1180.5142
+  type: 'test'
+  ...
+# Subtest: Trustless genuine native PASS reproduces a semantic contradiction without upgrading it
+ok 650 - Trustless genuine native PASS reproduces a semantic contradiction without upgrading it
+  ---
+  duration_ms: 1223.6191
+  type: 'test'
+  ...
+# Subtest: Trustless mismatch against saved result is DIVERGED, not a rewritten native semantic result
+ok 651 - Trustless mismatch against saved result is DIVERGED, not a rewritten native semantic result
+  ---
+  duration_ms: 1168.2047
+  type: 'test'
+  ...
+# Subtest: Trustless saved positive expected fields cannot serve as semantic oracle for negative bytes
+ok 652 - Trustless saved positive expected fields cannot serve as semantic oracle for negative bytes
+  ---
+  duration_ms: 1265.7255
+  type: 'test'
+  ...
+# Subtest: Trustless valid signed assertion from opaque scanner is not a reproduced scanner execution
+ok 653 - Trustless valid signed assertion from opaque scanner is not a reproduced scanner execution
+  ---
+  duration_ms: 1308.0366
+  type: 'test'
+  ...
+# Subtest: Trustless invalid manifest signature cannot establish a bound scan
+ok 654 - Trustless invalid manifest signature cannot establish a bound scan
+  ---
+  duration_ms: 975.0585
+  type: 'test'
+  ...
+# Subtest: Trustless missing scan subject does not inherit an evidence grade
+ok 655 - Trustless missing scan subject does not inherit an evidence grade
+  ---
+  duration_ms: 1034.6805
+  type: 'test'
+  ...
+# Subtest: Trustless native rejected-binding control can reproduce without establishing a positive scan
+ok 656 - Trustless native rejected-binding control can reproduce without establishing a positive scan
+  ---
+  duration_ms: 957.9279
+  type: 'test'
+  ...
+# Subtest: Trustless empty corpus cannot reach native conformance success
+ok 657 - Trustless empty corpus cannot reach native conformance success
+  ---
+  duration_ms: 1.6402
+  type: 'test'
+  ...
+# Subtest: Trustless empty or duplicate saved artifacts are rejected
+ok 658 - Trustless empty or duplicate saved artifacts are rejected
+  ---
+  duration_ms: 1.2597
+  type: 'test'
+  ...
+# Subtest: Trustless unknown profile and open PR source pins are explicitly unsupported
+ok 659 - Trustless unknown profile and open PR source pins are explicitly unsupported
+  ---
+  duration_ms: 0.9114
+  type: 'test'
+  ...
+# Subtest: Trustless parser fault is unavailable rather than refutation or success
+ok 660 - Trustless parser fault is unavailable rather than refutation or success
+  ---
+  duration_ms: 413.446
+  type: 'test'
+  ...
+# Subtest: Trustless crash, exit 0 alone, missing output, and DRIFT do not become semantic success
+ok 661 - Trustless crash, exit 0 alone, missing output, and DRIFT do not become semantic success
+  ---
+  duration_ms: 0.4142
+  type: 'test'
+  ...
+# Subtest: Trustless package-present and runner-declared declarations are not executable evidence
+ok 662 - Trustless package-present and runner-declared declarations are not executable evidence
+  ---
+  duration_ms: 0.3749
+  type: 'test'
+  ...
+# Subtest: Trustless malformed or empty successful native report cannot establish verification
+ok 663 - Trustless malformed or empty successful native report cannot establish verification
+  ---
+  duration_ms: 962.1867
+  type: 'test'
+  ...
+# Subtest: Trustless optional generic contradiction is preserved while native output remains unchanged
+ok 664 - Trustless optional generic contradiction is preserved while native output remains unchanged
+  ---
+  duration_ms: 945.8124
+  type: 'test'
+  ...
+# Subtest: Trustless repeated native deterministic artifacts are byte equivalent
+ok 665 - Trustless repeated native deterministic artifacts are byte equivalent
+  ---
+  duration_ms: 1682.0258
+  type: 'test'
+  ...
+# Subtest: loading a synthetic package is neutral until verification
+ok 666 - loading a synthetic package is neutral until verification
+  ---
+  duration_ms: 26.1347
+  type: 'test'
+  ...
+# Subtest: Verify sends textarea strings verbatim, including duplicate keys and numeric tokens
+ok 667 - Verify sends textarea strings verbatim, including duplicate keys and numeric tokens
+  ---
+  duration_ms: 8.348
+  type: 'test'
+  ...
+# Subtest: request edit invalidates the prior green report and download
+ok 668 - request edit invalidates the prior green report and download
+  ---
+  duration_ms: 6.8735
+  type: 'test'
+  ...
+# Subtest: bundle edit invalidates the prior green report and download
+ok 669 - bundle edit invalidates the prior green report and download
+  ---
+  duration_ms: 9.7329
+  type: 'test'
+  ...
+# Subtest: vector selection, loading and wrong-commit control clear stale success
+ok 670 - vector selection, loading and wrong-commit control clear stale success
+  ---
+  duration_ms: 9.8427
+  type: 'test'
+  ...
+# Subtest: manual malformed text disables demo transformation without normalizing it
+ok 671 - manual malformed text disables demo transformation without normalizing it
+  ---
+  duration_ms: 18.6531
+  type: 'test'
+  ...
+# Subtest: file upload preserves raw bytes as text and invalidates stale success
+ok 672 - file upload preserves raw bytes as text and invalidates stale success
+  ---
+  duration_ms: 10.1191
+  type: 'test'
+  ...
+# Subtest: request file rejects invalid UTF-8 rather than repairing signed identifiers
+ok 673 - request file rejects invalid UTF-8 rather than repairing signed identifiers
+  ---
+  duration_ms: 8.4909
+  type: 'test'
+  ...
+# Subtest: bundle file rejects invalid UTF-8 rather than repairing signed identifiers
+ok 674 - bundle file rejects invalid UTF-8 rather than repairing signed identifiers
+  ---
+  duration_ms: 10.2863
+  type: 'test'
+  ...
+# Subtest: file intake preserves valid Unicode and BOM bytes for strict parser admission
+ok 675 - file intake preserves valid Unicode and BOM bytes for strict parser admission
+  ---
+  duration_ms: 9.3234
+  type: 'test'
+  ...
+# Subtest: UI cannot silently run a checker-fault control without its isolated execution setup
+ok 676 - UI cannot silently run a checker-fault control without its isolated execution setup
+  ---
+  duration_ms: 27.8967
+  type: 'test'
+  ...
+# Subtest: network failure after prior success leaves no current green report
+ok 677 - network failure after prior success leaves no current green report
+  ---
+  duration_ms: 15.4734
+  type: 'test'
+  ...
+# Subtest: an old successful response cannot paint edited inputs green
+ok 678 - an old successful response cannot paint edited inputs green
+  ---
+  duration_ms: 12.9048
+  type: 'test'
+  ...
+# Subtest: reproduced native negative remains red at the overall UI boundary
+ok 679 - reproduced native negative remains red at the overall UI boundary
+  ---
+  duration_ms: 863.6091
+  type: 'test'
+  ...
+# Subtest: server preserves duplicate keys inside raw request text and returns a schema-valid rejection
+ok 680 - server preserves duplicate keys inside raw request text and returns a schema-valid rejection
+  ---
+  duration_ms: 53.8632
+  type: 'test'
+  ...
+# Subtest: server preserves duplicate keys inside raw bundle text and returns a schema-valid rejection
+ok 681 - server preserves duplicate keys inside raw bundle text and returns a schema-valid rejection
+  ---
+  duration_ms: 11.9633
+  type: 'test'
+  ...
+# Subtest: server preserves forbidden exponent tokens in raw request text
+ok 682 - server preserves forbidden exponent tokens in raw request text
+  ---
+  duration_ms: 9.7077
+  type: 'test'
+  ...
+# Subtest: malformed policy admission returns a report, distinct from malformed transport envelope
+ok 683 - malformed policy admission returns a report, distinct from malformed transport envelope
+  ---
+  duration_ms: 16.4057
+  type: 'test'
+  ...
+# Subtest: one long missing premise cannot produce an invalid report document
+ok 684 - one long missing premise cannot produce an invalid report document
+  ---
+  duration_ms: 9.7904
+  type: 'test'
+  ...
+# Subtest: many missing premises cannot produce an invalid report document
+ok 685 - many missing premises cannot produce an invalid report document
+  ---
+  duration_ms: 12.0791
+  type: 'test'
+  ...
+# Subtest: long explanation from bounded premise names cannot produce an invalid report document
+ok 686 - long explanation from bounded premise names cannot produce an invalid report document
+  ---
+  duration_ms: 797.6163
+  type: 'test'
+  ...
+# Subtest: delayed request bodies cannot bypass the two-verifier concurrency bound
+ok 687 - delayed request bodies cannot bypass the two-verifier concurrency bound
+  ---
+  duration_ms: 1045.3653
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API advertises all 68 unique controls without deleting original vectors
+ok 688 - v0.2 UI API advertises all 68 unique controls without deleting original vectors
+  ---
+  duration_ms: 6166.0675
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API accepts only exact G/I vector paths
+ok 689 - v0.2 UI API accepts only exact G/I vector paths
+  ---
+  duration_ms: 25.6037
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API G10 exposes scope contradiction despite valid integrity/authenticity
+ok 690 - v0.2 UI API G10 exposes scope contradiction despite valid integrity/authenticity
+  ---
+  duration_ms: 12.7611
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API G12 preserves reproduced negative native Trustless result
+ok 691 - v0.2 UI API G12 preserves reproduced negative native Trustless result
+  ---
+  duration_ms: 3.878
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API G14 exposes the changed signed retry action
+ok 692 - v0.2 UI API G14 exposes the changed signed retry action
+  ---
+  duration_ms: 6.2363
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API G21 withholds PRF guarantee on unavailable relation
+ok 693 - v0.2 UI API G21 withholds PRF guarantee on unavailable relation
+  ---
+  duration_ms: 6.5603
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API G24 retains bounded native positive and product success
+ok 694 - v0.2 UI API G24 retains bounded native positive and product success
+  ---
+  duration_ms: 4.7042
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API G30 retains preserved negative PRF transfer without certifying success
+ok 695 - v0.2 UI API G30 retains preserved negative PRF transfer without certifying success
+  ---
+  duration_ms: 4.3262
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API preserves original v0.1 V02 schema and wrong-commit outcome
+ok 696 - v0.2 UI API preserves original v0.1 V02 schema and wrong-commit outcome
+  ---
+  duration_ms: 2.8596
+  type: 'test'
+  ...
+# Subtest: v0.2 UI API preserves duplicate raw request members for strict rejection
+ok 697 - v0.2 UI API preserves duplicate raw request members for strict rejection
+  ---
+  duration_ms: 11.1966
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI renders overall scope contradiction red while integrity/auth/replay remain green
+ok 698 - v0.2 actual UI renders overall scope contradiction red while integrity/auth/replay remain green
+  ---
+  duration_ms: 8.6413
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI keeps native PASS/reproduced negative red overall
+ok 699 - v0.2 actual UI keeps native PASS/reproduced negative red overall
+  ---
+  duration_ms: 3.8157
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI separates preserved transfer from the negative PRF outcome
+ok 700 - v0.2 actual UI separates preserved transfer from the negative PRF outcome
+  ---
+  duration_ms: 5.4881
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI distinguishes the changed retry domain from valid signature
+ok 701 - v0.2 actual UI distinguishes the changed retry domain from valid signature
+  ---
+  duration_ms: 3.966
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI gives insufficient/unverifiable guarantee a neutral overall state
+ok 702 - v0.2 actual UI gives insufficient/unverifiable guarantee a neutral overall state
+  ---
+  duration_ms: 4.7591
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI shows bounded positive only after explicit verification
+ok 703 - v0.2 actual UI shows bounded positive only after explicit verification
+  ---
+  duration_ms: 4.297
+  type: 'test'
+  ...
+# Subtest: v0.2 request file intake stays visible outside collapsed JSON details
+ok 704 - v0.2 request file intake stays visible outside collapsed JSON details
+  ---
+  duration_ms: 0.8738
+  type: 'test'
+  ...
+# Subtest: v0.2 bundle file intake stays visible outside collapsed JSON details
+ok 705 - v0.2 bundle file intake stays visible outside collapsed JSON details
+  ---
+  duration_ms: 0.2828
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI uploads request JSON text without normalization
+ok 706 - v0.2 actual UI uploads request JSON text without normalization
+  ---
+  duration_ms: 4.9797
+  type: 'test'
+  ...
+# Subtest: v0.2 actual UI uploads bundle JSON text without normalization
+ok 707 - v0.2 actual UI uploads bundle JSON text without normalization
+  ---
+  duration_ms: 5.0052
+  type: 'test'
+  ...
+1..707
+# tests 707
+# suites 0
+# pass 707
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 37488.7106

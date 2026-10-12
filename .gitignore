@@ -6,3 +6,4 @@ reports/tmp/
 reports/final-closure.json
 reports/server.log
 reports/server-error.log
+reports/v0.2/base-npm-cache/

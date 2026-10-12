@@ -1,6 +1,6 @@
 {
   "name": "receiptos-verify",
-  "version": "0.1.0",
+  "version": "0.2.0-dev.0",
   "private": true,
   "type": "module",
   "license": "Apache-2.0",
@@ -13,7 +13,12 @@
     "mutations": "node tools/run-mutations.mjs",
     "demo": "node src/cli.mjs demo",
     "start": "node src/server.mjs",
-    "check:sources": "node tools/check-sources.mjs"
+    "check:sources": "node tools/check-sources.mjs",
+    "vectors:v2": "node tools/run-vectors-v2.mjs",
+    "mutations:v2": "node tools/run-mutations-v2.mjs",
+    "demo:v2": "node tools/demos-v2.mjs",
+    "check:provenance": "node tools/check-provenance-v2.mjs",
+    "determinism:v2": "node tools/determinism-v2.mjs"
   },
   "dependencies": {
     "@noble/curves": "2.0.1",

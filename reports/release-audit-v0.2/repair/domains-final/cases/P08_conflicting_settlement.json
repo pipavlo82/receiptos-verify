@@ -1,0 +1,166 @@
+{
+  "id": "P08_conflicting_settlement",
+  "oracle": {
+    "kind": "DETACHED_LITERAL",
+    "expected": "CONTRADICTED",
+    "notes": ""
+  },
+  "input": {
+    "input": {
+      "profile": "award-actual-settlement-v0",
+      "upstream": {
+        "award": {
+          "target_ref": "audit-task",
+          "tender_id": "audit-tender",
+          "winner": "audit-worker",
+          "price": 37,
+          "finalized": true
+        },
+        "settlements": [
+          {
+            "target_ref": "audit-task",
+            "tender_id": "audit-tender",
+            "fulfiller": "audit-worker",
+            "amount": 37,
+            "accepted": true
+          },
+          {
+            "target_ref": "audit-task",
+            "tender_id": "audit-tender",
+            "fulfiller": "audit-worker",
+            "amount": 38,
+            "accepted": true
+          }
+        ],
+        "native_result": {
+          "outcome": "VIOLATED",
+          "reason": "completion_cardinality"
+        }
+      },
+      "downstream": {
+        "native_result": {
+          "outcome": "VIOLATED",
+          "reason": "completion_cardinality"
+        },
+        "dependencies": [
+          {
+            "id": "observed-transfer",
+            "version": "audit02"
+          }
+        ]
+      }
+    },
+    "context": {
+      "accepted_basis": {
+        "id": "audit02-detached-basis",
+        "dependencies": [
+          {
+            "id": "observed-transfer",
+            "version": "audit02"
+          }
+        ]
+      },
+      "required_native_result": {
+        "outcome": "VIOLATED",
+        "reason": "completion_cardinality"
+      },
+      "required_guarantee": "native-result-and-dependencies-preserved",
+      "required_relation_input_digest": "6fc39450b99c57c0f72a2bac721507ac5c74d1394cfbce3f1a1364a949c6c21c"
+    }
+  },
+  "output": {
+    "status": "CONTRADICTED",
+    "reasonCodes": [
+      "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+    ],
+    "nativeResult": {
+      "upstream": {
+        "outcome": "VIOLATED",
+        "reason": "completion_cardinality"
+      },
+      "recomputed": {
+        "outcome": "VIOLATED",
+        "reason": "completion_cardinality"
+      },
+      "recomputation": "REPRODUCED",
+      "downstream": {
+        "outcome": "VIOLATED",
+        "reason": "completion_cardinality"
+      },
+      "transfer": {
+        "outcome": "PRESERVED",
+        "upstream_native_outcome": "VIOLATED",
+        "basis_id": "audit02-detached-basis"
+      }
+    },
+    "recomputation": {
+      "status": "REPRODUCED"
+    },
+    "guaranteeProjection": {
+      "status": "PRESERVED",
+      "reasonCodes": [
+        "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+      ]
+    },
+    "productProjection": {
+      "status": "CONTRADICTED",
+      "reasonCodes": [
+        "PRF_REPRODUCED_NEGATIVE_TRANSFER_PRESERVED"
+      ]
+    },
+    "execution": {
+      "status": "COMPLETED",
+      "executable": "python",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "{\"outcome\":\"VIOLATED\",\"reason\":\"completion_cardinality\"}\r\n",
+      "stderr": "",
+      "stdoutSha256": "c452cc377ac795322dbef9d5f5ba1aab2e4c65eb5a84f6209bc0438f42894361",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "provenance": {
+      "profileId": "receiptos.verify.guarantee-preservation.v2",
+      "sourceRepository": "pipavlo82/protected-relation-fixtures",
+      "sourceCommit": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "license": "MIT native source; Apache-2.0 product glue",
+      "maturity": "EXPERIMENTAL",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilities": [
+        "native-main-award-settlement-recomputation",
+        "caller-selected-award-settlement-input",
+        "native-result-preservation",
+        "caller-selected-dependency-transfer"
+      ],
+      "claimBoundary": "One caller-selected supplied award/settlement tuple; not the surrounding RVR or Trustless claim result.",
+      "requiredEvidence": [
+        "upstream.award",
+        "upstream.settlements",
+        "upstream.native_result",
+        "downstream.native_result",
+        "downstream.dependencies"
+      ],
+      "nativeVocabulary": [
+        "PRESERVED",
+        "VIOLATED",
+        "UNVERIFIABLE"
+      ],
+      "nativeRelationMaturity": "STABLE",
+      "guaranteeProjectionSource": {
+        "repository": "pipavlo82/protected-relation-fixtures",
+        "commit": "f525737069dc4cef7741f805d08a988912f4454f",
+        "pullRequest": 14,
+        "state": "OPEN",
+        "maturity": "EXPERIMENTAL",
+        "integrationMode": "REIMPLEMENTED_FROM_SPEC"
+      }
+    },
+    "limitations": [
+      "The executed main relation compares one supplied synthetic award with supplied settlement tuples; it establishes neither chain provenance nor universal economic truthfulness.",
+      "The transfer projection is a bounded product reimplementation informed by open PR14, not execution of that PR Python consumer or its wire schema.",
+      "The caller separately accepts a dependency basis. Neither its completeness, soundness nor acceptance authority is established by this adapter."
+    ]
+  },
+  "assessment": "PASS",
+  "actual": "CONTRADICTED",
+  "inputSha256": "f1a395f1635307c9a59cf2454f920e0f41068fcefc882eaf6a5ef6381643ad65"
+}

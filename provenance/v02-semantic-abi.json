@@ -1,0 +1,183 @@
+{
+  "schema": "receiptos.verify.integration-source.v2",
+  "capabilityId": "semantic-abi-native-neutral-v02",
+  "repository": "trustless-ai/semantic-abi",
+  "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+  "sourceTree": "63b5075bffb3027ab63c2a7f25de06502b0ed861",
+  "upstreamState": "MERGED_MAIN",
+  "license": "Apache-2.0",
+  "maturity": "EXPERIMENTAL",
+  "integrationMode": "PINNED_SOURCE",
+  "sourcePaths": [
+    "LICENSE",
+    "runner/src/classes.mjs",
+    "runner/src/evaluate.mjs",
+    "runner/src/linker.mjs",
+    "runner/src/manifest.mjs"
+  ],
+  "productFiles": [
+    "src/adapters/semantic-abi-v2.mjs",
+    "tests/semantic-abi-v2.test.mjs",
+    "docs/semantic-abi-adapter.md",
+    "vendor/semantic-abi-v02/runner/src/classes.mjs",
+    "vendor/semantic-abi-v02/runner/src/linker.mjs",
+    "vendor/semantic-abi-v02/runner/src/manifest.mjs",
+    "vendor/semantic-abi-v02/runner/src/evaluate.mjs",
+    "vendor/semantic-abi-v02/LICENSE"
+  ],
+  "copiedFiles": [
+    {
+      "sourcePath": "LICENSE",
+      "productPath": "vendor/semantic-abi-v02/LICENSE",
+      "gitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+      "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+      "bytes": 11358,
+      "mode": "PINNED_SOURCE"
+    },
+    {
+      "sourcePath": "runner/src/classes.mjs",
+      "productPath": "vendor/semantic-abi-v02/runner/src/classes.mjs",
+      "gitBlob": "3ddaf89d6698a5000c5a1698fb980e310a7aa90e",
+      "sha256": "d8f0ae249e4d3f6ac56694f8cabc15de8bc5b678c1156fc01e060cd4c0b50374",
+      "bytes": 667,
+      "mode": "PINNED_SOURCE"
+    },
+    {
+      "sourcePath": "runner/src/evaluate.mjs",
+      "productPath": "vendor/semantic-abi-v02/runner/src/evaluate.mjs",
+      "gitBlob": "b5f1121b608cf4db0143be49db924ca945b76135",
+      "sha256": "a2f1c3caaaeeb37b7067618f7ee0b98bddece859baee7dfbfc68a44be58699b0",
+      "bytes": 2639,
+      "mode": "PINNED_SOURCE"
+    },
+    {
+      "sourcePath": "runner/src/linker.mjs",
+      "productPath": "vendor/semantic-abi-v02/runner/src/linker.mjs",
+      "gitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+      "sha256": "bae8e519361989bfadbb5d226cb9940255cd954c60b40ba42136a2b11161d391",
+      "bytes": 4044,
+      "mode": "PINNED_SOURCE"
+    },
+    {
+      "sourcePath": "runner/src/manifest.mjs",
+      "productPath": "vendor/semantic-abi-v02/runner/src/manifest.mjs",
+      "gitBlob": "2ed2ac8af5ab2f27cca522e3b3cdc28da395a8ff",
+      "sha256": "04b71bce59b731f4834099e53c7360998dc4e56ee1e3a5144f8c17ca10e6125e",
+      "bytes": 4995,
+      "mode": "PINNED_SOURCE"
+    }
+  ],
+  "authorshipEvidence": {
+    "paths": {
+      "runner/src/classes.mjs": [
+        {
+          "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "author_name": "Pavlo Tvardovskyi",
+          "author_login": "pipavlo82",
+          "message": "fix: align semantic model before v0 freeze"
+        },
+        {
+          "sha": "0a36370b930325f4f75994b00a41e6da5efb3670",
+          "author_name": "Echo-Merlini",
+          "author_login": "Echo-Merlini",
+          "message": "runner+schema: Pavlo's before-freeze fixes\n\n1. Semantic edge is now claim- AND scope-specific: no global INDEPENDENT_RECOMPUTATION\n   -> SEMANTIC_VERIFICATION upgrade (that would be the exact overclaim the linker catches).\n   Recompute of claim C@scope S establishes semantic verification of C@S only.\n2. Runner keeps oracle_pair / observed_pair / backend as three separate fields — pre-v18\n   collapse now reports oracle=VIOLATED, observed=PRESERVED, backend=FAIL distinctly.\n3. manifest.schema.json aligned with manifest-v0.md: structured Evidence type\n   (authority_class + claim_type + scope) + issued_at XOR verification_time (no generic as_of)."
+        },
+        {
+          "sha": "7287810527bc14174d8cef9f41d7e237130006ea",
+          "author_name": "Echo-Merlini",
+          "author_login": "Echo-Merlini",
+          "message": "runner: working zero-dep two-level evaluator + semantic linker\n\nnode runner/demo.mjs runs end-to-end: linker emits TYPE ERRORs with counterexamples;\ntwo-level runner (pair outcome x backend conformance) reproduces the pre-v18 signed-\ncommitment collapse as a single FAIL + minimal witness; tampered fixtures read\nVIOLATED pair / PASS backend on conforming adapters; pending backend stays CANNOT_CHECK."
+        }
+      ],
+      "runner/src/linker.mjs": [
+        {
+          "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "author_name": "Pavlo Tvardovskyi",
+          "author_login": "pipavlo82",
+          "message": "fix: align semantic model before v0 freeze"
+        },
+        {
+          "sha": "0a36370b930325f4f75994b00a41e6da5efb3670",
+          "author_name": "Echo-Merlini",
+          "author_login": "Echo-Merlini",
+          "message": "runner+schema: Pavlo's before-freeze fixes\n\n1. Semantic edge is now claim- AND scope-specific: no global INDEPENDENT_RECOMPUTATION\n   -> SEMANTIC_VERIFICATION upgrade (that would be the exact overclaim the linker catches).\n   Recompute of claim C@scope S establishes semantic verification of C@S only.\n2. Runner keeps oracle_pair / observed_pair / backend as three separate fields — pre-v18\n   collapse now reports oracle=VIOLATED, observed=PRESERVED, backend=FAIL distinctly.\n3. manifest.schema.json aligned with manifest-v0.md: structured Evidence type\n   (authority_class + claim_type + scope) + issued_at XOR verification_time (no generic as_of)."
+        },
+        {
+          "sha": "7287810527bc14174d8cef9f41d7e237130006ea",
+          "author_name": "Echo-Merlini",
+          "author_login": "Echo-Merlini",
+          "message": "runner: working zero-dep two-level evaluator + semantic linker\n\nnode runner/demo.mjs runs end-to-end: linker emits TYPE ERRORs with counterexamples;\ntwo-level runner (pair outcome x backend conformance) reproduces the pre-v18 signed-\ncommitment collapse as a single FAIL + minimal witness; tampered fixtures read\nVIOLATED pair / PASS backend on conforming adapters; pending backend stays CANNOT_CHECK."
+        }
+      ],
+      "runner/src/manifest.mjs": [
+        {
+          "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "author_name": "Pavlo Tvardovskyi",
+          "author_login": "pipavlo82",
+          "message": "fix: align semantic model before v0 freeze"
+        }
+      ],
+      "runner/src/evaluate.mjs": [
+        {
+          "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "author_name": "Pavlo Tvardovskyi",
+          "author_login": "pipavlo82",
+          "message": "fix: align semantic model before v0 freeze"
+        },
+        {
+          "sha": "0a36370b930325f4f75994b00a41e6da5efb3670",
+          "author_name": "Echo-Merlini",
+          "author_login": "Echo-Merlini",
+          "message": "runner+schema: Pavlo's before-freeze fixes\n\n1. Semantic edge is now claim- AND scope-specific: no global INDEPENDENT_RECOMPUTATION\n   -> SEMANTIC_VERIFICATION upgrade (that would be the exact overclaim the linker catches).\n   Recompute of claim C@scope S establishes semantic verification of C@S only.\n2. Runner keeps oracle_pair / observed_pair / backend as three separate fields — pre-v18\n   collapse now reports oracle=VIOLATED, observed=PRESERVED, backend=FAIL distinctly.\n3. manifest.schema.json aligned with manifest-v0.md: structured Evidence type\n   (authority_class + claim_type + scope) + issued_at XOR verification_time (no generic as_of)."
+        },
+        {
+          "sha": "7287810527bc14174d8cef9f41d7e237130006ea",
+          "author_name": "Echo-Merlini",
+          "author_login": "Echo-Merlini",
+          "message": "runner: working zero-dep two-level evaluator + semantic linker\n\nnode runner/demo.mjs runs end-to-end: linker emits TYPE ERRORs with counterexamples;\ntwo-level runner (pair outcome x backend conformance) reproduces the pre-v18 signed-\ncommitment collapse as a single FAIL + minimal witness; tampered fixtures read\nVIOLATED pair / PASS backend on conforming adapters; pending backend stays CANNOT_CHECK."
+        }
+      ]
+    },
+    "pull_request": {
+      "number": 1,
+      "url": "https://github.com/trustless-ai/semantic-abi/pull/1",
+      "author": "pipavlo82",
+      "state": "closed",
+      "merged_at": "2026-09-05T20:04:55Z",
+      "head": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+      "merge_commit_sha": "474b474132a64d139972ebf2c06c18a174ce39bb",
+      "commits": [
+        {
+          "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "author": "Pavlo Tvardovskyi"
+        },
+        {
+          "sha": "e15832420b7c6350bbf4934ad90391e6af7a109f",
+          "author": "babyblueviper1"
+        },
+        {
+          "sha": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+          "author": "Pavlo Tvardovskyi"
+        }
+      ]
+    }
+  },
+  "authorshipBoundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred.",
+  "productExtensionMode": "REIMPLEMENTED_FROM_SPEC",
+  "productExtensions": [
+    "canonical embedding of generic claim/scope/time interval into native string equality relation",
+    "independent generic surface compatibility",
+    "detached optional pair-oracle admission"
+  ],
+  "excluded": [
+    "adapters/vertice/**",
+    "adapters/invinoveritas/**",
+    "ui/**",
+    "private/commercial Vertice material"
+  ],
+  "limitations": [
+    "Draft upstream v0 neutral runtime only; bounded generic embedding is not standard native manifest wire conformance.",
+    "The linker validates declared semantic relationships, not authenticity or real-world correctness.",
+    "A native valid edge or backend-conformance PASS never overrides product semantic contradictions."
+  ]
+}

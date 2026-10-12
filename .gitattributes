@@ -4,3 +4,4 @@
 # Preserve pinned upstream/legal bytes and verbatim generated diagnostic streams.
 vendor/** -text -whitespace
 reports/*.tap -text -whitespace
+reports/v0.2/** -text -whitespace

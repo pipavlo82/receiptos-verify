@@ -1,0 +1,460 @@
+TAP version 13
+# Subtest: direct Interpoll rejects fresh admission requirement without upgrading supplied observations
+ok 1 - direct Interpoll rejects fresh admission requirement without upgrading supplied observations
+  ---
+  duration_ms: 70.8166
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects server attestation requirement without upgrading supplied observations
+ok 2 - direct Interpoll rejects server attestation requirement without upgrading supplied observations
+  ---
+  duration_ms: 17.8055
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null outcome without upgrading supplied observations
+ok 3 - direct Interpoll rejects null outcome without upgrading supplied observations
+  ---
+  duration_ms: 13.2307
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects numeric outcome without upgrading supplied observations
+ok 4 - direct Interpoll rejects numeric outcome without upgrading supplied observations
+  ---
+  duration_ms: 11.9327
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null action without upgrading supplied observations
+ok 5 - direct Interpoll rejects null action without upgrading supplied observations
+  ---
+  duration_ms: 12.2668
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects array action without upgrading supplied observations
+ok 6 - direct Interpoll rejects array action without upgrading supplied observations
+  ---
+  duration_ms: 15.2633
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects extra action semantics without upgrading supplied observations
+ok 7 - direct Interpoll rejects extra action semantics without upgrading supplied observations
+  ---
+  duration_ms: 12.7375
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects wrong action parameter type without upgrading supplied observations
+ok 8 - direct Interpoll rejects wrong action parameter type without upgrading supplied observations
+  ---
+  duration_ms: 17.7229
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects unsafe action timestamp without upgrading supplied observations
+ok 9 - direct Interpoll rejects unsafe action timestamp without upgrading supplied observations
+  ---
+  duration_ms: 18.0672
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects null authority without upgrading supplied observations
+ok 10 - direct Interpoll rejects null authority without upgrading supplied observations
+  ---
+  duration_ms: 12.5653
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects wrong authority field type without upgrading supplied observations
+ok 11 - direct Interpoll rejects wrong authority field type without upgrading supplied observations
+  ---
+  duration_ms: 12.2886
+  type: 'test'
+  ...
+# Subtest: direct Interpoll rejects extra authority semantics without upgrading supplied observations
+ok 12 - direct Interpoll rejects extra authority semantics without upgrading supplied observations
+  ---
+  duration_ms: 11.9837
+  type: 'test'
+  ...
+# Subtest: direct Interpoll keeps a missing or partial selected action insufficient
+ok 13 - direct Interpoll keeps a missing or partial selected action insufficient
+  ---
+  duration_ms: 16.6367
+  type: 'test'
+  ...
+# Subtest: direct Interpoll outcome omission preserves documented default
+ok 14 - direct Interpoll outcome omission preserves documented default
+  ---
+  duration_ms: 13.0185
+  type: 'test'
+  ...
+# Subtest: direct Interpoll unsupported string outcome remains unsupported
+ok 15 - direct Interpoll unsupported string outcome remains unsupported
+  ---
+  duration_ms: 13.4864
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects unsupported policy requirement without claiming a transfer
+ok 16 - direct PRF rejects unsupported policy requirement without claiming a transfer
+  ---
+  duration_ms: 0.9512
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects authenticated chain requirement without claiming a transfer
+ok 17 - direct PRF rejects authenticated chain requirement without claiming a transfer
+  ---
+  duration_ms: 0.2318
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null guarantee without claiming a transfer
+ok 18 - direct PRF rejects null guarantee without claiming a transfer
+  ---
+  duration_ms: 0.2279
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects numeric guarantee without claiming a transfer
+ok 19 - direct PRF rejects numeric guarantee without claiming a transfer
+  ---
+  duration_ms: 0.1678
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null tuple digest without claiming a transfer
+ok 20 - direct PRF rejects null tuple digest without claiming a transfer
+  ---
+  duration_ms: 0.1699
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects numeric tuple digest without claiming a transfer
+ok 21 - direct PRF rejects numeric tuple digest without claiming a transfer
+  ---
+  duration_ms: 0.1748
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null basis without claiming a transfer
+ok 22 - direct PRF rejects null basis without claiming a transfer
+  ---
+  duration_ms: 0.1623
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects array basis without claiming a transfer
+ok 23 - direct PRF rejects array basis without claiming a transfer
+  ---
+  duration_ms: 0.1748
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects null native expectation without claiming a transfer
+ok 24 - direct PRF rejects null native expectation without claiming a transfer
+  ---
+  duration_ms: 0.2402
+  type: 'test'
+  ...
+# Subtest: direct PRF rejects array native expectation without claiming a transfer
+ok 25 - direct PRF rejects array native expectation without claiming a transfer
+  ---
+  duration_ms: 0.1864
+  type: 'test'
+  ...
+# Subtest: direct PRF preserves safe missing and partial premise outcomes
+ok 26 - direct PRF preserves safe missing and partial premise outcomes
+  ---
+  duration_ms: 232.0237
+  type: 'test'
+  ...
+# Subtest: direct PRF supported context still executes the pinned native relation
+ok 27 - direct PRF supported context still executes the pinned native relation
+  ---
+  duration_ms: 115.5432
+  type: 'test'
+  ...
+# Subtest: direct PRF unsupported string guarantee remains unsupported
+ok 28 - direct PRF unsupported string guarantee remains unsupported
+  ---
+  duration_ms: 123.0707
+  type: 'test'
+  ...
+# Subtest: typed request for another Interpoll action reaches the signed-intent relation
+ok 29 - typed request for another Interpoll action reaches the signed-intent relation
+  ---
+  duration_ms: 184.5023
+  type: 'test'
+  ...
+# Subtest: typed unsupported Interpoll authority reaches the authority policy relation
+ok 30 - typed unsupported Interpoll authority reaches the authority policy relation
+  ---
+  duration_ms: 101.5141
+  type: 'test'
+  ...
+# Subtest: null requested action kind remains malformed rather than an untyped semantic request
+ok 31 - null requested action kind remains malformed rather than an untyped semantic request
+  ---
+  duration_ms: 3.0274
+  type: 'test'
+  ...
+# Subtest: null authority namespace remains malformed rather than an untyped semantic request
+ok 32 - null authority namespace remains malformed rather than an untyped semantic request
+  ---
+  duration_ms: 1.631
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-_true_
+ok 33 - release admission rejects frozen fail-open continuity-binding-_true_
+  ---
+  duration_ms: 14.0897
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-1
+ok 34 - release admission rejects frozen fail-open continuity-binding-1
+  ---
+  duration_ms: 1.8303
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-__
+ok 35 - release admission rejects frozen fail-open continuity-binding-__
+  ---
+  duration_ms: 1.8356
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-null
+ok 36 - release admission rejects frozen fail-open continuity-binding-null
+  ---
+  duration_ms: 1.6989
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-option
+ok 37 - release admission rejects frozen fail-open continuity-unknown-option
+  ---
+  duration_ms: 1.6318
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-policy
+ok 38 - release admission rejects frozen fail-open continuity-unknown-policy
+  ---
+  duration_ms: 2.5742
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+ok 39 - release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+  ---
+  duration_ms: 2.9672
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+ok 40 - release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+  ---
+  duration_ms: 1.6196
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_null_outcome
+ok 41 - release admission rejects captured unsupported requirement interpoll_null_outcome
+  ---
+  duration_ms: 1.8804
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+ok 42 - release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+  ---
+  duration_ms: 2.6123
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+ok 43 - release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+  ---
+  duration_ms: 1.5921
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_null_known_requirement
+ok 44 - release admission rejects captured unsupported requirement prf_null_known_requirement
+  ---
+  duration_ms: 1.4389
+  type: 'test'
+  ...
+# Subtest: release admission preserves limited continuity with Boolean false
+ok 45 - release admission preserves limited continuity with Boolean false
+  ---
+  duration_ms: 313.0012
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true without envelope evidence stays insufficient
+ok 46 - release admission Boolean true without envelope evidence stays insufficient
+  ---
+  duration_ms: 298.6808
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true plus independently hashed envelope remains preserved
+ok 47 - release admission Boolean true plus independently hashed envelope remains preserved
+  ---
+  duration_ms: 298.4518
+  type: 'test'
+  ...
+# Subtest: release admission supported Interpoll request retains valid native signature and exact relation
+ok 48 - release admission supported Interpoll request retains valid native signature and exact relation
+  ---
+  duration_ms: 161.454
+  type: 'test'
+  ...
+# Subtest: release admission only omitted Interpoll outcome receives the existing default
+ok 49 - release admission only omitted Interpoll outcome receives the existing default
+  ---
+  duration_ms: 103.573
+  type: 'test'
+  ...
+# Subtest: release admission missing Interpoll context keeps insufficient evidence behavior
+ok 50 - release admission missing Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 99.8577
+  type: 'test'
+  ...
+# Subtest: release admission empty supported Interpoll context keeps insufficient evidence behavior
+ok 51 - release admission empty supported Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 107.2582
+  type: 'test'
+  ...
+# Subtest: release admission typed different requested action remains a semantic contradiction
+ok 52 - release admission typed different requested action remains a semantic contradiction
+  ---
+  duration_ms: 97.4084
+  type: 'test'
+  ...
+# Subtest: release admission supported PRF requirement preserves native tuple and transfer separately
+ok 53 - release admission supported PRF requirement preserves native tuple and transfer separately
+  ---
+  duration_ms: 457.7719
+  type: 'test'
+  ...
+# Subtest: release admission absent PRF context keeps selector insufficiency behavior
+ok 54 - release admission absent PRF context keeps selector insufficiency behavior
+  ---
+  duration_ms: 451.6675
+  type: 'test'
+  ...
+# Subtest: release admission typed unsupported PRF guarantee stays explicitly unsupported
+ok 55 - release admission typed unsupported PRF guarantee stays explicitly unsupported
+  ---
+  duration_ms: 430.2699
+  type: 'test'
+  ...
+# Subtest: release admission valid inactive PRF context makes no unrequested guarantee claim
+ok 56 - release admission valid inactive PRF context makes no unrequested guarantee claim
+  ---
+  duration_ms: 277.3548
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity context before semantic execution
+ok 57 - release admission refuses null continuity context before semantic execution
+  ---
+  duration_ms: 0.8292
+  type: 'test'
+  ...
+# Subtest: release admission refuses unknown continuity mode before semantic execution
+ok 58 - release admission refuses unknown continuity mode before semantic execution
+  ---
+  duration_ms: 0.623
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity subject selector before semantic execution
+ok 59 - release admission refuses null continuity subject selector before semantic execution
+  ---
+  duration_ms: 0.5949
+  type: 'test'
+  ...
+# Subtest: release admission refuses nonstring continuity root reference before semantic execution
+ok 60 - release admission refuses nonstring continuity root reference before semantic execution
+  ---
+  duration_ms: 0.6228
+  type: 'test'
+  ...
+# Subtest: release admission refuses null Interpoll context before semantic execution
+ok 61 - release admission refuses null Interpoll context before semantic execution
+  ---
+  duration_ms: 0.5787
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll requested action field before semantic execution
+ok 62 - release admission refuses extra Interpoll requested action field before semantic execution
+  ---
+  duration_ms: 0.7052
+  type: 'test'
+  ...
+# Subtest: release admission refuses missing Interpoll action nonce before semantic execution
+ok 63 - release admission refuses missing Interpoll action nonce before semantic execution
+  ---
+  duration_ms: 0.6439
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll material parameter type before semantic execution
+ok 64 - release admission refuses wrong Interpoll material parameter type before semantic execution
+  ---
+  duration_ms: 0.6258
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll authority field before semantic execution
+ok 65 - release admission refuses extra Interpoll authority field before semantic execution
+  ---
+  duration_ms: 0.6258
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll authority type before semantic execution
+ok 66 - release admission refuses wrong Interpoll authority type before semantic execution
+  ---
+  duration_ms: 0.6606
+  type: 'test'
+  ...
+# Subtest: release admission refuses unsupported Interpoll outcome before semantic execution
+ok 67 - release admission refuses unsupported Interpoll outcome before semantic execution
+  ---
+  duration_ms: 0.622
+  type: 'test'
+  ...
+# Subtest: release admission refuses null PRF context before semantic execution
+ok 68 - release admission refuses null PRF context before semantic execution
+  ---
+  duration_ms: 0.6494
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF accepted basis field before semantic execution
+ok 69 - release admission refuses extra PRF accepted basis field before semantic execution
+  ---
+  duration_ms: 0.7561
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF dependency version type before semantic execution
+ok 70 - release admission refuses wrong PRF dependency version type before semantic execution
+  ---
+  duration_ms: 0.6781
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF dependency field before semantic execution
+ok 71 - release admission refuses extra PRF dependency field before semantic execution
+  ---
+  duration_ms: 0.7669
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF native result field before semantic execution
+ok 72 - release admission refuses extra PRF native result field before semantic execution
+  ---
+  duration_ms: 0.7137
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF native vocabulary before semantic execution
+ok 73 - release admission refuses wrong PRF native vocabulary before semantic execution
+  ---
+  duration_ms: 0.7162
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF tuple selector type before semantic execution
+ok 74 - release admission refuses wrong PRF tuple selector type before semantic execution
+  ---
+  duration_ms: 0.7597
+  type: 'test'
+  ...
+# Subtest: release admission rejects ambiguous accepted PRF dependency identities
+ok 75 - release admission rejects ambiguous accepted PRF dependency identities
+  ---
+  duration_ms: 3.2474
+  type: 'test'
+  ...
+1..75
+# tests 75
+# suites 0
+# pass 75
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5183.9687

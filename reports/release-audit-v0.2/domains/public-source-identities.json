@@ -1,0 +1,43 @@
+{
+  "queriedAt": "2026-10-11T23:09:39.173Z",
+  "semanticAbi": {
+    "sha": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+    "tree": "63b5075bffb3027ab63c2a7f25de06502b0ed861",
+    "date": "2026-09-07T22:29:42Z",
+    "url": "https://github.com/trustless-ai/semantic-abi/commit/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee"
+  },
+  "recomputeKit": {
+    "sha": "3c3923956200d01ab74c2dcbb49b268739943bda",
+    "tree": "950ea0aae7c5ccdd90446e1bf532a670837d3e0a",
+    "date": "2026-10-11T22:35:32Z",
+    "url": "https://github.com/trustless-ai/recompute-kit/commit/3c3923956200d01ab74c2dcbb49b268739943bda"
+  },
+  "PR57": {
+    "state": "closed",
+    "merged": true,
+    "mergedAt": "2026-10-11T22:35:33Z",
+    "head": "197c6d26e68f85a117dd12a94924a7f959edaef4",
+    "base": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+    "url": "https://github.com/trustless-ai/recompute-kit/pull/57"
+  },
+  "interpoll": {
+    "sha": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+    "tree": "783eb5a5b376355d8669042bff20f126e66c9fc9",
+    "date": "2026-10-11T20:16:58Z",
+    "url": "https://github.com/Interpoll1/decentralised/commit/559e47f2cd2ffcbd8ad38293da89448d8ec3152d"
+  },
+  "PRF": {
+    "sha": "fac26d2e8346aeab08194343b78c345d235c6935",
+    "tree": "af8f26ced6f38435d534b330007bef917584b840",
+    "date": "2026-10-04T15:24:53Z",
+    "url": "https://github.com/pipavlo82/protected-relation-fixtures/commit/fac26d2e8346aeab08194343b78c345d235c6935"
+  },
+  "PR14": {
+    "state": "open",
+    "merged": false,
+    "mergedAt": null,
+    "head": "f525737069dc4cef7741f805d08a988912f4454f",
+    "base": "fac26d2e8346aeab08194343b78c345d235c6935",
+    "url": "https://github.com/pipavlo82/protected-relation-fixtures/pull/14"
+  }
+}

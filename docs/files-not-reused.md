@@ -4,6 +4,8 @@ This is the file-level companion to [the full reuse map](../FULL_WORK_REUSE_MAP.
 
 Existing sources were read only. Public neutral Semantic ABI work is allowed; private/commercial Vértice code and captures were not read or imported. No captured user/provider data, credentials or real trust keys become synthetic demo evidence. Optional, historical, fixture and methodology roles remain visible even when no source code is copied.
 
+Audit snapshot and Fresh default labels below refer to the original source audit observation, not continuously current branch heads. V0.2 selected native additions are explicitly stated in the affected entries; all other exclusions and third-party rights remain in force.
+
 ## All 20 owned public repositories
 
 ### pipavlo82/-crystal-artifact
@@ -138,7 +140,7 @@ Retained role: **adapter**. Neutral guarantee preservation and oracle-blind rela
 
 Representative source references: `tools/relation_discrimination.py`, `adapters/v0/run_adapter.py`, `adapters/v0/score_results.py`, `spec/external-adapter-contract-v0.md`, `tools/award_actual_settlement.py`.
 
-Not copied as runtime/data: `fixtures/`, `corpus/`, `evidence/`, `adapters/v0/score_results.py`, `tools/guarantee_preservation.py`. No upstream Python evaluator, scoring oracle, fixture corpus or captured settlement evidence is copied or executed. Neutral relation/guarantee ideas are independently reimplemented on product objects. PR14 remains OPEN, unmerged and EXPERIMENTAL; accepted basis/completeness are caller premises.
+Not copied into product runtime/data: `fixtures/`, `corpus/`, `evidence/`, `adapters/v0/score_results.py`, `tools/guarantee_preservation.py`. V0.2 copies and executes only the merged-main `tools/award_actual_settlement.py` with its MIT license at `fac26d2e8346aeab08194343b78c345d235c6935`. PR14 consumer/scoring/captures are not copied or executed; the downstream relation is an original bounded reimplementation. PR14 remains OPEN and EXPERIMENTAL, with accepted basis/completeness caller premises.
 
 ### pipavlo82/quantum-execution-evidence
 
@@ -292,7 +294,7 @@ Retained role: **adapter**. Signed public engagement, immutable retry and bounde
 
 Representative source references: `shared-validation/engagement.js`, `shared-validation/engagement-store.js`, `src/services/publicEngagementService.ts`, `src/services/reactionOutboxService.ts`, `docs/security/PUBLIC_ENGAGEMENT_V1.md`.
 
-Not copied as runtime/data: `shared-validation/engagement.js`, `shared-validation/engagement-store.js`, `src/services/publicEngagementService.ts`, `src/services/reactionOutboxService.ts`, `tools/coordination-impact-v2/`. No upstream service/store/UI/SQL deployment or coordination receipt corpus is copied. Public signed-action/retry semantics are independently reimplemented. Exact signed retries do not establish live admission atomicity, target existence, viewing, human uniqueness or independent coordination judgments.
+V0.1 did not copy the native action implementation. V0.2 copies and executes only `shared-validation/engagement.js` from `559e47f2cd2ffcbd8ad38293da89448d8ec3152d` under its retained Unlicense grant, through the bounded native signed-action adapter. Not copied as runtime/data: `shared-validation/engagement-store.js`, `src/services/publicEngagementService.ts`, `src/services/reactionOutboxService.ts`, `tools/coordination-impact-v2/`. No upstream service/store/UI/SQL deployment or coordination receipt corpus is copied. Supplied retry relation checks are product code around that native signature primitive. Exact signed retries do not establish live admission atomicity, target existence, viewing, human uniqueness or independent coordination judgments.
 
 ### jdleo/provably-fair-dice
 
@@ -434,7 +436,7 @@ Retained role: **adapter**. Pinned scan/time/consumption/permission profiles and
 
 Representative source references: `conformance/scan-subject-binding-v0/scan_check.py`, `conformance/scan-subject-binding-v0/mutation_check.py`, `conformance/scan-subject-binding-v0/vectors.json`, `conformance/scan-subject-binding-v0/suite.json`, `conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.spec.md`.
 
-Not copied as runtime/data: `conformance/scan-subject-binding-v0/scan_check.py`, `conformance/scan-subject-binding-v0/mutation_check.py`, `conformance/scan-subject-binding-v0/vectors.json`, `conformance/scan-subject-binding-v0/suite.json`, `conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.spec.md`. No complete upstream scanner/runner/conformance/runtime is copied or invoked. Selected subject/report-only/self-grading/nonempty/control ideas inform original host checks. Open PR57/65 proposals remain separately pinned; process exit/package presence is not semantic execution.
+Not copied into product runtime: `conformance/scan-subject-binding-v0/mutation_check.py`, upstream `vectors.json`, or `conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.spec.md`. V0.2 copies the selected scan checker, canonical `tools/run_conformance.py`, suite/README and CC0 license from historical main `1a37bcaf91918fd8a98f164d97d0fddbc28c6755`, and actually invokes that bounded checker/runner. It does not import the whole toolkit or newly merged PR57 reporter behavior. Release-audit-only public CC0 vectors/artifacts are separately identified in audit evidence, not used as product runtime or independently authored synthetic fixtures. Package presence/exit zero remains insufficient.
 
 ### trustless-ai/semantic-abi
 
@@ -444,7 +446,7 @@ Retained role: **adapter**. Neutral manifest/linker claim, authority, scope and 
 
 Representative source references: `schema/manifest.schema.json`, `schema/manifest-v0.md`, `runner/src/manifest.mjs`, `runner/src/linker.mjs`, `runner/src/evaluate.mjs`.
 
-Not copied as runtime/data: `adapters/`, `runner/src/evaluate.mjs`, `runner/src/manifest.mjs`. Public neutral schema/linker specifications are allowed. The product relation adapter is an original reimplementation; a byte-pinned neutral linker subset is separately copied inside generic QEV. Public system-specific adapter code and all private/commercial Vértice implementations/captures are excluded by scope, not read. No producer authority label becomes a verified premise.
+Not copied as runtime/data: public system-specific `adapters/` or private/commercial Vértice implementations/captures. V0.2 copies four unchanged neutral public runtime files (`classes.mjs`, `manifest.mjs`, `linker.mjs`, `evaluate.mjs`) and their Apache-2.0 license from `d15c666dfccff17f7350fe97d2fc7b71cb2cbaee`; the adapter actually executes validation/linking and optional pair evaluation. Generic-QEV neutral copies remain separately manifested. New product encoding/projection is original glue, not complete upstream wire conformance. No producer authority label becomes an independently established premise.
 
 ## New npm runtime dependencies
 
@@ -454,4 +456,4 @@ Node/Bun/Python runtimes and optional real PQ/ledger/provider systems are enviro
 
 The copied npm license paths and byte hashes are finalized in `provenance/npm-licenses.json` and linked from `provenance/dependencies.json`. Public snapshot preservation is limited to the saved 43 repositories / 21,119 files with zero mismatches, without a global live-worktree cleanliness claim.
 
-Working bounded product slices also include original Interpoll action/retry, PQ provider/vector/temporal-authority interfaces and `tools/reproduce.mjs` local conduct reproduction. Their cited upstream implementation files remain uncopied. Kit/RSI/SEG source methods are applied without native whole-tool/domain execution; the machine catalog carries both `used` and implementation boundaries. `.gitmodules` references identify uninitialized external dependencies whose payload files are not present in the frozen source archives.
+Working bounded product slices also include original Interpoll action/retry, PQ provider/vector/temporal-authority interfaces and `tools/reproduce.mjs` local conduct reproduction. Selected native Interpoll, Semantic ABI, recompute-kit and PRF files are explicitly copied/executed as listed above and in the v0.2 manifests; remaining application/queue/provider implementations are uncopied. RSI/SEG methods are applied without their native tool/onchain execution; the machine catalog carries both `used` and implementation boundaries. `.gitmodules` references identify uninitialized external dependencies whose payload files are not present in the frozen source archives.

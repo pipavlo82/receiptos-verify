@@ -1,0 +1,136 @@
+{
+  "schema": "receiptos.verify.v02-trustless-sources.v1",
+  "observedAt": "2026-10-11T21:45:10.478365+00:00",
+  "repository": "trustless-ai/recompute-kit",
+  "sourceSHA": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+  "sourceTree": "7b64f2b3f51a3df93ab74d6ea717f74635799845",
+  "sourceState": "PUBLIC_MAIN",
+  "license": "CC0-1.0",
+  "maturity": "STABLE",
+  "integrationMode": "PINNED_SOURCE",
+  "capabilityId": "trustless-native-scan-v02",
+  "sourcePaths": [
+    "LICENSE",
+    "tools/run_conformance.py",
+    "conformance/scan-subject-binding-v0/scan_check.py",
+    "conformance/scan-subject-binding-v0/README.md",
+    "conformance/scan-subject-binding-v0/suite.json"
+  ],
+  "files": [
+    {
+      "sourcePath": "LICENSE",
+      "vendoredPath": "vendor/recompute-kit-v02/LICENSE",
+      "sha256": "405d0af6743b62b00a440d519b85fd9c3f159ff85b3bcfcd8c683e6372b4a7aa",
+      "gitBlob": "4ca9d225df72209a217aa5fa6a703aedd08a78f5"
+    },
+    {
+      "sourcePath": "tools/run_conformance.py",
+      "vendoredPath": "vendor/recompute-kit-v02/tools/run_conformance.py",
+      "sha256": "588fec7a6dbf43e80badc33a9a1d55e3ac22852d37a7abdf76d4ad2ce3dbe8ac",
+      "gitBlob": "18518a2ba933ccc1debfc4040d01afd9a5510cae"
+    },
+    {
+      "sourcePath": "conformance/scan-subject-binding-v0/scan_check.py",
+      "vendoredPath": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/scan_check.py",
+      "sha256": "8c35eb3c2dcbd30ce190c569a797cde1c7d86cc0130985b8a533cad640fe0a06",
+      "gitBlob": "17add57b592d30e293026184fc6b33dcd5367f5c"
+    },
+    {
+      "sourcePath": "conformance/scan-subject-binding-v0/README.md",
+      "vendoredPath": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/README.md",
+      "sha256": "62f0de287fcab59c734dda0de2a9626e1ab9a24f1db6aa35c44daeefdda1d024",
+      "gitBlob": "6f95b6a1da706b6cff154ce3237da47299e25d24"
+    },
+    {
+      "sourcePath": "conformance/scan-subject-binding-v0/suite.json",
+      "vendoredPath": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/suite.json",
+      "sha256": "c4061ed3ec12bd85c97aa237febd80bd4fb23a0a97ed198410a609da412844bf",
+      "gitBlob": "342e7496286b5f4ff000bc426e5b708d77b80781"
+    }
+  ],
+  "productFiles": [
+    "src/adapters/trustless.mjs",
+    "src/adapters/native/trustless-bridge.py",
+    "tests/trustless-v02.test.mjs",
+    "tests/helpers/trustless-v02-fixture.mjs",
+    "docs/trustless-adapter.md"
+  ],
+  "authorshipEvidence": [
+    {
+      "role": "SCAN_IMPLEMENTATION",
+      "actor": "babyblueviper1",
+      "commit": "a05099ee5674f40148ee88ddf5105fdcf2fda607",
+      "sourcePath": "conformance/scan-subject-binding-v0/scan_check.py",
+      "url": "https://github.com/trustless-ai/recompute-kit/commit/a05099ee5674f40148ee88ddf5105fdcf2fda607",
+      "boundary": "Shared implementation, not sole Pavlo authorship; commit message credits Zexo and Pavlo evidence-grade refusal finding."
+    },
+    {
+      "role": "PUBLIC_SPEC_WITNESS_AND_REVIEW",
+      "actor": "pipavlo82",
+      "sourcePath": "conformance/scan-subject-binding-v0/README.md",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/1a37bcaf91918fd8a98f164d97d0fddbc28c6755/conformance/scan-subject-binding-v0/README.md",
+      "boundary": "README credits built-with Pavlo first effective-dataset executable witness and reshaping after his review; does not establish authorship of every checker line."
+    },
+    {
+      "role": "AUTHORED_RUNNER_FAILURE_CLASSIFIER_IMPLEMENTATION",
+      "actor": "pipavlo82",
+      "commit": "ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+      "sourcePath": "tools/run_conformance.py",
+      "url": "https://github.com/trustless-ai/recompute-kit/commit/ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+      "boundary": "GitHub author pipavlo82; commit author Pavlo Tvardovskyi. Selected runner also contains babyblueviper1, Merlini/Echo and zexoverz contributions."
+    },
+    {
+      "role": "POST_MERGE_REVIEW_COMMENT",
+      "actor": "pipavlo82",
+      "url": "https://github.com/trustless-ai/recompute-kit/pull/59#issuecomment-6072721352",
+      "boundary": "Review/ordering/documentation findings, not original implementation attribution."
+    }
+  ],
+  "upstreamPullRequests": [
+    {
+      "number": 59,
+      "state": "MERGED",
+      "head": "a05099ee5674f40148ee88ddf5105fdcf2fda607",
+      "mergeCommit": "afd69037b3ef0cae7019eaa7328f3459954e116a",
+      "author": "babyblueviper1",
+      "mergedAt": "2026-10-09T01:46:39Z",
+      "used": true
+    },
+    {
+      "number": 65,
+      "state": "MERGED",
+      "head": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "mergeCommit": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "author": "pipavlo82",
+      "mergedAt": "2026-10-11T20:26:34Z",
+      "used": "source main includes merged guard history; PR65 profile mutation files are not vendored"
+    },
+    {
+      "number": 57,
+      "state": "OPEN",
+      "head": "197c6d26e68f85a117dd12a94924a7f959edaef4",
+      "base": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "author": "babyblueviper1",
+      "maturity": "EXPERIMENTAL",
+      "used": false,
+      "reason": "Unmerged reporter-contract migration kept distinct from executable main adapter."
+    },
+    {
+      "number": 52,
+      "state": "OPEN",
+      "head": "7eaf8995748ec4a00cb313463d2555da8fea25b4",
+      "author": "babyblueviper1",
+      "maturity": "EXPERIMENTAL",
+      "used": false,
+      "reason": "Unmerged uncovered-entry behavior not imported."
+    }
+  ],
+  "boundaries": [
+    "STABLE identifies merged source, not production security certification.",
+    "Five selected upstream text files copied byte-for-byte from Git blobs; no captured datasets copied.",
+    "Only native scan_subject_binding.v0 raw relation and one-case conformance runner are executed, not all upstream suites or mutation coverage.",
+    "Main does not declare adapter.contract for the selected suite; native contractMode is null, product runnerContractInterpretation is MAIN_SELF_GRADING.",
+    "Saved native expected result is only replay target; native raw functions compute semantic outcome independently.",
+    "No private or commercial Vertice material used."
+  ]
+}

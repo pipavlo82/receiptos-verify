@@ -1,0 +1,43 @@
+{
+  "schema": "receiptos.verify.test-command-receipt.v2",
+  "command": [
+    "node",
+    "--test",
+    "tests\\admission-v2.test.mjs",
+    "tests\\admission.test.mjs",
+    "tests\\capsule.test.mjs",
+    "tests\\corpus-v02.test.mjs",
+    "tests\\cost.test.mjs",
+    "tests\\extensions.test.mjs",
+    "tests\\generic-boundary-v2.test.mjs",
+    "tests\\git.test.mjs",
+    "tests\\interpoll-v2.test.mjs",
+    "tests\\mutation-runner.test.mjs",
+    "tests\\mutation-v2.test.mjs",
+    "tests\\native.test.mjs",
+    "tests\\pq.test.mjs",
+    "tests\\prf-v2.test.mjs",
+    "tests\\product.test.mjs",
+    "tests\\projection-release.test.mjs",
+    "tests\\projection-v2.test.mjs",
+    "tests\\qev.test.mjs",
+    "tests\\qev_moth.test.mjs",
+    "tests\\relations.test.mjs",
+    "tests\\review.test.mjs",
+    "tests\\semantic-abi-v2.test.mjs",
+    "tests\\server.test.mjs",
+    "tests\\trustless-v02.test.mjs",
+    "tests\\ui-contract.test.mjs"
+  ],
+  "exit_code": 1,
+  "counts": {
+    "tests": 521,
+    "pass": 519,
+    "fail": 2,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "stdout_sha256": "6695411a208757906da798c24b2460cd2f16db7ca3dfc0a2170fd9cd40cffd0a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

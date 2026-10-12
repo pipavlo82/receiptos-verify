@@ -1,0 +1,760 @@
+TAP version 13
+# Subtest: v0.2 admission accepts generic shape without asserting integrity or authenticity
+ok 1 - v0.2 admission accepts generic shape without asserting integrity or authenticity
+  ---
+  duration_ms: 22.2125
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request claim
+ok 2 - v0.2 admission requires request claim
+  ---
+  duration_ms: 3.2247
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence claim
+ok 3 - v0.2 admission requires signed evidence claim
+  ---
+  duration_ms: 4.3556
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request subject
+ok 4 - v0.2 admission requires request subject
+  ---
+  duration_ms: 3.7295
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence subject
+ok 5 - v0.2 admission requires signed evidence subject
+  ---
+  duration_ms: 2.2892
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request scope
+ok 6 - v0.2 admission requires request scope
+  ---
+  duration_ms: 1.3661
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence scope
+ok 7 - v0.2 admission requires signed evidence scope
+  ---
+  duration_ms: 1.356
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request authority
+ok 8 - v0.2 admission requires request authority
+  ---
+  duration_ms: 0.7478
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence authority
+ok 9 - v0.2 admission requires signed evidence authority
+  ---
+  duration_ms: 1.8101
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request policy
+ok 10 - v0.2 admission requires request policy
+  ---
+  duration_ms: 1.3709
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence policy
+ok 11 - v0.2 admission requires signed evidence policy
+  ---
+  duration_ms: 1.0082
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request version
+ok 12 - v0.2 admission requires request version
+  ---
+  duration_ms: 1.0931
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence version
+ok 13 - v0.2 admission requires signed evidence version
+  ---
+  duration_ms: 1.6829
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request time
+ok 14 - v0.2 admission requires request time
+  ---
+  duration_ms: 1.2028
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence time
+ok 15 - v0.2 admission requires signed evidence time
+  ---
+  duration_ms: 1.4951
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request assumptions
+ok 16 - v0.2 admission requires request assumptions
+  ---
+  duration_ms: 1.14
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence assumptions
+ok 17 - v0.2 admission requires signed evidence assumptions
+  ---
+  duration_ms: 1.5419
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request dependencies
+ok 18 - v0.2 admission requires request dependencies
+  ---
+  duration_ms: 1.3866
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence dependencies
+ok 19 - v0.2 admission requires signed evidence dependencies
+  ---
+  duration_ms: 2.3161
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires request evidence_requirements
+ok 20 - v0.2 admission requires request evidence_requirements
+  ---
+  duration_ms: 1.0365
+  type: 'test'
+  ...
+# Subtest: v0.2 admission requires signed evidence evidence_requirements
+ok 21 - v0.2 admission requires signed evidence evidence_requirements
+  ---
+  duration_ms: 0.9487
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate request dependency
+ok 22 - v0.2 admission rejects duplicate request dependency
+  ---
+  duration_ms: 1.039
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate evidence dependency
+ok 23 - v0.2 admission rejects duplicate evidence dependency
+  ---
+  duration_ms: 0.8642
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects conflicting dependency premises
+ok 24 - v0.2 admission rejects conflicting dependency premises
+  ---
+  duration_ms: 2.6864
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects reversed conflicting dependency premises
+ok 25 - v0.2 admission rejects reversed conflicting dependency premises
+  ---
+  duration_ms: 0.8367
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate dependency premise versions
+ok 26 - v0.2 admission rejects duplicate dependency premise versions
+  ---
+  duration_ms: 0.6916
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate trust key IDs
+ok 27 - v0.2 admission rejects duplicate trust key IDs
+  ---
+  duration_ms: 0.7085
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate accepted authority IDs
+ok 28 - v0.2 admission rejects duplicate accepted authority IDs
+  ---
+  duration_ms: 1.2737
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate manifest IDs
+ok 29 - v0.2 admission rejects duplicate manifest IDs
+  ---
+  duration_ms: 1.2417
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate attachment IDs
+ok 30 - v0.2 admission rejects duplicate attachment IDs
+  ---
+  duration_ms: 1.5884
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate singular evidence role
+ok 31 - v0.2 admission rejects duplicate singular evidence role
+  ---
+  duration_ms: 1.2032
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate guarantee identity
+ok 32 - v0.2 admission rejects duplicate guarantee identity
+  ---
+  duration_ms: 1.1687
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate requested evidence IDs
+ok 33 - v0.2 admission rejects duplicate requested evidence IDs
+  ---
+  duration_ms: 0.8142
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate assumptions
+ok 34 - v0.2 admission rejects duplicate assumptions
+  ---
+  duration_ms: 1.0175
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects duplicate evidence requirements
+ok 35 - v0.2 admission rejects duplicate evidence requirements
+  ---
+  duration_ms: 1.3468
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects empty evidence requirements
+ok 36 - v0.2 admission rejects empty evidence requirements
+  ---
+  duration_ms: 0.9713
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unknown extra request field
+ok 37 - v0.2 admission rejects unknown extra request field
+  ---
+  duration_ms: 0.7243
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unknown extra statement field
+ok 38 - v0.2 admission rejects unknown extra statement field
+  ---
+  duration_ms: 0.7348
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe timestamp
+ok 39 - v0.2 admission rejects unsafe timestamp
+  ---
+  duration_ms: 0.7973
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects empty time interval
+ok 40 - v0.2 admission rejects empty time interval
+  ---
+  duration_ms: 2.0235
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects reversed evidence time interval
+ok 41 - v0.2 admission rejects reversed evidence time interval
+  ---
+  duration_ms: 1.8632
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects negative timestamp
+ok 42 - v0.2 admission rejects negative timestamp
+  ---
+  duration_ms: 1.5274
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects malformed artifact hash
+ok 43 - v0.2 admission rejects malformed artifact hash
+  ---
+  duration_ms: 1.2805
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects uppercase artifact hash
+ok 44 - v0.2 admission rejects uppercase artifact hash
+  ---
+  duration_ms: 1.6215
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects malformed commit
+ok 45 - v0.2 admission rejects malformed commit
+  ---
+  duration_ms: 1.38
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects noncanonical base64 padding bits
+ok 46 - v0.2 admission rejects noncanonical base64 padding bits
+  ---
+  duration_ms: 1.379
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects malformed base64 attachment
+ok 47 - v0.2 admission rejects malformed base64 attachment
+  ---
+  duration_ms: 1.5006
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects metadata layer consumer obligation
+ok 48 - v0.2 admission rejects metadata layer consumer obligation
+  ---
+  duration_ms: 1.262
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unknown consumer layer
+ok 49 - v0.2 admission rejects unknown consumer layer
+  ---
+  duration_ms: 1.1755
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects overlong subject identifier
+ok 50 - v0.2 admission rejects overlong subject identifier
+  ---
+  duration_ms: 0.7638
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects NaN parameter
+ok 51 - v0.2 admission rejects NaN parameter
+  ---
+  duration_ms: 0.6466
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects Infinity parameter
+ok 52 - v0.2 admission rejects Infinity parameter
+  ---
+  duration_ms: 0.607
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects negative zero parameter
+ok 53 - v0.2 admission rejects negative zero parameter
+  ---
+  duration_ms: 0.585
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects accessor input
+ok 54 - v0.2 admission rejects accessor input
+  ---
+  duration_ms: 0.694
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects sparse dependency array
+ok 55 - v0.2 admission rejects sparse dependency array
+  ---
+  duration_ms: 0.6161
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path ../secret
+ok 56 - v0.2 admission rejects unsafe artifact path ../secret
+  ---
+  duration_ms: 1.1103
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path ./artifact
+ok 57 - v0.2 admission rejects unsafe artifact path ./artifact
+  ---
+  duration_ms: 1.5346
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path/../artifact
+ok 58 - v0.2 admission rejects unsafe artifact path path/../artifact
+  ---
+  duration_ms: 1.4241
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path /absolute
+ok 59 - v0.2 admission rejects unsafe artifact path /absolute
+  ---
+  duration_ms: 2.5523
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path C:/secret
+ok 60 - v0.2 admission rejects unsafe artifact path C:/secret
+  ---
+  duration_ms: 0.7398
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path file://secret
+ok 61 - v0.2 admission rejects unsafe artifact path file://secret
+  ---
+  duration_ms: 1.1293
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path https://example.test/data
+ok 62 - v0.2 admission rejects unsafe artifact path https://example.test/data
+  ---
+  duration_ms: 1.1468
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path\\artifact
+ok 63 - v0.2 admission rejects unsafe artifact path path\\artifact
+  ---
+  duration_ms: 1.0923
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path//artifact
+ok 64 - v0.2 admission rejects unsafe artifact path path//artifact
+  ---
+  duration_ms: 1.1313
+  type: 'test'
+  ...
+# Subtest: v0.2 admission rejects unsafe artifact path path/%2e%2e/artifact
+ok 65 - v0.2 admission rejects unsafe artifact path path/%2e%2e/artifact
+  ---
+  duration_ms: 0.8247
+  type: 'test'
+  ...
+# Subtest: v0.2 admission allows bounded unknown adapters/profiles for explicit unsupported projection
+ok 66 - v0.2 admission allows bounded unknown adapters/profiles for explicit unsupported projection
+  ---
+  duration_ms: 0.5412
+  type: 'test'
+  ...
+# Subtest: v0.2 admission preserves unavailable/null and empty evidence for insufficiency layers
+ok 67 - v0.2 admission preserves unavailable/null and empty evidence for insufficiency layers
+  ---
+  duration_ms: 0.7277
+  type: 'test'
+  ...
+# Subtest: v0.2 identifiers preserve exact legal Unicode without normalization aliases
+ok 68 - v0.2 identifiers preserve exact legal Unicode without normalization aliases
+  ---
+  duration_ms: 0.7378
+  type: 'test'
+  ...
+# Subtest: v0.2 raw JSON duplicate semantic members are refused before admission
+ok 69 - v0.2 raw JSON duplicate semantic members are refused before admission
+  ---
+  duration_ms: 2.6807
+  type: 'test'
+  ...
+# Subtest: v0.2 report schema requires exact named fourteen-layer inventory and finite overall status
+ok 70 - v0.2 report schema requires exact named fourteen-layer inventory and finite overall status
+  ---
+  duration_ms: 14.7493
+  type: 'test'
+  ...
+# Subtest: v0.2 admission fails closed for wrong root types and unsupported schema validator names
+ok 71 - v0.2 admission fails closed for wrong root types and unsupported schema validator names
+  ---
+  duration_ms: 2.7722
+  type: 'test'
+  ...
+# Subtest: v2 exact supported guarantee declaration preserves the separately selected relation
+ok 72 - v2 exact supported guarantee declaration preserves the separately selected relation
+  ---
+  duration_ms: 1061.7055
+  type: 'test'
+  ...
+# Subtest: v2 refuses original independent probe declaration instead of silently ignoring caller conditions
+ok 73 - v2 refuses original independent probe declaration instead of silently ignoring caller conditions
+  ---
+  duration_ms: 382.9677
+  type: 'test'
+  ...
+# Subtest: v2 refuses unknown guarantee version instead of silently ignoring caller conditions
+ok 74 - v2 refuses unknown guarantee version instead of silently ignoring caller conditions
+  ---
+  duration_ms: 412.1587
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional semantic parameters instead of silently ignoring caller conditions
+ok 75 - v2 refuses additional semantic parameters instead of silently ignoring caller conditions
+  ---
+  duration_ms: 412.2184
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional scope instead of silently ignoring caller conditions
+ok 76 - v2 refuses additional scope instead of silently ignoring caller conditions
+  ---
+  duration_ms: 438.83
+  type: 'test'
+  ...
+# Subtest: v2 refuses additional authority requirement instead of silently ignoring caller conditions
+ok 77 - v2 refuses additional authority requirement instead of silently ignoring caller conditions
+  ---
+  duration_ms: 452.7986
+  type: 'test'
+  ...
+# Subtest: v2 refuses false-valued additional field instead of silently ignoring caller conditions
+ok 78 - v2 refuses false-valued additional field instead of silently ignoring caller conditions
+  ---
+  duration_ms: 458.6284
+  type: 'test'
+  ...
+# Subtest: v2 refuses null-valued additional field instead of silently ignoring caller conditions
+ok 79 - v2 refuses null-valued additional field instead of silently ignoring caller conditions
+  ---
+  duration_ms: 401.9814
+  type: 'test'
+  ...
+# Subtest: v2 refuses unknown guarantee identity instead of silently ignoring caller conditions
+ok 80 - v2 refuses unknown guarantee identity instead of silently ignoring caller conditions
+  ---
+  duration_ms: 365.4779
+  type: 'test'
+  ...
+# Subtest: v2 multiple guarantee obligations cannot be reduced to one supported guarantee
+ok 81 - v2 multiple guarantee obligations cannot be reduced to one supported guarantee
+  ---
+  duration_ms: 368.9886
+  type: 'test'
+  ...
+# Subtest: v2 an unrequested guarantee does not manufacture a preservation claim
+ok 82 - v2 an unrequested guarantee does not manufacture a preservation claim
+  ---
+  duration_ms: 352.3941
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-_true_
+ok 83 - release admission rejects frozen fail-open continuity-binding-_true_
+  ---
+  duration_ms: 29.9175
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-1
+ok 84 - release admission rejects frozen fail-open continuity-binding-1
+  ---
+  duration_ms: 4.6557
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-__
+ok 85 - release admission rejects frozen fail-open continuity-binding-__
+  ---
+  duration_ms: 3.556
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-binding-null
+ok 86 - release admission rejects frozen fail-open continuity-binding-null
+  ---
+  duration_ms: 2.9059
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-option
+ok 87 - release admission rejects frozen fail-open continuity-unknown-option
+  ---
+  duration_ms: 2.7432
+  type: 'test'
+  ...
+# Subtest: release admission rejects frozen fail-open continuity-unknown-policy
+ok 88 - release admission rejects frozen fail-open continuity-unknown-policy
+  ---
+  duration_ms: 4.807
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+ok 89 - release admission rejects captured unsupported requirement interpoll_unknown_fresh_requirement
+  ---
+  duration_ms: 5.1434
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+ok 90 - release admission rejects captured unsupported requirement interpoll_unknown_server_requirement
+  ---
+  duration_ms: 2.8921
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement interpoll_null_outcome
+ok 91 - release admission rejects captured unsupported requirement interpoll_null_outcome
+  ---
+  duration_ms: 4.5709
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+ok 92 - release admission rejects captured unsupported requirement prf_unknown_policy_requirement
+  ---
+  duration_ms: 7.1098
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+ok 93 - release admission rejects captured unsupported requirement prf_unknown_evidence_requirement
+  ---
+  duration_ms: 3.1403
+  type: 'test'
+  ...
+# Subtest: release admission rejects captured unsupported requirement prf_null_known_requirement
+ok 94 - release admission rejects captured unsupported requirement prf_null_known_requirement
+  ---
+  duration_ms: 2.862
+  type: 'test'
+  ...
+# Subtest: release admission preserves limited continuity with Boolean false
+ok 95 - release admission preserves limited continuity with Boolean false
+  ---
+  duration_ms: 467.2537
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true without envelope evidence stays insufficient
+ok 96 - release admission Boolean true without envelope evidence stays insufficient
+  ---
+  duration_ms: 396.8703
+  type: 'test'
+  ...
+# Subtest: release admission Boolean true plus independently hashed envelope remains preserved
+ok 97 - release admission Boolean true plus independently hashed envelope remains preserved
+  ---
+  duration_ms: 383.0199
+  type: 'test'
+  ...
+# Subtest: release admission supported Interpoll request retains valid native signature and exact relation
+ok 98 - release admission supported Interpoll request retains valid native signature and exact relation
+  ---
+  duration_ms: 194.3957
+  type: 'test'
+  ...
+# Subtest: release admission only omitted Interpoll outcome receives the existing default
+ok 99 - release admission only omitted Interpoll outcome receives the existing default
+  ---
+  duration_ms: 126.9443
+  type: 'test'
+  ...
+# Subtest: release admission missing Interpoll context keeps insufficient evidence behavior
+ok 100 - release admission missing Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 138.2426
+  type: 'test'
+  ...
+# Subtest: release admission empty supported Interpoll context keeps insufficient evidence behavior
+ok 101 - release admission empty supported Interpoll context keeps insufficient evidence behavior
+  ---
+  duration_ms: 138.6247
+  type: 'test'
+  ...
+# Subtest: release admission typed different requested action remains a semantic contradiction
+ok 102 - release admission typed different requested action remains a semantic contradiction
+  ---
+  duration_ms: 132.2516
+  type: 'test'
+  ...
+# Subtest: release admission supported PRF requirement preserves native tuple and transfer separately
+ok 103 - release admission supported PRF requirement preserves native tuple and transfer separately
+  ---
+  duration_ms: 636.9245
+  type: 'test'
+  ...
+# Subtest: release admission absent PRF context keeps selector insufficiency behavior
+ok 104 - release admission absent PRF context keeps selector insufficiency behavior
+  ---
+  duration_ms: 669.7001
+  type: 'test'
+  ...
+# Subtest: release admission typed unsupported PRF guarantee stays explicitly unsupported
+ok 105 - release admission typed unsupported PRF guarantee stays explicitly unsupported
+  ---
+  duration_ms: 617.4522
+  type: 'test'
+  ...
+# Subtest: release admission valid inactive PRF context makes no unrequested guarantee claim
+ok 106 - release admission valid inactive PRF context makes no unrequested guarantee claim
+  ---
+  duration_ms: 382.6002
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity context before semantic execution
+ok 107 - release admission refuses null continuity context before semantic execution
+  ---
+  duration_ms: 0.836
+  type: 'test'
+  ...
+# Subtest: release admission refuses unknown continuity mode before semantic execution
+ok 108 - release admission refuses unknown continuity mode before semantic execution
+  ---
+  duration_ms: 0.6281
+  type: 'test'
+  ...
+# Subtest: release admission refuses null continuity subject selector before semantic execution
+ok 109 - release admission refuses null continuity subject selector before semantic execution
+  ---
+  duration_ms: 0.5674
+  type: 'test'
+  ...
+# Subtest: release admission refuses nonstring continuity root reference before semantic execution
+ok 110 - release admission refuses nonstring continuity root reference before semantic execution
+  ---
+  duration_ms: 0.5663
+  type: 'test'
+  ...
+# Subtest: release admission refuses null Interpoll context before semantic execution
+ok 111 - release admission refuses null Interpoll context before semantic execution
+  ---
+  duration_ms: 0.5462
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll requested action field before semantic execution
+ok 112 - release admission refuses extra Interpoll requested action field before semantic execution
+  ---
+  duration_ms: 1.0813
+  type: 'test'
+  ...
+# Subtest: release admission refuses missing Interpoll action nonce before semantic execution
+ok 113 - release admission refuses missing Interpoll action nonce before semantic execution
+  ---
+  duration_ms: 0.9142
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll material parameter type before semantic execution
+ok 114 - release admission refuses wrong Interpoll material parameter type before semantic execution
+  ---
+  duration_ms: 0.9935
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra Interpoll authority field before semantic execution
+ok 115 - release admission refuses extra Interpoll authority field before semantic execution
+  ---
+  duration_ms: 0.9727
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong Interpoll authority type before semantic execution
+ok 116 - release admission refuses wrong Interpoll authority type before semantic execution
+  ---
+  duration_ms: 1.0394
+  type: 'test'
+  ...
+# Subtest: release admission refuses unsupported Interpoll outcome before semantic execution
+ok 117 - release admission refuses unsupported Interpoll outcome before semantic execution
+  ---
+  duration_ms: 0.9533
+  type: 'test'
+  ...
+# Subtest: release admission refuses null PRF context before semantic execution
+ok 118 - release admission refuses null PRF context before semantic execution
+  ---
+  duration_ms: 1.0299
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF accepted basis field before semantic execution
+ok 119 - release admission refuses extra PRF accepted basis field before semantic execution
+  ---
+  duration_ms: 1.1507
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF dependency version type before semantic execution
+ok 120 - release admission refuses wrong PRF dependency version type before semantic execution
+  ---
+  duration_ms: 1.1864
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF dependency field before semantic execution
+ok 121 - release admission refuses extra PRF dependency field before semantic execution
+  ---
+  duration_ms: 1.0858
+  type: 'test'
+  ...
+# Subtest: release admission refuses extra PRF native result field before semantic execution
+ok 122 - release admission refuses extra PRF native result field before semantic execution
+  ---
+  duration_ms: 0.9733
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF native vocabulary before semantic execution
+ok 123 - release admission refuses wrong PRF native vocabulary before semantic execution
+  ---
+  duration_ms: 1.0053
+  type: 'test'
+  ...
+# Subtest: release admission refuses wrong PRF tuple selector type before semantic execution
+ok 124 - release admission refuses wrong PRF tuple selector type before semantic execution
+  ---
+  duration_ms: 1.0282
+  type: 'test'
+  ...
+# Subtest: release admission rejects ambiguous accepted PRF dependency identities
+ok 125 - release admission rejects ambiguous accepted PRF dependency identities
+  ---
+  duration_ms: 2.6155
+  type: 'test'
+  ...
+1..125
+# tests 125
+# suites 0
+# pass 125
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5737.7474

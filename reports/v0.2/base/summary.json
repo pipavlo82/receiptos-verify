@@ -1,0 +1,312 @@
+{
+  "schema": "receiptos.verify.public-candidate-gate.v1",
+  "candidate": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "tree": "8a5de5a3735e04f3f45cf164b59da17289693bc2",
+  "source_lock_sha256": "bd6ad5d4640823ab55458777f93aa5f7999107415fe4550c3d99cbe9b0eb54f6",
+  "status": "PASS",
+  "controller_commit": null,
+  "commands": [
+    {
+      "label": "version-node",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:51.994887+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "d656133e6fb1a2be31c1652d360bba7b09442e5480c8541deb85cfcedf37c499",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-python",
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:52.030629+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "6a5d9f6462ca5dfc6788cfd216ba579fffd7875776ab9d9b35659be78858f73a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-python-path",
+      "argv": [
+        "python",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:52.053541+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "6a5d9f6462ca5dfc6788cfd216ba579fffd7875776ab9d9b35659be78858f73a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-bun",
+      "argv": [
+        "C:\\Users\\msi\\.bun\\bin\\bun.EXE",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:52.075541+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "56b0485099b6c5427d3b68c042fd05b632d5e52e924c5064473389812227164c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-npm",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:52.122103+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "b90f6efb804599bb0ba84fec754b8c7807381dabfcdc1ffe3437ff37f18fb0f5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "install",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify\\reports\\v0.2\\base-npm-cache"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:52.649339+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "573c6d511ac37560bbff184c77b50db6f50af048da57bec97f4e5704287a67b4",
+      "stderr_sha256": "1f4f72b910e27e2bd29eea9a14a36c68da2229f4dfd05538d607a0754fcbab12"
+    },
+    {
+      "label": "dependencies",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "ls",
+        "--all",
+        "--json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:55.205588+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "5eb1aafb026b733001bc54f809f6d1d2be2506081bd327b206fc788f8b0f5aa2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "dependency-resolution",
+      "argv": [
+        "node",
+        "--input-type=module",
+        "-e",
+        "console.log(import.meta.resolve('ajv')); console.log(import.meta.resolve('@noble/curves/secp256k1.js'));"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:56.411268+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "33e55ccec654b4338ea5bf95b49eb517ec5c8263581c7e618fe38e0786c8b9c3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "initial-source-lock",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:56.506271+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "86e148ed7cfd3fd86af92487e777150029b9680650a6da89a50eaed0b4479d0c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "initial-diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:56.848271+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tests",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "test"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:34:56.953269+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "296e8f752becf28e5d3e6f0ebb94b776c52d8a5f0f64fee839f6e4fb6f1abcb8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "vectors",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "run",
+        "vectors"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:35:25.968611+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "9827e90966d85455d725d9596b3ff1fd37205ad82b257193cd7a5c34e220cf97",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "mutations",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "run",
+        "mutations"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:35:41.836766+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "1540256d8d175dd41a42c811ccbac4595d164422221517b1d14ce2b29011f3e8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cli-demo",
+      "argv": [
+        "node",
+        "src/cli.mjs",
+        "demo"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:36:17.945849+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "ec2b25d67c96496d00d2551bcdfc54d61257bd4fd7c58e889f216bdb070cb29b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "capsule-demo",
+      "argv": [
+        "node",
+        "tools/write-demo.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:36:19.287066+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "164ceb752232fe0e9c5dc3fdf0d553ffdf123891c0e83daadd224808d1a5fc38",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "local-reproduction",
+      "argv": [
+        "node",
+        "tools/reproduce.mjs",
+        "V02"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:36:22.209168+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "f65b39e42b11afac36d38c4ba9a2dde8c36e19e5f00d5d7bf1ab555c5f12efae",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "final-source-lock",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:36:24.379707+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "86e148ed7cfd3fd86af92487e777150029b9680650a6da89a50eaed0b4479d0c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "final-diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base",
+      "started_utc": "2026-10-11T21:36:24.625374+00:00",
+      "process_status": "COMPLETED",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "tracked_files": 627,
+  "initial_status": "CLEAN",
+  "package_lock_sha256": "34c5ead1add79a374494eba5d51966d5557f2109373d1a0ab9bc01ebbb5e307c",
+  "runtime": {
+    "node": "v22.15.0",
+    "python": "Python 3.12.10",
+    "python-path": "Python 3.12.10",
+    "bun": "1.3.14",
+    "npm": "10.9.2"
+  },
+  "test_scratch_setup": {
+    "path": "reports/tmp",
+    "initially_absent": true,
+    "created_empty": true,
+    "reason": "git.test.mjs requires an existing mkdtemp parent"
+  },
+  "tests": {
+    "tests": 275,
+    "pass": 275,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "vectors": {
+    "count": 30,
+    "passed": 30,
+    "failed": 0
+  },
+  "mutations": {
+    "count": 14,
+    "counts": {
+      "KILLED": 14,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    }
+  },
+  "demo": {
+    "same_receipt": true,
+    "request_A": "VERIFIED",
+    "request_B": "CONTRADICTED"
+  },
+  "changed_generated_reports": [
+    "reports/first-demo.json",
+    "reports/local-reproduction.json",
+    "reports/mutations.json"
+  ],
+  "remote": "https://github.com/pipavlo82/receiptos-verify.git",
+  "completed_utc": "2026-10-11T21:36:24.857438+00:00"
+}

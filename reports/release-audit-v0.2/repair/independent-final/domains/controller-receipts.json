@@ -1,0 +1,22 @@
+[
+  {
+    "candidate": "eb942148eeb489db809b39e053ec905105cc3056",
+    "controller": "audit-domains.mjs",
+    "exitCode": 0,
+    "change": "Only repository URL changes; original detached literal oracles unchanged.",
+    "originalControllerSha256": "37a5c090ccf87d37f272f695b28ef5c6e04ee4a5c49916751dfe42bc3969942b",
+    "controllerSha256": "7ad4025187526fa95727a05d0185fc661bdcdddfe3250ec60ac67ef9da9d0727",
+    "stdoutSha256": "5a9cff06cdb4467cd7c93637e00fff34febb679bb08f591bb09564098da33e8f",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "candidate": "eb942148eeb489db809b39e053ec905105cc3056",
+    "controller": "replay-active-contexts.mjs",
+    "exitCode": 0,
+    "change": "Only repository URL, summary filename and separate findings/source identity metadata change; exact frozen inputs unchanged.",
+    "originalControllerSha256": "563d2eae62936e0e57c0400fe8f4fe0260c18ef454482c709ed2e27984449eb4",
+    "controllerSha256": "857719ae18ea3621a893b57cfbcf61f61751ce5129938692caa36d8640e01e27",
+    "stdoutSha256": "484bb773f5099db68ef0c743c4b23124ae7ea54badef8d2b858b25de4c7015c4",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

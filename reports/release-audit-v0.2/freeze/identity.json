@@ -1,0 +1,40 @@
+{
+  "candidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "tree": "d5a6fb8e47db373e59b6ce5ed021f3e1240a09fc",
+  "branch": "feat/v0.2-generic-trustless-boundary",
+  "initial_status": "CLEAN",
+  "public_base": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "tracked_regular_files": 1028,
+  "source_lock_sha256": "86cf26a39b103ca32344119c2a5a183d7fcf0616b07257bd356435b2b12fbf2a",
+  "package_lock_sha256": "699f2fc389c8d95ad0e5c7f2ef1b3566152b1f9e5123e2ab49cb5c9d59285023",
+  "historical_working_byte_differences": [
+    {
+      "path": "reports/release-audit-v0.1/determinism/candidate-a-native-normal.stdout",
+      "bytes": 755,
+      "sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "commit_blob": "6b8e9d965965910b9ce8d8a6851080912d7748cd",
+      "working_bytes_match_commit_blob": false
+    },
+    {
+      "path": "reports/release-audit-v0.1/determinism/candidate-a-native-optimized.stdout",
+      "bytes": 755,
+      "sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "commit_blob": "6b8e9d965965910b9ce8d8a6851080912d7748cd",
+      "working_bytes_match_commit_blob": false
+    },
+    {
+      "path": "reports/release-audit-v0.1/determinism/candidate-b-native-normal.stdout",
+      "bytes": 755,
+      "sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "commit_blob": "6b8e9d965965910b9ce8d8a6851080912d7748cd",
+      "working_bytes_match_commit_blob": false
+    },
+    {
+      "path": "reports/release-audit-v0.1/determinism/candidate-b-native-optimized.stdout",
+      "bytes": 755,
+      "sha256": "02230d98a4810e90dd060d07b32c439d280c90b2796b65af74a2a5a08bd4f02c",
+      "commit_blob": "6b8e9d965965910b9ce8d8a6851080912d7748cd",
+      "working_bytes_match_commit_blob": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "node",
+    "--test",
+    "tests/requirement-admission-release.test.mjs"
+  ],
+  "exitCode": 0,
+  "counts": {
+    "tests": 43,
+    "pass": 43,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "stdoutSha256": "648eacfa054b0eb7010dcdfa26ac86a80593cf8818a41faac25c7438f4aa6125",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

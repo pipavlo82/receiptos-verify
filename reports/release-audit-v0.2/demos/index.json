@@ -1,0 +1,119 @@
+{
+  "count": 14,
+  "passed": 14,
+  "rows": [
+    {
+      "id": "D1",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "source_receipt": "repair/core-final/results/D1.json",
+      "source_receipt_sha256": "bc615c7dcb98cf9919742a132c5a5757e1a972e9d311082d8b4bc4fcae96c0c4",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D2",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "source_receipt": "repair/core-final/results/D2.json",
+      "source_receipt_sha256": "635eb99f006bcac3dd74a7c021bd507e5dbb92b7881930f12f2fa8287d98abad",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D3",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "source_receipt": "repair/domains-final/cases/D3_semantic_scope.json",
+      "source_receipt_sha256": "e35fc0ee16b5e32ca63045ace1220a542b4ffbaa2440350d20b013c0257aeca6",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D4",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "source_receipt": "repair/domains-final/cases/D4_semantic_authority.json",
+      "source_receipt_sha256": "5c7a9ddaa2008a25435bf3f5d560628c0c1d45ac41204a3d82248ec94726ea98",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D5",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "source_receipt": "repair/domains-final/cases/D5_trustless_compatible.json",
+      "source_receipt_sha256": "810b0b96ed736c2f920aa197c0c86e02c4077b2ec92ad0bc68a3d8390a77e1b8",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D6",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "source_receipt": "repair/domains-final/cases/D6_trustless_incompatible.json",
+      "source_receipt_sha256": "e41322606652614c41c49b580b14fee89234d8a477f6f7dad50c3c1bfd87099a",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D7",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "source_receipt": "repair/domains-final/cases/D7_interpoll_exact.json",
+      "source_receipt_sha256": "f6e4596de01eb8f723e7e792bc7a5ef612740a3f57b6129bd1313e7ff9e7c32c",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D8",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "source_receipt": "repair/domains-final/cases/D8_interpoll_mutated_retry.json",
+      "source_receipt_sha256": "e452aeddd2c5fa8c363f5c323a9c2fc64b2968b9dc37403b4a61ba6dcc87e353",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D9",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "source_receipt": "repair/domains-final/cases/D9_prf_preserved.json",
+      "source_receipt_sha256": "bb76d7427c4f400b5f33740a289aebaee600a5876b01bcab062a20f889b6fd6c",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D10",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "source_receipt": "repair/domains-final/cases/D10_prf_violated.json",
+      "source_receipt_sha256": "7459549f62b34c2067e529804f968f67790d20e3b8ecdb34fa926a519c9fd066",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D11",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "source_receipt": "repair/domains-final/cases/D11_reproduced_negative.json",
+      "source_receipt_sha256": "1ce0bf397a0a866f7f35f589ed6256cc3736fb10a43b574fb791aa7366a59651",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D12",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "source_receipt": "repair/core-final/results/D12.json",
+      "source_receipt_sha256": "935930b4a7b262bab852dc968060110b3004b704eb50ba0be100c763f15f18d8",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    },
+    {
+      "id": "D13",
+      "expected": "CANNOT_RECOMPUTE",
+      "actual": "CANNOT_RECOMPUTE",
+      "source_receipt": "demos/D13.json",
+      "source_receipt_sha256": "f5e49ee62500fdb8564df77d74e828e797ea64755170aed7709dff0f11143bb4",
+      "source_head": "4888a0584369a91075eb2bdbd9a2ff6b99c46588"
+    },
+    {
+      "id": "D14",
+      "expected": "UNSUPPORTED_PROFILE",
+      "actual": "UNSUPPORTED_PROFILE",
+      "source_receipt": "repair/core-final/results/D14.json",
+      "source_receipt_sha256": "55a734fce99c6012920f09a72a47bd37bb5e95ec440d80ad45c3c4b7ec0cf5c7",
+      "source_head": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f"
+    }
+  ],
+  "boundary": "Fresh independent inputs, not product fixture builders. D13 is an explicitly faulted frozen disposable source; other demos rerun on exact repair1fec. Full outputs preserve native results. Final schema correction does not alter these inputs/native paths."
+}

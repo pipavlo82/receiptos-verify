@@ -8016,7 +8016,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "babyblueviper1/semantic-execution-guard",
@@ -8037,7 +8038,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "casinocutup/Solana-Mines-Game",
@@ -8058,7 +8060,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "CYPHES-ATP/Artifact-Two",
@@ -8083,7 +8086,8 @@
       "integrationModes": [
         "METHODOLOGY_ONLY",
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "CYPHES-ATP/Stealth",
@@ -8106,7 +8110,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "eddieoz/bitBingo",
@@ -8127,7 +8132,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "ethereum/ERCs",
@@ -8150,7 +8156,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "Interpoll1/decentralised",
@@ -8183,6 +8190,10 @@
       "integrationModes": [
         "PINNED_SOURCE",
         "REIMPLEMENTED_FROM_SPEC"
+      ],
+      "v02IntegrationIds": [
+        "interpoll-native-signed-action-v02",
+        "interpoll-exact-retry-trace-v02"
       ]
     },
     {
@@ -8204,7 +8215,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "justFiveDev/Solana-Casino-Jackpot",
@@ -8225,7 +8237,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "OffchainLabs/community-helm-charts",
@@ -8246,7 +8259,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "open-quantum-safe/liboqs-java",
@@ -8267,7 +8281,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "PandaExplorer/Provably-Fair-iGaming-Demo",
@@ -8288,7 +8303,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/-crystal-artifact",
@@ -8318,7 +8334,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/Chronicle",
@@ -8350,7 +8367,8 @@
       "integrationModes": [
         "PINNED_SOURCE",
         "REIMPLEMENTED_FROM_SPEC"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/conduct-witness",
@@ -8387,7 +8405,8 @@
       ],
       "integrationModes": [
         "METHODOLOGY_ONLY"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/cross-reference-console",
@@ -8410,7 +8429,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/crystal-receipt",
@@ -8471,7 +8491,8 @@
         "PINNED_SOURCE",
         "REIMPLEMENTED_FROM_SPEC",
         "TEST_FIXTURE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/decentralised",
@@ -8492,7 +8513,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/ERCs",
@@ -8515,7 +8537,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/gas-per-secure-bit",
@@ -8553,7 +8576,8 @@
       ],
       "integrationModes": [
         "METHODOLOGY_ONLY"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
@@ -8584,7 +8608,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/pipavlo82.github.io",
@@ -8614,7 +8639,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "TEST_FIXTURE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/pq-receipt-profile",
@@ -8652,7 +8678,8 @@
       ],
       "integrationModes": [
         "REIMPLEMENTED_FROM_SPEC"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/pqevm-vector-packs",
@@ -8682,7 +8709,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "METHODOLOGY_ONLY"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/protected-relation-fixtures",
@@ -8718,6 +8746,10 @@
         "METHODOLOGY_ONLY",
         "PINNED_SOURCE",
         "REIMPLEMENTED_FROM_SPEC"
+      ],
+      "v02IntegrationIds": [
+        "prf-main-award-settlement-native-v02",
+        "prf-downstream-native-dependency-transfer-v02"
       ]
     },
     {
@@ -8828,7 +8860,8 @@
         "DEPENDENCY",
         "METHODOLOGY_ONLY",
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/r4-saas-api",
@@ -8860,7 +8893,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/receiptos-mvp",
@@ -8890,7 +8924,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/receiptos-pq-lab",
@@ -8921,7 +8956,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/recomputable-verification-receipts",
@@ -8971,7 +9007,8 @@
         "DEPENDENCY",
         "PINNED_SOURCE",
         "TEST_FIXTURE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "pipavlo82/relational-security-invariants",
@@ -9008,6 +9045,9 @@
       ],
       "integrationModes": [
         "METHODOLOGY_ONLY"
+      ],
+      "v02IntegrationIds": [
+        "rsi-v02-independent-relation-tests"
       ]
     },
     {
@@ -9045,6 +9085,9 @@
       ],
       "integrationModes": [
         "METHODOLOGY_ONLY"
+      ],
+      "v02IntegrationIds": [
+        "seg-v02-caller-context-binding-method"
       ]
     },
     {
@@ -9066,7 +9109,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "shentonyan/sealed-bid-award-erc",
@@ -9087,7 +9131,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "tapiwamakandigona/zimbet",
@@ -9108,7 +9153,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "trustless-ai/agent-sdk",
@@ -9131,7 +9177,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "TEST_FIXTURE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "trustless-ai/ccip-router",
@@ -9154,7 +9201,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "trustless-ai/cross-reference-console",
@@ -9177,7 +9225,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "PINNED_SOURCE"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "trustless-ai/pq-agent-binding",
@@ -9208,7 +9257,8 @@
       ],
       "integrationModes": [
         "REIMPLEMENTED_FROM_SPEC"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "trustless-ai/primitives",
@@ -9231,7 +9281,8 @@
       "usedCapabilityIds": [],
       "integrationModes": [
         "METHODOLOGY_ONLY"
-      ]
+      ],
+      "v02IntegrationIds": []
     },
     {
       "repository": "trustless-ai/recompute-kit",
@@ -9279,6 +9330,9 @@
       "integrationModes": [
         "METHODOLOGY_ONLY",
         "PINNED_SOURCE"
+      ],
+      "v02IntegrationIds": [
+        "trustless-native-scan-v02"
       ]
     },
     {
@@ -9310,6 +9364,9 @@
       ],
       "integrationModes": [
         "REIMPLEMENTED_FROM_SPEC"
+      ],
+      "v02IntegrationIds": [
+        "semantic-abi-native-neutral-v02"
       ]
     }
   ],
@@ -9476,5 +9533,857 @@
     "descriptorMaturityBoundary": "Raw descriptors remain 2 STABLE and 10 EXPERIMENTAL; Ledger is classified INTERFACE_ONLY for actual capability maturity.",
     "correctedImplementedSlices": 21,
     "historicalReportsFrozen": true
+  },
+  "v02Base": {
+    "publicTag": "v0.1.0",
+    "commit": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+    "tree": "8a5de5a3735e04f3f45cf164b59da17289693bc2",
+    "historicalSourcesEntries": 74,
+    "historicalRepositoryRows": 43,
+    "historicalRowsSHA256": "f4b4ea5918d6010bb5dd085749b952935ad1eaa2992c7d291e0aea51092f249d",
+    "historicalSourcesSHA256": "b0ce98e2d48d7a8cbb0ef65488806c393eb2a58e5130e691984d2e0926723548",
+    "scope": "Original source rows and repository accounts retain v0.1 meanings and pins; v0.2 mappings are additive."
+  },
+  "v02ProductExtensions": [
+    {
+      "capabilityId": "generic-claim-boundary-v02",
+      "integrationMode": "REIMPLEMENTED_FROM_SPEC",
+      "maturity": "EXPERIMENTAL",
+      "basisCapabilityIds": [
+        "semantic-abi-native-neutral-v02",
+        "rsi-v02-independent-relation-tests",
+        "seg-v02-caller-context-binding-method"
+      ],
+      "baselineCapabilityIds": [
+        "RVR-CORE",
+        "seg-relations",
+        "shared.semantic",
+        "RSI-PLANE"
+      ],
+      "productFiles": [
+        "src/core/verify-v2.mjs",
+        "src/core/claim-surface.mjs",
+        "src/core/evidence-v2.mjs",
+        "src/core/authenticity-v2.mjs",
+        "src/core/admission-v2.mjs",
+        "src/projection/project-v2.mjs"
+      ],
+      "boundary": "Original product composition and generic claim-surface schema; no claim of upstream native wire conformance or copied private implementation."
+    }
+  ],
+  "v02Coverage": {
+    "repositoryRows": 43,
+    "historicalSourceEntries": 74,
+    "newIntegrationEntries": 8,
+    "newlyIntegratedSourceRepositories": 6,
+    "newCopiedFiles": 14,
+    "allUpstreamsReadOnly": true,
+    "openSourcePRsAreNotMain": true,
+    "testCounts": "Actual final v0.2 gate is recorded in V0_2_REVIEW_REPORT.md; no preclaimed counts."
+  },
+  "v02Integrations": [
+    {
+      "capabilityId": "semantic-abi-native-neutral-v02",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "sourceTree": "63b5075bffb3027ab63c2a7f25de06502b0ed861",
+      "upstreamState": "MERGED_MAIN",
+      "license": "Apache-2.0",
+      "maturity": "EXPERIMENTAL",
+      "integrationMode": "PINNED_SOURCE",
+      "sourcePaths": [
+        "LICENSE",
+        "runner/src/classes.mjs",
+        "runner/src/evaluate.mjs",
+        "runner/src/linker.mjs",
+        "runner/src/manifest.mjs"
+      ],
+      "productFiles": [
+        "src/adapters/semantic-abi-v2.mjs",
+        "tests/semantic-abi-v2.test.mjs",
+        "docs/semantic-abi-adapter.md",
+        "vendor/semantic-abi-v02/runner/src/classes.mjs",
+        "vendor/semantic-abi-v02/runner/src/linker.mjs",
+        "vendor/semantic-abi-v02/runner/src/manifest.mjs",
+        "vendor/semantic-abi-v02/runner/src/evaluate.mjs",
+        "vendor/semantic-abi-v02/LICENSE"
+      ],
+      "copiedFiles": [
+        {
+          "sourcePath": "LICENSE",
+          "productPath": "vendor/semantic-abi-v02/LICENSE",
+          "gitBlob": "57bc88a15a0ee8266c259b2667e64608d3f7e292",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "bytes": 11358,
+          "mode": "PINNED_SOURCE"
+        },
+        {
+          "sourcePath": "runner/src/classes.mjs",
+          "productPath": "vendor/semantic-abi-v02/runner/src/classes.mjs",
+          "gitBlob": "3ddaf89d6698a5000c5a1698fb980e310a7aa90e",
+          "sha256": "d8f0ae249e4d3f6ac56694f8cabc15de8bc5b678c1156fc01e060cd4c0b50374",
+          "bytes": 667,
+          "mode": "PINNED_SOURCE"
+        },
+        {
+          "sourcePath": "runner/src/evaluate.mjs",
+          "productPath": "vendor/semantic-abi-v02/runner/src/evaluate.mjs",
+          "gitBlob": "b5f1121b608cf4db0143be49db924ca945b76135",
+          "sha256": "a2f1c3caaaeeb37b7067618f7ee0b98bddece859baee7dfbfc68a44be58699b0",
+          "bytes": 2639,
+          "mode": "PINNED_SOURCE"
+        },
+        {
+          "sourcePath": "runner/src/linker.mjs",
+          "productPath": "vendor/semantic-abi-v02/runner/src/linker.mjs",
+          "gitBlob": "c292a23ef0f3c283e600522f7a13a42fdceee1d8",
+          "sha256": "bae8e519361989bfadbb5d226cb9940255cd954c60b40ba42136a2b11161d391",
+          "bytes": 4044,
+          "mode": "PINNED_SOURCE"
+        },
+        {
+          "sourcePath": "runner/src/manifest.mjs",
+          "productPath": "vendor/semantic-abi-v02/runner/src/manifest.mjs",
+          "gitBlob": "2ed2ac8af5ab2f27cca522e3b3cdc28da395a8ff",
+          "sha256": "04b71bce59b731f4834099e53c7360998dc4e56ee1e3a5144f8c17ca10e6125e",
+          "bytes": 4995,
+          "mode": "PINNED_SOURCE"
+        }
+      ],
+      "authorshipEvidence": {
+        "paths": {
+          "runner/src/classes.mjs": [
+            {
+              "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+              "author_name": "Pavlo Tvardovskyi",
+              "author_login": "pipavlo82",
+              "message": "fix: align semantic model before v0 freeze"
+            },
+            {
+              "sha": "0a36370b930325f4f75994b00a41e6da5efb3670",
+              "author_name": "Echo-Merlini",
+              "author_login": "Echo-Merlini",
+              "message": "runner+schema: Pavlo's before-freeze fixes\n\n1. Semantic edge is now claim- AND scope-specific: no global INDEPENDENT_RECOMPUTATION\n   -> SEMANTIC_VERIFICATION upgrade (that would be the exact overclaim the linker catches).\n   Recompute of claim C@scope S establishes semantic verification of C@S only.\n2. Runner keeps oracle_pair / observed_pair / backend as three separate fields — pre-v18\n   collapse now reports oracle=VIOLATED, observed=PRESERVED, backend=FAIL distinctly.\n3. manifest.schema.json aligned with manifest-v0.md: structured Evidence type\n   (authority_class + claim_type + scope) + issued_at XOR verification_time (no generic as_of)."
+            },
+            {
+              "sha": "7287810527bc14174d8cef9f41d7e237130006ea",
+              "author_name": "Echo-Merlini",
+              "author_login": "Echo-Merlini",
+              "message": "runner: working zero-dep two-level evaluator + semantic linker\n\nnode runner/demo.mjs runs end-to-end: linker emits TYPE ERRORs with counterexamples;\ntwo-level runner (pair outcome x backend conformance) reproduces the pre-v18 signed-\ncommitment collapse as a single FAIL + minimal witness; tampered fixtures read\nVIOLATED pair / PASS backend on conforming adapters; pending backend stays CANNOT_CHECK."
+            }
+          ],
+          "runner/src/linker.mjs": [
+            {
+              "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+              "author_name": "Pavlo Tvardovskyi",
+              "author_login": "pipavlo82",
+              "message": "fix: align semantic model before v0 freeze"
+            },
+            {
+              "sha": "0a36370b930325f4f75994b00a41e6da5efb3670",
+              "author_name": "Echo-Merlini",
+              "author_login": "Echo-Merlini",
+              "message": "runner+schema: Pavlo's before-freeze fixes\n\n1. Semantic edge is now claim- AND scope-specific: no global INDEPENDENT_RECOMPUTATION\n   -> SEMANTIC_VERIFICATION upgrade (that would be the exact overclaim the linker catches).\n   Recompute of claim C@scope S establishes semantic verification of C@S only.\n2. Runner keeps oracle_pair / observed_pair / backend as three separate fields — pre-v18\n   collapse now reports oracle=VIOLATED, observed=PRESERVED, backend=FAIL distinctly.\n3. manifest.schema.json aligned with manifest-v0.md: structured Evidence type\n   (authority_class + claim_type + scope) + issued_at XOR verification_time (no generic as_of)."
+            },
+            {
+              "sha": "7287810527bc14174d8cef9f41d7e237130006ea",
+              "author_name": "Echo-Merlini",
+              "author_login": "Echo-Merlini",
+              "message": "runner: working zero-dep two-level evaluator + semantic linker\n\nnode runner/demo.mjs runs end-to-end: linker emits TYPE ERRORs with counterexamples;\ntwo-level runner (pair outcome x backend conformance) reproduces the pre-v18 signed-\ncommitment collapse as a single FAIL + minimal witness; tampered fixtures read\nVIOLATED pair / PASS backend on conforming adapters; pending backend stays CANNOT_CHECK."
+            }
+          ],
+          "runner/src/manifest.mjs": [
+            {
+              "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+              "author_name": "Pavlo Tvardovskyi",
+              "author_login": "pipavlo82",
+              "message": "fix: align semantic model before v0 freeze"
+            }
+          ],
+          "runner/src/evaluate.mjs": [
+            {
+              "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+              "author_name": "Pavlo Tvardovskyi",
+              "author_login": "pipavlo82",
+              "message": "fix: align semantic model before v0 freeze"
+            },
+            {
+              "sha": "0a36370b930325f4f75994b00a41e6da5efb3670",
+              "author_name": "Echo-Merlini",
+              "author_login": "Echo-Merlini",
+              "message": "runner+schema: Pavlo's before-freeze fixes\n\n1. Semantic edge is now claim- AND scope-specific: no global INDEPENDENT_RECOMPUTATION\n   -> SEMANTIC_VERIFICATION upgrade (that would be the exact overclaim the linker catches).\n   Recompute of claim C@scope S establishes semantic verification of C@S only.\n2. Runner keeps oracle_pair / observed_pair / backend as three separate fields — pre-v18\n   collapse now reports oracle=VIOLATED, observed=PRESERVED, backend=FAIL distinctly.\n3. manifest.schema.json aligned with manifest-v0.md: structured Evidence type\n   (authority_class + claim_type + scope) + issued_at XOR verification_time (no generic as_of)."
+            },
+            {
+              "sha": "7287810527bc14174d8cef9f41d7e237130006ea",
+              "author_name": "Echo-Merlini",
+              "author_login": "Echo-Merlini",
+              "message": "runner: working zero-dep two-level evaluator + semantic linker\n\nnode runner/demo.mjs runs end-to-end: linker emits TYPE ERRORs with counterexamples;\ntwo-level runner (pair outcome x backend conformance) reproduces the pre-v18 signed-\ncommitment collapse as a single FAIL + minimal witness; tampered fixtures read\nVIOLATED pair / PASS backend on conforming adapters; pending backend stays CANNOT_CHECK."
+            }
+          ]
+        },
+        "pull_request": {
+          "number": 1,
+          "url": "https://github.com/trustless-ai/semantic-abi/pull/1",
+          "author": "pipavlo82",
+          "state": "closed",
+          "merged_at": "2026-09-05T20:04:55Z",
+          "head": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+          "merge_commit_sha": "474b474132a64d139972ebf2c06c18a174ce39bb",
+          "commits": [
+            {
+              "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+              "author": "Pavlo Tvardovskyi"
+            },
+            {
+              "sha": "e15832420b7c6350bbf4934ad90391e6af7a109f",
+              "author": "babyblueviper1"
+            },
+            {
+              "sha": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+              "author": "Pavlo Tvardovskyi"
+            }
+          ]
+        }
+      },
+      "authorshipBoundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred.",
+      "productExtensionMode": "REIMPLEMENTED_FROM_SPEC",
+      "productExtensions": [
+        "canonical embedding of generic claim/scope/time interval into native string equality relation",
+        "independent generic surface compatibility",
+        "detached optional pair-oracle admission"
+      ],
+      "excluded": [
+        "adapters/vertice/**",
+        "adapters/invinoveritas/**",
+        "ui/**",
+        "private/commercial Vertice material"
+      ],
+      "limitations": [
+        "Draft upstream v0 neutral runtime only; bounded generic embedding is not standard native manifest wire conformance.",
+        "The linker validates declared semantic relationships, not authenticity or real-world correctness.",
+        "A native valid edge or backend-conformance PASS never overrides product semantic contradictions."
+      ],
+      "contributionEvidence": [
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "pipavlo82",
+          "authorName": "Pavlo Tvardovskyi",
+          "commit": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "sourcePath": "runner/src/classes.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "Echo-Merlini",
+          "authorName": "Echo-Merlini",
+          "commit": "0a36370b930325f4f75994b00a41e6da5efb3670",
+          "sourcePath": "runner/src/classes.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/0a36370b930325f4f75994b00a41e6da5efb3670",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "Echo-Merlini",
+          "authorName": "Echo-Merlini",
+          "commit": "7287810527bc14174d8cef9f41d7e237130006ea",
+          "sourcePath": "runner/src/classes.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/7287810527bc14174d8cef9f41d7e237130006ea",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "pipavlo82",
+          "authorName": "Pavlo Tvardovskyi",
+          "commit": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "sourcePath": "runner/src/linker.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "Echo-Merlini",
+          "authorName": "Echo-Merlini",
+          "commit": "0a36370b930325f4f75994b00a41e6da5efb3670",
+          "sourcePath": "runner/src/linker.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/0a36370b930325f4f75994b00a41e6da5efb3670",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "Echo-Merlini",
+          "authorName": "Echo-Merlini",
+          "commit": "7287810527bc14174d8cef9f41d7e237130006ea",
+          "sourcePath": "runner/src/linker.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/7287810527bc14174d8cef9f41d7e237130006ea",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "pipavlo82",
+          "authorName": "Pavlo Tvardovskyi",
+          "commit": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "sourcePath": "runner/src/manifest.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "pipavlo82",
+          "authorName": "Pavlo Tvardovskyi",
+          "commit": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "sourcePath": "runner/src/evaluate.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "Echo-Merlini",
+          "authorName": "Echo-Merlini",
+          "commit": "0a36370b930325f4f75994b00a41e6da5efb3670",
+          "sourcePath": "runner/src/evaluate.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/0a36370b930325f4f75994b00a41e6da5efb3670",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        },
+        {
+          "role": "SOURCE_CHANGE_HISTORY",
+          "actor": "Echo-Merlini",
+          "authorName": "Echo-Merlini",
+          "commit": "7287810527bc14174d8cef9f41d7e237130006ea",
+          "sourcePath": "runner/src/evaluate.mjs",
+          "url": "https://github.com/trustless-ai/semantic-abi/commit/7287810527bc14174d8cef9f41d7e237130006ea",
+          "boundary": "Pavlo-authored semantic-model fixes are supported by commit and merged PR paths. Echo-Merlini neutral-runtime implementation history is retained; no sole authorship, ownership or revenue share inferred."
+        }
+      ],
+      "upstreamPullRequests": [
+        {
+          "number": 1,
+          "url": "https://github.com/trustless-ai/semantic-abi/pull/1",
+          "author": "pipavlo82",
+          "state": "MERGED",
+          "merged_at": "2026-09-05T20:04:55Z",
+          "head": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+          "merge_commit_sha": "474b474132a64d139972ebf2c06c18a174ce39bb",
+          "commits": [
+            {
+              "sha": "8fb67bd43140a1cc7aab5c272796da0417d3ceaf",
+              "author": "Pavlo Tvardovskyi"
+            },
+            {
+              "sha": "e15832420b7c6350bbf4934ad90391e6af7a109f",
+              "author": "babyblueviper1"
+            },
+            {
+              "sha": "4c4e29c61a77ec9cfdf4d6b06ce63e57ef4d4c8c",
+              "author": "Pavlo Tvardovskyi"
+            }
+          ],
+          "maturity": "STABLE"
+        }
+      ],
+      "sourceFragment": "provenance/v02-semantic-abi.json",
+      "sourceFragmentSHA256": "5ac4bfe674729ec4c41f0efc2d52ea61c8d6b302e9d2afcc33f1a942f58b600b",
+      "ownershipIsNotAuthorship": true
+    },
+    {
+      "observedAt": "2026-10-11T21:45:10.478365+00:00",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "sourceTree": "7b64f2b3f51a3df93ab74d6ea717f74635799845",
+      "sourceState": "PUBLIC_MAIN",
+      "license": "CC0-1.0",
+      "maturity": "EXPERIMENTAL",
+      "integrationMode": "PINNED_SOURCE",
+      "capabilityId": "trustless-native-scan-v02",
+      "sourcePaths": [
+        "LICENSE",
+        "tools/run_conformance.py",
+        "conformance/scan-subject-binding-v0/scan_check.py",
+        "conformance/scan-subject-binding-v0/README.md",
+        "conformance/scan-subject-binding-v0/suite.json"
+      ],
+      "productFiles": [
+        "src/adapters/trustless.mjs",
+        "src/adapters/native/trustless-bridge.py",
+        "tests/trustless-v02.test.mjs",
+        "tests/helpers/trustless-v02-fixture.mjs",
+        "docs/trustless-adapter.md"
+      ],
+      "upstreamPullRequests": [
+        {
+          "number": 59,
+          "state": "MERGED",
+          "head": "a05099ee5674f40148ee88ddf5105fdcf2fda607",
+          "mergeCommit": "afd69037b3ef0cae7019eaa7328f3459954e116a",
+          "author": "babyblueviper1",
+          "mergedAt": "2026-10-09T01:46:39Z",
+          "used": true
+        },
+        {
+          "number": 65,
+          "state": "MERGED",
+          "head": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+          "mergeCommit": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+          "author": "pipavlo82",
+          "mergedAt": "2026-10-11T20:26:34Z",
+          "used": "source main includes merged guard history; PR65 profile mutation files are not vendored"
+        },
+        {
+          "number": 57,
+          "state": "OPEN",
+          "head": "197c6d26e68f85a117dd12a94924a7f959edaef4",
+          "base": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+          "author": "babyblueviper1",
+          "maturity": "EXPERIMENTAL",
+          "used": false,
+          "reason": "Unmerged reporter-contract migration kept distinct from executable main adapter."
+        },
+        {
+          "number": 52,
+          "state": "OPEN",
+          "head": "7eaf8995748ec4a00cb313463d2555da8fea25b4",
+          "author": "babyblueviper1",
+          "maturity": "EXPERIMENTAL",
+          "used": false,
+          "reason": "Unmerged uncovered-entry behavior not imported."
+        }
+      ],
+      "boundaries": [
+        "STABLE identifies merged source, not production security certification.",
+        "Five selected upstream text files copied byte-for-byte from Git blobs; no captured datasets copied.",
+        "Only native scan_subject_binding.v0 raw relation and one-case conformance runner are executed, not all upstream suites or mutation coverage.",
+        "Main does not declare adapter.contract for the selected suite; native contractMode is null, product runnerContractInterpretation is MAIN_SELF_GRADING.",
+        "Saved native expected result is only replay target; native raw functions compute semantic outcome independently.",
+        "No private or commercial Vertice material used."
+      ],
+      "sourceMaturity": "STABLE",
+      "contributionEvidence": [
+        {
+          "role": "SCAN_IMPLEMENTATION",
+          "actor": "babyblueviper1",
+          "commit": "a05099ee5674f40148ee88ddf5105fdcf2fda607",
+          "sourcePath": "conformance/scan-subject-binding-v0/scan_check.py",
+          "url": "https://github.com/trustless-ai/recompute-kit/commit/a05099ee5674f40148ee88ddf5105fdcf2fda607",
+          "boundary": "Shared implementation, not sole Pavlo authorship; commit message credits Zexo and Pavlo evidence-grade refusal finding."
+        },
+        {
+          "role": "PUBLIC_SPEC_WITNESS_AND_REVIEW",
+          "actor": "pipavlo82",
+          "sourcePath": "conformance/scan-subject-binding-v0/README.md",
+          "url": "https://github.com/trustless-ai/recompute-kit/blob/1a37bcaf91918fd8a98f164d97d0fddbc28c6755/conformance/scan-subject-binding-v0/README.md",
+          "boundary": "README credits built-with Pavlo first effective-dataset executable witness and reshaping after his review; does not establish authorship of every checker line."
+        },
+        {
+          "role": "AUTHORED_RUNNER_FAILURE_CLASSIFIER_IMPLEMENTATION",
+          "actor": "pipavlo82",
+          "commit": "ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+          "sourcePath": "tools/run_conformance.py",
+          "url": "https://github.com/trustless-ai/recompute-kit/commit/ce28d6888b224dd8551d0d1a1196a6cd706420cd",
+          "boundary": "GitHub author pipavlo82; commit author Pavlo Tvardovskyi. Selected runner also contains babyblueviper1, Merlini/Echo and zexoverz contributions."
+        },
+        {
+          "role": "POST_MERGE_REVIEW_COMMENT",
+          "actor": "pipavlo82",
+          "url": "https://github.com/trustless-ai/recompute-kit/pull/59#issuecomment-6072721352",
+          "boundary": "Review/ordering/documentation findings, not original implementation attribution."
+        }
+      ],
+      "copiedFiles": [
+        {
+          "sourcePath": "LICENSE",
+          "productPath": "vendor/recompute-kit-v02/LICENSE",
+          "sha256": "405d0af6743b62b00a440d519b85fd9c3f159ff85b3bcfcd8c683e6372b4a7aa",
+          "gitBlob": "4ca9d225df72209a217aa5fa6a703aedd08a78f5",
+          "bytes": 424,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "tools/run_conformance.py",
+          "productPath": "vendor/recompute-kit-v02/tools/run_conformance.py",
+          "sha256": "588fec7a6dbf43e80badc33a9a1d55e3ac22852d37a7abdf76d4ad2ce3dbe8ac",
+          "gitBlob": "18518a2ba933ccc1debfc4040d01afd9a5510cae",
+          "bytes": 25462,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/scan-subject-binding-v0/scan_check.py",
+          "productPath": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/scan_check.py",
+          "sha256": "8c35eb3c2dcbd30ce190c569a797cde1c7d86cc0130985b8a533cad640fe0a06",
+          "gitBlob": "17add57b592d30e293026184fc6b33dcd5367f5c",
+          "bytes": 9855,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/scan-subject-binding-v0/README.md",
+          "productPath": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/README.md",
+          "sha256": "62f0de287fcab59c734dda0de2a9626e1ab9a24f1db6aa35c44daeefdda1d024",
+          "gitBlob": "6f95b6a1da706b6cff154ce3237da47299e25d24",
+          "bytes": 5039,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "conformance/scan-subject-binding-v0/suite.json",
+          "productPath": "vendor/recompute-kit-v02/conformance/scan-subject-binding-v0/suite.json",
+          "sha256": "c4061ed3ec12bd85c97aa237febd80bd4fb23a0a97ed198410a609da412844bf",
+          "gitBlob": "342e7496286b5f4ff000bc426e5b708d77b80781",
+          "bytes": 1088,
+          "copiedUnmodified": true
+        }
+      ],
+      "sourceFragment": "provenance/v02-trustless.json",
+      "sourceFragmentSHA256": "8bb06973a832b322f2efd51e82ffb2b41059cc5b5d8ca89d888ce679bb02509b",
+      "ownershipIsNotAuthorship": true
+    },
+    {
+      "capabilityId": "interpoll-native-signed-action-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "defaultBranch": "master",
+      "license": "Unlicense",
+      "integrationMode": "PINNED_SOURCE",
+      "maturity": "EXPERIMENTAL",
+      "nativeSourceStatus": "CURRENT_DEFAULT_BRANCH",
+      "executes": "native verifyAction with fresh:false; native actionBytes for independent deterministic fixture signing",
+      "productFiles": [
+        "src/adapters/interpoll-v2.mjs",
+        "vendor/interpoll-v02/engagement.js",
+        "vendor/interpoll-v02/LICENSE",
+        "tests/interpoll-v2.test.mjs",
+        "tests/helpers/interpoll-v02-fixture.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "Interpoll1/decentralised",
+          "commit": "2cfde5efc3d10b56c73e74723d3f328b77f2fc1f",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "shared-validation/engagement.js",
+            "docs/security/PUBLIC_ENGAGEMENT_V1.md"
+          ],
+          "role": "signed public engagement action implementation",
+          "evidence_url": "https://github.com/Interpoll1/decentralised/commit/2cfde5efc3d10b56c73e74723d3f328b77f2fc1f",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "key control over exact signed intent, not fresh admission",
+        "no server execution, SQL atomicity, target existence, deployment, viewing or human uniqueness proof"
+      ],
+      "sourcePaths": [
+        "shared-validation/engagement.js",
+        "LICENSE"
+      ],
+      "copiedFiles": [
+        {
+          "sourcePath": "shared-validation/engagement.js",
+          "productPath": "vendor/interpoll-v02/engagement.js",
+          "sha256": "50f609b6408d81dfa12c3a454a6db7a2d98600e1ed81ac68131f0bbc81d6d5c3",
+          "gitBlob": "791b0b1aaa5af6743a966c1c441bd6e3f7424794",
+          "bytes": 3823,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "LICENSE",
+          "productPath": "vendor/interpoll-v02/LICENSE",
+          "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e",
+          "gitBlob": "fdddb29aa445bf3d6a5d843d6dd77e10a9f99657",
+          "bytes": 1211,
+          "copiedUnmodified": true
+        }
+      ],
+      "sourceFragment": "provenance/v02-actions-prf.json",
+      "sourceFragmentSHA256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616",
+      "ownershipIsNotAuthorship": true
+    },
+    {
+      "capabilityId": "interpoll-exact-retry-trace-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "defaultBranch": "master",
+      "license": "Unlicense",
+      "integrationMode": "REIMPLEMENTED_FROM_SPEC",
+      "maturity": "EXPERIMENTAL",
+      "executes": "product exact signed action / acceptance / retry / supplied observation / committed trace comparisons",
+      "productFiles": [
+        "src/adapters/interpoll-v2.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "docs/interpoll-adapter.md"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "Interpoll1/decentralised",
+          "commit": "a1eb47653aa7b8f0484ab977d75a5db41d226d02",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "src/services/reactionOutboxService.ts",
+            "src/services/publicEngagementService.ts",
+            "docs/security/PUBLIC_ENGAGEMENT_REVIEW_FOLLOWUP.md"
+          ],
+          "role": "durable exact signed reaction retries",
+          "evidence_url": "https://github.com/Interpoll1/decentralised/commit/a1eb47653aa7b8f0484ab977d75a5db41d226d02",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "original TypeScript outbox and database store are not copied or executed",
+        "supplied execution observations do not prove actual relay execution"
+      ],
+      "sourcePaths": [
+        "src/services/reactionOutboxService.ts",
+        "src/services/publicEngagementService.ts",
+        "shared-validation/engagement-store.js",
+        "docs/security/PUBLIC_ENGAGEMENT_REVIEW_FOLLOWUP.md"
+      ],
+      "copiedFiles": [],
+      "sourceFragment": "provenance/v02-actions-prf.json",
+      "sourceFragmentSHA256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616",
+      "ownershipIsNotAuthorship": true
+    },
+    {
+      "capabilityId": "prf-main-award-settlement-native-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "integrationMode": "PINNED_SOURCE",
+      "maturity": "STABLE",
+      "nativeSourceStatus": "MERGED_MAIN",
+      "executes": "Python isolated native relation(award,settlements) over fresh synthetic tuples selected independently by mandatory caller input digest; no upstream fixture or expected-case lookup",
+      "productFiles": [
+        "src/adapters/prf-v2.mjs",
+        "vendor/prf-v02/award_actual_settlement.py",
+        "vendor/prf-v02/LICENSE",
+        "tests/prf-v2.test.mjs",
+        "tests/helpers/prf-v02-fixture.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/protected-relation-fixtures",
+          "commit": "717f04b3216c560949331dfc084e2fa6bb5e95bd",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "tools/award_actual_settlement.py",
+            "tests/test_award_actual_settlement.py"
+          ],
+          "role": "bounded award-to-actual-settlement relation implementation",
+          "evidence_url": "https://github.com/pipavlo82/protected-relation-fixtures/commit/717f04b3216c560949331dfc084e2fa6bb5e95bd",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "one supplied synthetic award and settlement list",
+        "no universal incentive guarantee, authenticated chain or award authority"
+      ],
+      "sourcePaths": [
+        "tools/award_actual_settlement.py",
+        "LICENSE"
+      ],
+      "copiedFiles": [
+        {
+          "sourcePath": "tools/award_actual_settlement.py",
+          "productPath": "vendor/prf-v02/award_actual_settlement.py",
+          "sha256": "5780733a43b023b52d8c035277ca2b926f5ab1ae40edcc74e61880b43d665cd1",
+          "gitBlob": "3210be9b560e61663b6978bb3ae5843f6f3f2901",
+          "bytes": 10986,
+          "copiedUnmodified": true
+        },
+        {
+          "sourcePath": "LICENSE",
+          "productPath": "vendor/prf-v02/LICENSE",
+          "sha256": "11d93abd8b3371d3d3dbc536e11e132f3482dc6334eca0006601cfd58229253e",
+          "gitBlob": "43144637bafd1cfbb21ba83ee05cca4c3d931a09",
+          "bytes": 1074,
+          "copiedUnmodified": true
+        }
+      ],
+      "sourceFragment": "provenance/v02-actions-prf.json",
+      "sourceFragmentSHA256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616",
+      "ownershipIsNotAuthorship": true
+    },
+    {
+      "capabilityId": "prf-downstream-native-dependency-transfer-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "license": "MIT",
+      "integrationMode": "REIMPLEMENTED_FROM_SPEC",
+      "maturity": "EXPERIMENTAL",
+      "sourcePR": {
+        "number": 14,
+        "state": "OPEN",
+        "merged": false,
+        "headSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+        "baseSHA": "fac26d2e8346aeab08194343b78c345d235c6935"
+      },
+      "executes": "bounded product relation for caller-selected award/settlement input, exact native result and caller accepted dependency identities/versions; native VIOLATED may retain PRESERVED transfer",
+      "productFiles": [
+        "src/adapters/prf-v2.mjs",
+        "tests/prf-v2.test.mjs",
+        "docs/guarantee-preservation.md"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/protected-relation-fixtures",
+          "commit": "f525737069dc4cef7741f805d08a988912f4454f",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "tools/guarantee_preservation.py",
+            "tools/guarantee_preservation_adapters.py"
+          ],
+          "role": "experimental bounded guarantee preservation contract implementation",
+          "evidence_url": "https://github.com/pipavlo82/protected-relation-fixtures/commit/f525737069dc4cef7741f805d08a988912f4454f",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "open PR is not main",
+        "no PR14 wire conformance or Python consumer execution",
+        "accepted basis completeness and authority are caller premises",
+        "separate supplied PRF award/settlement obligation, not arbitrary surrounding RVR/Trustless native result transfer"
+      ],
+      "sourcePaths": [
+        "tools/guarantee_preservation.py",
+        "tools/guarantee_preservation_adapters.py",
+        "conformance/guarantee-preservation-v0/README.md"
+      ],
+      "copiedFiles": [],
+      "sourceFragment": "provenance/v02-actions-prf.json",
+      "sourceFragmentSHA256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616",
+      "ownershipIsNotAuthorship": true
+    },
+    {
+      "capabilityId": "rsi-v02-independent-relation-tests",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+      "sourceTree": "03750c1d457991025e824f6e8a58a3815cc34cab",
+      "defaultBranch": "main",
+      "license": "Apache-2.0 repository authored material; no source bytes imported",
+      "integrationMode": "METHODOLOGY_ONLY",
+      "maturity": "STABLE",
+      "productFiles": [
+        "tests/interpoll-v2.test.mjs",
+        "tests/prf-v2.test.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/relational-security-invariants",
+          "commit": "30e13ba3a39915c91a607f70975c669ead7a231e",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "spec/relation-profile-contract-v0.md"
+          ],
+          "role": "additive relation-profile contract",
+          "evidence_url": "https://github.com/pipavlo82/relational-security-invariants/commit/30e13ba3a39915c91a607f70975c669ead7a231e",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "methodology transfer is not RSI runtime integration or independent oracle proof"
+      ],
+      "sourcePaths": [
+        "README.md",
+        "spec/relation-profile-contract-v0.md",
+        "research/rsi-v0-mutation-matrix.md"
+      ],
+      "copiedFiles": [],
+      "sourceFragment": "provenance/v02-actions-prf.json",
+      "sourceFragmentSHA256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616",
+      "ownershipIsNotAuthorship": true
+    },
+    {
+      "capabilityId": "seg-v02-caller-context-binding-method",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "18f595b537017e5ff7b9074366c3065e877488f9",
+      "sourceTree": "fcb73100729bc1e94ca5b62a625dc6524ddbefe3",
+      "defaultBranch": "main",
+      "license": "Apache-2.0 repository authored material; no source bytes imported",
+      "integrationMode": "METHODOLOGY_ONLY",
+      "maturity": "STABLE",
+      "productFiles": [
+        "src/adapters/interpoll-v2.mjs",
+        "src/adapters/prf-v2.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/prf-v2.test.mjs"
+      ],
+      "contributionEvidence": [
+        {
+          "repository": "pipavlo82/semantic-execution-guard",
+          "commit": "a5f8aebff811ad12ffd6ba7ca01552f81dec35ac",
+          "github_login": "pipavlo82",
+          "git_author_name": "Pavlo Tvardovskyi",
+          "paths": [
+            "relations/robinhood-stock-token-v0/recompute.mjs"
+          ],
+          "role": "public local synthetic semantic relation implementation",
+          "evidence_url": "https://github.com/pipavlo82/semantic-execution-guard/commit/a5f8aebff811ad12ffd6ba7ca01552f81dec35ac",
+          "evidence_type": "independently_queried_github_commit_author_and_changed_paths",
+          "ownership_is_not_authorship": true
+        }
+      ],
+      "limits": [
+        "separate caller context, semantic substitutions and explicit execution boundaries only",
+        "no Solidity guard, deployment or testnet evidence imported"
+      ],
+      "sourcePaths": [
+        "README.md",
+        "relations/robinhood-stock-token-v0/README.md",
+        "PROVENANCE.md"
+      ],
+      "copiedFiles": [],
+      "sourceFragment": "provenance/v02-actions-prf.json",
+      "sourceFragmentSHA256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616",
+      "ownershipIsNotAuthorship": true
+    }
+  ],
+  "v02Fragments": [
+    {
+      "path": "provenance/v02-semantic-abi.json",
+      "sha256": "5ac4bfe674729ec4c41f0efc2d52ea61c8d6b302e9d2afcc33f1a942f58b600b"
+    },
+    {
+      "path": "provenance/v02-trustless.json",
+      "sha256": "8bb06973a832b322f2efd51e82ffb2b41059cc5b5d8ca89d888ce679bb02509b"
+    },
+    {
+      "path": "provenance/v02-actions-prf.json",
+      "sha256": "fd6a7dda8d7eb636d5d1ceb9d020ba59ee718e62a96771bc7cb23e8b962e4616"
+    }
+  ],
+  "v02ReleaseAuditObservation": {
+    "queriedAt": "2026-10-11T23:09:39.173Z",
+    "runtimePinsChanged": false,
+    "recomputeKitCurrentMain": {
+      "sha": "3c3923956200d01ab74c2dcbb49b268739943bda",
+      "tree": "950ea0aae7c5ccdd90446e1bf532a670837d3e0a",
+      "date": "2026-10-11T22:35:32Z",
+      "url": "https://github.com/trustless-ai/recompute-kit/commit/3c3923956200d01ab74c2dcbb49b268739943bda"
+    },
+    "PR57": {
+      "state": "closed",
+      "merged": true,
+      "mergedAt": "2026-10-11T22:35:33Z",
+      "head": "197c6d26e68f85a117dd12a94924a7f959edaef4",
+      "base": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "url": "https://github.com/trustless-ai/recompute-kit/pull/57"
+    },
+    "PRF_PR14": {
+      "state": "open",
+      "merged": false,
+      "mergedAt": null,
+      "head": "f525737069dc4cef7741f805d08a988912f4454f",
+      "base": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "url": "https://github.com/pipavlo82/protected-relation-fixtures/pull/14"
+    },
+    "scope": "Read-only release-audit observation; historical source fragments retain their own observation state. Current-main public vectors are audit-only CC0 fixtures, not newly imported runtime or reporter support.",
+    "evidence": "reports/release-audit-v0.2/domains/current-main-replay.json"
   }
 }

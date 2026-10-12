@@ -1,6 +1,6 @@
 # Provenance
 
-ReceiptOS Verify is a new local repository. The earlier audit documents remain frozen historical evidence. Existing repositories are public read inputs and were not modified for this implementation. All new code and provenance records are confined here.
+ReceiptOS Verify's public v0.1.0 base is `62cd3e59c8f568496ed087d55f0aec3d63363b0a`. The v0.2 work is an unpushed local continuation. Earlier audit documents remain frozen historical evidence. Existing upstream repositories are public read inputs and were not modified. All new code and provenance records are confined here.
 
 The [release-candidate audit](RELEASE_AUDIT_v0.1.md) separates original saved build observations from fresh candidate findings, fixes and release checks. Frozen saved reports and original attribution evidence remain unchanged.
 
@@ -20,7 +20,7 @@ Code, specifications, fixtures, load-bearing tests, security findings, reviews, 
 
 Crystal roots, RVR semantic/recompute axes, Semantic ABI declarations, PRF guarantees, Chronicle history and domain adapter results retain native meaning. Independent spec reimplementation is labeled separately from vendored runtime code. Private/commercial Vértice code and system-specific adapters are not selected.
 
-## Selected implementations and status
+## Historical v0.1 selected implementations and status
 
 There are 21 named implemented slices, including original methods and interfaces, across 12 registered surfaces: 11 bounded executable relations or admission operations and one ledger interface. Audited capability maturity is 2 STABLE, 9 EXPERIMENTAL and 1 INTERFACE_ONLY. CHRONICLE-ADMISSION checks supplied continuity and exact reference strings; CHRONICLE-ROOTS is a future capability. No Artifact/Collection/Portfolio aggregate roots are constructed or verified by the continuity adapter.
 
@@ -55,3 +55,64 @@ The CLI product `pack`/`verify-capsule` carrier remains an original schema/tree 
 The original PQ authority interface has 41 dedicated admission controls in `tests/pq.test.mjs`. Exact key identity, explicit authority fields, nonnegative safe-integer ordered half-open validity windows and explicit non-revocation are required before a trusted provider is called. Caller-provided authority and a provider callback remain premises; no real ML-DSA backend, complete event-time history or earliest-anchor-history conformance is established.
 
 The original saved full product suite records 251/251 with zero failures, cancellations or skips; the original saved corpus records 30/30 and original saved mutation report records fourteen kills. `provenance/sources.json` retains those exact report digests with historical scope. An earlier concurrent cleanup-control failure also remains preserved. The current release gate and corrected-candidate counts are recorded separately in the [release-candidate audit](RELEASE_AUDIT_v0.1.md).
+
+## v0.2 executable integrations
+
+The additive `v02Integrations` catalog preserves all 43 historical repository
+accounts and all 74 original capability records. Current source pins do not
+rewrite earlier snapshots, historical adoption statements, licensing observations
+or source authorship. [The v0.2 review report](V0_2_REVIEW_REPORT.md) records actual
+final validation; no old test count is promoted to a new execution observation.
+
+| Capability | Exact selected source | Mode and maturity | Executed boundary |
+| --- | --- | --- | --- |
+| Public neutral Semantic ABI | `trustless-ai/semantic-abi@d15c666dfccff17f7350fe97d2fc7b71cb2cbaee` | `PINNED_SOURCE`, `EXPERIMENTAL` integration | Unchanged neutral manifest/linker/evaluator runtime plus explicit product generic-surface projection |
+| Trustless native scan | `trustless-ai/recompute-kit@1a37bcaf91918fd8a98f164d97d0fddbc28c6755` | `PINNED_SOURCE`; source-main relation `STABLE`, product integration `EXPERIMENTAL` | Native scan-subject-binding checker and bounded runner, not the whole upstream corpus |
+| Interpoll native authorization | `Interpoll1/decentralised@559e47f2cd2ffcbd8ad38293da89448d8ec3152d` (`master`) | `PINNED_SOURCE`, `EXPERIMENTAL` | Exact native Schnorr action verification; historical admission, server execution and SQL atomicity are not established |
+| Interpoll retry composition | Same current public default pin | `REIMPLEMENTED_FROM_SPEC`, `EXPERIMENTAL` | Caller-selected intent vs accepted action/retries/supplied observation/trace commitment |
+| PRF award-settlement relation | `pipavlo82/protected-relation-fixtures@fac26d2e8346aeab08194343b78c345d235c6935` | `PINNED_SOURCE`, bounded merged-main relation `STABLE` | Unchanged native Python relation over fresh synthetic tuples |
+| PRF downstream preservation | PR14 `f525737069dc4cef7741f805d08a988912f4454f`, `OPEN`, unmerged | `REIMPLEMENTED_FROM_SPEC`, `EXPERIMENTAL` | Product exact native-result/dependency transfer; no PR14 wire/runtime conformance claimed |
+| RSI test discipline | `pipavlo82/relational-security-invariants@3d3038f90c3dd98e79f948398167c5cc3ef2fdd8` | `METHODOLOGY_ONLY`, selected published method `STABLE` | Detached literal expectations, non-vacuity and preserved positive controls; no RSI runner imported |
+| SEG consumer boundary | `pipavlo82/semantic-execution-guard@18f595b537017e5ff7b9074366c3065e877488f9` | `METHODOLOGY_ONLY`, selected published method `STABLE` | Separately selected consumer context and semantic substitutions; no onchain execution claim |
+
+The generic v0.2 core is original product composition. Its public-spec lineage
+includes Semantic ABI's structured meaning, RVR's independent claim/replay axes,
+RSI's relation/expectation separation and SEG's consumer binding. Its new schema,
+authority policy, evidence packaging and projection are not advertised as native
+wire conformance with those upstreams. Exact new product files are cataloged in
+`v02ProductExtensions`.
+
+### Contributions and licenses
+
+[Semantic ABI evidence](provenance/v02-semantic-abi.json) preserves Pavlo's merged
+semantic-model fixes alongside Echo-Merlini's neutral runtime implementation and
+other PR contributors. [Trustless evidence](provenance/v02-trustless.json)
+separates babyblueviper1's scan implementation, Pavlo's executable witness,
+review and runner failure-classifier implementation, and the shared runner's
+other contributors. Review-only activity is not described as original code.
+
+[Action/PRF evidence](provenance/v02-actions-prf.json) identifies Pavlo's actual
+signed-action commit `2cfde5efc3d10b56c73e74723d3f328b77f2fc1f`, durable retry
+commit `a1eb47653aa7b8f0484ab977d75a5db41d226d02`, main award relation commit
+`717f04b3216c560949331dfc084e2fa6bb5e95bd` and experimental PR14 implementation
+commit. Repository ownership is never substituted for path-level authorship.
+No ownership, revenue allocation or sole authorship is inferred.
+
+Fourteen selected v0.2 upstream files are copied unchanged, including their four
+license files: Apache-2.0 neutral Semantic ABI, CC0-1.0 recompute-kit, Unlicense
+Interpoll and MIT PRF. [Third-party notices](THIRD_PARTY_NOTICES.md) and the source
+fragments preserve those grants and SHA256/Git blob identities. No provider
+captures, application databases, private Vértice code or upstream secrets were
+imported. `tools/check-provenance-v2.mjs` mechanically checks the 43-row historical
+boundary, additive mappings, complete new vendor byte closure and legal files.
+
+The frozen source fragments record PR57 as OPEN when the adapter was pinned.
+Independent release audit at `2026-10-11T23:09:39.173Z` found PR57 merged at
+`2026-10-11T22:35:33Z`, with head `197c6d26e68f85a117dd12a94924a7f959edaef4`
+and current main `3c3923956200d01ab74c2dcbb49b268739943bda`. These new
+observations supplement the historical record; they do not rewrite it or repin
+runtime. The adapter retains `1a37bcaf91918fd8a98f164d97d0fddbc28c6755`, native
+contract mode null and product interpretation `MAIN_SELF_GRADING`; newly merged
+reporter behavior is not selected. PRF PR14 remains OPEN at its exact pin.
+Current-state evidence and audit-only public vectors retain their CC0 source
+identity in `reports/release-audit-v0.2/domains/current-main-replay.json`.

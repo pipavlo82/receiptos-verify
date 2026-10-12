@@ -1,0 +1,409 @@
+{
+  "schema": "receiptos.verify.independent-release-gate.v2",
+  "candidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+  "tree": "d5a6fb8e47db373e59b6ce5ed021f3e1240a09fc",
+  "branch": "feat/v0.2-generic-trustless-boundary",
+  "initial_status": "CLEAN",
+  "public_base": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "controller_sha256": "dca13bc62daf0543c04c0e75c4148de5b46f405ad84a1d0e63c68e6e05acebaa",
+  "commands": [
+    {
+      "label": "public-refs",
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/tags/v0.1.0",
+        "refs/tags/v0.1.0^{}"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+      "started_utc": "2026-10-11T23:02:29.321357+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "1f84b6ee7f8bc788d535c0b9aecfae000cbf281af0a859130e825d3db8ba6dd1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "frozen-source-lock",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+      "started_utc": "2026-10-11T23:02:29.576727+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "8786b3bf230f01759bbc89d01a1c086e4915aa091da01a65c19664e61780ba28",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "clone",
+      "argv": [
+        "git",
+        "clone",
+        "--no-hardlinks",
+        "--no-checkout",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\outputs\\receiptos-verify",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission",
+      "started_utc": "2026-10-11T23:02:29.889293+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "511baf1478c0630873925cd81c51a981bc21dd9e5a38366fa7e74538fe1c5b0a"
+    },
+    {
+      "label": "checkout",
+      "argv": [
+        "git",
+        "checkout",
+        "--detach",
+        "4888a0584369a91075eb2bdbd9a2ff6b99c46588"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:30.078074+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ffc797a727ed104fcac4abb9cb9d40f69929158edf210b53ec5bcf78a3ed873d"
+    },
+    {
+      "label": "fresh-initial-status",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:31.148712+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-node",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:35.805258+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "d656133e6fb1a2be31c1652d360bba7b09442e5480c8541deb85cfcedf37c499",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-npm",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:35.833464+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "b90f6efb804599bb0ba84fec754b8c7807381dabfcdc1ffe3437ff37f18fb0f5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-python",
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.EXE",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:36.160154+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "6a5d9f6462ca5dfc6788cfd216ba579fffd7875776ab9d9b35659be78858f73a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-bun",
+      "argv": [
+        "C:\\Users\\msi\\.bun\\bin\\bun.EXE",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:36.176316+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "56b0485099b6c5427d3b68c042fd05b632d5e52e924c5064473389812227164c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "version-git",
+      "argv": [
+        "git",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:36.204674+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "a0bef3335cdbc9a4a7733503ecdb281e91319f5a15e22026bfbef750ce76aaba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "npm-ci",
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit-npm-cache"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:36.239261+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "573c6d511ac37560bbff184c77b50db6f50af048da57bec97f4e5704287a67b4",
+      "stderr_sha256": "1f4f72b910e27e2bd29eea9a14a36c68da2229f4dfd05538d607a0754fcbab12"
+    },
+    {
+      "label": "dependency-resolution",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "--input-type=module",
+        "-e",
+        "console.log(import.meta.resolve('ajv'));console.log(import.meta.resolve('@noble/curves/secp256k1.js'));"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:38.033606+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "5fd9ff003a2512b9310e40551544afb80c1030dab19fcf66fbf37696c8af60ea",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "source-lock-before",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/check-sources.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:38.104443+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "8786b3bf230f01759bbc89d01a1c086e4915aa091da01a65c19664e61780ba28",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "provenance-license",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/check-provenance-v2.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:38.435494+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "751ea2d07b3ccc3e9de1daf9d4fb17b4daa8f13e6b84eb1f0d8331f0099c7d60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tests-normal",
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.EXE",
+        "-B",
+        "tools/capture-tests-v2.py",
+        "--label",
+        "audit-normal"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:02:38.581969+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "a30a7225c73d3fc9e51cc9e85dd6ba9153631db0cd2548c246445bc747155be8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tests-no-opt",
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.EXE",
+        "-B",
+        "tools/capture-tests-v2.py",
+        "--no-opt",
+        "--label",
+        "audit-no-opt"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:03:11.509780+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "bee548b1e6055b395ccf9d13c74571a4749791253dc8e8b73ea6a30565c967a6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "vectors",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/run-vectors-v2.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:03:45.996983+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "b031e6ce38465307f57e998557f2058b78887006311ed20bbf8e9ec5567b2627",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "mutations-v1",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/run-mutations.mjs",
+        "--out",
+        "reports/v0.2/audit-v1-mutations.json"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:04:12.700528+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "8b332666221b7c97285848e66ba835ea97919b05d2d35930a759e70e1823b24c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "mutations-v2",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/run-mutations-v2.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:04:46.291495+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "ca51427be1a5e62b05a1ffdc5d579a7ce3548f23518fc9db30b6f65a269b0559",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cli-v1",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "src/cli.mjs",
+        "demo"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:05:25.681456+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "380141e8e7d1248f63fc4f934f347711de4c67daf5619d5ec5784328c901a636",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cli-v2",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "src/cli.mjs",
+        "demo-v2"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:05:26.914029+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "2b46442fb11da2ff5395d0e3dadcb45f2f3a758b2c7a23199ad0a06d102cfa47",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "determinism",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/determinism-v2.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:05:31.650382+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "b5212bcacf6b97a938414766f9ffe8ebbcb324a483789ee1d299fea5a6493280",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "source-lock-after",
+      "argv": [
+        "C:\\Program Files\\nodejs\\node.EXE",
+        "tools/check-sources.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:06:11.349368+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "8786b3bf230f01759bbc89d01a1c086e4915aa091da01a65c19664e61780ba28",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "diff-check",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:06:11.687587+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "final-source-diff",
+      "argv": [
+        "git",
+        "diff",
+        "--name-only",
+        "--",
+        ".",
+        ":(exclude)reports"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+      "started_utc": "2026-10-11T23:06:11.922700+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "status": "PASS",
+  "fresh_initial_status": "CLEAN",
+  "fresh_path": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-release-audit",
+  "install_cache_initially_absent": true,
+  "audit-normal": {
+    "tests": 624,
+    "pass": 624,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "audit-no-opt": {
+    "tests": 624,
+    "pass": 624,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "vectors": {
+    "count": 68,
+    "passed": 68,
+    "failed": 0,
+    "versions": {
+      "v0.1": {
+        "count": 30,
+        "passed": 30,
+        "failed": 0
+      },
+      "v0.2": {
+        "count": 38,
+        "passed": 38,
+        "failed": 0
+      }
+    }
+  },
+  "mutations_v1": {
+    "count": 14,
+    "counts": {
+      "KILLED": 14,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    }
+  },
+  "mutations_v2": {
+    "count": 14,
+    "counts": {
+      "KILLED": 14,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    }
+  },
+  "final_source_diff": "",
+  "completed_utc": "2026-10-11T23:06:12.119068+00:00"
+}

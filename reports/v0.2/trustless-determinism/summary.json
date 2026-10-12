@@ -1,0 +1,59 @@
+{
+  "schema": "receiptos.verify.trustless-determinism.v2",
+  "groups": [
+    {
+      "case": "positive",
+      "byte_identical": true,
+      "results": [
+        {
+          "mode": "normal",
+          "exit": 0,
+          "stdout_sha256": "a5272e41ceaa15b2802f28065c1b71cd89af27d043f1b688872c8bde98918a29",
+          "runner": "PASS",
+          "native": "NO_FINDING"
+        },
+        {
+          "mode": "repeat",
+          "exit": 0,
+          "stdout_sha256": "a5272e41ceaa15b2802f28065c1b71cd89af27d043f1b688872c8bde98918a29",
+          "runner": "PASS",
+          "native": "NO_FINDING"
+        },
+        {
+          "mode": "optimized",
+          "exit": 0,
+          "stdout_sha256": "a5272e41ceaa15b2802f28065c1b71cd89af27d043f1b688872c8bde98918a29",
+          "runner": "PASS",
+          "native": "NO_FINDING"
+        }
+      ]
+    },
+    {
+      "case": "negative",
+      "byte_identical": true,
+      "results": [
+        {
+          "mode": "normal",
+          "exit": 0,
+          "stdout_sha256": "cc4872d199bcf69ed6c1160ce05182a243b3fbf4e93fd48224f65fc6d809cb84",
+          "runner": "PASS",
+          "native": "CONTRADICTED"
+        },
+        {
+          "mode": "repeat",
+          "exit": 0,
+          "stdout_sha256": "cc4872d199bcf69ed6c1160ce05182a243b3fbf4e93fd48224f65fc6d809cb84",
+          "runner": "PASS",
+          "native": "CONTRADICTED"
+        },
+        {
+          "mode": "optimized",
+          "exit": 0,
+          "stdout_sha256": "cc4872d199bcf69ed6c1160ce05182a243b3fbf4e93fd48224f65fc6d809cb84",
+          "runner": "PASS",
+          "native": "CONTRADICTED"
+        }
+      ]
+    }
+  ]
+}

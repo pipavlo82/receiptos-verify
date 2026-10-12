@@ -1,0 +1,21 @@
+{
+  "actual_probes": [
+    {
+      "case": "native-crash",
+      "harness_status": "KILLED",
+      "harness_exit": 0,
+      "positive": "VERIFIED",
+      "witness": "CANNOT_RECOMPUTE",
+      "required": "CRASHED"
+    },
+    {
+      "case": "native-null",
+      "harness_status": "KILLED",
+      "harness_exit": 0,
+      "positive": "VERIFIED",
+      "witness": "CANNOT_RECOMPUTE",
+      "required": "INVALID_OUTPUT"
+    }
+  ],
+  "source_candidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588"
+}

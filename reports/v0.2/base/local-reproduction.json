@@ -1,0 +1,39 @@
+{
+  "schema": "receiptos.verify.local-reproduction-receipt.v1",
+  "operator_label": "local-build-agent",
+  "authenticity": "NOT_ESTABLISHED",
+  "independent_operator": "NOT_CLAIMED",
+  "isolation": "Separate product copy; installed dependencies shared from locked parent installation.",
+  "code_commit": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+  "source_lock_sha256": "bd6ad5d4640823ab55458777f93aa5f7999107415fe4550c3d99cbe9b0eb54f6",
+  "package_lock_sha256": "34c5ead1add79a374494eba5d51966d5557f2109373d1a0ab9bc01ebbb5e307c",
+  "vector": "V02",
+  "vector_sha256": "07d1b213f47bea09e1c0f4b4838c8650ed291823501c8ee479a2431e851cb2e2",
+  "commands": [
+    [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base\\reports\\tmp\\i-98cc37b26d67\\tools\\verify-vector.mjs",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base\\reports\\tmp\\i-98cc37b26d67\\vectors\\V02.json"
+    ],
+    [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base\\reports\\tmp\\i-98cc37b26d67\\tools\\verify-vector.mjs",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-base\\reports\\tmp\\i-98cc37b26d67\\vectors\\V02.json"
+    ]
+  ],
+  "runs": [
+    {
+      "process_status": "COMPLETED",
+      "errors": [],
+      "semantic_digest": "5263a1f45014274400d2d2f94064af36028111cd6005a4a2f70b10b189b9e951",
+      "overall": "CONTRADICTED"
+    },
+    {
+      "process_status": "COMPLETED",
+      "errors": [],
+      "semantic_digest": "5263a1f45014274400d2d2f94064af36028111cd6005a4a2f70b10b189b9e951",
+      "overall": "CONTRADICTED"
+    }
+  ],
+  "replay": "REPRODUCED"
+}

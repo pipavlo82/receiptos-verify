@@ -127,3 +127,8 @@ footer { padding-top: 26px; color: var(--muted); font: 10px/1.7 var(--mono); gap
   .layer-name { max-width: 59%; font-size: 10px; }
   .layer-status { max-width: 41%; font-size: 9px; }
 }
+/* Visible local intake; the established ReceiptOS palette and motifs remain. */
+.upload-grid { display: grid; gap: 12px; margin: 20px 0 10px; }
+.upload-grid label { padding: 12px; border: 1px solid #25343f; background: #0b1118; }
+.upload-grid input { display: block; width: 100%; margin-top: 10px; color: #cbd5df; }
+.upload-grid input::file-selector-button { background: #152832; color: #8adcea; border: 1px solid #365b68; padding: 7px 10px; margin-right: 10px; cursor: pointer; }

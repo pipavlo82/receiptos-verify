@@ -1,0 +1,3574 @@
+{
+  "schema": "receiptos.independent.source-path-audit.v02",
+  "count": 396,
+  "found": 396,
+  "notFound": [],
+  "truncatedTrees": [],
+  "errors": [],
+  "checks": [
+    {
+      "capabilityId": "prf-relation",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-relation",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "path": "spec/protected-relation-model.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-award",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "path": "tools/award_actual_settlement.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-award",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "path": "tools/validate_award_actual_settlement.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-award",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "path": "conformance/award-actual-settlement-v0/suite.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-guarantee",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-guarantee",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "path": "conformance/guarantee-preservation-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-guarantee",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "path": "conformance/guarantee-preservation-v0/contract.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-guarantee",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "path": "tools/guarantee_preservation.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-relations",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "path": "relations/robinhood-stock-token-v0/recompute.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-relations",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "path": "relations/robinhood-adjusted-feed-consumption-v0/recompute.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-relations",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "path": "relations/robinhood-stock-token-v0/relation.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-consumer",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "path": "contracts/SemanticExecutionGuard.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-consumer",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "path": "contracts/ProtectedPriceConsumer.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-consumer",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "path": "contracts/ProtectedPriceActionTarget.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-consumer",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "777a19f5e92afb60b123c545f0e9a3d77fe7e139",
+      "path": "docs/protected-action-consumer-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "artifact-ui",
+      "repository": "pipavlo82/-crystal-artifact",
+      "sourceSHA": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "path": "src/crystal-artifact.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "artifact-ui",
+      "repository": "pipavlo82/-crystal-artifact",
+      "sourceSHA": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "path": "src/canon.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "artifact-ui",
+      "repository": "pipavlo82/-crystal-artifact",
+      "sourceSHA": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "path": "src/types.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "artifact-ui",
+      "repository": "pipavlo82/-crystal-artifact",
+      "sourceSHA": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "path": "ui/ui.js",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "artifact-ui",
+      "repository": "pipavlo82/-crystal-artifact",
+      "sourceSHA": "fc0cd2cbe96ec448ac244ae21daabdab68c17022",
+      "path": "tests/golden-vectors.test.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "r4-signature",
+      "repository": "pipavlo82/r4-saas-api",
+      "sourceSHA": "7815fd84dd7eb9347b8399719cfeff941ff8df2a",
+      "path": "app/verify_route.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "r4-signature",
+      "repository": "pipavlo82/r4-saas-api",
+      "sourceSHA": "7815fd84dd7eb9347b8399719cfeff941ff8df2a",
+      "path": "app/main.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "r4-signature",
+      "repository": "pipavlo82/r4-saas-api",
+      "sourceSHA": "7815fd84dd7eb9347b8399719cfeff941ff8df2a",
+      "path": "requirements.txt",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "witness-key",
+      "repository": "pipavlo82/pipavlo82.github.io",
+      "sourceSHA": "9a0139ebfa1df4fa6bb9133c0eb6be6d64e67037",
+      "path": "keys/witness.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-ROOT",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-ROOT",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/canon/canonicalize.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-ROOT",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/canon/receipt-root.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-ROOT",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/schema/types.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-ROOT",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/verify/verify-receipt.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-PORTABLE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/capsule/evidence-capsule-v0.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-PORTABLE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/capsule/portable-proof-object-v0.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-MERKLE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/merkle/local-merkle.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-CONFORMANCE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "conformance/counterfactual-conformance-v0/SPEC.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-CONFORMANCE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "conformance/counterfactual-conformance-v0/verify_independent.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-CONFORMANCE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "conformance/counterfactual-traversal-stability-v0/SPEC.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-CONFORMANCE",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/challenge/counterfactual-conformance-evaluator.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-TSEI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "docs/TRANSFORMATION_STABLE_EVIDENCE_INTEROPERABILITY_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-TSEI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/challenge/transformation-stability.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-TSEI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/challenge/transformation-stability-cycle.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-TSEI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/challenge/transformation-stability-coverage.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-TSEI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/challenge/canonical-identity-json.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-CONTINUITY",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "src/receiptos/capsule/chronicle-checkpoint-continuity-v0.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-CONTINUITY",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "docs/CHRONICLE_CHECKPOINT_CONTINUITY_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-CONTINUITY",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "tests/fixtures/chronicle-checkpoint-continuity-v0.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/verification-profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/verification-profile-manifest.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/rvr-generic-sha256-equals-v0.profile.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/rvr.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/expected.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/mutants.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "conformance/rvr-v0/vectors.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-CORE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V0",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V0",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v0/SPEC.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V0",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v0/adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V0",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v0/verification-profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V1",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v1/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V1",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v1/SPEC.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V1",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v1/adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-INVINO-V1",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/invinoveritas-signed-verdict-v1/verification-profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-ERC8281",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/erc8281-committed-receipt-snapshot-v0/SPEC.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-ERC8281",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/erc8281-committed-receipt-snapshot-v0/adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-ERC8281",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/erc8281-committed-receipt-snapshot-v0/verification-profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-ERC8281",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/erc8281-committed-receipt-snapshot-v0/upstream/erc-8281.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-JUDGE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/judge-protocol-rvr-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-JUDGE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/judge-protocol-rvr-v0/SPEC.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-JUDGE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/judge-protocol-rvr-v0/adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-JUDGE",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "profiles/judge-protocol-rvr-v0/verification-profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-RUST",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "review/rc2-independent-rust/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-RUST",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "review/rc2-independent-rust/REVIEW.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-RUST",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "review/rc2-independent-rust/src/main.rs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RVR-RUST",
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sourceSHA": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "path": "review/rc2-independent-rust/Cargo.lock",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "spec/RSI-core-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "spec/expectation-contract-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "spec/relation-profile-contract-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "spec/serialization.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "runner/expectation_contract.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "runner/relation_runtime.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "schema/relation-binding-fixture.v0.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "RSI-PLANE",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "e8fb81904af2ffe19e974383cf78d9d18d259b98",
+      "path": "tools/prove_can_fail.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ADMISSION",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ADMISSION",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "docs/LICENSE_POLICY_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ADMISSION",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "specs/chronicle_entry_v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ADMISSION",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "src/chronicle_entry_identity.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ADMISSION",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "src/chronicle_receiptos_admission.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ADMISSION",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "src/chronicle_position_artifact.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ROOTS",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ROOTS",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "docs/LICENSE_POLICY_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ROOTS",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "specs/chronicle_entry_v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ROOTS",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "src/chronicle_entry_identity.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ROOTS",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "src/chronicle_receiptos_admission.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CHRONICLE-ROOTS",
+      "repository": "pipavlo82/Chronicle",
+      "sourceSHA": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "path": "src/chronicle_position_artifact.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "MVP-HMAC",
+      "repository": "pipavlo82/receiptos-mvp",
+      "sourceSHA": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "path": "src/receiptos.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "MVP-HMAC",
+      "repository": "pipavlo82/receiptos-mvp",
+      "sourceSHA": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "path": "src/cli.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "MVP-HMAC",
+      "repository": "pipavlo82/receiptos-mvp",
+      "sourceSHA": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "path": "src/api.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "MVP-HMAC",
+      "repository": "pipavlo82/receiptos-mvp",
+      "sourceSHA": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "path": "schemas/decision_receipt.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "MVP-HMAC",
+      "repository": "pipavlo82/receiptos-mvp",
+      "sourceSHA": "0e70ebe85f4dd1b8b2a24be9c29f1b9757e25a71",
+      "path": "SECURITY_TRUST_BOUNDARIES.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CRC-CLAIM-CELL",
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "path": "CLAIM.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CRC-CLAIM-CELL",
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "path": "CELL-v1.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CRC-CLAIM-CELL",
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "path": "reference/claim_id.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CRC-CLAIM-CELL",
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "path": "reference/test_gate.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CRC-CLAIM-CELL",
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "path": "ui/index.html",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CRC-CLAIM-CELL",
+      "repository": "pipavlo82/cross-reference-console",
+      "sourceSHA": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CONDUCT-WITNESS",
+      "repository": "pipavlo82/conduct-witness",
+      "sourceSHA": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "path": "reproduce.sh",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CONDUCT-WITNESS",
+      "repository": "pipavlo82/conduct-witness",
+      "sourceSHA": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "path": ".github/workflows/reproduce.yml",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CONDUCT-WITNESS",
+      "repository": "pipavlo82/conduct-witness",
+      "sourceSHA": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "path": "requirements.lock",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CONDUCT-WITNESS",
+      "repository": "pipavlo82/conduct-witness",
+      "sourceSHA": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "path": "requirements-approval.lock",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CONDUCT-WITNESS",
+      "repository": "pipavlo82/conduct-witness",
+      "sourceSHA": "2b9ac1cc56d7c36ed1a29f9d4ac674b31eac6151",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-UI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "docs/artifact-viewer/index.html",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-UI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "docs/receipt-verifier/index.html",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-UI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "docs/ADAPTERS.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "CR-UI",
+      "repository": "pipavlo82/crystal-receipt",
+      "sourceSHA": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "path": "docs/PRODUCER_SUPPORT_MATRIX.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.scan",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/scan-subject-binding-v0/scan_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.scan",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/scan-subject-binding-v0/mutation_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.scan",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/scan-subject-binding-v0/vectors.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.scan",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/scan-subject-binding-v0/suite.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.encode",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.spec.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.encode",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/encode-json-utf8-lf-v0/encoder.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.encode",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/encode-json-utf8-lf-v0/encoder.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.encode",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/encode-json-utf8-lf-v0/gate.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.event",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/event-time-concurrency-boundary-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.event",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/event-time-concurrency-boundary-v0/boundary_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.event",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/event-time-concurrency-boundary-v0/mutation_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.consume",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/consumption-time-state-binding-v0/binding_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.consume",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/consumption-time-state-binding-v0/mutation_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.consume",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/consumption-time-state-binding-v0/vectors.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.permission",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/permission-consumption-boundary-v0/permission_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.permission",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/permission-consumption-boundary-v0/mutation_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.permission",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "bin/conformance",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.permission",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/captured-admission-v0/admission_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.runner",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "tools/run_conformance.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.runner",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "tools/test_run_conformance_failure_classification.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.runner",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "e763f9b7be416ad244cbb6578bc2deb8f34b3877",
+      "path": "conformance/uncovered.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.empty.pr65",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "path": "tools/test_mutation_inventory_nonempty.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.empty.pr65",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "path": "conformance/scan-subject-binding-v0/mutation_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.empty.pr65",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "4ed3a65fb44324239cb67fd807f51881af1b8bb3",
+      "path": "conformance/encode-json-utf8-lf-v0/gate.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.reporter.pr57",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "3540251738350d45597a44b7908c3f6de98e9cce",
+      "path": "tools/run_conformance.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.reporter.pr57",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "3540251738350d45597a44b7908c3f6de98e9cce",
+      "path": "conformance/*/suite.json",
+      "matches": 29,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.semantic",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.semantic",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "schema/LICENSE-CC0.txt",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.semantic",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "schema/manifest.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.semantic",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "schema/manifest-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.semantic",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "runner/src/linker.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.registry",
+      "repository": "trustless-ai/primitives",
+      "sourceSHA": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "path": "primitives.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.registry",
+      "repository": "trustless-ai/primitives",
+      "sourceSHA": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "path": "check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.ccip",
+      "repository": "trustless-ai/ccip-router",
+      "sourceSHA": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "path": "src/integrations/tseiProfileA.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.ccip",
+      "repository": "trustless-ai/ccip-router",
+      "sourceSHA": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "path": "src/integrations/tseiProfileARouter.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.ccip",
+      "repository": "trustless-ai/ccip-router",
+      "sourceSHA": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "path": "conformance/tsei-profile-a-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.ccip",
+      "repository": "trustless-ai/ccip-router",
+      "sourceSHA": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "path": "src/__tests__/tseiProfileA.test.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.bps",
+      "repository": "trustless-ai/agent-sdk",
+      "sourceSHA": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "path": "testkit/vectors/erc8275-reputation-bps-v0.vectors.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.bps",
+      "repository": "trustless-ai/agent-sdk",
+      "sourceSHA": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "path": "python/tests/reputation/erc8275/test_recompute.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.bps",
+      "repository": "trustless-ai/agent-sdk",
+      "sourceSHA": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "path": "typescript/test/reputation/ERC8275/recompute.test.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.bps",
+      "repository": "trustless-ai/agent-sdk",
+      "sourceSHA": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "path": "go/reputation/erc8275/recompute_test.go",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.bps",
+      "repository": "trustless-ai/agent-sdk",
+      "sourceSHA": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "path": "rust/core/src/erc8275/recompute.rs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "CLAIM.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "CELL-v1.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "CELL-v2.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "CELL-v3.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "LINEAGE-REF.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "reference/claim_id.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "reference/validate_cell.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "reference/registry_id.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.crc",
+      "repository": "trustless-ai/cross-reference-console",
+      "sourceSHA": "d944c465b598de5e5ef79e19ab9f19fa10e7cb56",
+      "path": "reference/gen_in_force.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.pqtime",
+      "repository": "trustless-ai/pq-agent-binding",
+      "sourceSHA": "4f934ad31e96979002d818cd8a5f12909c1b6713",
+      "path": "spec/v1-temporal-authority.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.pqtime",
+      "repository": "trustless-ai/pq-agent-binding",
+      "sourceSHA": "4f934ad31e96979002d818cd8a5f12909c1b6713",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "path": "packages/opencode/src/session/handoff/evidence.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "path": "schemas/handoff-evidence.v1.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "path": "scripts/receipt-anchor/verify-root.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "path": "scripts/receipt-anchor/verify-handoff-evidence.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "path": "scripts/receipt-anchor/build-merkle-batch.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "path": "packages/app/src/utils/receipt-verifier.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.stealth",
+      "repository": "CYPHES-ATP/Stealth",
+      "sourceSHA": "fa63212f13fc6300d4decaf4c06128328810f217",
+      "path": "specs/receipt_protocol_spec_v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atp",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "artifact_two/verifier.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atp",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "artifact_two/canonical.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atp",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "artifact_two/reason_codes.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atp",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "tools/verify_atp_bundle.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atp",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "docs/receipt-bundle-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atp",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "docs/verifier-output-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atpcontrols",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "tools/redteam_demo.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atpcontrols",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "docs/redteam-demo.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.atpcontrols",
+      "repository": "CYPHES-ATP/Artifact-Two",
+      "sourceSHA": "7990a327454a803b48e94b337fb000f7b43ff0da",
+      "path": "docs/verifier-output-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.actions",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "shared-validation/engagement.js",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.actions",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "shared-validation/engagement-store.js",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.actions",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "src/services/publicEngagementService.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.actions",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "src/services/reactionOutboxService.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.actions",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "docs/security/PUBLIC_ENGAGEMENT_V1.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.actions",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "docs/security/PUBLIC_ENGAGEMENT_REVIEW_FOLLOWUP.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.coordination",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "tools/coordination-impact/core.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.coordination",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "tools/coordination-impact-v2/core.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.coordination",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "tools/coordination-impact-v2/relation.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.coordination",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "docs/security/COORDINATION_IMPACT_V1.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.coordination",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "23c8c7b5b9803d906ea8ba62772104ebdae488e8",
+      "path": "docs/security/COORDINATION_IMPACT_V2.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "shared.erc8404",
+      "repository": "ethereum/ERCs",
+      "sourceSHA": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+      "path": "ERCS/erc-8404.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "NOTICE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/__init__.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/checker.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/adapters.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/source_inventory.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/semantic_link.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "docs/CONTRACT.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/semantic-abi/LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/semantic-abi/schema/LICENSE-CC0.txt",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/semantic-abi/schema/manifest.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-synthetic",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/semantic-abi/runner/src/linker.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "NOTICE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "docs/MOTH_COUNTS_RVR_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "docs/MOTH_RECEIPTOS_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/moth-receiptos-v0/conformance.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/moth-receiptos-v0/profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/moth-receiptos-v0/sources.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/claim.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/conformance.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/roles.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/sources.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/__init__.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/adapters.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/admission.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/inventory.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/live_common.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_comet.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos_bridge.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos_cli.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos_mutations.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_replay.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr_cli.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr_mutations.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr_relation.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/source_inventory.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/sources.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tests/test_moth_receiptos.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tests/test_moth_rvr.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tools/pin_moth_receiptos_profile.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tools/pin_moth_rvr_profile.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/schema/types.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/rvr-v0/LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/rvr-v0/adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-rvr",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/rvr-v0/verification-profile-manifest.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "NOTICE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "docs/MOTH_COUNTS_RVR_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "docs/MOTH_RECEIPTOS_V0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/moth-receiptos-v0/conformance.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/moth-receiptos-v0/profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/moth-receiptos-v0/sources.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/claim.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/conformance.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/profile.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/roles.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/rvr-moth.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/sources.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/rvr-qev-moth-counts-v0/verification-profile.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/__init__.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/adapters.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/admission.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/inventory.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/live_common.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_comet.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos_bridge.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos_cli.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_receiptos_mutations.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_replay.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr_cli.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr_mutations.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/moth_rvr_relation.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/source_inventory.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/sources.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tests/test_moth_receiptos.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tests/test_moth_rvr.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tools/pin_moth_receiptos_profile.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tools/pin_moth_rvr_profile.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/schemas/evidence-capsule.v0.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/canon/canonicalize.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/canon/receipt-root.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/crystal-mapping.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule-v0.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/evidence-capsule.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/portable-proof-object-v0.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/capsule/render-plan.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/merkle/local-merkle.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/schema/types.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/receiptos-v0/src/receiptos/verify/verify-receipt.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/rvr-v0/LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/rvr-v0/adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-moth-portable",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "vendor/rvr-v0/verification-profile-manifest.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-ibm-live",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/live_native.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-ibm-live",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/live_relation.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-ibm-live",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/live_math.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-ibm-live",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/live_portable.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-ibm-live",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/live_cli.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-ibm-live",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/live-capture-replay-v1/",
+      "matches": 5,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-cross-provider",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/cross_provider.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-cross-provider",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/cross_adapters.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-cross-provider",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/cross_cli.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-cross-provider",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "profiles/cross-provider-evidence-v0/",
+      "matches": 2,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-assurance",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/admission.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-assurance",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/inventory.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-assurance",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/sources.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-assurance",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/source_inventory.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-assurance",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "qev/*mutations.py",
+      "matches": 7,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "qev-assurance",
+      "repository": "pipavlo82/quantum-execution-evidence",
+      "sourceSHA": "5de55f007ab5ce4cf5acb7fe79d7f755ff0fee05",
+      "path": "tests/test_admission.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-profile-spec",
+      "repository": "pipavlo82/pq-receipt-profile",
+      "sourceSHA": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-profile-spec",
+      "repository": "pipavlo82/pq-receipt-profile",
+      "sourceSHA": "54cf1a3784a56f4624b41357148bbe9ba301c470",
+      "path": "PRINCIPLES.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-adapter",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "src/interfaces.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-adapter",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "src/extension_verifier.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-adapter",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "src/mldsa_adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-adapter",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "src/reason_mapping.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-adapter",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "schemas/receipt_extension.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-history",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "demo/_demo_lib.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-history",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "demo/run_demo.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-history",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "src/stealth_handoff_adapter.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-lab-history",
+      "repository": "pipavlo82/receiptos-pq-lab",
+      "sourceSHA": "a705d9c1942c0f30725c9bddec6606a0cddf4fc6",
+      "path": "schemas/stealth_adapter_output.v0.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "mldsa-main-parser",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6cf885533b65eec232934700daaf9b977ef305f9",
+      "path": "solidity/MLDSA65Verifier.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "mldsa-main-parser",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6cf885533b65eec232934700daaf9b977ef305f9",
+      "path": "solidity/IPQVerifier.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "mldsa-pr27-research",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "path": "contracts/verifier/MLDSA65_Verifier_v2.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "mldsa-pr27-research",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "path": "contracts/verifier/MLDSA65_ERC7913Verifier.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "mldsa-pr27-research",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "path": "contracts/verifier/MLDSA65_ERC7913BoundCommitA.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "mldsa-pr27-research",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "path": "docs/preA_packedA_ntt.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "mldsa-pr27-research",
+      "repository": "pipavlo82/ml-dsa-65-ethereum-verification",
+      "sourceSHA": "6d58ce9e64b4c499fc52395e01e2bfbcd967d441",
+      "path": "test/MLDSA_ERC7913_PackedA.t.sol",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-vector-pack",
+      "repository": "pipavlo82/pqevm-vector-packs",
+      "sourceSHA": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "path": "tools/validate_pack.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-vector-pack",
+      "repository": "pipavlo82/pqevm-vector-packs",
+      "sourceSHA": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "path": "tools/pack_hash.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-vector-pack",
+      "repository": "pipavlo82/pqevm-vector-packs",
+      "sourceSHA": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "path": "schema/manifest.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-vector-pack",
+      "repository": "pipavlo82/pqevm-vector-packs",
+      "sourceSHA": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "path": "schema/vector.schema.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "pq-vector-pack",
+      "repository": "pipavlo82/pqevm-vector-packs",
+      "sourceSHA": "05988be4f37394b21257d2b5e6c639b4746b698a",
+      "path": "packs/mldsa65_fips204/",
+      "matches": 2,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "gas-methodology",
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "path": "spec/explicit_lanes.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "gas-methodology",
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "path": "spec/dataset_schema.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "gas-methodology",
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "path": "spec/security_metrics.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "gas-methodology",
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "path": "spec/pqsig_userop_schema_v0.1.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "gas-methodology",
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "path": "scripts/parse_bench.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "gas-methodology",
+      "repository": "pipavlo82/gas-per-secure-bit",
+      "sourceSHA": "e95d3bac5129b47a949c14b94b6a07d21220ed17",
+      "path": "data/results.jsonl",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "ercs-source",
+      "repository": "pipavlo82/ERCs",
+      "sourceSHA": "98469bc93b6add1e3bc9501dafaa73311071145b",
+      "path": "ERCS/",
+      "matches": 614,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "ercs-source",
+      "repository": "pipavlo82/ERCs",
+      "sourceSHA": "98469bc93b6add1e3bc9501dafaa73311071145b",
+      "path": "LICENSE.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "ercs-source",
+      "repository": "pipavlo82/ERCs",
+      "sourceSHA": "98469bc93b6add1e3bc9501dafaa73311071145b",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.akashmahlaz.betting-club",
+      "repository": "akashmahlaz/betting-club",
+      "sourceSHA": "f85d3ea4e1a6e9ada21d576380c104a0b32976a1",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.babyblueviper1.semantic-execution-guard",
+      "repository": "babyblueviper1/semantic-execution-guard",
+      "sourceSHA": "093dc4f7832c1e18ede0bf9de6fb590aad6fbea8",
+      "path": "PROVENANCE.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.casinocutup.Solana-Mines-Game",
+      "repository": "casinocutup/Solana-Mines-Game",
+      "sourceSHA": "320556ec84e9f7951e9613fdf808cc413626f000",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.eddieoz.bitBingo",
+      "repository": "eddieoz/bitBingo",
+      "sourceSHA": "28ac36f60414edfcf272433be15b2b0a4e37404f",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.jdleo.provably-fair-dice",
+      "repository": "jdleo/provably-fair-dice",
+      "sourceSHA": "4297f223cd1289a40c43ab715ee14ec907666773",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.justFiveDev.Solana-Casino-Jackpot",
+      "repository": "justFiveDev/Solana-Casino-Jackpot",
+      "sourceSHA": "a1bb862aa9d4288b99f51df7bc33c17cf9d76d04",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.OffchainLabs.community-helm-charts",
+      "repository": "OffchainLabs/community-helm-charts",
+      "sourceSHA": "3d2c62a7a8c494271cf783dfda215303d2c318cb",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.open-quantum-safe.liboqs-java",
+      "repository": "open-quantum-safe/liboqs-java",
+      "sourceSHA": "97353bcc8e53152e999248b8dfc89a1ef05d045b",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.PandaExplorer.Provably-Fair-iGaming-Demo",
+      "repository": "PandaExplorer/Provably-Fair-iGaming-Demo",
+      "sourceSHA": "49d6141b7f1f27321e3dfcde857a86a1219e13c5",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.pipavlo82.decentralised",
+      "repository": "pipavlo82/decentralised",
+      "sourceSHA": "8f614bac346e9d618bbf69ea33cb175aa05e798d",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.Rohiteswar.Solana-SlotMachine",
+      "repository": "Rohiteswar/Solana-SlotMachine",
+      "sourceSHA": "57a69e8f380826fbef79b5b3de8a94fece3b7181",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.shentonyan.sealed-bid-award-erc",
+      "repository": "shentonyan/sealed-bid-award-erc",
+      "sourceSHA": "543da2e21d0269ac43880af4a71cb73248ed9eea",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "inventory.tapiwamakandigona.zimbet",
+      "repository": "tapiwamakandigona/zimbet",
+      "sourceSHA": "dc93bca4fdcb62b8255becb121f6aaa9c9b60532",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "semantic-abi-native-neutral-v02",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "semantic-abi-native-neutral-v02",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "runner/src/classes.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "semantic-abi-native-neutral-v02",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "runner/src/evaluate.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "semantic-abi-native-neutral-v02",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "runner/src/linker.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "semantic-abi-native-neutral-v02",
+      "repository": "trustless-ai/semantic-abi",
+      "sourceSHA": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "path": "runner/src/manifest.mjs",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "trustless-native-scan-v02",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "trustless-native-scan-v02",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "path": "tools/run_conformance.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "trustless-native-scan-v02",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "path": "conformance/scan-subject-binding-v0/scan_check.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "trustless-native-scan-v02",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "path": "conformance/scan-subject-binding-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "trustless-native-scan-v02",
+      "repository": "trustless-ai/recompute-kit",
+      "sourceSHA": "1a37bcaf91918fd8a98f164d97d0fddbc28c6755",
+      "path": "conformance/scan-subject-binding-v0/suite.json",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "interpoll-native-signed-action-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "path": "shared-validation/engagement.js",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "interpoll-native-signed-action-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "interpoll-exact-retry-trace-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "path": "src/services/reactionOutboxService.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "interpoll-exact-retry-trace-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "path": "src/services/publicEngagementService.ts",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "interpoll-exact-retry-trace-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "path": "shared-validation/engagement-store.js",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "interpoll-exact-retry-trace-v02",
+      "repository": "Interpoll1/decentralised",
+      "sourceSHA": "559e47f2cd2ffcbd8ad38293da89448d8ec3152d",
+      "path": "docs/security/PUBLIC_ENGAGEMENT_REVIEW_FOLLOWUP.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-main-award-settlement-native-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "path": "tools/award_actual_settlement.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-main-award-settlement-native-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "path": "LICENSE",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-downstream-native-dependency-transfer-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "path": "tools/guarantee_preservation.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-downstream-native-dependency-transfer-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "path": "tools/guarantee_preservation_adapters.py",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "prf-downstream-native-dependency-transfer-v02",
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sourceSHA": "f525737069dc4cef7741f805d08a988912f4454f",
+      "path": "conformance/guarantee-preservation-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "rsi-v02-independent-relation-tests",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "rsi-v02-independent-relation-tests",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+      "path": "spec/relation-profile-contract-v0.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "rsi-v02-independent-relation-tests",
+      "repository": "pipavlo82/relational-security-invariants",
+      "sourceSHA": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+      "path": "research/rsi-v0-mutation-matrix.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-v02-caller-context-binding-method",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "18f595b537017e5ff7b9074366c3065e877488f9",
+      "path": "README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-v02-caller-context-binding-method",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "18f595b537017e5ff7b9074366c3065e877488f9",
+      "path": "relations/robinhood-stock-token-v0/README.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    },
+    {
+      "capabilityId": "seg-v02-caller-context-binding-method",
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sourceSHA": "18f595b537017e5ff7b9074366c3065e877488f9",
+      "path": "PROVENANCE.md",
+      "matches": 1,
+      "found": true,
+      "truncated": false
+    }
+  ]
+}

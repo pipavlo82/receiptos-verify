@@ -1,0 +1,107 @@
+{
+  "captured_utc": "2026-10-11T22:40:05.155Z",
+  "source_sha256": "5dc040b58397ec1815c0845c61bd84c2155511aff4aa0e61a1c4ac3890b100d0",
+  "positive_layers": {
+    "INPUT": {
+      "status": "ADMITTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "CANONICALIZATION": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "INTEGRITY": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "AUTHENTICITY": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "SUBJECT_BINDING": {
+      "status": "VERIFIED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "RECOMPUTATION": {
+      "status": "REPRODUCED",
+      "reasonCodes": [],
+      "nativeResult": null,
+      "semanticOutcome": "VERIFIED"
+    },
+    "EVIDENCE_SUFFICIENCY": {
+      "status": "SUFFICIENT",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "SEMANTIC_COMPATIBILITY": {
+      "status": "COMPATIBLE",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "GUARANTEE_PRESERVATION": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "CONTINUITY": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "DOMAIN_ADAPTERS": {
+      "status": "NOT_REQUESTED",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "PRODUCT_PROJECTION": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "EXPLAINABLE_REPORT": {
+      "status": "NOT_RUN",
+      "reasonCodes": [],
+      "nativeResult": null
+    },
+    "PROVENANCE": {
+      "status": "RECORDED",
+      "reasonCodes": [],
+      "nativeResult": null
+    }
+  },
+  "input_descriptions": [
+    "Array(1)",
+    "enumerable throwing accessor at array index 0",
+    "[\"INTEGRITY\",\"INTEGRITY\"]"
+  ],
+  "getter_calls": 1,
+  "results": [
+    {
+      "name": "sparse-array",
+      "error": {
+        "name": "TypeError",
+        "message": "Cannot read properties of undefined (reading 'includes')"
+      }
+    },
+    {
+      "name": "accessor-array",
+      "error": {
+        "name": "Error",
+        "message": "OBLIGATION_GETTER_EXECUTED"
+      }
+    },
+    {
+      "name": "duplicate-array",
+      "result": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": null
+      }
+    }
+  ]
+}

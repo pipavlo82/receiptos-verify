@@ -1,6 +1,7 @@
 import { readFile, mkdir, cp, writeFile } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { randomUUID } from 'node:crypto';
 import { verify, LAYER_NAMES } from '../src/core/verify.mjs';
 import { validateSchema } from '../src/core/schemas.mjs';
 import { sha256 } from '../src/core/common.mjs';
@@ -39,8 +40,12 @@ export function discrepancies(vector,report) {
 }
 export async function isolatedCopy(label) {
   // Keep native dependency paths below Windows limits even in audit checkouts.
-  const folder=new URL('../reports/tmp/i-'+sha256(label).slice(0,12)+'/',import.meta.url);
-  await mkdir(folder,{recursive:true});
+  const parent=new URL('../reports/tmp/',import.meta.url);await mkdir(parent,{recursive:true});
+  let folder;
+  for(let attempt=0;attempt<5;attempt++) {
+    folder=new URL('i-'+sha256(label+randomUUID()).slice(0,12)+'/',parent);
+    try {await mkdir(folder);break;} catch(error) {if(error.code!=='EEXIST'||attempt===4)throw error;}
+  }
   for(const name of ['src','vendor','provenance','vectors','schemas']) await cp(new URL('../'+name,import.meta.url),new URL(name,folder),{recursive:true});
   await mkdir(new URL('tools/',folder),{recursive:true});
   await cp(new URL('./verify-vector.mjs',import.meta.url),new URL('tools/verify-vector.mjs',folder));

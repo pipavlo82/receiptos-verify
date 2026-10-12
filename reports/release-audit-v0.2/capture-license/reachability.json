@@ -1,0 +1,95 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "original_commit": "dde5419f453969ae33b9e88b3151dba3e370f196",
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "raw_blob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "dde5419f453969ae33b9e88b3151dba3e370f196",
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "raw_blob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "dde5419f453969ae33b9e88b3151dba3e370f196",
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "raw_blob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f",
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "raw_blob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f",
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "raw_blob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f",
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "raw_blob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "40fcaa7bbf43872c1ab6d63565ad3c2d9808b81c",
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "raw_blob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "40fcaa7bbf43872c1ab6d63565ad3c2d9808b81c",
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "raw_blob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "40fcaa7bbf43872c1ab6d63565ad3c2d9808b81c",
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "raw_blob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "3df769c4d873d6f354d1627a97967eec645bd727",
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "raw_blob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "3df769c4d873d6f354d1627a97967eec645bd727",
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "raw_blob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "3df769c4d873d6f354d1627a97967eec645bd727",
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "raw_blob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "1ddfc74c3b0d99b003b4fbe30a2ccb29ce13b417",
+      "path": "reports/release-audit-v0.2/corpus/attribution-audit.json",
+      "raw_blob": "8915f368570d80e61f785945a28ebc3717b31dce",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "1ddfc74c3b0d99b003b4fbe30a2ccb29ce13b417",
+      "path": "reports/release-audit-v0.2/corpus/historical-ledger-audit.json",
+      "raw_blob": "0c6d2f8ae914eca988b7b020c1869bcd434edab0",
+      "reachable_in_curated_history": false
+    },
+    {
+      "original_commit": "1ddfc74c3b0d99b003b4fbe30a2ccb29ce13b417",
+      "path": "reports/release-audit-v0.2/corpus/public-source-observations.json",
+      "raw_blob": "65c3b8be0107fcdaf4063b3f3594f40cf9440427",
+      "reachable_in_curated_history": false
+    }
+  ]
+}

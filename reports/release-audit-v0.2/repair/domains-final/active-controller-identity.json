@@ -1,0 +1,8 @@
+{
+  "exitCode": 0,
+  "onlyChanges": "repository URL, output summary filename and separate checkpoint/source-HEAD metadata; exact frozen before inputs and literal expectations unchanged",
+  "originalControllerSha256": "563d2eae62936e0e57c0400fe8f4fe0260c18ef454482c709ed2e27984449eb4",
+  "repairedControllerSha256": "4ef6ed0f7ba3f0f34ad38597ece6e1dab2f979051f9bed14c245dc95c50e5e31",
+  "stdoutSha256": "48767edac90d162b968cf73c341ff5bfe884dcd9bc6c12a55da4a1488f4b870a",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "receiptos.verify.audit.observation.v1",
+  "finding": "TRUSTLESS_AUTHENTICATED_REPORT_UPGRADED_TO_LOCAL_RECOMPUTATION",
+  "evidence_source": "Actual tool stdout retained from the independent pre-fix probe; not reconstructed by running the fixed implementation",
+  "procedure": [
+    "Built fresh synthetic Trustless evidence using trustlessV2().",
+    "Changed the signed native scanner_version to opaque-scanner/1 and re-signed the native manifest with the explicitly public RFC8032 test seed.",
+    "Set the saved native result evidence_grade to AUTHENTICATED_REPORT, recomputed the exact native input digest, updated the caller-selected artifact digest and signed semantic surface, and reattached the outer commitment/signature.",
+    "Called verifyV2() before the evidence-grade policy fix and retained the following exact stdout."
+  ],
+  "raw_stdout": "{\"overall\":\"VERIFIED\",\"minimumGrade\":\"LOCAL_RECOMPUTATION\",\"nativeGrade\":\"AUTHENTICATED_REPORT\",\"nativeVerdict\":\"NO_FINDING\",\"evidenceSufficiency\":{\"status\":\"SUFFICIENT\",\"reasonCodes\":[],\"nativeResult\":{\"grade\":\"LOCAL_RECOMPUTATION\",\"available\":[\"adapter-input\"],\"git\":null}},\"reason_codes\":[\"NATIVE_CRYSTAL_ROOT_MATCH\",\"TRUSTLESS_NATIVE_RESULT_REPRODUCED\",\"TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED\"]}\n",
+  "observation": {
+    "overall": "VERIFIED",
+    "minimumGrade": "LOCAL_RECOMPUTATION",
+    "nativeGrade": "AUTHENTICATED_REPORT",
+    "nativeVerdict": "NO_FINDING",
+    "evidenceSufficiency": {
+      "status": "SUFFICIENT",
+      "reasonCodes": [],
+      "nativeResult": {
+        "grade": "LOCAL_RECOMPUTATION",
+        "available": ["adapter-input"],
+        "git": null
+      }
+    },
+    "reason_codes": [
+      "NATIVE_CRYSTAL_ROOT_MATCH",
+      "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+      "TRUSTLESS_SCANNER_EXECUTION_NOT_ESTABLISHED"
+    ]
+  },
+  "assessment": "The wrapper reran and reproduced an authenticated opaque scanner assertion. It did not rerun that scanner, yet the product reported that the stricter LOCAL_RECOMPUTATION evidence policy was satisfied.",
+  "not_recorded": [
+    "Full pre-fix input and report files",
+    "Exact SHA-256 of the then-uncommitted core source files",
+    "Exact probe timestamp"
+  ],
+  "after_control": "tests/trustless-grade-v2.test.mjs independently requires AUTHENTICATED_REPORT to remain native while the stricter product policy returns INSUFFICIENT_EVIDENCE."
+}

@@ -1,0 +1,682 @@
+{
+  "candidate": "1fecfc2587c5d89d350017a2a7a98ca78e933b9f",
+  "repo": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\v02-audit-repaired",
+  "generatedAt": "2026-10-11T23:32:33.935Z",
+  "fixtureMethod": "Independent Node crypto, own canonical encoder, raw Git objects, literal RVR canonical outcomes and direct Crystal root construction; no product fixture generator imports.",
+  "total": 57,
+  "passed": 57,
+  "failed": 0,
+  "results": [
+    {
+      "id": "D1",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "reason": null,
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "D2",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "SUBJECT_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "SUBJECT_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A01",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "SUBJECT_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "SUBJECT_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A02",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "ARTIFACT_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "ARTIFACT_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A03",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "AUTHORITY_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "AUTHORITY_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A04",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "SCOPE_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "SCOPE_MISMATCH",
+        "SEMANTIC_ABI_TYPE_ERROR"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A05",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "POLICY_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "POLICY_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A05b",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "POLICY_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "POLICY_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A06",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "VERSION_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "VERSION_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A06b",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "VERSION_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "VERSION_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A07",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "TIME_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "TIME_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A07b",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "TIME_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "TIME_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A08",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "reason": "ASSUMPTION_UNESTABLISHED",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "ASSUMPTION_UNESTABLISHED"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A08p",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "reason": null,
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A09",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "reason": "DEPENDENCY_MISSING",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "DEPENDENCY_MISSING"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A10",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "DEPENDENCY_CONTRADICTED",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "DEPENDENCY_CONTRADICTED",
+        "DEPENDENCY_MISSING"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A10p",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "reason": null,
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A11",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "CLAIM_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "SUBJECT_MISMATCH",
+        "ARTIFACT_MISMATCH",
+        "VERSION_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "CLAIM_MISMATCH",
+        "AUTHORITY_MISMATCH",
+        "SCOPE_MISMATCH",
+        "POLICY_MISMATCH",
+        "TIME_MISMATCH",
+        "SEMANTIC_ABI_TYPE_ERROR"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A12",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A12b",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A12c",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "ARTIFACT_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "ARTIFACT_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A12d",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A13",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "DEPENDENCY_RESULT_ID_DUPLICATE",
+      "actualReasons": [
+        "DEPENDENCY_RESULT_ID_DUPLICATE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A13b",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "DEPENDENCY_ID_DUPLICATE",
+      "actualReasons": [
+        "DEPENDENCY_ID_DUPLICATE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A14",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "reason": null,
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A14b",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "SUBJECT_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "SUBJECT_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "A15",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "SCOPE_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "SCOPE_MISMATCH",
+        "SEMANTIC_ABI_TYPE_ERROR"
+      ],
+      "passed": true
+    },
+    {
+      "id": "D12",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "reason": "EVIDENCE_MISSING",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "ADAPTER_INPUT_EVIDENCE_MISSING",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "EVIDENCE_MISSING",
+        "EVIDENCE_BASIS_UNESTABLISHED"
+      ],
+      "passed": true
+    },
+    {
+      "id": "D14",
+      "expected": "UNSUPPORTED_PROFILE",
+      "actual": "UNSUPPORTED_PROFILE",
+      "reason": "UNSUPPORTED_PROFILE",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "UNSUPPORTED_PROFILE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-empty-request",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-null",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": null,
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-array",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": null,
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-root-string",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": null,
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-empty-document",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "MALFORMED_JSON",
+      "actualReasons": [
+        "MALFORMED_JSON"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-duplicate-json",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "DUPLICATE_JSON_KEY",
+      "actualReasons": [
+        "DUPLICATE_JSON_KEY"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-extra",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-hash",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-hash-case",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-long",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-large-document",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "INPUT_TOO_LARGE",
+      "actualReasons": [
+        "INPUT_TOO_LARGE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-unpaired-surrogate",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "INVALID_UNICODE",
+      "actualReasons": [
+        "INVALID_UNICODE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-invalid-utf8",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "INVALID_UTF8",
+      "actualReasons": [
+        "INVALID_UTF8"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-traversal",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "ARTIFACT_PATH_MALFORMED",
+      "actualReasons": [
+        "ARTIFACT_PATH_MALFORMED"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-uri",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "SCHEMA_MISMATCH",
+      "actualReasons": [
+        "SCHEMA_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-overflow",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "UNSAFE_JSON_NUMBER",
+      "actualReasons": [
+        "UNSAFE_JSON_NUMBER"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-underflow",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "UNSAFE_JSON_NUMBER",
+      "actualReasons": [
+        "UNSAFE_JSON_NUMBER"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-nan",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "MALFORMED_JSON",
+      "actualReasons": [
+        "MALFORMED_JSON"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-infinity",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "MALFORMED_JSON",
+      "actualReasons": [
+        "MALFORMED_JSON"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-evidence-duplicate",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "DUPLICATE_EVIDENCE",
+      "actualReasons": [
+        "DUPLICATE_EVIDENCE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-evidence-conflict",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "ATTACHMENT_INTEGRITY_MISMATCH",
+      "actualReasons": [
+        "ATTACHMENT_INTEGRITY_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-adapter",
+      "expected": "UNSUPPORTED_PROFILE",
+      "actual": "UNSUPPORTED_PROFILE",
+      "reason": "UNSUPPORTED_PROFILE",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "NATIVE_BINDING_UNSUPPORTED",
+        "ADAPTER_UNSUPPORTED",
+        "EVIDENCE_GRADE_NOT_ESTABLISHED",
+        "EVIDENCE_BASIS_UNESTABLISHED",
+        "UNSUPPORTED_PROFILE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-semantic-profile",
+      "expected": "UNSUPPORTED_PROFILE",
+      "actual": "UNSUPPORTED_PROFILE",
+      "reason": "UNSUPPORTED_PROFILE",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "UNSUPPORTED_PROFILE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "M-canon-profile",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "CANONICALIZATION_PROFILE_UNSUPPORTED",
+      "actualReasons": [
+        "CANONICALIZATION_PROFILE_UNSUPPORTED"
+      ],
+      "passed": true
+    },
+    {
+      "id": "S-signature",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "INVALID_SIGNATURE",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "INVALID_SIGNATURE",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "S-root",
+      "expected": "REJECTED_MALFORMED",
+      "actual": "REJECTED_MALFORMED",
+      "reason": "RECEIPT_ROOT_MISMATCH",
+      "actualReasons": [
+        "RECEIPT_ROOT_MISMATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical"
+      ],
+      "passed": true
+    },
+    {
+      "id": "S-negative",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "NATIVE_NEGATIVE_RESULT",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_mismatch",
+        "rvr.recompute.identical",
+        "NATIVE_NEGATIVE_RESULT"
+      ],
+      "passed": true
+    },
+    {
+      "id": "S-native-pass-claim",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "reason": "CLAIM_MISMATCH",
+      "actualReasons": [
+        "NATIVE_CRYSTAL_ROOT_MATCH",
+        "rvr.v0.digest_match",
+        "rvr.recompute.identical",
+        "CLAIM_MISMATCH",
+        "SEMANTIC_ABI_TYPE_ERROR"
+      ],
+      "passed": true
+    }
+  ]
+}

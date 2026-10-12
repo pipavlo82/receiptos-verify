@@ -14,8 +14,13 @@ export function startServer(port=8808) {
     if(!localHost||(req.headers.origin&&req.headers.origin!==expected)) return send(403,'{"error":"LOCAL_ORIGIN_REQUIRED"}');
     try {
       if(req.method==='GET'&&['/','/app.mjs','/style.css'].includes(req.url)) {const file=req.url==='/'?'index.html':req.url.slice(1);return send(200,await readFile(new URL('web/'+file,root)),file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css; charset=utf-8':'text/javascript; charset=utf-8');}
-      if(req.method==='GET'&&req.url==='/api/vectors') return send(200,await readFile(new URL('vectors/index.json',root)));
+      if(req.method==='GET'&&req.url==='/api/vectors') {
+        const original=JSON.parse(await readFile(new URL('vectors/index.json',root),'utf8'));
+        const current=JSON.parse(await readFile(new URL('vectors/v0.2/index.json',root),'utf8'));
+        return send(200,JSON.stringify({...original,vectors:[...original.vectors,...current.vectors]}));
+      }
       if(req.method==='GET'&&/^\/api\/vectors\/V\d{2}$/.test(req.url)) return send(200,await readFile(new URL('vectors/'+req.url.slice(-3)+'.json',root)));
+      if(req.method==='GET'&&/^\/api\/vectors\/[GI]\d{2}$/.test(req.url)) return send(200,await readFile(new URL('vectors/v0.2/'+req.url.slice(-3)+'.json',root)));
       if(req.method!=='POST'||req.url!=='/api/verify') return send(404,'{"error":"NOT_FOUND"}');
       if(!req.headers['content-type']?.startsWith('application/json')) return send(415,'{"error":"JSON_REQUIRED"}');
       if(active>=2) return send(429,'{"error":"VERIFIER_BUSY"}');

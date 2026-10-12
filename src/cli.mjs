@@ -16,6 +16,9 @@ if(command==='verify'&&args.length>=2) {
   const decoded=decodeCapsule(await readFile(args[1]),args[2]?{containerDigest:args[2]}:{});
   const report=await verify(await readFile(args[0]),decoded.bundle);
   process.stdout.write(JSON.stringify(report,null,2)+'\n');process.exitCode=report.overall==='VERIFIED'?0:report.overall==='CONTRADICTED'?2:3;
+} else if(command==='demo-v2') {
+  const output=await (await import('../tools/demos-v2.mjs')).demosV2();
+  process.stdout.write(JSON.stringify(output,null,2)+'\n');process.exitCode=output.passed?0:1;
 } else if(command==='demo') {
   const pair=await baseline();
   const positive=await verify(pair.request,pair.bundle);

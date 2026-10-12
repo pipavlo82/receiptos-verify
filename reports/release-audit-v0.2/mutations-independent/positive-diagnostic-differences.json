@@ -1,0 +1,34 @@
+[
+  {
+    "family": "v1",
+    "id": "ignore-guarantee-dependency",
+    "changes": [
+      {
+        "path": ".layers.GUARANTEE_PRESERVATION.nativeResult.checks",
+        "before_length": 2,
+        "after_length": 1
+      },
+      {
+        "path": ".layers.GUARANTEE_PRESERVATION.nativeResult.establishes",
+        "before_length": 2,
+        "after_length": 1
+      }
+    ]
+  },
+  {
+    "family": "v2",
+    "id": "M02",
+    "changes": [
+      {
+        "path": ".layers.SEMANTIC_COMPATIBILITY.nativeResult.link.edge.consumer_requirement.scope",
+        "before": "{\"evidence_member\":\"artifact\"}",
+        "after": "{}"
+      },
+      {
+        "path": ".layers.SEMANTIC_COMPATIBILITY.nativeResult.link.edge.producer_claim.scope",
+        "before": "{\"evidence_member\":\"artifact\"}",
+        "after": "{}"
+      }
+    ]
+  }
+]

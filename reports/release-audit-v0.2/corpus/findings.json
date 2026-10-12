@@ -1,0 +1,87 @@
+[
+  {
+    "id": "CORPUS-DOC-01",
+    "severity": "LOW",
+    "title": "File-exclusion companion is stale after v0.2 native imports",
+    "candidate": "4888a0584369a91075eb2bdbd9a2ff6b99c46588",
+    "locations": [
+      {
+        "file": "docs/files-not-reused.md",
+        "line": 141,
+        "falseOrStaleClaim": "No upstream Python evaluator ... copied or executed; v0.2 now executes award_actual_settlement.py."
+      },
+      {
+        "file": "docs/files-not-reused.md",
+        "line": 295,
+        "falseOrStaleClaim": "shared-validation/engagement.js listed not copied; v0.2 contains exact native source."
+      },
+      {
+        "file": "docs/files-not-reused.md",
+        "line": 437,
+        "falseOrStaleClaim": "scan_check.py/suite.json listed not copied and no scanner/runner invoked; v0.2 vendors/executes selected native code."
+      },
+      {
+        "file": "docs/files-not-reused.md",
+        "line": 447,
+        "falseOrStaleClaim": "neutral evaluate.mjs/manifest.mjs listed not copied; v0.2 vendors/executes those exact files."
+      },
+      {
+        "file": "docs/files-not-reused.md",
+        "line": 457,
+        "falseOrStaleClaim": "Original Interpoll/action implementation and kit remain uncopied/no native execution, without v0.1 scope."
+      }
+    ],
+    "effect": "Human companion contradicts truthful machine manifests/current primary notices. No byte-identity, license-grant or runtime defect demonstrated.",
+    "requiredFix": "Explicitly mark original v0.1 exclusion account historical and append exact v0.2 selected-source exceptions, keeping all 43 source accounts and private/capture exclusions."
+  },
+  {
+    "id": "PROVENANCE-DOC-02",
+    "severity": "LOW",
+    "title": "Current-main wording predates newly merged upstream PR57",
+    "locations": [
+      {
+        "file": "docs/trustless-adapter.md",
+        "line": 5,
+        "falseOrStaleClaim": "real current-main conformance runner; selected pin remains older main1a37bcaf..."
+      },
+      {
+        "file": "docs/trustless-adapter.md",
+        "line": 11,
+        "falseOrStaleClaim": "mechanically observed public main1a37bcaf... requires observation-time qualifier beside current snapshot."
+      },
+      {
+        "file": "PROVENANCE.md",
+        "line": 109,
+        "falseOrStaleClaim": "PR57 remains OPEN, with historical scope only at paragraph end."
+      },
+      {
+        "file": "FULL_WORK_REUSE_MAP.md",
+        "line": 157,
+        "falseOrStaleClaim": "PR57 OPEN clause lacks nearby new live audit state."
+      }
+    ],
+    "effect": "Selected historical pin and prior OPEN observation are truthful; live upstream changed after that observation. Candidate does not silently execute reporter behavior.",
+    "requiredFix": "Add current audit observation: PR57 MERGED 2026-10-11T22:35:33Z,current main 3c3923956200d01ab74c2dcbb49b268739943bda,selected premerge pin unchanged. Preserve original time-scoped machine/history facts; do not repin technical artifacts or add new reporter support."
+  },
+  {
+    "id": "CORPUS-INFO-03",
+    "severity": "INFO",
+    "title": "Stored vector count exceeds distinct semantic branches",
+    "vectors": [
+      "G09",
+      "G10",
+      "G19",
+      "I01",
+      "I05"
+    ],
+    "effect": "G09/G01 andG10/G05 share actual execution/compatibility branches through routing aliases;G19 repeatsG04;I01/G13 andI05/G14 are exact input aliases.",
+    "requiredFix": "Report68 stored controls as63LOAD_BEARING+5REDUNDANT; retain original corpus. No feature/runtime edit required."
+  },
+  {
+    "id": "CORPUS-INFO-04",
+    "severity": "INFO",
+    "title": "Literal oracles are independent product relations, not full native-algorithm conformance",
+    "effect": "Fixture creation shares native builders/product commitment helpers; comparators assert required reasons rather than an exact closed reason set. Originalv1vectors do not separately constrain all native fields.",
+    "requiredFix": "Keep existing oracle limitations explicit; do not present round-trip fixtures or68controls as independent validation of all native crypto/canonicalization/upstream behavior."
+  }
+]

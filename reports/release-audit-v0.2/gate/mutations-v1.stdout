@@ -1,0 +1,15 @@
+ignore-requested-subject: KILLED
+compare-receipt-to-itself: KILLED
+accept-any-valid-signature: KILLED
+promote-reproduced-to-verified: KILLED
+accept-empty-evidence: KILLED
+count-crash-as-semantic-refutation: KILLED
+package-presence-as-pass: KILLED
+ignore-policy-version: KILLED
+ignore-guarantee-dependency: KILLED
+ignore-retry-action-change: KILLED
+ignore-evidence-grade: KILLED
+ignore-authority: KILLED
+ignore-commit: KILLED
+ignore-canonicalization-profile: KILLED
+{"KILLED":14,"SURVIVED":0,"CRASHED":0,"INVALID_OUTPUT":0,"NOT_APPLIED":0,"CONTROL_BROKEN":0,"INVALID_BASELINE":0}

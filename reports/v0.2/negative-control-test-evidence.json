@@ -1,0 +1,15 @@
+{
+  "command_receipt": "normal-tests.json",
+  "stdout_sha256": "8bac2242b08797559c7b662a2590d3c0560dba42338a2e164559dd04eeb6886a",
+  "passed_named_controls": [
+    "v0.2 isolated witness process rejects malformed output and distinguishes crash",
+    "v0.2 empty mutation inventory is a failing gate",
+    "v0.2 unapplied mutation and exact no-op cannot count as kills",
+    "v0.2 actual crashing mutant is CRASHED rather than a semantic kill",
+    "v0.2 malformed output is INVALID_OUTPUT rather than a semantic kill",
+    "v0.2 damaged but well-formed positive control prevents a semantic kill",
+    "v0.2 native checker crash inside a structured host report is never a semantic kill",
+    "v0.2 malformed native output with exit zero inside a valid host report is not a semantic kill"
+  ],
+  "boundary": "Actual passed test assertions in retained TAP; no inference that a crash or malformed output was a semantic kill"
+}

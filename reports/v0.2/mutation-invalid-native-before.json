@@ -1,0 +1,205 @@
+{
+  "schema": "receiptos.verify.mutation-negative-control-finding.v1",
+  "finding": "INNER_MALFORMED_NATIVE_OUTPUT_COUNTED_AS_SEMANTIC_KILL",
+  "started_at": "2026-10-11T22:21:01.392Z",
+  "completed_at": "2026-10-11T22:21:04.686Z",
+  "source_and_input_identities": [
+    {
+      "path": "tools/mutation-harness-v2.mjs",
+      "sha256": "1ead8bebd5b5ae36cba84cca71a662a4ebbca44664dcc899b3fc800e6a362a67"
+    },
+    {
+      "path": "tools/corpus-v2.mjs",
+      "sha256": "b3a6dd9c9c272015b2d5307b38ede6fbce6ea3b8a9a793ebdeeb27763c17e270"
+    },
+    {
+      "path": "src/adapters/native/trustless-bridge.py",
+      "sha256": "e5e9ae16264dcd5aa8a20f40ea6960ecef338e3e055d7c8033020cdbc003e474"
+    },
+    {
+      "path": "src/adapters/trustless.mjs",
+      "sha256": "b3b166395cfaa136369fa491a98c8840cf0f3c8e6f6426ac977b54657188dc74"
+    },
+    {
+      "path": "src/core/verify-v2.mjs",
+      "sha256": "1c3b876fe7309b16075bd07f61cfdaf0437cf3e06ea6b28f3c369325cc8c5a3c"
+    },
+    {
+      "path": "src/projection/project-v2.mjs",
+      "sha256": "987686cbd46578157c9df776d311420c0690a5ebc04931f27361267ecacf9dba"
+    },
+    {
+      "path": "vectors/v0.2/G24.json",
+      "sha256": "d6cc30a3175d30044dd0b622be7318e6d244741f5f0205ab9862b9248ed0d2be"
+    },
+    {
+      "path": "vectors/v0.2/G12.json",
+      "sha256": "fafd048e8e716ac2cd51d9a2095f1bfd49d52b3b1e99986e405968f8fc88708a"
+    }
+  ],
+  "input_ids": {
+    "positive": "G24",
+    "witness": "G12"
+  },
+  "reproduction_source": "import {auditMutants} from './tools/mutation-harness-v2.mjs';\nasync function probe(){\n const from='        payload = json.loads(sys.stdin.buffer.read().decode(\"utf-8\", \"strict\"))';\n const to=from+'\\n        if \"poison\" in payload[\"input\"][\"corpus\"][0][\"content\"]: sys.stdout.write(\"null\\\\n\"); sys.exit(0)';\n return auditMutants([{id:'INNER_NATIVE_NULL_PROBE',positive:'G24',witness:'G12',patches:[{file:'src/adapters/native/trustless-bridge.py',changes:[[from,to]]}]}],{writeReport:false,label:'witness-review-native-null-before'});\n}\nconsole.log(JSON.stringify(await probe(),null,2));\n",
+  "observation": {
+    "schema": "receiptos.verify.mutation-report.v2",
+    "method": "Exactly-applied source mutation, valid detached literal baseline, preserved positive control, and structured semantic projection disagreement. Crash, malformed output, no-op and unapplied mutation are never kills.",
+    "count": 1,
+    "passed": true,
+    "counts": {
+      "KILLED": 1,
+      "SURVIVED": 0,
+      "CRASHED": 0,
+      "INVALID_OUTPUT": 0,
+      "NOT_APPLIED": 0,
+      "CONTROL_BROKEN": 0,
+      "INVALID_BASELINE": 0
+    },
+    "rows": [
+      {
+        "id": "INNER_NATIVE_NULL_PROBE",
+        "positive": "G24",
+        "witness": "G12",
+        "patches": [
+          {
+            "file": "src/adapters/native/trustless-bridge.py",
+            "original_sha256": "e5e9ae16264dcd5aa8a20f40ea6960ecef338e3e055d7c8033020cdbc003e474",
+            "mutant_sha256": "bbf4c18e0608533d85b112c6f463466a0ae2649d4b3d42abfa16d37898d2e1be",
+            "replacements": [
+              {
+                "occurrences": 1,
+                "changed": true,
+                "from_sha256": "0ec82beb2a78b655fd94d693b4679d3e47cec965bfac34d25bd92dbf053fb704",
+                "to_sha256": "c7a61736e3c64c60731a3ec133ba01aea84d10048198620a6d5e5f9ada8861c0"
+              }
+            ]
+          }
+        ],
+        "applied": true,
+        "baseline_controls_valid": true,
+        "positive_preserved": true,
+        "positive_process_status": "COMPLETED",
+        "witness_process_status": "COMPLETED",
+        "baseline_errors": {
+          "positive": [],
+          "witness": []
+        },
+        "baseline_positive": {
+          "overall": "VERIFIED",
+          "reasons": [
+            "NATIVE_CRYSTAL_ROOT_MATCH",
+            "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+          ],
+          "layers": {
+            "INPUT": "ADMITTED",
+            "CANONICALIZATION": "VERIFIED",
+            "INTEGRITY": "VERIFIED",
+            "AUTHENTICITY": "VERIFIED",
+            "SUBJECT_BINDING": "VERIFIED",
+            "RECOMPUTATION": "REPRODUCED",
+            "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+            "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+            "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+            "CONTINUITY": "NOT_REQUESTED",
+            "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+            "PRODUCT_PROJECTION": "VERIFIED",
+            "EXPLAINABLE_REPORT": "GENERATED",
+            "PROVENANCE": "RECORDED"
+          },
+          "semanticOutcome": "VERIFIED"
+        },
+        "baseline_witness": {
+          "overall": "CONTRADICTED",
+          "reasons": [
+            "NATIVE_CRYSTAL_ROOT_MATCH",
+            "TRUSTLESS_NATIVE_RESULT_REPRODUCED",
+            "TRUSTLESS_NATIVE_CONTRADICTION",
+            "NATIVE_NEGATIVE_RESULT"
+          ],
+          "layers": {
+            "INPUT": "ADMITTED",
+            "CANONICALIZATION": "VERIFIED",
+            "INTEGRITY": "VERIFIED",
+            "AUTHENTICITY": "VERIFIED",
+            "SUBJECT_BINDING": "VERIFIED",
+            "RECOMPUTATION": "REPRODUCED",
+            "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+            "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+            "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+            "CONTINUITY": "NOT_REQUESTED",
+            "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+            "PRODUCT_PROJECTION": "CONTRADICTED",
+            "EXPLAINABLE_REPORT": "GENERATED",
+            "PROVENANCE": "RECORDED"
+          },
+          "semanticOutcome": "REFUTED"
+        },
+        "positive_exit_code": 0,
+        "witness_exit_code": 0,
+        "positive_errors": [],
+        "mutant_positive": {
+          "overall": "VERIFIED",
+          "reasons": [
+            "NATIVE_CRYSTAL_ROOT_MATCH",
+            "TRUSTLESS_NATIVE_RESULT_REPRODUCED"
+          ],
+          "layers": {
+            "INPUT": "ADMITTED",
+            "CANONICALIZATION": "VERIFIED",
+            "INTEGRITY": "VERIFIED",
+            "AUTHENTICITY": "VERIFIED",
+            "SUBJECT_BINDING": "VERIFIED",
+            "RECOMPUTATION": "REPRODUCED",
+            "EVIDENCE_SUFFICIENCY": "SUFFICIENT",
+            "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+            "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+            "CONTINUITY": "NOT_REQUESTED",
+            "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+            "PRODUCT_PROJECTION": "VERIFIED",
+            "EXPLAINABLE_REPORT": "GENERATED",
+            "PROVENANCE": "RECORDED"
+          },
+          "semanticOutcome": "VERIFIED"
+        },
+        "mutant_witness": {
+          "overall": "CANNOT_RECOMPUTE",
+          "reasons": [
+            "NATIVE_CRYSTAL_ROOT_MATCH",
+            "TRUSTLESS_NATIVE_BINDING_UNAVAILABLE",
+            "TRUSTLESS_CHECKER_UNAVAILABLE",
+            "EVIDENCE_GRADE_NOT_ESTABLISHED"
+          ],
+          "layers": {
+            "INPUT": "ADMITTED",
+            "CANONICALIZATION": "VERIFIED",
+            "INTEGRITY": "VERIFIED",
+            "AUTHENTICITY": "VERIFIED",
+            "SUBJECT_BINDING": "INSUFFICIENT_EVIDENCE",
+            "RECOMPUTATION": "CANNOT_RECOMPUTE",
+            "EVIDENCE_SUFFICIENCY": "INSUFFICIENT",
+            "SEMANTIC_COMPATIBILITY": "COMPATIBLE",
+            "GUARANTEE_PRESERVATION": "NOT_REQUESTED",
+            "CONTINUITY": "NOT_REQUESTED",
+            "DOMAIN_ADAPTERS": "NOT_REQUESTED",
+            "PRODUCT_PROJECTION": "CANNOT_RECOMPUTE",
+            "EXPLAINABLE_REPORT": "GENERATED",
+            "PROVENANCE": "RECORDED"
+          },
+          "semanticOutcome": "UNVERIFIABLE"
+        },
+        "baseline_projection": "CONTRADICTED",
+        "mutant_projection": "CANNOT_RECOMPUTE",
+        "witness_reasons": [
+          "NATIVE_CRYSTAL_ROOT_MATCH",
+          "TRUSTLESS_NATIVE_BINDING_UNAVAILABLE",
+          "TRUSTLESS_CHECKER_UNAVAILABLE",
+          "EVIDENCE_GRADE_NOT_ESTABLISHED"
+        ],
+        "checker_execution_failed": false,
+        "status": "KILLED"
+      }
+    ]
+  },
+  "assessment": "The native bridge deliberately emitted null and exited 0 only for the negative witness. The preserved positive and valid host report do not make CANNOT_RECOMPUTE a semantic mutation kill."
+}

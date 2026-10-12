@@ -1,0 +1,6 @@
+{
+  "nativeEqual": true,
+  "inputEqual": true,
+  "compatible": "VERIFIED",
+  "incompatible": "CONTRADICTED"
+}
