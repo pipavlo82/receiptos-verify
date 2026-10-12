@@ -66,3 +66,31 @@ provider/user dataset, credentials or unpublished operational key was imported
 for v0.2. Fresh synthetic fixtures and deliberately public test keys are identified
 as such. The source catalog and full reuse map retain all 43 historical audit
 repository accounts without inventing additional transferred capability.
+
+## Additive XRPL Testnet PoC dependencies
+
+`xrpl` 5.3.0 is an npm dependency under ISC. Its unchanged notice states
+"Copyright (c) 2012-2021 Contributers to xrpl.js" and is retained at
+`vendor/licenses/xrpl/LICENSE`. The published SDK supplies wallet/signing,
+serialization, faucet and ledger API capabilities; those are shared upstream
+work, not product-authored cryptography.
+
+`canonicalize` 5.1.0 is an npm dependency under Apache-2.0. The full grant is
+retained at `vendor/licenses/canonicalize/LICENSE`. Its published contributors
+include Samuel Erdtman and Anders Rundgren. It is used only for the portable
+XRPL claim commitment and does not replace ReceiptOS internal canonicalization.
+
+The exact direct and transitive publications, versions, SRI values and all 26
+legal files are recorded in `package-lock.json` and
+`provenance/npm-licenses.json`, including separately installed nested versions.
+The complete set uses MIT, ISC, BSD-3-Clause and Apache-2.0. Newly selected
+transitives include scure packages, XRPLF packages, bignumber.js, eventemitter3,
+ripple codecs/keypairs, ws and fast-json-stable-stringify. Their own copyright
+notices remain in the copied legal files without translation or normalization.
+The original seven package/license records and preserved files are unchanged.
+
+`provenance/xrpl-poc.json` distinguishes the local reviewed ReceiptOS convention
+from official XRPL documentation and upstream dependency implementation. The
+product Apache license does not relicense those dependencies. No dependency
+implementation code, third-party user/provider captures or wallet secrets are
+copied into this repository by the PoC.

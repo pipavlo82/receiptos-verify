@@ -103,9 +103,24 @@
       "sha256": "e48bb01449e6a2a9455089c87e0c45890a74519d766f172811d6dca422d59451"
     },
     {
+      "path": "docs/xrpl/examples/poc-request-A.json",
+      "bytes": 903,
+      "sha256": "54775ca703efd0db1a77cfbfe5a62740c3b118764404c6fd2a64f2c6dd57a30b"
+    },
+    {
+      "path": "docs/xrpl/examples/poc-request-B.json",
+      "bytes": 903,
+      "sha256": "7922bc6b1631749df2af239c575376a6735fe87f4f52177c4fe4ce7bc2286eeb"
+    },
+    {
       "path": "docs/xrpl/examples/wrong-claim.json",
       "bytes": 5532,
       "sha256": "28e18f08e4b6aae4dc138fe567ffccad5b834e2b0dd33ee66d4aeab99d0b1d64"
+    },
+    {
+      "path": "docs/xrpl/POC.md",
+      "bytes": 6867,
+      "sha256": "028c999776861e9df5253023d66536be8a367a734a358ef4eb2be1a226e32639"
     },
     {
       "path": "docs/xrpl/RECEIPTOS_VERIFY_XRPL_NOTE.md",
@@ -154,8 +169,8 @@
     },
     {
       "path": "NOTICE",
-      "bytes": 864,
-      "sha256": "26f2f6ae76f46cd03852e4625aad656932ce9a1a9f48bb80e97e4693fa101c46"
+      "bytes": 1327,
+      "sha256": "d5c519584f7ef4515a711a159131d757e1ffdcc66da5e457bb81ef35fa3ce8a1"
     },
     {
       "path": "output/ReceiptOS_Verify_XRPL_Technical_Note.pdf",
@@ -164,13 +179,13 @@
     },
     {
       "path": "package-lock.json",
-      "bytes": 3390,
-      "sha256": "699f2fc389c8d95ad0e5c7f2ef1b3566152b1f9e5123e2ab49cb5c9d59285023"
+      "bytes": 11976,
+      "sha256": "7001b384b18c734335fa5d0362a258416a8ff9290fb1938fdbc670a2aef55dc7"
     },
     {
       "path": "package.json",
-      "bytes": 794,
-      "sha256": "2d5349d0fa344f80eb607de8b6e570a8b8f760741e0b411349a142a04c2670c6"
+      "bytes": 1061,
+      "sha256": "913e9250c7e52b2487d91cab132d0ff4b61fe66cc0f3f798c4e157ac8846d493"
     },
     {
       "path": "profiles/git-artifact.v1.json",
@@ -183,9 +198,14 @@
       "sha256": "242129e5fc52283196f03b102b9c4b2b26fdb4201720265d13cc8384288583a6"
     },
     {
+      "path": "profiles/xrpl-poc-testnet-policy.json",
+      "bytes": 727,
+      "sha256": "330f1a8e1fd7881720b57c72f699eed8fadf169de2023f464e0d6c68a045eadf"
+    },
+    {
       "path": "PROVENANCE.md",
-      "bytes": 14610,
-      "sha256": "c4aff94daba0d7b21c4abe962e6f3672dec95db1234c4672288ca97080be79db"
+      "bytes": 16748,
+      "sha256": "bd4e10794b2f8083029f29bbea4b6119af807cbb466a9f1794b6c85bb8b279b5"
     },
     {
       "path": "provenance/authorship-evidence.json",
@@ -204,8 +224,8 @@
     },
     {
       "path": "provenance/npm-licenses.json",
-      "bytes": 3519,
-      "sha256": "6aa2e0af5f8eec437b88eb3ff3cae6146f6020143542897075b8a29581530370"
+      "bytes": 14075,
+      "sha256": "e983bbda7e87b732c99cc8da6b0dea94f55544b963476d56645255dc44119474"
     },
     {
       "path": "provenance/qev-moth-sources.json",
@@ -224,8 +244,8 @@
     },
     {
       "path": "provenance/sources.json",
-      "bytes": 495200,
-      "sha256": "820bb367cce5679451ab0e77c81de735109e3f1fede849a10bcbc2721a347fd5"
+      "bytes": 495341,
+      "sha256": "49ca86e6a0bd0fa686de55f84d8477121bc9ab05c5d11066d497b3b84ea46073"
     },
     {
       "path": "provenance/upstream-state.json",
@@ -246,6 +266,11 @@
       "path": "provenance/v02-trustless.json",
       "bytes": 6156,
       "sha256": "8bb06973a832b322f2efd51e82ffb2b41059cc5b5d8ca89d888ce679bb02509b"
+    },
+    {
+      "path": "provenance/xrpl-poc.json",
+      "bytes": 8126,
+      "sha256": "7935af6a09a7238d1540c57b3698eba3e34b5dc9cf92f9abf618856a736d7c2d"
     },
     {
       "path": "README.md",
@@ -443,6 +468,11 @@
       "sha256": "b3b166395cfaa136369fa491a98c8840cf0f3c8e6f6426ac977b54657188dc74"
     },
     {
+      "path": "src/adapters/xrpl-anchor.mjs",
+      "bytes": 22061,
+      "sha256": "9471bfb37901319098df85f23e26ef82b612417a268f1e27d390308d967839c1"
+    },
+    {
       "path": "src/analytics/cost.mjs",
       "bytes": 1085,
       "sha256": "4c1dfb4b6815c7d71ba70726ad806c9ea31068cc20609fd4ff09d11529f04d96"
@@ -623,6 +653,11 @@
       "sha256": "dcccf57d07fd32f3aacfdf4458d23b6d42e503695fda6b30f24b34fdfec0a560"
     },
     {
+      "path": "tests/helpers/xrpl-fixture.mjs",
+      "bytes": 6877,
+      "sha256": "5be67637a6de39c19482111ec985598a665f31e2914250df7af00ffc3918e615"
+    },
+    {
       "path": "tests/interpoll-request-classification-release.test.mjs",
       "bytes": 2430,
       "sha256": "2d1891cbb5c436374b21559668e33d0d2db50dedbe3d30fd6e86654b8c6515cb"
@@ -694,8 +729,8 @@
     },
     {
       "path": "tests/provenance-v2.test.mjs",
-      "bytes": 6540,
-      "sha256": "1aa8538351ef3d0858ff3c00d6acf60caba6ff2350bb501b2e511f6f5ad59778"
+      "bytes": 6864,
+      "sha256": "4f077f0d5d7ccdc5cec815496c4be90f06aac9ac583390a5eb7d421918c9c83a"
     },
     {
       "path": "tests/qev_moth.test.mjs",
@@ -758,9 +793,14 @@
       "sha256": "d400599d194f73291ef609e6bfb28a78ab9aac85aa33bd95e7efaca1ad6e9644"
     },
     {
+      "path": "tests/xrpl-anchor.test.mjs",
+      "bytes": 26584,
+      "sha256": "199a01ac08a2eae7a4e2be6c20347067c837d51af483edeb78bab802ea8ea3c1"
+    },
+    {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 4465,
-      "sha256": "e2f156d94d0af4bc6e94d298680b207243acb2d2e44d7d7809b45227f85dca06"
+      "bytes": 6116,
+      "sha256": "0c2ad754926c5a74d337f5cb07336cd4cd339d1a02cdf7befd2454954be755af"
     },
     {
       "path": "tools/build-schemas.mjs",
@@ -779,8 +819,8 @@
     },
     {
       "path": "tools/check-provenance-v2.mjs",
-      "bytes": 12120,
-      "sha256": "c6a442d89659465031fdfbb1f454b27f44a19ac890acb3daf55e0f8aa24cf8be"
+      "bytes": 16306,
+      "sha256": "94487ee6082d38aa9f7e5b255543b1f5a2ef93510fc9d5742b372e8f2c99ad5a"
     },
     {
       "path": "tools/check-sources.mjs",
@@ -839,8 +879,8 @@
     },
     {
       "path": "tools/preserve-npm-licenses.mjs",
-      "bytes": 1422,
-      "sha256": "b82e65c8d081766f5af1c18d8c0910401aba95371b928641d5f4e2f2df3ace4e"
+      "bytes": 2580,
+      "sha256": "1276cc623fd83afce58ae4738544fad16432a84305d11d6d894399c38e2e589a"
     },
     {
       "path": "tools/reproduce.mjs",
@@ -886,6 +926,11 @@
       "path": "tools/write-demo.mjs",
       "bytes": 2243,
       "sha256": "8a68c2b65221e0cf49fd3dceaf1468caa87b4423e91ae25af6905ff1e7a5dcf6"
+    },
+    {
+      "path": "tools/xrpl-poc.mjs",
+      "bytes": 16601,
+      "sha256": "9ce4c2e98398ecb13d68805d010ed04b931f50fe7290f4276516e3a41a98fd59"
     },
     {
       "path": "V0_2_REVIEW_REPORT.md",
@@ -1303,14 +1348,84 @@
       "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
     },
     {
+      "path": "vendor/licenses/@scure__base/LICENSE",
+      "bytes": 1110,
+      "sha256": "3239e134eb6e6d64538ca76498c7fcb08a395249dd9d4af9927bf6d0169ee429"
+    },
+    {
+      "path": "vendor/licenses/@scure__bip32__nested__@noble__curves/LICENSE",
+      "bytes": 1109,
+      "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+    },
+    {
+      "path": "vendor/licenses/@scure__bip32__nested__@noble__hashes/LICENSE",
+      "bytes": 1109,
+      "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+    },
+    {
+      "path": "vendor/licenses/@scure__bip32/LICENSE",
+      "bytes": 1122,
+      "sha256": "1565efd0ec4580bfaa96c7eeaaa9af3791baa1cc562c3bde62d0a055910b9ec7"
+    },
+    {
+      "path": "vendor/licenses/@scure__bip39__nested__@noble__hashes/LICENSE",
+      "bytes": 1109,
+      "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+    },
+    {
+      "path": "vendor/licenses/@scure__bip39/LICENSE",
+      "bytes": 1122,
+      "sha256": "1565efd0ec4580bfaa96c7eeaaa9af3791baa1cc562c3bde62d0a055910b9ec7"
+    },
+    {
+      "path": "vendor/licenses/@xrplf__isomorphic__nested__eventemitter3/LICENSE",
+      "bytes": 1082,
+      "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf"
+    },
+    {
+      "path": "vendor/licenses/@xrplf__isomorphic/LICENSE",
+      "bytes": 747,
+      "sha256": "b12c8196fccb06026a29bba59a4b1dceea0363d9fba4364c90df343d1c8a3bf4"
+    },
+    {
+      "path": "vendor/licenses/@xrplf__mpt-crypto/LICENSE",
+      "bytes": 731,
+      "sha256": "0cc6523c3b7c398ae0c493a766f4136e1a5c697757c4e16ad8cf0cfc8656b7e6"
+    },
+    {
+      "path": "vendor/licenses/@xrplf__secret-numbers/LICENSE",
+      "bytes": 756,
+      "sha256": "7b05685d9a07b3f32e1919bc2dc3e3b99f73356c0e7b715d4a5b834820fec24c"
+    },
+    {
       "path": "vendor/licenses/ajv/LICENSE",
       "bytes": 1090,
       "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
     },
     {
+      "path": "vendor/licenses/bignumber.js/LICENCE.md",
+      "bytes": 1147,
+      "sha256": "31c890a145c6b390af74791a837a9f4fb0647269bd84d17ae0ecb4cb50de206b"
+    },
+    {
+      "path": "vendor/licenses/canonicalize/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/licenses/eventemitter3/LICENSE",
+      "bytes": 1082,
+      "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf"
+    },
+    {
       "path": "vendor/licenses/fast-deep-equal/LICENSE",
       "bytes": 1074,
       "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+      "path": "vendor/licenses/fast-json-stable-stringify/LICENSE",
+      "bytes": 1145,
+      "sha256": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36"
     },
     {
       "path": "vendor/licenses/fast-uri/LICENSE",
@@ -1326,6 +1441,31 @@
       "path": "vendor/licenses/require-from-string/license",
       "bytes": 1128,
       "sha256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+    },
+    {
+      "path": "vendor/licenses/ripple-address-codec/LICENSE",
+      "bytes": 11346,
+      "sha256": "46a4de3f000fc28f20b249d62e46e1ff69234799fa0d6eaa6c84fd7b5c64652b"
+    },
+    {
+      "path": "vendor/licenses/ripple-binary-codec/LICENSE",
+      "bytes": 731,
+      "sha256": "0cc6523c3b7c398ae0c493a766f4136e1a5c697757c4e16ad8cf0cfc8656b7e6"
+    },
+    {
+      "path": "vendor/licenses/ripple-keypairs/LICENSE",
+      "bytes": 749,
+      "sha256": "8a1d288b9d4a73276758e39890631a7165a18ba6442483e473bf895dd310af13"
+    },
+    {
+      "path": "vendor/licenses/ws/LICENSE",
+      "bytes": 1183,
+      "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+    },
+    {
+      "path": "vendor/licenses/xrpl/LICENSE",
+      "bytes": 756,
+      "sha256": "5dc2927ece0abb5a5271bcaefa882cd37afa2aee4c69a1e69c206d4b110fa4b0"
     },
     {
       "path": "vendor/prf-v02/award_actual_settlement.py",

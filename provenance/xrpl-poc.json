@@ -1,0 +1,179 @@
+{
+  "schema": "receiptos.verify.xrpl-poc-provenance.v1",
+  "observedAt": "2026-10-12",
+  "maturity": "EXPERIMENTAL",
+  "baseReceiptOS": {
+    "repository": "pipavlo82/receiptos-verify",
+    "commit": "6b403702628f216933d4b30a130f74ac5c81171d",
+    "branch": "docs/xrpl-technical-note"
+  },
+  "localProfile": {
+    "id": "xrpl-receipt-anchor-v0",
+    "integrationMode": "REIMPLEMENTED_FROM_SPEC",
+    "sourceSHA": "6b403702628f216933d4b30a130f74ac5c81171d",
+    "sourcePaths": [
+      {
+        "path": "docs/xrpl/RECEIPTOS_VERIFY_XRPL_NOTE.md",
+        "sha256": "a60a8c538e0e00b9a1ce6db9b6763c5dfe53521fa41d2cec809f9b8c778cc89b"
+      },
+      {
+        "path": "docs/xrpl/xrpl-receipt-anchor-v0.schema.json",
+        "sha256": "e9d9c08945240479aee3b9e4355282b425d90276fa0b305d02eb0d0ffe40cbda"
+      },
+      {
+        "path": "tools/validate-xrpl-note.mjs",
+        "sha256": "2d1b1c01d583c170e779c7dd3cd1a7f847ff6cc10dc969f10acb9f4081efd633"
+      }
+    ],
+    "contribution": "Original product adapter/CLI/tests implement the reviewed local ReceiptOS convention. SDK serialization/signing and JCS are dependency capabilities, not product-authored cryptography."
+  },
+  "dependencies": [
+    {
+      "name": "xrpl",
+      "repository": "XRPLF/xrpl.js",
+      "sourceSHA": "0f00ad2e6529c515a9bdfed4fcb6a7da22af8e0d",
+      "tag": "xrpl@5.3.0",
+      "sourcePaths": [
+        "packages/xrpl/src/client/index.ts",
+        "packages/xrpl/src/utils/hashes/hashLedger.ts",
+        "packages/xrpl/src/Wallet/index.ts"
+      ],
+      "authorship": "Shared xrpl.js contributors; package ISC notice retained verbatim. No Pavlo authorship of upstream SDK is asserted.",
+      "sourceIdentityEvidence": {
+        "kind": "PUBLIC_TAG_AND_SELECTED_INSTALLED_SOURCE_BYTE_COMPARISON",
+        "tagUrl": "https://github.com/XRPLF/xrpl.js/tree/xrpl%405.3.0",
+        "registryGitHead": null,
+        "selectedFiles": [
+          {
+            "sourcePath": "packages/xrpl/src/client/index.ts",
+            "sha256": "a4896187b6671c61b0bb21518ccdf44bfb93de270b763059dc24cedea660dd2c"
+          },
+          {
+            "sourcePath": "packages/xrpl/src/utils/hashes/hashLedger.ts",
+            "sha256": "b2bfbacd786ea0026819d4b855ead5a04244038a6a48063d0d3a21dac855eabc"
+          }
+        ],
+        "limit": "Tag is independently queried and selected published TypeScript bytes match. This is not a complete reproducible-build or package supply-chain audit."
+      },
+      "version": "5.3.0",
+      "license": "ISC",
+      "resolved": "https://registry.npmjs.org/xrpl/-/xrpl-5.3.0.tgz",
+      "integrity": "sha512-sdyi7qqJ13U+nMllHgxJTWbQm/Tk8uzhBmeTKwhI9WxkHuekPfbvJ3BDopXO2vMfsty7lBja0ACSHEUKLz3F/w==",
+      "integrationMode": "DEPENDENCY",
+      "maturity": "STABLE",
+      "productIntegrationMaturity": "EXPERIMENTAL"
+    },
+    {
+      "name": "canonicalize",
+      "repository": "erdtman/canonicalize",
+      "sourceSHA": "31fb117afde3ef305b2e1d99bde539bf6300bc62",
+      "tag": "v5.1.0",
+      "sourcePaths": [
+        "lib/canonicalize.js",
+        "LICENSE",
+        "package.json"
+      ],
+      "authorship": "Published package contributors Samuel Erdtman and Anders Rundgren; Apache-2.0 license retained verbatim. No Pavlo authorship of upstream canonicalizer is asserted.",
+      "sourceIdentityEvidence": {
+        "kind": "REGISTRY_GITHEAD_PUBLIC_PEELED_TAG_AND_INSTALLED_SOURCE_BYTE_COMPARISON",
+        "tagUrl": "https://github.com/erdtman/canonicalize/tree/v5.1.0",
+        "registryGitHead": "31fb117afde3ef305b2e1d99bde539bf6300bc62",
+        "selectedFiles": [
+          {
+            "sourcePath": "lib/canonicalize.js",
+            "sha256": "c1d0195af2a0748454b06af8f218e5c90415c19d39154d0058fee8229c12d859"
+          }
+        ],
+        "limit": "Published implementation bytes match the pinned public source. PoC tests establish only its accepted input domain, not generic RFC8785 conformance."
+      },
+      "version": "5.1.0",
+      "license": "Apache-2.0",
+      "resolved": "https://registry.npmjs.org/canonicalize/-/canonicalize-5.1.0.tgz",
+      "integrity": "sha512-bab9+WefZljqQ8jT0qRwVmTyzAUU63K97QIQD3agynIBrb6sa5M2eAy8Hv8K3p4V9+ONVYZKtGYl4Dg+/5Gumw==",
+      "integrationMode": "DEPENDENCY",
+      "maturity": "STABLE",
+      "productIntegrationMaturity": "EXPERIMENTAL"
+    }
+  ],
+  "transitiveLicenses": {
+    "manifest": "provenance/npm-licenses.json",
+    "packageLock": "package-lock.json",
+    "packageInstances": 26,
+    "historicalInstancesRetained": 7,
+    "preservedLegalFiles": 26,
+    "legalBytes": "Actual installed license/notice bytes copied only into vendor/licenses; dependency implementation source is not vendored."
+  },
+  "officialSources": [
+    {
+      "classification": "OFFICIAL_XRPL_SOURCE",
+      "url": "https://xrpl.org/docs/tutorials/public-servers",
+      "supports": "Current public Testnet endpoints; endpoint operator assertions remain a trust premise.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "OFFICIAL_XRPL_SOURCE",
+      "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/server-info-methods/server_info",
+      "supports": "server_info network_id and current validated-ledger observations.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "OFFICIAL_XRPL_SOURCE",
+      "url": "https://xrpl.org/docs/references/protocol/transactions/types/accountset",
+      "supports": "All AccountSet setting fields are optional; a no-setting carrier changes no account setting but consumes a transaction fee.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "OFFICIAL_XRPL_SOURCE",
+      "url": "https://xrpl.org/docs/references/protocol/transactions/common-fields",
+      "supports": "Exact Memo transport, aggregate binary Memos size cap and mandatory omission of transaction NetworkID on Testnet ID1.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "OFFICIAL_XRPL_SOURCE",
+      "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/transaction-methods/tx",
+      "supports": "JSON/binary transaction lookup, native metadata, validated observation, hash and ledger references.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "OFFICIAL_XRPL_SOURCE",
+      "url": "https://xrpl.org/docs/references/http-websocket-apis/public-api-methods/ledger-methods/ledger",
+      "supports": "Ledger header/parent hash/transaction-list relationships.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "OFFICIAL_XRPL_SOURCE",
+      "url": "https://xrpl.org/docs/concepts/transactions/finality-of-results",
+      "supports": "Validated ledgers may include tesSUCCESS or tec-class results; transaction effect and inclusion are separate.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "OFFICIAL_XRPL_SDK_SOURCE",
+      "url": "https://js.xrpl.org/classes/Client.html",
+      "supports": "Wallet funding, autofill, submitAndWait and public transaction queries.",
+      "accessedAt": "2026-10-12"
+    },
+    {
+      "classification": "PUBLIC_STANDARD",
+      "url": "https://www.rfc-editor.org/rfc/rfc8785",
+      "supports": "Portable claim commitment canonicalization convention; does not replace ReceiptOS internal canonicalization.",
+      "accessedAt": "2026-10-12"
+    }
+  ],
+  "productFiles": [
+    "src/adapters/xrpl-anchor.mjs",
+    "tools/xrpl-poc.mjs",
+    "tests/xrpl-anchor.test.mjs",
+    "tests/helpers/xrpl-fixture.mjs",
+    "docs/xrpl/POC.md"
+  ],
+  "noPrivateOrUpstreamCodeAdded": true,
+  "boundaries": [
+    "XRPL Testnet only; no Mainnet or real XRP",
+    "Ledger endpoint observation and explicit replay acceptance are trust premises, not a portable consensus proof",
+    "ANCHOR_MATCH is an adapter-native inclusion relation, not global VERIFIED",
+    "Native TransactionResult remains separate for tesSUCCESS and tec",
+    "Public capture contains no wallet seed/private key",
+    "No DID/Credentials/Batch monetization or protocol proposal",
+    "Historical 43 repository rows,74 capability entries and v0.2 source pins are unchanged"
+  ]
+}

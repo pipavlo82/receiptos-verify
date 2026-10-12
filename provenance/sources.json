@@ -10385,5 +10385,9 @@
     },
     "scope": "Read-only release-audit observation; historical source fragments retain their own observation state. Current-main public vectors are audit-only CC0 fixtures, not newly imported runtime or reporter support.",
     "evidence": "reports/release-audit-v0.2/domains/current-main-replay.json"
+  },
+  "xrplPoc": {
+    "path": "provenance/xrpl-poc.json",
+    "sha256": "7935af6a09a7238d1540c57b3698eba3e34b5dc9cf92f9abf618856a736d7c2d"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "schema": "receiptos.xrpl.poc-trust-policy.v0",
+  "profile": "xrpl-receipt-anchor-v0",
+  "accepted_basis": "ACCEPTED_CAPTURE_REPLAY",
+  "endpoint": "wss://s.altnet.rippletest.net:51233/",
+  "network_id": 1,
+  "checkpoint": {
+    "ledger_index": 21488206,
+    "ledger_hash": "47d47bf9389ba3eddb096db84e5c3c8faf57abc063bbb88066adc9503a7412fa"
+  },
+  "account": "rGsFMVmcrHrKDGL1CjBPFTLbxj4QsjNkQn",
+  "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+  "verification_time": 1,
+  "capture_sha256": "7f7fa0ad162a5d619ff594e0aa562beb361fdd0d275821f7d1f0b2d54e7231ce",
+  "boundary": "Explicit caller acceptance of this pinned public RPC capture; not independent consensus authentication."
+}

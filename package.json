@@ -18,10 +18,16 @@
     "mutations:v2": "node tools/run-mutations-v2.mjs",
     "demo:v2": "node tools/demos-v2.mjs",
     "check:provenance": "node tools/check-provenance-v2.mjs",
-    "determinism:v2": "node tools/determinism-v2.mjs"
+    "determinism:v2": "node tools/determinism-v2.mjs",
+    "xrpl:poc": "node tools/xrpl-poc.mjs live",
+    "xrpl:poc:replay": "node tools/xrpl-poc.mjs replay",
+    "xrpl:verify": "node tools/xrpl-poc.mjs verify",
+    "test:xrpl": "node --test tests/xrpl-anchor.test.mjs"
   },
   "dependencies": {
     "@noble/curves": "2.0.1",
-    "ajv": "8.20.0"
+    "ajv": "8.20.0",
+    "canonicalize": "5.1.0",
+    "xrpl": "5.3.0"
   }
 }

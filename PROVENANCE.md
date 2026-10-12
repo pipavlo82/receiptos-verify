@@ -48,7 +48,7 @@ The CLI product `pack`/`verify-capsule` carrier remains an original schema/tree 
 
 ## Dependencies and preservation boundary
 
-[Dependency provenance](provenance/dependencies.json) records the seven exact installed lockfile packages, SRI declarations, dependency edges and license hashes. [Copied notices](provenance/npm-licenses.json) preserves actual installed license bytes. AJV 8.20.0, noble curves/hashes 2.0.1 and three other transitives use MIT; fast-uri 3.1.8 uses BSD-3-Clause. These grants remain separate from the product Apache license.
+[Dependency provenance](provenance/dependencies.json) records the seven exact historical v0.1/v0.2 lockfile packages, SRI declarations, dependency edges and license hashes. [Copied notices](provenance/npm-licenses.json) preserves actual installed license bytes, including later additive dependencies. AJV 8.20.0, noble curves/hashes 2.0.1 and three other original transitives use MIT; fast-uri 3.1.8 uses BSD-3-Clause. These grants remain separate from the product Apache license.
 
 [Files not reused](docs/files-not-reused.md) accounts for exact representative exclusions and retained roles across all 43 repositories. The saved upstream-preservation report compares 21,119 frozen public snapshot files across 43 repositories with zero mismatches. This is a snapshot boundary, not a claim that unrelated live workstation worktrees are clean. No existing upstream source was modified for this product.
 
@@ -116,3 +116,31 @@ contract mode null and product interpretation `MAIN_SELF_GRADING`; newly merged
 reporter behavior is not selected. PRF PR14 remains OPEN at its exact pin.
 Current-state evidence and audit-only public vectors retain their CC0 source
 identity in `reports/release-audit-v0.2/domains/current-main-replay.json`.
+
+## XRPL Testnet PoC dependency and convention boundary
+
+[XRPL PoC provenance](provenance/xrpl-poc.json) is additive to the frozen 43
+repository accounts, 74 capability records and v0.2 integrations. The original
+adapter implements the reviewed local `xrpl-receipt-anchor-v0` convention from
+ReceiptOS commit `6b403702628f216933d4b30a130f74ac5c81171d`; it does not import
+or attribute an XRPL protocol implementation to Pavlo.
+
+| Dependency | Exact selected publication/source | Reused capability / rights |
+| --- | --- | --- |
+| `xrpl` 5.3.0 | Public tag `xrpl@5.3.0`, commit `0f00ad2e6529c515a9bdfed4fcb6a7da22af8e0d`; npm tarball SRI in the lock and fragment | Official SDK wallet/faucet, canonical transaction serialization/signing, ledger queries and hash functions; ISC, shared xrpl.js contributors |
+| `canonicalize` 5.1.0 | Public `v5.1.0` and registry gitHead `31fb117afde3ef305b2e1d99bde539bf6300bc62`; npm tarball SRI in the lock and fragment | Portable JCS claim-commitment bytes; Apache-2.0, published package contributors Samuel Erdtman and Anders Rundgren |
+
+Selected installed SDK TypeScript and canonicalizer implementation bytes were
+compared with those exact public pins. This is a source identity check, not a
+complete package reproducible-build, supply-chain or generic JCS conformance
+audit. No dependency implementation is vendored. The dependency lock contains
+26 package instances including nested versions; all 26 actual legal files are
+preserved in `vendor/licenses` and cataloged with hashes. The original seven
+package/license records and bytes remain unchanged. The provenance gate binds
+the complete inventory to the current lock and exact direct dependency pins.
+
+The product integration is EXPERIMENTAL. Testnet endpoint observations and an
+explicit accepted replay artifact remain trust premises, not portable proof of
+consensus. Anchor inclusion, native transaction result and caller-selected claim
+compatibility remain separate. No upstream repository, private code, commercial
+authority, standards endorsement or funding relation is claimed.

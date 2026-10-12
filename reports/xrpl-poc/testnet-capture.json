@@ -1,0 +1,792 @@
+{
+  "schema": "receiptos.xrpl.testnet-capture.v0",
+  "profile": "xrpl-receipt-anchor-v0",
+  "capture_timestamp": "2026-10-12T21:13:18.645Z",
+  "sdk": {
+    "name": "xrpl",
+    "version": "5.3.0"
+  },
+  "network": {
+    "name": "XRPL Testnet",
+    "network_id": 1,
+    "endpoint": "wss://s.altnet.rippletest.net:51233/",
+    "server_build_version": "3.4.1",
+    "server_state": "full",
+    "checkpoint": {
+      "ledger_index": 21488206,
+      "ledger_hash": "47d47bf9389ba3eddb096db84e5c3c8faf57abc063bbb88066adc9503a7412fa"
+    }
+  },
+  "account": "rGsFMVmcrHrKDGL1CjBPFTLbxj4QsjNkQn",
+  "expected_R": "767aaea2159e3e32a08be974b047e4f6d31a1b1b5d65e7b36ac632a35dfd4b16",
+  "expected_C": "1e407befea04ab2da1811f05de21ce8c8669b0011207d5ac13285e31cefdb0dc",
+  "receipt": {
+    "schema": "stealth.session.evidence.v1",
+    "session_id": "receiptos-xrpl-testnet-poc",
+    "directory": "local/synthetic",
+    "task": {
+      "title": "Synthetic declaration anchored to XRPL Testnet"
+    },
+    "agent": {
+      "id": "synthetic",
+      "runtime": "local"
+    },
+    "scope": {
+      "permission": null
+    },
+    "authorization": {
+      "delegation_ref": null,
+      "delegator": null,
+      "agent_operator": null,
+      "target": "local/synthetic",
+      "allowed_actions": [],
+      "authorization_valid_from": null,
+      "authorization_expiry": null,
+      "authorization_checked_at": 0,
+      "authorization_state_hash": "synthetic",
+      "authorized_at_execution": null
+    },
+    "execution": [],
+    "commands": [],
+    "changes": {
+      "files_changed": [],
+      "diff_sha256": null
+    },
+    "metadata": {
+      "message_count": 0,
+      "diff_count": 0,
+      "generated_by": "receiptos-xrpl-poc",
+      "xrpl_claim_preimage": {
+        "receipt_profile": "crystal.handoff-receipt-root.v1",
+        "verification_profile": "receiptos.verify.generic.v2",
+        "surface": {
+          "claim": {
+            "id": "synthetic-commit-A",
+            "kind": "SYNTHETIC_DECLARATION",
+            "parameters": {
+              "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+            }
+          },
+          "subject": {
+            "kind": "synthetic-git-commit",
+            "id": "receiptos-xrpl-poc",
+            "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+            "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "version": "1"
+          },
+          "scope": {
+            "purpose": "testnet-anchor-boundary-only",
+            "external_execution": false
+          },
+          "authority": {
+            "id": "synthetic-poc-declarant",
+            "class": "SELF_DECLARED"
+          },
+          "policy": {
+            "id": "xrpl-testnet-poc",
+            "version": "0"
+          },
+          "version": "2",
+          "time": {
+            "not_before": 0,
+            "not_after": 9007199254740991
+          },
+          "assumptions": [],
+          "dependencies": [],
+          "evidence_requirements": [
+            "receipt-root"
+          ]
+        },
+        "network_binding": {
+          "network_id": 1,
+          "trusted_checkpoint": {
+            "ledger_index": 21488206,
+            "ledger_hash": "47d47bf9389ba3eddb096db84e5c3c8faf57abc063bbb88066adc9503a7412fa"
+          }
+        }
+      }
+    },
+    "anchor": {
+      "merkle_proof_status": "not attached",
+      "merkle_root": null,
+      "merkle_leaf_index": null,
+      "merkle_proof": [],
+      "onchain_anchor_status": "not anchored",
+      "network": "local/off-chain",
+      "contract": null,
+      "tx_hash": null,
+      "verifier_status": "not verified",
+      "receipt_root": "0x767aaea2159e3e32a08be974b047e4f6d31a1b1b5d65e7b36ac632a35dfd4b16"
+    }
+  },
+  "claim_preimage": {
+    "receipt_profile": "crystal.handoff-receipt-root.v1",
+    "verification_profile": "receiptos.verify.generic.v2",
+    "surface": {
+      "claim": {
+        "id": "synthetic-commit-A",
+        "kind": "SYNTHETIC_DECLARATION",
+        "parameters": {
+          "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+        }
+      },
+      "subject": {
+        "kind": "synthetic-git-commit",
+        "id": "receiptos-xrpl-poc",
+        "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "version": "1"
+      },
+      "scope": {
+        "purpose": "testnet-anchor-boundary-only",
+        "external_execution": false
+      },
+      "authority": {
+        "id": "synthetic-poc-declarant",
+        "class": "SELF_DECLARED"
+      },
+      "policy": {
+        "id": "xrpl-testnet-poc",
+        "version": "0"
+      },
+      "version": "2",
+      "time": {
+        "not_before": 0,
+        "not_after": 9007199254740991
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "evidence_requirements": [
+        "receipt-root"
+      ]
+    },
+    "network_binding": {
+      "network_id": 1,
+      "trusted_checkpoint": {
+        "ledger_index": 21488206,
+        "ledger_hash": "47d47bf9389ba3eddb096db84e5c3c8faf57abc063bbb88066adc9503a7412fa"
+      }
+    }
+  },
+  "request_a": {
+    "claim": {
+      "id": "synthetic-commit-A",
+      "kind": "SYNTHETIC_DECLARATION",
+      "parameters": {
+        "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+      }
+    },
+    "subject": {
+      "kind": "synthetic-git-commit",
+      "id": "receiptos-xrpl-poc",
+      "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+      "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "version": "1"
+    },
+    "scope": {
+      "purpose": "testnet-anchor-boundary-only",
+      "external_execution": false
+    },
+    "authority": {
+      "id": "synthetic-poc-declarant",
+      "class": "SELF_DECLARED"
+    },
+    "policy": {
+      "id": "xrpl-testnet-poc",
+      "version": "0"
+    },
+    "version": "2",
+    "time": {
+      "not_before": 0,
+      "not_after": 9007199254740991
+    },
+    "assumptions": [],
+    "dependencies": [],
+    "evidence_requirements": [
+      "receipt-root"
+    ]
+  },
+  "request_b": {
+    "claim": {
+      "id": "synthetic-commit-B",
+      "kind": "SYNTHETIC_DECLARATION",
+      "parameters": {
+        "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+      }
+    },
+    "subject": {
+      "kind": "synthetic-git-commit",
+      "id": "receiptos-xrpl-poc",
+      "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+      "commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "version": "1"
+    },
+    "scope": {
+      "purpose": "testnet-anchor-boundary-only",
+      "external_execution": false
+    },
+    "authority": {
+      "id": "synthetic-poc-declarant",
+      "class": "SELF_DECLARED"
+    },
+    "policy": {
+      "id": "xrpl-testnet-poc",
+      "version": "0"
+    },
+    "version": "2",
+    "time": {
+      "not_before": 0,
+      "not_after": 9007199254740991
+    },
+    "assumptions": [],
+    "dependencies": [],
+    "evidence_requirements": [
+      "receipt-root"
+    ]
+  },
+  "observation": {
+    "endpoint": "wss://s.altnet.rippletest.net:51233/",
+    "network_id": 1,
+    "validated": true,
+    "hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+    "ledger_index": 21488208,
+    "ledger_hash": "332EA3AA4B141BE29F56C1CA978B977F16FA9F92D76A2912E5C6ECBABA1D242B",
+    "tx_blob": "1200032200000000240147E24E201B0147E26268400000000000000C7321EDF8787EAEFB32F237C8331450EF825365179224B611091A80052C357155F764AE7440AD0249005A43C1F0F0E99F8B4A8E6C511EAE2B5CEFE103D9642BFA7708C00B4063F1002D9A9AD40837F382DDE27632C1BD7ACF3D9DF8B2FE9AB6BA34F84BD6018114A5123F4E74D386C9C32E78E84A09AEC1B3F1C7FFF9EA7C2475726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D76307D40767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC7E186170706C69636174696F6E2F6F637465742D73747265616DE1F1",
+    "tx_json": {
+      "TransactionType": "AccountSet",
+      "Flags": 0,
+      "Sequence": 21488206,
+      "LastLedgerSequence": 21488226,
+      "Fee": "12",
+      "SigningPubKey": "EDF8787EAEFB32F237C8331450EF825365179224B611091A80052C357155F764AE",
+      "TxnSignature": "AD0249005A43C1F0F0E99F8B4A8E6C511EAE2B5CEFE103D9642BFA7708C00B4063F1002D9A9AD40837F382DDE27632C1BD7ACF3D9DF8B2FE9AB6BA34F84BD601",
+      "Account": "rGsFMVmcrHrKDGL1CjBPFTLbxj4QsjNkQn",
+      "Memos": [
+        {
+          "Memo": {
+            "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+            "MemoData": "767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC",
+            "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "TransactionResult": "tesSUCCESS"
+    },
+    "meta_blob": "201C00000004F8E5110061250147E24E554CD2C9753F0650143B46EBC1AA827D4CA170D57F6AC46BFCE57C935902BC01E156F92614A9645F83B59E7D4C75F8073A01532843580069EA667BEE83EB9E98CC16E6240147E24E624000000005F5E100E1E72200000000240147E24F2D00000000624000000005F5E0F48114A5123F4E74D386C9C32E78E84A09AEC1B3F1C7FFE1E1F1031000",
+    "ledger": {
+      "ledger_index": 21488208,
+      "ledger_hash": "332EA3AA4B141BE29F56C1CA978B977F16FA9F92D76A2912E5C6ECBABA1D242B",
+      "total_coins": "99999887447416939",
+      "parent_hash": "BF2A3AAE3EC2C895F068D2CF4B2E150BE889B871E77C86BD7B6CE0D3DB922DD9",
+      "transaction_hash": "71DBA1B027E030267321A95A54130A1006A1A9C91F030523BEDDAFA556C7BE9E",
+      "account_hash": "4EF9021FD9093912429E2F29B59BD06766557D57FC6703BABBCAE57C26E2180D",
+      "parent_close_time": 845154791,
+      "close_time": 845154800,
+      "close_time_resolution": 10,
+      "close_flags": 0,
+      "transactions": [
+        "003535634036B2CDB2C0F1AE721F82C1B753DB20E800FC6681E08CD704E49B73",
+        "01D3AE288D15B4B21F3F7A1FED9302D964AF0F37D685263DF481F9E96EAB97C0",
+        "020511FDAB6D381F328D30C70270F9D49ACEEE12F7BDEF16C84E5E91437252C4",
+        "090B2C249C186902206B5779DA274E3912E15517641A0060990A8341DDA3423E",
+        "0C9F543EBBF05AC76C405AB95167B27402D6C46E088F388A131CEE20BE74B543",
+        "11F3BE7C5096FEFC27EF974A538667433CF3051424A6768B65EB8452FF7B2B99",
+        "124889FA7DE2B48FA0D629ED8BE8032EA6AB8E44573DB61A4DBDFBEBC5A72518",
+        "29BF834436D1A7E41ED0F005EAA1DFABA8B62BD81A260104FF59A017F8BCFF68",
+        "2BDC73F21014EF7119E77D0AEB99D1D7EA60D2EAD531C894113C5FCAF2863D39",
+        "340FD2F0EA6BF11386822AA1CA874D4655890070F0E51BBB79D5DB1A9F055097",
+        "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+        "3A50514C2A84C29BDD11C79BCB1FD1C2B9484F20E6F19D187094B0E0BC51B14E",
+        "41AF61079DD9DD404DC864CDCA2B34CA4519815141ABC6CEA8372759924FF664",
+        "49E00F6BEF490F67FBCEC0FC71D4287320085824570B8B378F921EA9C9638825",
+        "5634F825B8829965394566DF2CD056201F57D12CAEECE62F9BB2B1F9FEFCB8B7",
+        "5B5E2D57B7756BC714718FBE9290D58C8B2ED748F64C6CC046B5042C4E86DD59",
+        "6CFA6AB1C7AB73BF8F546DE89750B3B99D52113F867B8B951EDEF8A8CA286238",
+        "86549FD8D2C3F551A3224B6B3BAC20BE07D4A13A8E94AD1A79F1EDF6FCA005E3",
+        "8FF48A7BCCE131FE9C03F1B4B011A8B31B526643345E6306BF49C331DA078E5A",
+        "A8B090B14BB1BDDFB5E58AC36C118CD8A154DFC666CDE018506104A75ABCB2E6",
+        "AB143C2F08650DD38B34405E14D7025E8C2916FDC916FB31F63633A87EC686E7",
+        "BAA9FF27F929957CE74C05B155307052A700B6E05D6A7E7F46355522D10F9D3D",
+        "BD4A13D8D85790D73617ADD7E7B9582410E1743F6E68EF151173850C7E557B99",
+        "D352CB03558CB5F18F202242EAEC4998E7B7E6AF9D661535558E7EAC1A1A9F27",
+        "DBFC0A3C350E6B122D97403F9CFFA3ECBE61FCDD9F108A615C4E3E3DB2F0BCF2",
+        "F1565F2DCE63711A828C8F6AE4B5FC2FB026578AF8ADE5DD8D6FC3382F62E278",
+        "F2859D570876AED8B385D54183393158D9BDA9ADF477D0F76843FEFC1911B146"
+      ]
+    },
+    "history": [
+      {
+        "ledger_index": 21488206,
+        "ledger_hash": "47D47BF9389BA3EDDB096DB84E5C3C8FAF57ABC063BBB88066ADC9503A7412FA",
+        "total_coins": "99999887447417769",
+        "parent_hash": "437E9D05BD866946D10100A6CCE12421B5E96678EB9D9DEF2A2F5736A97AC0F1",
+        "transaction_hash": "6FCD78B0AEB8C871F3EADBCBBB2D85EDEA1BE7E4272557971279D194F00C4D90",
+        "account_hash": "49B7FD0E14842A59B0884257E7CDE21BF5750839FE57DF36F952EA3C85D1EBB3",
+        "parent_close_time": 845154782,
+        "close_time": 845154790,
+        "close_time_resolution": 10,
+        "close_flags": 0
+      },
+      {
+        "ledger_index": 21488207,
+        "ledger_hash": "BF2A3AAE3EC2C895F068D2CF4B2E150BE889B871E77C86BD7B6CE0D3DB922DD9",
+        "total_coins": "99999887447417359",
+        "parent_hash": "47D47BF9389BA3EDDB096DB84E5C3C8FAF57ABC063BBB88066ADC9503A7412FA",
+        "transaction_hash": "F22FA28C4A97A747E633E822CF7F397B99E90792FAC803C3F32D5466AC85451F",
+        "account_hash": "1AA30372D65C1B87F0DFFA5540AC4D6E04237E1744AA76EC414E00AF30A0DC7F",
+        "parent_close_time": 845154790,
+        "close_time": 845154791,
+        "close_time_resolution": 10,
+        "close_flags": 0
+      },
+      {
+        "ledger_index": 21488208,
+        "ledger_hash": "332EA3AA4B141BE29F56C1CA978B977F16FA9F92D76A2912E5C6ECBABA1D242B",
+        "total_coins": "99999887447416939",
+        "parent_hash": "BF2A3AAE3EC2C895F068D2CF4B2E150BE889B871E77C86BD7B6CE0D3DB922DD9",
+        "transaction_hash": "71DBA1B027E030267321A95A54130A1006A1A9C91F030523BEDDAFA556C7BE9E",
+        "account_hash": "4EF9021FD9093912429E2F29B59BD06766557D57FC6703BABBCAE57C26E2180D",
+        "parent_close_time": 845154791,
+        "close_time": 845154800,
+        "close_time_resolution": 10,
+        "close_flags": 0,
+        "transactions": [
+          "003535634036B2CDB2C0F1AE721F82C1B753DB20E800FC6681E08CD704E49B73",
+          "01D3AE288D15B4B21F3F7A1FED9302D964AF0F37D685263DF481F9E96EAB97C0",
+          "020511FDAB6D381F328D30C70270F9D49ACEEE12F7BDEF16C84E5E91437252C4",
+          "090B2C249C186902206B5779DA274E3912E15517641A0060990A8341DDA3423E",
+          "0C9F543EBBF05AC76C405AB95167B27402D6C46E088F388A131CEE20BE74B543",
+          "11F3BE7C5096FEFC27EF974A538667433CF3051424A6768B65EB8452FF7B2B99",
+          "124889FA7DE2B48FA0D629ED8BE8032EA6AB8E44573DB61A4DBDFBEBC5A72518",
+          "29BF834436D1A7E41ED0F005EAA1DFABA8B62BD81A260104FF59A017F8BCFF68",
+          "2BDC73F21014EF7119E77D0AEB99D1D7EA60D2EAD531C894113C5FCAF2863D39",
+          "340FD2F0EA6BF11386822AA1CA874D4655890070F0E51BBB79D5DB1A9F055097",
+          "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "3A50514C2A84C29BDD11C79BCB1FD1C2B9484F20E6F19D187094B0E0BC51B14E",
+          "41AF61079DD9DD404DC864CDCA2B34CA4519815141ABC6CEA8372759924FF664",
+          "49E00F6BEF490F67FBCEC0FC71D4287320085824570B8B378F921EA9C9638825",
+          "5634F825B8829965394566DF2CD056201F57D12CAEECE62F9BB2B1F9FEFCB8B7",
+          "5B5E2D57B7756BC714718FBE9290D58C8B2ED748F64C6CC046B5042C4E86DD59",
+          "6CFA6AB1C7AB73BF8F546DE89750B3B99D52113F867B8B951EDEF8A8CA286238",
+          "86549FD8D2C3F551A3224B6B3BAC20BE07D4A13A8E94AD1A79F1EDF6FCA005E3",
+          "8FF48A7BCCE131FE9C03F1B4B011A8B31B526643345E6306BF49C331DA078E5A",
+          "A8B090B14BB1BDDFB5E58AC36C118CD8A154DFC666CDE018506104A75ABCB2E6",
+          "AB143C2F08650DD38B34405E14D7025E8C2916FDC916FB31F63633A87EC686E7",
+          "BAA9FF27F929957CE74C05B155307052A700B6E05D6A7E7F46355522D10F9D3D",
+          "BD4A13D8D85790D73617ADD7E7B9582410E1743F6E68EF151173850C7E557B99",
+          "D352CB03558CB5F18F202242EAEC4998E7B7E6AF9D661535558E7EAC1A1A9F27",
+          "DBFC0A3C350E6B122D97403F9CFFA3ECBE61FCDD9F108A615C4E3E3DB2F0BCF2",
+          "F1565F2DCE63711A828C8F6AE4B5FC2FB026578AF8ADE5DD8D6FC3382F62E278",
+          "F2859D570876AED8B385D54183393158D9BDA9ADF477D0F76843FEFC1911B146"
+        ]
+      }
+    ]
+  },
+  "trust_boundary": "TLS public Testnet RPC observation and selected checkpoint; header/transaction identities and reported membership checked. No independent validator consensus or transaction-Merkle proof.",
+  "secondary_observation": {
+    "endpoint": "wss://testnet.xrpl-labs.com/",
+    "network_id": 1,
+    "validated": true,
+    "hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+    "ledger_index": 21488208,
+    "ledger_hash": "332EA3AA4B141BE29F56C1CA978B977F16FA9F92D76A2912E5C6ECBABA1D242B",
+    "transaction_bytes_match": true
+  },
+  "result_a": {
+    "anchor_native": "ANCHOR_MATCH",
+    "native_transaction_result": "tesSUCCESS",
+    "transaction_policy": "NOT_REQUESTED",
+    "integrity": {
+      "status": "VERIFIED",
+      "reasonCodes": [
+        "NATIVE_CRYSTAL_ROOT_MATCH"
+      ],
+      "nativeResult": {
+        "ok": true,
+        "receipt_root": "0x767aaea2159e3e32a08be974b047e4f6d31a1b1b5d65e7b36ac632a35dfd4b16",
+        "recomputed_root": "0x767aaea2159e3e32a08be974b047e4f6d31a1b1b5d65e7b36ac632a35dfd4b16"
+      },
+      "limitations": [
+        "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+        "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+        "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+      ],
+      "provenance": {
+        "profileId": "crystal.handoff-receipt-root.v1",
+        "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_RECEIPT_ROOT_INTEGRITY"
+        ],
+        "requiredEvidence": [
+          "native-crystal-evidence"
+        ],
+        "nativeVocabulary": {
+          "integrity": [
+            "ok:true",
+            "ok:false"
+          ],
+          "fields": [
+            "ok",
+            "receipt_root",
+            "recomputed_root"
+          ]
+        },
+        "runtime": "Bun 1.3.14",
+        "functions": [
+          "verifyHandoffReceiptRoot"
+        ]
+      }
+    },
+    "claim_relation": "COMPATIBLE",
+    "semantic_compatibility": {
+      "status": "COMPATIBLE",
+      "reasonCodes": [],
+      "nativeResult": null,
+      "dimensions": {
+        "claim": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "subject": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "artifact": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "commit": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "authority": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "scope": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "policy": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "version": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "time": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "assumptions": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "dependencies": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "evidence_basis": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        }
+      },
+      "requested": {
+        "claim": {
+          "id": "synthetic-commit-A",
+          "kind": "SYNTHETIC_DECLARATION",
+          "parameters": {
+            "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+          }
+        },
+        "subject": {
+          "kind": "synthetic-git-commit",
+          "id": "receiptos-xrpl-poc",
+          "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+          "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "1"
+        },
+        "scope": {
+          "purpose": "testnet-anchor-boundary-only",
+          "external_execution": false
+        },
+        "authority": {
+          "id": "synthetic-poc-declarant",
+          "class": "SELF_DECLARED"
+        },
+        "policy": {
+          "id": "xrpl-testnet-poc",
+          "version": "0"
+        },
+        "version": "2",
+        "time": {
+          "not_before": 0,
+          "not_after": 9007199254740991
+        },
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "receipt-root"
+        ]
+      },
+      "evidence": {
+        "claim": {
+          "id": "synthetic-commit-A",
+          "kind": "SYNTHETIC_DECLARATION",
+          "parameters": {
+            "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+          }
+        },
+        "subject": {
+          "kind": "synthetic-git-commit",
+          "id": "receiptos-xrpl-poc",
+          "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+          "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "1"
+        },
+        "scope": {
+          "purpose": "testnet-anchor-boundary-only",
+          "external_execution": false
+        },
+        "authority": {
+          "id": "synthetic-poc-declarant",
+          "class": "SELF_DECLARED"
+        },
+        "policy": {
+          "id": "xrpl-testnet-poc",
+          "version": "0"
+        },
+        "version": "2",
+        "time": {
+          "not_before": 0,
+          "not_after": 9007199254740991
+        },
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "receipt-root"
+        ]
+      }
+    },
+    "overall": "CONTINUE_REQUIRED_LAYERS",
+    "reason_codes": [
+      "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+    ],
+    "limitations": [
+      "Experimental bounded anchor relation, not a global ReceiptOS VERIFIED result.",
+      "RPC/capture trust is caller-selected; saved validated:true alone establishes nothing.",
+      "Header identity/ancestry and RPC-reported membership are not a portable consensus or SHAMap inclusion proof.",
+      "Ledger account authorization is not external/business authority or execution correctness.",
+      "The pinned Crystal root excludes top-level anchor and is not whole-envelope identity.",
+      "Ledger inclusion time is not execution time; replay is not a new live observation."
+    ]
+  },
+  "result_b": {
+    "anchor_native": "ANCHOR_MATCH",
+    "native_transaction_result": "tesSUCCESS",
+    "transaction_policy": "NOT_REQUESTED",
+    "integrity": {
+      "status": "VERIFIED",
+      "reasonCodes": [
+        "NATIVE_CRYSTAL_ROOT_MATCH"
+      ],
+      "nativeResult": {
+        "ok": true,
+        "receipt_root": "0x767aaea2159e3e32a08be974b047e4f6d31a1b1b5d65e7b36ac632a35dfd4b16",
+        "recomputed_root": "0x767aaea2159e3e32a08be974b047e4f6d31a1b1b5d65e7b36ac632a35dfd4b16"
+      },
+      "limitations": [
+        "The native root excludes the entire top-level anchor and does not authenticate its metadata.",
+        "Root equality does not establish claim correctness, signatures, Git membership or execution.",
+        "This narrow adapter invokes native root verification, not a complete issuance or schema evaluator."
+      ],
+      "provenance": {
+        "profileId": "crystal.handoff-receipt-root.v1",
+        "sourceRepository": "https://github.com/pipavlo82/crystal-receipt",
+        "sourceCommit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "license": "Apache-2.0",
+        "maturity": "STABLE",
+        "capabilities": [
+          "NATIVE_RECEIPT_ROOT_INTEGRITY"
+        ],
+        "requiredEvidence": [
+          "native-crystal-evidence"
+        ],
+        "nativeVocabulary": {
+          "integrity": [
+            "ok:true",
+            "ok:false"
+          ],
+          "fields": [
+            "ok",
+            "receipt_root",
+            "recomputed_root"
+          ]
+        },
+        "runtime": "Bun 1.3.14",
+        "functions": [
+          "verifyHandoffReceiptRoot"
+        ]
+      }
+    },
+    "claim_relation": "CONTRADICTED",
+    "semantic_compatibility": {
+      "status": "CONTRADICTED",
+      "reasonCodes": [
+        "CLAIM_MISMATCH",
+        "SUBJECT_MISMATCH"
+      ],
+      "nativeResult": null,
+      "dimensions": {
+        "claim": {
+          "status": "CONTRADICTED",
+          "reasonCodes": [
+            "CLAIM_MISMATCH"
+          ]
+        },
+        "subject": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "artifact": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "commit": {
+          "status": "CONTRADICTED",
+          "reasonCodes": [
+            "SUBJECT_MISMATCH"
+          ]
+        },
+        "authority": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "scope": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "policy": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "version": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "time": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "assumptions": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "dependencies": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        },
+        "evidence_basis": {
+          "status": "COMPATIBLE",
+          "reasonCodes": []
+        }
+      },
+      "requested": {
+        "claim": {
+          "id": "synthetic-commit-B",
+          "kind": "SYNTHETIC_DECLARATION",
+          "parameters": {
+            "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+          }
+        },
+        "subject": {
+          "kind": "synthetic-git-commit",
+          "id": "receiptos-xrpl-poc",
+          "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+          "commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "version": "1"
+        },
+        "scope": {
+          "purpose": "testnet-anchor-boundary-only",
+          "external_execution": false
+        },
+        "authority": {
+          "id": "synthetic-poc-declarant",
+          "class": "SELF_DECLARED"
+        },
+        "policy": {
+          "id": "xrpl-testnet-poc",
+          "version": "0"
+        },
+        "version": "2",
+        "time": {
+          "not_before": 0,
+          "not_after": 9007199254740991
+        },
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "receipt-root"
+        ]
+      },
+      "evidence": {
+        "claim": {
+          "id": "synthetic-commit-A",
+          "kind": "SYNTHETIC_DECLARATION",
+          "parameters": {
+            "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+          }
+        },
+        "subject": {
+          "kind": "synthetic-git-commit",
+          "id": "receiptos-xrpl-poc",
+          "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+          "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "1"
+        },
+        "scope": {
+          "purpose": "testnet-anchor-boundary-only",
+          "external_execution": false
+        },
+        "authority": {
+          "id": "synthetic-poc-declarant",
+          "class": "SELF_DECLARED"
+        },
+        "policy": {
+          "id": "xrpl-testnet-poc",
+          "version": "0"
+        },
+        "version": "2",
+        "time": {
+          "not_before": 0,
+          "not_after": 9007199254740991
+        },
+        "assumptions": [],
+        "dependencies": [],
+        "evidence_requirements": [
+          "receipt-root"
+        ]
+      }
+    },
+    "overall": "CONTRADICTED",
+    "reason_codes": [
+      "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+      "CLAIM_MISMATCH",
+      "SUBJECT_MISMATCH"
+    ],
+    "limitations": [
+      "Experimental bounded anchor relation, not a global ReceiptOS VERIFIED result.",
+      "RPC/capture trust is caller-selected; saved validated:true alone establishes nothing.",
+      "Header identity/ancestry and RPC-reported membership are not a portable consensus or SHAMap inclusion proof.",
+      "Ledger account authorization is not external/business authority or execution correctness.",
+      "The pinned Crystal root excludes top-level anchor and is not whole-envelope identity.",
+      "Ledger inclusion time is not execution time; replay is not a new live observation."
+    ]
+  }
+}

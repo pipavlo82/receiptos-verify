@@ -1,0 +1,38 @@
+{
+  "claim": {
+    "id": "synthetic-commit-A",
+    "kind": "SYNTHETIC_DECLARATION",
+    "parameters": {
+      "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422"
+    }
+  },
+  "subject": {
+    "kind": "synthetic-git-commit",
+    "id": "receiptos-xrpl-poc",
+    "artifact_digest": "09d1bfe69327ee33ccaa4f6a65a96c0bed5710ed92a6cebcb1c2046bb4fb8422",
+    "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "version": "1"
+  },
+  "scope": {
+    "purpose": "testnet-anchor-boundary-only",
+    "external_execution": false
+  },
+  "authority": {
+    "id": "synthetic-poc-declarant",
+    "class": "SELF_DECLARED"
+  },
+  "policy": {
+    "id": "xrpl-testnet-poc",
+    "version": "0"
+  },
+  "version": "2",
+  "time": {
+    "not_before": 0,
+    "not_after": 9007199254740991
+  },
+  "assumptions": [],
+  "dependencies": [],
+  "evidence_requirements": [
+    "receipt-root"
+  ]
+}

@@ -138,9 +138,51 @@ export function validateProvenanceV2(root = productRoot, options = {}) {
   ];
   for (const [path, marker] of grants) require(regularFile(root, path).toString('utf8').includes(marker), 'UPSTREAM_LICENSE_TEXT_MISSING');
   const npm = parseStrict(regularFile(root, 'provenance/npm-licenses.json'));
-  require(npm.packages.length === 7, 'NPM_LICENSE_INVENTORY_CHANGED');
-  for (const row of npm.packages) for (const file of row.legal) require(sha256(regularFile(root, file.path)) === file.sha256, 'NPM_LICENSE_BYTES_CHANGED');
-  return { status: 'PASS', publicBase: catalog.v02Base.commit, historicalRepositories: 43, historicalSourceEntries: 74, newIntegrations: integrations.length, newSourceRepositories: new Set(integrations.map(row => row.repository)).size, newVendorFiles: copied.size, sourceFragments: fragments.size, npmLicensePackages: npm.packages.length, boundary: 'Offline identity/attribution/notice consistency; not independent authorship adjudication, legal opinion or semantic soundness proof.' };
+  // npm's lock format uses an empty package key for the root project, outside
+  // the product request parser's nonempty-key domain. This local lock is also
+  // byte-bound by source-lock; it is not an untrusted verification request.
+  const npmLock = JSON.parse(regularFile(root, 'package-lock.json').toString('utf8'));
+  const packageManifest = parseStrict(regularFile(root, 'package.json'));
+  const packagePattern = /^node_modules\/(?:@[a-z0-9._-]+\/)?[a-z0-9._-]+(?:\/node_modules\/(?:@[a-z0-9._-]+\/)?[a-z0-9._-]+)*$/;
+  const lockedPackages = Object.entries(npmLock.packages ?? {}).filter(([path]) => path !== '');
+  require(npm.schema === 'receiptos.verify.npm-license-preservation.v1' && Array.isArray(npm.packages) && npm.packages.length === lockedPackages.length && lockedPackages.length === 26, 'NPM_LICENSE_INVENTORY_CHANGED');
+  const historicalNames = ['@noble/curves', '@noble/hashes', 'ajv', 'fast-deep-equal', 'fast-uri', 'json-schema-traverse', 'require-from-string'];
+  const historicalNpm = npm.packages.filter(row => !row.packagePath && historicalNames.includes(row.name));
+  require(historicalNpm.length === 7 && sha256(canonicalize(historicalNpm)) === 'b6c00f68018acdda3c7827124230a204d85d3dc59543e596deffdbf6ad545d30', 'HISTORICAL_NPM_LICENSE_IDENTITY_CHANGED');
+  const npmPaths = new Set(), legalPaths = new Set();
+  for (const row of npm.packages) {
+    const path = row.packagePath ?? 'node_modules/' + row.name;
+    require(packagePattern.test(path) && !npmPaths.has(path), 'NPM_PACKAGE_PATH_DUPLICATE_OR_UNSAFE');
+    npmPaths.add(path);
+    const locked = npmLock.packages[path];
+    const name = path.slice(path.lastIndexOf('node_modules/') + 'node_modules/'.length);
+    require(locked && row.name === name && ['version', 'license', 'resolved', 'integrity'].every(key => row[key] === locked[key]), 'NPM_LOCK_IDENTITY_MISMATCH');
+    require(/^https:\/\/registry\.npmjs\.org\//.test(row.resolved) && /^sha512-[A-Za-z0-9+/]+={0,2}$/.test(row.integrity), 'NPM_PACKAGE_PUBLICATION_IDENTITY_MISSING');
+    require(['MIT', 'BSD-3-Clause', 'ISC', 'Apache-2.0'].includes(row.license), 'NPM_LICENSE_GRANT_UNSUPPORTED');
+    require(Array.isArray(row.legal) && row.legal.length > 0, 'NPM_LICENSE_FILES_MISSING');
+    for (const file of row.legal) {
+      require(file.path.startsWith('vendor/licenses/') && !legalPaths.has(file.path), 'NPM_LICENSE_PATH_DUPLICATE_OR_UNEXPECTED');
+      legalPaths.add(file.path);
+      require(sha256(regularFile(root, file.path)) === file.sha256, 'NPM_LICENSE_BYTES_CHANGED');
+    }
+  }
+  require(lockedPackages.every(([path]) => npmPaths.has(path)), 'NPM_LOCK_PACKAGE_UNACCOUNTED');
+  const actualLegal = walk(root, 'vendor/licenses');
+  require(actualLegal.length === legalPaths.size && actualLegal.every(path => legalPaths.has(path)), 'NPM_LICENSE_BYTES_UNDECLARED');
+  require(packageManifest.dependencies?.xrpl === '5.3.0' && packageManifest.dependencies?.canonicalize === '5.1.0' && npmLock.packages[''].dependencies.xrpl === '5.3.0' && npmLock.packages[''].dependencies.canonicalize === '5.1.0', 'XRPL_DIRECT_DEPENDENCY_PIN_CHANGED');
+  require(catalog.xrplPoc?.path === 'provenance/xrpl-poc.json', 'XRPL_PROVENANCE_FRAGMENT_MISSING');
+  const xrplBytes = regularFile(root, catalog.xrplPoc.path);
+  require(sha256(xrplBytes) === catalog.xrplPoc.sha256, 'XRPL_PROVENANCE_FRAGMENT_DIGEST');
+  const xrplPoc = parseStrict(xrplBytes);
+  require(xrplPoc.schema === 'receiptos.verify.xrpl-poc-provenance.v1' && xrplPoc.baseReceiptOS.commit === '6b403702628f216933d4b30a130f74ac5c81171d' && xrplPoc.maturity === 'EXPERIMENTAL', 'XRPL_PROVENANCE_SCOPE');
+  for (const dependency of xrplPoc.dependencies ?? []) {
+    const row = npm.packages.find(item => (item.packagePath ?? 'node_modules/' + item.name) === 'node_modules/' + dependency.name);
+    require(row && ['version', 'license', 'resolved', 'integrity'].every(key => row[key] === dependency[key]) && dependency.integrationMode === 'DEPENDENCY', 'XRPL_DEPENDENCY_PROVENANCE_MISMATCH');
+  }
+  require(xrplPoc.dependencies?.length === 2, 'XRPL_DEPENDENCY_PROVENANCE_COUNT');
+  for (const path of xrplPoc.productFiles ?? []) regularFile(root, path);
+  require(xrplPoc.productFiles?.length >= 4 && xrplPoc.noPrivateOrUpstreamCodeAdded === true, 'XRPL_PRODUCT_SOURCE_MAPPING_MISSING');
+  return { status: 'PASS', publicBase: catalog.v02Base.commit, historicalRepositories: 43, historicalSourceEntries: 74, newIntegrations: integrations.length, newSourceRepositories: new Set(integrations.map(row => row.repository)).size, newVendorFiles: copied.size, sourceFragments: fragments.size, npmLicensePackages: npm.packages.length, historicalNpmLicensePackages: historicalNpm.length, xrplPocDependencies: xrplPoc.dependencies.length, boundary: 'Offline identity/attribution/notice consistency; not independent authorship adjudication, legal opinion, XRPL consensus or semantic soundness proof.' };
 }
 const equalList = (a, b) => a.length === b.length && [...a].sort().every((value, index) => value === [...b].sort()[index]);
 

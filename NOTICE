@@ -12,3 +12,10 @@ pipavlo82/protected-relation-fixtures: MIT, Copyright (c) 2026 Pavlo Tvardovskyi
 Their unchanged license files remain in the corresponding vendor/*-v02 directories.
 See THIRD_PARTY_NOTICES.md for exact pins and scope. The product Apache grant
 does not replace these grants or imply sole authorship of shared upstream code.
+
+The experimental XRPL Testnet PoC additionally depends on xrpl 5.3.0 (ISC,
+Copyright (c) 2012-2021 Contributers to xrpl.js) and canonicalize 5.1.0
+(Apache-2.0; published contributors include Samuel Erdtman and Anders Rundgren).
+These dependencies and their transitives retain their own grants and notices
+in vendor/licenses and provenance/npm-licenses.json. No SDK or canonicalizer
+authorship is attributed to Pavlo by integration. See provenance/xrpl-poc.json.

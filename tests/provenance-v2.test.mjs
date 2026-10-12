@@ -22,7 +22,9 @@ test('v0.2 provenance retains exact public base, all 43 repository accounts and 
   assert.equal(actual.newIntegrations, 8);
   assert.equal(actual.newSourceRepositories, 6);
   assert.equal(actual.newVendorFiles, 14);
-  assert.equal(actual.npmLicensePackages, 7);
+  assert.equal(actual.npmLicensePackages, 26);
+  assert.equal(actual.historicalNpmLicensePackages, 7);
+  assert.equal(actual.xrplPocDependencies, 2);
 });
 test('v0.2 provenance rejects dropped historical repository', () => reject(c => c.repositoryReuse.pop(), 'HISTORICAL_REPOSITORY_COUNT'));
 test('v0.2 provenance rejects historical capability rewriting', () => reject(c => c.sources[0].sourceSHA = '0'.repeat(40), 'HISTORICAL_SOURCE_ACCOUNT_CHANGED'));
@@ -48,7 +50,10 @@ test('v0.2 provenance rejects repository v2 integration misattribution', () => r
 test('v0.2 provenance detects undeclared vendor bytes in a separate temporary product', () => {
   const temporary = mkdtempSync(join(tmpdir(), 'rv02-provenance-'));
   try {
-    const paths = new Set(['provenance/sources.json', 'provenance/npm-licenses.json', 'LICENSE', 'NOTICE', 'THIRD_PARTY_NOTICES.md']);
+    const paths = new Set(['provenance/sources.json', 'provenance/npm-licenses.json', 'package.json', 'package-lock.json', 'LICENSE', 'NOTICE', 'THIRD_PARTY_NOTICES.md']);
+    paths.add(original.xrplPoc.path);
+    const xrpl = JSON.parse(readFileSync(join(root, original.xrplPoc.path), 'utf8'));
+    for (const path of xrpl.productFiles) paths.add(path);
     for (const fragment of original.v02Fragments) paths.add(fragment.path);
     for (const integration of original.v02Integrations) {
       for (const path of integration.productFiles) paths.add(path);

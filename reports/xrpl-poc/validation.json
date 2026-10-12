@@ -1,0 +1,106 @@
+{
+  "schema": "receiptos.xrpl.poc-validation.v0",
+  "live_anchor_submissions": 1,
+  "base_commit": "6b403702628f216933d4b30a130f74ac5c81171d",
+  "full_parallel_observation": {
+    "tests": 762,
+    "suites": 0,
+    "pass": 730,
+    "fail": 32
+  },
+  "full_normal_serial": {
+    "tests": 802,
+    "suites": 0,
+    "pass": 802,
+    "fail": 0
+  },
+  "hermetic_before_last_sdk_regression": {
+    "tests": 117,
+    "suites": 0,
+    "pass": 117,
+    "fail": 0
+  },
+  "xrpl_repeat": {
+    "tests": 95,
+    "suites": 0,
+    "pass": 95,
+    "fail": 0
+  },
+  "negative_tests": 76,
+  "negative_evaluations": 77,
+  "required_control_categories": 13,
+  "repeat_offline_json": {
+    "identical": true,
+    "bytes": 12489,
+    "sha256": "61bad7f6e50b2b8cca189c7ca154248f6860f3f1f219b522bf7f2e1de2b08bbc",
+    "normal_repeat_no_opt_identical": true
+  },
+  "capture_sha256": "7f7fa0ad162a5d619ff594e0aa562beb361fdd0d275821f7d1f0b2d54e7231ce",
+  "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+  "secrets_persisted": false,
+  "mainnet_funds_used": false,
+  "boundary": "Finite tests and one public Testnet RPC capture, not independent consensus proof or production conformance.",
+  "independent_controls": {
+    "pass": 19,
+    "fail": 0,
+    "network_readback_endpoints": 2,
+    "boundary": "Independent agent calculations/review, not a second human operator or consensus proof."
+  },
+  "documentation_contract": {
+    "pass": 126,
+    "classification_cases": 36,
+    "unchanged_from_base": true
+  },
+  "source_validation": {
+    "status": "PASS",
+    "files": 382
+  },
+  "provenance_validation": {
+    "status": "PASS",
+    "npm_package_instances": 26,
+    "historical_npm_unchanged": 7
+  },
+  "changed_files": [
+    "NOTICE",
+    "PROVENANCE.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/xrpl/POC.md",
+    "docs/xrpl/examples/poc-request-A.json",
+    "docs/xrpl/examples/poc-request-B.json",
+    "package-lock.json",
+    "package.json",
+    "profiles/xrpl-poc-testnet-policy.json",
+    "provenance/npm-licenses.json",
+    "provenance/sources.json",
+    "provenance/xrpl-poc.json",
+    "reports/xrpl-poc/testnet-capture.json",
+    "reports/xrpl-poc/validation.json",
+    "source-lock.json",
+    "src/adapters/xrpl-anchor.mjs",
+    "tests/helpers/xrpl-fixture.mjs",
+    "tests/provenance-v2.test.mjs",
+    "tests/xrpl-anchor.test.mjs",
+    "tools/check-provenance-v2.mjs",
+    "tools/preserve-npm-licenses.mjs",
+    "tools/xrpl-poc.mjs",
+    "vendor/licenses/@scure__base/LICENSE",
+    "vendor/licenses/@scure__bip32/LICENSE",
+    "vendor/licenses/@scure__bip32__nested__@noble__curves/LICENSE",
+    "vendor/licenses/@scure__bip32__nested__@noble__hashes/LICENSE",
+    "vendor/licenses/@scure__bip39/LICENSE",
+    "vendor/licenses/@scure__bip39__nested__@noble__hashes/LICENSE",
+    "vendor/licenses/@xrplf__isomorphic/LICENSE",
+    "vendor/licenses/@xrplf__isomorphic__nested__eventemitter3/LICENSE",
+    "vendor/licenses/@xrplf__mpt-crypto/LICENSE",
+    "vendor/licenses/@xrplf__secret-numbers/LICENSE",
+    "vendor/licenses/bignumber.js/LICENCE.md",
+    "vendor/licenses/canonicalize/LICENSE",
+    "vendor/licenses/eventemitter3/LICENSE",
+    "vendor/licenses/fast-json-stable-stringify/LICENSE",
+    "vendor/licenses/ripple-address-codec/LICENSE",
+    "vendor/licenses/ripple-binary-codec/LICENSE",
+    "vendor/licenses/ripple-keypairs/LICENSE",
+    "vendor/licenses/ws/LICENSE",
+    "vendor/licenses/xrpl/LICENSE"
+  ]
+}
