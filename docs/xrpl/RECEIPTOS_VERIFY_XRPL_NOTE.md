@@ -6,7 +6,7 @@ Pavlo Tvardovskyi | Technical discussion note for Florian Alonso / XRPL Commons 
 
 ## 1. Summary
 
-XRPL can establish that a commitment was submitted under an account's authorization and included in a validated ledger. ReceiptOS Verify independently determines what the referenced evidence establishes for the caller-selected claim. **Ledger inclusion != semantic correctness. Valid anchor for claim A != proof of claim B.** [1,2]
+XRPL can establish that a commitment was submitted under an account's authorization and included in a validated ledger. ReceiptOS Verify independently determines what the referenced evidence establishes for the caller-selected claim. **Ledger inclusion != semantic correctness. Transaction effect/result != anchor inclusion. Valid anchor for claim A != proof of claim B.** [1,2]
 
 The public v0.2.0 baseline checks bounded claim/evidence compatibility, integrity, authenticity, recomputation, sufficiency and requested guarantees, preserving native results. Its ledger boundary is interface-only; no live XRPL adapter exists. [9]
 
@@ -18,15 +18,15 @@ Public Semantic ABI asks what one system's evidence is allowed to mean when cons
 
 **CURRENT XRPL PRIMITIVES:** a standalone `AccountSet` with no account-setting options, authorized normally, carrying a Memo. V0 selects ordinary Sequence (no Ticket): it consumes a fee/sequence without changing account settings. [3,4]
 
-**PROPOSED RECEIPTOS CONVENTION:** exactly one Memo: `MemoType = receiptos/xrpl-receipt-anchor-v0`; `MemoFormat = application/octet-stream`; `MemoData = R[32] || C[32]`. All three are hex-encoded for XRPL JSON. Type fixes layout/version; R is the supported SHA-256 receipt root, not a hash of arbitrary exported JSON. C commits to the complete declared claim surface, verification/root profiles and intended network/checkpoint. Subject stays in that preimage. No raw evidence or verdict goes on-ledger.
+**PROPOSED RECEIPTOS CONVENTION:** one anchor Memo selected by exact decoded `MemoType = urn:receiptos:xrpl-receipt-anchor-v0`; `MemoFormat = application/octet-stream`; `MemoData = R[32] || C[32]`. All three are hex-encoded for XRPL JSON. Type fixes layout/version; R is the supported SHA-256 receipt root, not a hash of arbitrary exported JSON. C commits to the full declared claim surface, verification/root profiles and network/checkpoint. Subject stays in that preimage. No raw evidence or verdict goes on-ledger. XRPL does not require this URN.
 
 Crystal R excludes top-level anchor and is not whole-envelope identity; authenticated statement and payload/manifest closure must also pass.
 
-Define `C = SHA256(domain || UTF8(JCS(preimage)))`, domain ASCII `receiptos.xrpl-receipt-anchor-v0.claim` followed by one NUL. JCS is RFC 8785: no duplicate keys, nonfinite numbers or invalid Unicode; no Unicode normalization; array order matters. Admission retains v0.2 safe-integer/schema bounds. This is a new anchor convention, not a claim that v0.2 already implements JCS. [8]
+Define `C = SHA256(domain || UTF8(JCS(preimage)))`, domain ASCII `receiptos.xrpl-receipt-anchor-v0.claim` followed by one NUL. JCS is RFC 8785: no duplicate keys, nonfinite numbers or invalid Unicode; no Unicode normalization; array order matters. Retain v0.2 safe-integer/schema bounds. JCS is used only for the portable XRPL claim commitment so independent non-ReceiptOS implementations can derive the same bytes from a published standard; it does not replace ReceiptOS' internal canonicalization profile. [8]
 
-Decoded data is 64 bytes; type/format are 32/24 bytes. The entire binary-serialized Memos field must fit XRPL's 1 KB limit, including overhead. Reject malformed hex, wrong length and duplicate/extra Memos; unknown versions or delegated/sponsored/inner-Batch carriers are unsupported in v0. [3]
+Decoded data is 64 bytes; type/format are 36/24 bytes. All binary-serialized Memos together must fit XRPL's 1 KB limit, including overhead. Zero matching Types -> NOT_ESTABLISHED; more than one -> MALFORMED. Preserve/ignore unrelated Memos; never select first/last. Reject malformed matching Memo bytes/length. Unsupported requested profiles or delegated/sponsored/inner-Batch carriers remain unsupported. [3]
 
-Compare exact Memo bytes to receipt-derived R/C, then bind actual transaction hash, caller-accepted submitting Account and validated ledger hash/index. Establish that the committed caller-trusted network/checkpoint is on that validated ledger history. Require `validated:true` **and** `meta.TransactionResult = tesSUCCESS`; a saved RPC flag alone is not proof. Transaction ID uses XRPL signed-binary hashing, not SHA-256 of RPC JSON. [1,2,5]
+Compare Memo bytes to receipt-derived R/C; bind actual transaction hash, accepted Account and validated ledger hash/index to the caller-trusted network/checkpoint history. Exact accepted anchor in a trusted validated transaction -> ANCHOR_MATCH for either `tesSUCCESS` or `tec` result. Preserve `meta.TransactionResult` separately. Any policy requiring `tesSUCCESS` is a separate product obligation; it cannot erase inclusion. A saved RPC flag is not proof. Transaction ID uses XRPL signed-binary hashing, not SHA-256 of RPC JSON. [1,2,5]
 
 `NetworkID` is omitted for IDs <=1024 (Mainnet 0); required >=1025. Its absence is not Mainnet identity. Check the selected chain independently; IDs alone do not prevent every cross-chain replay. Master/regular-key/multisign account authorization does not establish the receipt issuer's business authority. [3,6]
 
@@ -48,7 +48,7 @@ flowchart TD
 
 ## 5. Two concrete examples
 
-Both examples assume independently established receipt integrity and a trusted, successful validated transaction anchoring receipt R and declaration A. They are synthetic contract examples, not ledger observations.
+Both examples assume independently established receipt integrity and a trusted validated transaction anchoring receipt R and declaration A. They are synthetic contract examples, not ledger observations.
 
 **A - matching claim:** receipt covers commit A; caller asks for A. Anchor = ANCHOR_MATCH; claim/subject = COMPATIBLE. Remaining layers continue; no global VERIFIED is inferred from the anchor.
 

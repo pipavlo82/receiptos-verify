@@ -1,0 +1,1065 @@
+{
+  "fixture_kind": "SYNTHETIC_DOCUMENTATION_CLASSIFICATION_CONTROLS_NOT_EXECUTED_ON_XRPL",
+  "warning": "Boolean inputs stand for assumed independently established premises, never node trust or portable inclusion proofs. Expected outcomes are literal documentation-contract oracles. The reference model checks only these supplied assumptions; it does not authenticate a ledger, signature or actual transaction. Unknown requested profiles are unsupported before selection; with supported v0, another/future MemoType is unrelated and cannot count as a match. Malformed transport inventories cannot be presumed valid unrelated Memos. Native result absence is independent of an otherwise established anchor; an impossible validated tem result is a contradictory malformed observation.",
+  "expected_memo": {
+    "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+    "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+    "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+  },
+  "controls": [
+    {
+      "id": "C01_validated_tes_exact",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C02_validated_tec_exact",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tecNO_PERMISSION",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tecNO_PERMISSION",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C03_tec_separate_success_policy",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tecNO_PERMISSION",
+        "required_transaction_result": "tesSUCCESS",
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tecNO_PERMISSION",
+        "transaction_policy": "UNSATISFIED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C04_tes_separate_success_policy",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": "tesSUCCESS",
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "SATISFIED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C05_unrelated_before",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C06_unrelated_after",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C07_two_unrelated",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          },
+          {
+            "Memo": {
+              "MemoData": "0304"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          },
+          {
+            "Memo": {
+              "MemoData": "0304"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C08_unrelated_reordered",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoData": "0304"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoData": "0304"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C09_zero_memos",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": []
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C10_only_unrelated",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A756E72656C61746564",
+              "MemoData": "0102"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C11_duplicate_identical",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C12_duplicate_conflicting",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C13_matching_odd_hex",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "0"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C14_matching_short_data",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "00"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C15_matching_missing_format",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C16_matching_unknown_format",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "746578742F706C61696E",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_UNSUPPORTED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C17_wrong_commitment",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MISMATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C18_unvalidated_exact",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": false,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C19_untrusted_exact",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": false,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C20_unknown_requested_version",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v1",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_UNSUPPORTED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C21_future_type_only",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7631",
+              "MemoData": "00"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7631",
+              "MemoData": "00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C22_future_type_plus_v0",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7631",
+              "MemoData": "00"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7631",
+              "MemoData": "00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C23_lowercase_transport",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726e3a726563656970746f733a7872706c2d726563656970742d616e63686f722d7630",
+              "MemoFormat": "6170706c69636174696f6e2f6f637465742d73747265616d",
+              "MemoData": "80bdfab9999aef91c22273606ebdab12e8cf3c0e262187ae0b641ab1824866974502e5ed22b9edb46fbdc15e77c58959772a8c461c82b02fa96c8ee2259dd24e"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C24_unrelated_without_type",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          },
+          {
+            "Memo": {
+              "MemoData": "0304"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoData": "0304"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C25_invalid_type_encoding",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "GG",
+              "MemoData": "00"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C26_invalid_matching_data",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "GG"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C27_impossible_validated_native_class",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "temMALFORMED",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "temMALFORMED",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C28_missing_result_independent_inclusion",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": null,
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": null,
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C29_missing_result_separate_policy",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": null,
+        "required_transaction_result": "tesSUCCESS",
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": null,
+        "transaction_policy": "NOT_ESTABLISHED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C30_mistyped_validated",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": "true",
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C31_duplicate_hex_case",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726e3a726563656970746f733a7872706c2d726563656970742d616e63686f722d7630",
+              "MemoFormat": "6170706c69636174696f6e2f6f637465742d73747265616d",
+              "MemoData": "80bdfab9999aef91c22273606ebdab12e8cf3c0e262187ae0b641ab1824866974502e5ed22b9edb46fbdc15e77c58959772a8c461c82b02fa96c8ee2259dd24e"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C32_unrelated_other_format",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A6F74686572",
+              "MemoFormat": "746578742F706C61696E",
+              "MemoData": "00"
+            }
+          },
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A6578616D706C653A6F74686572",
+              "MemoFormat": "746578742F706C61696E",
+              "MemoData": "00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "C33_unsupported_request_precedes_selection",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v9",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": []
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_UNSUPPORTED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C34_malformed_inventory",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": null
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MALFORMED",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C35_wrong_accepted_account",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": true,
+        "validated": true,
+        "account_matches_policy": false,
+        "native_transaction_result": "tesSUCCESS",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_MISMATCH",
+        "native_transaction_result": "tesSUCCESS",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    },
+    {
+      "id": "C36_untrusted_tec",
+      "input": {
+        "requested_profile": "xrpl-receipt-anchor-v0",
+        "assumed_trusted_history": false,
+        "validated": true,
+        "account_matches_policy": true,
+        "native_transaction_result": "tecNO_PERMISSION",
+        "required_transaction_result": null,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+              "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+        "native_transaction_result": "tecNO_PERMISSION",
+        "transaction_policy": "NOT_REQUESTED",
+        "unrelated_memos": []
+      }
+    }
+  ]
+}

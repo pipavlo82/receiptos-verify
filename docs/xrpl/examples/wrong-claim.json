@@ -57,7 +57,7 @@
     },
     "claim_digest": "4502e5ed22b9edb46fbdc15e77c58959772a8c461c82b02fa96c8ee2259dd24e",
     "memo": {
-      "MemoType": "726563656970746F732F7872706C2D726563656970742D616E63686F722D7630",
+      "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
       "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
       "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
     }
@@ -109,18 +109,33 @@
     "ledger_index": 2,
     "submitting_account": "ACCOUNT_TO_BE_SELECTED_BY_CALLER",
     "authorization_mode": "MASTER_OR_REGULAR_OR_MULTISIGN",
-    "required_transaction_result": "tesSUCCESS",
+    "illustrative_native_transaction_result": "tesSUCCESS",
     "required_validated": true,
+    "Memos": [
+      {
+        "Memo": {
+          "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+          "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D",
+          "MemoData": "80BDFAB9999AEF91C22273606EBDAB12E8CF3C0E262187AE0B641AB1824866974502E5ED22B9EDB46FBDC15E77C58959772A8C461C82B02FA96C8EE2259DD24E"
+        }
+      }
+    ],
     "trust_policy": "Independently selected chain/checkpoint and trusted fully validating server; no saved-boolean proof."
+  },
+  "separate_transaction_policy": {
+    "required_result": null,
+    "note": "No tesSUCCESS condition on anchor inclusion. A consumer may separately require it without changing anchor_native."
   },
   "assumed_premises": [
     "Receipt root independently verified by pinned root profile",
     "Evidence declaration is independently bound to the receipt",
-    "Exact anchor included with tesSUCCESS on the caller-selected validated chain",
+    "Exact anchor included on the caller-selected validated chain, independent of tes/tec effect result",
     "Account authorization and expected account policy independently established"
   ],
   "expected_under_stated_premises": {
     "anchor_native": "ANCHOR_MATCH",
+    "native_transaction_result": "tesSUCCESS",
+    "transaction_policy": "NOT_REQUESTED",
     "receipt_integrity": "VERIFIED",
     "claim_subject_compatibility": "CONTRADICTED",
     "overall": "CONTRADICTED",
