@@ -144,3 +144,7 @@ explicit accepted replay artifact remain trust premises, not portable proof of
 consensus. Anchor inclusion, native transaction result and caller-selected claim
 compatibility remain separate. No upstream repository, private code, commercial
 authority, standards endorsement or funding relation is claimed.
+
+## XRPL binding-contract repair
+
+Cold-review findings for original candidate `667760d0e153cb28b9f2524035dd444f32f30ad9` are preserved in the local repair evidence and `XRPL_POC_REPAIR_REPORT.md`. Jimmy Shi's interface observation is credited as review feedback, not upstream code authorship. The core binding contract, exact typed-premise admission and their regression/mutation controls are original local product implementation. Existing upstream pins, dependency/license bytes and the public Testnet transaction capture are unchanged. The bounded XRPL integration remains EXPERIMENTAL; evidence snapshots and RPC acceptance remain native trust premises.

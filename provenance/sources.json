@@ -10388,6 +10388,6 @@
   },
   "xrplPoc": {
     "path": "provenance/xrpl-poc.json",
-    "sha256": "7935af6a09a7238d1540c57b3698eba3e34b5dc9cf92f9abf618856a736d7c2d"
+    "sha256": "a1c86064e67ca7e86509a15a712d69de0ac78e7b36957b670d997c0facc78886"
   }
 }

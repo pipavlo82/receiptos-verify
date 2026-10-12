@@ -2,7 +2,8 @@
 // Oracle bytes are constructed independently of the adapter under test. These
 // headers and inclusion assertions are NOT observations of an actual ledger.
 import { createHash } from 'node:crypto';
-import { Wallet, decode, hashes } from 'xrpl';
+import { readFileSync } from 'node:fs';
+import { encode, decode, hashes } from 'xrpl';
 import { buildCrystalEvidence } from '../../src/adapters/crystal.mjs';
 
 export const TYPE_ASCII = 'urn:receiptos:xrpl-receipt-anchor-v0';
@@ -14,6 +15,15 @@ export const ENDPOINT = 'wss://s.altnet.rippletest.net:51233';
 export const clone = value => structuredClone(value);
 export const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const half = bytes => createHash('sha512').update(bytes).digest('hex').slice(0, 64).toUpperCase();
+const capturedCarrier = decode(JSON.parse(readFileSync(new URL('../../reports/xrpl-poc/testnet-capture.json', import.meta.url), 'utf8')).observation.tx_blob);
+// Reuse only existing PUBLIC signature-shaped fields in counterfactual codec
+// fixtures. These changed carriers are not authorized transactions or live
+// observations. No wallet/key generation or signing is needed to test this
+// adapter's byte relations; signature verification is outside its contract.
+export function syntheticCarrier(transaction) {
+  const tx_blob = encode({ ...transaction, SigningPubKey: capturedCarrier.SigningPubKey, TxnSignature: capturedCarrier.TxnSignature });
+  return { tx_blob, hash: independentTransactionHash(tx_blob) };
+}
 
 // Independent restricted-domain canonical oracle, not the pinned JCS package
 // or any ReceiptOS canonicalization function. No general JCS claim is made.
@@ -52,9 +62,7 @@ function header(index, parent, txRoot = '9'.repeat(64)) {
 }
 
 export async function buildXrplFixture() {
-  // generate() and sign() keep key material in this process only. Returned
-  // fixtures expose only the account and signed PUBLIC transaction bytes.
-  const wallet = Wallet.generate();
+  const account = capturedCarrier.Account;
   const checkpoint = header(500, '6'.repeat(64));
   const intermediate = header(501, checkpoint.ledger_hash);
   const finalHeader = header(502, intermediate.ledger_hash);
@@ -72,9 +80,9 @@ export async function buildXrplFixture() {
   const root = independentReceiptRoot(receipt), digest = independentClaimDigest(preimage);
   const memo = { MemoType: TYPE_HEX, MemoFormat: FORMAT_HEX, MemoData: (root + digest).toUpperCase() };
   function observationFor(memos = [{ Memo: memo }], result = 'tesSUCCESS', transactionFields = {}) {
-    const transaction = { TransactionType: 'AccountSet', Account: wallet.classicAddress, Sequence: 1, Fee: '12',
+    const transaction = { TransactionType: 'AccountSet', Account: account, Sequence: 1, Fee: '12',
       LastLedgerSequence: 520, Flags: 0x80000000, Memos: clone(memos), ...transactionFields };
-    const signed = wallet.sign(transaction);
+    const signed = syntheticCarrier(transaction);
     const observation = { validated: true, hash: independentTransactionHash(signed.tx_blob), ledger_index: finalHeader.ledger_index,
       ledger_hash: finalHeader.ledger_hash, tx_blob: signed.tx_blob, meta: { TransactionResult: result },
       ledger: { ...clone(finalHeader), transactions: [signed.hash] },
@@ -85,7 +93,7 @@ export async function buildXrplFixture() {
   }
   const observation = observationFor();
   const trust = { basis: 'TRUSTED_RPC_OBSERVATION', endpoint: ENDPOINT, network_id: 1,
-    checkpoint: clone(preimage.network_binding.trusted_checkpoint), account: wallet.classicAddress,
+    checkpoint: clone(preimage.network_binding.trusted_checkpoint), account,
     transaction_hash: observation.hash, required_transaction_result: null,
     claim_context: { verification_time: 1791763200, established_assumptions: [], dependency_results: [], evidence_basis: ['artifact', 'execution'] } };
   const requestB = clone(surface); requestB.claim.id = 'hermetic-claim-B'; requestB.subject.commit = 'c'.repeat(40);

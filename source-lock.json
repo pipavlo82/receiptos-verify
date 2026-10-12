@@ -119,8 +119,8 @@
     },
     {
       "path": "docs/xrpl/POC.md",
-      "bytes": 6867,
-      "sha256": "028c999776861e9df5253023d66536be8a367a734a358ef4eb2be1a226e32639"
+      "bytes": 11409,
+      "sha256": "f3cf34f1a41d1a85c6851a0f9700b6d95431a1405b9c9bfde5dd5d536bb65403"
     },
     {
       "path": "docs/xrpl/RECEIPTOS_VERIFY_XRPL_NOTE.md",
@@ -184,8 +184,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 1061,
-      "sha256": "913e9250c7e52b2487d91cab132d0ff4b61fe66cc0f3f798c4e157ac8846d493"
+      "bytes": 1208,
+      "sha256": "f187a758f7d7ddf5998da25d722c9474fce1198ad27d14e326f71d85064b7dc8"
     },
     {
       "path": "profiles/git-artifact.v1.json",
@@ -204,8 +204,8 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 16748,
-      "sha256": "bd4e10794b2f8083029f29bbea4b6119af807cbb466a9f1794b6c85bb8b279b5"
+      "bytes": 17406,
+      "sha256": "a5632063624d5928cf75b75c9d94e9e601394740238ad9a73775a029af35db0c"
     },
     {
       "path": "provenance/authorship-evidence.json",
@@ -245,7 +245,7 @@
     {
       "path": "provenance/sources.json",
       "bytes": 495341,
-      "sha256": "49ca86e6a0bd0fa686de55f84d8477121bc9ab05c5d11066d497b3b84ea46073"
+      "sha256": "ecb930bba86e919d8fd815c6e66e8d90a60f512bbc4083c4c6fcd3c3befb49cf"
     },
     {
       "path": "provenance/upstream-state.json",
@@ -269,8 +269,8 @@
     },
     {
       "path": "provenance/xrpl-poc.json",
-      "bytes": 8126,
-      "sha256": "7935af6a09a7238d1540c57b3698eba3e34b5dc9cf92f9abf618856a736d7c2d"
+      "bytes": 9164,
+      "sha256": "a1c86064e67ca7e86509a15a712d69de0ac78e7b36957b670d997c0facc78886"
     },
     {
       "path": "README.md",
@@ -424,8 +424,8 @@
     },
     {
       "path": "src/adapters/protocol.mjs",
-      "bytes": 659,
-      "sha256": "f4303848b6d53c45a44f58d62dc7543c9cedbe40789a439a2e4222af2255b14a"
+      "bytes": 1103,
+      "sha256": "c7621738ab27f04bb9891bd465adcc9d85616ba0ee2b45f14e63f85fd32ede06"
     },
     {
       "path": "src/adapters/qev_moth.mjs",
@@ -469,8 +469,8 @@
     },
     {
       "path": "src/adapters/xrpl-anchor.mjs",
-      "bytes": 22061,
-      "sha256": "9471bfb37901319098df85f23e26ef82b612417a268f1e27d390308d967839c1"
+      "bytes": 26160,
+      "sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c"
     },
     {
       "path": "src/analytics/cost.mjs",
@@ -498,14 +498,19 @@
       "sha256": "90112f9f353e4f638c4f76a2ff629f55c6bfdbbba724843a8788a3edff519e55"
     },
     {
+      "path": "src/core/binding-contract.mjs",
+      "bytes": 5577,
+      "sha256": "1eab12b91803a0511395cd0a57738c72c097e6ef2bb2a9d477caa2dca05c28a8"
+    },
+    {
       "path": "src/core/capsule.mjs",
       "bytes": 9921,
       "sha256": "3090851bf2a137dae432b3e38ef0c2b48d5e368eef9c7375d6279eaf9288b5a5"
     },
     {
       "path": "src/core/claim-surface.mjs",
-      "bytes": 6300,
-      "sha256": "b5a0237d3c642a91a89c7b73666e3e0f6d33a319495ddae08a0f86e34476ae1e"
+      "bytes": 7258,
+      "sha256": "338f37bc96a7a6d9954ffe246d2639ec655b91df74a9890aa9cac99e5e173862"
     },
     {
       "path": "src/core/common.mjs",
@@ -549,8 +554,8 @@
     },
     {
       "path": "src/core/types.d.ts",
-      "bytes": 1421,
-      "sha256": "9ea595b2360f86584fa51bedf6715eb4611f24bf73e8b76a7d69674091ef7ce1"
+      "bytes": 2469,
+      "sha256": "0a4feaf34b761e4bb0c23c492aabc64b9c95a84a9387f798aad4368324dd8098"
     },
     {
       "path": "src/core/verify-v2.mjs",
@@ -591,6 +596,11 @@
       "path": "tests/admission.test.mjs",
       "bytes": 13242,
       "sha256": "2c6173f0ebdf54c12fbb19bf4eb90e288481013332638c706a85f5fe217843b7"
+    },
+    {
+      "path": "tests/binding-contract.test.mjs",
+      "bytes": 9720,
+      "sha256": "97234d4a305873eddb788e1976792ff4ff29cdcdb3fb9f5a63dc0937b69056db"
     },
     {
       "path": "tests/capsule.test.mjs",
@@ -654,8 +664,8 @@
     },
     {
       "path": "tests/helpers/xrpl-fixture.mjs",
-      "bytes": 6877,
-      "sha256": "5be67637a6de39c19482111ec985598a665f31e2914250df7af00ffc3918e615"
+      "bytes": 7458,
+      "sha256": "70821d4901bdb9040a8db86dd51cbb383eb040516a8a9d1492e0a36622a7b2c6"
     },
     {
       "path": "tests/interpoll-request-classification-release.test.mjs",
@@ -794,8 +804,18 @@
     },
     {
       "path": "tests/xrpl-anchor.test.mjs",
-      "bytes": 26584,
-      "sha256": "199a01ac08a2eae7a4e2be6c20347067c837d51af483edeb78bab802ea8ea3c1"
+      "bytes": 26521,
+      "sha256": "c2117ee73858627da4f227ce88269779c56218f06f39b57d10266c68cc164e18"
+    },
+    {
+      "path": "tests/xrpl-assumption-context.test.mjs",
+      "bytes": 9482,
+      "sha256": "3817d91e3fe43084a1bb1503394963e7b620fe8a34e922324deb76da2d289b89"
+    },
+    {
+      "path": "tests/xrpl-binding-contract.test.mjs",
+      "bytes": 7035,
+      "sha256": "d05e395046839995b9816a32cecd152c9a2452d14afb7e8d5d734e509cc9c9a0"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -928,9 +948,14 @@
       "sha256": "8a68c2b65221e0cf49fd3dceaf1468caa87b4423e91ae25af6905ff1e7a5dcf6"
     },
     {
+      "path": "tools/xrpl-binding-mutations.mjs",
+      "bytes": 16233,
+      "sha256": "958f3ca1a0095ecbd45bf709d52561bf607a0fe1865f48d8da425e58582f712f"
+    },
+    {
       "path": "tools/xrpl-poc.mjs",
-      "bytes": 16601,
-      "sha256": "9ce4c2e98398ecb13d68805d010ed04b931f50fe7290f4276516e3a41a98fd59"
+      "bytes": 17250,
+      "sha256": "b3da861bb0575b7db7580c90b158efc77c54f21794615f8ec400df7e8c8c17c6"
     },
     {
       "path": "V0_2_REVIEW_REPORT.md",

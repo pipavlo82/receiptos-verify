@@ -11,6 +11,7 @@ import jcs from 'canonicalize';
 import { decode, encode, hashes, isValidClassicAddress } from 'xrpl';
 import { canonicalize, equal, problem } from '../core/common.mjs';
 import { compareClaimSurfaces } from '../core/claim-surface.mjs';
+import { validateBindingContract } from '../core/binding-contract.mjs';
 import { verifyIntegrity } from './crystal.mjs';
 
 export const PROFILE = 'xrpl-receipt-anchor-v0';
@@ -42,6 +43,7 @@ const LIMITATIONS = Object.freeze([
 
 export const descriptor = Object.freeze({
   profileId: PROFILE, version: 0, maturity: 'EXPERIMENTAL',
+  binding_contract: Object.freeze({ version: 1, required: Object.freeze(['receipt_root', 'claim', 'subject', 'submitting_account', 'transaction', 'network', 'ledger_checkpoint']) }),
   license: 'Apache-2.0',
   contractSource: { repository: 'https://github.com/pipavlo82/receiptos-verify',
     commit: '6b403702628f216933d4b30a130f74ac5c81171d',
@@ -193,13 +195,31 @@ export async function evaluateXrplAnchor(input, trust) {
   const observation = record(input?.observation) ? input.observation : {};
   let native = typeof observation.meta?.TransactionResult === 'string' ? observation.meta.TransactionResult : null;
   let derived = null, unrelated = [], observationEstablished = false;
-  const finish = (anchor_native, reason_codes, extra = {}) => ({
+  const bindings = {}, bindingEvidence = {};
+  const bind = (id, expected, observed) => {
+    const refs = [id + '.expected', id + '.observed'];
+    bindingEvidence[refs[0]] = expected;
+    bindingEvidence[refs[1]] = observed;
+    bindings[id] = { status: 'VERIFIED', relation: 'EXACT', expected, observed, evidence: refs };
+  };
+  const finish = (anchor_native, reason_codes, extra = {}) => {
+    const binding_report = { version: 1, profileId: PROFILE, bindings };
+    const binding_contract = validateBindingContract(descriptor, binding_report, bindingEvidence);
+    const adapter_anchor_native = anchor_native;
+    if (anchor_native === 'ANCHOR_MATCH' && binding_contract.status !== 'VERIFIED') {
+      anchor_native = binding_contract.status === 'CONTRADICTED' ? 'ANCHOR_MISMATCH'
+        : binding_contract.status === 'REJECTED_MALFORMED' ? 'ANCHOR_MALFORMED'
+          : binding_contract.status === 'UNSUPPORTED_PROFILE' ? 'ANCHOR_UNSUPPORTED' : 'ANCHOR_NOT_ESTABLISHED';
+      reason_codes = [...reason_codes, ...binding_contract.reasonCodes];
+    }
+    return {
     profile: PROFILE, anchor_native, native_transaction_result: native,
     transaction_policy: txPolicy(trust?.required_transaction_result, native, observationEstablished), reason_codes,
     integrity: derived?.integrity ?? null, unrelated_memos: unrelated,
     commitment: derived ? { receipt_root: derived.receipt_root, claim_digest: derived.claim_digest, memo: derived.memo } : null,
     trust_basis: trust?.basis ?? null, limitations: [...LIMITATIONS], ...extra,
-  });
+    adapter_anchor_native, binding_report, binding_evidence: bindingEvidence, binding_contract,
+  }; };
   try {
     canonicalize(input);
     if (!record(input) || input.profile !== PROFILE) return finish('ANCHOR_UNSUPPORTED', ['XRPL_PROFILE_UNSUPPORTED']);
@@ -272,6 +292,22 @@ export async function evaluateXrplAnchor(input, trust) {
     const last = observation.history.at(-1);
     if (last.ledger_index !== observation.ledger_index || !sameHash(last.ledger_hash, observation.ledger_hash)) return finish('ANCHOR_MISMATCH', ['XRPL_HISTORY_ANCHOR_MISMATCH']);
     if (tx.LastLedgerSequence !== undefined && observation.ledger_index > tx.LastLedgerSequence) return finish('ANCHOR_MALFORMED', ['XRPL_LEDGER_VALIDITY_CONFLICT']);
+    // Native algorithms remain local. Core separately checks every declared
+    // obligation and recomputes these exact relations against their evidence.
+    const checkpoint = value => ({ ledger_index: value.ledger_index, ledger_hash: value.ledger_hash.toLowerCase() });
+    bind('receipt_root', derived.receipt_root, selection.memo.MemoData.slice(0, 64).toLowerCase()); // XRPL_BINDING receipt_root
+    bind('claim', { digest: derived.claim_digest, preimage: input.receipt.metadata.xrpl_claim_preimage },
+      { digest: selection.memo.MemoData.slice(64).toLowerCase(), preimage: input.claim_preimage }); // XRPL_BINDING claim
+    bind('subject', input.receipt.metadata.xrpl_claim_preimage.surface.subject, input.claim_preimage.surface.subject); // XRPL_BINDING subject
+    bind('submitting_account', trust.account, tx.Account); // XRPL_BINDING submitting_account
+    bind('transaction', { selected: trust.transaction_hash.toLowerCase(), observed: observation.hash.toLowerCase() },
+      { selected: hash.toLowerCase(), observed: hash.toLowerCase() }); // XRPL_BINDING transaction
+    bind('network', { endpoint: trust.endpoint, observed: trust.network_id, committed: trust.network_id, transaction: trust.network_id <= 1024 ? null : trust.network_id },
+      { endpoint: observation.endpoint, observed: observation.network_id, committed: binding.network_id, transaction: tx.NetworkID ?? null }); // XRPL_BINDING network
+    bind('ledger_checkpoint', { checkpoint: checkpoint(trust.checkpoint), first: checkpoint(trust.checkpoint),
+      last: { ledger_index: observation.ledger_index, ledger_hash: observation.ledger_hash.toLowerCase() }, validated: true, membership_count: 1 },
+      { checkpoint: checkpoint(binding.trusted_checkpoint), first: checkpoint(observation.history[0]),
+        last: checkpoint(last), validated: observation.validated, membership_count: occurrences }); // XRPL_BINDING ledger_checkpoint
     observationEstablished = true;
     return finish('ANCHOR_MATCH', ['XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY'], {
       transaction_hash: hash, account: tx.Account, network_id: trust.network_id,
@@ -293,6 +329,9 @@ export async function evaluateXrplAnchor(input, trust) {
  */
 export async function evaluateXrplClaim(input, requestedSurface, trust) {
   const anchor = await evaluateXrplAnchor(input, trust);
+  // A separate core check precedes product projection; adapter-name agreement
+  // and a native MATCH do not substitute for binding completeness.
+  const binding_contract = validateBindingContract(descriptor, anchor.binding_report, anchor.binding_evidence);
   let claim_relation, requestMalformed = false;
   try {
     checkSurface(requestedSurface);
@@ -302,14 +341,19 @@ export async function evaluateXrplClaim(input, requestedSurface, trust) {
     requestMalformed = true;
     claim_relation = { status: 'INSUFFICIENT_EVIDENCE', reasonCodes: [error.code ?? 'XRPL_REQUEST_MALFORMED'] };
   }
-  const overall = anchor.anchor_native === 'ANCHOR_MALFORMED' || requestMalformed ? 'REJECTED_MALFORMED'
+  const needsBinding = anchor.adapter_anchor_native === 'ANCHOR_MATCH' || anchor.anchor_native === 'ANCHOR_MATCH';
+  const contractFailure = needsBinding && binding_contract.status !== 'VERIFIED';
+  const overall = anchor.anchor_native === 'ANCHOR_MALFORMED' || requestMalformed || contractFailure && binding_contract.status === 'REJECTED_MALFORMED' ? 'REJECTED_MALFORMED'
     : claim_relation.status === 'CONTRADICTED' || anchor.anchor_native === 'ANCHOR_MISMATCH' ? 'CONTRADICTED'
       : anchor.anchor_native === 'ANCHOR_UNSUPPORTED' ? 'UNSUPPORTED_PROFILE'
-        : anchor.anchor_native !== 'ANCHOR_MATCH' || claim_relation.status !== 'COMPATIBLE' ? 'INSUFFICIENT_EVIDENCE'
+        : contractFailure && binding_contract.status === 'CONTRADICTED' ? 'CONTRADICTED'
+          : contractFailure && binding_contract.status === 'UNSUPPORTED_PROFILE' ? 'UNSUPPORTED_PROFILE'
+        : contractFailure || anchor.anchor_native !== 'ANCHOR_MATCH' || claim_relation.status !== 'COMPATIBLE' ? 'INSUFFICIENT_EVIDENCE'
           : anchor.transaction_policy === 'UNSATISFIED' ? 'CONTRADICTED'
             : anchor.transaction_policy === 'NOT_ESTABLISHED' ? 'INSUFFICIENT_EVIDENCE' : 'CONTINUE_REQUIRED_LAYERS';
-  return { ...anchor, claim_relation, overall, product_reason_codes: [...new Set([
+  return { ...anchor, binding_contract, claim_relation, overall, product_reason_codes: [...new Set([
     ...anchor.reason_codes, ...claim_relation.reasonCodes,
+    ...(contractFailure ? binding_contract.reasonCodes : []),
     ...(anchor.transaction_policy === 'UNSATISFIED' ? ['XRPL_TRANSACTION_POLICY_UNSATISFIED'] : []),
     ...(anchor.transaction_policy === 'NOT_ESTABLISHED' ? ['XRPL_TRANSACTION_POLICY_NOT_ESTABLISHED'] : []),
   ])] };

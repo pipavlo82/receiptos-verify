@@ -164,7 +164,14 @@
     "tools/xrpl-poc.mjs",
     "tests/xrpl-anchor.test.mjs",
     "tests/helpers/xrpl-fixture.mjs",
-    "docs/xrpl/POC.md"
+    "docs/xrpl/POC.md",
+    "src/core/binding-contract.mjs",
+    "src/core/claim-surface.mjs",
+    "src/adapters/protocol.mjs",
+    "tests/binding-contract.test.mjs",
+    "tests/xrpl-assumption-context.test.mjs",
+    "tests/xrpl-binding-contract.test.mjs",
+    "tools/xrpl-binding-mutations.mjs"
   ],
   "noPrivateOrUpstreamCodeAdded": true,
   "boundaries": [
@@ -175,5 +182,22 @@
     "Public capture contains no wallet seed/private key",
     "No DID/Credentials/Batch monetization or protocol proposal",
     "Historical 43 repository rows,74 capability entries and v0.2 source pins are unchanged"
-  ]
+  ],
+  "bindingHardening": {
+    "originalCandidate": "667760d0e153cb28b9f2524035dd444f32f30ad9",
+    "contractVersion": 1,
+    "requiredBindings": [
+      "receipt_root",
+      "claim",
+      "subject",
+      "submitting_account",
+      "transaction",
+      "network",
+      "ledger_checkpoint"
+    ],
+    "feedback": "Jimmy Shi adapter-interface observation independently reproduced in local cold review; feedback attribution is not code authorship.",
+    "implementation": "Original local contract enforcement and regression controls; native source algorithms and dependencies unchanged.",
+    "compatibility": "Existing v0.2 protocol descriptors remain explicitly LEGACY_NOT_DECLARED; version1 paths require an explicit contract.",
+    "captureUnchanged": true
+  }
 }

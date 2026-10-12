@@ -53,11 +53,37 @@ Public evidence is `reports/xrpl-poc/testnet-capture.json`; independent caller a
 
 Public TLS RPC observations and their reported membership remain trust assumptions. No validator-signature, transaction-SHAMap or portable consensus inclusion proof is implemented. Secondary agreement is corroboration, not consensus authentication. Integrity/inclusion is not execution correctness, authenticity of the declarant, business authority or global VERIFIED. Replay is not a new live execution; ledger time is not execution time. One successful anchor transaction is a bounded demonstration, not broad integration or production certification. Reviewed note/PDF/schema/docs validator remain unchanged.
 
-## Validation and observed failures
+## Binding-contract hardening
 
-Final normal serial regression: **802/802 PASS**; repeated focused XRPL: **95/95 PASS**, including76 negative tests across all13 required categories. Independent reviewer controls:19/19 PASS. Fresh-process repeat and --no-opt replay JSON are byte-identical (SHA256 `61bad7f6e50b2b8cca189c7ca154248f6860f3f1f219b522bf7f2e1de2b08bbc`). Counts and exact changed-file inventory are in `reports/xrpl-poc/validation.json`.
+Independent cold review of `667760d0e153cb28b9f2524035dd444f32f30ad9` reproduced Jimmy's adapter-interface concern: removing the declared/selected checkpoint comparison survived all95 XRPL tests and golden replay. The original implementation contained that check, but neither a binding-completeness contract nor a coherent replacement-history regression made its omission load-bearing. The cold findings remain preserved; the original candidate is not retrospectively declared sound.
 
-Observed failures are preserved: first live attempt stopped before signing/submission because SDK autofill adds NetworkID:undefined. Removing wire-absent undefined properties fixed it; an actual NetworkID remains rejected and a disconnected-SDK regression test covers this. No anchor was submitted by that attempt. Default parallel npm test registered762/pass730/fail32 with native fixture barriers; isolated affected modules passed49/49 and full serial passed802/802. The unchanged native runner's10-second deadline makes resource contention plausible, but exact timeout causation is not proven by its error text. No legacy runtime fix was made.
+The opt-in interface now declares `binding_contract: {version:1, required:[...]}`. Core requires every structured result, admits only finite existing statuses, resolves two distinct evidence references, checks reported snapshots against those sources, and independently checks exact equality before projection. Missing/null/unknown/unbacked/contradicted obligations cannot permit continuation. The accepted XRPL descriptor and required list are immutable. Native parsing, receipt verification, hashing, Memo selection and ledger-history algorithms remain adapter-local.
+
+| Required native binding | Exact relation |
+|---|---|
+| receipt_root | Native-verified R equals selected Memo root bytes |
+| claim | Recomputed C equals Memo digest; supplied preimage equals root-bound receipt declaration |
+| subject | Supplied subject equals the root-bound declaration's subject |
+| submitting_account | Selected account equals decoded transaction Account |
+| transaction | Selected/reported identity equals recomputed signed-byte transaction hash |
+| network | Selected endpoint/network equals observed, committed and carrier network context |
+| ledger_checkpoint | Selected checkpoint equals the committed checkpoint and first history header; final ledger, validated observation and reported membership agree |
+
+These claim/subject entries describe what the **anchor covers**. Caller-selected A/B compatibility remains a separate generic relation; B retains ANCHOR_MATCH while its claim is CONTRADICTED. Account binding establishes no business authority. Core binding acceptance is not global VERIFIED. A deliberately dishonest adapter can still forge its evidence snapshots: this contract does not replace source pins, native trust or semantic mutation controls.
+
+The checkpoint guard-bypass regression uses the same genuine transaction and a coherent actual history suffix beginning at21488207 while its committed declaration still specifies21488206. Core rejects the ledger_checkpoint relation even if the old adapter-local condition is bypassed. Separate omission mutants remove each of the seven reports and must fail the exact required obligation through direct/native, product and replay paths. Run `node tools/xrpl-binding-mutations.mjs --json`; results are recorded in `XRPL_POC_REPAIR_REPORT.md`.
+
+Cold review also found `new Set("AB")` interpreted characters and satisfied requested assumption A. The direct API now admits only unique arrays of bounded, nonempty, case-sensitive identities. `["A"]` establishes A; `["AB"]` does not; raw string `"AB"`, explicit null, nested values and duplicates fail closed. There is no substring/prefix normalization. Missing optional context lists remain empty. The permanent direct-API witness and restored-old-behavior mutation cover the actual exported path; evidence-basis context receives the same type protection.
+
+Existing v0.2 fixed-dispatch adapters are not silently migrated. Their protocol classification is explicitly LEGACY_NOT_DECLARED; a path requiring version1 rejects a missing contract. The XRPL sibling requires version1 on both native completion and product composition.
+
+The original capture and separate acceptance policy remain byte-identical. Replay adds freshly derived binding reports to its output while comparing all original saved semantic fields unchanged. This is an additive verification-output change, not a regenerated live observation. Repair tests use the preserved public capture or explicitly counterfactual codec carriers with reused public signature-shaped fields; no wallet/key generation or new signing/submission is required. Those synthetic carriers are not authorized or live transactions.
+
+## Historical validation and observed failures
+
+Implementation-time validation reported802/802 serial,95/95 focused (76 adverse tests under its stated taxonomy),19/19 independent controls and replay SHA256 `61bad7f6e50b2b8cca189c7ca154248f6860f3f1f219b522bf7f2e1de2b08bbc`. Those historical receipts remain `reports/xrpl-poc/validation.json`. Independent cold review instead obtained800/802 sequential, with two legacy Moth/QEV failures; isolated95/95 and19/19 passed. The repaired candidate's exact counts, mutation evidence and runner classifications belong to `XRPL_POC_REPAIR_REPORT.md`; historical success is not substituted for current gates.
+
+Observed failures are preserved: first live attempt stopped before signing/submission because SDK autofill adds NetworkID:undefined. Removing wire-absent undefined properties fixed it; an actual NetworkID remains rejected and a disconnected-SDK regression test covers this. No anchor was submitted by that attempt. The historical parallel log registered762/pass730/fail32: these were ordinary fixture/module/assertion failures, not intentional isolation barriers. Cold and repair traces demonstrate the unchanged native10-second Moth deadline before and after PoC; original error text cannot establish the cause of every historical launch. Pristine checkouts also require an empty ignored reports/tmp parent for the existing git-test module. No unrelated native timeout/runtime repair is included here.
 
 Exact SDK/JCS source pins, official documentation and26 dependency license records (original7 unchanged) are in `provenance/xrpl-poc.json` and `provenance/npm-licenses.json`.
 

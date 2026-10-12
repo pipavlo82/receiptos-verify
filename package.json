@@ -22,7 +22,9 @@
     "xrpl:poc": "node tools/xrpl-poc.mjs live",
     "xrpl:poc:replay": "node tools/xrpl-poc.mjs replay",
     "xrpl:verify": "node tools/xrpl-poc.mjs verify",
-    "test:xrpl": "node --test tests/xrpl-anchor.test.mjs"
+    "test:xrpl": "node --test --test-concurrency=1 tests/xrpl-*.test.mjs",
+    "test:bindings": "node --test tests/binding-contract.test.mjs",
+    "mutations:xrpl": "node tools/xrpl-binding-mutations.mjs"
   },
   "dependencies": {
     "@noble/curves": "2.0.1",

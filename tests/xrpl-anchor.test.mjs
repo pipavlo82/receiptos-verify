@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { Client, decode, hashes, Wallet } from 'xrpl';
+import { Client, decode, hashes } from 'xrpl';
 import { normalizeAutofilledCarrier } from '../tools/xrpl-poc.mjs';
 import { deriveCommitment, evaluateXrplAnchor, evaluateXrplClaim, MEMO_TYPE_HEX, MEMO_FORMAT_HEX, PROFILE } from '../src/adapters/xrpl-anchor.mjs';
-import { buildXrplFixture, clone, TYPE_ASCII, TYPE_HEX, FORMAT_HEX, PROFILE_ID,
+import { buildXrplFixture, syntheticCarrier, clone, TYPE_ASCII, TYPE_HEX, FORMAT_HEX, PROFILE_ID,
   independentCanonical, independentClaimDigest, independentReceiptRoot, independentTransactionHash, independentLedgerHash } from './helpers/xrpl-fixture.mjs';
 
 // No expected field is read from an executable adapter or fixture annotation.
@@ -82,8 +82,7 @@ test('XRPL SDK autofill undefined NetworkID is absent on wire and normalized bef
   const normalized = normalizeAutofilledCarrier(filled);
   assert.equal(Object.hasOwn(normalized, 'NetworkID'), false);
   assert.equal(Object.hasOwn(filled, 'NetworkID'), true, 'Normalization does not mutate SDK output');
-  const wallet = Wallet.generate();
-  const publicSigned = wallet.sign({ ...normalized, Account: wallet.classicAddress });
+  const publicSigned = syntheticCarrier(normalized);
   assert.equal(Object.hasOwn(decode(publicSigned.tx_blob), 'NetworkID'), false);
   assert.throws(() => normalizeAutofilledCarrier({ ...filled, NetworkID: 1 }), /UNSUPPORTED_TESTNET_CARRIER/);
 });
@@ -155,7 +154,7 @@ for (const [name, edit] of [
 });
 
 test('XRPL negative: independently accepted account mismatch cannot be hidden by a valid signature', async () => {
-  const state = await current(); state.trust.account = Wallet.generate().classicAddress;
+  const state = await current(); state.trust.account = 'rrrrrrrrrrrrrrrrrrrrrhoLvTp';
   assert.equal((await anchor(state)).anchor_native, 'ANCHOR_MISMATCH');
 });
 

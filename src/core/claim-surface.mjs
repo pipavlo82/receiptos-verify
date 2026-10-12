@@ -4,6 +4,13 @@ export const SURFACE_FIELDS = ['claim','subject','scope','authority','policy','v
 const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const same = (a,b) => a !== undefined && b !== undefined && equal(a,b);
 const dependencyKey = value => JSON.stringify([value.id,value.version]);
+// Match the existing v2 schema: exact, case-sensitive identities, not an
+// arbitrary iterable. In particular, Set('AB') must never establish 'A'.
+const identityList = (value, minimum = 0) => Array.isArray(value) && value.length >= minimum && value.length <= 64
+  && value.every(item => typeof item === 'string' && [...item].length >= 1 && [...item].length <= 1024)
+  && new Set(value).size === value.length;
+const contextIdentityLists = context => ['established_assumptions', 'evidence_basis']
+  .every(name => !Object.hasOwn(context, name) || identityList(context[name])); // XRPL_REPAIR_MUTATE exact-list-admission
 
 // Exact, conservative relation. Scope strings/objects have no implied hierarchy.
 // Premises are independently selected consumer context, never receipt self-grades.
@@ -17,6 +24,11 @@ export function compareClaimSurfaces(requested, evidence, context = {}) {
   }
   if (![requested.subject,evidence.subject,requested.claim,evidence.claim,requested.authority,evidence.authority,requested.policy,evidence.policy].every(record)
     || ![requested.assumptions,evidence.assumptions,requested.dependencies,evidence.dependencies,requested.evidence_requirements,evidence.evidence_requirements,context.dependency_results??[]].every(Array.isArray)) {
+    return result('INSUFFICIENT_EVIDENCE',['CLAIM_SURFACE_MALFORMED'],null,{dimensions});
+  }
+  if (![requested.assumptions,evidence.assumptions].every(value => identityList(value))
+      || ![requested.evidence_requirements,evidence.evidence_requirements].every(value => identityList(value, 1))
+      || !contextIdentityLists(context)) {
     return result('INSUFFICIENT_EVIDENCE',['CLAIM_SURFACE_MALFORMED'],null,{dimensions});
   }
   for (const list of [requested.dependencies,evidence.dependencies,context.dependency_results??[]]) {

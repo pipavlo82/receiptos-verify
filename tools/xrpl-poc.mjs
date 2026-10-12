@@ -100,6 +100,8 @@ function compact(result) {
     transaction_policy: result.transaction_policy, integrity: result.integrity,
     claim_relation: result.claim_relation.status, semantic_compatibility: result.claim_relation,
     overall: result.overall, reason_codes: result.product_reason_codes,
+    binding_contract: result.binding_contract, binding_report: result.binding_report,
+    binding_evidence: result.binding_evidence,
     limitations: result.limitations,
   };
 }
@@ -113,6 +115,7 @@ export async function evaluatePair(capture, policy, basis) {
 }
 
 function assertPair(pair) {
+  require(pair.A.binding_contract?.status === 'VERIFIED' && pair.B.binding_contract?.status === 'VERIFIED', 'REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED');
   require(pair.A.anchor_native === 'ANCHOR_MATCH' && pair.B.anchor_native === 'ANCHOR_MATCH', 'ANCHOR_PAIR_FAILED');
   require(pair.A.claim_relation === 'COMPATIBLE' && pair.A.overall === 'CONTINUE_REQUIRED_LAYERS', 'CLAIM_A_FAILED');
   require(pair.B.claim_relation === 'CONTRADICTED' && pair.B.overall === 'CONTRADICTED', 'CLAIM_B_FAILED');
@@ -236,7 +239,10 @@ export async function replay(captureFile = CAPTURE, policyFile = POLICY, request
   if (requested !== null) return compact(await evaluateXrplClaim(inputFor(capture), requested, trustFor(capture, policy, 'ACCEPTED_CAPTURE_REPLAY')));
   const pair = await evaluatePair(capture, policy, 'ACCEPTED_CAPTURE_REPLAY');
   assertPair(pair);
-  require(canonicalize(pair.A).equals(canonicalize(capture.result_a)) && canonicalize(pair.B).equals(canonicalize(capture.result_b)), 'CAPTURE_REPLAY_OUTPUT_DIVERGED');
+  // Preserve the original observed capture byte-for-byte. Added binding output
+  // is freshly derived, while all previously saved semantic fields must agree.
+  const originalFields = value => Object.fromEntries(Object.entries(value).filter(([key]) => !['binding_contract', 'binding_report', 'binding_evidence'].includes(key)));
+  require(canonicalize(originalFields(pair.A)).equals(canonicalize(capture.result_a)) && canonicalize(originalFields(pair.B)).equals(canonicalize(capture.result_b)), 'CAPTURE_REPLAY_OUTPUT_DIVERGED');
   return pair;
 }
 
