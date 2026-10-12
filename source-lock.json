@@ -109,13 +109,13 @@
     },
     {
       "path": "docs/xrpl/RECEIPTOS_VERIFY_XRPL_NOTE.md",
-      "bytes": 8636,
-      "sha256": "368bcddef5cc7341f2f675a6592f829b4606c1ef22f8577fafa02c4d1f6d33f4"
+      "bytes": 9066,
+      "sha256": "a60a8c538e0e00b9a1ce6db9b6763c5dfe53521fa41d2cec809f9b8c778cc89b"
     },
     {
       "path": "docs/xrpl/REFERENCES.md",
-      "bytes": 7098,
-      "sha256": "bb2eeda8a67aa794c120cab90c6a96192ea10a6bedac64b08c77d8192159c529"
+      "bytes": 11616,
+      "sha256": "c1d7ebefeef307b4fd94f61652d981e79bb55adc8701edbde69be5dd110d6e47"
     },
     {
       "path": "docs/xrpl/xrpl-receipt-anchor-v0.schema.json",
@@ -159,8 +159,8 @@
     },
     {
       "path": "output/ReceiptOS_Verify_XRPL_Technical_Note.pdf",
-      "bytes": 25368,
-      "sha256": "cd339f91dc949d4fd5b1483ff5ccd9e69319dfad55c46f149c10967d59d6b2a5"
+      "bytes": 26216,
+      "sha256": "65cbb1bf0129e21c080ec78958e0f36ce280026ce60bb1968a5407d5790256a1"
     },
     {
       "path": "package-lock.json",
@@ -866,6 +866,11 @@
       "path": "tools/run-vectors.mjs",
       "bytes": 1209,
       "sha256": "6c6a50d216c1187c4b7d1d0a39d5ffe7b803646ab91dde8cc3b36a0cf1342ef4"
+    },
+    {
+      "path": "tools/validate-xrpl-note.mjs",
+      "bytes": 19646,
+      "sha256": "2d1b1c01d583c170e779c7dd3cd1a7f847ff6cc10dc969f10acb9f4081efd633"
     },
     {
       "path": "tools/verify-vector-v2.mjs",
@@ -1764,8 +1769,8 @@
     },
     {
       "path": "XRPL_NOTE_REVIEW_REPORT.md",
-      "bytes": 27791,
-      "sha256": "2524f516df7cc5573339825b29a616267f4df9794638691a2fd00204cc29aa2c"
+      "bytes": 36153,
+      "sha256": "532f72f8da279160a714892aa8417ef01870d65092b9331bd67ecc64cd87788d"
     }
   ]
 }

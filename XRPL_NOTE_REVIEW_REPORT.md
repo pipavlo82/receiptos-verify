@@ -1,6 +1,6 @@
 # XRPL technical note review
 
-Status: **READY_FOR_FINAL_COLD_REVIEW**
+Status: **READY_TO_SEND_FLORIAN**
 
 Prepared 2026-10-12 UTC; narrowly repaired after independent cold review of note commit `c561932687e096e4a49ff1e3c3474265a6d1a74b`, before any communication to Florian Alonso / XRPL Commons. Documentation and synthetic examples only. No live adapter, transaction submission, XLS proposal, upstream change, push, PR, tag, release or email was performed.
 
@@ -29,10 +29,11 @@ Read product sources: `docs/generic-claim-boundary.md`, `docs/v0.2-architecture.
 - `docs/xrpl/xrpl-receipt-anchor-v0.schema.json`: proposed commitment-descriptor shape; imports the existing frozen claim-surface schema. It is not an XRPL transaction schema or implemented product profile.
 - `docs/xrpl/examples/matching-claim.json` and `wrong-claim.json`: expressly synthetic, unexecuted contract examples, with assumed premises, illustrative ledger identifiers and separate native transaction/policy fields.
 - `docs/xrpl/examples/anchor-controls.json`: 36 literal documentation-classification scenarios, including tec inclusion, separate success policy, unique type selection, unrelated Memo preservation and adversarial controls; no network observations.
-- `docs/xrpl/REFERENCES.md`: exact official URLs, access date, supported claims and exact source pins.
+- `docs/xrpl/REFERENCES.md`: exact official URLs, access date, supported claims, exact source pins and separately classified public 1inch fixture identities.
+- `tools/validate-xrpl-note.mjs`: durable offline documentation-contract validator; no product-runtime imports, network calls or actual XRPL verification.
 - `output/ReceiptOS_Verify_XRPL_Technical_Note.pdf`: two pages, same technical content, one flow diagram, existing ReceiptOS R geometry, near-black/white/cyan-violet visual style. The reused R is the existing screenshot-derived vector reconstruction, not an original brand master.
 
-The repaired main note remains two PDF pages (approximately 1,020 whitespace-delimited Markdown words including source-friendly diagram notation and compact references). Full contract-review details below are outside the two-page main note.
+The finalized main note remains two PDF pages (1,075 whitespace-delimited Markdown words including source-friendly diagram notation and compact references). Full contract-review details below are outside the two-page main note.
 
 ## Official documentation consulted
 
@@ -152,7 +153,7 @@ NOT established here: live XRPL integration, actual ledger inclusion, independen
 
 ## Validation and preservation
 
-- 88/88 local documentation checks: all 42 original checks rerun with repaired bytes, plus 46 repair checks (36 literal classification scenarios, exact URN length/hex, separate fields for both examples, and all six Memo-order permutations). Original checks include strict schema admission, independent Node/Python restricted-domain digest equality, byte layout, same-anchor A/B relation, nine malformed/unsupported descriptor shapes and sixteen digest-binding perturbations. One explicit control demonstrates that schema acceptance alone does not validate a hash. These are documentation checks over synthetic assumed premises, not XRPL integration tests or added product coverage. The finite scratch reference model is local at `work/xrpl-note/validate.mjs`, outside the product runtime; its exact expected cases are preserved in `docs/xrpl/examples/anchor-controls.json`.
+- Current reproducible gate: **126/126 documentation-contract checks**, including all 36 preserved literal classification scenarios, independent finite claim-transfer comparison, restricted-domain digest/byte recomputation, strict schema admission, Memo selection/preservation/permutations, native-result/policy separation and explicit malformed/tampered controls. Run `node tools/validate-xrpl-note.mjs` after `npm ci` using existing dependencies. Expected cases remain in `docs/xrpl/examples/anchor-controls.json`; actual relations are recomputed rather than echoed. The historical 88-check repair result below is preserved as a prior observation, not the current durable gate. No live transaction, signature, XRPL codec, consensus/history/inclusion proof, product runtime or generic JCS conformance is validated.
 - PDF generated as two vector pages with base-14 fonts; rendered with Poppler and visually inspected, with text extraction and link/page checks. The host Poppler reported unrelated display-font configuration warnings; the actual used fonts and page layout rendered legibly.
 - No runtime, adapter, existing schema/vector/test, upstream pin, vendor/license/dependency, existing audit/report or tag bytes changed. Only these documentation deliverables and the existing all-source documentation lock are intended changes.
 - The 707-test/68-vector/14+14-mutant release results remain historical baseline evidence; the full release suite is not rerun or claimed as new XRPL evidence for this documentation-only task.
@@ -194,6 +195,50 @@ Added literal controls in `anchor-controls.json`:
 - C30-C36: string-valued validated, case-equivalent duplicate Type, unrelated Format, unsupported-request precedence, malformed inventory, wrong accepted account and untrusted tec are explicit negative/ordering controls.
 - Six permutations of the same three-Memo inventory preserve the anchor result; unrelated Memo order/bytes remain as received.
 
-Final count: **88/88 documentation checks**, comprising42 retained +46 repair checks and36 distinct classification scenarios. Schema acceptance alone is still not a hash/inclusion proof. These examples/model do not implement the adapter, query XRPL, validate transaction signatures or establish generic JCS conformance. Product runtime and v0.2.0 remain unchanged.
+Prior cold-repair count at `df0b63b`: **88/88 documentation checks**, comprising42 retained +46 repair checks and36 distinct classification scenarios. Schema acceptance alone is still not a hash/inclusion proof. These examples/model do not implement the adapter, query XRPL, validate transaction signatures or establish generic JCS conformance. Product runtime and v0.2.0 remain unchanged.
 
 Remaining uncertainty is unchanged: exact binary codec size/conformance, selected-network configuration/amendment enablement, independent archive/validator/checkpoint trust, historical account authority and full native receipt/statement association must be concretized before implementation. No unsafe Memo serialization restriction was found in official documentation: unrelated Memos are supported subject to the same aggregate cap. A new XRPL primitive remains unnecessary on the evidence available. Do not push or send to Florian.
+
+## Final cold-review closure
+
+This is another explicit post-review documentation/reproducibility repair, based on clean `docs/xrpl-technical-note` HEAD `df0b63b4afc1989d92c738fa4df4b89ad2167df1`. It is not an adapter redesign, runtime release or publication operation.
+
+### Missing reproducibility artifact repaired
+
+The prior report cited a local scratch validator that was not committed to the repository. That reference could not provide repository-contained reproducibility. The current evidence path is **`tools/validate-xrpl-note.mjs`**, committed alongside the note. It resolves inputs relative to its own repository location, imports only Node built-ins and the existing Ajv dependency/static schemas, and makes no product-runtime imports or network calls. It writes no product state.
+
+Fresh-process command: `node tools/validate-xrpl-note.mjs` -> **PASS 126/126, 0 failed, 36 preserved classification cases**, exit 0. Its final line is machine-readable JSON with `kind: DOCUMENTATION_CONTRACT_VALIDATION_NOT_XRPL_INTEGRATION`. The finite oracle independently computes the documented claim domain/preimage digest, R[32] || C[32], exact A/B declaration equality and unique decoded MemoType selection under expressly assumed synthetic history/account premises. It compares derived observations to preserved literal expected cases. It does not establish actual ledger, signer or consensus authority. Its printable-ASCII/safe-integer subset is explicitly narrower than generic JCS.
+
+An in-memory bad-reference-digest negative-control subprocess (no repository file alteration) returned **FAIL, 123/126 passed, 3 digest disagreements, exit 1**. This demonstrates failure propagation rather than accepting an expected value by construction. Unknown/malformed descriptors, tampered payload, schema-valid but inconsistent digest, nonempty case inventory, duplicate exact Types (both conflicting orders), all six unrelated-Memo permutations and out-of-subset canonicalization are also checked. Counts are finite documentation assertions, not 126 independent XRPL integrations or semantic branches.
+
+### Public 1inch example and identity status
+
+Section 2 now includes the inspectable Semantic ABI 1inch fixture. It illustrates **check X passed != claim Y established** with quote 100 -> 80, 1% relative floor 79.2 and independent absolute minimum 90. It makes no real swap execution, vulnerability or present XRPL bug claim. The same class of composition error is transferring a narrower valid guarantee to a broader claim; the mechanisms are different.
+
+| Identity | Evidence status | Exact evidence / uncertainty |
+| --- | --- | --- |
+| Demo `https://trustless-ai.eth.limo/semantic-abi/` | VERIFIED_PUBLIC | Direct HTTPS 200; 206363 bytes; SHA-256 `54a8c50add641bda7652edd3bed4efad3b3e72dfefefa7809e3dbc9a661219b2`; same bytes as the pinned public UI. No live swap is established. |
+| Public repo fixture | VERIFIED_PUBLIC | `trustless-ai/semantic-abi` main `d15c666dfccff17f7350fe97d2fc7b71cb2cbaee`, `ui/index.html#L616`, blob `277fbd6a475cf05a3420399043f4fa1ac5bbe97b`. Numbers are explicitly illustrative. |
+| CID `bafybeidh7brlghppljrsciyviqcphljew5i3ew7uzcxhzmhyinvcx6jhee` | VERIFIED_PUBLIC as gateway/public-record identity | Live `x-ipfs-roots` plus merged pin record. No independent whole-DAG reconstruction or ENS contenthash proof; ipfs.io returned 429. |
+| Supplied contenthash reference `0x42a9b5c4` | SUPPLIED_NOT_INDEPENDENTLY_VERIFIED / OMIT_FROM_NOTE | Four bytes, not a complete transaction hash. It is retained here only as the supplied abbreviated description, never presented as a verified transaction identity. |
+| Complete reported hash `0x42a9b5c42eebced58d54ae48d5dcd47b72ed24dcb9254a583aad683f69612d26` | VERIFIED_PUBLIC as pin-record value; SUPPLIED_NOT_INDEPENDENTLY_VERIFIED as chain fact | Mechanically read from CRC pin report; omitted from the two-page note. Two public Ethereum receipt lookups returned null, another endpoint failed. No independently confirmed inclusion/result/calldata/resolver relation; null does not establish non-inclusion. |
+| Block `25928456` | VERIFIED_PUBLIC as pin-record value; SUPPLIED_NOT_INDEPENDENTLY_VERIFIED as chain fact | Public record reports this block. No independent chain confirmation; omitted from the two-page note. |
+| CRC #93 | VERIFIED_PUBLIC | `trustless-ai/cross-reference-console/pull/93`, merged `2026-09-07T22:29:14Z`; merge `49ff0b895629e8469eeb125cb59434a0e022f895`, head `8322c8c0b090ea2f8ac1e8e3ad466a656227655c`; public pin record hash `ac397fdacad422119564ffaf19f1e6742fb51e26c398e04b6eec9eaf7f15a2a7`. Reported chain identities are not independently proven by a GitHub record. |
+| Repo UI sync #8 | VERIFIED_PUBLIC | `trustless-ai/semantic-abi/pull/8`, merged `2026-09-07T22:29:42Z`; merge `d15c666dfccff17f7350fe97d2fc7b71cb2cbaee`, head `1e9503a65654a6053e0f7f38025633f8a326acd6`. Both PRs list `TMerlini` as author; no attribution from repository ownership. |
+
+Exact URLs/access date and supported/non-supported claims are in `docs/xrpl/REFERENCES.md`. No identity in the main note is made to carry chain or execution semantics. The pinned public tree lacks the `adapters/oneinch` implementation named by the UI/pin text; this report therefore does not promote that source assertion to a demonstrated executable adapter.
+
+### Preserved boundaries and final gates
+
+- **No Hedera/Telos content added** to the note or PDF; no funding/grant claim was added. The author remains **Pavlo Tvardovskyi**.
+- XRPL semantics from `df0b63b` are unchanged. Descriptor, matching/wrong-claim fixtures and all 36 preserved control cases are byte-identical to that commit. Exact accepted commitment on accepted validated history remains ANCHOR_MATCH with tesSUCCESS or tec; native TransactionResult stays separate. Required tesSUCCESS may be UNSATISFIED without erasing anchor inclusion.
+- Unrelated Memos remain preserved/ignored independent of position/order; zero exact matching Types -> NOT_ESTABLISHED, duplicate exact matching Types -> MALFORMED. No first/last-match selection.
+- Ledger inclusion != semantic correctness; transaction effect/result != anchor inclusion; A != B; ANCHOR_MATCH != global VERIFIED; account authorization != external/business authority; DID/Credentials != execution correctness; inclusion time != execution time; root != whole-envelope identity; missing history != proof of non-inclusion.
+- **No live XRPL adapter, actual transaction/signature verification, portable consensus proof, protocol proposal or official organizational integration is claimed.** No upstream/runtime/product/dependency/license/tag changes, push, PR, release or email.
+- Fresh `node tools/validate-xrpl-note.mjs`: 126/126 PASS. Existing `npm run check:sources`, `npm run check:provenance` and `git diff --check`: PASS after the intended documentation lock refresh. Source lock inventories 354 files; original 345 public-baseline entries are unchanged. Active fixtures have no old slash-form MemoType; no current evidence references the missing scratch validator. JSON/schema/reference identities and intended change inventory checked.
+- Regenerated PDF: exactly two pages, unchanged readable 9.2-point body text, 12 clickable source links, readable flow, both pages rendered and visually inspected for clipping. Prose was tightened and paragraph spacing reduced by one point to accommodate the public example; no core XRPL contract details were removed.
+- The full 707-test/68-vector/14+14-mutant product release suite was not rerun and is not new XRPL evidence. Current documentation gate and historical release evidence are separate.
+
+Remaining technical uncertainty is unchanged: actual codec size/conformance, selected-network trust/amendments/checkpoint history, historical account authority and full receipt-root/statement association require future implementation work. Public 1inch transaction/block/ENS proof was not independently established and is not needed for the example. Existing XRPL primitives still appear sufficient for the first bounded anchor; no new primitive is necessary on the evidence available.
+
+Stop after this local intended documentation commit. **Do not push or send Florian anything.**

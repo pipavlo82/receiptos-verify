@@ -37,3 +37,27 @@ Public baseline: tag object `358bbc8f63c747bde3e6a12fd0a69b4f4ef16d8e`; peeled c
 | S7 | [Known Amendments](https://xrpl.org/resources/known-amendments) | Activation status was not established from dynamic Loading indicators; no selected network queried. | 2026-10-12 |
 
 Reference 7 in the main note denotes the 7a-7d authority sources. Current documentation describes amendment-gated features; no selected network was queried for activation. The DID ledger-entry page was read through its official text/HTTP representation when browser extraction returned unsupported content-type. Only paraphrased facts and links are included, not third-party source captures.
+
+## Source roles
+
+- **OFFICIAL XRPL SOURCE:** references 1-7 and S1-S7 are authoritative for the XRPL facts they describe; they do not specify a ReceiptOS profile or establish a particular live observation.
+- **PUBLIC SEMANTIC ABI ARTIFACT:** references 10/10a/10b and 11 below describe the separate public Semantic ABI project, including an illustrative workflow fixture. They do not demonstrate a ReceiptOS XRPL integration.
+- **RECEIPTOS PRODUCT SOURCE:** references 9/9a/9b/9c identify the pinned public product baseline and its bounded semantics, including its interface-only ledger boundary.
+- **PROPOSED RECEIPTOS CONVENTION:** `xrpl-receipt-anchor-v0`, its URN, byte layout, domain/preimage, selection rules and native/product mapping are this note's proposed convention. They are not official XRPL or Semantic ABI standards. RFC 8785 supplies the proposed portable canonicalization rules, not generic conformance evidence for our finite fixture validator.
+
+## 11. Public Semantic ABI / 1inch fixture
+
+Accessed **2026-10-12 UTC**. Public sources only; no unpublished team information or private implementation was used.
+
+| Artifact / identity | Classification | Mechanically observed support and boundary |
+| --- | --- | --- |
+| [Live demo](https://trustless-ai.eth.limo/semantic-abi/) | VERIFIED_PUBLIC | Direct HTTPS 200, 206363 bytes; SHA-256 `54a8c50add641bda7652edd3bed4efad3b3e72dfefefa7809e3dbc9a661219b2`. Its 1inch linker preset illustrates relative slippage versus an absolute user minimum. No actual swap execution or vulnerability follows. |
+| [Pinned numerical fixture](https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/ui/index.html#L616) | VERIFIED_PUBLIC | Public main `d15c666dfccff17f7350fe97d2fc7b71cb2cbaee`, `ui/index.html`, blob `277fbd6a475cf05a3420399043f4fa1ac5bbe97b`. Source length/hash exactly match the live demo. The source labels the numbers examples. |
+| CID `bafybeidh7brlghppljrsciyviqcphljew5i3ew7uzcxhzmhyinvcx6jhee` | VERIFIED_PUBLIC as gateway-reported identity | Present in the live response's `x-ipfs-roots` header and the merged public pin record. This does not independently reconstruct the IPFS DAG, resolve ENS on-chain or prove ledger inclusion. Direct ipfs.io retrieval returned 429. |
+| [CRC pin PR #93](https://github.com/trustless-ai/cross-reference-console/pull/93) / [pinned record](https://github.com/trustless-ai/cross-reference-console/blob/49ff0b895629e8469eeb125cb59434a0e022f895/pins/bafybeidh7brlghppljrsciyviqcphljew5i3ew7uzcxhzmhyinvcx6jhee.json) | VERIFIED_PUBLIC | Merged `2026-09-07T22:29:14Z`; merge `49ff0b895629e8469eeb125cb59434a0e022f895`, head `8322c8c0b090ea2f8ac1e8e3ad466a656227655c`. Record SHA-256 `ac397fdacad422119564ffaf19f1e6742fb51e26c398e04b6eec9eaf7f15a2a7`. Verifies existence/content of a public pin report, not its reported chain facts. |
+| [Semantic ABI UI sync PR #8](https://github.com/trustless-ai/semantic-abi/pull/8) | VERIFIED_PUBLIC | Merged `2026-09-07T22:29:42Z`; merge `d15c666dfccff17f7350fe97d2fc7b71cb2cbaee`, head `1e9503a65654a6053e0f7f38025633f8a326acd6`. Public PR author is `TMerlini`; repository ownership is not treated as authorship. |
+| Pin record's transaction / block reference | VERIFIED_PUBLIC as report values; SUPPLIED_NOT_INDEPENDENTLY_VERIFIED as chain facts | The public record reports a complete transaction hash and block `25928456`. No independent receipt/calldata/resolver proof was established in this pass; these identities are unnecessary and omitted from the main note. Detailed reported values and lookup limits are in `XRPL_NOTE_REVIEW_REPORT.md`. |
+
+The inspectable fixture supports the numerical non-entailment: `80 * (1 - 1/100) = 79.2`; an output meeting that relative floor can still be below the independently requested absolute minimum `90`. It does **not** establish that a real swap executed at 79.2, that any execution failed, or that 1inch is vulnerable. The main note uses the same class of composition error (narrower guarantee transferred to a broader claim), without identifying the mechanisms or asserting an existing XRPL bug.
+
+The public UI/pin report mentions `adapters/oneinch`, but that directory is absent from the mechanically enumerated pinned Semantic ABI tree. Accordingly this note cites an **illustrative public workflow evidence-boundary fixture**, not a demonstrated executable 1inch adapter. Content identity, public accessibility, merged PR status and arithmetic do not supply execution or consensus authority.
