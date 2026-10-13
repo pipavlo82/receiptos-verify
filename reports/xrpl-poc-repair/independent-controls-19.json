@@ -1,0 +1,358 @@
+{
+  "status": "PASS",
+  "checks": 19,
+  "passed": 19,
+  "boundary": "No wallet creation, signing, faucet or network. Mutated captured bytes/metadata are counterfactual controls, not new live observations. Duplicate/unrelated selection guards are separately tested on synthetic codec carriers.",
+  "results": [
+    {
+      "id": "A original",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MATCH",
+        "COMPATIBLE",
+        "CONTINUE_REQUIRED_LAYERS"
+      ],
+      "actual": [
+        "ANCHOR_MATCH",
+        "COMPATIBLE",
+        "CONTINUE_REQUIRED_LAYERS"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+      ]
+    },
+    {
+      "id": "B same genuine anchor",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+        "CLAIM_MISMATCH",
+        "SUBJECT_MISMATCH"
+      ]
+    },
+    {
+      "id": "wrong native receipt root",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MALFORMED",
+        "COMPATIBLE",
+        "REJECTED_MALFORMED"
+      ],
+      "actual": [
+        "ANCHOR_MALFORMED",
+        "COMPATIBLE",
+        "REJECTED_MALFORMED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_RECEIPT_INTEGRITY_UNESTABLISHED"
+      ]
+    },
+    {
+      "id": "declared preimage differs from receipt",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MISMATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MISMATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_RECEIPT_DECLARATION_MISMATCH",
+        "CLAIM_MISMATCH"
+      ]
+    },
+    {
+      "id": "different accepted account",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_ACCOUNT_MISMATCH"
+      ]
+    },
+    {
+      "id": "different selected network",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_NETWORK_CHECKPOINT_MISMATCH"
+      ]
+    },
+    {
+      "id": "different selected checkpoint",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_NETWORK_CHECKPOINT_MISMATCH"
+      ]
+    },
+    {
+      "id": "unaccepted trust basis",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "COMPATIBLE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "actual": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "COMPATIBLE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_TRUST_BASIS_NOT_ESTABLISHED"
+      ]
+    },
+    {
+      "id": "no trust argument",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_TRUST_BASIS_NOT_ESTABLISHED",
+        "TIME_MISMATCH",
+        "EVIDENCE_BASIS_UNESTABLISHED"
+      ]
+    },
+    {
+      "id": "unvalidated observation",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "COMPATIBLE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "actual": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "COMPATIBLE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_VALIDATED_OBSERVATION_NOT_ESTABLISHED"
+      ]
+    },
+    {
+      "id": "string validated is malformed",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MALFORMED",
+        "COMPATIBLE",
+        "REJECTED_MALFORMED"
+      ],
+      "actual": [
+        "ANCHOR_MALFORMED",
+        "COMPATIBLE",
+        "REJECTED_MALFORMED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_VALIDATED_OBSERVATION_NOT_ESTABLISHED"
+      ]
+    },
+    {
+      "id": "alter genuine Memo bytes cannot keep tx identity",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_TRANSACTION_HASH_MISMATCH"
+      ]
+    },
+    {
+      "id": "duplicate genuine Memo cannot keep tx identity",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_TRANSACTION_HASH_MISMATCH"
+      ]
+    },
+    {
+      "id": "missing captured history",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "COMPATIBLE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "actual": [
+        "ANCHOR_NOT_ESTABLISHED",
+        "COMPATIBLE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_LEDGER_HISTORY_NOT_ESTABLISHED"
+      ]
+    },
+    {
+      "id": "missing reported membership",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MISMATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_RPC_MEMBERSHIP_MISMATCH"
+      ]
+    },
+    {
+      "id": "unsupported profile",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_UNSUPPORTED",
+        "COMPATIBLE",
+        "UNSUPPORTED_PROFILE"
+      ],
+      "actual": [
+        "ANCHOR_UNSUPPORTED",
+        "COMPATIBLE",
+        "UNSUPPORTED_PROFILE"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_PROFILE_UNSUPPORTED"
+      ]
+    },
+    {
+      "id": "wrong requested authority",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+        "AUTHORITY_MISMATCH"
+      ]
+    },
+    {
+      "id": "wrong requested policy version",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MATCH",
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "NOT_REQUESTED",
+      "reason_codes": [
+        "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+        "POLICY_MISMATCH"
+      ]
+    },
+    {
+      "id": "hypothetical tec preserves anchor but fails tes policy",
+      "status": "PASS",
+      "expected": [
+        "ANCHOR_MATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "actual": [
+        "ANCHOR_MATCH",
+        "COMPATIBLE",
+        "CONTRADICTED"
+      ],
+      "transaction_policy": "UNSATISFIED",
+      "reason_codes": [
+        "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+        "XRPL_TRANSACTION_POLICY_UNSATISFIED"
+      ]
+    }
+  ]
+}

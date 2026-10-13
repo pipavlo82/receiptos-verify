@@ -1,0 +1,351 @@
+{
+  "recorded": "2026-10-13T00:32:25.686Z",
+  "head": {
+    "command": "git",
+    "args": [
+      "rev-parse",
+      "HEAD"
+    ],
+    "status": 0,
+    "stdout": "3f3a9329228de6e9c93349a07ef2582217a5a81a",
+    "stderr": ""
+  },
+  "tree": {
+    "command": "git",
+    "args": [
+      "rev-parse",
+      "HEAD^{tree}"
+    ],
+    "status": 0,
+    "stdout": "b41f9cc876eb2fa3a3bc9ebea5304ada49dfd759",
+    "stderr": ""
+  },
+  "status": {
+    "command": "git",
+    "args": [
+      "status",
+      "--porcelain"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "trackedDiff": {
+    "command": "git",
+    "args": [
+      "diff",
+      "--stat"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "runtime": {
+    "node": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--version"
+      ],
+      "status": 0,
+      "stdout": "v22.15.0",
+      "stderr": ""
+    },
+    "npm": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--version"
+      ],
+      "status": 0,
+      "stdout": "10.9.2",
+      "stderr": ""
+    },
+    "python": {
+      "command": "python",
+      "args": [
+        "--version"
+      ],
+      "status": 0,
+      "stdout": "Python 3.12.10",
+      "stderr": ""
+    },
+    "bun": {
+      "command": "C:/Users/msi/.bun/bin/bun.exe",
+      "args": [
+        "--version"
+      ],
+      "status": 0,
+      "stdout": "1.3.14",
+      "stderr": ""
+    }
+  },
+  "identities": {
+    "package.json": "f187a758f7d7ddf5998da25d722c9474fce1198ad27d14e326f71d85064b7dc8",
+    "package-lock.json": "7001b384b18c734335fa5d0362a258416a8ff9290fb1938fdbc670a2aef55dc7",
+    "source-lock.json": "6e150823ac3eaca2b6d5f7c9e4e06488ddaed1ac0ce95cfe470f7a9baa22e782",
+    "reports/xrpl-poc/testnet-capture.json": "7f7fa0ad162a5d619ff594e0aa562beb361fdd0d275821f7d1f0b2d54e7231ce",
+    "profiles/xrpl-poc-testnet-policy.json": "330f1a8e1fd7881720b57c72f699eed8fadf169de2023f464e0d6c68a045eadf"
+  },
+  "dependencies": [
+    {
+      "path": "node_modules/@noble/curves",
+      "name": "@noble/curves",
+      "lockedVersion": "2.0.1",
+      "installedVersion": "2.0.1",
+      "license": "MIT",
+      "integrity": "sha512-vs1Az2OOTBiP4q0pwjW5aF0xp9n4MxVrmkFBxc6EKZc6ddYx5gaZiAsZoq0uRRXWbi3AT/sBqn05eRPtn1JCPw==",
+      "resolved": "https://registry.npmjs.org/@noble/curves/-/curves-2.0.1.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@noble/hashes",
+      "name": "@noble/hashes",
+      "lockedVersion": "2.0.1",
+      "installedVersion": "2.0.1",
+      "license": "MIT",
+      "integrity": "sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==",
+      "resolved": "https://registry.npmjs.org/@noble/hashes/-/hashes-2.0.1.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@scure/base",
+      "name": "@scure/base",
+      "lockedVersion": "2.4.0",
+      "installedVersion": "2.4.0",
+      "license": "MIT",
+      "integrity": "sha512-thZ1TuJwFwBblOhgsjDKvvGirBxNp+wSvY/DR6tJBJOTDhdAAcHJ8Vbr2eFnqaxeca4+t0i9KBf+uHYGWwZORg==",
+      "resolved": "https://registry.npmjs.org/@scure/base/-/base-2.4.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@scure/bip32",
+      "name": "@scure/bip32",
+      "lockedVersion": "2.4.0",
+      "installedVersion": "2.4.0",
+      "license": "MIT",
+      "integrity": "sha512-i3DS0CptAocyvqE4n3SUkpzeQK4vJMFwWLofTwRiiKo2aWojBOfyMCgfKw9HVpO6fSY5AK86sHS/Uzn8kK9Few==",
+      "resolved": "https://registry.npmjs.org/@scure/bip32/-/bip32-2.4.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@scure/bip32/node_modules/@noble/curves",
+      "name": "@noble/curves",
+      "lockedVersion": "2.4.0",
+      "installedVersion": "2.4.0",
+      "license": "MIT",
+      "integrity": "sha512-P4/62zrgfH33CneE3Dn4WhJVA22YUU0eR51wKIan4NVRvwsA0YnPTwWGpNbpuacSujmSFLvyzpyuR30+fbq2Ew==",
+      "resolved": "https://registry.npmjs.org/@noble/curves/-/curves-2.4.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@scure/bip32/node_modules/@noble/hashes",
+      "name": "@noble/hashes",
+      "lockedVersion": "2.4.0",
+      "installedVersion": "2.4.0",
+      "license": "MIT",
+      "integrity": "sha512-X5XaVWZIBCT7HHZGm5I7ZQXDwLG+bGXuSrMQAW+7Zvl87h1kmc1ZB1VSRJcpUfoUrGQp4Fkoxm5kZ+Ms+aW+eA==",
+      "resolved": "https://registry.npmjs.org/@noble/hashes/-/hashes-2.4.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@scure/bip39",
+      "name": "@scure/bip39",
+      "lockedVersion": "2.4.0",
+      "installedVersion": "2.4.0",
+      "license": "MIT",
+      "integrity": "sha512-82dxFbZUYboyOf0AXiydsQrFQ5Q4h9mX+O2UkE91ROYmsc0BKMGZLwDmy96Jpa2+vrtoxomjUhy1RPIgH/r2nA==",
+      "resolved": "https://registry.npmjs.org/@scure/bip39/-/bip39-2.4.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@scure/bip39/node_modules/@noble/hashes",
+      "name": "@noble/hashes",
+      "lockedVersion": "2.4.0",
+      "installedVersion": "2.4.0",
+      "license": "MIT",
+      "integrity": "sha512-X5XaVWZIBCT7HHZGm5I7ZQXDwLG+bGXuSrMQAW+7Zvl87h1kmc1ZB1VSRJcpUfoUrGQp4Fkoxm5kZ+Ms+aW+eA==",
+      "resolved": "https://registry.npmjs.org/@noble/hashes/-/hashes-2.4.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@xrplf/isomorphic",
+      "name": "@xrplf/isomorphic",
+      "lockedVersion": "1.0.2",
+      "installedVersion": "1.0.2",
+      "license": "ISC",
+      "integrity": "sha512-ncZUdMXr6VlSXtdoiDi0jTH+gBrgGxwVeEidhoegII3PmyErbQsyj6e+j7acmR4LW/lvBkPkzb9QzRfJH0n3rA==",
+      "resolved": "https://registry.npmjs.org/@xrplf/isomorphic/-/isomorphic-1.0.2.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@xrplf/isomorphic/node_modules/eventemitter3",
+      "name": "eventemitter3",
+      "lockedVersion": "5.0.1",
+      "installedVersion": "5.0.1",
+      "license": "MIT",
+      "integrity": "sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==",
+      "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-5.0.1.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@xrplf/mpt-crypto",
+      "name": "@xrplf/mpt-crypto",
+      "lockedVersion": "0.1.1",
+      "installedVersion": "0.1.1",
+      "license": "ISC",
+      "integrity": "sha512-Wv9wbk60DRGWvI+B9DITwfWygCWDfEjv8yWxiLJyDf/G8UPkfhVlUKIflF9nMaBFMygPRkXrpO1jNqTj6/vJow==",
+      "resolved": "https://registry.npmjs.org/@xrplf/mpt-crypto/-/mpt-crypto-0.1.1.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/@xrplf/secret-numbers",
+      "name": "@xrplf/secret-numbers",
+      "lockedVersion": "3.0.0",
+      "installedVersion": "3.0.0",
+      "license": "ISC",
+      "integrity": "sha512-qpGhAZXv5noMDjCtfzq5NK0y5rrdwTVjKhhPcAYSE+a/gogBOgqdpCKyieprVVPCnmVmJnGeRoZKBAqpCGegsA==",
+      "resolved": "https://registry.npmjs.org/@xrplf/secret-numbers/-/secret-numbers-3.0.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/ajv",
+      "name": "ajv",
+      "lockedVersion": "8.20.0",
+      "installedVersion": "8.20.0",
+      "license": "MIT",
+      "integrity": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==",
+      "resolved": "https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/bignumber.js",
+      "name": "bignumber.js",
+      "lockedVersion": "10.0.2",
+      "installedVersion": "10.0.2",
+      "license": "MIT",
+      "integrity": "sha512-E8Wp9O06QA6lneJ4aRUXKYf/1GIomqUEmUMwtIOMtDxf1U52ffJY+y7JBk/8wRafA8qOIqLnXQGqonYXZdBnFQ==",
+      "resolved": "https://registry.npmjs.org/bignumber.js/-/bignumber.js-10.0.2.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/canonicalize",
+      "name": "canonicalize",
+      "lockedVersion": "5.1.0",
+      "installedVersion": "5.1.0",
+      "license": "Apache-2.0",
+      "integrity": "sha512-bab9+WefZljqQ8jT0qRwVmTyzAUU63K97QIQD3agynIBrb6sa5M2eAy8Hv8K3p4V9+ONVYZKtGYl4Dg+/5Gumw==",
+      "resolved": "https://registry.npmjs.org/canonicalize/-/canonicalize-5.1.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/eventemitter3",
+      "name": "eventemitter3",
+      "lockedVersion": "5.0.4",
+      "installedVersion": "5.0.4",
+      "license": "MIT",
+      "integrity": "sha512-mlsTRyGaPBjPedk6Bvw+aqbsXDtoAyAzm5MO7JgU+yVRyMQ5O8bD4Kcci7BS85f93veegeCPkL8R4GLClnjLFw==",
+      "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-5.0.4.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/fast-deep-equal",
+      "name": "fast-deep-equal",
+      "lockedVersion": "3.1.3",
+      "installedVersion": "3.1.3",
+      "license": "MIT",
+      "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/fast-json-stable-stringify",
+      "name": "fast-json-stable-stringify",
+      "lockedVersion": "2.1.0",
+      "installedVersion": "2.1.0",
+      "license": "MIT",
+      "integrity": "sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==",
+      "resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/fast-uri",
+      "name": "fast-uri",
+      "lockedVersion": "3.1.8",
+      "installedVersion": "3.1.8",
+      "license": "BSD-3-Clause",
+      "integrity": "sha512-GZMtZUTNRpOVIECoXwLNZS5xUGE+mVNbTB8h/7Rwh2TFWcBQiPzTgyZi05BF9UMZKkLJv8XBRJTlU7zg8+ZfMg==",
+      "resolved": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.8.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/json-schema-traverse",
+      "name": "json-schema-traverse",
+      "lockedVersion": "1.0.0",
+      "installedVersion": "1.0.0",
+      "license": "MIT",
+      "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+      "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/require-from-string",
+      "name": "require-from-string",
+      "lockedVersion": "2.0.2",
+      "installedVersion": "2.0.2",
+      "license": "MIT",
+      "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+      "resolved": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/ripple-address-codec",
+      "name": "ripple-address-codec",
+      "lockedVersion": "5.0.1",
+      "installedVersion": "5.0.1",
+      "license": "ISC",
+      "integrity": "sha512-JQHLKuVJV8lv9Qobmn4aUM2Dpv9WRRLKnNWfM8tN02fAbUtG8mUPsu9q9UYX8P76G4qzytEc5ZKMp/3JggNYmw==",
+      "resolved": "https://registry.npmjs.org/ripple-address-codec/-/ripple-address-codec-5.0.1.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/ripple-binary-codec",
+      "name": "ripple-binary-codec",
+      "lockedVersion": "2.11.0",
+      "installedVersion": "2.11.0",
+      "license": "ISC",
+      "integrity": "sha512-qad61CYAqIi8H7DuPnuDpj40wrXY8wYrc1YbuDcA9G/NZG0Uu8unHNbTC6Itz8SlOSL0P/nF/8HTFW/1caVlTg==",
+      "resolved": "https://registry.npmjs.org/ripple-binary-codec/-/ripple-binary-codec-2.11.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/ripple-keypairs",
+      "name": "ripple-keypairs",
+      "lockedVersion": "3.1.0",
+      "installedVersion": "3.1.0",
+      "license": "ISC",
+      "integrity": "sha512-yeqN768gaHStQ76qwaJ2TGxIGMXA4c9tg32n1zMHUWbyfEKXA70XOUH8SQdnAnIQNCASd8hzBZ8Edoqcd+a+IA==",
+      "resolved": "https://registry.npmjs.org/ripple-keypairs/-/ripple-keypairs-3.1.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/ws",
+      "name": "ws",
+      "lockedVersion": "8.22.0",
+      "installedVersion": "8.22.0",
+      "license": "MIT",
+      "integrity": "sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg==",
+      "resolved": "https://registry.npmjs.org/ws/-/ws-8.22.0.tgz",
+      "versionMatch": true
+    },
+    {
+      "path": "node_modules/xrpl",
+      "name": "xrpl",
+      "lockedVersion": "5.3.0",
+      "installedVersion": "5.3.0",
+      "license": "ISC",
+      "integrity": "sha512-sdyi7qqJ13U+nMllHgxJTWbQm/Tk8uzhBmeTKwhI9WxkHuekPfbvJ3BDopXO2vMfsty7lBja0ACSHEUKLz3F/w==",
+      "resolved": "https://registry.npmjs.org/xrpl/-/xrpl-5.3.0.tgz",
+      "versionMatch": true
+    }
+  ]
+}

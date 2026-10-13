@@ -1,0 +1,24 @@
+{
+  "label": "focused",
+  "command": [
+    "node",
+    "--test",
+    "--test-concurrency=1",
+    "tests/binding-contract.test.mjs",
+    "tests/xrpl-anchor.test.mjs",
+    "tests/xrpl-assumption-context.test.mjs"
+  ],
+  "exit": 0,
+  "seconds": 91.5,
+  "at": "2026-10-12T23:36:45.499253+00:00",
+  "counts": {
+    "tests": 200,
+    "pass": 200,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "stdout_sha256": "4d10eb618fad0820a7dcca8b5c4e3556b585d48674cc0f6365c4612926e45266",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

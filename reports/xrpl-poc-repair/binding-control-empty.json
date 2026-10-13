@@ -1,0 +1,31 @@
+{
+  "schema": "receiptos.xrpl.binding-mutation-audit.v1",
+  "status": "FAIL",
+  "scope": "Offline source-omission and direct-API controls; not live XRPL integration or consensus proof.",
+  "runtime": {
+    "node": "v22.15.0"
+  },
+  "capture_sha256": null,
+  "required_bindings": [
+    "receipt_root",
+    "claim",
+    "subject",
+    "submitting_account",
+    "transaction",
+    "network",
+    "ledger_checkpoint"
+  ],
+  "negative_control": "empty",
+  "baseline": null,
+  "mutants": [],
+  "counts": {
+    "inventory": 0,
+    "killed": 0,
+    "survived": 0,
+    "crashed": 0,
+    "unapplied": 0,
+    "invalid_output": 0,
+    "positive_control_failed": 0
+  },
+  "failure": "EMPTY_MUTANT_INVENTORY"
+}

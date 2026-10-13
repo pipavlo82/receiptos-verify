@@ -1,0 +1,13 @@
+{
+  "recorded": "2026-10-13T00:32:15.662Z",
+  "scope": "Only one generated tracked report in the disposable exact repaired clone; product checkout never edited",
+  "path": "reports/v0.2/mutations.json",
+  "reason": "auditMutants defaults writeReport=true; original planned v2 command generated its report. Actual generated output preserved externally, then exact tracked blob restored.",
+  "originalHeadSha256": "68cbe1c61c73194bd10d79f353f95112653718b887754fb217e903d112fae8cc",
+  "generatedSha256": "0c2a1cead96cd5595b700ae2c9eda8794de4a94bd5050040dfa9cdf5431af21f",
+  "restoredSha256": "68cbe1c61c73194bd10d79f353f95112653718b887754fb217e903d112fae8cc",
+  "generatedArtifact": "generated-mutations-v2.json",
+  "diffArtifact": "generated-mutations-v2.diff",
+  "restoredExact": true,
+  "sourceLockRewritten": false
+}

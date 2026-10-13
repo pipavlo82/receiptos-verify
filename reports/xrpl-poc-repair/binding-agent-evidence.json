@@ -1,0 +1,33 @@
+{
+  "schema": "receiptos.xrpl.binding-repair-agent-evidence.v1",
+  "focused_tests": {
+    "core": 60,
+    "public_capture_bindings": 27
+  },
+  "sources": {
+    "src/core/binding-contract.mjs": "1eab12b91803a0511395cd0a57738c72c097e6ef2bb2a9d477caa2dca05c28a8",
+    "src/adapters/protocol.mjs": "c7621738ab27f04bb9891bd465adcc9d85616ba0ee2b45f14e63f85fd32ede06",
+    "src/core/types.d.ts": "0a4feaf34b761e4bb0c23c492aabc64b9c95a84a9387f798aad4368324dd8098",
+    "tests/binding-contract.test.mjs": "97234d4a305873eddb788e1976792ff4ff29cdcdb3fb9f5a63dc0937b69056db",
+    "tests/xrpl-binding-contract.test.mjs": "d05e395046839995b9816a32cecd152c9a2452d14afb7e8d5d734e509cc9c9a0",
+    "tools/xrpl-binding-mutations.mjs": "958f3ca1a0095ecbd45bf709d52561bf607a0fe1865f48d8da425e58582f712f"
+  },
+  "receipts": {
+    "binding-mutations.json": "edaeccb0a46b2725514aebfce9b652b1d9f355e68b932c0a955b69477cc98f25",
+    "binding-mutations-final.json": "a812503347216f2b3405b785228eb5c1291be5032688c4719a1f95d1a675a743",
+    "binding-control-empty.json": "5af97b5f26808d90c466b42d96700d9fef97d40bbf980549ed352262e84c0848",
+    "binding-control-unapplied.json": "2c152641a4e9ce6a4bb9ba65ac5f8e048bef4df165615190430ea624ad7d6eac",
+    "binding-control-crash.json": "af805802d87e87cb8b97e8f1d94c27fc878bf0563863c9a436f8e1af5b9cdd0e",
+    "binding-control-positive-control.json": "50de26a489b34eecdde324a41afbe4adb45e2385719883a9633ad0203482626f"
+  },
+  "final": {
+    "inventory": 9,
+    "killed": 9,
+    "survived": 0,
+    "crashed": 0,
+    "unapplied": 0,
+    "invalid_output": 0,
+    "positive_control_failed": 0
+  },
+  "first_run_difference": "First normal run used the same semantic tool logic before the cleanup-only explicit node_modules junction unlink; final normal and all four harness controls ran the final frozen tool bytes."
+}

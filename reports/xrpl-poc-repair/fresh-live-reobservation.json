@@ -1,0 +1,321 @@
+{
+  "observed_at": "2026-10-12T23:52:12.361Z",
+  "live": [
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "network_id": 1,
+      "server_build": "3.4.1",
+      "validated": true,
+      "hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+      "Account": "rGsFMVmcrHrKDGL1CjBPFTLbxj4QsjNkQn",
+      "ledger_index": 21488208,
+      "ledger_hash": "332EA3AA4B141BE29F56C1CA978B977F16FA9F92D76A2912E5C6ECBABA1D242B",
+      "native_result": "tesSUCCESS",
+      "transaction": {
+        "TransactionType": "AccountSet",
+        "Flags": 0,
+        "Sequence": 21488206,
+        "LastLedgerSequence": 21488226,
+        "Fee": "12",
+        "SigningPubKey": "EDF8787EAEFB32F237C8331450EF825365179224B611091A80052C357155F764AE",
+        "TxnSignature": "AD0249005A43C1F0F0E99F8B4A8E6C511EAE2B5CEFE103D9642BFA7708C00B4063F1002D9A9AD40837F382DDE27632C1BD7ACF3D9DF8B2FE9AB6BA34F84BD601",
+        "Account": "rGsFMVmcrHrKDGL1CjBPFTLbxj4QsjNkQn",
+        "Memos": [
+          {
+            "Memo": {
+              "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+              "MemoData": "767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC",
+              "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D"
+            }
+          }
+        ]
+      },
+      "tx_blob_sha256": "ebfc15e1d8efc670882d80146694bc354f327b763e9c8e674b7fe98f2f46d423",
+      "meta_blob_sha256": "a658979f21e0e0f140edc8a569130a4158cfd318d8dcb2d94cb47d72b7248b68"
+    },
+    {
+      "endpoint": "wss://testnet.xrpl-labs.com/",
+      "error": {
+        "name": "RippledError",
+        "code": null,
+        "message": "Transaction not found."
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "source-A-plus-independent-policy-preimage-matches-bound-metadata",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "source-A-plus-independent-policy-preimage-matches-capture-preimage",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "independent-R-matches-native-receipt-field",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "independent-R-matches-reported-R",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "independent-C-matches-reported-C",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "memo-type-36",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:binary-manual-tx-hash",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:binary-sdk-tx-hash",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:exactly-one-typed-memo",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:decoded-format",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:detached-R-C-real-Memo",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:ledger-validated-reference",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:ledger-header-sdk-hash",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:ledger-header-detached-hash",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:rpc-ledger-membership",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:fresh-history-21488206",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:fresh-history-21488207",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:history-parent-21488207",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:fresh-history-21488208",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://s.altnet.rippletest.net:51233/:history-parent-21488208",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "wss://testnet.xrpl-labs.com/:lookup",
+      "status": "FAIL",
+      "details": "RippledError"
+    }
+  ],
+  "field_matrix": [
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "transaction_hash",
+      "status": "MATCH",
+      "actual": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+      "stored": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "network_id",
+      "status": "MATCH",
+      "actual": 1,
+      "stored": 1
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "Account",
+      "status": "MATCH",
+      "actual": "rGsFMVmcrHrKDGL1CjBPFTLbxj4QsjNkQn",
+      "stored": "rGsFMVmcrHrKDGL1CjBPFTLbxj4QsjNkQn"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "validated",
+      "status": "MATCH",
+      "actual": true,
+      "stored": true
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "ledger_index",
+      "status": "MATCH",
+      "actual": 21488208,
+      "stored": 21488208
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "ledger_hash",
+      "status": "MATCH",
+      "actual": "332EA3AA4B141BE29F56C1CA978B977F16FA9F92D76A2912E5C6ECBABA1D242B",
+      "stored": "332EA3AA4B141BE29F56C1CA978B977F16FA9F92D76A2912E5C6ECBABA1D242B"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "TransactionResult",
+      "status": "MATCH",
+      "actual": "tesSUCCESS",
+      "stored": "tesSUCCESS"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "TransactionType",
+      "status": "MATCH",
+      "actual": "AccountSet",
+      "stored": "AccountSet"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "Sequence",
+      "status": "MATCH",
+      "actual": 21488206,
+      "stored": 21488206
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "Fee",
+      "status": "MATCH",
+      "actual": "12",
+      "stored": "12"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "LastLedgerSequence",
+      "status": "MATCH",
+      "actual": 21488226,
+      "stored": 21488226
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "Memos",
+      "status": "MATCH",
+      "actual": [
+        {
+          "Memo": {
+            "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+            "MemoData": "767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC",
+            "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D"
+          }
+        }
+      ],
+      "stored": [
+        {
+          "Memo": {
+            "MemoType": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+            "MemoData": "767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC",
+            "MemoFormat": "6170706C69636174696F6E2F6F637465742D73747265616D"
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "tx_blob",
+      "status": "MATCH",
+      "actual_sha256": "ebfc15e1d8efc670882d80146694bc354f327b763e9c8e674b7fe98f2f46d423",
+      "stored_sha256": "ebfc15e1d8efc670882d80146694bc354f327b763e9c8e674b7fe98f2f46d423"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "meta_blob",
+      "status": "MATCH",
+      "actual_sha256": "a658979f21e0e0f140edc8a569130a4158cfd318d8dcb2d94cb47d72b7248b68",
+      "stored_sha256": "a658979f21e0e0f140edc8a569130a4158cfd318d8dcb2d94cb47d72b7248b68"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "MemoType_hex",
+      "status": "MATCH",
+      "actual": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+      "stored": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "MemoType_ascii",
+      "status": "MATCH",
+      "actual": "urn:receiptos:xrpl-receipt-anchor-v0",
+      "stored": "urn:receiptos:xrpl-receipt-anchor-v0"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "MemoFormat_hex",
+      "status": "MATCH",
+      "actual": "6170706C69636174696F6E2F6F637465742D73747265616D",
+      "stored": "6170706C69636174696F6E2F6F637465742D73747265616D"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "MemoFormat_ascii",
+      "status": "MATCH",
+      "actual": "application/octet-stream",
+      "stored": "application/octet-stream"
+    },
+    {
+      "endpoint": "wss://s.altnet.rippletest.net:51233/",
+      "field": "MemoData",
+      "status": "MATCH",
+      "actual": "767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC",
+      "stored": "767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC"
+    },
+    {
+      "field": "observation_timestamp",
+      "status": "DIFFERENT_BUT_EXPLAINED",
+      "stored": "2026-10-12T21:13:18.645Z",
+      "actual": "2026-10-12T23:52:12.361Z",
+      "explanation": "Fresh readback time differs from initial capture; neither is execution time."
+    }
+  ],
+  "boundary": "Fresh accepted TLS Testnet RPC observation, not portable consensus/SHAMap proof. No wallet/faucet/submission.",
+  "independent": {
+    "R": "767aaea2159e3e32a08be974b047e4f6d31a1b1b5d65e7b36ac632a35dfd4b16",
+    "C": "1e407befea04ab2da1811f05de21ce8c8669b0011207d5ac13285e31cefdb0dc",
+    "memo_data": "767AAEA2159E3E32A08BE974B047E4F6D31A1B1B5D65E7B36AC632A35DFD4B161E407BEFEA04AB2DA1811F05DE21CE8C8669B0011207D5AC13285E31CEFDB0DC",
+    "memo_type_ascii": "urn:receiptos:xrpl-receipt-anchor-v0",
+    "memo_type_bytes": 36,
+    "memo_type_hex": "75726E3A726563656970746F733A7872706C2D726563656970742D616E63686F722D7630",
+    "canonicalization": "Detached ASCII/safe-integer oracle for the actual fixture domain; not generic JCS conformance."
+  },
+  "status": "FAIL_OR_UNESTABLISHED"
+}

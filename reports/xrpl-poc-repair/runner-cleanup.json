@@ -1,0 +1,96 @@
+{
+  "recorded": "2026-10-13T00:30:40.7323915Z",
+  "scope": "Only identified untracked native-temp/test-runs under the exact disposable repaired clone",
+  "target": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\xrpl-repair\\runners\\repaired\\work",
+  "trackedWorkFiles": 0,
+  "removedFileCount": 17,
+  "removedFiles": [
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/job-20260922T2328006744863Z.body.json",
+      "bytes": 115,
+      "sha256": "01e820b93541f0bf57a245bcc8f205f1773121dd84f837d77c4084b0f732f36d"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/job-20260922T2328006744863Z.http.json",
+      "bytes": 263,
+      "sha256": "122a7753dfcb7ca836730db8c77f1dcb3c04a17362b9a777d5caabdde20d2be5"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/job-reference.json",
+      "bytes": 79,
+      "sha256": "30397527b07efa4b1768a172258fd766cdd7aa5f58d50180d6e3dd2944d3a0d1"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/manifest.json",
+      "bytes": 2857,
+      "sha256": "f155ce4bab17bafb5bb221fa48da942530957d0facad521e89e214970f9b3c3c"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/request.body.json",
+      "bytes": 185,
+      "sha256": "564457d78b1a0ee48969311ed0047f8507fad66f98036965dbbe864b80ba11ef"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/result-20260922T2328006744863Z.body.json",
+      "bytes": 7833,
+      "sha256": "d83c91326993db344ce70251ba932e2c94c1e178a6f8d9d253f3f812ff75d624"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/result-20260922T2328006744863Z.http.json",
+      "bytes": 274,
+      "sha256": "a901cd3b1bc49079fa0376c504501a3acb3e2edd1d5b0e1d190e22d8beb62018"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326204143474Z.body.json",
+      "bytes": 971,
+      "sha256": "c0754e79f789eeb8939c5f97725e7574c635620c2bb5aa02da59816abb3fe004"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326204143474Z.http.json",
+      "bytes": 273,
+      "sha256": "1953bc14bb8c98bdd4224e6a3c71172399ce6d6366df724c7cca16f9b9fe398f"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326503636962Z.body.json",
+      "bytes": 975,
+      "sha256": "a46a114a09de716eb0568fa67932ff9cbcf1abbca462193002ae656a4b66f264"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326503636962Z.http.json",
+      "bytes": 273,
+      "sha256": "08e72e14b522917b86dd534b49c51e4b537c8609dec707efc8871202e066ad93"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2328006744863Z.body.json",
+      "bytes": 8804,
+      "sha256": "f39e388da79306e5c4c62af78998127da0bc9aeb232d6b722952f23dd5fe4e07"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2328006744863Z.http.json",
+      "bytes": 274,
+      "sha256": "8ef51eb17cdc8ef713e76d3138bfe03c84784ad78eb6863c520710f0cd135b7f"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/SUBMIT_ATTEMPTED.json",
+      "bytes": 88,
+      "sha256": "f2b9b44b2ebfd558669c10659cc1fa85356f6a85a32f33f23bdf78cb08a44348"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/submit.body.json",
+      "bytes": 125,
+      "sha256": "a69a6f256627112da92ce6c78f1b0b659e2f5a7603f10b718b7f3649a11c438e"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/submit.http.json",
+      "bytes": 249,
+      "sha256": "0cda37d7b5004817a66b039e9bb5da558a4bd321110c01216ea6c6172a6a7ae5"
+    },
+    {
+      "path": "work/native-temp/qev-moth-rvr-dcdulljs/terminal-observation.json",
+      "bytes": 49,
+      "sha256": "9d2e31376cbaa764410af321ac19ec3736905b08ba5b9c7873292dce1ccd3c73"
+    }
+  ],
+  "reason": "Legacy native tests can retain temporary files on deadline kill; source-lock scans work/ and must not be silently rewritten to admit generated files",
+  "candidateRepositoryModified": false
+}

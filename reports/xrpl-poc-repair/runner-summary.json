@@ -1,0 +1,910 @@
+{
+  "status": "COMPLETED_WITH_DISCLOSED_PARALLEL_LIMITATION",
+  "implementation": "3f3a9329228de6e9c93349a07ef2582217a5a81a",
+  "tree": "b41f9cc876eb2fa3a3bc9ebea5304ada49dfd759",
+  "exactCloneConditions": {
+    "localNoHardlinkFreshClone": true,
+    "detachedExactCommit": true,
+    "coreAutocrlf": false,
+    "dependencies": "npm ci --ignore-scripts --no-audit --no-fund --offline;26 packages; normal npm cache used",
+    "explicitIgnoredPrerequisite": "empty reports/tmp parent",
+    "commonInventory": "38 exact base test files /707 tests; excludes new binding and all XRPL files",
+    "fullInventory": "42 test files /934 tests",
+    "diagnostics": "External child_process preload only in parallel/targeted modes",
+    "fullSequential": "Uninstrumented, concurrency1, original10s deadline; no retry or broad rerun"
+  },
+  "suites": {
+    "base-targeted": {
+      "head": "6b403702628f216933d4b30a130f74ac5c81171d",
+      "counts": {
+        "tests": 2,
+        "suites": 0,
+        "pass": 0,
+        "fail": 2,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 11273.4937
+      },
+      "exitCode": 1,
+      "instrumented": true,
+      "elapsed_ms": 13363,
+      "failures": [
+        {
+          "number": 1,
+          "name": "portable anchor and separately supplied native bundle cannot drift"
+        },
+        {
+          "number": 2,
+          "name": "own native invocations clean temporary payloads and create no bytecode in an isolated product copy"
+        }
+      ],
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--import",
+        "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/work/xrpl-repair/runners/native-trace.mjs",
+        "--test",
+        "--test-name-pattern=portable anchor and separately supplied native bundle cannot drift|own native invocations clean temporary payloads",
+        "tests/qev_moth.test.mjs"
+      ],
+      "stdoutSha256": "83a34f2277ed32283cf7a0afc81216f580f64a25ce90121ca0da48169dd26c64",
+      "nativeTraceSha256": "2008d784e68977e0af07a21687f773f05082cf937b5e45924ba81bbd8178ccaa",
+      "receipt": "base-targeted.json"
+    },
+    "original-targeted": {
+      "head": "667760d0e153cb28b9f2524035dd444f32f30ad9",
+      "counts": {
+        "tests": 2,
+        "suites": 0,
+        "pass": 1,
+        "fail": 1,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 36652.9619
+      },
+      "exitCode": 1,
+      "instrumented": true,
+      "elapsed_ms": 38761,
+      "failures": [
+        {
+          "number": 2,
+          "name": "own native invocations clean temporary payloads and create no bytecode in an isolated product copy"
+        }
+      ],
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--import",
+        "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/work/xrpl-repair/runners/native-trace.mjs",
+        "--test",
+        "--test-name-pattern=portable anchor and separately supplied native bundle cannot drift|own native invocations clean temporary payloads",
+        "tests/qev_moth.test.mjs"
+      ],
+      "stdoutSha256": "67471efacaeec3b75fe3ae13268edf0a66a208a20d3b6b50787fc4292584a27a",
+      "nativeTraceSha256": "71bf4fb06ca400b977965d47cd050ef9ee0d4995c9394fd803f22018c3420cf5",
+      "receipt": "original-targeted.json"
+    },
+    "base-parallel": {
+      "head": "6b403702628f216933d4b30a130f74ac5c81171d",
+      "counts": {
+        "tests": 707,
+        "suites": 0,
+        "pass": 706,
+        "fail": 1,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 131730.6242
+      },
+      "exitCode": 1,
+      "instrumented": true,
+      "elapsed_ms": 133018,
+      "failures": [
+        {
+          "number": 516,
+          "name": "fresh synthetic native counts/RVR/ReceiptOS preserve requested 32 and delivered 0 without provider authority"
+        }
+      ],
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--import",
+        "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/work/xrpl-repair/runners/native-trace.mjs",
+        "--test",
+        "tests/adapter-context-release.test.mjs",
+        "tests/admission-v2.test.mjs",
+        "tests/admission.test.mjs",
+        "tests/capsule.test.mjs",
+        "tests/corpus-v02.test.mjs",
+        "tests/cost.test.mjs",
+        "tests/determinism-v2.test.mjs",
+        "tests/extensions.test.mjs",
+        "tests/generic-boundary-v2.test.mjs",
+        "tests/git.test.mjs",
+        "tests/guarantee-boundary-v2.test.mjs",
+        "tests/interpoll-request-classification-release.test.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/isolation-v2.test.mjs",
+        "tests/mutation-runner.test.mjs",
+        "tests/mutation-v1-release.test.mjs",
+        "tests/mutation-v2.test.mjs",
+        "tests/native-boundary-v2.test.mjs",
+        "tests/native.test.mjs",
+        "tests/pq.test.mjs",
+        "tests/prf-composition-v2.test.mjs",
+        "tests/prf-v2.test.mjs",
+        "tests/product.test.mjs",
+        "tests/projection-release.test.mjs",
+        "tests/projection-v2.test.mjs",
+        "tests/provenance-v2.test.mjs",
+        "tests/qev.test.mjs",
+        "tests/qev_moth.test.mjs",
+        "tests/registry-v2.test.mjs",
+        "tests/relations.test.mjs",
+        "tests/requirement-admission-release.test.mjs",
+        "tests/review.test.mjs",
+        "tests/semantic-abi-v2.test.mjs",
+        "tests/server.test.mjs",
+        "tests/trustless-grade-v2.test.mjs",
+        "tests/trustless-v02.test.mjs",
+        "tests/ui-contract.test.mjs",
+        "tests/ui-v2.test.mjs"
+      ],
+      "stdoutSha256": "62e5cab1aa1c5e665da179445748bf77644c5690a120fae504acdfc7015ccdc3",
+      "nativeTraceSha256": "ea74a25fa4d53a57505376e053116411dc7cd3f9d73a0081fb06948ddf2f4c00",
+      "receipt": "base-parallel.json"
+    },
+    "original-parallel": {
+      "head": "667760d0e153cb28b9f2524035dd444f32f30ad9",
+      "counts": {
+        "tests": 707,
+        "suites": 0,
+        "pass": 698,
+        "fail": 9,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 164743.5091
+      },
+      "exitCode": 1,
+      "instrumented": true,
+      "elapsed_ms": 166186,
+      "failures": [
+        {
+          "number": 515,
+          "name": "Moth sources are exact independently verified metadata/code, with no capture payload inventory"
+        },
+        {
+          "number": 516,
+          "name": "fresh synthetic native counts/RVR/ReceiptOS preserve requested 32 and delivered 0 without provider authority"
+        },
+        {
+          "number": 517,
+          "name": "native counts contradiction with complete repinned evidence stays REFUTED plus REPRODUCED"
+        },
+        {
+          "number": 518,
+          "name": "declared missing decisive member reproduces UNVERIFIABLE without fabricated arithmetic"
+        },
+        {
+          "number": 519,
+          "name": "changed candidate evidence diverges from a saved native positive"
+        },
+        {
+          "number": 520,
+          "name": "independent requested claim mismatch is preserved as a native binding rejection"
+        },
+        {
+          "number": 521,
+          "name": "portable anchor and separately supplied native bundle cannot drift"
+        },
+        {
+          "number": 522,
+          "name": "committed PRESENT bytes missing are a replay barrier and synthetic wrapper is mandatory"
+        },
+        {
+          "number": 523,
+          "name": "own native invocations clean temporary payloads and create no bytecode in an isolated product copy"
+        }
+      ],
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--import",
+        "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/work/xrpl-repair/runners/native-trace.mjs",
+        "--test",
+        "tests/adapter-context-release.test.mjs",
+        "tests/admission-v2.test.mjs",
+        "tests/admission.test.mjs",
+        "tests/capsule.test.mjs",
+        "tests/corpus-v02.test.mjs",
+        "tests/cost.test.mjs",
+        "tests/determinism-v2.test.mjs",
+        "tests/extensions.test.mjs",
+        "tests/generic-boundary-v2.test.mjs",
+        "tests/git.test.mjs",
+        "tests/guarantee-boundary-v2.test.mjs",
+        "tests/interpoll-request-classification-release.test.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/isolation-v2.test.mjs",
+        "tests/mutation-runner.test.mjs",
+        "tests/mutation-v1-release.test.mjs",
+        "tests/mutation-v2.test.mjs",
+        "tests/native-boundary-v2.test.mjs",
+        "tests/native.test.mjs",
+        "tests/pq.test.mjs",
+        "tests/prf-composition-v2.test.mjs",
+        "tests/prf-v2.test.mjs",
+        "tests/product.test.mjs",
+        "tests/projection-release.test.mjs",
+        "tests/projection-v2.test.mjs",
+        "tests/provenance-v2.test.mjs",
+        "tests/qev.test.mjs",
+        "tests/qev_moth.test.mjs",
+        "tests/registry-v2.test.mjs",
+        "tests/relations.test.mjs",
+        "tests/requirement-admission-release.test.mjs",
+        "tests/review.test.mjs",
+        "tests/semantic-abi-v2.test.mjs",
+        "tests/server.test.mjs",
+        "tests/trustless-grade-v2.test.mjs",
+        "tests/trustless-v02.test.mjs",
+        "tests/ui-contract.test.mjs",
+        "tests/ui-v2.test.mjs"
+      ],
+      "stdoutSha256": "74f3912293a4ad71299e8020c23536d6c631f35e8b77cd0ee42068f2d8d27c13",
+      "nativeTraceSha256": "c086f94710c7df1821cc4bca22163bf0102fc781cc1f42eb3f5bae6c8708db5a",
+      "receipt": "original-parallel.json"
+    },
+    "repaired-parallel": {
+      "head": "3f3a9329228de6e9c93349a07ef2582217a5a81a",
+      "counts": {
+        "tests": 707,
+        "suites": 0,
+        "pass": 698,
+        "fail": 9,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 94749.5512
+      },
+      "exitCode": 1,
+      "instrumented": true,
+      "elapsed_ms": 96593,
+      "failures": [
+        {
+          "number": 515,
+          "name": "Moth sources are exact independently verified metadata/code, with no capture payload inventory"
+        },
+        {
+          "number": 516,
+          "name": "fresh synthetic native counts/RVR/ReceiptOS preserve requested 32 and delivered 0 without provider authority"
+        },
+        {
+          "number": 517,
+          "name": "native counts contradiction with complete repinned evidence stays REFUTED plus REPRODUCED"
+        },
+        {
+          "number": 518,
+          "name": "declared missing decisive member reproduces UNVERIFIABLE without fabricated arithmetic"
+        },
+        {
+          "number": 519,
+          "name": "changed candidate evidence diverges from a saved native positive"
+        },
+        {
+          "number": 520,
+          "name": "independent requested claim mismatch is preserved as a native binding rejection"
+        },
+        {
+          "number": 521,
+          "name": "portable anchor and separately supplied native bundle cannot drift"
+        },
+        {
+          "number": 522,
+          "name": "committed PRESENT bytes missing are a replay barrier and synthetic wrapper is mandatory"
+        },
+        {
+          "number": 523,
+          "name": "own native invocations clean temporary payloads and create no bytecode in an isolated product copy"
+        }
+      ],
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--import",
+        "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/work/xrpl-repair/runners/native-trace.mjs",
+        "--test",
+        "tests/adapter-context-release.test.mjs",
+        "tests/admission-v2.test.mjs",
+        "tests/admission.test.mjs",
+        "tests/capsule.test.mjs",
+        "tests/corpus-v02.test.mjs",
+        "tests/cost.test.mjs",
+        "tests/determinism-v2.test.mjs",
+        "tests/extensions.test.mjs",
+        "tests/generic-boundary-v2.test.mjs",
+        "tests/git.test.mjs",
+        "tests/guarantee-boundary-v2.test.mjs",
+        "tests/interpoll-request-classification-release.test.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/isolation-v2.test.mjs",
+        "tests/mutation-runner.test.mjs",
+        "tests/mutation-v1-release.test.mjs",
+        "tests/mutation-v2.test.mjs",
+        "tests/native-boundary-v2.test.mjs",
+        "tests/native.test.mjs",
+        "tests/pq.test.mjs",
+        "tests/prf-composition-v2.test.mjs",
+        "tests/prf-v2.test.mjs",
+        "tests/product.test.mjs",
+        "tests/projection-release.test.mjs",
+        "tests/projection-v2.test.mjs",
+        "tests/provenance-v2.test.mjs",
+        "tests/qev.test.mjs",
+        "tests/qev_moth.test.mjs",
+        "tests/registry-v2.test.mjs",
+        "tests/relations.test.mjs",
+        "tests/requirement-admission-release.test.mjs",
+        "tests/review.test.mjs",
+        "tests/semantic-abi-v2.test.mjs",
+        "tests/server.test.mjs",
+        "tests/trustless-grade-v2.test.mjs",
+        "tests/trustless-v02.test.mjs",
+        "tests/ui-contract.test.mjs",
+        "tests/ui-v2.test.mjs"
+      ],
+      "stdoutSha256": "b6c94532e69bae9ed8762e8c0df80a9a791172ada4589bfeea04daa1bc88c508",
+      "nativeTraceSha256": "0c6ad174185a1aac22c30d66517628d22e2fc96daf60e6aaecf6e1a069ba526f",
+      "receipt": "repaired-parallel.json"
+    },
+    "repaired-full-parallel": {
+      "head": "3f3a9329228de6e9c93349a07ef2582217a5a81a",
+      "counts": {
+        "tests": 934,
+        "suites": 0,
+        "pass": 925,
+        "fail": 9,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 125587.6561
+      },
+      "exitCode": 1,
+      "instrumented": true,
+      "elapsed_ms": 126447,
+      "failures": [
+        {
+          "number": 575,
+          "name": "Moth sources are exact independently verified metadata/code, with no capture payload inventory"
+        },
+        {
+          "number": 576,
+          "name": "fresh synthetic native counts/RVR/ReceiptOS preserve requested 32 and delivered 0 without provider authority"
+        },
+        {
+          "number": 577,
+          "name": "native counts contradiction with complete repinned evidence stays REFUTED plus REPRODUCED"
+        },
+        {
+          "number": 578,
+          "name": "declared missing decisive member reproduces UNVERIFIABLE without fabricated arithmetic"
+        },
+        {
+          "number": 579,
+          "name": "changed candidate evidence diverges from a saved native positive"
+        },
+        {
+          "number": 580,
+          "name": "independent requested claim mismatch is preserved as a native binding rejection"
+        },
+        {
+          "number": 581,
+          "name": "portable anchor and separately supplied native bundle cannot drift"
+        },
+        {
+          "number": 582,
+          "name": "committed PRESENT bytes missing are a replay barrier and synthetic wrapper is mandatory"
+        },
+        {
+          "number": 583,
+          "name": "own native invocations clean temporary payloads and create no bytecode in an isolated product copy"
+        }
+      ],
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--import",
+        "file:///C:/Users/msi/Documents/Codex/2026-10-11/files-pasted-by-the-user-mission/work/xrpl-repair/runners/native-trace.mjs",
+        "--test",
+        "tests/adapter-context-release.test.mjs",
+        "tests/admission-v2.test.mjs",
+        "tests/admission.test.mjs",
+        "tests/binding-contract.test.mjs",
+        "tests/capsule.test.mjs",
+        "tests/corpus-v02.test.mjs",
+        "tests/cost.test.mjs",
+        "tests/determinism-v2.test.mjs",
+        "tests/extensions.test.mjs",
+        "tests/generic-boundary-v2.test.mjs",
+        "tests/git.test.mjs",
+        "tests/guarantee-boundary-v2.test.mjs",
+        "tests/interpoll-request-classification-release.test.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/isolation-v2.test.mjs",
+        "tests/mutation-runner.test.mjs",
+        "tests/mutation-v1-release.test.mjs",
+        "tests/mutation-v2.test.mjs",
+        "tests/native-boundary-v2.test.mjs",
+        "tests/native.test.mjs",
+        "tests/pq.test.mjs",
+        "tests/prf-composition-v2.test.mjs",
+        "tests/prf-v2.test.mjs",
+        "tests/product.test.mjs",
+        "tests/projection-release.test.mjs",
+        "tests/projection-v2.test.mjs",
+        "tests/provenance-v2.test.mjs",
+        "tests/qev.test.mjs",
+        "tests/qev_moth.test.mjs",
+        "tests/registry-v2.test.mjs",
+        "tests/relations.test.mjs",
+        "tests/requirement-admission-release.test.mjs",
+        "tests/review.test.mjs",
+        "tests/semantic-abi-v2.test.mjs",
+        "tests/server.test.mjs",
+        "tests/trustless-grade-v2.test.mjs",
+        "tests/trustless-v02.test.mjs",
+        "tests/ui-contract.test.mjs",
+        "tests/ui-v2.test.mjs",
+        "tests/xrpl-anchor.test.mjs",
+        "tests/xrpl-assumption-context.test.mjs",
+        "tests/xrpl-binding-contract.test.mjs"
+      ],
+      "stdoutSha256": "a54803bb3a317921dda4a1fca1a1018fb273fa7eb46d3be9b387434c56597800",
+      "nativeTraceSha256": "869226d5fa2ab0513e2a10201313c8692db399606e0d5949ca2e379e9484016b",
+      "receipt": "repaired-full-parallel.json"
+    },
+    "repaired-full-serial": {
+      "head": "3f3a9329228de6e9c93349a07ef2582217a5a81a",
+      "counts": {
+        "tests": 934,
+        "suites": 0,
+        "pass": 934,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 436628.9967
+      },
+      "exitCode": 0,
+      "instrumented": false,
+      "elapsed_ms": 439705,
+      "failures": [],
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--test",
+        "--test-concurrency=1",
+        "tests/adapter-context-release.test.mjs",
+        "tests/admission-v2.test.mjs",
+        "tests/admission.test.mjs",
+        "tests/binding-contract.test.mjs",
+        "tests/capsule.test.mjs",
+        "tests/corpus-v02.test.mjs",
+        "tests/cost.test.mjs",
+        "tests/determinism-v2.test.mjs",
+        "tests/extensions.test.mjs",
+        "tests/generic-boundary-v2.test.mjs",
+        "tests/git.test.mjs",
+        "tests/guarantee-boundary-v2.test.mjs",
+        "tests/interpoll-request-classification-release.test.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/isolation-v2.test.mjs",
+        "tests/mutation-runner.test.mjs",
+        "tests/mutation-v1-release.test.mjs",
+        "tests/mutation-v2.test.mjs",
+        "tests/native-boundary-v2.test.mjs",
+        "tests/native.test.mjs",
+        "tests/pq.test.mjs",
+        "tests/prf-composition-v2.test.mjs",
+        "tests/prf-v2.test.mjs",
+        "tests/product.test.mjs",
+        "tests/projection-release.test.mjs",
+        "tests/projection-v2.test.mjs",
+        "tests/provenance-v2.test.mjs",
+        "tests/qev.test.mjs",
+        "tests/qev_moth.test.mjs",
+        "tests/registry-v2.test.mjs",
+        "tests/relations.test.mjs",
+        "tests/requirement-admission-release.test.mjs",
+        "tests/review.test.mjs",
+        "tests/semantic-abi-v2.test.mjs",
+        "tests/server.test.mjs",
+        "tests/trustless-grade-v2.test.mjs",
+        "tests/trustless-v02.test.mjs",
+        "tests/ui-contract.test.mjs",
+        "tests/ui-v2.test.mjs",
+        "tests/xrpl-anchor.test.mjs",
+        "tests/xrpl-assumption-context.test.mjs",
+        "tests/xrpl-binding-contract.test.mjs"
+      ],
+      "stdoutSha256": "82e3747f689ab7d6abfdf13fa7eaf20223e1da20ee16d7779bb71445ee26bd0c",
+      "nativeTraceSha256": null,
+      "receipt": "repaired-full-serial.json"
+    }
+  },
+  "focused": {
+    "xrpl-focused": {
+      "counts": {
+        "tests": 167,
+        "suites": 0,
+        "pass": 167,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 47630.9111
+      },
+      "exitCode": 0,
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "test:xrpl"
+      ],
+      "receipt": "repaired-xrpl-focused.json"
+    },
+    "xrpl-core-no-opt": {
+      "counts": {
+        "tests": 227,
+        "suites": 0,
+        "pass": 227,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "duration_ms": 41063.9032
+      },
+      "exitCode": 0,
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--no-opt",
+        "--test",
+        "--test-concurrency=1",
+        "tests/binding-contract.test.mjs",
+        "tests/xrpl-*.test.mjs"
+      ],
+      "receipt": "repaired-xrpl-core-no-opt.json"
+    }
+  },
+  "replay": {
+    "replay-normal": {
+      "exitCode": 0,
+      "stdoutSha256": "f643f38fed959e860e51cc39e0ee858bc3e989fbfec6bfecd492c37f87bd3969",
+      "stdoutBytes": 47061,
+      "bytesEqualRootPrior": true,
+      "claimResults": {
+        "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+        "same_anchor": true,
+        "A": {
+          "anchor_native": "ANCHOR_MATCH",
+          "claim_relation": "COMPATIBLE",
+          "overall": "CONTINUE_REQUIRED_LAYERS"
+        },
+        "B": {
+          "anchor_native": "ANCHOR_MATCH",
+          "claim_relation": "CONTRADICTED",
+          "overall": "CONTRADICTED"
+        }
+      },
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "tools/xrpl-poc.mjs",
+        "replay",
+        "--json"
+      ],
+      "receipt": "repaired-replay-normal.json"
+    },
+    "replay-no-opt": {
+      "exitCode": 0,
+      "stdoutSha256": "f643f38fed959e860e51cc39e0ee858bc3e989fbfec6bfecd492c37f87bd3969",
+      "stdoutBytes": 47061,
+      "bytesEqualRootPrior": true,
+      "claimResults": {
+        "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+        "same_anchor": true,
+        "A": {
+          "anchor_native": "ANCHOR_MATCH",
+          "claim_relation": "COMPATIBLE",
+          "overall": "CONTINUE_REQUIRED_LAYERS"
+        },
+        "B": {
+          "anchor_native": "ANCHOR_MATCH",
+          "claim_relation": "CONTRADICTED",
+          "overall": "CONTRADICTED"
+        }
+      },
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--no-opt",
+        "tools/xrpl-poc.mjs",
+        "replay",
+        "--json"
+      ],
+      "receipt": "repaired-replay-no-opt.json"
+    }
+  },
+  "corpus": {
+    "count": 68,
+    "passed": 68,
+    "failed": 0,
+    "versions": {
+      "v0.1": {
+        "count": 30,
+        "passed": 30,
+        "failed": 0
+      },
+      "v0.2": {
+        "count": 38,
+        "passed": 38,
+        "failed": 0
+      }
+    },
+    "exitCode": 0,
+    "path": "canonical-vectors.json"
+  },
+  "mutations": {
+    "v1": {
+      "count": 14,
+      "passed": false,
+      "counts": {
+        "KILLED": 13,
+        "SURVIVED": 0,
+        "CRASHED": 1,
+        "INVALID_OUTPUT": 0,
+        "NOT_APPLIED": 0,
+        "CONTROL_BROKEN": 0,
+        "INVALID_BASELINE": 0
+      },
+      "exitCode": 1,
+      "path": "canonical-mutations-v1.json",
+      "initialNativeFailureCause": "NOT_INDEPENDENTLY_ESTABLISHED; detailed positive report was discarded by the harness; never counted as kill"
+    },
+    "v1Repeat": {
+      "count": 14,
+      "passed": true,
+      "counts": {
+        "KILLED": 14,
+        "SURVIVED": 0,
+        "CRASHED": 0,
+        "INVALID_OUTPUT": 0,
+        "NOT_APPLIED": 0,
+        "CONTROL_BROKEN": 0,
+        "INVALID_BASELINE": 0
+      },
+      "exitCode": 0,
+      "path": "canonical-mutations-v1-repeat.json",
+      "justification": "One bounded full-inventory repeat after a newly observed canonical gate failure; initial failure preserved"
+    },
+    "targetedV1": {
+      "count": 1,
+      "passed": true,
+      "counts": {
+        "KILLED": 1,
+        "SURVIVED": 0,
+        "CRASHED": 0,
+        "INVALID_OUTPUT": 0,
+        "NOT_APPLIED": 0,
+        "CONTROL_BROKEN": 0,
+        "INVALID_BASELINE": 0
+      },
+      "exitCode": 0,
+      "path": "repaired-targeted-v1.report.json",
+      "trace": "Four recorded mutant native calls exited0, no kills; baseline controls admitted, but baseline native calls were not individually traced"
+    },
+    "v2": {
+      "count": 14,
+      "passed": true,
+      "counts": {
+        "KILLED": 14,
+        "SURVIVED": 0,
+        "CRASHED": 0,
+        "INVALID_OUTPUT": 0,
+        "NOT_APPLIED": 0,
+        "CONTROL_BROKEN": 0,
+        "INVALID_BASELINE": 0
+      },
+      "exitCode": 0,
+      "path": "repaired-canonical-mutations-v2.stdout.txt"
+    }
+  },
+  "gates": {
+    "sources": {
+      "exitCode": 0,
+      "result": {
+        "status": "PASS",
+        "files": 387,
+        "sourceLockDigest": "6e150823ac3eaca2b6d5f7c9e4e06488ddaed1ac0ce95cfe470f7a9baa22e782"
+      },
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "check:sources"
+      ],
+      "receipt": "repaired-sources.json"
+    },
+    "provenance": {
+      "exitCode": 0,
+      "result": {
+        "status": "PASS",
+        "publicBase": "62cd3e59c8f568496ed087d55f0aec3d63363b0a",
+        "historicalRepositories": 43,
+        "historicalSourceEntries": 74,
+        "newIntegrations": 8,
+        "newSourceRepositories": 6,
+        "newVendorFiles": 14,
+        "sourceFragments": 3,
+        "npmLicensePackages": 26,
+        "historicalNpmLicensePackages": 7,
+        "xrplPocDependencies": 2,
+        "boundary": "Offline identity/attribution/notice consistency; not independent authorship adjudication, legal opinion, XRPL consensus or semantic soundness proof."
+      },
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "check:provenance"
+      ],
+      "receipt": "repaired-provenance.json"
+    },
+    "diff": {
+      "exitCode": 0,
+      "result": null,
+      "command": "git",
+      "args": [
+        "diff",
+        "--check"
+      ],
+      "receipt": "repaired-diff.json"
+    }
+  },
+  "mothClassification": {
+    "classification": "ENVIRONMENTAL",
+    "preExistingClassDemonstrated": true,
+    "preExistingCodeBytesUnchanged": true,
+    "exactHistorical800of802ChildCauses": "Not independently recoverable; original run lacked subprocess tracing",
+    "currentMechanism": "Unchanged outer10s deadline; kill stack process.mjs:67. Full parallel child raced timer and closed0 with complete output but TIMEOUT was already latched.",
+    "originalColdReview": {
+      "registered": 802,
+      "pass": 800,
+      "fail": 2,
+      "notErased": true
+    },
+    "afterRepairSequential": {
+      "registered": 934,
+      "pass": 934,
+      "fail": 0
+    },
+    "commonParallelFailures": {
+      "base": 1,
+      "original": 9,
+      "repaired": 9,
+      "deltaOriginalToRepaired": 0,
+      "newFailureClassesDemonstrated": 0
+    },
+    "historical32": "Ordinary regression/hook/module failures, not intentional isolation barriers; all original child causes cannot be reconstructed",
+    "schedulingCaveat": "12.100s overlap between tail of original-targeted and beginning of base-parallel; retained and excluded from any causal failure-count claim"
+  },
+  "identities": "repaired-identities.json",
+  "cleanup": {
+    "recorded": "2026-10-13T00:30:40.7323915Z",
+    "scope": "Only identified untracked native-temp/test-runs under the exact disposable repaired clone",
+    "target": "C:\\Users\\msi\\Documents\\Codex\\2026-10-11\\files-pasted-by-the-user-mission\\work\\xrpl-repair\\runners\\repaired\\work",
+    "trackedWorkFiles": 0,
+    "removedFileCount": 17,
+    "removedFiles": [
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/job-20260922T2328006744863Z.body.json",
+        "bytes": 115,
+        "sha256": "01e820b93541f0bf57a245bcc8f205f1773121dd84f837d77c4084b0f732f36d"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/job-20260922T2328006744863Z.http.json",
+        "bytes": 263,
+        "sha256": "122a7753dfcb7ca836730db8c77f1dcb3c04a17362b9a777d5caabdde20d2be5"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/job-reference.json",
+        "bytes": 79,
+        "sha256": "30397527b07efa4b1768a172258fd766cdd7aa5f58d50180d6e3dd2944d3a0d1"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/manifest.json",
+        "bytes": 2857,
+        "sha256": "f155ce4bab17bafb5bb221fa48da942530957d0facad521e89e214970f9b3c3c"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/request.body.json",
+        "bytes": 185,
+        "sha256": "564457d78b1a0ee48969311ed0047f8507fad66f98036965dbbe864b80ba11ef"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/result-20260922T2328006744863Z.body.json",
+        "bytes": 7833,
+        "sha256": "d83c91326993db344ce70251ba932e2c94c1e178a6f8d9d253f3f812ff75d624"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/result-20260922T2328006744863Z.http.json",
+        "bytes": 274,
+        "sha256": "a901cd3b1bc49079fa0376c504501a3acb3e2edd1d5b0e1d190e22d8beb62018"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326204143474Z.body.json",
+        "bytes": 971,
+        "sha256": "c0754e79f789eeb8939c5f97725e7574c635620c2bb5aa02da59816abb3fe004"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326204143474Z.http.json",
+        "bytes": 273,
+        "sha256": "1953bc14bb8c98bdd4224e6a3c71172399ce6d6366df724c7cca16f9b9fe398f"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326503636962Z.body.json",
+        "bytes": 975,
+        "sha256": "a46a114a09de716eb0568fa67932ff9cbcf1abbca462193002ae656a4b66f264"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2326503636962Z.http.json",
+        "bytes": 273,
+        "sha256": "08e72e14b522917b86dd534b49c51e4b537c8609dec707efc8871202e066ad93"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2328006744863Z.body.json",
+        "bytes": 8804,
+        "sha256": "f39e388da79306e5c4c62af78998127da0bc9aeb232d6b722952f23dd5fe4e07"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/status-20260922T2328006744863Z.http.json",
+        "bytes": 274,
+        "sha256": "8ef51eb17cdc8ef713e76d3138bfe03c84784ad78eb6863c520710f0cd135b7f"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/SUBMIT_ATTEMPTED.json",
+        "bytes": 88,
+        "sha256": "f2b9b44b2ebfd558669c10659cc1fa85356f6a85a32f33f23bdf78cb08a44348"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/submit.body.json",
+        "bytes": 125,
+        "sha256": "a69a6f256627112da92ce6c78f1b0b659e2f5a7603f10b718b7f3649a11c438e"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/submit.http.json",
+        "bytes": 249,
+        "sha256": "0cda37d7b5004817a66b039e9bb5da558a4bd321110c01216ea6c6172a6a7ae5"
+      },
+      {
+        "path": "work/native-temp/qev-moth-rvr-dcdulljs/terminal-observation.json",
+        "bytes": 49,
+        "sha256": "9d2e31376cbaa764410af321ac19ec3736905b08ba5b9c7873292dce1ccd3c73"
+      }
+    ],
+    "reason": "Legacy native tests can retain temporary files on deadline kill; source-lock scans work/ and must not be silently rewritten to admit generated files",
+    "candidateRepositoryModified": false
+  },
+  "reportRestoration": {
+    "recorded": "2026-10-13T00:32:15.662Z",
+    "scope": "Only one generated tracked report in the disposable exact repaired clone; product checkout never edited",
+    "path": "reports/v0.2/mutations.json",
+    "reason": "auditMutants defaults writeReport=true; original planned v2 command generated its report. Actual generated output preserved externally, then exact tracked blob restored.",
+    "originalHeadSha256": "68cbe1c61c73194bd10d79f353f95112653718b887754fb217e903d112fae8cc",
+    "generatedSha256": "0c2a1cead96cd5595b700ae2c9eda8794de4a94bd5050040dfa9cdf5431af21f",
+    "restoredSha256": "68cbe1c61c73194bd10d79f353f95112653718b887754fb217e903d112fae8cc",
+    "generatedArtifact": "generated-mutations-v2.json",
+    "diffArtifact": "generated-mutations-v2.diff",
+    "restoredExact": true,
+    "sourceLockRewritten": false
+  },
+  "limitations": [
+    "Parallel mode remains non-green; sequential PASS is not all-mode PASS.",
+    "No full934 no-opt suite claimed; focused core+XRPL227 ran no-opt.",
+    "No new live lookup, transaction, wallet, signing or funding by this runner investigation.",
+    "No candidate/upstream edits or source-lock rewriting by this runner investigation."
+  ]
+}

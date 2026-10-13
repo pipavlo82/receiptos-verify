@@ -1,0 +1,90 @@
+{
+  "schema": "receiptos.xrpl.repair-evidence-manifest.v1",
+  "implementation_commit": "3f3a9329228de6e9c93349a07ef2582217a5a81a",
+  "files": {
+    "before.json": {
+      "sha256": "01a77ce2448d475ce42ed3f15e9e8cecea6200a8abaa5b37a254700551b5a2fc",
+      "bytes": 1426
+    },
+    "binding-agent-evidence.json": {
+      "sha256": "6a30407b64903c96eed410a52d6a0780f0104590a19aeb50dee2cc03815fc8cc",
+      "bytes": 1823
+    },
+    "binding-control-crash.json": {
+      "sha256": "af805802d87e87cb8b97e8f1d94c27fc878bf0563863c9a436f8e1af5b9cdd0e",
+      "bytes": 19526
+    },
+    "binding-control-empty.json": {
+      "sha256": "5af97b5f26808d90c466b42d96700d9fef97d40bbf980549ed352262e84c0848",
+      "bytes": 697
+    },
+    "binding-control-positive-control.json": {
+      "sha256": "50de26a489b34eecdde324a41afbe4adb45e2385719883a9633ad0203482626f",
+      "bytes": 13044
+    },
+    "binding-control-unapplied.json": {
+      "sha256": "2c152641a4e9ce6a4bb9ba65ac5f8e048bef4df165615190430ea624ad7d6eac",
+      "bytes": 18015
+    },
+    "binding-mutations.json": {
+      "sha256": "a812503347216f2b3405b785228eb5c1291be5032688c4719a1f95d1a675a743",
+      "bytes": 145389
+    },
+    "canonical-mutations-v1-repeat.json": {
+      "sha256": "9b56efba07d92ff7b70b94a6160ca90bfc318ca37011954d327a32f41b52ea5a",
+      "bytes": 13848
+    },
+    "canonical-mutations-v1.json": {
+      "sha256": "c02a877cce885e97322b3a3282c33523b58ebc0daf1b87da3d6f85971be8c2b1",
+      "bytes": 13849
+    },
+    "canonical-vectors.json": {
+      "sha256": "a3d9dc0c83139f96929ba89cc9b4aeb720186e504adb4adf8b7154cfbc3d40cb",
+      "bytes": 1834995
+    },
+    "focused-tests.json": {
+      "sha256": "514077a16560dc699648a9219708bb28ff5bafb28677c0bf766eff23241e2cca",
+      "bytes": 588
+    },
+    "fresh-live-reobservation.json": {
+      "sha256": "853780e07420e8ec59b5326a24a7743e5ec93606d47ef46283f2b23269820ead",
+      "bytes": 10843
+    },
+    "hygiene-implementation.json": {
+      "sha256": "b06706fe608701d357ec548fbfacde2dbbb581dd34c8d6721551b4e55e1de255",
+      "bytes": 576433
+    },
+    "HYGIENE_REVIEW.md": {
+      "sha256": "b00029e38e3969c7b6f7bd233a12f5ea451480233af7c0f47688f98a97f0273e",
+      "bytes": 4860
+    },
+    "independent-controls-19.json": {
+      "sha256": "5d58242eb5f4dac30a17352877f038aa28fa5dab1f591c1223338bbd223eb1b6",
+      "bytes": 8386
+    },
+    "offline-replay.json": {
+      "sha256": "523c382948feff21545785c7c9346c6808fd784b4df511e479a99f01bf7f0676",
+      "bytes": 220191
+    },
+    "runner-cleanup.json": {
+      "sha256": "afb56d25feda89f63d738eadbdf89ad19228edb0409c6f59730cbe902ebc4f28",
+      "bytes": 4031
+    },
+    "runner-identities.json": {
+      "sha256": "3d877dfcc07188001fb0e7029737dbafe93ccaf0c305aaaa44f0644a96ec0b07",
+      "bytes": 12912
+    },
+    "runner-report-restoration.json": {
+      "sha256": "f0dee0ccbfbf1a54bd178d6417cfd46f003282d7672ca207ec8100bf26f45fee",
+      "bytes": 818
+    },
+    "runner-summary.json": {
+      "sha256": "62aed50291e3b505b5b81f7543fc0f747b362d770c32a164d846ccb7190bd162",
+      "bytes": 32986
+    },
+    "RUNNER_REVIEW.md": {
+      "sha256": "15b6cf1ed0c441a95670a14d99b078bdb0f27e21c1e131fc63578710e50ca4c3",
+      "bytes": 12071
+    }
+  }
+}

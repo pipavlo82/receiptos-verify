@@ -1,0 +1,4438 @@
+{
+  "schema": "receiptos.xrpl.binding-mutation-audit.v1",
+  "status": "PASS",
+  "scope": "Offline source-omission and direct-API controls; not live XRPL integration or consensus proof.",
+  "runtime": {
+    "node": "v22.15.0"
+  },
+  "capture_sha256": "7f7fa0ad162a5d619ff594e0aa562beb361fdd0d275821f7d1f0b2d54e7231ce",
+  "required_bindings": [
+    "receipt_root",
+    "claim",
+    "subject",
+    "submitting_account",
+    "transaction",
+    "network",
+    "ledger_checkpoint"
+  ],
+  "negative_control": null,
+  "baseline": {
+    "command": [
+      "node",
+      "mutation-worker.mjs",
+      "normal"
+    ],
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "stdout_sha256": "a5b28725d905450064a64c5742f549fd7c4d5fc23253a328a6c325aa52e3bd22",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output": {
+      "mode": "normal",
+      "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+      "same_transaction_bytes": true,
+      "direct": {
+        "adapter_anchor_native": "ANCHOR_MATCH",
+        "anchor_native": "ANCHOR_MATCH",
+        "integrity": "VERIFIED",
+        "binding_contract": {
+          "status": "VERIFIED",
+          "reasonCodes": [],
+          "nativeResult": null,
+          "version": 1,
+          "required": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "bindings": {
+            "receipt_root": {
+              "binding": "receipt_root",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "receipt_root.expected",
+                "receipt_root.observed"
+              ]
+            },
+            "claim": {
+              "binding": "claim",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "claim.expected",
+                "claim.observed"
+              ]
+            },
+            "subject": {
+              "binding": "subject",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "subject.expected",
+                "subject.observed"
+              ]
+            },
+            "submitting_account": {
+              "binding": "submitting_account",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "submitting_account.expected",
+                "submitting_account.observed"
+              ]
+            },
+            "transaction": {
+              "binding": "transaction",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "transaction.expected",
+                "transaction.observed"
+              ]
+            },
+            "network": {
+              "binding": "network",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "network.expected",
+                "network.observed"
+              ]
+            },
+            "ledger_checkpoint": {
+              "binding": "ledger_checkpoint",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "ledger_checkpoint.expected",
+                "ledger_checkpoint.observed"
+              ]
+            }
+          },
+          "missing": [],
+          "failures": []
+        },
+        "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+        "claim_relation": null,
+        "overall": null,
+        "reason_codes": [
+          "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+        ]
+      },
+      "core": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": null,
+        "version": 1,
+        "required": [
+          "receipt_root",
+          "claim",
+          "subject",
+          "submitting_account",
+          "transaction",
+          "network",
+          "ledger_checkpoint"
+        ],
+        "bindings": {
+          "receipt_root": {
+            "binding": "receipt_root",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "receipt_root.expected",
+              "receipt_root.observed"
+            ]
+          },
+          "claim": {
+            "binding": "claim",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "claim.expected",
+              "claim.observed"
+            ]
+          },
+          "subject": {
+            "binding": "subject",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "subject.expected",
+              "subject.observed"
+            ]
+          },
+          "submitting_account": {
+            "binding": "submitting_account",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "submitting_account.expected",
+              "submitting_account.observed"
+            ]
+          },
+          "transaction": {
+            "binding": "transaction",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "transaction.expected",
+              "transaction.observed"
+            ]
+          },
+          "network": {
+            "binding": "network",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "network.expected",
+              "network.observed"
+            ]
+          },
+          "ledger_checkpoint": {
+            "binding": "ledger_checkpoint",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "ledger_checkpoint.expected",
+              "ledger_checkpoint.observed"
+            ]
+          }
+        },
+        "missing": [],
+        "failures": []
+      },
+      "product": {
+        "adapter_anchor_native": "ANCHOR_MATCH",
+        "anchor_native": "ANCHOR_MATCH",
+        "integrity": "VERIFIED",
+        "binding_contract": {
+          "status": "VERIFIED",
+          "reasonCodes": [],
+          "nativeResult": null,
+          "version": 1,
+          "required": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "bindings": {
+            "receipt_root": {
+              "binding": "receipt_root",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "receipt_root.expected",
+                "receipt_root.observed"
+              ]
+            },
+            "claim": {
+              "binding": "claim",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "claim.expected",
+                "claim.observed"
+              ]
+            },
+            "subject": {
+              "binding": "subject",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "subject.expected",
+                "subject.observed"
+              ]
+            },
+            "submitting_account": {
+              "binding": "submitting_account",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "submitting_account.expected",
+                "submitting_account.observed"
+              ]
+            },
+            "transaction": {
+              "binding": "transaction",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "transaction.expected",
+                "transaction.observed"
+              ]
+            },
+            "network": {
+              "binding": "network",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "network.expected",
+                "network.observed"
+              ]
+            },
+            "ledger_checkpoint": {
+              "binding": "ledger_checkpoint",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "ledger_checkpoint.expected",
+                "ledger_checkpoint.observed"
+              ]
+            }
+          },
+          "missing": [],
+          "failures": []
+        },
+        "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+        "claim_relation": "COMPATIBLE",
+        "overall": "CONTINUE_REQUIRED_LAYERS",
+        "reason_codes": [
+          "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+        ]
+      }
+    },
+    "semantic_assertion_failed": false,
+    "stderr": ""
+  },
+  "mutants": [
+    {
+      "id": "OMIT_receipt_root",
+      "binding": "receipt_root",
+      "kind": "OMISSION",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "a0da9f3d1b3dc81eabf5aaa70a722eea3475883c9f24cc37296b5d751e362864",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "973a4215d9747f2796b23de52479cfd48ac5fcb6ffcdf8da15a2d8cfde95d677",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "receipt_root"
+              ],
+              "failures": [
+                {
+                  "binding": "receipt_root",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "core": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [
+              "receipt_root"
+            ],
+            "failures": [
+              {
+                "binding": "receipt_root",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "receipt_root"
+              ],
+              "failures": [
+                {
+                  "binding": "receipt_root",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "INSUFFICIENT_EVIDENCE",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "tools/xrpl-poc.mjs",
+          "replay",
+          "--json"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d24b9d3bd8f692fa7f5b5bb57e550aa1a02a4fb5807ddaf1f5ae58fe9445bde2",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": "{\"status\":\"ERROR\",\"code\":\"REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED\"}\n"
+      },
+      "kill_mechanism": "CORE_REQUIRED_BINDING_REJECTION"
+    },
+    {
+      "id": "OMIT_claim",
+      "binding": "claim",
+      "kind": "OMISSION",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "ba56ef6b8393aa55b1180a55ac21b826e6bd1a2af31e7fd74924674f4d1efad3",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "be173ac970d598f437c6e0beefb6974b8a84ed1f761c6c9788773a9108e2fdf1",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "claim"
+              ],
+              "failures": [
+                {
+                  "binding": "claim",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "core": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [
+              "claim"
+            ],
+            "failures": [
+              {
+                "binding": "claim",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "claim"
+              ],
+              "failures": [
+                {
+                  "binding": "claim",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "INSUFFICIENT_EVIDENCE",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "tools/xrpl-poc.mjs",
+          "replay",
+          "--json"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d24b9d3bd8f692fa7f5b5bb57e550aa1a02a4fb5807ddaf1f5ae58fe9445bde2",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": "{\"status\":\"ERROR\",\"code\":\"REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED\"}\n"
+      },
+      "kill_mechanism": "CORE_REQUIRED_BINDING_REJECTION"
+    },
+    {
+      "id": "OMIT_subject",
+      "binding": "subject",
+      "kind": "OMISSION",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "3c89f7c70d6385ef2e19a437d6aad353c27735b4545d1307bf0ddb956ac0887d",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "0715132c91f3f28b7966c039ebc98f39c92979a081843fc7efb54a66b1f73b9e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "subject"
+              ],
+              "failures": [
+                {
+                  "binding": "subject",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "core": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [
+              "subject"
+            ],
+            "failures": [
+              {
+                "binding": "subject",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "subject"
+              ],
+              "failures": [
+                {
+                  "binding": "subject",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "INSUFFICIENT_EVIDENCE",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "tools/xrpl-poc.mjs",
+          "replay",
+          "--json"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d24b9d3bd8f692fa7f5b5bb57e550aa1a02a4fb5807ddaf1f5ae58fe9445bde2",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": "{\"status\":\"ERROR\",\"code\":\"REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED\"}\n"
+      },
+      "kill_mechanism": "CORE_REQUIRED_BINDING_REJECTION"
+    },
+    {
+      "id": "OMIT_submitting_account",
+      "binding": "submitting_account",
+      "kind": "OMISSION",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "3092cc3cecae2f85997f7d803724ca773bce603d69bd8afa54c9988f823911d6",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "18036d36e47e53323cada9cd26ea2c8abe1640d79f2dd897a2cc5cb61d16e27e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "submitting_account"
+              ],
+              "failures": [
+                {
+                  "binding": "submitting_account",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "core": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [
+              "submitting_account"
+            ],
+            "failures": [
+              {
+                "binding": "submitting_account",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "submitting_account"
+              ],
+              "failures": [
+                {
+                  "binding": "submitting_account",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "INSUFFICIENT_EVIDENCE",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "tools/xrpl-poc.mjs",
+          "replay",
+          "--json"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d24b9d3bd8f692fa7f5b5bb57e550aa1a02a4fb5807ddaf1f5ae58fe9445bde2",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": "{\"status\":\"ERROR\",\"code\":\"REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED\"}\n"
+      },
+      "kill_mechanism": "CORE_REQUIRED_BINDING_REJECTION"
+    },
+    {
+      "id": "OMIT_transaction",
+      "binding": "transaction",
+      "kind": "OMISSION",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "7ff068a4119fec2bba90568d59d03bdcf4cdfb87084e5726fd319fabc8edddd9",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "ee475a05ae409c76c5fa777d7138f80e7badce8edd1603a41d8d0d29bb29557e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "transaction"
+              ],
+              "failures": [
+                {
+                  "binding": "transaction",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "core": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [
+              "transaction"
+            ],
+            "failures": [
+              {
+                "binding": "transaction",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "transaction"
+              ],
+              "failures": [
+                {
+                  "binding": "transaction",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "INSUFFICIENT_EVIDENCE",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "tools/xrpl-poc.mjs",
+          "replay",
+          "--json"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d24b9d3bd8f692fa7f5b5bb57e550aa1a02a4fb5807ddaf1f5ae58fe9445bde2",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": "{\"status\":\"ERROR\",\"code\":\"REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED\"}\n"
+      },
+      "kill_mechanism": "CORE_REQUIRED_BINDING_REJECTION"
+    },
+    {
+      "id": "OMIT_network",
+      "binding": "network",
+      "kind": "OMISSION",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "b1afda46c96b4acf63b9b30c9ec5fcc276affda257b1ddb1041b17f62581df76",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "3e4dff2877e7652cb3484dc50c400ef42505095b0a76c4c26f64bca3d0ce083d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "network"
+              ],
+              "failures": [
+                {
+                  "binding": "network",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "core": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [
+              "network"
+            ],
+            "failures": [
+              {
+                "binding": "network",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [
+                "network"
+              ],
+              "failures": [
+                {
+                  "binding": "network",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "INSUFFICIENT_EVIDENCE",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "tools/xrpl-poc.mjs",
+          "replay",
+          "--json"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d24b9d3bd8f692fa7f5b5bb57e550aa1a02a4fb5807ddaf1f5ae58fe9445bde2",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": "{\"status\":\"ERROR\",\"code\":\"REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED\"}\n"
+      },
+      "kill_mechanism": "CORE_REQUIRED_BINDING_REJECTION"
+    },
+    {
+      "id": "OMIT_ledger_checkpoint",
+      "binding": "ledger_checkpoint",
+      "kind": "OMISSION",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "fae21d05887c934c23623cdcc918ee66539d101f1cc30dc362062a5acc691d24",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "02398d97d9f55b50692bd8924af4785c41ada0222ca0899fc6abaa10ff376e19",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              },
+              "missing": [
+                "ledger_checkpoint"
+              ],
+              "failures": [
+                {
+                  "binding": "ledger_checkpoint",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "core": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            },
+            "missing": [
+              "ledger_checkpoint"
+            ],
+            "failures": [
+              {
+                "binding": "ledger_checkpoint",
+                "status": "INSUFFICIENT_EVIDENCE",
+                "reasonCodes": [
+                  "REQUIRED_BINDING_MISSING"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_NOT_ESTABLISHED",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              },
+              "missing": [
+                "ledger_checkpoint"
+              ],
+              "failures": [
+                {
+                  "binding": "ledger_checkpoint",
+                  "status": "INSUFFICIENT_EVIDENCE",
+                  "reasonCodes": [
+                    "REQUIRED_BINDING_MISSING"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "INSUFFICIENT_EVIDENCE",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "tools/xrpl-poc.mjs",
+          "replay",
+          "--json"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "d24b9d3bd8f692fa7f5b5bb57e550aa1a02a4fb5807ddaf1f5ae58fe9445bde2",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": "{\"status\":\"ERROR\",\"code\":\"REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED\"}\n"
+      },
+      "kill_mechanism": "CORE_REQUIRED_BINDING_REJECTION"
+    },
+    {
+      "id": "BYPASS_COMMITTED_CHECKPOINT",
+      "binding": "ledger_checkpoint",
+      "kind": "CHECKPOINT",
+      "source": "src/adapters/xrpl-anchor.mjs",
+      "source_before_sha256": "7c04897668c3a92f1c6b08c9e78f2d5dd909bb9d691eb102e64f0ad77476400c",
+      "source_after_sha256": "46f01ac8f2c0b5110bd2b495caed0bed4a7f22136bf3ec12eb8844d1c3e2ee1f",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/adapters/xrpl-anchor.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "checkpoint"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "4d44232af01ecfb0f91a8fd25a7a09d5f7eb1692cf86cf547a4d1f67174c6dcb",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "checkpoint",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MISMATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "CONTRADICTED",
+              "reasonCodes": [
+                "BINDING_RELATION_MISMATCH"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "CONTRADICTED",
+                  "reasonCodes": [
+                    "BINDING_RELATION_MISMATCH"
+                  ],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": [
+                {
+                  "binding": "ledger_checkpoint",
+                  "status": "CONTRADICTED",
+                  "reasonCodes": [
+                    "BINDING_RELATION_MISMATCH"
+                  ],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "BINDING_RELATION_MISMATCH"
+            ]
+          },
+          "core": {
+            "status": "CONTRADICTED",
+            "reasonCodes": [
+              "BINDING_RELATION_MISMATCH"
+            ],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "CONTRADICTED",
+                "reasonCodes": [
+                  "BINDING_RELATION_MISMATCH"
+                ],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [],
+            "failures": [
+              {
+                "binding": "ledger_checkpoint",
+                "status": "CONTRADICTED",
+                "reasonCodes": [
+                  "BINDING_RELATION_MISMATCH"
+                ],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            ]
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MISMATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "CONTRADICTED",
+              "reasonCodes": [
+                "BINDING_RELATION_MISMATCH"
+              ],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "CONTRADICTED",
+                  "reasonCodes": [
+                    "BINDING_RELATION_MISMATCH"
+                  ],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": [
+                {
+                  "binding": "ledger_checkpoint",
+                  "status": "CONTRADICTED",
+                  "reasonCodes": [
+                    "BINDING_RELATION_MISMATCH"
+                  ],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              ]
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "CONTRADICTED",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY",
+              "BINDING_RELATION_MISMATCH"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "positive": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "normal"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "a5b28725d905450064a64c5742f549fd7c4d5fc23253a328a6c325aa52e3bd22",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "normal",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": []
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+            ]
+          },
+          "core": {
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [],
+            "failures": []
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": []
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "CONTINUE_REQUIRED_LAYERS",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "replay": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "checkpoint-replay"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "ac8e4f37ff4854a8250ee1e6cc48eb8446a862e750a861828a75f229ddaa9f38",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "replay_exit": 1,
+          "code": "REQUIRED_BINDING_CONTRACT_NOT_ESTABLISHED"
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "kill_mechanism": "CORE_INDEPENDENT_CHECKPOINT_RELATION_REJECTION"
+    },
+    {
+      "id": "RESTORE_PERMISSIVE_ASSUMPTION_CONTEXT",
+      "binding": "assumptions",
+      "kind": "ASSUMPTION",
+      "source": "src/core/claim-surface.mjs",
+      "source_before_sha256": "338f37bc96a7a6d9954ffe246d2639ec655b91df74a9890aa9cac99e5e173862",
+      "source_after_sha256": "3b8eec811dc40f6e7fd9f80f67a128cb2a0d9b33091f21cacef06899c5604e9a",
+      "matches": 1,
+      "applied": true,
+      "outcome": "KILLED",
+      "semantic_kill": true,
+      "syntax": {
+        "command": [
+          "node",
+          "--check",
+          "src/core/claim-surface.mjs"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "witness": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "assumption"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "1e337f6cf18d8b1cbdfd19d1569f43a6580af0b7b125c63645d8d9a9797c3569",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "assumption",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": []
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+            ]
+          },
+          "core": {
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [],
+            "failures": []
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": []
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "CONTINUE_REQUIRED_LAYERS",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "positive": {
+        "command": [
+          "node",
+          "mutation-worker.mjs",
+          "assumption-positive"
+        ],
+        "exit": 0,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "be5405cdde1075d43640caa987256fb3e68e3eafe6de9a9a3d4338bb3f9c2b75",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": {
+          "mode": "assumption-positive",
+          "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+          "same_transaction_bytes": true,
+          "direct": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": []
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": null,
+            "overall": null,
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+            ]
+          },
+          "core": {
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "nativeResult": null,
+            "version": 1,
+            "required": [
+              "receipt_root",
+              "claim",
+              "subject",
+              "submitting_account",
+              "transaction",
+              "network",
+              "ledger_checkpoint"
+            ],
+            "bindings": {
+              "receipt_root": {
+                "binding": "receipt_root",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "receipt_root.expected",
+                  "receipt_root.observed"
+                ]
+              },
+              "claim": {
+                "binding": "claim",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "claim.expected",
+                  "claim.observed"
+                ]
+              },
+              "subject": {
+                "binding": "subject",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "subject.expected",
+                  "subject.observed"
+                ]
+              },
+              "submitting_account": {
+                "binding": "submitting_account",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "submitting_account.expected",
+                  "submitting_account.observed"
+                ]
+              },
+              "transaction": {
+                "binding": "transaction",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "transaction.expected",
+                  "transaction.observed"
+                ]
+              },
+              "network": {
+                "binding": "network",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "network.expected",
+                  "network.observed"
+                ]
+              },
+              "ledger_checkpoint": {
+                "binding": "ledger_checkpoint",
+                "status": "VERIFIED",
+                "reasonCodes": [],
+                "evidence": [
+                  "ledger_checkpoint.expected",
+                  "ledger_checkpoint.observed"
+                ]
+              }
+            },
+            "missing": [],
+            "failures": []
+          },
+          "product": {
+            "adapter_anchor_native": "ANCHOR_MATCH",
+            "anchor_native": "ANCHOR_MATCH",
+            "integrity": "VERIFIED",
+            "binding_contract": {
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "nativeResult": null,
+              "version": 1,
+              "required": [
+                "receipt_root",
+                "claim",
+                "subject",
+                "submitting_account",
+                "transaction",
+                "network",
+                "ledger_checkpoint"
+              ],
+              "bindings": {
+                "receipt_root": {
+                  "binding": "receipt_root",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "receipt_root.expected",
+                    "receipt_root.observed"
+                  ]
+                },
+                "claim": {
+                  "binding": "claim",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "claim.expected",
+                    "claim.observed"
+                  ]
+                },
+                "subject": {
+                  "binding": "subject",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "subject.expected",
+                    "subject.observed"
+                  ]
+                },
+                "submitting_account": {
+                  "binding": "submitting_account",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "submitting_account.expected",
+                    "submitting_account.observed"
+                  ]
+                },
+                "transaction": {
+                  "binding": "transaction",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "transaction.expected",
+                    "transaction.observed"
+                  ]
+                },
+                "network": {
+                  "binding": "network",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "network.expected",
+                    "network.observed"
+                  ]
+                },
+                "ledger_checkpoint": {
+                  "binding": "ledger_checkpoint",
+                  "status": "VERIFIED",
+                  "reasonCodes": [],
+                  "evidence": [
+                    "ledger_checkpoint.expected",
+                    "ledger_checkpoint.observed"
+                  ]
+                }
+              },
+              "missing": [],
+              "failures": []
+            },
+            "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+            "claim_relation": "COMPATIBLE",
+            "overall": "CONTINUE_REQUIRED_LAYERS",
+            "reason_codes": [
+              "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+            ]
+          }
+        },
+        "semantic_assertion_failed": false,
+        "stderr": ""
+      },
+      "regression": {
+        "command": [
+          "node",
+          "--test",
+          "--test-name-pattern",
+          "A/raw string AB permanent cold-review witness",
+          "tests/xrpl-assumption-context.test.mjs"
+        ],
+        "exit": 1,
+        "signal": null,
+        "error": null,
+        "stdout_sha256": "ecb1903145a2f31aeef240c4489a948e8bd4fca7356270f7ec5c1792d56b2dc6",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output": null,
+        "semantic_assertion_failed": true,
+        "stderr": ""
+      },
+      "regression_classification": {
+        "semantic_assertion_failed": true
+      },
+      "kill_mechanism": "DIRECT_API_REGRESSION_SEMANTIC_DISAGREEMENT"
+    }
+  ],
+  "counts": {
+    "inventory": 9,
+    "killed": 9,
+    "survived": 0,
+    "crashed": 0,
+    "unapplied": 0,
+    "invalid_output": 0,
+    "positive_control_failed": 0
+  },
+  "baseline_assumption": {
+    "command": [
+      "node",
+      "mutation-worker.mjs",
+      "assumption"
+    ],
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "stdout_sha256": "18fea6ceb2bc4e3da8a6dc83b263a710685a1938b30ae256d20ab6712036058b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output": {
+      "mode": "assumption",
+      "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+      "same_transaction_bytes": true,
+      "direct": {
+        "adapter_anchor_native": "ANCHOR_MATCH",
+        "anchor_native": "ANCHOR_MATCH",
+        "integrity": "VERIFIED",
+        "binding_contract": {
+          "status": "VERIFIED",
+          "reasonCodes": [],
+          "nativeResult": null,
+          "version": 1,
+          "required": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "bindings": {
+            "receipt_root": {
+              "binding": "receipt_root",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "receipt_root.expected",
+                "receipt_root.observed"
+              ]
+            },
+            "claim": {
+              "binding": "claim",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "claim.expected",
+                "claim.observed"
+              ]
+            },
+            "subject": {
+              "binding": "subject",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "subject.expected",
+                "subject.observed"
+              ]
+            },
+            "submitting_account": {
+              "binding": "submitting_account",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "submitting_account.expected",
+                "submitting_account.observed"
+              ]
+            },
+            "transaction": {
+              "binding": "transaction",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "transaction.expected",
+                "transaction.observed"
+              ]
+            },
+            "network": {
+              "binding": "network",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "network.expected",
+                "network.observed"
+              ]
+            },
+            "ledger_checkpoint": {
+              "binding": "ledger_checkpoint",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "ledger_checkpoint.expected",
+                "ledger_checkpoint.observed"
+              ]
+            }
+          },
+          "missing": [],
+          "failures": []
+        },
+        "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+        "claim_relation": null,
+        "overall": null,
+        "reason_codes": [
+          "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+        ]
+      },
+      "core": {
+        "status": "VERIFIED",
+        "reasonCodes": [],
+        "nativeResult": null,
+        "version": 1,
+        "required": [
+          "receipt_root",
+          "claim",
+          "subject",
+          "submitting_account",
+          "transaction",
+          "network",
+          "ledger_checkpoint"
+        ],
+        "bindings": {
+          "receipt_root": {
+            "binding": "receipt_root",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "receipt_root.expected",
+              "receipt_root.observed"
+            ]
+          },
+          "claim": {
+            "binding": "claim",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "claim.expected",
+              "claim.observed"
+            ]
+          },
+          "subject": {
+            "binding": "subject",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "subject.expected",
+              "subject.observed"
+            ]
+          },
+          "submitting_account": {
+            "binding": "submitting_account",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "submitting_account.expected",
+              "submitting_account.observed"
+            ]
+          },
+          "transaction": {
+            "binding": "transaction",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "transaction.expected",
+              "transaction.observed"
+            ]
+          },
+          "network": {
+            "binding": "network",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "network.expected",
+              "network.observed"
+            ]
+          },
+          "ledger_checkpoint": {
+            "binding": "ledger_checkpoint",
+            "status": "VERIFIED",
+            "reasonCodes": [],
+            "evidence": [
+              "ledger_checkpoint.expected",
+              "ledger_checkpoint.observed"
+            ]
+          }
+        },
+        "missing": [],
+        "failures": []
+      },
+      "product": {
+        "adapter_anchor_native": "ANCHOR_MATCH",
+        "anchor_native": "ANCHOR_MATCH",
+        "integrity": "VERIFIED",
+        "binding_contract": {
+          "status": "VERIFIED",
+          "reasonCodes": [],
+          "nativeResult": null,
+          "version": 1,
+          "required": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "bindings": {
+            "receipt_root": {
+              "binding": "receipt_root",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "receipt_root.expected",
+                "receipt_root.observed"
+              ]
+            },
+            "claim": {
+              "binding": "claim",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "claim.expected",
+                "claim.observed"
+              ]
+            },
+            "subject": {
+              "binding": "subject",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "subject.expected",
+                "subject.observed"
+              ]
+            },
+            "submitting_account": {
+              "binding": "submitting_account",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "submitting_account.expected",
+                "submitting_account.observed"
+              ]
+            },
+            "transaction": {
+              "binding": "transaction",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "transaction.expected",
+                "transaction.observed"
+              ]
+            },
+            "network": {
+              "binding": "network",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "network.expected",
+                "network.observed"
+              ]
+            },
+            "ledger_checkpoint": {
+              "binding": "ledger_checkpoint",
+              "status": "VERIFIED",
+              "reasonCodes": [],
+              "evidence": [
+                "ledger_checkpoint.expected",
+                "ledger_checkpoint.observed"
+              ]
+            }
+          },
+          "missing": [],
+          "failures": []
+        },
+        "transaction_hash": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+        "claim_relation": "INSUFFICIENT_EVIDENCE",
+        "overall": "INSUFFICIENT_EVIDENCE",
+        "reason_codes": [
+          "XRPL_EXACT_ANCHOR_ON_ACCEPTED_HISTORY"
+        ]
+      }
+    },
+    "semantic_assertion_failed": false,
+    "stderr": ""
+  },
+  "capture_unchanged": true
+}

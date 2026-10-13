@@ -1,0 +1,455 @@
+{
+  "schema": "receiptos.xrpl.binding-mutation-audit.v1",
+  "status": "FAIL",
+  "scope": "Offline source-omission and direct-API controls; not live XRPL integration or consensus proof.",
+  "runtime": {
+    "node": "v22.15.0"
+  },
+  "capture_sha256": "7f7fa0ad162a5d619ff594e0aa562beb361fdd0d275821f7d1f0b2d54e7231ce",
+  "required_bindings": [
+    "receipt_root",
+    "claim",
+    "subject",
+    "submitting_account",
+    "transaction",
+    "network",
+    "ledger_checkpoint"
+  ],
+  "negative_control": "positive-control",
+  "baseline": {
+    "command": [
+      "node",
+      "mutation-worker.mjs",
+      "normal"
+    ],
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "stdout_sha256": "46671d431065724bcdf7e173b7ac060a2e2ce5ae362be279e53e48deb8e72d1c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output": {
+      "mode": "normal",
+      "transaction": "375AE7E0F1D1405E2356BD9ACB4EC0B59B9665E01CB1B10A95E4CDDE6AA98633",
+      "same_transaction_bytes": true,
+      "direct": {
+        "adapter_anchor_native": "ANCHOR_MALFORMED",
+        "anchor_native": "ANCHOR_MALFORMED",
+        "integrity": "REJECTED_MALFORMED",
+        "binding_contract": {
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reasonCodes": [
+            "REQUIRED_BINDING_MISSING"
+          ],
+          "nativeResult": null,
+          "version": 1,
+          "required": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "bindings": {
+            "receipt_root": {
+              "binding": "receipt_root",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "claim": {
+              "binding": "claim",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "subject": {
+              "binding": "subject",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "submitting_account": {
+              "binding": "submitting_account",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "transaction": {
+              "binding": "transaction",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "network": {
+              "binding": "network",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "ledger_checkpoint": {
+              "binding": "ledger_checkpoint",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            }
+          },
+          "missing": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "failures": [
+            {
+              "binding": "receipt_root",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "claim",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "subject",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "submitting_account",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "transaction",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "network",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "ledger_checkpoint",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            }
+          ]
+        },
+        "transaction_hash": null,
+        "claim_relation": null,
+        "overall": null,
+        "reason_codes": [
+          "XRPL_RECEIPT_INTEGRITY_UNESTABLISHED"
+        ]
+      },
+      "core": {
+        "status": "INSUFFICIENT_EVIDENCE",
+        "reasonCodes": [
+          "REQUIRED_BINDING_MISSING"
+        ],
+        "nativeResult": null,
+        "version": 1,
+        "required": [
+          "receipt_root",
+          "claim",
+          "subject",
+          "submitting_account",
+          "transaction",
+          "network",
+          "ledger_checkpoint"
+        ],
+        "bindings": {
+          "receipt_root": {
+            "binding": "receipt_root",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "claim": {
+            "binding": "claim",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "subject": {
+            "binding": "subject",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "submitting_account": {
+            "binding": "submitting_account",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "transaction": {
+            "binding": "transaction",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "network": {
+            "binding": "network",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          "ledger_checkpoint": {
+            "binding": "ledger_checkpoint",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        },
+        "missing": [
+          "receipt_root",
+          "claim",
+          "subject",
+          "submitting_account",
+          "transaction",
+          "network",
+          "ledger_checkpoint"
+        ],
+        "failures": [
+          {
+            "binding": "receipt_root",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          {
+            "binding": "claim",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          {
+            "binding": "subject",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          {
+            "binding": "submitting_account",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          {
+            "binding": "transaction",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          {
+            "binding": "network",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          },
+          {
+            "binding": "ledger_checkpoint",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "reasonCodes": [
+              "REQUIRED_BINDING_MISSING"
+            ]
+          }
+        ]
+      },
+      "product": {
+        "adapter_anchor_native": "ANCHOR_MALFORMED",
+        "anchor_native": "ANCHOR_MALFORMED",
+        "integrity": "REJECTED_MALFORMED",
+        "binding_contract": {
+          "status": "INSUFFICIENT_EVIDENCE",
+          "reasonCodes": [
+            "REQUIRED_BINDING_MISSING"
+          ],
+          "nativeResult": null,
+          "version": 1,
+          "required": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "bindings": {
+            "receipt_root": {
+              "binding": "receipt_root",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "claim": {
+              "binding": "claim",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "subject": {
+              "binding": "subject",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "submitting_account": {
+              "binding": "submitting_account",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "transaction": {
+              "binding": "transaction",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "network": {
+              "binding": "network",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            "ledger_checkpoint": {
+              "binding": "ledger_checkpoint",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            }
+          },
+          "missing": [
+            "receipt_root",
+            "claim",
+            "subject",
+            "submitting_account",
+            "transaction",
+            "network",
+            "ledger_checkpoint"
+          ],
+          "failures": [
+            {
+              "binding": "receipt_root",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "claim",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "subject",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "submitting_account",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "transaction",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "network",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            },
+            {
+              "binding": "ledger_checkpoint",
+              "status": "INSUFFICIENT_EVIDENCE",
+              "reasonCodes": [
+                "REQUIRED_BINDING_MISSING"
+              ]
+            }
+          ]
+        },
+        "transaction_hash": null,
+        "claim_relation": "COMPATIBLE",
+        "overall": "REJECTED_MALFORMED",
+        "reason_codes": [
+          "XRPL_RECEIPT_INTEGRITY_UNESTABLISHED"
+        ]
+      }
+    },
+    "semantic_assertion_failed": false,
+    "stderr": ""
+  },
+  "mutants": [],
+  "counts": {
+    "inventory": 9,
+    "killed": 0,
+    "survived": 0,
+    "crashed": 0,
+    "unapplied": 0,
+    "invalid_output": 0,
+    "positive_control_failed": 1
+  },
+  "failure": "BASELINE_POSITIVE_CONTROL_FAILED"
+}
