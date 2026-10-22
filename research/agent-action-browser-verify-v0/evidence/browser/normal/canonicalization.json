@@ -1,0 +1,225 @@
+{
+  "self_test": {
+    "ok": true,
+    "got": "0xe61c9a9eed9e1d7eb5107acd9bb71d53cee9fcdae806444f4dc93b2f9694c2ae",
+    "canonicalOk": true
+  },
+  "rows": [
+    {
+      "case_id": "key-order",
+      "expected": "{\"a\":1,\"z\":2}",
+      "actual": "{\"a\":1,\"z\":2}",
+      "passed": true
+    },
+    {
+      "case_id": "nested-order",
+      "expected": "{\"a\":[true,null,3],\"b\":{\"a\":1,\"y\":2}}",
+      "actual": "{\"a\":[true,null,3],\"b\":{\"a\":1,\"y\":2}}",
+      "passed": true
+    },
+    {
+      "case_id": "anchor-exclusion",
+      "expected": "{\"z\":2}",
+      "actual": "{\"z\":2}",
+      "passed": true
+    },
+    {
+      "case_id": "anchor-change",
+      "expected": "{\"z\":2}",
+      "actual": "{\"z\":2}",
+      "passed": true
+    },
+    {
+      "case_id": "top-receipt-root",
+      "expected": "{\"receipt_root\":\"saved\",\"x\":1}",
+      "actual": "{\"receipt_root\":\"saved\",\"x\":1}",
+      "passed": true
+    },
+    {
+      "case_id": "nested-exclusions-retained",
+      "expected": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}",
+      "actual": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}",
+      "passed": true
+    },
+    {
+      "case_id": "unicode-value",
+      "expected": "{\"text\":\"π🙂\"}",
+      "actual": "{\"text\":\"π🙂\"}",
+      "passed": true
+    },
+    {
+      "case_id": "unicode-key-order",
+      "expected": "{\"𐀀\":2,\"\":1}",
+      "actual": "{\"𐀀\":2,\"\":1}",
+      "passed": true
+    },
+    {
+      "case_id": "ascii-numeric-keys",
+      "expected": "{\"1\":1,\"10\":10,\"2\":2}",
+      "actual": "{\"1\":1,\"10\":10,\"2\":2}",
+      "passed": true
+    },
+    {
+      "case_id": "escapes",
+      "expected": "{\"s\":\"a\\n\\t\\\"\\\\b\"}",
+      "actual": "{\"s\":\"a\\n\\t\\\"\\\\b\"}",
+      "passed": true
+    },
+    {
+      "case_id": "solidus",
+      "expected": "{\"s\":\"a/b\"}",
+      "actual": "{\"s\":\"a/b\"}",
+      "passed": true
+    },
+    {
+      "case_id": "line-separators",
+      "expected": "{\"s\":\"  \"}",
+      "actual": "{\"s\":\"  \"}",
+      "passed": true
+    },
+    {
+      "case_id": "unicode-composed",
+      "expected": "{\"s\":\"é\"}",
+      "actual": "{\"s\":\"é\"}",
+      "passed": true
+    },
+    {
+      "case_id": "unicode-decomposed",
+      "expected": "{\"s\":\"é\"}",
+      "actual": "{\"s\":\"é\"}",
+      "passed": true
+    },
+    {
+      "case_id": "float-integral",
+      "expected": "{\"n\":1}",
+      "actual": "{\"n\":1}",
+      "passed": true
+    },
+    {
+      "case_id": "float-fraction",
+      "expected": "{\"n\":1.25}",
+      "actual": "{\"n\":1.25}",
+      "passed": true
+    },
+    {
+      "case_id": "exponent-small",
+      "expected": "{\"n\":1e-7}",
+      "actual": "{\"n\":1e-7}",
+      "passed": true
+    },
+    {
+      "case_id": "exponent-large",
+      "expected": "{\"n\":100000000000000000000}",
+      "actual": "{\"n\":100000000000000000000}",
+      "passed": true
+    },
+    {
+      "case_id": "exponent-integer",
+      "expected": "{\"n\":100}",
+      "actual": "{\"n\":100}",
+      "passed": true
+    },
+    {
+      "case_id": "negative-zero-int",
+      "expected": "{\"n\":0}",
+      "actual": "{\"n\":0}",
+      "passed": true
+    },
+    {
+      "case_id": "negative-zero-float",
+      "expected": "{\"n\":0}",
+      "actual": "{\"n\":0}",
+      "passed": true
+    },
+    {
+      "case_id": "safe-max",
+      "expected": "{\"n\":9007199254740991}",
+      "actual": "{\"n\":9007199254740991}",
+      "passed": true
+    },
+    {
+      "case_id": "unsafe-integer",
+      "expected": "{\"n\":9007199254740992}",
+      "actual": "{\"n\":9007199254740992}",
+      "passed": true
+    },
+    {
+      "case_id": "overflow",
+      "expected": "{\"n\":null}",
+      "actual": "{\"n\":null}",
+      "passed": true
+    },
+    {
+      "case_id": "nan-extension",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case_id": "infinity-extension",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "case_id": "missing-member",
+      "expected": "{}",
+      "actual": "{}",
+      "passed": true
+    },
+    {
+      "case_id": "null-member",
+      "expected": "{\"n\":null}",
+      "actual": "{\"n\":null}",
+      "passed": true
+    },
+    {
+      "case_id": "duplicate-key",
+      "expected": "{\"a\":2}",
+      "actual": "{\"a\":2}",
+      "passed": true
+    },
+    {
+      "case_id": "decoded-duplicate",
+      "expected": "{\"a\":2}",
+      "actual": "{\"a\":2}",
+      "passed": true
+    },
+    {
+      "case_id": "nested-duplicate",
+      "expected": "{\"o\":{\"a\":2}}",
+      "actual": "{\"o\":{\"a\":2}}",
+      "passed": true
+    },
+    {
+      "case_id": "lone-surrogate",
+      "expected": "{\"s\":\"\\ud800\"}",
+      "actual": "{\"s\":\"\\ud800\"}",
+      "passed": true
+    },
+    {
+      "case_id": "excluded-overflow",
+      "expected": "{\"x\":1}",
+      "actual": "{\"x\":1}",
+      "passed": true
+    },
+    {
+      "case_id": "whitespace",
+      "expected": "{\"a\":1}",
+      "actual": "{\"a\":1}",
+      "passed": true
+    },
+    {
+      "case_id": "proto-key",
+      "expected": "{}",
+      "actual": "{}",
+      "passed": true
+    },
+    {
+      "case_id": "boolean-array",
+      "expected": "{\"a\":[false,true,null]}",
+      "actual": "{\"a\":[false,true,null]}",
+      "passed": true
+    }
+  ]
+}

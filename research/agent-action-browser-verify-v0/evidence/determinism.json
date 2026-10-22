@@ -1,0 +1,18 @@
+{
+  "actions": {
+    "sha256_by_mode": {
+      "normal": "e6628648adc16e287c21a81ce0f84b483f92c2f108bb3af45ac5558969701439",
+      "repeat": "e6628648adc16e287c21a81ce0f84b483f92c2f108bb3af45ac5558969701439",
+      "optimized": "e6628648adc16e287c21a81ce0f84b483f92c2f108bb3af45ac5558969701439"
+    },
+    "identical": true
+  },
+  "canonicalization": {
+    "sha256_by_mode": {
+      "normal": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d",
+      "repeat": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d",
+      "optimized": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d"
+    },
+    "identical": true
+  }
+}

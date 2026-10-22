@@ -1,0 +1,142 @@
+{
+  "schema": "agent-action.source-pins.v0",
+  "host_base": "396143120f787d2f5534e92c0cf896c029a05775",
+  "repositories": [
+    {
+      "repository": "pipavlo82/receiptos-verify",
+      "sha": "396143120f787d2f5534e92c0cf896c029a05775",
+      "url": "https://github.com/pipavlo82/receiptos-verify",
+      "captured_at": "2026-10-22T21:53:14.171380+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "pipavlo82/crystal-receipt",
+      "sha": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "url": "https://github.com/pipavlo82/crystal-receipt",
+      "captured_at": "2026-10-22T21:53:13.327661+00:00",
+      "runtime_dependency": true,
+      "runtime_files": {
+        "src/receiptos/canon/canonicalize.ts": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+        "src/receiptos/canon/receipt-root.ts": "519e532b155f3c1f4720337d09bc2a8503e4546682695e798b8597ad8d187bf0"
+      },
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sha": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "url": "https://github.com/pipavlo82/recomputable-verification-receipts",
+      "captured_at": "2026-10-22T21:53:13.416680+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "pipavlo82/relational-security-invariants",
+      "sha": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+      "url": "https://github.com/pipavlo82/relational-security-invariants",
+      "captured_at": "2026-10-22T21:53:13.392933+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sha": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "url": "https://github.com/pipavlo82/protected-relation-fixtures",
+      "captured_at": "2026-10-22T21:53:14.334977+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "MIT"
+    },
+    {
+      "repository": "pipavlo82/Chronicle",
+      "sha": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "url": "https://github.com/pipavlo82/Chronicle",
+      "captured_at": "2026-10-22T21:53:14.530998+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "pipavlo82/cross-reference-console",
+      "sha": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "url": "https://github.com/pipavlo82/cross-reference-console",
+      "captured_at": "2026-10-22T21:53:14.460567+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "NOASSERTION"
+    },
+    {
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sha": "18f595b537017e5ff7b9074366c3065e877488f9",
+      "url": "https://github.com/pipavlo82/semantic-execution-guard",
+      "captured_at": "2026-10-22T21:53:15.160904+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "trustless-ai/recompute-kit",
+      "sha": "b9d4fc13a7b945dc7030360f7d39fe7c8484bef3",
+      "url": "https://github.com/trustless-ai/recompute-kit",
+      "captured_at": "2026-10-22T21:53:15.275852+00:00",
+      "runtime_dependency": true,
+      "runtime_files": {
+        "mcp/receiptos.py": "9895f203ce8c85e83b03ed6ee089834ba00256cc747db2cb7f941a1a9f724cc5"
+      },
+      "upstream_license_metadata": "NOASSERTION"
+    },
+    {
+      "repository": "trustless-ai/recompute-lens",
+      "sha": "70b44d854a32c867b756fa1272b194d4ae8f1ce0",
+      "url": "https://github.com/trustless-ai/recompute-lens",
+      "captured_at": "2026-10-22T21:53:15.399760+00:00",
+      "runtime_dependency": true,
+      "runtime_files": {
+        "src/recompute/receiptos-c14n-v0.ts": "ec85b664699203e3147438230d967639243a9c34659c3fb8324c4401c1c8c2ef",
+        "src/types.ts": "5d69bc5fc31791a9527b041bbfa99152fba4e25b8817f228c8654c1b7300fea8",
+        "src/recipes.ts": "e2cfa423bb4dddac28badc7640b21bd80d15f3085b3ee0a32da06fbeed8071de"
+      },
+      "upstream_license_metadata": null
+    },
+    {
+      "repository": "trustless-ai/agent-sdk",
+      "sha": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "url": "https://github.com/trustless-ai/agent-sdk",
+      "captured_at": "2026-10-22T21:53:15.565531+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "trustless-ai/semantic-abi",
+      "sha": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "url": "https://github.com/trustless-ai/semantic-abi",
+      "captured_at": "2026-10-22T21:53:16.151523+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "Apache-2.0"
+    },
+    {
+      "repository": "trustless-ai/verifiable-execution-claim-authorization",
+      "sha": "2e329fffbee103047d034b97056aea9e49cf1c58",
+      "url": "https://github.com/trustless-ai/verifiable-execution-claim-authorization",
+      "captured_at": "2026-10-22T21:53:16.335842+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "MIT"
+    },
+    {
+      "repository": "trustless-ai/ccip-router",
+      "sha": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "url": "https://github.com/trustless-ai/ccip-router",
+      "captured_at": "2026-10-22T21:53:16.317878+00:00",
+      "runtime_dependency": false,
+      "runtime_files": {},
+      "upstream_license_metadata": "MIT"
+    }
+  ],
+  "license_boundary": "Metadata is descriptive, not a grant. recompute-lens remains an external local dependency; no source or compiled code is redistributed."
+}

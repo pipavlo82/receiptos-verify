@@ -1,0 +1,96 @@
+{
+  "host": {
+    "repository": "pipavlo82/receiptos-verify",
+    "sha": "396143120f787d2f5534e92c0cf896c029a05775",
+    "url": "https://github.com/pipavlo82/receiptos-verify",
+    "captured_at": "2026-10-22T21:53:14.171380+00:00",
+    "runtime_dependency": false,
+    "runtime_files": {},
+    "upstream_license_metadata": "Apache-2.0"
+  },
+  "branch": "research/agent-action-browser-verify-v0",
+  "placement": {
+    "branch": "research/agent-action-browser-verify-v0",
+    "decision": "AUDIT_FIRST / DO_NOT_BUILD_NEW_CORE",
+    "host": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "memory": "D:/PAVLO HQ/AI Memory Palace",
+    "relocation": "Cross-drive Move-Item reported directory-removal failure; C checkout passed fsck/clean/2156 tracked files; residual empty D .git verified empty and removed.",
+    "report_search": "Three named reports not found in accessible D:/PAVLO HQ, Documents, Downloads, Desktop; some unrelated Documents dependency directories denied traversal.",
+    "support": "D:\\PAVLO HQ\\Workspaces\\agent-action-verify-v0"
+  },
+  "release": "v0.2.0 experimental prerelease",
+  "release_sha": "396143120f787d2f5534e92c0cf896c029a05775",
+  "reports_not_located_in_searched_locations": [
+    "pavlo_ecosystem_architecture_audit_2026-10-21.md",
+    "VECA_full_chat_handoff_2026-10-22.md",
+    "receiptos_trustless_full_handoff_2026-10-13-1.md"
+  ],
+  "baseline": [
+    {
+      "name": "versions",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+      "returncode": 0,
+      "elapsed_seconds": 0.031102657318115234,
+      "stdout_sha256": "d656133e6fb1a2be31c1652d360bba7b09442e5480c8541deb85cfcedf37c499",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "source-lock",
+      "argv": [
+        "node",
+        "tools/check-sources.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+      "returncode": 0,
+      "elapsed_seconds": 0.30094432830810547,
+      "stdout_sha256": "bf633f5129e67aae2f46acfe530440037625a7990ecfafdb2089d6832e12c820",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "provenance",
+      "argv": [
+        "node",
+        "tools/check-provenance-v2.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+      "returncode": 0,
+      "elapsed_seconds": 0.12180328369140625,
+      "stdout_sha256": "751ea2d07b3ccc3e9de1daf9d4fb17b4daa8f13e6b84eb1f0d8331f0099c7d60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "relevant-tests",
+      "argv": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "tests/admission.test.mjs",
+        "tests/admission-v2.test.mjs",
+        "tests/capsule.test.mjs",
+        "tests/generic-boundary-v2.test.mjs",
+        "tests/native-boundary-v2.test.mjs",
+        "tests/projection-v2.test.mjs",
+        "tests/projection-release.test.mjs",
+        "tests/interpoll-v2.test.mjs",
+        "tests/semantic-abi-v2.test.mjs",
+        "tests/provenance-v2.test.mjs",
+        "tests/requirement-admission-release.test.mjs",
+        "tests/interpoll-request-classification-release.test.mjs",
+        "tests/trustless-v02.test.mjs",
+        "tests/trustless-grade-v2.test.mjs",
+        "tests/adapter-context-release.test.mjs",
+        "tests/guarantee-boundary-v2.test.mjs"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+      "returncode": 0,
+      "elapsed_seconds": 36.27451205253601,
+      "stdout_sha256": "44ea0dea6acc230ea75ed1332c7a58cfd06b674cf470049a2ffb20445996ef47",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "new_external_code_copied": false
+}

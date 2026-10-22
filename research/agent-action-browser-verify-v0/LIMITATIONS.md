@@ -1,0 +1,19 @@
+# Limits and remaining work
+
+- This is a local, synthetic research integration, not a production verifier or released host profile. One bounded operation is executed and replayed. No claim of arbitrary agent semantics, truthful model judgment, training-data quality, external execution or real-world agent identity is established.
+- The signed-action adapter verifies supplied laboratory observations. `OBSERVATION_SUPPLIED` is preserved; it is not remote service evidence. Existing public test keys are intentionally reproducible and provide no real-world authority.
+- Log inclusion and signatures are checked, but public-log authenticity, independently selected trust roots, external publication, freshness, non-equivocation, CT consistency and claim authorization are `NOT_COVERED`. Full-manifest extension is finite set retention, not an append-only transparency protocol.
+- Canonical interoperability holds only within `agent-action.receiptos-common-json.v0`. Historical receipt roots, pinned sources and release artifacts are unchanged. Existing root conventions differ outside the admitted domain. Permissively parsed objects cannot preserve evidence of duplicate raw keys.
+- Native verdicts are retained. The product projection is explicitly versioned and limited to this profile; it is not a universal translation of upstream status enums. A failure can leave later dimensions `NOT_CHECKED`.
+- The browser independently recomputes receipt bytes, while local host checks remain trusted local computation. This is not a standalone offline static page with all verification in the browser, and not a remote-attested verifier. No external network requests occurred in the recorded browser test, which does not prove universal sandbox isolation.
+- The full 707-test historical release claim is upstream-reported. This experiment executes 417 relevant inherited tests plus 13 new contract checks, with separate fixture, canonical, browser and mutation runs. It does not rerun unrelated QEV/RNG/PQ/provider paths.
+- Mutation controls are finite. The report lists witnesses, changed cases, unexpected changes, positive controls and restoration. Every possible malformed branch, upstream implementation and cryptographic primitive is not mutation-complete. A no-op is `NOT_COVERED`; a syntax crash is `CRASHED`; neither is a kill.
+- The original whole-tree source inventory does not include this additive research folder. It is preserved, not rewritten. Baseline lock verification and final original-file preservation are distinct from the new research lock. A future integration must explicitly extend inventory policy and CI.
+- No redistribution grant for recompute-lens was established. It is kept as an external local dependency. No third-party source is copied into the new research tree, no upstream branch is modified, and no claim of sole authorship over reused components is made.
+- Three named earlier reports were not found in the searched local locations. Some unrelated C: dependency directories were inaccessible to the filename search. Memory Palace and current source were used; absent report contents were not invented.
+
+## Recommendation and next work
+
+**ITERATE.** The finite profile and non-promotion controls are concrete enough for independent technical review. Before proposing a Draft PR, obtain the owner's approval, resolve the lens distribution/dependency choice, review whether local set-extension is the desired anchor contract, and decide explicitly how additive research enters the host source inventory and CI. Do not silently expand the claim to external action execution or public-log authenticity.
+
+If a real service receipt or independently authenticated log checkpoint becomes available, introduce a separately versioned evidence contract with negative witnesses for identity, authority and scope. Preserve this laboratory corpus and its narrow guarantees. No blockchain transaction or funds are necessary for this experiment.

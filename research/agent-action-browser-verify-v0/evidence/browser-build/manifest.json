@@ -1,0 +1,14 @@
+{
+  "profile": "agent-action.browser-build.v0",
+  "lens_source_sha": "70b44d854a32c867b756fa1272b194d4ae8f1ce0",
+  "lens_file_sha256": "ec85b664699203e3147438230d967639243a9c34659c3fb8324c4401c1c8c2ef",
+  "lens_compiled_sha256": "410000140d6ca3c227b29426786fb291752496d40929dc34e3eed00ae0623e3b",
+  "lens_license": "NO_REDISTRIBUTION_GRANT_ESTABLISHED",
+  "bun": "1.3.14",
+  "assets": {
+    "index.html": "16353dc09da7508b724a4fd94e2cede236df3ac48cbe0947eacaf1cdd6d7ac19",
+    "app.mjs": "b09313173fb7bd58939ce9ce5279bcdce10a61b743f9ca9da3e3fabaa18233a4",
+    "recipe.mjs": "34b57c72b7c3da5aa6f66b8885bd9e1242f2408094396fbbc24d74795a2b433e",
+    "style.css": "3f90d3e7f137937a26732a188ca1cabe617be7eeab18fbdb4b3a700abc54db82"
+  }
+}

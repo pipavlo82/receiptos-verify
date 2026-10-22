@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "tools/check-sources.mjs"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "file:///C:/Users/msi/Documents/Codex/agent-action-verify-v0/tools/check-sources.mjs:20\n  if(lock.schema!=='receiptos.verify.source-lock.v1'||!Array.isArray(lock.files)||lock.files.length<50||JSON.stringify(lock.files)!==JSON.stringify(files)) throw new Error('SOURCE_CLOSURE_MISMATCH');\n                                                                                                                                                                  ^\n\nError: SOURCE_CLOSURE_MISMATCH\n    at file:///C:/Users/msi/Documents/Codex/agent-action-verify-v0/tools/check-sources.mjs:20:163\n\nNode.js v22.15.0\n",
+  "classification": "EXPECTED_ADDITIVE_SOURCE_CLOSURE_MISMATCH_NOT_PASS"
+}

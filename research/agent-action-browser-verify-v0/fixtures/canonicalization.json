@@ -1,0 +1,434 @@
+[
+  {
+    "case_id": "key-order",
+    "raw": "{\"z\":2,\"a\":1}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"a\":1,\"z\":2}",
+      "lens": "{\"a\":1,\"z\":2}",
+      "kit": "{\"a\":1,\"z\":2}",
+      "host_root": "{\"a\":1,\"z\":2}",
+      "host_content": "{\"a\":1,\"z\":2}"
+    }
+  },
+  {
+    "case_id": "nested-order",
+    "raw": "{\"b\":{\"y\":2,\"a\":1},\"a\":[true,null,3]}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"a\":[true,null,3],\"b\":{\"a\":1,\"y\":2}}",
+      "lens": "{\"a\":[true,null,3],\"b\":{\"a\":1,\"y\":2}}",
+      "kit": "{\"a\":[true,null,3],\"b\":{\"a\":1,\"y\":2}}",
+      "host_root": "{\"a\":[true,null,3],\"b\":{\"a\":1,\"y\":2}}",
+      "host_content": "{\"a\":[true,null,3],\"b\":{\"a\":1,\"y\":2}}"
+    }
+  },
+  {
+    "case_id": "anchor-exclusion",
+    "raw": "{\"z\":2,\"anchor\":{\"receipt_root\":\"x\"}}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"z\":2}",
+      "lens": "{\"z\":2}",
+      "kit": "{\"z\":2}",
+      "host_root": "{\"z\":2}",
+      "host_content": "{\"anchor\":{\"receipt_root\":\"x\"},\"z\":2}"
+    }
+  },
+  {
+    "case_id": "anchor-change",
+    "raw": "{\"z\":2,\"anchor\":{\"receipt_root\":\"y\"}}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"z\":2}",
+      "lens": "{\"z\":2}",
+      "kit": "{\"z\":2}",
+      "host_root": "{\"z\":2}",
+      "host_content": "{\"anchor\":{\"receipt_root\":\"y\"},\"z\":2}"
+    }
+  },
+  {
+    "case_id": "top-receipt-root",
+    "raw": "{\"x\":1,\"receipt_root\":\"saved\"}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"receipt_root\":\"saved\",\"x\":1}",
+      "lens": "{\"receipt_root\":\"saved\",\"x\":1}",
+      "kit": "{\"x\":1}",
+      "host_root": "{\"receipt_root\":\"saved\",\"x\":1}",
+      "host_content": "{\"receipt_root\":\"saved\",\"x\":1}"
+    }
+  },
+  {
+    "case_id": "nested-exclusions-retained",
+    "raw": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}",
+      "lens": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}",
+      "kit": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}",
+      "host_root": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}",
+      "host_content": "{\"nested\":{\"anchor\":1,\"receipt_root\":2}}"
+    }
+  },
+  {
+    "case_id": "unicode-value",
+    "raw": "{\"text\":\"\u03c0\ud83d\ude42\"}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"text\":\"\u03c0\ud83d\ude42\"}",
+      "lens": "{\"text\":\"\u03c0\ud83d\ude42\"}",
+      "kit": "{\"text\":\"\u03c0\ud83d\ude42\"}",
+      "host_root": "{\"text\":\"\u03c0\ud83d\ude42\"}",
+      "host_content": "{\"text\":\"\u03c0\ud83d\ude42\"}"
+    }
+  },
+  {
+    "case_id": "unicode-key-order",
+    "raw": "{\"\ue000\":1,\"\ud800\udc00\":2}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"\ud800\udc00\":2,\"\ue000\":1}",
+      "lens": "{\"\ud800\udc00\":2,\"\ue000\":1}",
+      "kit": "{\"\ue000\":1,\"\ud800\udc00\":2}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "ascii-numeric-keys",
+    "raw": "{\"2\":2,\"10\":10,\"1\":1}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"1\":1,\"10\":10,\"2\":2}",
+      "lens": "{\"1\":1,\"10\":10,\"2\":2}",
+      "kit": "{\"1\":1,\"10\":10,\"2\":2}",
+      "host_root": "{\"1\":1,\"10\":10,\"2\":2}",
+      "host_content": "{\"1\":1,\"10\":10,\"2\":2}"
+    }
+  },
+  {
+    "case_id": "escapes",
+    "raw": "{\"s\":\"a\\n\\t\\\"\\\\b\"}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"s\":\"a\\n\\t\\\"\\\\b\"}",
+      "lens": "{\"s\":\"a\\n\\t\\\"\\\\b\"}",
+      "kit": "{\"s\":\"a\\n\\t\\\"\\\\b\"}",
+      "host_root": "{\"s\":\"a\\n\\t\\\"\\\\b\"}",
+      "host_content": "{\"s\":\"a\\n\\t\\\"\\\\b\"}"
+    }
+  },
+  {
+    "case_id": "solidus",
+    "raw": "{\"s\":\"a\\/b\"}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"s\":\"a/b\"}",
+      "lens": "{\"s\":\"a/b\"}",
+      "kit": "{\"s\":\"a/b\"}",
+      "host_root": "{\"s\":\"a/b\"}",
+      "host_content": "{\"s\":\"a/b\"}"
+    }
+  },
+  {
+    "case_id": "line-separators",
+    "raw": "{\"s\":\"\u2028\u2029\"}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"s\":\"\u2028\u2029\"}",
+      "lens": "{\"s\":\"\u2028\u2029\"}",
+      "kit": "{\"s\":\"\u2028\u2029\"}",
+      "host_root": "{\"s\":\"\u2028\u2029\"}",
+      "host_content": "{\"s\":\"\u2028\u2029\"}"
+    }
+  },
+  {
+    "case_id": "unicode-composed",
+    "raw": "{\"s\":\"\u00e9\"}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"s\":\"\u00e9\"}",
+      "lens": "{\"s\":\"\u00e9\"}",
+      "kit": "{\"s\":\"\u00e9\"}",
+      "host_root": "{\"s\":\"\u00e9\"}",
+      "host_content": "{\"s\":\"\u00e9\"}"
+    }
+  },
+  {
+    "case_id": "unicode-decomposed",
+    "raw": "{\"s\":\"e\u0301\"}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"s\":\"e\u0301\"}",
+      "lens": "{\"s\":\"e\u0301\"}",
+      "kit": "{\"s\":\"e\u0301\"}",
+      "host_root": "{\"s\":\"e\u0301\"}",
+      "host_content": "{\"s\":\"e\u0301\"}"
+    }
+  },
+  {
+    "case_id": "float-integral",
+    "raw": "{\"n\":1.0}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":1}",
+      "lens": "{\"n\":1}",
+      "kit": "{\"n\":1.0}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "float-fraction",
+    "raw": "{\"n\":1.25}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":1.25}",
+      "lens": "{\"n\":1.25}",
+      "kit": "{\"n\":1.25}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "exponent-small",
+    "raw": "{\"n\":1e-7}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":1e-7}",
+      "lens": "{\"n\":1e-7}",
+      "kit": "{\"n\":1e-07}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "exponent-large",
+    "raw": "{\"n\":1e20}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":100000000000000000000}",
+      "lens": "{\"n\":100000000000000000000}",
+      "kit": "{\"n\":1e+20}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "exponent-integer",
+    "raw": "{\"n\":1e2}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":100}",
+      "lens": "{\"n\":100}",
+      "kit": "{\"n\":100.0}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "negative-zero-int",
+    "raw": "{\"n\":-0}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":0}",
+      "lens": "{\"n\":0}",
+      "kit": "{\"n\":0}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "negative-zero-float",
+    "raw": "{\"n\":-0.0}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":0}",
+      "lens": "{\"n\":0}",
+      "kit": "{\"n\":-0.0}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "safe-max",
+    "raw": "{\"n\":9007199254740991}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"n\":9007199254740991}",
+      "lens": "{\"n\":9007199254740991}",
+      "kit": "{\"n\":9007199254740991}",
+      "host_root": "{\"n\":9007199254740991}",
+      "host_content": "{\"n\":9007199254740991}"
+    }
+  },
+  {
+    "case_id": "unsafe-integer",
+    "raw": "{\"n\":9007199254740993}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":9007199254740992}",
+      "lens": "{\"n\":9007199254740992}",
+      "kit": "{\"n\":9007199254740993}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "overflow",
+    "raw": "{\"n\":1e309}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"n\":null}",
+      "lens": "{\"n\":null}",
+      "kit": "{\"n\":Infinity}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "nan-extension",
+    "raw": "{\"n\":NaN}",
+    "compatible": false,
+    "expected": {
+      "crystal": null,
+      "lens": null,
+      "kit": "{\"n\":NaN}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "infinity-extension",
+    "raw": "{\"n\":Infinity}",
+    "compatible": false,
+    "expected": {
+      "crystal": null,
+      "lens": null,
+      "kit": "{\"n\":Infinity}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "missing-member",
+    "raw": "{}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{}",
+      "lens": "{}",
+      "kit": "{}",
+      "host_root": "{}",
+      "host_content": "{}"
+    }
+  },
+  {
+    "case_id": "null-member",
+    "raw": "{\"n\":null}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"n\":null}",
+      "lens": "{\"n\":null}",
+      "kit": "{\"n\":null}",
+      "host_root": "{\"n\":null}",
+      "host_content": "{\"n\":null}"
+    }
+  },
+  {
+    "case_id": "duplicate-key",
+    "raw": "{\"a\":1,\"a\":2}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"a\":2}",
+      "lens": "{\"a\":2}",
+      "kit": "{\"a\":2}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "decoded-duplicate",
+    "raw": "{\"a\":1,\"\\u0061\":2}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"a\":2}",
+      "lens": "{\"a\":2}",
+      "kit": "{\"a\":2}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "nested-duplicate",
+    "raw": "{\"o\":{\"a\":1,\"a\":2}}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"o\":{\"a\":2}}",
+      "lens": "{\"o\":{\"a\":2}}",
+      "kit": "{\"o\":{\"a\":2}}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "lone-surrogate",
+    "raw": "{\"s\":\"\\ud800\"}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"s\":\"\\ud800\"}",
+      "lens": "{\"s\":\"\\ud800\"}",
+      "kit": null,
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "excluded-overflow",
+    "raw": "{\"x\":1,\"anchor\":{\"n\":1e309}}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"x\":1}",
+      "lens": "{\"x\":1}",
+      "kit": "{\"x\":1}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "whitespace",
+    "raw": " { \"a\" : 1 } ",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"a\":1}",
+      "lens": "{\"a\":1}",
+      "kit": "{\"a\":1}",
+      "host_root": "{\"a\":1}",
+      "host_content": "{\"a\":1}"
+    }
+  },
+  {
+    "case_id": "proto-key",
+    "raw": "{\"__proto__\":1}",
+    "compatible": false,
+    "expected": {
+      "crystal": "{\"__proto__\":1}",
+      "lens": "{}",
+      "kit": "{\"__proto__\":1}",
+      "host_root": null,
+      "host_content": null
+    }
+  },
+  {
+    "case_id": "boolean-array",
+    "raw": "{\"a\":[false,true,null]}",
+    "compatible": true,
+    "expected": {
+      "crystal": "{\"a\":[false,true,null]}",
+      "lens": "{\"a\":[false,true,null]}",
+      "kit": "{\"a\":[false,true,null]}",
+      "host_root": "{\"a\":[false,true,null]}",
+      "host_content": "{\"a\":[false,true,null]}"
+    }
+  }
+]
