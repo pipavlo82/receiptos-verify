@@ -1,0 +1,110 @@
+{
+  "repositories": [
+    {
+      "repository": "pipavlo82/crystal-receipt",
+      "sha": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "files": 4445,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "sha": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "files": 75,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "pipavlo82/relational-security-invariants",
+      "sha": "3d3038f90c3dd98e79f948398167c5cc3ef2fdd8",
+      "files": 782,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "pipavlo82/protected-relation-fixtures",
+      "sha": "fac26d2e8346aeab08194343b78c345d235c6935",
+      "files": 3016,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "pipavlo82/Chronicle",
+      "sha": "c467b48fd18fc8ec86f10582befa35946ce41914",
+      "files": 91,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "pipavlo82/cross-reference-console",
+      "sha": "72b8804c4e85e6ec1530a3470a9af7a5fe47f238",
+      "files": 19,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "pipavlo82/semantic-execution-guard",
+      "sha": "18f595b537017e5ff7b9074366c3065e877488f9",
+      "files": 51,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "trustless-ai/recompute-kit",
+      "sha": "b9d4fc13a7b945dc7030360f7d39fe7c8484bef3",
+      "files": 239,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "trustless-ai/recompute-lens",
+      "sha": "70b44d854a32c867b756fa1272b194d4ae8f1ce0",
+      "files": 25,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "trustless-ai/agent-sdk",
+      "sha": "7bb831a80d624f22eb09c6d20dd873eb6a376e03",
+      "files": 410,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "trustless-ai/semantic-abi",
+      "sha": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "files": 34,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "trustless-ai/verifiable-execution-claim-authorization",
+      "sha": "2e329fffbee103047d034b97056aea9e49cf1c58",
+      "files": 11873,
+      "changed": [],
+      "status": "",
+      "pass": true
+    },
+    {
+      "repository": "trustless-ai/ccip-router",
+      "sha": "e667a4f78b8a0aa0239e32d1e0b827495e72ae0a",
+      "files": 96,
+      "changed": [],
+      "status": "",
+      "pass": true
+    }
+  ],
+  "all_preserved": true,
+  "file_count": 21156
+}

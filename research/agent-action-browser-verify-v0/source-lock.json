@@ -48,6 +48,11 @@
       "sha256": "e95a3bd33a2484fa460803c2e65a6b571156b5de18b1cde6e893d03a55b82ea9"
     },
     {
+      "path": "evidence/actions/fresh/summary.json",
+      "bytes": 271,
+      "sha256": "5bbeff1fc1897d85c6b51a049f437455df5f1405a48b608736bac4af2f0ef717"
+    },
+    {
       "path": "evidence/actions/normal/results.json",
       "bytes": 1154586,
       "sha256": "e6628648adc16e287c21a81ce0f84b483f92c2f108bb3af45ac5558969701439"
@@ -76,6 +81,11 @@
       "path": "evidence/browser/desktop-positive.png",
       "bytes": 72080,
       "sha256": "ec944c84eb11f424aa004429326d6280ee3044053e8cad74ca5d019a2b1ca4fa"
+    },
+    {
+      "path": "evidence/browser/fresh/results.json",
+      "bytes": 14691,
+      "sha256": "6e593c7e5316a7f88de2e059fb4ee2b88e8829af5b5c913058210eb0f2c8faed"
     },
     {
       "path": "evidence/browser/initial/results.json",
@@ -113,6 +123,11 @@
       "sha256": "0e54af9b0f56c1a0b4c167295bc932e478af9012ef1d0e23d519af7a4dfc5728"
     },
     {
+      "path": "evidence/canonicalization/fresh/commands.json",
+      "bytes": 877,
+      "sha256": "1ba197f4ceeffca4900f661d378de97973a849c102328abf9d93d700ef677f3b"
+    },
+    {
       "path": "evidence/canonicalization/normal/commands.json",
       "bytes": 865,
       "sha256": "a8a25bbd3c2af41859206a8e4c8ab50e9b01fd7208ce55956121fc3f7a0b4828"
@@ -134,13 +149,23 @@
     },
     {
       "path": "evidence/determinism.json",
-      "bytes": 666,
-      "sha256": "b3db02f4b712fde86f81acb9918f3c870a1cc7936bb3b2ce26ed61968b05c42f"
+      "bytes": 832,
+      "sha256": "3fbdbc322eb1f6c4f9a470ef436986f3e8b573fb2cefb1c9bb1277a75c31cd59"
+    },
+    {
+      "path": "evidence/fresh-checkout.json",
+      "bytes": 2920,
+      "sha256": "0693e6f8b839b1eb883f9164184ccc6225d57a13307bd870a532238da75ea1d6"
     },
     {
       "path": "evidence/historical-source-boundary.json",
       "bytes": 796,
       "sha256": "a959334af84bfe4e643a5d4022b575225658589c4576a18065f386f0ea1ce49f"
+    },
+    {
+      "path": "evidence/mutations/fresh/report.json",
+      "bytes": 24413,
+      "sha256": "9716fdab3e8b0d51a3116d604c4b28b48fb25738eed33daf9d06676c3291df55"
     },
     {
       "path": "evidence/mutations/initial/report.json",
@@ -156,6 +181,16 @@
       "path": "evidence/preflight.json",
       "bytes": 3922,
       "sha256": "6438501c427318fb23000db050af400c2e7cd32ec69e7c1a03b73217ef6b74ed"
+    },
+    {
+      "path": "evidence/runs/fresh/commands.json",
+      "bytes": 5697,
+      "sha256": "0fef9b416a0ad9594cff5198620a48c046a3039dd9074e4e4e163d08b7c72b44"
+    },
+    {
+      "path": "evidence/runs/fresh/host-and-profile-tests.stdout.txt",
+      "bytes": 88286,
+      "sha256": "e8a1ecc220b56d6704b8fc4f828d1559f3ab5db6857e7b1d96caf26803f0f86c"
     },
     {
       "path": "evidence/runs/normal/commands.json",
@@ -186,6 +221,11 @@
       "path": "evidence/runs/repeat/host-and-profile-tests.stdout.txt",
       "bytes": 88301,
       "sha256": "8b42866e21a1e12556f1fc840bc3e097368c42fa9b7ed54d7c43b0b1cc69999a"
+    },
+    {
+      "path": "evidence/upstream-preservation.json",
+      "bytes": 2743,
+      "sha256": "ecfa13245eff13948f000fca10d5ab70409c27e4ddee0ff3b674e4dfdec07d47"
     },
     {
       "path": "fixtures/actions.json",
@@ -229,8 +269,8 @@
     },
     {
       "path": "RESULTS.md",
-      "bytes": 11307,
-      "sha256": "e2e17a2a1a622a6efba123f4e941e48e8b246fd938a416b921d0c5f30d50436f"
+      "bytes": 11655,
+      "sha256": "b299a201eb7e54560da86122d824b0a79d80fb3422ce8e60780259a1972a94dd"
     },
     {
       "path": "REUSE_MATRIX.md",

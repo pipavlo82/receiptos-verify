@@ -1,0 +1,532 @@
+{
+  "schema": "agent-action.browser-test.v0",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "case_id": "A",
+      "expected": {
+        "status": "VERIFIED",
+        "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+      },
+      "actual": {
+        "status": "VERIFIED",
+        "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "B",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "AGENT_ACTION_SUBJECT_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "AGENT_ACTION_SUBJECT_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "C",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "REQUESTED_ACTION_GUARANTEE_NOT_COVERED"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "REQUESTED_ACTION_GUARANTEE_NOT_COVERED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "D",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "LOG_PROOF_MISSING"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "LOG_PROOF_MISSING",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "E",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "RECEIPT_IDENTITY_NOT_VERIFIED"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "RECEIPT_IDENTITY_NOT_VERIFIED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "F",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "MERKLE_INCLUSION_INVALID"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "MERKLE_INCLUSION_INVALID",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "G",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "LOG_TRUST_ROOT_MISSING"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "LOG_TRUST_ROOT_MISSING",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "H",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "RECEIPT_PROFILE_UNSUPPORTED"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "RECEIPT_PROFILE_UNSUPPORTED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-selected-receipt",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CALLER_RECEIPT_ROOT_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CALLER_RECEIPT_ROOT_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-host-carrier",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "HOST_RECEIPT_CARRIER_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "HOST_RECEIPT_CARRIER_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-claim",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CALLER_CLAIM_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CALLER_CLAIM_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-caller-action-id",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CALLER_CLAIM_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CALLER_CLAIM_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-input",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "ACTION_INPUT_COMMITMENT_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "ACTION_INPUT_COMMITMENT_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "native-authority-unavailable",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "NATIVE_HOST_INSUFFICIENT_EVIDENCE"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "NATIVE_HOST_INSUFFICIENT_EVIDENCE",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-leaf",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "RECEIPT_LOG_LEAF_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "RECEIPT_LOG_LEAF_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-path",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "MERKLE_INCLUSION_INVALID"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "MERKLE_INCLUSION_INVALID",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-index",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "MERKLE_INCLUSION_INVALID"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "MERKLE_INCLUSION_INVALID",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-size",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_TREE_SIZE_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_TREE_SIZE_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-log",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "LOG_IDENTITY_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "LOG_IDENTITY_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invalid-signature",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_SIGNATURE_INVALID"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_SIGNATURE_INVALID",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "missing-checkpoint",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "CHECKPOINT_MISSING"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "CHECKPOINT_MISSING",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-checkpoint-id",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_IDENTITY_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_IDENTITY_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "conflicting-checkpoint",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "SELECTED_CHECKPOINT_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "SELECTED_CHECKPOINT_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "unsupported-log",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "LOG_PROFILE_UNSUPPORTED"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "LOG_PROFILE_UNSUPPORTED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "log-not-required",
+      "expected": {
+        "status": "VERIFIED",
+        "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+      },
+      "actual": {
+        "status": "VERIFIED",
+        "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "consistency-positive",
+      "expected": {
+        "status": "VERIFIED",
+        "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+      },
+      "actual": {
+        "status": "VERIFIED",
+        "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "missing-consistency",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "CONSISTENCY_EVIDENCE_MISSING"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "CONSISTENCY_EVIDENCE_MISSING",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "conflicting-history",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CONSISTENCY_CHECKPOINT_CONFLICT"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CONSISTENCY_CHECKPOINT_CONFLICT",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-native-record",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "SAVED_NATIVE_RESULT_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "SAVED_NATIVE_RESULT_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-input-commitment",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "ACTION_INPUT_COMMITMENT_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "ACTION_INPUT_COMMITMENT_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-local-output",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "LOCAL_ACTION_RESULT_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "LOCAL_ACTION_RESULT_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "wrong-action-id",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CLAIM_ACTION_ID_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CLAIM_ACTION_ID_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "valid-other-leaf",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "RECEIPT_LOG_LEAF_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "RECEIPT_LOG_LEAF_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "signed-wrong-size",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_TREE_SIZE_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_TREE_SIZE_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "selected-forged-id",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_IDENTITY_MISMATCH"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CHECKPOINT_IDENTITY_MISMATCH",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-key",
+      "expected": {
+        "status": "UNVERIFIABLE",
+        "reason": "AMBIGUOUS_LOG_TRUST_ROOT"
+      },
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "AMBIGUOUS_LOG_TRUST_ROOT",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "changed-old-record",
+      "expected": {
+        "status": "REFUTED",
+        "reason": "CONSISTENCY_OLD_ENTRY_CHANGED"
+      },
+      "actual": {
+        "status": "REFUTED",
+        "reason": "CONSISTENCY_OLD_ENTRY_CHANGED",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "browser-host-unavailable",
+      "expected": "UNVERIFIABLE",
+      "actual": "UNVERIFIABLE",
+      "passed": true
+    },
+    {
+      "case_id": "browser-host-identity-disagreement",
+      "expected": "BROWSER_HOST_IDENTITY_DISAGREEMENT",
+      "actual": {
+        "status": "UNVERIFIABLE",
+        "reason": "BROWSER_HOST_IDENTITY_DISAGREEMENT",
+        "projection_version": "agent-action.browser-projection.v0"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mobile-no-horizontal-overflow",
+      "passed": true
+    },
+    {
+      "case_id": "cross-origin-refused",
+      "actual": 403,
+      "expected": 403,
+      "passed": true
+    }
+  ],
+  "canonical_cases": 36,
+  "canonical_passed": 36,
+  "lens_golden": true,
+  "page_errors": [],
+  "external_requests": [],
+  "build_manifest": {
+    "profile": "agent-action.browser-build.v0",
+    "lens_source_sha": "70b44d854a32c867b756fa1272b194d4ae8f1ce0",
+    "lens_file_sha256": "ec85b664699203e3147438230d967639243a9c34659c3fb8324c4401c1c8c2ef",
+    "lens_compiled_sha256": "410000140d6ca3c227b29426786fb291752496d40929dc34e3eed00ae0623e3b",
+    "lens_license": "NO_REDISTRIBUTION_GRANT_ESTABLISHED",
+    "bun": "1.3.14",
+    "assets": {
+      "index.html": "16353dc09da7508b724a4fd94e2cede236df3ac48cbe0947eacaf1cdd6d7ac19",
+      "app.mjs": "b09313173fb7bd58939ce9ce5279bcdce10a61b743f9ca9da3e3fabaa18233a4",
+      "recipe.mjs": "34b57c72b7c3da5aa6f66b8885bd9e1242f2408094396fbbc24d74795a2b433e",
+      "style.css": "3f90d3e7f137937a26732a188ca1cabe617be7eeab18fbdb4b3a700abc54db82"
+    }
+  }
+}

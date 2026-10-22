@@ -1,0 +1,109 @@
+{
+  "tested_commit": "9fa7672cb6d237b085877c54caf2369648bab103",
+  "checkout": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+  "status": "PASS",
+  "clean": true,
+  "commands": [
+    {
+      "name": "clone",
+      "argv": [
+        "git",
+        "clone",
+        "--no-hardlinks",
+        "--no-checkout",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\agent-action-verify-v0",
+      "exit_code": 0,
+      "elapsed_seconds": 0.7809999999590218
+    },
+    {
+      "name": "line-endings",
+      "argv": [
+        "git",
+        "config",
+        "core.autocrlf",
+        "false"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+      "exit_code": 0,
+      "elapsed_seconds": 0.03200000000651926
+    },
+    {
+      "name": "checkout",
+      "argv": [
+        "git",
+        "checkout",
+        "--detach",
+        "9fa7672cb6d237b085877c54caf2369648bab103"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+      "exit_code": 0,
+      "elapsed_seconds": 1.672000000020489
+    },
+    {
+      "name": "install",
+      "argv": [
+        "npm.cmd",
+        "ci",
+        "--ignore-scripts",
+        "--cache",
+        "D:\\PAVLO HQ\\Workspaces\\agent-action-verify-v0\\npm-cache"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+      "exit_code": 0,
+      "elapsed_seconds": 1.359000000054948
+    },
+    {
+      "name": "research-source",
+      "argv": [
+        "python",
+        "-B",
+        "research/agent-action-browser-verify-v0/tools/check-research.py"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+      "exit_code": 0,
+      "elapsed_seconds": 0.5309999999590218
+    },
+    {
+      "name": "historical-preservation",
+      "argv": [
+        "python",
+        "-B",
+        "research/agent-action-browser-verify-v0/tools/check-preservation.py"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+      "exit_code": 0,
+      "elapsed_seconds": 10.85999999998603
+    },
+    {
+      "name": "validation",
+      "argv": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "research/agent-action-browser-verify-v0/tools/validate.py",
+        "--mode",
+        "fresh",
+        "--browser",
+        "--mutations"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+      "exit_code": 0,
+      "elapsed_seconds": 205.78099999995902
+    },
+    {
+      "name": "restoration",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh",
+      "exit_code": 0,
+      "elapsed_seconds": 0.2970000000204891
+    }
+  ]
+}

@@ -102,7 +102,7 @@ The first Chromium run passed semantic checks but failed mobile overflow because
 
 ## Fresh checkout and packaging
 
-Fresh-checkout execution is pending at this candidate-writing stage; no fresh closure is claimed yet.
+A fresh isolated checkout has completed the same 430-test suite, 37 fixtures, canonical differential, browser checks and all 21 physical mutants. See [fresh commands](evidence/runs/fresh/commands.json), [fresh mutation evidence](evidence/mutations/fresh/report.json), and [determinism comparison](evidence/determinism.json). The exact tested candidate/final-tree relationship is recorded in the external closure receipt after the final local commit.
 
 Recorded commands and exit codes: [normal](evidence/runs/normal/commands.json), [repeat](evidence/runs/repeat/commands.json), [optimized](evidence/runs/optimized/commands.json). Raw stdout/stderr and native process observations live on D: under the support workspace; a separate evidence archive and SHA-256 manifest are produced at local closure. Source and selected committed evidence are bound by `source-lock.json` and `SHA256SUMS` in this directory.
 
