@@ -1,0 +1,25 @@
+[
+  {
+    "name": "javascript",
+    "argv": [
+      "C:/Users/msi/.bun/bin/bun.exe",
+      "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh\\research\\agent-action-browser-verify-v0\\tools\\canonical-native.ts"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "574e63d87973e5b9342444ede8fff809ff88094c220350e68d3308c355def24c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "python",
+    "argv": [
+      "python",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0-fresh\\research\\agent-action-browser-verify-v0\\tools\\canonical-kit.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "a89a4b677d2aafe0badf883f583ab7d6c0a745ec743ffa7f121f998e1206992f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

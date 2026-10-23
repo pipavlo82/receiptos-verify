@@ -1,0 +1,67 @@
+{
+  "schema": "agent-action.macos-harness-repair-evidence.v0",
+  "base": "8342e9b99e6edad76fc7cbdff0bc4259281931a3",
+  "echo_review": "https://github.com/pipavlo82/receiptos-verify/pull/2#issuecomment-6364416613",
+  "scope": "Research harness only; host/verdicts/fixtures/pins/history preserved. CI workflow is additive.",
+  "focused": {
+    "windows_normal_and_O": {
+      "tests": 11,
+      "passed": 10,
+      "skipped_posix_only": 1
+    },
+    "wsl_normal_and_O": {
+      "tests": 11,
+      "passed": 11,
+      "skipped": 0
+    }
+  },
+  "windows_full_normal": {
+    "node_tests": 434,
+    "actions": 41,
+    "canonical_cases": 36,
+    "canonical_expectations": 180,
+    "browser_checks": 45,
+    "browser_canonical": 36,
+    "page_errors": [],
+    "external_requests": []
+  },
+  "mutation_regression": {
+    "semantic_killed": 24,
+    "diagnostic_reason_witnesses": 1,
+    "harness_controls": 5,
+    "restored_semantics_match_baseline": true,
+    "inventory_unchanged": true
+  },
+  "independent_harness_controls": {
+    "faults_detected": 4,
+    "class": "HARNESS_REGRESSION_DETECTED_NOT_SEMANTIC_KILL",
+    "actual_frozen_bridge_scope_checks": 8,
+    "quoted_interpreter_path": "PASS",
+    "linux_loader_analogue": "PASS_NOT_MACOS"
+  },
+  "digests": {
+    "actions": "f96cf8092a19c25dcb46bd945bdc0b002c9c30591a77b610b2cf6ab135ae72e7",
+    "canonical": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d",
+    "controller": "3d3f9b9e32c48553c949e566e14115758d16a7c1d906b8381c0923691b1221aa",
+    "portability_suite": "72fcb327809a697a92bd5ec6a063a399a1c6c71f106a7acfb9b8a8645899ff46",
+    "ci_driver": "5acaaf1b443de9643d5bd11720aadaefb04593bb18c53dfdc6459675c934c2b8",
+    "workflow": "289f7ce23d92f53e74d77bd61b61d2e98dc73e0a15b8f0c267c2ac15c07ff7ae"
+  },
+  "ci_definition": {
+    "os": [
+      "ubuntu-24.04",
+      "macos-15"
+    ],
+    "node": "22.15.0",
+    "python": "3.12",
+    "bun": "1.3.14",
+    "artifact_and_determinism_controls": 9,
+    "actual_exact_head_run": "MUST_BE_OBSERVED_AFTER_PUBLICATION_NOT_CLAIMED_BY_THIS_DEFINITION"
+  },
+  "boundaries": [
+    "No new local macOS execution; prior macOS results remain Echo-reported.",
+    "Actual fresh CI observations are external receipts, not backfilled into this pre-publication snapshot.",
+    "Three root-protected guards remain independently unwitnessed.",
+    "Experimental research; no merge or production-readiness claim."
+  ]
+}

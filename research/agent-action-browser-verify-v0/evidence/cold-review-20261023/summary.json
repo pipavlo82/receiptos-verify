@@ -1,0 +1,809 @@
+{
+  "schema": "agent-action.cold-review-repair-evidence.v0",
+  "reviewed_base": "ac82f93b81559b4da61ae766824bb5fcf54388f4",
+  "review_url": "https://github.com/pipavlo82/receiptos-verify/pull/2#issuecomment-6362471870",
+  "disposition": "ITERATE_REMAIN_DRAFT",
+  "runtime": {
+    "windows": {
+      "python": "3.12.10",
+      "node": "22.15.0",
+      "bun": "1.3.14"
+    },
+    "wsl": {
+      "python": "3.12.3",
+      "node": "24.11.0",
+      "bun": "1.3.14"
+    }
+  },
+  "windows_modes": [
+    {
+      "mode": "normal",
+      "node_tests": 434,
+      "python_portability_tests": 10,
+      "actions": 41,
+      "canonical_cases": 36,
+      "canonical_expectations": 180,
+      "action_results_sha256": "f96cf8092a19c25dcb46bd945bdc0b002c9c30591a77b610b2cf6ab135ae72e7",
+      "canonical_results_sha256": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d"
+    },
+    {
+      "mode": "repeat",
+      "node_tests": 434,
+      "python_portability_tests": 10,
+      "actions": 41,
+      "canonical_cases": 36,
+      "canonical_expectations": 180,
+      "action_results_sha256": "f96cf8092a19c25dcb46bd945bdc0b002c9c30591a77b610b2cf6ab135ae72e7",
+      "canonical_results_sha256": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d"
+    },
+    {
+      "mode": "optimized",
+      "node_tests": 434,
+      "python_portability_tests": 10,
+      "actions": 41,
+      "canonical_cases": 36,
+      "canonical_expectations": 180,
+      "action_results_sha256": "f96cf8092a19c25dcb46bd945bdc0b002c9c30591a77b610b2cf6ab135ae72e7",
+      "canonical_results_sha256": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d"
+    }
+  ],
+  "browser": [
+    {
+      "mode": "normal",
+      "checks": 45,
+      "canonical_checks": 36,
+      "browser": "151.0.7922.34",
+      "page_errors": [],
+      "external_requests": []
+    },
+    {
+      "mode": "repeat",
+      "checks": 45,
+      "canonical_checks": 36,
+      "browser": "151.0.7922.34",
+      "page_errors": [],
+      "external_requests": []
+    }
+  ],
+  "wsl": {
+    "scope": "Actual WSL Ubuntu same physical host; Node24.11.0, Bun1.3.14, Python3.12.3. Research action/canonical paths only, not all inherited host tests.",
+    "actions": 41,
+    "canonical_cases": 36,
+    "canonical_expectations": 180,
+    "all_41_semantic_rows_identical_to_windows": true,
+    "portability_tests": 10
+  },
+  "preservation": {
+    "historical_host_files": 2156,
+    "original_37_fixture_objects": true,
+    "original_37_semantic_sha256": "e6628648adc16e287c21a81ce0f84b483f92c2f108bb3af45ac5558969701439",
+    "canonical_sha256": "c7f26b46b6749cc0bac21abb1f7418248f95235f3214460076d5ca45321aef5d"
+  },
+  "mutations": {
+    "source_sha256": "6ef7206d99d0a44eaf3f05782a419b735e2c59171044ede6bfd17c1d654d14ba",
+    "populations": [
+      {
+        "name": "original-21",
+        "records": 21,
+        "outcomes": {
+          "KILLED": 21
+        }
+      },
+      {
+        "name": "review-followup-4",
+        "records": 4,
+        "outcomes": {
+          "KILLED": 3,
+          "CONTRACT_REASON_WITNESS": 1
+        }
+      }
+    ],
+    "semantic_killed": 24,
+    "diagnostic_reason_witnesses": 1,
+    "harness_controls": [
+      {
+        "name": "noop",
+        "classification": "NOT_COVERED",
+        "passed": true,
+        "restored": true
+      },
+      {
+        "name": "crash",
+        "classification": "CRASHED",
+        "passed": true,
+        "restored": true
+      },
+      {
+        "name": "malformed-output",
+        "classification": "INVALID_OUTPUT",
+        "passed": true,
+        "restored": true
+      },
+      {
+        "name": "malformed-native",
+        "classification": "INVALID_OUTPUT",
+        "passed": true,
+        "restored": true
+      },
+      {
+        "name": "damaged-positive",
+        "classification": "CONTROL_BROKEN",
+        "passed": true,
+        "restored": true
+      }
+    ],
+    "restored_semantics_match_baseline": true,
+    "independent_classifier_controls": 19,
+    "zero_inventory_rejected_before_native_execution": true,
+    "records": [
+      {
+        "guard": "receipt-profile",
+        "module": "profile",
+        "killer": "H",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "UNVERIFIABLE",
+          "reason": "RECEIPT_PROFILE_UNSUPPORTED"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "7943243d0a9785542e598cbf38bf2842724fec84ace5407bf0a9dd5a88b55b3e",
+        "observed_mutant_sha256": "7943243d0a9785542e598cbf38bf2842724fec84ace5407bf0a9dd5a88b55b3e"
+      },
+      {
+        "guard": "caller-receipt-root",
+        "module": "profile",
+        "killer": "wrong-selected-receipt",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "CALLER_RECEIPT_ROOT_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "436c4de039a6975306e60959b9f40f66211abc24cfcbfecaea54b2552a5e7064",
+        "observed_mutant_sha256": "436c4de039a6975306e60959b9f40f66211abc24cfcbfecaea54b2552a5e7064"
+      },
+      {
+        "guard": "host-receipt-carrier",
+        "module": "profile",
+        "killer": "wrong-host-carrier",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "HOST_RECEIPT_CARRIER_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "63106977aa6ea9f4250c1fc7c1fb4985f000244bf80aa767d79cdba0704f6070",
+        "observed_mutant_sha256": "63106977aa6ea9f4250c1fc7c1fb4985f000244bf80aa767d79cdba0704f6070"
+      },
+      {
+        "guard": "agent-action-subject",
+        "module": "profile",
+        "killer": "B",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "AGENT_ACTION_SUBJECT_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "75d3e43817d5387562729262019e32ff3bfaecb70b421f061da099991e3cc3cb",
+        "observed_mutant_sha256": "75d3e43817d5387562729262019e32ff3bfaecb70b421f061da099991e3cc3cb"
+      },
+      {
+        "guard": "caller-claim",
+        "module": "profile",
+        "killer": "wrong-caller-action-id",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "CALLER_CLAIM_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "3f9882778be464378b9759bb46c344fa8c325de5a1ff7289ea08a42d336cfbe4",
+        "observed_mutant_sha256": "3f9882778be464378b9759bb46c344fa8c325de5a1ff7289ea08a42d336cfbe4"
+      },
+      {
+        "guard": "action-id-binding",
+        "module": "profile",
+        "killer": "wrong-action-id",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "CLAIM_ACTION_ID_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "6e2cab7ff4db4ebc04fae8b5ccd742838f8fb437b2b4e00c6c3d93bbc6fb5923",
+        "observed_mutant_sha256": "6e2cab7ff4db4ebc04fae8b5ccd742838f8fb437b2b4e00c6c3d93bbc6fb5923"
+      },
+      {
+        "guard": "protected-scope",
+        "module": "profile",
+        "killer": "C",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "UNVERIFIABLE",
+          "reason": "REQUESTED_ACTION_GUARANTEE_NOT_COVERED"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "6b17974b8455ba6bd0c8d450fef62fca58f962cc7af4b17c7805f86a40cd9fb9",
+        "observed_mutant_sha256": "6b17974b8455ba6bd0c8d450fef62fca58f962cc7af4b17c7805f86a40cd9fb9"
+      },
+      {
+        "guard": "action-input-binding",
+        "module": "profile",
+        "killer": "wrong-input-commitment",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "ACTION_INPUT_COMMITMENT_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "d0c98666e35538c1decee32eaaa673e3bd8b8fbfb587fbbdeae9364b43fa56f9",
+        "observed_mutant_sha256": "d0c98666e35538c1decee32eaaa673e3bd8b8fbfb587fbbdeae9364b43fa56f9"
+      },
+      {
+        "guard": "native-host-result",
+        "module": "profile",
+        "killer": "native-authority-unavailable",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "UNVERIFIABLE",
+          "reason": "NATIVE_HOST_INSUFFICIENT_EVIDENCE"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "e7c98f3888f8495b3e2da3f1e7cca32f1fa84dc2c306bc0e40ff288301d28a91",
+        "observed_mutant_sha256": "e7c98f3888f8495b3e2da3f1e7cca32f1fa84dc2c306bc0e40ff288301d28a91"
+      },
+      {
+        "guard": "native-result-preservation",
+        "module": "profile",
+        "killer": "wrong-native-record",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "SAVED_NATIVE_RESULT_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "42b5ad84fef083a3ce8664aafa03472d5c1f8fa3795f20ff8a7e2955e00db586",
+        "observed_mutant_sha256": "42b5ad84fef083a3ce8664aafa03472d5c1f8fa3795f20ff8a7e2955e00db586"
+      },
+      {
+        "guard": "local-result-binding",
+        "module": "profile",
+        "killer": "wrong-local-output",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "LOCAL_ACTION_RESULT_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "f6ba533b942c61b777bd33100af423a347d3ad9ab8b32a3185a3037b95dd62ec",
+        "observed_mutant_sha256": "f6ba533b942c61b777bd33100af423a347d3ad9ab8b32a3185a3037b95dd62ec"
+      },
+      {
+        "guard": "required-log-result",
+        "module": "profile",
+        "killer": "D",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "UNVERIFIABLE",
+          "reason": "LOG_PROOF_MISSING"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "eb92de0f9a8d39a920d83ef38e204a75ba1408c3af15056a9db9dfe5c3e34c38",
+        "observed_mutant_sha256": "eb92de0f9a8d39a920d83ef38e204a75ba1408c3af15056a9db9dfe5c3e34c38"
+      },
+      {
+        "guard": "receipt-leaf-binding",
+        "module": "anchor",
+        "killer": "valid-other-leaf",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "RECEIPT_LOG_LEAF_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "18ab1b4cff81458733e73d7d3f10a85c3675317a58c7d215858792f20eda5fde",
+        "observed_mutant_sha256": "18ab1b4cff81458733e73d7d3f10a85c3675317a58c7d215858792f20eda5fde"
+      },
+      {
+        "guard": "checkpoint-tree-size",
+        "module": "anchor",
+        "killer": "signed-wrong-size",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "CHECKPOINT_TREE_SIZE_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "b8a4087c004c9a5fe7670e797f1bfb541accea0a253d2169ff796f3187d1a583",
+        "observed_mutant_sha256": "b8a4087c004c9a5fe7670e797f1bfb541accea0a253d2169ff796f3187d1a583"
+      },
+      {
+        "guard": "native-merkle-proof",
+        "module": "anchor",
+        "killer": "wrong-path",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "MERKLE_INCLUSION_INVALID"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "b64d1b454e74960a20ed1a68359877d01be461f188d337d48f08a4721fc35215",
+        "observed_mutant_sha256": "b64d1b454e74960a20ed1a68359877d01be461f188d337d48f08a4721fc35215"
+      },
+      {
+        "guard": "checkpoint-identity",
+        "module": "anchor",
+        "killer": "selected-forged-id",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "CHECKPOINT_IDENTITY_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "24beebe41674ea91ad7f4c3681d9133c3533e6559794bbefeb38843f22000405",
+        "observed_mutant_sha256": "24beebe41674ea91ad7f4c3681d9133c3533e6559794bbefeb38843f22000405"
+      },
+      {
+        "guard": "selected-checkpoint",
+        "module": "anchor",
+        "killer": "conflicting-checkpoint",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "SELECTED_CHECKPOINT_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "45e39a41cbe89dbfdbca5b21a7a562164d61e75c84b72f501e8e256547ed3436",
+        "observed_mutant_sha256": "45e39a41cbe89dbfdbca5b21a7a562164d61e75c84b72f501e8e256547ed3436"
+      },
+      {
+        "guard": "selected-log",
+        "module": "anchor",
+        "killer": "wrong-log",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "LOG_IDENTITY_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "0bff9dba203a6574668e7f826c7365a2f37c66f1fb876652f1f4391ce82941a3",
+        "observed_mutant_sha256": "0bff9dba203a6574668e7f826c7365a2f37c66f1fb876652f1f4391ce82941a3"
+      },
+      {
+        "guard": "checkpoint-signature",
+        "module": "anchor",
+        "killer": "invalid-signature",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "CHECKPOINT_SIGNATURE_INVALID"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "c7a5f9a0f4051ed7a196769926a831ae4fad2ac023d98dff187e190c42e12c48",
+        "observed_mutant_sha256": "c7a5f9a0f4051ed7a196769926a831ae4fad2ac023d98dff187e190c42e12c48"
+      },
+      {
+        "guard": "trusted-checkpoint",
+        "module": "anchor",
+        "killer": "G",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "UNVERIFIABLE",
+          "reason": "LOG_TRUST_ROOT_MISSING"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "7608b4327d6f949dfbd0fa120666bede643dd5d0203b83c7aeea9cc445661bf7",
+        "observed_mutant_sha256": "7608b4327d6f949dfbd0fa120666bede643dd5d0203b83c7aeea9cc445661bf7"
+      },
+      {
+        "guard": "manifest-extension",
+        "module": "anchor",
+        "killer": "changed-old-record",
+        "population": "original-21",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "CONSISTENCY_OLD_ENTRY_CHANGED"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+        "mutant_sha256": "565e7b7cf7a76dfe8a95a697de09a9750afe0817c3e7e1db00c79c5bc24d2d16",
+        "observed_mutant_sha256": "565e7b7cf7a76dfe8a95a697de09a9750afe0817c3e7e1db00c79c5bc24d2d16"
+      },
+      {
+        "guard": "schema-supported",
+        "module": "profile",
+        "killer": "unsupported-caller-schema",
+        "population": "review-followup-4",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "UNVERIFIABLE",
+          "reason": "SCHEMA_UNSUPPORTED"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "bcba124afc1154976c13f5df95b697564e6df02ba2cc0145a98a96fed3fb10a5",
+        "observed_mutant_sha256": "bcba124afc1154976c13f5df95b697564e6df02ba2cc0145a98a96fed3fb10a5"
+      },
+      {
+        "guard": "receipt-admission",
+        "module": "profile",
+        "killer": "requires-log-string",
+        "population": "review-followup-4",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "UNVERIFIABLE",
+          "reason": "RECEIPT_ADMISSION_FAILED"
+        },
+        "expected_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "observed_mutant": {
+          "status": "VERIFIED",
+          "reason": "LOCAL_ACTION_REPLAY_AND_SELECTED_EVIDENCE_VERIFIED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "6e4248f4c46fca9fcd10f8f8caf183c8d98ade62f410b16386ea00779ec3cfca",
+        "observed_mutant_sha256": "6e4248f4c46fca9fcd10f8f8caf183c8d98ade62f410b16386ea00779ec3cfca"
+      },
+      {
+        "guard": "receipt-identity-result",
+        "module": "profile",
+        "killer": "E",
+        "population": "review-followup-4",
+        "classification": "CONTRACT_REASON_WITNESS",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "RECEIPT_IDENTITY_NOT_VERIFIED"
+        },
+        "expected_mutant": {
+          "status": "REFUTED",
+          "reason": "HOST_RECEIPT_CARRIER_MISMATCH"
+        },
+        "observed_mutant": {
+          "status": "REFUTED",
+          "reason": "HOST_RECEIPT_CARRIER_MISMATCH"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "3b5805753766248ff315e78667787084aef3f9b6213ab16ae26ffa1a4a74992a",
+        "observed_mutant_sha256": "3b5805753766248ff315e78667787084aef3f9b6213ab16ae26ffa1a4a74992a"
+      },
+      {
+        "guard": "authority-premise-binding",
+        "module": "profile",
+        "killer": "authority-premise-mismatch",
+        "population": "review-followup-4",
+        "classification": "KILLED",
+        "expected_baseline": {
+          "status": "REFUTED",
+          "reason": "AUTHORITY_PREMISE_BINDING_MISMATCH"
+        },
+        "expected_mutant": {
+          "status": "UNVERIFIABLE",
+          "reason": "NATIVE_HOST_REJECTED_MALFORMED"
+        },
+        "observed_mutant": {
+          "status": "UNVERIFIABLE",
+          "reason": "NATIVE_HOST_REJECTED_MALFORMED"
+        },
+        "applied": true,
+        "restored": true,
+        "controls_pass": true,
+        "unexpected_changes": [],
+        "original_sha256": "08b083d6ae35c648246d7b1dbec1f2d749ea2ab91f0d685af032ac43ec261539",
+        "mutant_sha256": "b349dd67e6b48242385ef367278812e8d6a6a961d29d9e6960489a3d01c17237",
+        "observed_mutant_sha256": "b349dd67e6b48242385ef367278812e8d6a6a961d29d9e6960489a3d01c17237"
+      }
+    ],
+    "unwitnessed": [
+      {
+        "guard": "receipt-subject-admission",
+        "classification": "UNWITNESSED_DEFENSE_IN_DEPTH",
+        "reason": "No isolated committed witness removes this check while preserving the receipt-root identity boundary."
+      },
+      {
+        "guard": "native-verification-profile",
+        "classification": "UNWITNESSED_DEFENSE_IN_DEPTH",
+        "reason": "Receipt-bound profile fields are also protected by identity; no separate physical mutation kill is claimed."
+      },
+      {
+        "guard": "recomputation-result-preservation",
+        "classification": "UNWITNESSED_DEFENSE_IN_DEPTH",
+        "reason": "Receipt-bound saved recomputation is also protected by identity; no separate physical mutation kill is claimed."
+      }
+    ]
+  },
+  "raw_evidence_boundary": "Summary of actual local executions. Full command receipts/native streams remain in the external repair support directory; historical committed evidence was not rewritten. Initial dependency-setup failure and an intermediate four-control harness campaign are retained, not counted as the final five-control campaign. WSL is on the same physical host; no new macOS or GitHub CI result is claimed."
+}

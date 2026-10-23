@@ -1,0 +1,723 @@
+{
+  "schema": "agent-action.physical-mutations.v0",
+  "records": [
+    {
+      "guard": "receipt-profile",
+      "module": "profile",
+      "killer": "H",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "H"
+      ],
+      "expected_change_domain": [
+        "H"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "30eff8c5f37bb4eb41ddf0588d6b250b6c3cc1b94ce929d314dfe72a1358c301",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-receipt-profile"
+      ]
+    },
+    {
+      "guard": "caller-receipt-root",
+      "module": "profile",
+      "killer": "wrong-selected-receipt",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-selected-receipt"
+      ],
+      "expected_change_domain": [
+        "wrong-selected-receipt"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "3cf1876b9c70785457dce849437e2fbe5f494977b73a1d83a931173cd02e35e1",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-caller-receipt-root"
+      ]
+    },
+    {
+      "guard": "host-receipt-carrier",
+      "module": "profile",
+      "killer": "wrong-host-carrier",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-host-carrier"
+      ],
+      "expected_change_domain": [
+        "wrong-host-carrier"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "2ae683069371ce550204ee36c4f6be27b36fc040966b7b20bcc160834845c801",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-host-receipt-carrier"
+      ]
+    },
+    {
+      "guard": "agent-action-subject",
+      "module": "profile",
+      "killer": "B",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "B"
+      ],
+      "expected_change_domain": [
+        "B"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "a1ca2aaad68a57ad3701644d68f91aeee39ac5f9c45425d06871bd5e3cfbcc7a",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-agent-action-subject"
+      ]
+    },
+    {
+      "guard": "caller-claim",
+      "module": "profile",
+      "killer": "wrong-caller-action-id",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-claim",
+        "wrong-caller-action-id"
+      ],
+      "expected_change_domain": [
+        "wrong-claim",
+        "wrong-caller-action-id"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "79a844a5f467aa55aaa1bbad623f35508ae5f18ad635258039ef7f07ddd3b00e",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-caller-claim"
+      ]
+    },
+    {
+      "guard": "action-id-binding",
+      "module": "profile",
+      "killer": "wrong-action-id",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-action-id"
+      ],
+      "expected_change_domain": [
+        "wrong-action-id"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "3ddd288b2c1ef60beaf78989ec94a648ff3b874e1eb6370a0b312af44a18bed0",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-action-id-binding"
+      ]
+    },
+    {
+      "guard": "protected-scope",
+      "module": "profile",
+      "killer": "C",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "C"
+      ],
+      "expected_change_domain": [
+        "C"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "cde3cdb9c9d04b97eb3fd62f753030f99f01bd3a5b0ed9ec515788abc49624f1",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-protected-scope"
+      ]
+    },
+    {
+      "guard": "action-input-binding",
+      "module": "profile",
+      "killer": "wrong-input-commitment",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-input",
+        "wrong-input-commitment"
+      ],
+      "expected_change_domain": [
+        "wrong-input",
+        "wrong-input-commitment"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "5e515b582081d05781f776c4ec45168b30a3d5993a7d94827e64404020484e7a",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-action-input-binding"
+      ]
+    },
+    {
+      "guard": "native-host-result",
+      "module": "profile",
+      "killer": "native-authority-unavailable",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "native-authority-unavailable"
+      ],
+      "expected_change_domain": [
+        "native-authority-unavailable"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "9b6696dd8bafc8f92c9575471dc61d8ecfd006992b7445528121a8de0dab59e3",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-native-host-result"
+      ]
+    },
+    {
+      "guard": "native-result-preservation",
+      "module": "profile",
+      "killer": "wrong-native-record",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-native-record"
+      ],
+      "expected_change_domain": [
+        "wrong-native-record"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "32bea66e76e9ebc4fe14d714878c8bd330d3ddf1e83475c66a16882b34ee892d",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-native-result-preservation"
+      ]
+    },
+    {
+      "guard": "local-result-binding",
+      "module": "profile",
+      "killer": "wrong-local-output",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-local-output"
+      ],
+      "expected_change_domain": [
+        "wrong-local-output"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "0e1a58b9bab349961b09af084e845d54bf8c08b4a9a01bdc188ba2c957d147fb",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-local-result-binding"
+      ]
+    },
+    {
+      "guard": "required-log-result",
+      "module": "profile",
+      "killer": "D",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "D",
+        "F",
+        "G",
+        "wrong-leaf",
+        "wrong-path",
+        "wrong-index",
+        "wrong-size",
+        "wrong-log",
+        "invalid-signature",
+        "missing-checkpoint",
+        "wrong-checkpoint-id",
+        "conflicting-checkpoint",
+        "unsupported-log",
+        "missing-consistency",
+        "conflicting-history",
+        "valid-other-leaf",
+        "signed-wrong-size",
+        "selected-forged-id",
+        "ambiguous-key",
+        "changed-old-record"
+      ],
+      "expected_change_domain": [
+        "D",
+        "F",
+        "G",
+        "wrong-leaf",
+        "wrong-path",
+        "wrong-index",
+        "wrong-size",
+        "wrong-log",
+        "invalid-signature",
+        "missing-checkpoint",
+        "wrong-checkpoint-id",
+        "conflicting-checkpoint",
+        "unsupported-log",
+        "missing-consistency",
+        "conflicting-history",
+        "valid-other-leaf",
+        "signed-wrong-size",
+        "selected-forged-id",
+        "ambiguous-key",
+        "changed-old-record"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "mutant_sha256": "954826a316e34e3c10766a7cc68598921634866c5694ebeb124c0361e8ce39ea",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-required-log-result"
+      ]
+    },
+    {
+      "guard": "receipt-leaf-binding",
+      "module": "anchor",
+      "killer": "valid-other-leaf",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-leaf",
+        "valid-other-leaf"
+      ],
+      "expected_change_domain": [
+        "wrong-leaf",
+        "valid-other-leaf"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "18ab1b4cff81458733e73d7d3f10a85c3675317a58c7d215858792f20eda5fde",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-receipt-leaf-binding"
+      ]
+    },
+    {
+      "guard": "checkpoint-tree-size",
+      "module": "anchor",
+      "killer": "signed-wrong-size",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-size",
+        "signed-wrong-size"
+      ],
+      "expected_change_domain": [
+        "wrong-size",
+        "signed-wrong-size"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "b8a4087c004c9a5fe7670e797f1bfb541accea0a253d2169ff796f3187d1a583",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-checkpoint-tree-size"
+      ]
+    },
+    {
+      "guard": "native-merkle-proof",
+      "module": "anchor",
+      "killer": "wrong-path",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "F",
+        "wrong-path",
+        "wrong-index"
+      ],
+      "expected_change_domain": [
+        "F",
+        "wrong-path",
+        "wrong-index"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "b64d1b454e74960a20ed1a68359877d01be461f188d337d48f08a4721fc35215",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-native-merkle-proof"
+      ]
+    },
+    {
+      "guard": "checkpoint-identity",
+      "module": "anchor",
+      "killer": "selected-forged-id",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-checkpoint-id",
+        "selected-forged-id"
+      ],
+      "expected_change_domain": [
+        "wrong-checkpoint-id",
+        "selected-forged-id"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "24beebe41674ea91ad7f4c3681d9133c3533e6559794bbefeb38843f22000405",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-checkpoint-identity"
+      ]
+    },
+    {
+      "guard": "selected-checkpoint",
+      "module": "anchor",
+      "killer": "conflicting-checkpoint",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "conflicting-checkpoint"
+      ],
+      "expected_change_domain": [
+        "conflicting-checkpoint"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "45e39a41cbe89dbfdbca5b21a7a562164d61e75c84b72f501e8e256547ed3436",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-selected-checkpoint"
+      ]
+    },
+    {
+      "guard": "selected-log",
+      "module": "anchor",
+      "killer": "wrong-log",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "wrong-log"
+      ],
+      "expected_change_domain": [
+        "wrong-log"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "0bff9dba203a6574668e7f826c7365a2f37c66f1fb876652f1f4391ce82941a3",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-selected-log"
+      ]
+    },
+    {
+      "guard": "checkpoint-signature",
+      "module": "anchor",
+      "killer": "invalid-signature",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "invalid-signature"
+      ],
+      "expected_change_domain": [
+        "invalid-signature"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "c7a5f9a0f4051ed7a196769926a831ae4fad2ac023d98dff187e190c42e12c48",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-checkpoint-signature"
+      ]
+    },
+    {
+      "guard": "trusted-checkpoint",
+      "module": "anchor",
+      "killer": "G",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "G",
+        "invalid-signature"
+      ],
+      "expected_change_domain": [
+        "G",
+        "invalid-signature"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "7608b4327d6f949dfbd0fa120666bede643dd5d0203b83c7aeea9cc445661bf7",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-trusted-checkpoint"
+      ]
+    },
+    {
+      "guard": "manifest-extension",
+      "module": "anchor",
+      "killer": "changed-old-record",
+      "classification": "KILLED",
+      "positive_controls": [
+        "A",
+        "log-not-required",
+        "consistency-positive"
+      ],
+      "controls_pass": true,
+      "witness_predicate": "negative witness status becomes VERIFIED",
+      "exit_code": 1,
+      "changed_cases": [
+        "changed-old-record"
+      ],
+      "expected_change_domain": [
+        "changed-old-record"
+      ],
+      "unexpected_changes": [],
+      "exclusivity_expected": false,
+      "original_sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "mutant_sha256": "565e7b7cf7a76dfe8a95a697de09a9750afe0817c3e7e1db00c79c5bc24d2d16",
+      "restored": true,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+        "mutation-normal-manifest-extension"
+      ]
+    }
+  ],
+  "restoration": [
+    {
+      "path": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\lib\\profile.mjs",
+      "sha256": "0afc8639a4236e3282fc9b7676e3582dbae77a0295aab9fe5e4ce528eae09d74",
+      "restored": true
+    },
+    {
+      "path": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\lib\\anchor.mjs",
+      "sha256": "1e4995e0b70d037f6c77b5c0e66cfee2f20783064a96e2e3b1991c8ab6e6416b",
+      "restored": true
+    }
+  ],
+  "harness_controls": [
+    {
+      "name": "noop",
+      "expected": "NOT_COVERED",
+      "classification": "NOT_COVERED",
+      "exit_code": 0,
+      "restored": true,
+      "passed": true
+    },
+    {
+      "name": "crash",
+      "expected": "CRASHED",
+      "classification": "CRASHED",
+      "exit_code": 1,
+      "restored": true,
+      "passed": true
+    }
+  ],
+  "unwitnessed": [
+    "Completeness of the upstream host verifier, native canonicalizers and capsule algorithms is not claimed.",
+    "Malformed-input admission, every error reason, every optional consistency branch and cryptographic library internals are not mutation-complete."
+  ]
+}

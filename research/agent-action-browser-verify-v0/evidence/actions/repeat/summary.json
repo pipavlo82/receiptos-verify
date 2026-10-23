@@ -1,0 +1,8 @@
+{
+  "schema": "agent-action.test-summary.v0",
+  "cases": 37,
+  "passed": 37,
+  "failed": [],
+  "fixture_sha256": "8726fc574b6236282d33b2c9b787a296017d4d8991236b18f22342a60e494ba3",
+  "semantic_sha256": "e6628648adc16e287c21a81ce0f84b483f92c2f108bb3af45ac5558969701439"
+}

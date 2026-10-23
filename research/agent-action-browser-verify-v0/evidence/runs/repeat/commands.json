@@ -1,0 +1,131 @@
+[
+  {
+    "name": "versions",
+    "argv": [
+      "node",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 0.03200000000651926,
+    "stdout_sha256": "d656133e6fb1a2be31c1652d360bba7b09442e5480c8541deb85cfcedf37c499",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "python",
+    "argv": [
+      "python",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 0.015000000013969839,
+    "stdout_sha256": "6a5d9f6462ca5dfc6788cfd216ba579fffd7875776ab9d9b35659be78858f73a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "bun",
+    "argv": [
+      "C:/Users/msi/.bun/bin/bun.exe",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 0.01600000006146729,
+    "stdout_sha256": "56b0485099b6c5427d3b68c042fd05b632d5e52e924c5064473389812227164c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "provenance",
+    "argv": [
+      "node",
+      "tools/check-provenance-v2.mjs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 0.10899999993853271,
+    "stdout_sha256": "751ea2d07b3ccc3e9de1daf9d4fb17b4daa8f13e6b84eb1f0d8331f0099c7d60",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "host-and-profile-tests",
+    "argv": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "tests/admission.test.mjs",
+      "tests/admission-v2.test.mjs",
+      "tests/capsule.test.mjs",
+      "tests/generic-boundary-v2.test.mjs",
+      "tests/native-boundary-v2.test.mjs",
+      "tests/projection-v2.test.mjs",
+      "tests/projection-release.test.mjs",
+      "tests/interpoll-v2.test.mjs",
+      "tests/semantic-abi-v2.test.mjs",
+      "tests/provenance-v2.test.mjs",
+      "tests/requirement-admission-release.test.mjs",
+      "tests/interpoll-request-classification-release.test.mjs",
+      "tests/trustless-v02.test.mjs",
+      "tests/trustless-grade-v2.test.mjs",
+      "tests/adapter-context-release.test.mjs",
+      "tests/guarantee-boundary-v2.test.mjs",
+      "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tests\\contract.test.mjs"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 33.39100000006147,
+    "stdout_sha256": "8b42866e21a1e12556f1fc840bc3e097368c42fa9b7ed54d7c43b0b1cc69999a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "actions",
+    "argv": [
+      "node",
+      "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\run-cases.mjs",
+      "repeat"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 6.515999999945052,
+    "stdout_sha256": "943a44ab610f75fcf2099f8479f43a977797aa9eaa58ed90e44a477108192252",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "canonicalization",
+    "argv": [
+      "node",
+      "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\canonical-differential.mjs",
+      "D:\\PAVLO HQ\\Workspaces\\agent-action-verify-v0\\canonicalization\\repeat"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 0.2809999999590218,
+    "stdout_sha256": "13ea58d9f88ea14d69393088538440196513e70663cdba082014e140863aef60",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "browser-build",
+    "argv": [
+      "C:/Users/msi/.bun/bin/bun.exe",
+      "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\build-browser.ts"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 0.10900000005494803,
+    "stdout_sha256": "eae3bf89c2e77b29d4c7618de6e4b56c043963b264367ef9579864e1762c033d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "browser",
+    "argv": [
+      "node",
+      "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0\\research\\agent-action-browser-verify-v0\\tools\\browser-test.mjs",
+      "repeat"
+    ],
+    "cwd": "C:\\Users\\msi\\Documents\\Codex\\agent-action-verify-v0",
+    "exit_code": 0,
+    "elapsed_seconds": 11.140999999945052,
+    "stdout_sha256": "0b5e295eccd31b6620ae824ddb3320cac739ac1793bb2500a354d00f2bf1301a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]
