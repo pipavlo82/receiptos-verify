@@ -21,7 +21,7 @@ class SourceClosurePortability(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix='research-portability-')
         self.addCleanup(self.temporary.cleanup)
-        self.root = Path(self.temporary.name)
+        self.root = Path(self.temporary.name).resolve()
         self.checker = self.root / 'tools/check-research.py'
         self.checker.parent.mkdir()
         shutil.copyfile(RESEARCH / 'tools/check-research.py', self.checker)
@@ -127,72 +127,155 @@ class SourceClosurePortability(unittest.TestCase):
 
 class ControllerInterpreterPortability(unittest.TestCase):
     def test_controller_and_actual_js_child_use_selected_interpreter_without_python_command(self):
+        with tempfile.TemporaryDirectory(prefix='controller-portability-') as temporary:
+            self.run_controller_fixture(temporary)
+
+    @unittest.skipIf(os.name == 'nt', 'POSIX TMPDIR aliases do not apply on Windows')
+    def test_controller_through_actual_symlinked_tmpdir(self):
+        with tempfile.TemporaryDirectory(prefix='controller-temp-alias-') as temporary:
+            outer = Path(temporary).resolve()
+            physical = outer / 'physical'
+            physical.mkdir()
+            alias = outer / 'alias'
+            alias.symlink_to(physical, target_is_directory=True)
+            previous = os.environ.get('TMPDIR')
+            cached = tempfile.tempdir
+            try:
+                os.environ['TMPDIR'] = str(alias)
+                tempfile.tempdir = None
+                with tempfile.TemporaryDirectory(prefix='controller-portability-') as selected:
+                    self.assertTrue(Path(selected).is_relative_to(alias))
+                    self.assertNotEqual(Path(selected), Path(selected).resolve())
+                    self.run_controller_fixture(selected)
+            finally:
+                tempfile.tempdir = cached
+                if previous is None:
+                    os.environ.pop('TMPDIR', None)
+                else:
+                    os.environ['TMPDIR'] = previous
+
+    def run_controller_fixture(self, temporary):
         node = shutil.which('node')
         self.assertIsNotNone(node, 'Node is required for the controller integration regression')
-        with tempfile.TemporaryDirectory(prefix='controller-portability-') as temporary:
-            root = Path(temporary)
-            binary = root / 'bin'
-            binary.mkdir()
-            # A renamed Python binary prevents Windows CreateProcess from finding
-            # python.exe beside the running controller, even with an empty PATH.
-            selected = binary / ('selected-interpreter.exe' if os.name == 'nt' else 'selected-interpreter')
-            shutil.copy2(getattr(sys, '_base_executable', sys.executable), selected)
-            if os.name == 'nt':
-                for pattern in ('python*.dll', 'vcruntime*.dll'):
-                    for runtime in Path(sys.base_prefix).glob(pattern):
-                        shutil.copy2(runtime, binary / runtime.name)
-            node_copy = binary / ('node.exe' if os.name == 'nt' else 'node')
+        # Resolve /tmp -> /private/tmp before constructing selected runtime paths.
+        root = Path(temporary).resolve()
+        binary = root / 'bin'
+        binary.mkdir()
+        self.assertEqual(binary, binary.resolve(), 'runtime directory still traverses a TMPDIR alias')
+        # A renamed Python binary prevents Windows CreateProcess from finding
+        # python.exe beside the running controller, even with an empty PATH.
+        selected = binary / ('selected-interpreter.exe' if os.name == 'nt' else 'selected-interpreter')
+        shutil.copy2(getattr(sys, '_base_executable', sys.executable), selected)
+        if os.name == 'nt':
+            for pattern in ('python*.dll', 'vcruntime*.dll'):
+                for runtime in Path(sys.base_prefix).glob(pattern):
+                    shutil.copy2(runtime, binary / runtime.name)
+        node_copy = binary / ('node.exe' if os.name == 'nt' else 'node')
+        if os.name == 'nt':
             shutil.copy2(node, node_copy)
-            support = root / 'support'
-            research = root / 'host/research/agent-action-browser-verify-v0'
-            (research / 'tools').mkdir(parents=True)
-            for name in ('validate.py', 'canonical-differential.mjs'):
-                shutil.copyfile(RESEARCH / 'tools' / name, research / 'tools' / name)
-            (research / 'lib').mkdir(exist_ok=True)
-            shutil.copyfile(RESEARCH / 'lib/paths.mjs', research / 'lib/paths.mjs')
-            write(research / 'fixtures/canonicalization.json', '[]\n')
-            write(research / 'tools/canonical-native.ts', 'import json\nprint(json.dumps({"rows": []}))\n')
-            write(research / 'tools/canonical-kit.py', 'import json, os, pathlib, sys\npathlib.Path(os.environ["AGENT_ACTION_SUPPORT"], "selected-child.json").write_text(json.dumps({"executable": sys.executable, "override": os.environ.get("PYTHON_EXECUTABLE"), "optimized": sys.flags.optimize}))\nprint(json.dumps({"rows": []}))\n')
-            write(research / 'tools/build-browser.ts', 'print("fixture browser build")\n')
-            write(research / 'tests/portability_test.py', 'print("fixture portability test")\n')
-            for script in ('run-cases.mjs', 'browser-test.mjs', 'mutations.mjs'):
-                write(research / 'tools' / script, 'console.log("fixture command");\n')
-            write(root / 'host/tools/check-provenance-v2.mjs', 'console.log("fixture provenance");\n')
-            base = ['admission', 'admission-v2', 'capsule', 'generic-boundary-v2', 'native-boundary-v2', 'projection-v2', 'projection-release',
-                    'interpoll-v2', 'semantic-abi-v2', 'provenance-v2', 'requirement-admission-release', 'interpoll-request-classification-release',
-                    'trustless-v02', 'trustless-grade-v2', 'adapter-context-release', 'guarantee-boundary-v2']
-            for name in base:
-                write(root / 'host/tests' / (name + '.test.mjs'), '// Empty controller fixture.\n')
-            write(research / 'tests/contract.test.mjs', '// Empty controller fixture.\n')
-            environment = dict(os.environ, PATH=str(binary), PYTHONHOME=sys.base_prefix,
-                               AGENT_ACTION_SUPPORT=str(support), BUN_EXECUTABLE=str(selected),
-                               PYTHON_EXECUTABLE=str(root / 'must-not-be-used'), PYTHONDONTWRITEBYTECODE='1')
-            environment.pop('PYTHONOPTIMIZE', None)
-            self.assertIsNone(shutil.which('python', path=environment['PATH']))
-            probe = 'import subprocess\ntry:\n subprocess.run(["python", "--version"], check=True)\nexcept FileNotFoundError:\n print("NO_PYTHON_COMMAND")\nelse:\n raise SystemExit("python unexpectedly available")\n'
-            unavailable = subprocess.run([str(selected), '-B', '-c', probe], cwd=root, env=environment, capture_output=True, text=True)
-            self.assertEqual(unavailable.returncode, 0, unavailable.stdout + unavailable.stderr)
-            self.assertEqual(unavailable.stdout.strip(), 'NO_PYTHON_COMMAND')
-            expected_names = {'versions', 'python', 'bun', 'provenance', 'host-and-profile-tests', 'actions', 'canonicalization', 'browser-build', 'browser', 'mutations', 'portability-tests'}
-            for mode in ('normal', 'optimized'):
-                with self.subTest(mode=mode):
-                    process = subprocess.run([str(selected), '-B', str(research / 'tools/validate.py'), '--mode', mode, '--browser', '--mutations'], cwd=root, env=environment, capture_output=True, text=True)
-                    self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
-                    records = json.loads((support / 'runs' / mode / 'commands.json').read_text('utf-8'))
-                    self.assertEqual({row['name'] for row in records}, expected_names)
-                    self.assertTrue(all(row['exit_code'] == 0 for row in records))
-                    for name in ('python', 'portability-tests'):
-                        self.assertEqual(next(row for row in records if row['name'] == name)['argv'][0], str(selected))
-                    child = json.loads((support / 'selected-child.json').read_text('utf-8'))
-                    self.assertEqual(child, {'executable': str(selected), 'override': str(selected), 'optimized': int(mode == 'optimized')})
-                    canonical = json.loads((support / 'canonicalization' / mode / 'commands.json').read_text('utf-8'))
-                    self.assertEqual(next(row for row in canonical if row['name'] == 'python')['argv'][0], str(selected))
-                    if os.environ.get('PORTABILITY_TEST_EVIDENCE'):
-                        evidence = Path(os.environ['PORTABILITY_TEST_EVIDENCE']) / mode
-                        write(evidence / 'commands.json', json.dumps(records, indent=2) + '\n')
-                        write(evidence / 'canonical-commands.json', json.dumps(canonical, indent=2) + '\n')
-                        write(evidence / 'selected-child.json', json.dumps(child, indent=2) + '\n')
-                        write(evidence / 'python-command-unavailable.txt', unavailable.stdout)
+        else:
+            # Homebrew Node uses loader-relative libraries: preserve its
+            # actual executable location instead of relocating its bytes.
+            node_copy.symlink_to(Path(node).resolve())
+            self.assertTrue(node_copy.is_symlink(), 'POSIX Node must retain its installed loader path')
+            self.assertEqual(node_copy.resolve(), Path(node).resolve())
+        support = root / 'support'
+        research = root / 'host/research/agent-action-browser-verify-v0'
+        (research / 'tools').mkdir(parents=True)
+        for name in ('validate.py', 'canonical-differential.mjs'):
+            shutil.copyfile(RESEARCH / 'tools' / name, research / 'tools' / name)
+        (research / 'lib').mkdir(exist_ok=True)
+        shutil.copyfile(RESEARCH / 'lib/paths.mjs', research / 'lib/paths.mjs')
+        write(research / 'fixtures/canonicalization.json', '[]\n')
+        write(research / 'tools/canonical-native.ts', 'import json\nprint(json.dumps({"rows": []}))\n')
+        write(research / 'tools/canonical-kit.py', 'import json, os, pathlib, sys\npathlib.Path(os.environ["AGENT_ACTION_SUPPORT"], "selected-child.json").write_text(json.dumps({"executable": sys.executable, "override": os.environ.get("PYTHON_EXECUTABLE"), "optimized": sys.flags.optimize}))\nprint(json.dumps({"rows": []}))\n')
+        write(research / 'tools/build-browser.ts', 'print("fixture browser build")\n')
+        write(research / 'tests/portability_test.py', 'print("fixture portability test")\n')
+        for script in ('run-cases.mjs', 'browser-test.mjs', 'mutations.mjs'):
+            write(research / 'tools' / script, 'import assert from "node:assert/strict";\nimport {spawnSync} from "node:child_process";\nassert.equal(process.env.PATH, process.env.EXPECTED_UNSCOPED_PATH);\nif(process.platform!=="win32") assert.equal(spawnSync("python",["--version"]).error?.code,"ENOENT");\nconsole.log("fixture command");\n')
+        write(root / 'host/tools/check-provenance-v2.mjs', 'console.log("fixture provenance");\n')
+        base = ['admission', 'admission-v2', 'capsule', 'generic-boundary-v2', 'native-boundary-v2', 'projection-v2', 'projection-release',
+                'interpoll-v2', 'semantic-abi-v2', 'provenance-v2', 'requirement-admission-release', 'interpoll-request-classification-release',
+                'trustless-v02', 'trustless-grade-v2', 'adapter-context-release', 'guarantee-boundary-v2']
+        for name in base:
+            write(root / 'host/tests' / (name + '.test.mjs'), '// Empty controller fixture.\n')
+        # This is the frozen-host boundary: unlike research helpers, the
+        # real host adapters invoke literal `python`, ignoring the override.
+        host_script = 'import json, os, sys\nprint(json.dumps({"executable":sys.executable,"arguments":sys.argv[1:],"marker":os.environ["HOST_LAUNCH_MARKER"],"optimized":sys.flags.optimize,"path":os.environ["PATH"]}))\n'
+        write(root / 'host/tools/host-python-probe.py', host_script)
+        host_test = '''import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+const executable=process.platform==='win32'?process.env.PYTHON_EXECUTABLE:'python';
+const child=spawnSync(executable,HOST_ARGUMENTS,{encoding:'utf8'});
+assert.equal(child.status,0,child.stderr||String(child.error));
+assert.equal(spawnSync(executable,['-c','import sys; sys.exit(23)']).status,23);
+const result=JSON.parse(child.stdout);
+writeFileSync(join(process.env.AGENT_ACTION_SUPPORT,'host-child.json'),JSON.stringify(result));
+if(process.env.HOST_FIXTURE_FAIL==='1') process.exit(7);
+'''
+        # JSON string literals avoid accidental JavaScript quote semantics.
+        host_test = host_test.replace('HOST_ARGUMENTS', json.dumps(['-B', 'tools/host-python-probe.py', 'argument with spaces', 'quote"and\'apostrophe']))
+        write(root / 'host/tests/admission.test.mjs', host_test)
+        write(research / 'tests/contract.test.mjs', '// Empty controller fixture.\n')
+        environment = dict(os.environ, PATH=str(binary), PYTHONHOME=sys.base_prefix,
+                           AGENT_ACTION_SUPPORT=str(support), BUN_EXECUTABLE=str(selected),
+                           PYTHON_EXECUTABLE=str(root / 'must-not-be-used'), PYTHONDONTWRITEBYTECODE='1',
+                           HOST_LAUNCH_MARKER='preserved environment', EXPECTED_UNSCOPED_PATH=str(binary))
+        environment.pop('PYTHONOPTIMIZE', None)
+        self.assertIsNone(shutil.which('python', path=environment['PATH']))
+        probe = 'import subprocess\ntry:\n subprocess.run(["python", "--version"], check=True)\nexcept FileNotFoundError:\n print("NO_PYTHON_COMMAND")\nelse:\n raise SystemExit("python unexpectedly available")\n'
+        unavailable = subprocess.run([str(selected), '-B', '-c', probe], cwd=root, env=environment, capture_output=True, text=True)
+        self.assertEqual(unavailable.returncode, 0, unavailable.stdout + unavailable.stderr)
+        self.assertEqual(unavailable.stdout.strip(), 'NO_PYTHON_COMMAND')
+        expected_names = {'versions', 'python', 'bun', 'provenance', 'host-and-profile-tests', 'actions', 'canonicalization', 'browser-build', 'browser', 'mutations', 'portability-tests'}
+        for mode in ('normal', 'optimized'):
+            with self.subTest(mode=mode):
+                process = subprocess.run([str(selected), '-B', str(research / 'tools/validate.py'), '--mode', mode, '--browser', '--mutations'], cwd=root, env=environment, capture_output=True, text=True)
+                self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
+                records = json.loads((support / 'runs' / mode / 'commands.json').read_text('utf-8'))
+                self.assertEqual({row['name'] for row in records}, expected_names)
+                self.assertTrue(all(row['exit_code'] == 0 for row in records))
+                for name in ('python', 'portability-tests'):
+                    self.assertEqual(next(row for row in records if row['name'] == name)['argv'][0], str(selected))
+                host = json.loads((support / 'host-child.json').read_text('utf-8'))
+                self.assertEqual(host['executable'], str(selected))
+                self.assertEqual(host['arguments'], ['argument with spaces', 'quote"and\'apostrophe'])
+                self.assertEqual(host['marker'], 'preserved environment')
+                self.assertEqual(host['optimized'], int(mode == 'optimized'))
+                host_record = next(row for row in records if row['name'] == 'host-and-profile-tests')
+                if os.name != 'nt':
+                    launcher = host_record['python_launcher']
+                    self.assertEqual(launcher['interpreter'], str(selected))
+                    self.assertEqual(launcher['scope'], 'host-and-profile-tests')
+                    self.assertEqual(host['path'], str(Path(launcher['path']).parent) + os.pathsep + str(binary))
+                    self.assertFalse(Path(launcher['path']).parent.exists(), 'successful host launcher was not cleaned')
+                    removed = subprocess.run([str(node_copy), '--test', 'tests/admission.test.mjs'], cwd=root / 'host', env=environment, capture_output=True, text=True)
+                    self.assertNotEqual(removed.returncode, 0, 'literal-python host stub unexpectedly worked after shim cleanup')
+                    self.assertIn('ENOENT', removed.stdout + removed.stderr)
+                else:
+                    self.assertNotIn('python_launcher', host_record)
+                child = json.loads((support / 'selected-child.json').read_text('utf-8'))
+                self.assertEqual(child, {'executable': str(selected), 'override': str(selected), 'optimized': int(mode == 'optimized')})
+                canonical = json.loads((support / 'canonicalization' / mode / 'commands.json').read_text('utf-8'))
+                self.assertEqual(next(row for row in canonical if row['name'] == 'python')['argv'][0], str(selected))
+                if os.environ.get('PORTABILITY_TEST_EVIDENCE'):
+                    evidence = Path(os.environ['PORTABILITY_TEST_EVIDENCE']) / mode
+                    write(evidence / 'commands.json', json.dumps(records, indent=2) + '\n')
+                    write(evidence / 'canonical-commands.json', json.dumps(canonical, indent=2) + '\n')
+                    write(evidence / 'selected-child.json', json.dumps(child, indent=2) + '\n')
+                    write(evidence / 'host-child.json', json.dumps(host, indent=2) + '\n')
+                    write(evidence / 'python-command-unavailable.txt', unavailable.stdout)
+        if os.name != 'nt':
+            failed = subprocess.run([str(selected), '-B', str(research / 'tools/validate.py'), '--mode', 'repeat'], cwd=root,
+                                    env=dict(environment, HOST_FIXTURE_FAIL='1'), capture_output=True, text=True)
+            self.assertNotEqual(failed.returncode, 0, failed.stdout + failed.stderr)
+            failed_records = json.loads((support / 'runs/repeat/commands.json').read_text('utf-8'))
+            failed_host = failed_records[-1]
+            self.assertEqual(failed_host['name'], 'host-and-profile-tests')
+            self.assertNotEqual(failed_host['exit_code'], 0)
+            self.assertFalse(Path(failed_host['python_launcher']['path']).parent.exists(), 'failed host launcher was not cleaned')
 
 
 if __name__ == '__main__':

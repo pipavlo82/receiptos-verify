@@ -1,5 +1,5 @@
 """Replay selected host checks and this additive experiment; no provider network."""
-import argparse, hashlib, json, os, pathlib, subprocess, sys, time
+import argparse, contextlib, hashlib, json, os, pathlib, shlex, subprocess, sys, tempfile, time
 RESEARCH=pathlib.Path(__file__).resolve().parents[1]
 HOST=RESEARCH.parents[1]
 SUPPORT=pathlib.Path(os.environ.get('AGENT_ACTION_SUPPORT','D:/PAVLO HQ/Workspaces/agent-action-verify-v0'))
@@ -23,11 +23,28 @@ commands=[('versions',['node','--version']),('python',[sys.executable,'--version
 if args.browser:commands.append(('browser',node+[str(RESEARCH/'tools/browser-test.mjs'),args.mode]))
 if args.mutations:commands.append(('mutations',node+[str(RESEARCH/'tools/mutations.mjs'),args.mode]))
 records=[]
+
+@contextlib.contextmanager
+def command_environment(name, inherited):
+    """Bridge frozen POSIX host adapters only; never alter the caller's PATH."""
+    if name != 'host-and-profile-tests' or os.name == 'nt':
+        yield inherited, None
+        return
+    with tempfile.TemporaryDirectory(prefix='agent-action-host-python-') as temporary:
+        launcher = pathlib.Path(temporary).resolve() / 'python'
+        launcher.write_text('#!/bin/sh\nexec ' + shlex.quote(sys.executable) + ' "$@"\n', encoding='utf-8', newline='\n')
+        launcher.chmod(0o700)
+        scoped = dict(inherited, PATH=str(launcher.parent) + os.pathsep + inherited.get('PATH', ''))
+        yield scoped, {'scope': name, 'path': str(launcher), 'interpreter': sys.executable}
+
 for name,argv in commands:
-    start=time.monotonic();p=subprocess.run(argv,cwd=HOST,env=environment,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    start=time.monotonic()
+    with command_environment(name, environment) as (step_environment, launcher):
+        p=subprocess.run(argv,cwd=HOST,env=step_environment,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     (out/(name+'.stdout.txt')).write_bytes(p.stdout);(out/(name+'.stderr.txt')).write_bytes(p.stderr)
     record={'name':name,'argv':argv,'cwd':str(HOST),'exit_code':p.returncode,'elapsed_seconds':time.monotonic()-start,
             'stdout_sha256':hashlib.sha256(p.stdout).hexdigest(),'stderr_sha256':hashlib.sha256(p.stderr).hexdigest()}
+    if launcher is not None:record['python_launcher']=launcher
     records.append(record);(out/'commands.json').write_text(json.dumps(records,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps({'mode':args.mode,'command':name,'exit_code':p.returncode}),flush=True)
     if p.returncode:print(p.stdout.decode('utf-8','replace')[-3000:]);print(p.stderr.decode('utf-8','replace')[-2000:]);sys.exit(p.returncode)

@@ -38,9 +38,14 @@
       "sha256": "cf51356bd1dff29b417a4aa5fcfbec50fb534bbd9b61f4b62600da44d8e5cdbd"
     },
     {
+      "path": "MACOS_HARNESS_REPAIRS.md",
+      "bytes": 7608,
+      "sha256": "f92d18e97478e4b6e40f03bc7d0c6126dac3656ab3fa5d784a86bd03f27f7b73"
+    },
+    {
       "path": "README.md",
-      "bytes": 7846,
-      "sha256": "fcace83d8a52d7967ea9f54aed5c9e7679f644bdba2ff72ad167f6122c99f6d5"
+      "bytes": 8792,
+      "sha256": "b87159a4b4c9f0132e0a2e759211877202ca5ac0dd6f82531e36199c94587617"
     },
     {
       "path": "RESULTS.md",
@@ -193,6 +198,11 @@
       "sha256": "a959334af84bfe4e643a5d4022b575225658589c4576a18065f386f0ea1ce49f"
     },
     {
+      "path": "evidence/macos-harness-20261023/summary.json",
+      "bytes": 2419,
+      "sha256": "1cb496a383b71ed299028a1f16a007fbca1af1685746a413cf1a1cf7bf635824"
+    },
+    {
       "path": "evidence/mutations/fresh/report.json",
       "bytes": 24413,
       "sha256": "9716fdab3e8b0d51a3116d604c4b28b48fb25738eed33daf9d06676c3291df55"
@@ -299,8 +309,8 @@
     },
     {
       "path": "tests/portability_test.py",
-      "bytes": 12175,
-      "sha256": "02eb05a1ce49a0734ef395bd153640854c5319377e24c9bc6df8f57f5d4a456d"
+      "bytes": 17940,
+      "sha256": "72fcb327809a697a92bd5ec6a063a399a1c6c71f106a7acfb9b8a8645899ff46"
     },
     {
       "path": "tools/browser-test.mjs",
@@ -343,6 +353,11 @@
       "sha256": "50d2cfcd00edf6465cf81a6f6ca26197b0897dd0ab8dddcfdba1aef6a9b3d721"
     },
     {
+      "path": "tools/ci-replay.py",
+      "bytes": 10595,
+      "sha256": "5acaaf1b443de9643d5bd11720aadaefb04593bb18c53dfdc6459675c934c2b8"
+    },
+    {
       "path": "tools/define-canonical-cases.py",
       "bytes": 4113,
       "sha256": "c1e9010845df1d02c40d4f316c1c394450ed91c841551303fa7b5683276578a7"
@@ -369,8 +384,8 @@
     },
     {
       "path": "tools/validate.py",
-      "bytes": 3130,
-      "sha256": "8a8f6090d3d62ccca31392fe6e15a811ae9975db1286acb81d9accdcd6718c92"
+      "bytes": 4069,
+      "sha256": "3d3f9b9e32c48553c949e566e14115758d16a7c1d906b8381c0923691b1221aa"
     }
   ]
 }
