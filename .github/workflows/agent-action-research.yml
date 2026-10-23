@@ -27,9 +27,6 @@ jobs:
     env:
       PYTHONDONTWRITEBYTECODE: '1'
       PYTHONUTF8: '1'
-      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/research-playwright-browsers
-      PLAYWRIGHT_MODULE: ${{ runner.temp }}/research-playwright/node_modules/playwright/index.mjs
-      AGENT_ACTION_SUPPORT: ${{ runner.temp }}/research-agent-action-support
     steps:
       - name: Check out the exact event head
         uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
@@ -37,6 +34,14 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 1
           persist-credentials: false
+      - name: Select external replay paths
+        shell: bash
+        run: |
+          printf '%s\n' \
+            "PLAYWRIGHT_BROWSERS_PATH=$RUNNER_TEMP/research-playwright-browsers" \
+            "PLAYWRIGHT_MODULE=$RUNNER_TEMP/research-playwright/node_modules/playwright/index.mjs" \
+            "AGENT_ACTION_SUPPORT=$RUNNER_TEMP/research-agent-action-support" \
+            >> "$GITHUB_ENV"
       - name: Select Node
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:

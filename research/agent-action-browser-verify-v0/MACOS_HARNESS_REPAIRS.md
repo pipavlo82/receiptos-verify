@@ -34,6 +34,10 @@ This workflow is new: base `8342e9b` had no exact-head checks or Actions runs. A
 
 Previous reports/evidence remain historical. New local command receipts and final exact-head CI observations are recorded externally under `outputs/pr2-macos-harness-repair-20261023`; no unpublished observation is presented as a public artifact.
 
+### First publication: workflow configuration correction
+
+The first published repair, `3b75fe45b30ab628835df3c8126e52aae3aa376d`, passed the fresh Windows/Linux local gates, but its [first GitHub run](https://github.com/pipavlo82/receiptos-verify/actions/runs/40001515069) failed before creating any jobs. The workflow incorrectly referenced `runner.temp` in job-level `env`, where GitHub's [context availability rules](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability) do not allow `runner`. A separate correction initializes the same three temporary paths from `$RUNNER_TEMP` in a bash step through `$GITHUB_ENV`. It does not change the replay driver or verifier. The failed configuration is preserved as failed evidence, not a passing test run; the earlier machine summary remains the original pre-publication snapshot. Actual CI success must be observed on the corrected exact head.
+
 ## Local pre-publication regression
 
 The complete Windows normal controller passes 434/434 host/profile tests, 41/41 action cases, 36 canonical cases / 180 expectations, browser 45/45 plus 36/36 canonical with no page errors/external requests. The dedicated Python suite reports 10 passing tests and one explicitly POSIX-only skip on Windows, versus 11/11 on WSL in normal and `-O` modes. The unchanged mutation family reproduces 24 semantic kills and one separate diagnostic reason witness, all five non-kill controls and exact source/semantic restoration.
