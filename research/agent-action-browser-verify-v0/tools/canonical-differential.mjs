@@ -9,7 +9,7 @@ const hash=x=>createHash('sha256').update(x).digest('hex');
 const cases=JSON.parse(readFileSync(resolve(research,'fixtures/canonicalization.json'),'utf8'));
 const commandReceipts=[],rows=[];
 for(const [name,argv] of [['javascript',[bun,resolve(research,'tools/canonical-native.ts')]],
-                        ['python',['python','-B','-X','utf8',...(process.env.PYTHONOPTIMIZE?['-O']:[]),resolve(research,'tools/canonical-kit.py')]]]) {
+                        ['python',[process.env.PYTHON_EXECUTABLE??'python','-B','-X','utf8',...(process.env.PYTHONOPTIMIZE?['-O']:[]),resolve(research,'tools/canonical-kit.py')]]]) {
   const p=spawnSync(argv[0],argv.slice(1),{encoding:'utf8',windowsHide:true,maxBuffer:8*1024*1024,env:process.env});
   writeFileSync(resolve(out,name+'.stdout.txt'),p.stdout??'');writeFileSync(resolve(out,name+'.stderr.txt'),p.stderr??'');
   commandReceipts.push({name,argv,exit_code:p.status,stdout_sha256:hash(p.stdout??''),stderr_sha256:hash(p.stderr??'')});

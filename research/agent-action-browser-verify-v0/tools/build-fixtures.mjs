@@ -128,6 +128,12 @@ changedHistory.package.log.proof=changedCp.tree.proofs[changedIndex];
 changedHistory.package.log.consistency.current_records=changedRecords;
 changedHistory.caller.log_selection.checkpoint_id=changedCp.checkpoint.id;
 add('changed-old-record','Two authentic checkpoints do not establish retention of old entries',{status:'REFUTED',reason:'CONSISTENCY_OLD_ENTRY_CHANGED'},()=>{},changedHistory);
+// Review follow-up: change one field outside the already committed receipt so
+// receipt identity cannot mask the wrapper schema/admission/binding checks.
+add('unsupported-caller-schema','Caller request names an unsupported schema',{status:'UNVERIFIABLE',reason:'SCHEMA_UNSUPPORTED'},p=>p.caller.schema='agent-action.request.v99');
+add('unsupported-package-schema','Action package names an unsupported schema',{status:'UNVERIFIABLE',reason:'SCHEMA_UNSUPPORTED'},p=>p.package.schema='agent-action.package.v99');
+add('requires-log-string','Log requirement must be a boolean rather than a truthy string',{status:'UNVERIFIABLE',reason:'RECEIPT_ADMISSION_FAILED'},p=>p.caller.requires_log='false');
+add('authority-premise-mismatch','Host authority premise differs from the intact receipt',{status:'REFUTED',reason:'AUTHORITY_PREMISE_BINDING_MISMATCH'},p=>p.package.host_bundle.statement.surface.authority={id:'changed-authority'});
 const output=resolve(research,'fixtures/actions.json');mkdirSync(resolve(research,'fixtures'),{recursive:true});
 writeFileSync(output,JSON.stringify(cases,null,2)+'\n');
 writeFileSync(resolve(research,'fixtures/public-demo-keys.json'),JSON.stringify({classification:'PUBLIC_TEST_MATERIAL_NOT_PRODUCTION_AUTHORITY',log_key_id:'public-demo-log-key',public_key_spki_base64:publicKey},null,2)+'\n');

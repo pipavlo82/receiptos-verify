@@ -50,7 +50,8 @@ export async function verifyAgentAction(callerInput,packageInput) {
     const caller=admitted(callerInput),pkg=admitted(packageInput);
     keys(caller,['schema','profile','expected_receipt_root','agent','action','claim','scope','host_request','requires_log','log_selection']);
     keys(pkg,['schema','receipt','host_bundle','input_state','log']);
-    if(caller.schema!=='agent-action.request.v0'||pkg.schema!=='agent-action.package.v0')return finish('UNVERIFIABLE','SCHEMA_UNSUPPORTED');
+    if(caller.schema!=='agent-action.request.v0'||pkg.schema!=='agent-action.package.v0') // GUARD: schema-supported
+      return finish('UNVERIFIABLE','SCHEMA_UNSUPPORTED');
     if(caller.profile!==PROFILE||pkg.receipt?.profile!==PROFILE) // GUARD: receipt-profile
       return finish('UNVERIFIABLE','RECEIPT_PROFILE_UNSUPPORTED');
     const receipt=pkg.receipt;
@@ -61,10 +62,11 @@ export async function verifyAgentAction(callerInput,packageInput) {
     keys(receipt.agent,['id','key']);
     keys(receipt.claim,['kind','action_id','output_digest']);
     keys(receipt.verification,['host_profile','native_profile','replay_profile']);
-    if(typeof receipt.receipt_id!=='string'||!receipt.receipt_id||typeof receipt.agent.id!=='string'||!receipt.agent.id)
+    if(typeof receipt.receipt_id!=='string'||!receipt.receipt_id||typeof receipt.agent.id!=='string'||!receipt.agent.id) // GUARD: receipt-subject-admission
       return finish('UNVERIFIABLE','RECEIPT_SUBJECT_MALFORMED');
     if(receipt.schema!==PROFILE||receipt.canonicalization_profile!==COMPATIBILITY||!root(receipt.anchor.receipt_root)
-      ||!root(caller.expected_receipt_root)||typeof caller.requires_log!=='boolean')return finish('UNVERIFIABLE','RECEIPT_ADMISSION_FAILED');
+      ||!root(caller.expected_receipt_root)||typeof caller.requires_log!=='boolean') // GUARD: receipt-admission
+      return finish('UNVERIFIABLE','RECEIPT_ADMISSION_FAILED');
     report.native_receipt_result=await verifyIntegrity(receipt);
     const identity=report.native_receipt_result;
     report.receipt_identity={status:identity.status==='VERIFIED'?'VERIFIED':identity.status==='CANNOT_RECOMPUTE'?'UNVERIFIABLE':'REFUTED',
@@ -73,7 +75,8 @@ export async function verifyAgentAction(callerInput,packageInput) {
     // Execute the existing caller-selected verifier even when a different dimension fails.
     report.native_host_result=await verifyV2(caller.host_request,pkg.host_bundle);
     report.log_inclusion=verifyAnchor(receipt.anchor.receipt_root,pkg.log,caller.log_selection);
-    if(report.receipt_identity.status!=='VERIFIED')return finish(report.receipt_identity.status,'RECEIPT_IDENTITY_NOT_VERIFIED');
+    if(report.receipt_identity.status!=='VERIFIED') // GUARD: receipt-identity-result
+      return finish(report.receipt_identity.status,'RECEIPT_IDENTITY_NOT_VERIFIED');
     if(receipt.anchor.receipt_root!==caller.expected_receipt_root) // GUARD: caller-receipt-root
       return finish('REFUTED','CALLER_RECEIPT_ROOT_MISMATCH');
     if(!equal(pkg.host_bundle.payload.crystal,receipt)) // GUARD: host-receipt-carrier
@@ -90,11 +93,11 @@ export async function verifyAgentAction(callerInput,packageInput) {
       return finish('UNVERIFIABLE','REQUESTED_ACTION_GUARANTEE_NOT_COVERED');
     if(receipt.verification.host_profile!=='receiptos.verify.generic.v2'
       ||receipt.verification.native_profile!=='receiptos.verify.interpoll-action.v2'
-      ||receipt.verification.replay_profile!==REPLAY||caller.host_request.adapter!=='interpoll')
+      ||receipt.verification.replay_profile!==REPLAY||caller.host_request.adapter!=='interpoll') // GUARD: native-verification-profile
       return finish('UNVERIFIABLE','NATIVE_VERIFICATION_PROFILE_UNSUPPORTED');
     if(!equal(receipt.authority,pkg.host_bundle.statement.surface.authority)
       ||!equal(receipt.assumptions,pkg.host_bundle.statement.surface.assumptions)
-      ||!equal(receipt.dependencies,pkg.host_bundle.statement.surface.dependencies))
+      ||!equal(receipt.dependencies,pkg.host_bundle.statement.surface.dependencies)) // GUARD: authority-premise-binding
       return finish('REFUTED','AUTHORITY_PREMISE_BINDING_MISMATCH');
     const attached={adapter_input_sha256:digest(input),input_state_sha256:digest(pkg.input_state)};
     if(!equal(receipt.evidence_attachments,attached)||receipt.input_commitment!==attached.input_state_sha256) // GUARD: action-input-binding
@@ -109,7 +112,7 @@ export async function verifyAgentAction(callerInput,packageInput) {
       output_digest:digest(output),observed_result:output,reason:'LOCAL_TRANSITION_EXECUTED_AGAIN'};
     if(!equal(output,receipt.observed_result)||digest(output)!==caller.claim.output_digest) // GUARD: local-result-binding
       return finish('REFUTED','LOCAL_ACTION_RESULT_MISMATCH');
-    if(!equal(receipt.recomputation_result,{profile:REPLAY,status:'REPRODUCED',input_digest:digest(pkg.input_state),output_digest:digest(output)}))
+    if(!equal(receipt.recomputation_result,{profile:REPLAY,status:'REPRODUCED',input_digest:digest(pkg.input_state),output_digest:digest(output)})) // GUARD: recomputation-result-preservation
       return finish('REFUTED','SAVED_RECOMPUTATION_RESULT_MISMATCH');
     report.claim_compatibility={status:'VERIFIED',reason:'EXACT_CALLER_ACTION_AND_LOCAL_REPLAY',scope:SCOPE};
     if(caller.requires_log&&report.log_inclusion.status!=='VERIFIED') // GUARD: required-log-result

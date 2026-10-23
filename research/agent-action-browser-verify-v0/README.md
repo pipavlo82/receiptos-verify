@@ -4,7 +4,7 @@ An additive, local research profile for ReceiptOS Verify. **AUDIT_FIRST / DO_NOT
 
 Host: `pipavlo82/receiptos-verify`, base `396143120f787d2f5534e92c0cf896c029a05775`, isolated branch `research/agent-action-browser-verify-v0`. The base is the actual `v0.2.0` experimental prerelease and captured `main`; its package still says `0.2.0-dev.0`. Historical release evidence remains unchanged. The release's reported 707-test closure is not substituted for this experiment's own executions.
 
-Local checkout: `C:/Users/msi/Documents/Codex/agent-action-verify-v0`. External checkouts, build output, raw evidence and archives: `D:/PAVLO HQ/Workspaces/agent-action-verify-v0`. Memory Palace remains on D:. Nothing is pushed, deployed, merged or opened as a PR.
+Original author checkout: `C:/Users/msi/Documents/Codex/agent-action-verify-v0`. Original external checkouts, build output, raw evidence and archives: `D:/PAVLO HQ/Workspaces/agent-action-verify-v0`. Memory Palace remains on D:. Those paths describe the historical author run. The research was subsequently published as [Draft PR #2](https://github.com/pipavlo82/receiptos-verify/pull/2); it remains separate from main. See [cold-review repairs](COLD_REVIEW_REPAIRS.md) for the local follow-up and its finite coverage limits.
 
 ## What works
 
@@ -19,10 +19,15 @@ See [results](RESULTS.md), [reuse decisions](REUSE_MATRIX.md), [architecture](AR
 
 ## Replay
 
-Run from the host repository root. Node 22+, Python 3.12, Bun and the existing pinned npm dependencies are required. Browser tests additionally use Playwright with Chromium. The recorded Windows runtime paths are configurable for the research tools through `BUN_EXECUTABLE`, `PLAYWRIGHT_MODULE`, and `AGENT_ACTION_SUPPORT`; the unchanged historical Crystal bridge has its own fixed Windows Bun path.
+Run from the host repository root. Node 22+, Python 3.12, Bun and the existing pinned npm dependencies are required. Browser tests additionally use Playwright with Chromium. Set `AGENT_ACTION_SUPPORT` to an external writable directory for source checkouts and outputs. `PLAYWRIGHT_MODULE` selects the research browser driver's Playwright installation. The controller reuses the Python interpreter that launched it (`sys.executable`) and passes that choice to the research Python canonicalization child; a separate `python` command is not needed for those research paths. Other historical host adapters retain their own runtime selection.
+
+The unchanged host's RVR/QEV native bridges still invoke the command `python`. Running host tests that exercise those bridges requires that command on `PATH` (it may point to the same Python 3.12 installation). This repair does not migrate their frozen implementation. The dedicated research portability regression runs the real controller and nested canonicalization driver with no `python` command, using isolated host-command fixtures; it is not a claim that every inherited native bridge works without one.
+
+**Bun has two independent selectors.** Research tools use `BUN_EXECUTABLE` (otherwise the recorded Windows path or `bun` on POSIX). The preserved historical Crystal bridge ignores this variable: on Windows it uses `C:/Users/msi/.bun/bin/bun.exe`; on macOS/Linux it resolves `bun` from `PATH`. An override therefore does not select the host verifier's Bun. To reproduce the author semantic bytes, use Bun **1.3.14** for both selectors: check the fixed executable on Windows, or put that version first on POSIX `PATH`, as well as setting the research override. Keep each actual runtime in provenance. Different recorded runtimes legitimately change the semantic-output digest; do not strip runtime identity to manufacture equality.
 
 ```powershell
-npm ci --ignore-scripts --cache 'D:/PAVLO HQ/Workspaces/agent-action-verify-v0/npm-cache'
+$env:AGENT_ACTION_SUPPORT = 'D:/PAVLO HQ/Workspaces/agent-action-replay'
+npm ci --ignore-scripts --cache 'D:/PAVLO HQ/Workspaces/agent-action-replay/npm-cache'
 python -B research/agent-action-browser-verify-v0/tools/prepare-sources.py
 python -B research/agent-action-browser-verify-v0/tools/check-preservation.py
 python -B research/agent-action-browser-verify-v0/tools/validate.py --mode normal --browser --mutations
@@ -30,6 +35,21 @@ python -B research/agent-action-browser-verify-v0/tools/validate.py --mode repea
 python -O -B research/agent-action-browser-verify-v0/tools/validate.py --mode optimized
 python -B research/agent-action-browser-verify-v0/tools/check-research.py
 ```
+
+On macOS/Linux, use the installed `python3` command to launch the controller, for example:
+
+```sh
+export AGENT_ACTION_SUPPORT="$HOME/receiptos-agent-action-support"
+# Replace these paths with your installed Bun 1.3.14 and Playwright module.
+export PATH="/path/to/bun-1.3.14:$PATH"
+export BUN_EXECUTABLE="/path/to/bun-1.3.14/bun"
+export PLAYWRIGHT_MODULE="/path/to/node_modules/playwright/index.mjs"
+python3 -B research/agent-action-browser-verify-v0/tools/prepare-sources.py
+python3 -B research/agent-action-browser-verify-v0/tools/validate.py --mode normal --browser --mutations
+python3 -B research/agent-action-browser-verify-v0/tools/check-research.py
+```
+
+The source checker compares complete exact-path/byte/hash maps independently of inventory row order, accepts historical Windows ordering, and rejects duplicate paths or incomplete outer manifests. Its writer uses exact relative POSIX-string order. This changes only the additive research closure; the historical host source lock and evidence stay frozen.
 
 Source preparation contacts public GitHub only when a required checkout is absent. It never resets an existing checkout. Once prepared, replay uses local data. No provider, blockchain, funds, wallet, enterprise service or production credential is required.
 

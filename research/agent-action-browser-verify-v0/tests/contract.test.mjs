@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {verifyAgentAction,replayLocalAction,REPLAY} from '../lib/profile.mjs';
-const positive=JSON.parse(readFileSync(new URL('../fixtures/actions.json',import.meta.url))).find(c=>c.case_id==='A');
+const cases=JSON.parse(readFileSync(new URL('../fixtures/actions.json',import.meta.url)));
+const positive=cases.find(c=>c.case_id==='A');
 const request=JSON.stringify(positive.caller),pkg=JSON.stringify(positive.package);
 const malformed=[
  ['duplicate field',pkg.replace('"schema":','"schema":"duplicate","schema":')],
@@ -38,4 +39,18 @@ test('positive native outcomes are preserved without upgrading permission or pub
  for(const key of ['external_execution','public_log_authenticity','execution_permission'])assert.equal(r[key],'NOT_COVERED');
  assert.equal(r.log_inclusion.claim_authorization,'NOT_COVERED');
  assert.deepEqual(r.native_host_result.layers.RECOMPUTATION.nativeResult,positive.package.receipt.native_verifier_result);
+});
+
+for(const id of ['unsupported-caller-schema','unsupported-package-schema','requires-log-string','authority-premise-mismatch'])
+test('review witness preserves the committed receipt and exact refusal: '+id,async()=>{
+ const c=cases.find(c=>c.case_id===id);assert.ok(c,'required review witness is present');
+ assert.deepEqual(c.package.receipt,positive.package.receipt);
+ const r=await verifyAgentAction(c.caller,c.package);
+ assert.deepEqual({status:r.status,reason:r.reason},c.expected);
+ if(id==='authority-premise-mismatch'){
+  assert.equal(r.receipt_identity.status,'VERIFIED');
+  assert.equal(r.native_host_result.schema,'receiptos.verify.report.v2');
+  assert.equal(r.native_host_result.overall,'REJECTED_MALFORMED');
+  assert.equal(r.native_host_result.layers.INPUT.status,'REJECTED_MALFORMED');
+ }
 });

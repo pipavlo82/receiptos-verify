@@ -6,14 +6,15 @@ SUPPORT=pathlib.Path(os.environ.get('AGENT_ACTION_SUPPORT','D:/PAVLO HQ/Workspac
 BUN=os.environ.get('BUN_EXECUTABLE','C:/Users/msi/.bun/bin/bun.exe' if os.name=='nt' else 'bun')
 parser=argparse.ArgumentParser();parser.add_argument('--mode',choices=['normal','repeat','optimized','fresh'],default='normal');parser.add_argument('--mutations',action='store_true');parser.add_argument('--browser',action='store_true')
 args=parser.parse_args();out=SUPPORT/'runs'/args.mode;out.mkdir(parents=True,exist_ok=True)
-environment=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',TMP=str(SUPPORT/'tmp'),TEMP=str(SUPPORT/'tmp'))
+environment=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',PYTHON_EXECUTABLE=sys.executable,TMP=str(SUPPORT/'tmp'),TEMP=str(SUPPORT/'tmp'))
 (SUPPORT/'tmp').mkdir(exist_ok=True)
 if args.mode=='optimized':environment['PYTHONOPTIMIZE']='1'
 node=['node']+(['--no-opt'] if args.mode=='optimized' else [])
 base=['admission','admission-v2','capsule','generic-boundary-v2','native-boundary-v2','projection-v2','projection-release',
       'interpoll-v2','semantic-abi-v2','provenance-v2','requirement-admission-release','interpoll-request-classification-release',
       'trustless-v02','trustless-grade-v2','adapter-context-release','guarantee-boundary-v2']
-commands=[('versions',['node','--version']),('python',['python','--version']),('bun',[BUN,'--version']),
+commands=[('versions',['node','--version']),('python',[sys.executable,'--version']),('bun',[BUN,'--version']),
+ ('portability-tests',[sys.executable,'-B',str(RESEARCH/'tests/portability_test.py')]),
  ('provenance',node+['tools/check-provenance-v2.mjs']),
  ('host-and-profile-tests',node+['--test','--test-concurrency=1']+['tests/'+x+'.test.mjs' for x in base]+[str(RESEARCH/'tests/contract.test.mjs')]),
  ('actions',node+[str(RESEARCH/'tools/run-cases.mjs'),args.mode]),
