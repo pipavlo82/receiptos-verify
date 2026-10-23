@@ -62,7 +62,8 @@ def check_determinism(support):
 def package_reports(support, upload, commands, status):
     # This literal allowlist excludes sources/, browser-build/, tmp/, raw native
     # reports, node_modules, compiled lens code, subprocess stdout and stderr.
-    allowed = ['runtime.json', 'source-pins-observed.json', 'determinism.json']
+    allowed = ['runtime.json', 'source-pins-observed.json', 'determinism.json',
+               'source-inventory/before.json', 'source-inventory/after.json']
     for mode in ('normal', 'repeat', 'optimized'):
         allowed.extend([
             f'runs/{mode}/commands.json',
@@ -164,6 +165,13 @@ def main():
         if runtime['node'] != 'v22.15.0' or runtime['bun'] != '1.3.14' or sys.version_info[:2] != (3, 12):
             raise RuntimeError('CI_RUNTIME_PIN_MISMATCH')
         write_json(support / 'runtime.json', runtime)
+        current_inventory = json.loads(run('global-source-closure-before',
+                                           [str(tools['node']), 'tools/check-sources.mjs']))
+        if current_inventory.get('status') != 'PASS':
+            raise RuntimeError('CI_GLOBAL_SOURCE_CLOSURE_NOT_ESTABLISHED')
+        write_json(support / 'source-inventory/before.json', current_inventory)
+        run('source-inventory-policy-tests',
+            [str(tools['node']), '--test', str(RESEARCH / 'tests/source-inventory.test.mjs')])
         run('prepare-sources', [sys.executable, '-B', str(RESEARCH / 'tools/prepare-sources.py')])
         run('preservation-before', [sys.executable, '-B', str(RESEARCH / 'tools/check-preservation.py')])
         pins = json.loads((RESEARCH / 'source-pins.json').read_text('utf-8'))
@@ -189,6 +197,11 @@ def main():
         check_determinism(support)
         run('preservation-after', [sys.executable, '-B', str(RESEARCH / 'tools/check-preservation.py')])
         run('research-closure-after', [sys.executable, '-B', str(RESEARCH / 'tools/check-research.py')])
+        current_inventory = json.loads(run('global-source-closure-after',
+                                           [str(tools['node']), 'tools/check-sources.mjs']))
+        if current_inventory.get('status') != 'PASS':
+            raise RuntimeError('CI_GLOBAL_SOURCE_CLOSURE_NOT_ESTABLISHED')
+        write_json(support / 'source-inventory/after.json', current_inventory)
         run('diff-check', [str(tools['git']), 'diff', '--check'])
         if run('clean-worktree', [str(tools['git']), 'status', '--porcelain', '--untracked-files=all']):
             raise RuntimeError('CI_WORKTREE_CHANGED')

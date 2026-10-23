@@ -2,7 +2,7 @@ name: Experimental agent-action replay
 
 on:
   push:
-    branches: [research/agent-action-browser-verify-v0]
+    branches: [main, research/agent-action-browser-verify-v0]
   pull_request:
     paths:
       - research/agent-action-browser-verify-v0/**

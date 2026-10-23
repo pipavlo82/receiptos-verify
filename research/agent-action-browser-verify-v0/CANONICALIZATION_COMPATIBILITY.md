@@ -5,7 +5,7 @@ No historical `receiptos-c14n-v0` implementation was redefined. Exact original i
 | Surface | Actual root exclusion | Key order | Numbers / raw admission |
 |---|---|---|---|
 | Crystal `45b46bf…` | Entire top-level `anchor` only | Recursive ECMAScript UTF-16 `.sort()` | `JSON.stringify` values after JS parsing |
-| recompute-lens `70b44d…` | Entire top-level `anchor` only | Recursive ECMAScript UTF-16 `.sort()` | JS parsing/serialization; WebCrypto SHA-256 |
+| recompute-lens `61f7392…` (same runtime bytes as historical `70b44d…`) | Entire top-level `anchor` only | Recursive ECMAScript UTF-16 `.sort()` | JS parsing/serialization; WebCrypto SHA-256 |
 | recompute-kit `b9d4fc…` | Top-level `anchor` **and** `receipt_root` | Python Unicode code-point sorting | Python `json.dumps`, `ensure_ascii=False`; floats/nonfinite extensions not fully restricted |
 | ReceiptOS Verify root path | Entire top-level `anchor` through pinned native Crystal | Native Crystal, after host admission | Strict raw parser, ASCII keys, safe integer syntax, scalar strings |
 | ReceiptOS Verify content digest | No root-field exclusions | Host canonicalization | Same restricted host domain |

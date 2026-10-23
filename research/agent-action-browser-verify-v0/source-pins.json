@@ -90,16 +90,22 @@
     },
     {
       "repository": "trustless-ai/recompute-lens",
-      "sha": "70b44d854a32c867b756fa1272b194d4ae8f1ce0",
+      "sha": "61f7392f1c4758231517b22ba06ab608dedbae02",
       "url": "https://github.com/trustless-ai/recompute-lens",
-      "captured_at": "2026-10-22T21:53:15.399760+00:00",
+      "captured_at": "2026-10-23T18:54:25.004361+00:00",
       "runtime_dependency": true,
       "runtime_files": {
         "src/recompute/receiptos-c14n-v0.ts": "ec85b664699203e3147438230d967639243a9c34659c3fb8324c4401c1c8c2ef",
         "src/types.ts": "5d69bc5fc31791a9527b041bbfa99152fba4e25b8817f228c8654c1b7300fea8",
         "src/recipes.ts": "e2cfa423bb4dddac28badc7640b21bd80d15f3085b3ee0a32da06fbeed8071de"
       },
-      "upstream_license_metadata": null
+      "upstream_license_metadata": "CC0-1.0",
+      "upstream_license_evidence": {
+        "path": "LICENSE",
+        "git_blob": "6ca207ef004cb69d03041e7e5c288a2be4968045",
+        "sha256": "7179683e8000e6bdc9bbc60d85edf0a4ac8e76f951857f54fcb775d5886f1309",
+        "url": "https://github.com/trustless-ai/recompute-lens/blob/61f7392f1c4758231517b22ba06ab608dedbae02/LICENSE"
+      }
     },
     {
       "repository": "trustless-ai/agent-sdk",
@@ -138,5 +144,5 @@
       "upstream_license_metadata": "MIT"
     }
   ],
-  "license_boundary": "Metadata is descriptive, not a grant. recompute-lens remains an external local dependency; no source or compiled code is redistributed."
+  "license_boundary": "License metadata describes each exact source pin. recompute-lens at 61f7392f1c4758231517b22ba06ab608dedbae02 carries the upstream CC0-1.0 LICENSE linked above. It remains an external local dependency; no source or compiled code is redistributed by this experiment. Historical evidence retains its original source pins and license observations."
 }

@@ -1,5 +1,5 @@
 """Explicit public source checkout preparation. Never reset an existing directory."""
-import json,os,pathlib,subprocess
+import hashlib,json,os,pathlib,subprocess
 RESEARCH=pathlib.Path(__file__).resolve().parents[1]
 SUPPORT=pathlib.Path(os.environ.get('AGENT_ACTION_SUPPORT','D:/PAVLO HQ/Workspaces/agent-action-verify-v0'))
 for row in json.loads((RESEARCH/'source-pins.json').read_text('utf-8'))['repositories']:
@@ -13,5 +13,10 @@ for row in json.loads((RESEARCH/'source-pins.json').read_text('utf-8'))['reposit
         subprocess.run(['git','-c','core.autocrlf=false','clone','--no-checkout',row['url']+'.git',str(target)],check=True)
         subprocess.run(['git','config','core.autocrlf','false'],cwd=target,check=True)
         subprocess.run(['git','checkout','--detach',row['sha']],cwd=target,check=True)
-    print(row['repository'],row['sha'])
-print('Prepared external local runtime dependencies. No license grant is inferred for recompute-lens.')
+    license_evidence=row.get('upstream_license_evidence')
+    if license_evidence:
+        license_file=target/license_evidence['path']
+        if not license_file.is_file() or hashlib.sha256(license_file.read_bytes()).hexdigest()!=license_evidence['sha256']:
+            raise SystemExit('Pinned upstream license bytes do not match: '+str(license_file))
+    print(row['repository'],row['sha'],'license metadata:',row['upstream_license_metadata'])
+print('Prepared exact external runtime source pins. recompute-lens is pinned to its upstream CC0-1.0 licensed revision; source and compiled code remain external.')

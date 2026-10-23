@@ -19,13 +19,13 @@
     },
     {
       "path": "BROWSER_DEMO.md",
-      "bytes": 3214,
-      "sha256": "e6f83927a712472aa38400d584692b2455cf14c3529c13412df9158d5e78c71e"
+      "bytes": 3496,
+      "sha256": "6ea0405c855a145c2b8318dde837428dc9c16c5fde742c858bf87ce8266e330b"
     },
     {
       "path": "CANONICALIZATION_COMPATIBILITY.md",
-      "bytes": 4551,
-      "sha256": "e95a3bd33a2484fa460803c2e65a6b571156b5de18b1cde6e893d03a55b82ea9"
+      "bytes": 4599,
+      "sha256": "87225968be49aea2c444b4463b5c4b2c7e0ded23b1ea8c8cbee5fc0aedbcde66"
     },
     {
       "path": "COLD_REVIEW_REPAIRS.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "LIMITATIONS.md",
-      "bytes": 4470,
-      "sha256": "cf51356bd1dff29b417a4aa5fcfbec50fb534bbd9b61f4b62600da44d8e5cdbd"
+      "bytes": 5143,
+      "sha256": "d05ab8a31b560a08caf28dd5ec7bdf2676c39522d5b1c0b4388c19365ff3dc7d"
     },
     {
       "path": "MACOS_HARNESS_REPAIRS.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8792,
-      "sha256": "b87159a4b4c9f0132e0a2e759211877202ca5ac0dd6f82531e36199c94587617"
+      "bytes": 9740,
+      "sha256": "c2c9497f288110d20a757d6585ef846677f7a7813638f51cc044bb94c7a7bf00"
     },
     {
       "path": "RESULTS.md",
@@ -54,8 +54,8 @@
     },
     {
       "path": "REUSE_MATRIX.md",
-      "bytes": 10218,
-      "sha256": "7c462f0e8afada0c3882b061c0a7e0d4d82494eb2230be7273d6b14456abd902"
+      "bytes": 10694,
+      "sha256": "354710b68cd3b9c319c7032cafbc74081dacba5551aa16e4b699ac4e4690a9cc"
     },
     {
       "path": "browser/app.mjs",
@@ -299,8 +299,8 @@
     },
     {
       "path": "source-pins.json",
-      "bytes": 5932,
-      "sha256": "42c8bdb8a860a7aba72f2a80e98319f78b7d2e6d11fbdad49406b2fe194db1ab"
+      "bytes": 6486,
+      "sha256": "a9f058df8e63b0816c99b51ea7f264044f65ea1c8f8ca8d4b08518e0c8394914"
     },
     {
       "path": "tests/contract.test.mjs",
@@ -313,14 +313,19 @@
       "sha256": "72fcb327809a697a92bd5ec6a063a399a1c6c71f106a7acfb9b8a8645899ff46"
     },
     {
+      "path": "tests/source-inventory.test.mjs",
+      "bytes": 13360,
+      "sha256": "5f7ec1d7ec3c277754adbb1539eca834be399c4ca7a9d54e8c1313f381c33504"
+    },
+    {
       "path": "tools/browser-test.mjs",
       "bytes": 5906,
       "sha256": "a611d8d7ff54e72404bfca8150a5257274046b5a038be30324ae2c2b67471bf3"
     },
     {
       "path": "tools/build-browser.ts",
-      "bytes": 1743,
-      "sha256": "14594ac10a403b6dc0c226cd9f0c287849a9e6077417f86f3e1fa013799e86e5"
+      "bytes": 1908,
+      "sha256": "ecd640b64fbcb7ae4463f0194dbe1ce06fd9b2fd350c816e439a8b6da9563f76"
     },
     {
       "path": "tools/build-fixtures.mjs",
@@ -344,8 +349,8 @@
     },
     {
       "path": "tools/check-preservation.py",
-      "bytes": 1379,
-      "sha256": "ab095fa1f1b17f16427b601c7f4688b803165500ae42a355cfd68f097cc3995a"
+      "bytes": 5078,
+      "sha256": "093281eb93ea3c2ab59b0ab3d7beabfa4ec9a3e3b0dc5cdb9dd8ad2b56d75926"
     },
     {
       "path": "tools/check-research.py",
@@ -354,8 +359,8 @@
     },
     {
       "path": "tools/ci-replay.py",
-      "bytes": 10595,
-      "sha256": "5acaaf1b443de9643d5bd11720aadaefb04593bb18c53dfdc6459675c934c2b8"
+      "bytes": 11565,
+      "sha256": "baf0cd79cdbc7cd379d34811f3499f0ee49df7a4cd27b0a0e288f5eadec85582"
     },
     {
       "path": "tools/define-canonical-cases.py",
@@ -369,8 +374,8 @@
     },
     {
       "path": "tools/prepare-sources.py",
-      "bytes": 1257,
-      "sha256": "5a71ca19f0f7b4ce40600aa967f7ca10a51088fee425a2376ca613b45f0eaaaf"
+      "bytes": 1733,
+      "sha256": "3f79089e81cc58d23d1747deea174070c1885d874bd98ff729c4ac1232a35752"
     },
     {
       "path": "tools/run-cases.mjs",
